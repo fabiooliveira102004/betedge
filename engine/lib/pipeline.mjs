@@ -12,6 +12,7 @@ import {
   buildCaveats, buildNarrative, goalsDistribution, headToHead,
   likelyScorelines, teamForm, venueSplit, winCondition,
 } from './insight.mjs';
+import { loadMatchlog, matchlogFor } from './matchlog.mjs';
 import { fitFromMarket } from './market-fit.mjs';
 import { clamp, round } from './math.mjs';
 
@@ -44,9 +45,18 @@ export function groupFixtures(offers, now, horizonDays = config.horizonDays) {
   return [...byId.values()].sort((a, b) => new Date(a.kickoff) - new Date(b.kickoff));
 }
 
+/** Proveniencia dos dados desta execucao, para a app poder ser franca. */
+export const dataProvenance = {
+  ownMatches: 0, externalMatches: 0, externalSeasons: [], injuryTeams: 0,
+};
+
 export async function loadLeagueData(fixtures, demoHistory) {
   const leagues = new Map();
   const names = [...new Set(fixtures.map((f) => f.league))];
+
+  // Resultados que o proprio motor foi guardando. Sao os unicos que
+  // pertencem de certeza a epoca corrente.
+  const matchlog = isDemo() ? [] : await loadMatchlog();
 
   for (const name of names) {
     const meta = config.leagues.find((l) => l.name === name);
@@ -58,12 +68,35 @@ export async function loadLeagueData(fixtures, demoHistory) {
       // Cada liga tem de ter o seu proprio pool de ratings: misturar
       // Premier League com Liga Portugal daria um Elo sem significado.
       history = (demoHistory ?? []).filter((m) => m.league === name);
-    } else if (hasFootball() && meta?.apiFootballId) {
-      history = await fetchHistory(meta.apiFootballId, currentSeason());
-      injuries = await fetchInjuries(meta.apiFootballId, currentSeason());
-      log.info(`${name}: ${history.length} jogos de historico, ${injuries.size} equipas com ausencias`);
     } else {
-      log.warn(`${name}: sem historico (API_FOOTBALL_KEY nao configurada) — modelo assenta so nas odds`);
+      const own = matchlogFor(matchlog, name);
+
+      let external = [];
+      if (hasFootball() && meta?.apiFootballId) {
+        external = await fetchHistory(meta.apiFootballId, currentSeason());
+        injuries = await fetchInjuries(meta.apiFootballId, currentSeason());
+      }
+
+      // O historico proprio manda: e da epoca a decorrer. O da API-Football
+      // entra por baixo como ponto de partida enquanto o proprio nao chega
+      // para ratings estaveis.
+      history = own.length >= 40 ? own : [...own, ...external];
+
+      dataProvenance.ownMatches += own.length;
+      dataProvenance.externalMatches += history.length - own.length;
+      dataProvenance.injuryTeams += injuries.size;
+      for (const season of new Set(external.map((m) => m.season))) {
+        if (!dataProvenance.externalSeasons.includes(season)) {
+          dataProvenance.externalSeasons.push(season);
+        }
+      }
+
+      log.info(`${name}: ${history.length} jogos (${own.length} proprios, `
+        + `${history.length - own.length} externos), ${injuries.size} equipas com ausencias`);
+
+      if (history.length === 0) {
+        log.warn(`${name}: sem historico nenhum — as probabilidades saem das proprias odds`);
+      }
     }
 
     const teamIndex = new Map();

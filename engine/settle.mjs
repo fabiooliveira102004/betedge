@@ -7,6 +7,7 @@ import { readJson, writeJson } from './lib/store.mjs';
 import { patch, upsert } from './lib/supabase.mjs';
 import { computeStats, simulateScore } from './lib/stats.mjs';
 import { mergeResults, toResult, verdictAccuracy } from './lib/results.mjs';
+import { appendToMatchlog } from './lib/matchlog.mjs';
 import { slimPick } from './lib/slim.mjs';
 import { round } from './lib/math.mjs';
 
@@ -93,6 +94,21 @@ async function main() {
 
   const allResults = mergeResults(resultsDoc.results ?? [], newResults);
   log.info(`${newResults.length} jogos arquivados; ${allResults.length} no total`);
+
+  // Cada resultado entra no historico proprio do motor. E o que lhe permite
+  // ter dados da epoca corrente sem depender de um plano pago.
+  if (!isDemo() && newResults.length) {
+    const { added, total } = await appendToMatchlog(newResults.map((r) => ({
+      id: r.id,
+      league: r.league,
+      home: r.home,
+      away: r.away,
+      homeGoals: r.score.home,
+      awayGoals: r.score.away,
+      kickoff: r.kickoff,
+    })));
+    log.info(`Historico proprio: +${added} jogos, ${total} acumulados`);
+  }
 
   await writeJson('matches.json', {
     ...matchesDoc,

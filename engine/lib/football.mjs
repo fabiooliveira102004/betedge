@@ -18,8 +18,10 @@ export function currentSeason(date = new Date()) {
  */
 export async function fetchHistory(leagueId, season = currentSeason()) {
   const matches = [];
+  const seasons = [season, season - 1];
 
-  for (const s of [season, season - 1]) {
+  for (let i = 0; i < seasons.length; i++) {
+    const s = seasons[i];
     let data;
     try {
       data = await request(
@@ -28,6 +30,19 @@ export async function fetchHistory(leagueId, season = currentSeason()) {
       );
     } catch (err) {
       log.warn(`Historico indisponivel (liga ${leagueId}, epoca ${s}): ${err.message}`);
+      continue;
+    }
+
+    // O plano gratuito responde 200 com um erro no corpo. Diz quais as
+    // epocas permitidas: aproveitamos e saltamos para a mais recente delas,
+    // em vez de continuar a pedir epocas que vao ser recusadas.
+    const restriction = seasonRestriction(data);
+    if (restriction) {
+      if (i === 0) {
+        log.warn(`Liga ${leagueId}: epoca ${s} fora do plano — a usar ${restriction} `
+          + '(dados antigos servem so de ponto de partida)');
+        seasons.splice(1, seasons.length, restriction, restriction - 1);
+      }
       continue;
     }
 
@@ -49,6 +64,19 @@ export async function fetchHistory(leagueId, season = currentSeason()) {
   return matches;
 }
 
+/**
+ * Deteta a restricao de epoca dos planos gratuitos e devolve a epoca mais
+ * recente permitida, ou null quando a resposta e valida.
+ */
+function seasonRestriction(data) {
+  const errors = data?.errors;
+  if (!errors || Array.isArray(errors) || Object.keys(errors).length === 0) return null;
+
+  const message = Object.values(errors).join(' ');
+  const range = message.match(/from\s+(\d{4})\s+to\s+(\d{4})/i);
+  return range ? Number(range[2]) : null;
+}
+
 /** Lesionados e castigados por liga, indexados por equipa. */
 export async function fetchInjuries(leagueId, season = currentSeason()) {
   let data;
@@ -59,6 +87,11 @@ export async function fetchInjuries(leagueId, season = currentSeason()) {
     );
   } catch (err) {
     log.warn(`Lesoes indisponiveis (liga ${leagueId}): ${err.message}`);
+    return new Map();
+  }
+
+  if (seasonRestriction(data)) {
+    log.warn(`Liga ${leagueId}: lesoes da epoca atual fora do plano gratuito`);
     return new Map();
   }
 

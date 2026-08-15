@@ -10,6 +10,7 @@ import {
   evaluateFixture, groupFixtures, loadLeagueData,
 } from './lib/pipeline.mjs';
 import { buildMatch } from './lib/match.mjs';
+import { dataProvenance } from './lib/pipeline.mjs';
 import { readJson, writeJson } from './lib/store.mjs';
 import { upsert } from './lib/supabase.mjs';
 import { slimPick } from './lib/slim.mjs';
@@ -175,6 +176,14 @@ async function writeMeta({ startedAt, fixtures, picks, error = null }) {
       minConfidence: config.betting.minConfidence,
       kellyFraction: config.betting.kellyFraction,
       maxStakePct: config.betting.maxStakePct,
+    },
+    // O que sustentou esta analise. A app mostra-o para que ninguem tome
+    // uma previsao assente em dados de ha duas epocas por analise fresca.
+    dataUsed: {
+      ownMatches: dataProvenance.ownMatches,
+      externalMatches: dataProvenance.externalMatches,
+      externalSeasons: [...dataProvenance.externalSeasons].sort(),
+      injuriesAvailable: dataProvenance.injuryTeams > 0,
     },
     fixturesAnalysed: fixtures,
     picksPublished: picks,

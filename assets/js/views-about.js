@@ -122,6 +122,7 @@ function sourcesCard() {
   return `
   <section class="card">
     <h2 class="card__title">De onde vem os dados</h2>
+    ${dataUsed()}
     ${row('Odds', m?.sources?.odds, 'cotacoes da Betclic, via agregador licenciado')}
     ${row('Resultados e lesoes', m?.sources?.football, 'historico de jogos e ausencias')}
     ${row('Noticias', m?.sources?.news ?? 'google-news-rss', 'titulos recentes por equipa')}
@@ -132,6 +133,43 @@ function sourcesCard() {
       cotar um jogo, esse jogo nao aparece — nunca substituimos pela odd de outra casa.
     </p>
   </section>`;
+}
+
+/**
+ * Em que dados assenta a analise de hoje.
+ *
+ * O plano gratuito da API-Football nao da acesso a epoca corrente, so ate
+ * 2024. O motor contorna isso guardando os resultados dos jogos que ele
+ * proprio analisa — mas nos primeiros dias ha poucos, e ate la os ratings
+ * vem de uma epoca antiga. Isso tem de estar escrito, senao uma previsao
+ * assente em dados de 2024 passa por analise fresca.
+ */
+function dataUsed() {
+  const d = state.meta?.dataUsed;
+  if (!d) return '';
+
+  const total = (d.ownMatches ?? 0) + (d.externalMatches ?? 0);
+  if (total === 0) {
+    return `
+    <p class="detail__note" style="margin:0 0 14px">
+      <strong>Sem historico de jogos.</strong> As probabilidades sao deduzidas das
+      proprias odds — nao ha opiniao independente do mercado.
+    </p>`;
+  }
+
+  const seasons = (d.externalSeasons ?? []).join(', ');
+  const mostlyOwn = d.ownMatches >= d.externalMatches;
+
+  return `
+  <p class="detail__note" style="margin:0 0 14px">
+    <strong>${total} jogos</strong> sustentam os ratings:
+    ${d.ownMatches} recolhidos pelo proprio motor nesta epoca${
+  d.externalMatches ? ` e ${d.externalMatches} da epoca ${esc(seasons)}` : ''}.
+    ${mostlyOwn
+    ? 'Os ratings ja assentam sobretudo na epoca a decorrer.'
+    : 'Os ratings ainda assentam sobretudo em epocas anteriores, e vao ficando mais atuais a cada jogo analisado.'}
+    ${d.injuriesAvailable ? '' : 'Lesoes indisponiveis no plano atual da fonte de dados.'}
+  </p>`;
 }
 
 /* ── Limites ────────────────────────────────────────────────────────── */
