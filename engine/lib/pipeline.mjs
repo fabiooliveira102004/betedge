@@ -8,6 +8,10 @@ import { confidenceScore, devig, expectedValue, stakeFor } from './value.mjs';
 import { combineContext, dataQuality, injuryImpact, restImpact } from './context.mjs';
 import { fetchTeamNews } from './news.mjs';
 import { assessContext } from './ai.mjs';
+import {
+  buildCaveats, buildNarrative, goalsDistribution, headToHead,
+  likelyScorelines, teamForm, venueSplit, winCondition,
+} from './insight.mjs';
 import { clamp, round } from './math.mjs';
 
 /**
@@ -146,6 +150,24 @@ export function attachBaseModel(fixture, leagues) {
   });
 
   fixture.hasHistory = league.history.length > 0;
+
+  // Evidencia que o utilizador pode conferir por si. Cortada na data do
+  // jogo: usar resultados posteriores tornaria a analise impossivel de
+  // reproduzir e inflacionaria o historico.
+  const asOf = { before: fixture.kickoff };
+  fixture.form = {
+    home: teamForm(fixture.homeKey, league.history, asOf),
+    away: teamForm(fixture.awayKey, league.history, asOf),
+  };
+  fixture.split = {
+    home: venueSplit(fixture.homeKey, league.history, asOf),
+    away: venueSplit(fixture.awayKey, league.history, asOf),
+  };
+  fixture.h2h = headToHead(fixture.homeKey, fixture.awayKey, league.history, asOf);
+  fixture.elo = {
+    home: Math.round(league.ratings.get(fixture.homeKey)),
+    away: Math.round(league.ratings.get(fixture.awayKey)),
+  };
 }
 
 export async function attachContext(fixtures) {
@@ -211,6 +233,11 @@ export function evaluateFixture(fixture) {
   const matrix = scoreMatrix(fixture.lambdas.home, fixture.lambdas.away);
   const markets = deriveMarkets(matrix);
   fixture.markets = markets;
+
+  // Calculados uma vez por jogo, nao por aposta: varias apostas do mesmo
+  // jogo partilham a mesma matriz de resultados.
+  const scorelines = likelyScorelines(matrix);
+  const goalsDist = goalsDistribution(matrix);
 
   const quality = dataQuality({
     hasHistory: fixture.hasHistory,
@@ -307,6 +334,61 @@ export function evaluateFixture(fixture) {
           signals: fixture.aiAssessment.keySignals,
         }
         : null,
+
+      // --- A analise que justifica a aposta -----------------------------
+      // So viaja nas apostas ativas. Ao arquivar e retirada (ver slimPick
+      // em run.mjs), senao o historico crescia para megabytes e o
+      // telemovel tinha de o descarregar inteiro.
+      winCondition: winCondition({ market, selection, line }, fixture.home, fixture.away),
+      narrative: buildNarrative({
+        home: fixture.home,
+        away: fixture.away,
+        market,
+        selection,
+        line,
+        lambdas: fixture.lambdas,
+        modelProb,
+        fairProb,
+        impliedProb: 1 / odds,
+        odds,
+        formHome: fixture.form?.home,
+        formAway: fixture.form?.away,
+        splitHome: fixture.split?.home,
+        splitAway: fixture.split?.away,
+        h2h: fixture.h2h,
+        contextFactors: [
+          ...(fixture.context.home.factors ?? []),
+          ...(fixture.context.away.factors ?? []),
+        ],
+        aiSummary: fixture.aiAssessment,
+      }),
+      caveats: buildCaveats({
+        modelProb,
+        confidence,
+        sampleMatches: fixture.sampleMatches ?? 0,
+        hasHistory: fixture.hasHistory,
+        odds,
+      }),
+      scorelines,
+      goalsDistribution: goalsDist,
+      h2h: fixture.h2h,
+      teams: {
+        home: {
+          name: fixture.home,
+          elo: fixture.elo?.home ?? null,
+          form: fixture.form?.home ?? null,
+          split: fixture.split?.home ?? null,
+          absences: fixture.injuries.home.slice(0, 8),
+        },
+        away: {
+          name: fixture.away,
+          elo: fixture.elo?.away ?? null,
+          form: fixture.form?.away ?? null,
+          split: fixture.split?.away ?? null,
+          absences: fixture.injuries.away.slice(0, 8),
+        },
+      },
+
       demo: Boolean(fixture.demo),
       generatedAt: new Date().toISOString(),
       settled: false,

@@ -10,6 +10,7 @@ import {
 } from './lib/pipeline.mjs';
 import { readJson, writeJson } from './lib/store.mjs';
 import { upsert } from './lib/supabase.mjs';
+import { slimPick } from './lib/slim.mjs';
 import { round } from './lib/math.mjs';
 
 /**
@@ -70,7 +71,7 @@ async function persist({ fixtures, picks, startedAt }) {
   // o historico, onde ficam a espera de liquidacao. Nunca desaparecem: o
   // registo tem de incluir as que correram mal.
   const stillActive = new Set(picks.map((p) => p.id));
-  const retired = (previous.picks ?? []).filter((p) => !stillActive.has(p.id));
+  const retired = (previous.picks ?? []).filter((p) => !stillActive.has(p.id)).map(slimPick);
   const mergedHistory = dedupeById([...(history.picks ?? []), ...retired]);
 
   const clean = picks.map(({ score, ...p }) => p);

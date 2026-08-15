@@ -13,7 +13,7 @@
  *    esperar meio segundo. A cache fica como rede de seguranca.
  */
 
-const VERSION = 'betedge-v1';
+const VERSION = 'betedge-v2';
 const SHELL_CACHE = `${VERSION}-shell`;
 const DATA_CACHE = `${VERSION}-data`;
 
@@ -25,6 +25,7 @@ const SHELL = [
   './assets/js/app.js',
   './assets/js/api.js',
   './assets/js/components.js',
+  './assets/js/pick-detail.js',
   './assets/js/config.js',
   './assets/js/state.js',
   './assets/js/ui.js',

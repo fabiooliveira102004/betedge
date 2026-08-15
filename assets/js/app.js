@@ -10,6 +10,7 @@ import { renderPicks } from './views-picks.js';
 import { renderHistory } from './views-history.js';
 import { renderStats } from './views-stats.js';
 import { renderProfile, updateAvatar } from './views-profile.js';
+import { pickDetail } from './pick-detail.js';
 
 /* ── Arranque ───────────────────────────────────────────────────────── */
 
@@ -27,7 +28,7 @@ function boot() {
   subscribe(renderCurrentView);
 
   goTo(state.view, { push: false });
-  loadEverything();
+  loadEverything().then(applyRoute);
   registerServiceWorker();
 }
 
@@ -79,13 +80,27 @@ function wireNavigation() {
     tab.addEventListener('click', () => goTo(tab.dataset.view));
   }
 
-  addEventListener('hashchange', () => {
-    const view = location.hash.slice(1);
-    if (VIEWS.includes(view) && view !== state.view) goTo(view, { push: false });
-  });
+  addEventListener('hashchange', applyRoute);
+  applyRoute({ initial: true });
+}
 
-  const initial = location.hash.slice(1);
-  if (VIEWS.includes(initial)) state.view = initial;
+/**
+ * O endereco e a fonte da verdade da navegacao. A analise de uma aposta
+ * tem endereco proprio (`#pick=<id>`) para que o gesto de voltar do
+ * telemovel a feche, em vez de sair da app — que e o que acontece quando
+ * uma camada modal nao mexe no historico do browser.
+ */
+function applyRoute({ initial = false } = {}) {
+  const hash = decodeURIComponent(location.hash.slice(1));
+
+  if (hash.startsWith('pick=')) {
+    openDetail(hash.slice(5), { push: false });
+    return;
+  }
+
+  closeDetail({ pop: false });
+  const view = VIEWS.includes(hash) ? hash : state.view;
+  if (initial || view !== state.view) goTo(view, { push: false });
 }
 
 function goTo(view, { push = true } = {}) {
@@ -116,7 +131,53 @@ function renderCurrentView() {
     case 'stats': renderStats(); break;
     case 'profile': renderProfile(); break;
   }
+  // A analise aberta tem de acompanhar mudancas de estado — registar a
+  // aposta a partir dela desativa o botao sem fechar a vista.
+  if (state.openPick) renderDetail(state.openPick);
   updateAvatar();
+}
+
+/* ── Analise de uma aposta ──────────────────────────────────────────── */
+
+function findPick(id) {
+  return state.picks.find((p) => p.id === id) ?? state.history.find((p) => p.id === id) ?? null;
+}
+
+function openDetail(id, { push = true } = {}) {
+  const pick = findPick(id);
+  if (!pick) {
+    // Endereco aberto de raiz, antes de os dados chegarem: loadEverything
+    // volta a aplicar a rota quando terminar.
+    if (!state.loading) toast('Aposta nao encontrada.', 'error');
+    return;
+  }
+
+  state.openPick = id;
+  if (push) location.hash = `pick=${encodeURIComponent(id)}`;
+
+  renderDetail(id);
+  $('#detail-root').hidden = false;
+  document.body.style.overflow = 'hidden';
+  $('#detail-body').scrollTop = 0;
+  $('#detail-body').focus({ preventScroll: true });
+}
+
+function renderDetail(id) {
+  const pick = findPick(id);
+  if (!pick) return;
+  $('#detail-body').innerHTML = pickDetail(pick, {
+    bankroll: Number(state.profile?.bankroll) || 100,
+    tracked: state.bets.some((b) => b.pick_id === id),
+  });
+}
+
+function closeDetail({ pop = true } = {}) {
+  if (!state.openPick) return;
+  state.openPick = null;
+  $('#detail-root').hidden = true;
+  $('#detail-body').innerHTML = '';
+  document.body.style.overflow = '';
+  if (pop) history.back();
 }
 
 /* ── Acoes ──────────────────────────────────────────────────────────── */
@@ -136,6 +197,10 @@ function wireGlobalActions() {
     toast('Dados atualizados', 'ok', 1800);
   });
 
+  addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && state.openPick) closeDetail();
+  });
+
   $('#account-btn')?.addEventListener('click', () => goTo('profile'));
   $('#edit-bankroll')?.addEventListener('click', () => goTo('profile'));
   $('#history-more')?.addEventListener('click', () => {
@@ -144,14 +209,6 @@ function wireGlobalActions() {
 }
 
 async function onClick(event) {
-  const why = event.target.closest('.why__toggle');
-  if (why) {
-    const expanded = why.getAttribute('aria-expanded') === 'true';
-    why.setAttribute('aria-expanded', String(!expanded));
-    $(`#${CSS.escape(why.getAttribute('aria-controls'))}`).hidden = expanded;
-    return;
-  }
-
   const chip = event.target.closest('[data-league]');
   if (chip) {
     setState({ league: chip.dataset.league });
@@ -193,6 +250,14 @@ async function handleAction(action, el) {
 
     case 'open-filters':
       goTo('profile');
+      break;
+
+    case 'open-detail':
+      openDetail(el.dataset.pickId);
+      break;
+
+    case 'close-detail':
+      closeDetail();
       break;
 
     case 'track':

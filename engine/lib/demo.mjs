@@ -71,8 +71,7 @@ export function demoOdds(now = new Date()) {
     for (let k = 0; k + 1 < Math.min(shuffled.length, 8); k += 2) {
       const [home, eloH] = shuffled[k];
       const [away, eloA] = shuffled[k + 1];
-      const kickoff = new Date(now.getTime() + (1 + Math.floor(random() * config.horizonDays)) * 86400000);
-      kickoff.setUTCHours(19, 0, 0, 0);
+      const kickoff = nextKickoffSlot(now, 1 + Math.floor(random() * config.horizonDays), random);
 
       const sup = (eloH - eloA) / 100 * 0.34 + 0.22;
       const lh = Math.max(0.35, 1.42 + sup / 2);
@@ -141,6 +140,27 @@ function syntheticMarket(fixture, lh, la, random) {
   for (const g of bttsGroup) out.push({ fixture, market: 'btts', line: null, groupKey: 'btts', group: bttsGroup, ...g });
 
   return out;
+}
+
+/**
+ * Horario plausivel para um jogo.
+ *
+ * Sem isto todos os jogos ficavam as 19:00 em dias aleatorios, o que da de
+ * imediato a sensacao de dados inventados. O futebol joga-se ao fim de
+ * semana a tarde e a meio da semana a noite — respeitar isso faz a
+ * demonstracao parecer o que vai aparecer quando houver dados reais.
+ */
+function nextKickoffSlot(now, daysAhead, random) {
+  const d = new Date(now.getTime() + daysAhead * 86400000);
+  const weekday = d.getUTCDay(); // 0 = domingo
+
+  const slots = weekday === 0 || weekday === 6
+    ? [15, 17, 19]   // fim de semana: tarde e inicio da noite
+    : [18, 20];      // meio da semana: so a noite
+
+  const hour = slots[Math.floor(random() * slots.length)];
+  d.setUTCHours(hour, random() < 0.5 ? 0 : 30, 0, 0);
+  return d;
 }
 
 const pois = (k, l) => (l ** k) * Math.exp(-l) / factorial(k);

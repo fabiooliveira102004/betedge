@@ -27,6 +27,9 @@ export const state = {
   resultFilter: 'all',
   historyShown: 0,
 
+  // Aposta cuja analise esta aberta, se alguma.
+  openPick: null,
+
   loading: true,
   error: null,
   offline: !navigator.onLine,

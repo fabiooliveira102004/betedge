@@ -6,6 +6,7 @@ import { profitUnits, settleBet } from './lib/value.mjs';
 import { readJson, writeJson } from './lib/store.mjs';
 import { patch, upsert } from './lib/supabase.mjs';
 import { computeStats, simulateScore } from './lib/stats.mjs';
+import { slimPick } from './lib/slim.mjs';
 import { round } from './lib/math.mjs';
 
 /**
@@ -56,6 +57,7 @@ async function main() {
   const stillUpcoming = (current.picks ?? []).filter((p) => new Date(p.kickoff) >= now);
   const archived = all
     .filter((p) => new Date(p.kickoff) < now)
+    .map(slimPick)
     .sort((a, b) => new Date(b.kickoff) - new Date(a.kickoff));
 
   await writeJson('picks.json', { ...current, count: stillUpcoming.length, picks: stillUpcoming });

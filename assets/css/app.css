@@ -462,6 +462,22 @@ button { font: inherit; color: inherit; }
 .pick[data-result="loss"]::before { background: var(--loss); }
 .pick[data-result="push"]::before { background: var(--text-faint); }
 
+/* O cartao inteiro abre a analise. Um botao a envolver o conteudo, em vez
+   de um link "ver mais", da um alvo tactil enorme e um so ponto de entrada. */
+.pick__open {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  text-align: start;
+  cursor: pointer;
+  color: inherit;
+  font: inherit;
+}
+.pick__open:hover .pick__teams { color: var(--accent); }
+.pick__open:focus-visible { outline-offset: -3px; }
+
 .pick__top {
   display: flex;
   align-items: center;
@@ -484,7 +500,18 @@ button { font: inherit; color: inherit; }
   font-weight: 650;
   letter-spacing: -0.02em;
   line-height: 1.35;
+  transition: color .16s var(--ease);
 }
+
+/* A condicao de vitoria em portugues corrente, antes de qualquer numero.
+   E a unica linha do cartao que se percebe sem saber o que e uma odd. */
+.pick__plain {
+  margin: 10px 16px 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--text-dim);
+}
+.pick__plain strong { color: var(--text); font-weight: 650; }
 .pick__vs { color: var(--text-faint); font-weight: 500; margin-inline: 5px; }
 
 .pick__bet {
@@ -586,10 +613,20 @@ button { font: inherit; color: inherit; }
 .pick__foot {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   padding: 10px 14px 12px 16px;
   border-top: 1px solid var(--border);
 }
+
+.pick__stake {
+  flex: 1;
+  min-width: 0;
+  font-size: 12.5px;
+  line-height: 1.4;
+  color: var(--text-dim);
+}
+.pick__stake strong { color: var(--text); font-weight: 700; }
+.pick__arrow { color: var(--text-faint); margin-inline: 2px; }
 
 .result-tag {
   display: inline-flex;
@@ -616,69 +653,6 @@ button { font: inherit; color: inherit; }
 .pnl--pos { color: var(--win); }
 .pnl--neg { color: var(--loss); }
 .pnl--flat { color: var(--text-faint); }
-
-/* ── Detalhe expansivel ─────────────────────────────────────────────── */
-.why { border-top: 1px solid var(--border); }
-.why__toggle {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  width: 100%;
-  min-height: 42px;
-  padding: 0 14px 0 16px;
-  border: 0;
-  background: transparent;
-  color: var(--text-dim);
-  font-size: 12.5px;
-  font-weight: 600;
-  text-align: start;
-  cursor: pointer;
-}
-.why__toggle:hover { color: var(--text); }
-.why__toggle svg { width: 15px; height: 15px; margin-inline-start: auto; transition: rotate .2s var(--ease); }
-.why__toggle[aria-expanded="true"] svg { rotate: 180deg; }
-
-.why__panel { padding: 0 16px 14px; display: flex; flex-direction: column; gap: 10px; }
-.why__panel[hidden] { display: none; }
-
-.why__row {
-  display: flex;
-  gap: 9px;
-  font-size: 12.5px;
-  line-height: 1.45;
-  color: var(--text-dim);
-}
-.why__icon { flex: 0 0 auto; width: 15px; height: 15px; margin-top: 2px; color: var(--text-faint); }
-.why__row strong { color: var(--text); font-weight: 600; }
-
-.why__note {
-  padding: 9px 11px;
-  border-radius: var(--r-sm);
-  background: var(--surface-2);
-  font-size: 12.5px;
-  line-height: 1.5;
-  color: var(--text-dim);
-}
-
-/* Nome a esquerda, numero a direita: os dois valores ficam alinhados em
-   coluna e a diferenca entre equipas le-se sem os comparar digito a digito. */
-.xg {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  margin-top: 4px;
-  max-width: 240px;
-}
-.xg__row {
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-}
-.xg__row b {
-  font-family: var(--font-num);
-  font-variant-numeric: tabular-nums;
-  color: var(--text);
-}
 
 /* ── Estatisticas ───────────────────────────────────────────────────── */
 .tiles {
@@ -831,6 +805,307 @@ input[type="range"]::-moz-range-thumb {
 }
 .row-between + .row-between { margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--border); }
 
+/* ── Vista de analise ───────────────────────────────────────────────── */
+
+.detail-root {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  animation: slide-in .26s var(--ease);
+}
+.detail-root[hidden] { display: none; }
+
+@keyframes slide-in { from { translate: 100% 0; } }
+
+.detail-bar {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: env(safe-area-inset-top) 12px 0;
+  height: calc(var(--appbar-h) + env(safe-area-inset-top));
+  border-bottom: 1px solid var(--border);
+  background: var(--bg);
+}
+.detail-bar__title {
+  font-size: 15px;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+}
+
+.detail-scroll {
+  flex: 1;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+}
+.detail-scroll:focus { outline: none; }
+
+.detail {
+  max-width: var(--shell);
+  margin-inline: auto;
+  padding: 20px var(--gutter) calc(40px + env(safe-area-inset-bottom));
+}
+
+.detail__head { margin-bottom: 16px; }
+.detail__league {
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+.detail__match {
+  margin-top: 5px;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  line-height: 1.2;
+}
+.detail__match span { color: var(--text-faint); font-weight: 500; }
+.detail__when { margin-top: 5px; font-size: 13px; color: var(--text-dim); }
+
+.detail__hero {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 15px 16px;
+  border: 1px solid var(--accent-line);
+  border-radius: var(--r-lg);
+  background: var(--accent-soft);
+}
+.detail__hero > div:first-child { flex: 1; min-width: 0; }
+.detail__label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.detail__bet {
+  margin-top: 3px;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+.detail__market { margin-top: 2px; font-size: 11.5px; color: var(--text-dim); }
+.detail__odds { display: flex; flex-direction: column; align-items: flex-end; }
+
+.detail__section {
+  margin-top: 26px;
+  padding-top: 22px;
+  border-top: 1px solid var(--border);
+}
+.detail__section--risk {
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  background: var(--surface);
+}
+
+.detail__title {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  margin-bottom: 12px;
+}
+.detail__subtitle {
+  margin: 22px 0 10px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+.detail__prose {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: var(--text-dim);
+}
+.detail__prose + .detail__prose { margin-top: 11px; }
+.detail__note {
+  margin-top: 9px;
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: var(--text-faint);
+}
+.detail__note strong { color: var(--text-dim); }
+
+/* Ganhas / perdes: dois blocos com peso visual igual, porque a hipotese de
+   perder e sempre a maior das duas. */
+.cond {
+  display: flex;
+  gap: 11px;
+  padding: 12px 14px;
+  border-radius: var(--r-md);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  font-size: 14px;
+  line-height: 1.5;
+}
+.cond + .cond { margin-top: 8px; }
+.cond__tag {
+  flex: 0 0 auto;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  padding-top: 3px;
+}
+.cond--win  { border-color: color-mix(in srgb, var(--win) 40%, transparent); }
+.cond--win  .cond__tag { color: var(--win); }
+.cond--loss { border-color: color-mix(in srgb, var(--loss) 40%, transparent); }
+.cond--loss .cond__tag { color: var(--loss); }
+.cond--flat .cond__tag { color: var(--text-dim); }
+
+.money {
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  overflow: hidden;
+}
+.money__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 11px 14px;
+  font-size: 13.5px;
+  background: var(--surface);
+}
+.money__row + .money__row { border-top: 1px solid var(--border); }
+.money__row strong { font-size: 15px; }
+.money + .detail__note + .btn { margin-top: 14px; }
+
+.xgbar + .xgbar { margin-top: 12px; }
+.xgbar__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 5px;
+  font-size: 13.5px;
+}
+
+/* Histograma do total de golos. Colunas em vez de barras horizontais
+   porque o eixo e uma contagem ordenada: 0, 1, 2, 3... */
+.hist {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  gap: 6px;
+  align-items: end;
+  height: 110px;
+  padding-top: 4px;
+}
+.hist__col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  gap: 4px;
+}
+.hist__bar {
+  width: 100%;
+  border-radius: 4px 4px 2px 2px;
+  background: var(--accent);
+  min-height: 3px;
+}
+.hist__pct { font-size: 10.5px; color: var(--text-dim); }
+.hist__label {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-faint);
+  padding-top: 3px;
+  border-top: 1px solid var(--border);
+  width: 100%;
+  text-align: center;
+}
+
+.scorelines {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.scorelines::-webkit-scrollbar { display: none; }
+.scoreline {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  min-width: 62px;
+  padding: 9px 10px;
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  background: var(--surface);
+}
+.scoreline__score { font-size: 15px; font-weight: 700; }
+.scoreline__pct { font-size: 11px; color: var(--text-dim); }
+
+.team {
+  padding: 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  background: var(--surface);
+}
+.team + .team { margin-top: 10px; }
+.team__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 14.5px;
+}
+.team__head .detail__note { margin: 0; }
+.team__form { display: flex; gap: 4px; margin-top: 10px; }
+
+/* Resultado por inicial (V/E/D) e nao so por cor: em daltonismo o verde e
+   o vermelho aproximam-se demasiado. */
+.form-chip {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  background: var(--surface-3);
+  color: var(--text-dim);
+}
+.form-chip--w { background: var(--win-soft);  color: var(--win); }
+.form-chip--l { background: var(--loss-soft); color: var(--loss); }
+
+.h2h { list-style: none; margin: 0; padding: 0; }
+.h2h__row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 9px 0;
+  font-size: 13.5px;
+}
+.h2h__row + .h2h__row { border-top: 1px solid var(--border); }
+.h2h__row .detail__note { margin: 0; }
+
+.cmp + .cmp { margin-top: 12px; }
+.cmp__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 5px;
+  font-size: 13.5px;
+}
+.bar__fill--muted { background: var(--border-strong); }
+
 /* ── Bottom sheet ───────────────────────────────────────────────────── */
 .sheet-root { position: fixed; inset: 0; z-index: 60; }
 .sheet-root[hidden] { display: none; }
@@ -907,6 +1182,36 @@ input[type="range"]::-moz-range-thumb {
 }
 .toast--error { border-color: var(--loss); color: var(--loss); }
 .toast--ok    { border-color: var(--accent-line); }
+
+/* Aviso destacado no topo de uma lista. Fundo ambar em vez de lima: o
+   lima significa "vantagem" em toda a app e nao pode significar tambem
+   "atencao". */
+.notice {
+  padding: 15px 16px;
+  border: 1px solid color-mix(in srgb, var(--wait) 42%, transparent);
+  border-radius: var(--r-lg);
+  background: var(--wait-soft);
+}
+.notice__title {
+  font-size: 14.5px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--wait);
+  margin-bottom: 7px;
+}
+.notice__text {
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--text-dim);
+}
+.notice__text + .notice__text { margin-top: 9px; }
+.notice code {
+  font-family: var(--font-num);
+  font-size: 12px;
+  padding: 1px 5px;
+  border-radius: 4px;
+  background: var(--surface-2);
+}
 
 /* ── Estados ────────────────────────────────────────────────────────── */
 .empty {

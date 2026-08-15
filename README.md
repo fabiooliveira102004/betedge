@@ -105,6 +105,32 @@ Em **Settings → Secrets and variables → Actions → Variables**:
 
 ---
 
+## O que cada aposta explica
+
+Uma aposta sem explicacao e um palpite. Toca num cartao e abre-se a analise
+completa, pela ordem das perguntas que se fazem antes de apostar:
+
+| Seccao | Responde a |
+|---|---|
+| **O que tem de acontecer** | Ganhas se… / Perdes se…, em portugues corrente |
+| **Quanto apostar** | stake, retorno se ganhar, perda se perder, e porque e esse valor |
+| **Porque esta aposta** | a cadeia de raciocinio em texto: dos golos marcados e sofridos ate a vantagem |
+| **Golos esperados** | quantos golos para cada equipa, probabilidade por total de golos, resultados mais provaveis |
+| **As equipas** | forma dos ultimos jogos, medias em casa e fora, Elo, ausencias |
+| **Confrontos diretos** | resultados anteriores entre as duas |
+| **Onde esta a vantagem** | o que a odd implica, o preco justo sem margem, e o que o modelo calcula |
+| **O que pode correr mal** | com que frequencia esta aposta perde, e que dados faltam |
+
+A narrativa nao e gerada por IA: sao os mesmos numeros que o modelo usou,
+traduzidos para portugues. Se o modelo mudar, a explicacao muda com ele — nunca
+podem contradizer-se.
+
+> A Betclic paga 1.88, que implica 53%; retirada a margem da casa, o preco justo
+> do mercado e 50%. A diferenca de 14,1 pontos percentuais e a vantagem — e a
+> razao pela qual esta aposta aparece e as outras nao.
+
+---
+
 ## Como o modelo decide
 
 ### 1. Quantos golos se esperam
@@ -175,13 +201,18 @@ Acertar 55% das apostas não diz nada sem saber a que odds; a calibração diz.
 
 ```
 index.html, assets/       app (PWA sem passo de build)
+  └── js/pick-detail.js   a analise completa de uma aposta
 data/*.json               análises publicadas — a "API" da app
 engine/                   motor de análise (Node)
   ├── config.mjs          limites e ligas
   ├── run.mjs             analisar e publicar
   ├── settle.mjs          verificar resultados
   ├── seed.mjs            histórico de demonstração
-  └── lib/                modelo, valor, fontes de dados
+  └── lib/
+      ├── model.mjs       Dixon-Coles
+      ├── value.mjs       margem, vantagem, Kelly
+      ├── insight.mjs     forma, confrontos, narrativa, avisos
+      └── ...             fontes de dados
 supabase/schema.sql       tabelas, RLS e automatismos
 .github/workflows/        análise agendada e publicação
 ```

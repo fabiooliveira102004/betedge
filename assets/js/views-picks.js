@@ -59,9 +59,34 @@ export function renderPicks() {
   const tracked = trackedPickIds();
   const money = bankroll();
 
-  render(host, list
+  render(host, demoNotice() + list
     .map((pick) => pickCard(pick, { bankroll: money, tracked: tracked.has(pick.id) }))
     .join(''));
+}
+
+/**
+ * Sem chave de cotacoes o motor inventa jogos para a app ter o que mostrar.
+ * Esses jogos usam nomes de clubes reais, o que os torna faceis de confundir
+ * com o calendario verdadeiro — por isso o aviso e explicito sobre o que
+ * esta errado (as datas e os emparelhamentos) e sobre como corrigir.
+ */
+function demoNotice() {
+  if (!state.meta?.demo) return '';
+  return `
+  <aside class="notice">
+    <h2 class="notice__title">Estes jogos nao sao reais</h2>
+    <p class="notice__text">
+      Os emparelhamentos, as datas e as odds foram gerados para veres a app a funcionar.
+      Nenhum destes jogos esta no calendario, e nenhuma destas odds esta na Betclic.
+      A analise e que e a verdadeira: o modelo, os calculos e as explicacoes sao os mesmos
+      que vais ver com dados a serio.
+    </p>
+    <p class="notice__text">
+      Para passar a jogos reais, cria uma chave gratuita em
+      <strong>the-odds-api.com</strong> e adiciona-a ao repositorio como
+      <code>ODDS_API_KEY</code>. Na execucao seguinte este aviso desaparece sozinho.
+    </p>
+  </aside>`;
 }
 
 function renderLeagueFilters() {

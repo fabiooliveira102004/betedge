@@ -59,7 +59,7 @@
     Sem ligacao — a mostrar os ultimos dados guardados.
   </div>
   <div class="banner banner--demo" id="demo-banner" role="status" hidden>
-    <strong>Modo demonstracao</strong> — dados gerados, nao reais.
+    <strong>Jogos de exemplo</strong> — nao correspondem a jogos reais.
   </div>
 </header>
 
@@ -189,6 +189,23 @@
 </nav>
 
 <!-- ══ Camadas ═════════════════════════════════════════════════════════ -->
+
+<!-- Analise completa de uma aposta. E uma vista propria, com o seu proprio
+     endereco, para que o botao "voltar" do telemovel a feche em vez de sair
+     da app. -->
+<div class="detail-root" id="detail-root" hidden>
+  <header class="detail-bar">
+    <button type="button" class="icon-btn" data-action="close-detail" aria-label="Voltar as apostas">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+    <span class="detail-bar__title">Analise</span>
+  </header>
+  <div class="detail-scroll" id="detail-body" tabindex="-1"></div>
+</div>
+
 <div class="sheet-root" id="sheet-root" hidden>
   <div class="sheet__scrim" data-close-sheet></div>
   <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title">

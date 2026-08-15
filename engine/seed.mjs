@@ -7,6 +7,7 @@ import {
 import { profitUnits, settleBet } from './lib/value.mjs';
 import { computeStats, simulateScore } from './lib/stats.mjs';
 import { writeJson } from './lib/store.mjs';
+import { slimPick } from './lib/slim.mjs';
 import { config } from './config.mjs';
 import { round } from './lib/math.mjs';
 
@@ -48,7 +49,7 @@ async function main() {
       if (new Date(pick.kickoff) >= today) continue;
       if (collected.has(pick.id)) continue;
       pick.generatedAt = asOf.toISOString();
-      collected.set(pick.id, pick);
+      collected.set(pick.id, slimPick(pick));
     }
   }
 
