@@ -88,6 +88,22 @@ async function persist({ fixtures, matches, picks, startedAt }) {
   const previous = await readJson('picks.json', { picks: [] });
   const history = await readJson('history.json', { picks: [] });
 
+  // Dados de exemplo nunca podem substituir analise real.
+  //
+  // Correr o motor sem chaves — para experimentar ou para gerar dados de
+  // demonstracao — produzia jogos inventados que iam por cima da ultima
+  // analise verdadeira. Basta acontecer uma vez, num commit distraido, para
+  // a app passar a mostrar jogos que nao existem sem ninguem perceber
+  // porque.
+  if (isDemo()) {
+    const publicado = await readJson('meta.json', null);
+    if (publicado && publicado.demo === false) {
+      log.error('Ja existe analise real publicada. O modo de exemplo nao a substitui.');
+      log.error(`(gerada em ${publicado.generatedAt}; usa DEMO_OVERWRITE=1 se e mesmo isso que queres)`);
+      if (process.env.DEMO_OVERWRITE !== '1') return;
+    }
+  }
+
   // Apostas publicadas antes que ja nao aparecem nesta execucao passam para
   // o historico, onde ficam a espera de liquidacao. Nunca desaparecem: o
   // registo tem de incluir as que correram mal.

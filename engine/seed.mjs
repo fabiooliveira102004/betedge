@@ -6,7 +6,7 @@ import {
 } from './lib/pipeline.mjs';
 import { profitUnits, settleBet } from './lib/value.mjs';
 import { computeStats, simulateScore } from './lib/stats.mjs';
-import { writeJson } from './lib/store.mjs';
+import { readJson, writeJson } from './lib/store.mjs';
 import { slimPick } from './lib/slim.mjs';
 import { buildMatch } from './lib/match.mjs';
 import { mergeResults, toResult, verdictAccuracy } from './lib/results.mjs';
@@ -26,6 +26,15 @@ import { round } from './lib/math.mjs';
 const DAYS = Number(process.argv[2]) || 45;
 
 async function main() {
+  // Pela mesma razao que em run.mjs: o historico de exemplo nao pode apagar
+  // resultados reais ja registados.
+  const publicado = await readJson('meta.json', null);
+  if (publicado && publicado.demo === false && process.env.DEMO_OVERWRITE !== '1') {
+    log.error('Ja existe analise real publicada. O historico de exemplo nao a substitui.');
+    log.error('(usa DEMO_OVERWRITE=1 para forcar)');
+    return;
+  }
+
   log.step(`Historico simulado dos ultimos ${DAYS} dias`);
 
   const today = new Date();
