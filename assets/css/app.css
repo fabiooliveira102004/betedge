@@ -1200,3 +1200,160 @@ button { font: inherit; color: inherit; }
 }
 .notice__summary::-webkit-details-marker { display: none; }
 .notice[open] .notice__summary { margin-bottom: 8px; }
+
+/* ── Explicacao antes do quadro ─────────────────────────────────────── */
+
+.explainer {
+  padding: 13px 15px;
+  margin-bottom: 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  background: var(--surface-2);
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--text-dim);
+}
+.explainer p + p { margin-top: 8px; }
+.explainer strong { color: var(--text); font-weight: 650; }
+
+/* ── Opcao de mercado ───────────────────────────────────────────────── */
+
+.sel {
+  padding: 12px 0;
+  border-top: 1px solid var(--border);
+}
+.sel:first-of-type { border-top: 0; }
+
+.sel__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+.sel__label { font-size: 14.5px; font-weight: 600; letter-spacing: -0.015em; }
+.sel__odds { flex: 0 0 auto; text-align: end; line-height: 1.15; }
+.sel__odds b { display: block; font-size: 20px; font-weight: 700; letter-spacing: -0.03em; }
+.sel__odds small {
+  display: block;
+  margin-top: 1px;
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+/* As duas leituras da mesma probabilidade, lado a lado. E a comparacao
+   inteira da app reduzida a uma linha. */
+.sel__compare {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 9px;
+  padding: 9px 11px;
+  border-radius: var(--r-sm);
+  background: var(--surface-2);
+}
+.sel__side { display: flex; flex-direction: column; line-height: 1.2; }
+.sel__side i {
+  font-style: normal;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+.sel__side b { font-size: 16px; font-weight: 700; letter-spacing: -0.02em; }
+.sel__side--model b { color: var(--accent); }
+.sel__arrow { font-size: 11px; color: var(--text-faint); }
+
+.verdict-chip {
+  margin-inline-start: auto;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+.verdict-chip--value { background: var(--accent-soft); color: var(--accent); }
+.verdict-chip--neg   { background: var(--loss-soft); color: var(--loss); }
+.verdict-chip--flat  { background: var(--surface-3); color: var(--text-dim); }
+
+.sel__note { margin-top: 7px; font-size: 12px; color: var(--text-faint); }
+
+/* ── Jogos anteriores ───────────────────────────────────────────────── */
+
+.team__record {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 10px 0 12px;
+}
+.rec {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 3px;
+  padding: 3px 9px;
+  border-radius: 999px;
+  font-family: var(--font-num);
+  font-size: 13px;
+  font-weight: 700;
+}
+.rec i { font-style: normal; font-size: 10px; opacity: .75; }
+.rec--w { background: var(--win-soft);  color: var(--win); }
+.rec--d { background: var(--surface-3); color: var(--text-dim); }
+.rec--l { background: var(--loss-soft); color: var(--loss); }
+.team__record .detail__note { margin: 0; }
+
+.games { list-style: none; margin: 0; padding: 0; }
+
+/* Cada jogo tem barra de cor, inicial do resultado e o resultado escrito.
+   Tres sinais em vez de um: com daltonismo a cor sozinha nao chega. */
+.game {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0 8px 10px;
+  border-inline-start: 3px solid var(--border-strong);
+  border-radius: 0 var(--r-sm) var(--r-sm) 0;
+}
+.game + .game { margin-top: 3px; }
+.game--w { border-inline-start-color: var(--win); background: color-mix(in srgb, var(--win) 6%, transparent); }
+.game--l { border-inline-start-color: var(--loss); background: color-mix(in srgb, var(--loss) 6%, transparent); }
+.game--d { background: var(--surface-2); }
+
+.game__badge {
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  background: var(--surface-3);
+  color: var(--text-dim);
+}
+.game--w .game__badge { background: var(--win);  color: var(--bg); }
+.game--l .game__badge { background: var(--loss); color: var(--bg); }
+
+.game__info { flex: 1; min-width: 0; display: flex; flex-direction: column; line-height: 1.25; }
+.game__opponent {
+  font-size: 13.5px;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.game__venue { font-size: 11px; color: var(--text-faint); }
+.game__score { flex: 0 0 auto; font-size: 14px; font-weight: 700; letter-spacing: -0.02em; }
+
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}

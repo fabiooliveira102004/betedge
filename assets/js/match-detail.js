@@ -103,45 +103,76 @@ function marketTable(match) {
     <div class="market">
       <div class="market__head">
         <h4 class="market__title">${esc(m.label)}</h4>
-        <span class="detail__note">margem ${esc(fmtPct(m.overround, 1))}</span>
+        <span class="detail__note">${esc(m.hint)}</span>
       </div>
-      <p class="detail__note" style="margin:0 0 10px">${esc(m.hint)}</p>
-
-      <div class="mrow mrow--head" aria-hidden="true">
-        <span>Opcao</span>
-        <span class="num">Odd</span>
-        <span class="num">Modelo</span>
-        <span class="num">Dif.</span>
-      </div>
-
-      ${m.selections.map(selectionRow).join('')}
+      ${m.selections.map(selectionBlock).join('')}
     </div>`).join('');
 
   return `
   <section class="detail__section">
-    <h3 class="detail__title">O que a casa paga, o que o modelo calcula</h3>
-    <p class="detail__note" style="margin-top:0">
-      <strong>Odd</strong> e o preco da Betclic. <strong>Modelo</strong> e a probabilidade
-      que o algoritmo calcula. <strong>Dif.</strong> e a distancia entre o modelo e o preco
-      justo do mercado — positivo significa que a odd esta generosa para o risco real.
-    </p>
+    <h3 class="detail__title">Cada opcao, ao preco da casa</h3>
+
+    <!-- A explicacao vem antes do quadro e nao usa jargao. Sem ela, "odd",
+         "modelo" e "diferenca" sao tres numeros sem significado para quem
+         nunca comparou um preco com uma probabilidade. -->
+    <div class="explainer">
+      <p><strong>Uma odd e uma probabilidade disfarcada.</strong>
+      Uma odd de 2.00 quer dizer que a casa conta com aquilo a acontecer
+      1 vez em 2 — ou seja, 50%. Uma odd de 4.00 quer dizer 1 vez em 4, 25%.</p>
+      <p>Em baixo esta essa percentagem ao lado da que o modelo calcula.
+      Se o modelo da <strong>mais</strong> hipoteses do que o preco sugere, a odd
+      esta generosa. Se da <strong>menos</strong>, esta cara.</p>
+    </div>
+
     ${blocks}
   </section>`;
 }
 
-function selectionRow(s) {
+/**
+ * Uma opcao de aposta, em duas linhas: o que e e quanto paga; depois a
+ * comparacao entre as duas leituras da mesma coisa.
+ */
+function selectionBlock(s) {
   const edge = s.edge ?? 0;
-  const tone = s.isValue ? 'value' : edge > 0 ? 'pos' : edge < -0.03 ? 'neg' : 'flat';
+
+  const verdict = s.isValue ? { label: 'generosa', tone: 'value' }
+    : edge < -0.04 ? { label: 'cara', tone: 'neg' }
+      : { label: 'justa', tone: 'flat' };
+
+  // A odd de referencia pode nao ser da Betclic: ela nao cota todos os
+  // mercados. Dizer de que casa e evita que o utilizador va procurar na
+  // Betclic um preco que nao existe la.
+  const isBetclic = s.oddsBook === 'betclic_fr' || s.oddsBook === 'betclic';
+  const bookNote = isBetclic ? 'Betclic' : `melhor: ${s.oddsBook ?? 'mercado'}`;
+
+  const better = s.betclicOdds && s.bestOdds && s.bestOdds > s.betclicOdds * 1.02
+    ? `Ha ${s.bestOdds.toFixed(2)} noutra casa (${esc(s.bestBook)}).`
+    : '';
 
   return `
-    <div class="mrow mrow--${tone}">
-      <span class="mrow__label">
-        ${esc(s.label)}
-        ${s.isValue ? '<span class="tag tag--value tag--sm">valor</span>' : ''}
-      </span>
-      <span class="mrow__odds num">${s.odds.toFixed(2)}</span>
-      <span class="mrow__model num">${s.modelProb == null ? '—' : esc(fmtPct(s.modelProb, 0))}</span>
-      <span class="mrow__edge num">${s.edge == null ? '—' : esc(fmtSigned(s.edge, 1))}</span>
+    <div class="sel sel--${verdict.tone}">
+      <div class="sel__top">
+        <span class="sel__label">${esc(s.label)}</span>
+        <span class="sel__odds">
+          <b class="num">${s.odds.toFixed(2)}</b>
+          <small>${esc(bookNote)}</small>
+        </span>
+      </div>
+
+      <div class="sel__compare">
+        <span class="sel__side">
+          <i>A casa da</i>
+          <b class="num">${esc(fmtPct(s.fairProb, 0))}</b>
+        </span>
+        <span class="sel__arrow" aria-hidden="true">vs</span>
+        <span class="sel__side sel__side--model">
+          <i>O modelo da</i>
+          <b class="num">${s.modelProb == null ? '—' : esc(fmtPct(s.modelProb, 0))}</b>
+        </span>
+        <span class="verdict-chip verdict-chip--${verdict.tone}">${verdict.label}</span>
+      </div>
+
+      ${better ? `<p class="sel__note">${better}</p>` : ''}
     </div>`;
 }
 
@@ -260,25 +291,17 @@ function teams(match) {
   </section>`;
 }
 
+const RESULT = {
+  W: { letter: 'V', word: 'Vitoria', cls: 'w' },
+  D: { letter: 'E', word: 'Empate', cls: 'd' },
+  L: { letter: 'D', word: 'Derrota', cls: 'l' },
+};
+
 function teamBlock(team, venue) {
   if (!team) return '';
   const split = venue === 'em casa' ? team.split?.home : team.split?.away;
-
-  const games = team.form?.games ?? [];
-  const chips = games.length
-    // Do mais antigo para o mais recente: le-se como uma linha do tempo.
-    ? [...games].reverse().map((g) => `
-        <span class="form-chip form-chip--${g.result.toLowerCase()}"
-              title="${esc(g.atHome ? 'casa' : 'fora')} vs ${esc(g.opponent)}: ${g.scored}-${g.conceded}">
-          ${g.result === 'W' ? 'V' : g.result === 'D' ? 'E' : 'D'}
-        </span>`).join('')
-    : '<span class="detail__note">sem jogos registados</span>';
-
-  const recent = games.slice(0, 5).map((g) => `
-    <li class="h2h__row">
-      <span>${esc(g.atHome ? 'casa' : 'fora')} vs ${esc(g.opponent)}</span>
-      <span class="num">${g.scored}–${g.conceded}</span>
-    </li>`).join('');
+  const form = team.form;
+  const games = form?.games ?? [];
 
   return `
   <div class="team">
@@ -287,7 +310,20 @@ function teamBlock(team, venue) {
       <span class="detail__note">${esc(venue)}${team.elo ? ` · Elo ${team.elo}` : ''}</span>
     </div>
 
-    <div class="team__form">${chips}</div>
+    ${games.length ? `
+      <p class="team__record">
+        <span class="rec rec--w">${form.wins}<i>V</i></span>
+        <span class="rec rec--d">${form.draws}<i>E</i></span>
+        <span class="rec rec--l">${form.losses}<i>D</i></span>
+        <span class="detail__note">nos ultimos ${form.played} jogos</span>
+      </p>
+
+      <!-- Cada jogo numa linha propria, com a inicial do resultado e a cor.
+           Antes eram so quadradinhos coloridos: nao se percebia contra quem,
+           nem em que resultado, nem sequer qual tinha sido ganho. -->
+      <ul class="games">
+        ${games.map(gameRow).join('')}
+      </ul>` : '<p class="detail__note">Sem jogos anteriores registados.</p>'}
 
     ${split ? `
       <p class="detail__note">
@@ -296,14 +332,29 @@ function teamBlock(team, venue) {
         sofre <strong class="num">${split.concededAvg.toFixed(2)}</strong> golos por jogo.
       </p>` : ''}
 
-    ${recent ? `<ul class="h2h" style="margin-top:8px">${recent}</ul>` : ''}
-
     ${team.absences?.length ? `
       <p class="detail__note">
         <strong>Ausencias:</strong>
         ${team.absences.map((a) => esc(`${a.player}${a.position ? ` (${a.position})` : ''}`)).join(', ')}.
       </p>` : ''}
   </div>`;
+}
+
+function gameRow(g) {
+  const r = RESULT[g.result] ?? RESULT.D;
+  const date = new Date(g.date).toLocaleDateString('pt-PT', { day: '2-digit', month: 'short' });
+
+  return `
+    <li class="game game--${r.cls}">
+      <span class="game__badge" aria-hidden="true">${r.letter}</span>
+      <span class="game__info">
+        <span class="game__opponent">${esc(g.opponent)}</span>
+        <span class="game__venue">${g.atHome ? 'em casa' : 'fora'} · ${esc(date)}</span>
+      </span>
+      <span class="game__score num">
+        <span class="sr-only">${r.word}, </span>${g.scored}–${g.conceded}
+      </span>
+    </li>`;
 }
 
 /* ── Confrontos diretos ─────────────────────────────────────────────── */

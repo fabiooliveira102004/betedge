@@ -26,12 +26,23 @@ export const config = {
   supabaseUrl: env('SUPABASE_URL'),
   supabaseServiceKey: env('SUPABASE_SERVICE_ROLE_KEY'),
 
-  // --- Casa de apostas ---------------------------------------------------
-  // A Betclic nao tem API publica. As odds vem da The Odds API, que agrega
-  // a Betclic na regiao "eu". Se a Betclic nao cotar um jogo, esse jogo e
-  // ignorado em vez de usarmos a odd de outra casa.
-  bookmaker: 'betclic',
+  // --- Cotacoes ----------------------------------------------------------
+  // A Betclic aparece na The Odds API como `betclic_fr` — nao ha entrada
+  // para a Betclic portuguesa. Sendo o mesmo operador os precos batem quase
+  // sempre certo, e a app diz isso em vez de o esconder.
+  bookmaker: env('BOOKMAKER', 'betclic_fr'),
   region: 'eu',
+
+  // `btts` nao existe neste endpoint: pedi-lo devolve 422 e derruba a
+  // execucao toda. So esta disponivel no endpoint por evento, que custa
+  // creditos por jogo e nao cabe no plano gratuito.
+  markets: env('ODDS_MARKETS', 'h2h,totals'),
+
+  // A API cobra 1 credito por mercado em cada pedido a uma liga. Com 2
+  // mercados e 6 ligas sao 12 creditos por execucao. O plano gratuito da
+  // 500 por mes (~16/dia), por isso este teto existe para a execucao parar
+  // antes de estourar a quota em vez de falhar a meio do mes.
+  oddsBudget: num('ODDS_BUDGET', 14),
 
   // Ligas seguidas. Chaves da The Odds API.
   leagues: [

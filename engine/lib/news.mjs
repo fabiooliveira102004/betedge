@@ -10,7 +10,10 @@ import { log } from './log.mjs';
  * e a camada de IA em ai.mjs.
  */
 export async function fetchTeamNews(team, { lang = 'pt-PT', country = 'PT', days = 5 } = {}) {
-  const query = `${team} when:${days}d`;
+  // Sem qualificador, nomes de clubes que tambem sao toponimos ("Valencia",
+  // "Braga", "Porto") trazem noticias de localidades. As aspas prendem o
+  // nome e "futebol" filtra o resto.
+  const query = `"${team}" futebol when:${days}d`;
   const url = 'https://news.google.com/rss/search?'
     + new URLSearchParams({
       q: query,

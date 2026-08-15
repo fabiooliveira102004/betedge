@@ -5,41 +5,67 @@ import { log } from './log.mjs';
 const BASE = 'https://api.the-odds-api.com/v4';
 
 /**
- * Odds da Betclic via The Odds API.
+ * Cotacoes via The Odds API.
  *
- * A Betclic nao expoe API publica e fazer scraping do site seria fragil e
- * contra os termos de utilizacao. A The Odds API agrega-a na regiao "eu" de
- * forma licenciada. Se a Betclic nao cotar um jogo, esse jogo fica de fora —
- * nunca substituimos pela odd de outra casa, porque o objetivo e apostar
- * exatamente ao preco que vais encontrar na tua conta.
+ * Duas decisoes que vale a pena explicar, porque nenhuma delas e obvia:
+ *
+ * 1. Pedimos TODAS as casas da regiao, nao so a Betclic. Custa exatamente
+ *    o mesmo — a API cobra por mercado e por regiao, nao por casa — e com
+ *    vinte casas o preco justo sai de um consenso em vez de sair da margem
+ *    de uma so. A Pinnacle, que costuma ser a mais afinada do mercado, esta
+ *    sempre neste conjunto.
+ *
+ * 2. A Betclic continua a ser a referencia: e o preco que o utilizador vai
+ *    mesmo encontrar. Quando ela nao cota um mercado (acontece muito nos
+ *    totais), mostramos a melhor odd disponivel e dizemos de que casa e.
+ *
+ * A Betclic aparece na API como `betclic_fr`. Nao existe entrada para a
+ * Betclic portuguesa; sendo o mesmo operador, os precos batem quase sempre
+ * certo, mas isso fica dito na app em vez de ser escondido.
  */
+
+/** Creditos gastos: a API cobra 1 por mercado x regiao em cada pedido. */
+const creditsPerRequest = () => config.markets.split(',').length;
+
 export async function fetchBetclicOdds() {
   const offers = [];
+  let creditsUsed = 0;
   let creditsLeft = null;
 
   for (const league of config.leagues) {
+    if (creditsUsed + creditsPerRequest() > config.oddsBudget) {
+      log.warn(`Orcamento de ${config.oddsBudget} creditos esgotado — ${league.name} fica de fora desta execucao`);
+      continue;
+    }
+
     const url = `${BASE}/sports/${league.key}/odds?`
       + new URLSearchParams({
         apiKey: config.oddsApiKey,
         regions: config.region,
-        markets: 'h2h,totals,btts',
-        bookmakers: config.bookmaker,
+        markets: config.markets,
         oddsFormat: 'decimal',
         dateFormat: 'iso',
       });
 
     let events;
+    let headers;
     try {
-      events = await request(url);
+      const res = await requestWithHeaders(url);
+      events = res.body;
+      headers = res.headers;
     } catch (err) {
       log.warn(`Odds indisponiveis para ${league.name}: ${err.message}`);
       continue;
     }
 
+    creditsUsed += Number(headers.get('x-requests-last')) || creditsPerRequest();
+    const remaining = headers.get('x-requests-remaining');
+    if (remaining != null) creditsLeft = Number(remaining);
+
     const before = offers.length;
     for (const event of events) {
-      const book = event.bookmakers?.find((b) => b.key === config.bookmaker);
-      if (!book) continue;
+      const books = event.bookmakers ?? [];
+      if (books.length === 0) continue;
 
       const fixture = {
         id: event.id,
@@ -49,73 +75,143 @@ export async function fetchBetclicOdds() {
         home: event.home_team,
         away: event.away_team,
         kickoff: event.commence_time,
-        lastUpdate: book.last_update,
+        bookCount: books.length,
       };
 
-      for (const market of book.markets ?? []) {
-        const parsed = parseMarket(market, event);
-        for (const p of parsed) offers.push({ fixture, ...p });
+      for (const parsed of parseEvent(event, books)) {
+        offers.push({ fixture, ...parsed });
       }
     }
 
-    log.info(`${league.name}: ${offers.length - before} cotacoes da Betclic`);
+    log.info(`${league.name}: ${events.length} jogos, ${offers.length - before} selecoes`);
   }
 
-  return { offers, creditsLeft };
+  log.info(`Creditos gastos nesta execucao: ${creditsUsed}`
+    + (creditsLeft != null ? ` · restam ${creditsLeft} este mes` : ''));
+
+  if (creditsLeft != null && creditsLeft < 30) {
+    log.warn(`Poucos creditos: ${creditsLeft}. Reduz ODDS_BUDGET ou o numero de ligas.`);
+  }
+
+  return { offers, creditsUsed, creditsLeft };
+}
+
+async function requestWithHeaders(url) {
+  const res = await fetch(url);
+  if (!res.ok) {
+    const body = await res.text().catch(() => '');
+    throw new Error(`HTTP ${res.status}: ${body.slice(0, 200)}`);
+  }
+  return { body: await res.json(), headers: res.headers };
 }
 
 /**
- * Converte um mercado da The Odds API em selecoes normalizadas. Cada grupo
- * de selecoes fica junto (mesma `groupKey`) porque a remocao da margem tem
- * de ser feita sobre o mercado completo, nao selecao a selecao.
+ * Junta as cotacoes de todas as casas por mercado e selecao, e produz uma
+ * entrada por selecao com: o consenso do mercado, o preco da Betclic e o
+ * melhor preco disponivel.
  */
-function parseMarket(market, event) {
+function parseEvent(event, books) {
   const out = [];
 
-  if (market.key === 'h2h') {
-    const group = market.outcomes.map((o) => ({
-      selection: o.name === event.home_team ? 'home'
-        : o.name === event.away_team ? 'away'
-          : 'draw',
-      odds: o.price,
-    }));
-    for (const g of group) {
-      out.push({ market: 'h2h', line: null, groupKey: 'h2h', group, ...g });
-    }
-  }
+  // groupKey -> selection -> [{ book, odds }]
+  const byGroup = new Map();
 
-  if (market.key === 'totals') {
-    // Podem vir varias linhas (1.5, 2.5, 3.5) no mesmo mercado.
-    const byLine = new Map();
-    for (const o of market.outcomes) {
-      const line = o.point;
-      if (!byLine.has(line)) byLine.set(line, []);
-      byLine.get(line).push({
-        selection: o.name.toLowerCase() === 'over' ? 'over' : 'under',
-        odds: o.price,
-      });
-    }
-    for (const [line, group] of byLine) {
-      for (const g of group) {
-        out.push({ market: 'totals', line, groupKey: `totals:${line}`, group, ...g });
+  for (const book of books) {
+    for (const market of book.markets ?? []) {
+      for (const parsed of parseMarket(market, event)) {
+        const { groupKey, selection, odds, line, marketKey } = parsed;
+        if (!byGroup.has(groupKey)) {
+          byGroup.set(groupKey, { marketKey, line, selections: new Map() });
+        }
+        const group = byGroup.get(groupKey);
+        if (!group.selections.has(selection)) group.selections.set(selection, []);
+        group.selections.get(selection).push({ book: book.key, odds });
       }
     }
   }
 
-  if (market.key === 'btts') {
-    const group = market.outcomes.map((o) => ({
-      selection: o.name.toLowerCase() === 'yes' ? 'yes' : 'no',
-      odds: o.price,
-    }));
-    for (const g of group) {
-      out.push({ market: 'btts', line: null, groupKey: 'btts', group, ...g });
+  for (const [groupKey, group] of byGroup) {
+    // Um mercado so serve se tivermos todas as pernas: sem elas nao da para
+    // retirar a margem nem calcular o preco justo.
+    const expected = expectedLegs(group.marketKey);
+    if (group.selections.size < expected) continue;
+
+    const legs = [...group.selections.entries()].map(([selection, quotes]) => {
+      const sorted = [...quotes].sort((a, b) => b.odds - a.odds);
+      const best = sorted[0];
+      const betclic = quotes.find((q) => q.book === config.bookmaker);
+
+      return {
+        selection,
+        // Consenso: a mediana e menos sensivel a uma casa desalinhada do
+        // que a media.
+        consensusOdds: median(quotes.map((q) => q.odds)),
+        bookCount: quotes.length,
+        betclicOdds: betclic?.odds ?? null,
+        bestOdds: best.odds,
+        bestBook: best.book,
+      };
+    });
+
+    for (const leg of legs) {
+      out.push({
+        market: group.marketKey,
+        line: group.line,
+        groupKey,
+        group: legs,
+        ...leg,
+        // A odd de referencia e a da Betclic quando existe; caso contrario
+        // a melhor do mercado, identificada na app.
+        odds: leg.betclicOdds ?? leg.bestOdds,
+        oddsBook: leg.betclicOdds ? config.bookmaker : leg.bestBook,
+      });
     }
   }
 
   return out;
 }
 
-/** Resultados finais para liquidar apostas pendentes. */
+const expectedLegs = (marketKey) => (marketKey === 'h2h' ? 3 : 2);
+
+function parseMarket(market, event) {
+  const out = [];
+
+  if (market.key === 'h2h') {
+    for (const o of market.outcomes ?? []) {
+      out.push({
+        marketKey: 'h2h',
+        groupKey: 'h2h',
+        line: null,
+        selection: o.name === event.home_team ? 'home'
+          : o.name === event.away_team ? 'away' : 'draw',
+        odds: o.price,
+      });
+    }
+  }
+
+  if (market.key === 'totals') {
+    for (const o of market.outcomes ?? []) {
+      if (o.point == null) continue;
+      out.push({
+        marketKey: 'totals',
+        groupKey: `totals:${o.point}`,
+        line: o.point,
+        selection: o.name.toLowerCase() === 'over' ? 'over' : 'under',
+        odds: o.price,
+      });
+    }
+  }
+
+  return out;
+}
+
+function median(values) {
+  const sorted = [...values].sort((a, b) => a - b);
+  const mid = Math.floor(sorted.length / 2);
+  return sorted.length % 2 ? sorted[mid] : (sorted[mid - 1] + sorted[mid]) / 2;
+}
+
+/** Resultados finais, para arquivar os jogos ja disputados. */
 export async function fetchScores(leagueKey, daysFrom = 3) {
   const url = `${BASE}/sports/${leagueKey}/scores?`
     + new URLSearchParams({

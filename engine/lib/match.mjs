@@ -141,7 +141,11 @@ function buildMarkets(fixture) {
     for (const [groupKey, { market, line, group }] of groups) {
       if (market !== meta.key) continue;
 
-      const { probs, overround } = devig(group.map((g) => g.odds));
+      // O preco justo sai do CONSENSO de todas as casas, nao da Betclic
+      // sozinha: com vinte livros a margem individual de um deles deixa de
+      // enviesar a estimativa, e a Pinnacle (a mais afinada do mercado)
+      // esta sempre neste conjunto.
+      const { probs, overround } = devig(group.map((g) => g.consensusOdds ?? g.odds));
 
       const selections = group.map((g, i) => {
         const modelProb = modelProbFor(fixture.markets, { market, selection: g.selection, line });
@@ -155,6 +159,11 @@ function buildMarkets(fixture) {
             market, selection: g.selection, line, home: fixture.home, away: fixture.away,
           }),
           odds: g.odds,
+          oddsBook: g.oddsBook ?? null,
+          betclicOdds: g.betclicOdds ?? null,
+          bestOdds: g.bestOdds ?? null,
+          bestBook: g.bestBook ?? null,
+          bookCount: g.bookCount ?? null,
           impliedProb: round(1 / g.odds, 4),
           fairProb: round(fairProb, 4),
           modelProb: modelProb == null ? null : round(modelProb, 4),

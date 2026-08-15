@@ -5,9 +5,11 @@ name: Analisar apostas
 # serve os JSON e o telemovel nao precisa de servidor nenhum.
 on:
   schedule:
-    # 06:00, 12:00 e 18:00 UTC. Apanha as cotacoes da manha, o almoco e a
-    # ultima atualizacao antes dos jogos da noite.
-    - cron: '0 6,12,18 * * *'
+    # Uma execucao por dia. O plano gratuito da The Odds API da 500 creditos
+    # por mes (~16/dia) e cada execucao gasta 1 credito por mercado e por
+    # liga: com 2 mercados e 6 ligas sao 12, mais 2-3 para os resultados.
+    # Tres execucoes diarias, como estava antes, gastariam ~2700/mes.
+    - cron: '0 11 * * *'
   workflow_dispatch:
     inputs:
       reason:
@@ -62,6 +64,8 @@ jobs:
           MIN_EDGE: ${{ vars.MIN_EDGE }}
           MIN_CONFIDENCE: ${{ vars.MIN_CONFIDENCE }}
           MAX_PICKS_PER_DAY: ${{ vars.MAX_PICKS_PER_DAY }}
+          ODDS_BUDGET: ${{ vars.ODDS_BUDGET }}
+          ODDS_MARKETS: ${{ vars.ODDS_MARKETS }}
           AI_MODEL: ${{ vars.AI_MODEL }}
         run: node run.mjs
 

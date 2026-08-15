@@ -298,7 +298,7 @@ export function evaluateFixture(fixture) {
 
   const fairByGroup = new Map();
   for (const [key, group] of groups) {
-    const { probs, overround } = devig(group.map((g) => g.odds));
+    const { probs, overround } = devig(group.map((g) => g.consensusOdds ?? g.odds));
     fairByGroup.set(key, { probs, overround, group });
   }
 

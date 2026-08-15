@@ -61,7 +61,7 @@ export function demoOdds(now = new Date()) {
           away,
           homeGoals: samplePoisson(lh, random),
           awayGoals: samplePoisson(la, random),
-          kickoff: new Date(now.getTime() - (i * teams.length + j + 7) * 86400000).toISOString(),
+          kickoff: new Date(now.getTime() - dayOffset(i, j, teams.length, random) * 86400000).toISOString(),
         });
       }
     }
@@ -105,39 +105,54 @@ function syntheticMarket(fixture, lh, la, random) {
   const out = [];
   const margin = 1.06;
 
-  let home = 0; let draw = 0; let away = 0; let over25 = 0; let btts = 0;
+  let home = 0; let draw = 0; let away = 0; let over25 = 0;
   for (let h = 0; h <= 8; h++) {
     for (let a = 0; a <= 8; a++) {
       const p = pois(h, lh) * pois(a, la);
       if (h > a) home += p; else if (h === a) draw += p; else away += p;
       if (h + a > 2.5) over25 += p;
-      if (h > 0 && a > 0) btts += p;
     }
   }
 
   const noise = () => 1 + (random() - 0.5) * 0.14;
-  const price = (p) => Math.max(1.05, Math.round((1 / (p * margin * noise())) * 100) / 100);
+  const price = (p, m = margin) => Math.max(1.05, Math.round((1 / (p * m * noise())) * 100) / 100);
 
-  const h2h = [
-    { selection: 'home', odds: price(home) },
-    { selection: 'draw', odds: price(draw) },
-    { selection: 'away', odds: price(away) },
-  ];
-  for (const g of h2h) out.push({ fixture, market: 'h2h', line: null, groupKey: 'h2h', group: h2h, ...g });
+  /**
+   * Cada selecao imita o que a API real devolve: o consenso de varias casas,
+   * o preco da Betclic e o melhor do mercado. A Betclic so cota o 1X2, tal
+   * como acontece de verdade — nos totais o preco de referencia e o melhor
+   * disponivel.
+   */
+  const leg = (selection, p, hasBetclic) => {
+    const consensus = price(p);
+    const betclic = hasBetclic ? price(p, margin * 1.01) : null;
+    const best = price(p, margin * 0.97);
+    return {
+      selection,
+      consensusOdds: consensus,
+      bookCount: 14 + Math.floor(random() * 8),
+      betclicOdds: betclic,
+      bestOdds: best,
+      bestBook: 'pinnacle',
+      odds: betclic ?? best,
+      oddsBook: betclic ? config.bookmaker : 'pinnacle',
+    };
+  };
 
-  const totals = [
-    { selection: 'over', odds: price(over25) },
-    { selection: 'under', odds: price(1 - over25) },
-  ];
-  for (const g of totals) {
-    out.push({ fixture, market: 'totals', line: 2.5, groupKey: 'totals:2.5', group: totals, ...g });
-  }
+  const push = (market, line, groupKey, group) => {
+    for (const g of group) out.push({ fixture, market, line, groupKey, group, ...g });
+  };
 
-  const bttsGroup = [
-    { selection: 'yes', odds: price(btts) },
-    { selection: 'no', odds: price(1 - btts) },
-  ];
-  for (const g of bttsGroup) out.push({ fixture, market: 'btts', line: null, groupKey: 'btts', group: bttsGroup, ...g });
+  push('h2h', null, 'h2h', [
+    leg('home', home, true),
+    leg('draw', draw, true),
+    leg('away', away, true),
+  ]);
+
+  push('totals', 2.5, 'totals:2.5', [
+    leg('over', over25, false),
+    leg('under', 1 - over25, false),
+  ]);
 
   return out;
 }
@@ -147,9 +162,20 @@ function syntheticMarket(fixture, lh, la, random) {
  *
  * Sem isto todos os jogos ficavam as 19:00 em dias aleatorios, o que da de
  * imediato a sensacao de dados inventados. O futebol joga-se ao fim de
- * semana a tarde e a meio da semana a noite — respeitar isso faz a
- * demonstracao parecer o que vai aparecer quando houver dados reais.
+ * semana a tarde e a meio da semana a noite.
  */
+/**
+ * Espalha os jogos historicos no tempo de forma desordenada.
+ *
+ * Com a data a seguir a ordem dos ciclos, todos os jogos em casa de uma
+ * equipa ficavam seguidos e a "forma recente" mostrava seis jogos em casa
+ * de fila — o que se ve logo que e inventado.
+ */
+function dayOffset(i, j, teamCount, random) {
+  const base = ((i * 7 + j * 11) % (teamCount * 2)) * 3.5;
+  return Math.round(7 + base + random() * 3);
+}
+
 function nextKickoffSlot(now, daysAhead, random) {
   const d = new Date(now.getTime() + daysAhead * 86400000);
   const weekday = d.getUTCDay(); // 0 = domingo
