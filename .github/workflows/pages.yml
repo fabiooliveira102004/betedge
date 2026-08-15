@@ -28,6 +28,10 @@ jobs:
       - uses: actions/checkout@v4
 
       - uses: actions/configure-pages@v5
+        with:
+          # Ativa o Pages na primeira execucao. Sem isto o passo falha com
+          # "Get Pages site failed" ate alguem o ligar a mao nas definicoes.
+          enablement: true
 
       - name: Empacotar site
         uses: actions/upload-pages-artifact@v3
