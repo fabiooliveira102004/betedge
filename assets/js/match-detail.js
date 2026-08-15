@@ -17,6 +17,7 @@ export function matchDetail(match) {
   return `
 <article class="detail">
   ${header(match, isResult)}
+  ${anchorNotice(match)}
   ${isResult ? finalScore(match) : verdict(match)}
   ${isResult ? resultMarkets(match) : marketTable(match)}
   ${goals(match)}
@@ -39,6 +40,26 @@ function header(match, isResult) {
       ${esc(fmtKickoff(match.kickoff))}${isResult ? ' · terminado' : ''}
     </p>
   </header>`;
+}
+
+/**
+ * Quando nao ha historico de jogos, as probabilidades sao deduzidas das
+ * proprias odds. Nesse caso a app nao tem opiniao — esta a repetir o
+ * mercado — e tem de o dizer, senao os numeros passam por analise.
+ */
+function anchorNotice(match) {
+  if (!match.marketAnchored) return '';
+  return `
+  <aside class="notice notice--flat">
+    <p class="notice__text">
+      <strong>Sem historico destas equipas.</strong>
+      As probabilidades abaixo foram deduzidas das proprias odds, nao calculadas
+      a partir de resultados anteriores — nao ha aqui opiniao independente do
+      mercado, e por isso nenhuma odd aparece marcada como generosa ou cara.
+      Basta uma chave gratuita da API-Football para o modelo passar a ter dados
+      proprios.
+    </p>
+  </aside>`;
 }
 
 /* ── Veredicto ──────────────────────────────────────────────────────── */
@@ -105,8 +126,23 @@ function marketTable(match) {
         <h4 class="market__title">${esc(m.label)}</h4>
         <span class="detail__note">${esc(m.hint)}</span>
       </div>
-      ${m.selections.map(selectionBlock).join('')}
+      ${m.selections.map((sel) => selectionBlock(sel, match.marketAnchored)).join('')}
     </div>`).join('');
+
+  if (match.marketAnchored) {
+    return `
+  <section class="detail__section">
+    <h3 class="detail__title">Cada opcao, ao preco da casa</h3>
+    <div class="explainer">
+      <p><strong>Uma odd e uma probabilidade disfarcada.</strong>
+      Uma odd de 2.00 quer dizer que a casa conta com aquilo a acontecer
+      1 vez em 2 — ou seja, 50%. Uma odd de 4.00 quer dizer 1 vez em 4, 25%.</p>
+      <p>Sem dados historicos, a coluna do modelo e apenas a leitura dessas
+      mesmas odds. As duas percentagens batem certo de proposito.</p>
+    </div>
+    ${blocks}
+  </section>`;
+  }
 
   return `
   <section class="detail__section">
@@ -132,7 +168,7 @@ function marketTable(match) {
  * Uma opcao de aposta, em duas linhas: o que e e quanto paga; depois a
  * comparacao entre as duas leituras da mesma coisa.
  */
-function selectionBlock(s) {
+function selectionBlock(s, anchored = false) {
   const edge = s.edge ?? 0;
 
   const verdict = s.isValue ? { label: 'generosa', tone: 'value' }
@@ -169,7 +205,7 @@ function selectionBlock(s) {
           <i>O modelo da</i>
           <b class="num">${s.modelProb == null ? '—' : esc(fmtPct(s.modelProb, 0))}</b>
         </span>
-        <span class="verdict-chip verdict-chip--${verdict.tone}">${verdict.label}</span>
+        ${anchored ? '' : `<span class="verdict-chip verdict-chip--${verdict.tone}">${verdict.label}</span>`}
       </div>
 
       ${better ? `<p class="sel__note">${better}</p>` : ''}

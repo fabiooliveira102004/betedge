@@ -44,7 +44,10 @@ export function buildMatch(fixture) {
     },
 
     markets,
-    valueCount,
+    // Sem historico, as probabilidades sao deduzidas do proprio mercado:
+    // nao ha opiniao propria e nao faz sentido anunciar vantagem nenhuma.
+    marketAnchored: Boolean(fixture.marketAnchored),
+    valueCount: fixture.marketAnchored ? 0 : valueCount,
 
     analysis: {
       scorelines: fixture.scorelines ?? [],
@@ -175,7 +178,8 @@ function buildMarkets(fixture) {
           // +4% e deixar +15% sem etiqueta, so porque a odd passa de 6.00,
           // lia-se como um erro. Fora deste intervalo as odds sao tao
           // extremas que a estimativa deixa de ter significado.
-          isValue: edge != null && edge >= config.betting.minEdge
+          isValue: !fixture.marketAnchored && edge != null
+            && edge >= config.betting.minEdge
             && g.odds >= 1.30 && g.odds <= 12,
         };
       });

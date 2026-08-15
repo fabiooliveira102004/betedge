@@ -12,6 +12,7 @@ import {
   buildCaveats, buildNarrative, goalsDistribution, headToHead,
   likelyScorelines, teamForm, venueSplit, winCondition,
 } from './insight.mjs';
+import { fitFromMarket } from './market-fit.mjs';
 import { clamp, round } from './math.mjs';
 
 /**
@@ -150,6 +151,18 @@ export function attachBaseModel(fixture, leagues) {
   });
 
   fixture.hasHistory = league.history.length > 0;
+
+  // Sem historico o modelo trata todas as equipas por igual e devolve a
+  // mesma previsao para todos os jogos. Nesse caso e mais honesto deduzir os
+  // golos esperados do proprio mercado: as probabilidades passam a ser as
+  // dele, coerentes entre mercados, e a app diz que nao ha opiniao propria.
+  if (!fixture.hasHistory) {
+    const fitted = fitFromMarket(fixture.offers);
+    if (fitted) {
+      fixture.lambdas = { home: fitted.home, away: fitted.away };
+      fixture.marketAnchored = true;
+    }
+  }
 
   // Evidencia que o utilizador pode conferir por si. Cortada na data do
   // jogo: usar resultados posteriores tornaria a analise impossivel de

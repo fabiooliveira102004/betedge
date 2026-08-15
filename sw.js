@@ -13,7 +13,7 @@
  *    esperar meio segundo. A cache fica como rede de seguranca.
  */
 
-const VERSION = 'betedge-v4';
+const VERSION = 'betedge-v5';
 const SHELL_CACHE = `${VERSION}-shell`;
 const DATA_CACHE = `${VERSION}-data`;
 

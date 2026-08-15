@@ -1357,3 +1357,11 @@ button { font: inherit; color: inherit; }
   clip-path: inset(50%);
   white-space: nowrap;
 }
+
+/* Aviso sem cor de alerta: nao e um erro, e uma limitacao dos dados. */
+.notice--flat {
+  margin-bottom: 16px;
+  border-color: var(--border);
+  background: var(--surface-2);
+}
+.notice--flat .notice__text strong { color: var(--text); }

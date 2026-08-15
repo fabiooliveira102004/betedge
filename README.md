@@ -86,10 +86,17 @@ Em **Settings → Secrets and variables → Actions → Secrets**:
 | Secret | Onde obter | Plano gratuito | Sem ela |
 |---|---|---|---|
 | `ODDS_API_KEY` | [the-odds-api.com](https://the-odds-api.com) | 500 pedidos/mês | jogos de exemplo |
-| `API_FOOTBALL_KEY` | [api-football.com](https://www.api-football.com) | 100 pedidos/dia | sem forma, Elo, h2h nem lesões |
+| `API_FOOTBALL_KEY` | [api-football.com](https://www.api-football.com) | 100 pedidos/dia | **o modelo fica sem opinião própria** — ver abaixo |
 | `ANTHROPIC_API_KEY` | [console.anthropic.com](https://console.anthropic.com) | pago ao uso | notícias aparecem sem interpretação |
 
 As notícias funcionam sempre: vêm do RSS do Google News, que não precisa de chave.
+
+**As duas primeiras chaves andam a par.** Sem `API_FOOTBALL_KEY` o motor não tem
+resultados anteriores, e portanto não sabe nada sobre nenhuma equipa: daria a
+mesma previsão a todos os jogos. Nesse caso deduz os golos esperados das próprias
+odds, para os números serem pelo menos coerentes por jogo — mas então está a
+repetir o mercado, não a analisá-lo, e a app diz isso em cada jogo. Só com as
+duas chaves é que há opinião independente para comparar com o preço.
 
 **Porque não vai à Betclic diretamente:** a Betclic não tem API pública, e fazer
 scraping seria frágil e contra os termos de utilização. As odds vêm de um
