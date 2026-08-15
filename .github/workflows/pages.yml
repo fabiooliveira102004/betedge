@@ -1,0 +1,39 @@
+name: Publicar app
+
+# Publica a app no GitHub Pages. Nao ha passo de build: a app e HTML, CSS e
+# modulos ES nativos, servidos tal como estao no repositorio.
+on:
+  push:
+    branches: [master, main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Nao cancelamos uma publicacao a meio; deixamos terminar.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/configure-pages@v5
+
+      - name: Empacotar site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # O motor nao vai para producao: so os JSON que ele produz.
+          path: '.'
+
+      - id: deployment
+        uses: actions/deploy-pages@v4

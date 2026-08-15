@@ -1,0 +1,18 @@
+{
+  "name": "bet-engine",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Motor de analise de apostas: recolhe cotacoes da Betclic, modela probabilidades e publica apostas de valor.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "analyse": "node run.mjs",
+    "settle": "node settle.mjs",
+    "cycle": "node settle.mjs && node run.mjs"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.68.0"
+  }
+}

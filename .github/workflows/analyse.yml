@@ -1,0 +1,80 @@
+name: Analisar apostas
+
+# O motor corre no GitHub Actions e faz commit das analises de volta ao
+# repositorio. E isso que permite a app ser 100% estatica: o GitHub Pages
+# serve os JSON e o telemovel nao precisa de servidor nenhum.
+on:
+  schedule:
+    # 06:00, 12:00 e 18:00 UTC. Apanha as cotacoes da manha, o almoco e a
+    # ultima atualizacao antes dos jogos da noite.
+    - cron: '0 6,12,18 * * *'
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: 'Motivo da execucao manual'
+        required: false
+        default: 'execucao manual'
+
+# Uma execucao de cada vez: duas em paralelo dariam conflito no commit.
+concurrency:
+  group: analyse
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  analyse:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+          cache-dependency-path: engine/package-lock.json
+
+      - name: Instalar dependencias
+        working-directory: engine
+        run: npm ci
+
+      # Liquidar antes de analisar: assim as apostas de ontem saem da lista
+      # ativa e o historico ja esta correto quando as novas sao publicadas.
+      - name: Liquidar apostas anteriores
+        working-directory: engine
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: node settle.mjs
+
+      - name: Analisar proximos jogos
+        working-directory: engine
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          MIN_EDGE: ${{ vars.MIN_EDGE }}
+          MIN_CONFIDENCE: ${{ vars.MIN_CONFIDENCE }}
+          MAX_PICKS_PER_DAY: ${{ vars.MAX_PICKS_PER_DAY }}
+          AI_MODEL: ${{ vars.AI_MODEL }}
+        run: node run.mjs
+
+      - name: Publicar analises
+        run: |
+          git config user.name  'betedge-bot'
+          git config user.email 'actions@users.noreply.github.com'
+          git add data/
+          if git diff --staged --quiet; then
+            echo 'Sem alteracoes nas analises.'
+            exit 0
+          fi
+          git commit -m "analise: $(date -u '+%Y-%m-%d %H:%M UTC')"
+          # A branch pode ter avancado enquanto o motor corria.
+          git pull --rebase --autostash origin ${{ github.ref_name }}
+          git push
