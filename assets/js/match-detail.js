@@ -171,6 +171,20 @@ function marketTable(match) {
 function selectionBlock(s, anchored = false) {
   const edge = s.edge ?? 0;
 
+  // Uma selecao sem preco nao deve derrubar a analise toda: mostra-se o que
+  // ha e segue. Ja aconteceu uma vez o ecra ficar em branco por causa de um
+  // unico campo em falta.
+  if (typeof s.odds !== 'number') {
+    return `
+    <div class="sel">
+      <div class="sel__top">
+        <span class="sel__label">${esc(s.label)}</span>
+        <span class="sel__odds"><b class="num">—</b><small>sem preco</small></span>
+      </div>
+      <p class="sel__note">Nenhuma casa cotou esta opcao na ultima recolha.</p>
+    </div>`;
+  }
+
   const verdict = s.isValue ? { label: 'generosa', tone: 'value' }
     : edge < -0.04 ? { label: 'cara', tone: 'neg' }
       : { label: 'justa', tone: 'flat' };

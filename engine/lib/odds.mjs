@@ -110,7 +110,7 @@ async function requestWithHeaders(url) {
  * entrada por selecao com: o consenso do mercado, o preco da Betclic e o
  * melhor preco disponivel.
  */
-function parseEvent(event, books) {
+export function parseEvent(event, books) {
   const out = [];
 
   // groupKey -> selection -> [{ book, odds }]
@@ -150,21 +150,20 @@ function parseEvent(event, books) {
         betclicOdds: betclic?.odds ?? null,
         bestOdds: best.odds,
         bestBook: best.book,
+        // A odd de referencia e a da Betclic quando existe; caso contrario
+        // a melhor do mercado, identificada na app.
+        //
+        // Tem de ficar aqui, na perna: e este array que segue como `group`
+        // e e dele que o quadro de mercados le. Estava a ser acrescentada
+        // so a oferta individual, o que deixava as selecoes publicadas sem
+        // preco nenhum — e o ecra de analise rebentava ao tentar formata-lo.
+        odds: betclic?.odds ?? best.odds,
+        oddsBook: betclic ? config.bookmaker : best.book,
       };
     });
 
     for (const leg of legs) {
-      out.push({
-        market: group.marketKey,
-        line: group.line,
-        groupKey,
-        group: legs,
-        ...leg,
-        // A odd de referencia e a da Betclic quando existe; caso contrario
-        // a melhor do mercado, identificada na app.
-        odds: leg.betclicOdds ?? leg.bestOdds,
-        oddsBook: leg.betclicOdds ? config.bookmaker : leg.bestBook,
-      });
+      out.push({ market: group.marketKey, line: group.line, groupKey, group: legs, ...leg });
     }
   }
 

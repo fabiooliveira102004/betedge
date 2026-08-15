@@ -68,8 +68,19 @@ async function main() {
       + `stake ${(p.stake * 100).toFixed(2)}% da banca)`);
   }
 
+  const problemas = validate(matches);
+  if (problemas.length) {
+    log.error(`${problemas.length} jogos com dados incompletos — nao vao ser publicados:`);
+    for (const p of problemas.slice(0, 5)) log.error(`  ${p}`);
+  }
+
   log.step('Gravacao');
-  await persist({ fixtures, matches, picks: selected, startedAt });
+  await persist({
+    fixtures,
+    matches: matches.filter((m) => !problemas.some((p) => p.startsWith(m.id))),
+    picks: selected,
+    startedAt,
+  });
   log.info('Concluido.');
 }
 
@@ -189,6 +200,33 @@ async function writeMeta({ startedAt, fixtures, picks, error = null }) {
     picksPublished: picks,
     error,
   });
+}
+
+/**
+ * Um jogo sem preco numa selecao rebenta o ecra de analise no telemovel.
+ * Ja aconteceu: o modo de demonstracao trazia o campo, os dados reais nao,
+ * e so se percebeu com a app publicada. Mais vale publicar menos jogos do
+ * que publicar um que nao abre.
+ */
+function validate(matches) {
+  const problemas = [];
+
+  for (const match of matches) {
+    if (!match.verdict || !match.lambdas) {
+      problemas.push(`${match.id} (${match.home} vs ${match.away}): sem veredicto`);
+      continue;
+    }
+    for (const market of match.markets ?? []) {
+      for (const sel of market.selections) {
+        if (typeof sel.odds !== 'number' || !Number.isFinite(sel.odds)) {
+          problemas.push(`${match.id} (${match.home} vs ${match.away}): `
+            + `${market.key}/${sel.selection} sem preco`);
+        }
+      }
+    }
+  }
+
+  return problemas;
 }
 
 function dedupeById(rows) {

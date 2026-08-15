@@ -1,11 +1,11 @@
 {
   "app": "BetEdge",
-  "generatedAt": "2026-08-15T15:36:32.691Z",
-  "demo": false,
+  "generatedAt": "2026-08-15T15:57:13.484Z",
+  "demo": true,
   "sources": {
-    "odds": "the-odds-api (betclic)",
+    "odds": "demo",
     "football": null,
-    "news": null,
+    "news": "google-news-rss",
     "ai": null,
     "database": null
   },
@@ -17,7 +17,13 @@
     "kellyFraction": 0.25,
     "maxStakePct": 0.03
   },
-  "fixturesAnalysed": 12,
-  "picksPublished": 0,
+  "dataUsed": {
+    "ownMatches": 0,
+    "externalMatches": 0,
+    "externalSeasons": [],
+    "injuriesAvailable": false
+  },
+  "fixturesAnalysed": 9,
+  "picksPublished": 12,
   "error": null
 }
