@@ -164,7 +164,7 @@ async function writeMeta({ startedAt, fixtures, picks, error = null }) {
     sources: {
       odds: hasOdds() ? 'the-odds-api (betclic)' : 'demo',
       football: hasFootball() ? 'api-football' : null,
-      news: hasAI() ? 'google-news-rss' : null,
+      news: 'google-news-rss',
       ai: hasAI() ? config.ai.model : null,
       database: hasSupabase() ? 'supabase' : null,
     },

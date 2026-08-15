@@ -5,6 +5,15 @@ name: Publicar app
 on:
   push:
     branches: [master, main]
+
+  # O GitHub nao dispara workflows a partir de commits feitos com o
+  # GITHUB_TOKEN — e a protecao contra ciclos infinitos. Sem isto, a analise
+  # gravava os dados novos e o site continuava a servir os antigos, congelado
+  # no ultimo push humano. `workflow_run` nao sofre dessa restricao.
+  workflow_run:
+    workflows: ['Analisar apostas']
+    types: [completed]
+
   workflow_dispatch:
 
 permissions:
