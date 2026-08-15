@@ -1,224 +1,176 @@
 # BetEdge
 
-Análise de apostas desportivas que corre no telemóvel a partir de um link
-`github.io`, sem servidor para manter.
+Ferramenta de análise de jogos de futebol, que corre no telemóvel a partir de um
+link `github.io` e não precisa de servidor.
 
-Um motor em Node analisa os jogos, compara as suas probabilidades com as odds
-da **Betclic** e publica só as apostas em que há vantagem real. A app mostra
-essas apostas, explica o raciocínio de cada uma e guarda o resultado de todas —
-incluindo as que correram mal.
+Abres a app, vês os jogos que vêm aí, e para cada um: o que um modelo estatístico
+calcula para cada resultado, como isso se compara com as odds da **Betclic**, e
+que dados sustentam essa conclusão — forma, confrontos diretos, ausências,
+notícias.
+
+**Não é uma app de apostas.** Não aposta por ti, não se liga a nenhuma conta, não
+gere dinheiro e não sugere quanto arriscar. Mostra análise; a decisão é tua.
 
 ```
-GitHub Actions (de 6 em 6 h)          GitHub Pages                Supabase
-┌──────────────────────────┐         ┌──────────────┐        ┌──────────────┐
-│ odds Betclic             │         │              │        │ contas       │
-│ histórico + lesões       │ ──JSON→ │  app (PWA)   │ ←────→ │ banca        │
-│ notícias + leitura IA    │         │              │        │ apostas      │
-│ modelo → apostas         │         └──────────────┘        └──────────────┘
+GitHub Actions (de 6 em 6 h)          GitHub Pages
+┌──────────────────────────┐         ┌──────────────┐
+│ odds Betclic             │         │              │
+│ histórico + lesões       │ ──JSON→ │  app (PWA)   │
+│ notícias                 │         │              │
+│ modelo → probabilidades  │         └──────────────┘
 └──────────────────────────┘
 ```
 
 ---
 
+## O que vês
+
+**Jogos** — os próximos jogos por dia, cada um com o resultado que o modelo
+considera mais provável, a probabilidade dos três resultados, e uma etiqueta
+quando há odds que o modelo considera generosas.
+
+**O jogo, em detalhe** — toca num jogo e abre:
+
+| Secção | O que mostra |
+|---|---|
+| **Veredicto** | o que o modelo acha que vai acontecer, e com que força |
+| **O que a casa paga, o que o modelo calcula** | todos os mercados, linha a linha: odd, probabilidade do modelo, diferença |
+| **Como o jogo deve correr** | probabilidade por total de golos, resultados exatos mais prováveis |
+| **As equipas** | forma recente, médias em casa e fora, Elo, últimos jogos, ausências |
+| **Confrontos diretos** | resultados anteriores entre as duas |
+| **Notícias recentes** | títulos dos últimos dias sobre cada equipa, sem filtro |
+| **O que o modelo teve em conta** | lesões, descanso, e a leitura de contexto quando há IA configurada |
+| **Fiabilidade** | qualidade dos dados desta análise e o que pode falhar |
+
+**Resultados** — jogos já disputados, com o resultado real ao lado da previsão
+que tinha sido publicada antes do apito. Inclui os que o modelo falhou.
+
+**Modelo** — quantas vezes acerta, comparado com um palpite sem análise nenhuma,
+e a calibração: quando diz 60%, acontece mesmo ~60% das vezes?
+
+---
+
 ## Ver a funcionar agora
 
-Não precisas de chave nenhuma para começar — sem chaves o motor gera dados de
-demonstração e a app funciona de ponta a ponta.
+Sem chave nenhuma o motor gera jogos de exemplo e a app funciona de ponta a ponta.
 
 ```bash
 cd engine && npm install
 
-node seed.mjs 45   # histórico simulado dos últimos 45 dias
-node run.mjs       # apostas para os próximos jogos
+node seed.mjs 45   # jogos passados simulados
+node run.mjs       # análise dos próximos jogos
 
 cd .. && python3 -m http.server 8000
 ```
 
-Abre <http://localhost:8000>. A app avisa que está em modo demonstração.
+Abre <http://localhost:8000>. A app avisa, no topo e na lista, que os jogos são
+inventados.
 
 ---
 
 ## Pôr online
 
-### 1. Publicar no GitHub Pages
+### 1. GitHub Pages
 
-Faz push do repositório e, em **Settings → Pages**, escolhe **Source: GitHub
-Actions**. O workflow `.github/workflows/pages.yml` trata do resto.
+Faz push e, em **Settings → Pages**, escolhe **Source: GitHub Actions** (o
+workflow ativa-o sozinho na primeira execução). A app fica em
+`https://<utilizador>.github.io/<repositorio>/`.
 
-A app fica em `https://<utilizador>.github.io/<repositorio>/`. Abre esse link no
-telemóvel e usa *Adicionar ao ecrã principal* — instala como aplicação, arranca
-em ecrã inteiro e funciona offline com os últimos dados descarregados.
+No telemóvel, *Adicionar ao ecrã principal* instala-a como aplicação: arranca em
+ecrã inteiro e funciona offline com os últimos dados descarregados.
 
-### 2. Chaves de dados
+### 2. Dados reais
 
-Guarda-as em **Settings → Secrets and variables → Actions → Secrets**.
+Em **Settings → Secrets and variables → Actions → Secrets**:
 
 | Secret | Onde obter | Plano gratuito | Sem ela |
 |---|---|---|---|
-| `ODDS_API_KEY` | [the-odds-api.com](https://the-odds-api.com) | 500 pedidos/mês | modo demonstração |
-| `API_FOOTBALL_KEY` | [api-football.com](https://www.api-football.com) | 100 pedidos/dia | sem histórico, Elo nem lesões |
-| `ANTHROPIC_API_KEY` | [console.anthropic.com](https://console.anthropic.com) | pago ao uso | sem leitura de contexto |
+| `ODDS_API_KEY` | [the-odds-api.com](https://the-odds-api.com) | 500 pedidos/mês | jogos de exemplo |
+| `API_FOOTBALL_KEY` | [api-football.com](https://www.api-football.com) | 100 pedidos/dia | sem forma, Elo, h2h nem lesões |
+| `ANTHROPIC_API_KEY` | [console.anthropic.com](https://console.anthropic.com) | pago ao uso | notícias aparecem sem interpretação |
 
-**Porque não vai a Betclic diretamente:** a Betclic não tem API pública, e fazer
-scraping do site seria frágil e contra os termos de utilização. A The Odds API
-agrega-a de forma licenciada na região `eu`. Se a Betclic não cotar um jogo, esse
-jogo fica de fora — o motor nunca substitui pela odd de outra casa, porque a
-aposta tem de ser ao preço que vais mesmo encontrar na tua conta.
+As notícias funcionam sempre: vêm do RSS do Google News, que não precisa de chave.
 
-### 3. Contas de utilizador (Supabase)
+**Porque não vai à Betclic diretamente:** a Betclic não tem API pública, e fazer
+scraping seria frágil e contra os termos de utilização. As odds vêm de um
+agregador licenciado que a inclui. Se a Betclic não cotar um jogo, esse jogo não
+aparece — nunca se substitui pela odd de outra casa.
 
-1. Cria um projeto em [supabase.com](https://supabase.com) (o plano gratuito
-   chega bem).
-2. No **SQL Editor**, cola e corre o ficheiro [`supabase/schema.sql`](supabase/schema.sql)
-   inteiro. Cria as tabelas, as políticas de segurança e os automatismos.
-3. Em **Project Settings → API**, copia o **Project URL** e a chave **anon**
-   para `assets/js/config.js`:
+### 3. Base de dados (opcional)
 
-   ```js
-   export const SUPABASE = {
-     url: 'https://xxxxxxxx.supabase.co',
-     anonKey: 'eyJhbGciOi...',
-   };
-   ```
+O motor pode escrever as análises para Supabase, o que dá um histórico completo e
+consultável para além da janela que os ficheiros JSON guardam. Corre
+[`supabase/schema.sql`](supabase/schema.sql) no SQL Editor e adiciona
+`SUPABASE_URL` e `SUPABASE_SERVICE_ROLE_KEY` aos secrets.
 
-4. Adiciona aos secrets do GitHub, para o motor poder escrever:
-   `SUPABASE_URL` e `SUPABASE_SERVICE_ROLE_KEY`.
-
-> A chave **anon** é pública por design e pode ir para o repositório: quem
-> protege os dados são as políticas RLS, que garantem ao nível da base de dados
-> que cada utilizador só lê e escreve o que é dele. A chave **service_role**
-> ignora essas políticas — vive só nos secrets do GitHub e nunca no browser.
-
-Sem Supabase configurado a app continua a funcionar: a banca e as apostas
-registadas ficam guardadas nesse telemóvel, sem sincronização.
-
-### 4. Ajustes opcionais
-
-Em **Settings → Secrets and variables → Actions → Variables**:
-
-| Variável | Omissão | O que faz |
-|---|---|---|
-| `MIN_EDGE` | `0.04` | vantagem mínima para publicar uma aposta |
-| `MIN_CONFIDENCE` | `0.35` | confiança mínima na estimativa |
-| `MAX_PICKS_PER_DAY` | `12` | teto de apostas por execução |
-| `AI_MODEL` | `claude-opus-5` | modelo da camada de contexto |
+A app não precisa disto para funcionar, e não tem contas de utilizador: as únicas
+preferências que guarda — ligas seguidas e tema — ficam no próprio dispositivo.
 
 ---
 
-## O que cada aposta explica
+## Como as probabilidades são calculadas
 
-Uma aposta sem explicacao e um palpite. Toca num cartao e abre-se a analise
-completa, pela ordem das perguntas que se fazem antes de apostar:
+**1. Força das equipas.** Ratings Elo atualizados jogo a jogo, com o K escalado
+pela diferença de golos (4-0 move mais que 1-0), combinados com as taxas de golos
+marcados e sofridos, separadas entre casa e fora e encolhidas para a média da
+liga quando há poucos jogos.
 
-| Seccao | Responde a |
-|---|---|
-| **O que tem de acontecer** | Ganhas se… / Perdes se…, em portugues corrente |
-| **Quanto apostar** | stake, retorno se ganhar, perda se perder, e porque e esse valor |
-| **Porque esta aposta** | a cadeia de raciocinio em texto: dos golos marcados e sofridos ate a vantagem |
-| **Golos esperados** | quantos golos para cada equipa, probabilidade por total de golos, resultados mais provaveis |
-| **As equipas** | forma dos ultimos jogos, medias em casa e fora, Elo, ausencias |
-| **Confrontos diretos** | resultados anteriores entre as duas |
-| **Onde esta a vantagem** | o que a odd implica, o preco justo sem margem, e o que o modelo calcula |
-| **O que pode correr mal** | com que frequencia esta aposta perde, e que dados faltam |
+**2. Golos esperados.** O ataque de cada equipa cruza com a defesa da outra. O Elo
+diz quem é melhor, as taxas dizem quantos golos se marcam, e a vantagem caseira
+entra por cima.
 
-A narrativa nao e gerada por IA: sao os mesmos numeros que o modelo usou,
-traduzidos para portugues. Se o modelo mudar, a explicacao muda com ele — nunca
-podem contradizer-se.
+**3. Probabilidade de cada resultado.** Um modelo **Dixon-Coles** transforma os
+golos esperados na probabilidade de cada resultado exato. É Poisson com uma
+correção nos resultados baixos, porque o Poisson simples subestima 0-0 e 1-1.
+Todos os mercados saem da mesma matriz, por isso as percentagens são coerentes
+entre si.
 
-> A Betclic paga 1.88, que implica 53%; retirada a margem da casa, o preco justo
-> do mercado e 50%. A diferenca de 14,1 pontos percentuais e a vantagem — e a
-> razao pela qual esta aposta aparece e as outras nao.
+**4. Contexto.** Lesões e castigos pesados por posição (um avançado tira ataque,
+um guarda-redes tira defesa), dias de descanso, e — com chave de IA — uma leitura
+dos títulos de notícias à procura do que os números não mostram: treinador de
+saída, salários em atraso, jogo sem nada em jogo. O ajuste é limitado a ±8%.
 
----
-
-## Como o modelo decide
-
-### 1. Quantos golos se esperam
-
-Ratings **Elo** por equipa (atualizados jogo a jogo, com o K escalado pela
-diferença de golos) combinados com as **taxas de golos** marcados e sofridos,
-encolhidas para a média da liga quando há poucos jogos. O Elo diz quem é melhor;
-as taxas dizem quantos golos se marcam.
-
-### 2. Distribuição de resultados
-
-Modelo **Dixon-Coles**: Poisson para cada equipa mais uma correção nos
-resultados baixos, porque o Poisson independente subestima sistematicamente
-0-0 e 1-1. Daí sai a probabilidade de cada resultado exacto, e de uma só matriz
-derivam-se todos os mercados — por isso as probabilidades são coerentes entre si.
-
-### 3. Contexto
-
-Sobre os golos esperados entram multiplicadores:
-
-- **Lesões e castigos**, pesados por posição (um avançado tira ataque; um
-  guarda-redes tira defesa) e saturados, porque há plantel.
-- **Dias de descanso** desde o último jogo.
-- **Leitura de notícias.** Títulos recentes de cada equipa passam por um modelo
-  Claude que procura o que os números não mostram: treinador de saída, salários
-  em atraso, problemas pessoais de um titular, jogo sem nada em jogo, contestação
-  dos adeptos. O ajuste é limitado a ±8% — tempera o modelo, nunca o substitui.
-
-### 4. Onde está a vantagem
-
-A soma de `1/odd` de um mercado dá sempre mais de 1: a sobra é a margem da casa.
-É removida pelo **método de Shin**, que a distribui de forma mais realista do que
-uma repartição proporcional. Sobra a probabilidade justa do mercado.
-
-**Vantagem = probabilidade do modelo − probabilidade justa.**
-
-Só é publicada aposta quando a vantagem passa o mínimo, o valor esperado é
-positivo e a confiança é suficiente.
-
-### 5. Quanto apostar
-
-**Kelly fracionado** a 25%, com teto de 3% da banca, escalado pela confiança.
-Kelly inteiro é demasiado agressivo quando as probabilidades são estimadas em
-vez de conhecidas.
-
-### 6. Confiança
-
-Não é a probabilidade de ganhar — é quanto se confia na estimativa. Combina
-tamanho da amostra, qualidade dos dados, margem do mercado e a própria vantagem:
-uma vantagem de 25% costuma significar que falta informação ao modelo, não que o
-mercado está errado, por isso é penalizada.
+**5. Comparação com a casa.** A soma de `1/odd` de um mercado dá sempre mais de 1:
+a sobra é a margem. É retirada pelo **método de Shin**, mais realista do que uma
+repartição proporcional. O que fica é o preço justo, e é contra esse preço que a
+probabilidade do modelo é comparada.
 
 ---
 
-## Histórico honesto
+## Registo honesto
 
-Cada aposta é gravada **antes** do jogo, com odd, probabilidade e raciocínio. O
-resultado é colado por cima depois, pelo passo de liquidação. O registo inclui
-todas as apostas publicadas — não há forma de apagar as que correram mal.
+Cada previsão é gravada **antes** do jogo. O resultado é colado por cima depois,
+pelo passo de liquidação. Os jogos em que o modelo falhou aparecem exatamente
+como os outros.
 
-A vista de **Desempenho** mostra ROI, evolução da banca, queda máxima e, o mais
-revelador, a **calibração**: quando o modelo diz 60%, ganha mesmo ~60% das vezes?
-Acertar 55% das apostas não diz nada sem saber a que odds; a calibração diz.
+A página do **Modelo** compara o acerto com um palpite sem análise nenhuma
+(apostar sempre na equipa da casa). Se o modelo não bater esse baseline, a app
+mostra isso — um número de acerto sem termo de comparação não diz nada.
 
 ---
 
 ## Estrutura
 
 ```
-index.html, assets/       app (PWA sem passo de build)
-  └── js/pick-detail.js   a analise completa de uma aposta
-data/*.json               análises publicadas — a "API" da app
-engine/                   motor de análise (Node)
-  ├── config.mjs          limites e ligas
+index.html, assets/       app (PWA, sem passo de build)
+  └── js/match-detail.js  a análise completa de um jogo
+data/
+  ├── matches.json        próximos jogos com todos os mercados
+  ├── results.json        jogos passados e acerto do modelo
+  └── stats.json          calibração e desempenho por mercado
+engine/
   ├── run.mjs             analisar e publicar
   ├── settle.mjs          verificar resultados
-  ├── seed.mjs            histórico de demonstração
+  ├── seed.mjs            dados de exemplo
   └── lib/
       ├── model.mjs       Dixon-Coles
-      ├── value.mjs       margem, vantagem, Kelly
-      ├── insight.mjs     forma, confrontos, narrativa, avisos
-      └── ...             fontes de dados
-supabase/schema.sql       tabelas, RLS e automatismos
+      ├── match.mjs       o jogo com todos os mercados
+      ├── insight.mjs     forma, confrontos, distribuições
+      ├── results.mjs     arquivo e acerto do veredicto
+      └── value.mjs       margem da casa e comparação
+supabase/schema.sql       tabelas e políticas (opcional)
 .github/workflows/        análise agendada e publicação
 ```
-
-A app não tem passo de build: é HTML, CSS e módulos ES nativos, servidos tal
-como estão. O `npm install` só existe para o motor.
 
 ---
 
@@ -227,31 +179,18 @@ como estão. O `npm install` só existe para o motor.
 ```bash
 cd engine
 node run.mjs          # analisar os próximos jogos
-node settle.mjs       # liquidar apostas já jogadas
-node seed.mjs 60      # regenerar histórico de demonstração
-npm run cycle         # liquidar e depois analisar (o que o Actions faz)
+node settle.mjs       # arquivar jogos terminados com o resultado real
+node seed.mjs 60      # regenerar dados de exemplo
 ```
-
----
-
-## Custos
-
-Com os planos gratuitos das APIs de dados e quatro execuções por dia, o único
-custo real é a camada de contexto: uns cêntimos por execução, conforme o número
-de jogos analisados. Podes desligá-la com `AI_ENABLED=false` — o modelo
-estatístico continua a funcionar sem ela.
-
-GitHub Pages, GitHub Actions (em repositório público) e o plano gratuito do
-Supabase não custam nada.
 
 ---
 
 ## Aviso
 
-O BetEdge é uma ferramenta de análise, não uma promessa de lucro. Nenhum modelo
-prevê resultados desportivos com certeza, e uma vantagem estatística só se nota
-ao fim de muitas apostas — pelo meio há sequências más que é preciso aguentar.
+Nenhum modelo prevê resultados desportivos com certeza. Estas são estimativas de
+probabilidade, e uma probabilidade de 70% falha 3 vezes em cada 10.
 
-Aposta apenas dinheiro que podes perder, nunca para recuperar perdas anteriores,
-e define limites antes de começar. Apostas são proibidas a menores de 18 anos.
-Se sentires que perdeste o controlo, procura ajuda: **SICAD — Linha Vida 1414**.
+Apostas são proibidas a menores de 18 anos. Aposta apenas dinheiro que podes
+perder, nunca para recuperar perdas anteriores, e define limites antes de
+começar. Se sentires que perdeste o controlo, procura ajuda:
+**SICAD — Linha Vida 1414**.

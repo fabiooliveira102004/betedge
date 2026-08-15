@@ -1,0 +1,4660 @@
+{
+  "generatedAt": "2026-08-15T14:33:53.713Z",
+  "demo": true,
+  "count": 9,
+  "matches": [
+    {
+      "id": "demo-sporting-cp-gil-vicente-2026-08-16",
+      "league": "Liga Portugal",
+      "home": "Sporting CP",
+      "away": "Gil Vicente",
+      "kickoff": "2026-08-16T19:30:00.000Z",
+      "demo": true,
+      "verdict": {
+        "outcome": "home",
+        "label": "Sporting CP vence",
+        "probability": 0.4303,
+        "runnerUp": {
+          "label": "Gil Vicente vence",
+          "probability": 0.3105
+        },
+        "strength": "ligeiro",
+        "likelyScore": "1-1",
+        "likelyScoreProb": 0.1173,
+        "confidence": 0.85,
+        "summary": "Sporting CP vence e o resultado mais provavel, com 43%. Espera-se um jogo com golos (3.2 no total)."
+      },
+      "lambdas": {
+        "home": 1.74,
+        "away": 1.46
+      },
+      "markets": [
+        {
+          "key": "h2h",
+          "market": "h2h",
+          "line": null,
+          "label": "Resultado final",
+          "hint": "Quem ganha o jogo no tempo regulamentar.",
+          "overround": 0.0142,
+          "selections": [
+            {
+              "selection": "home",
+              "label": "Sporting CP vence",
+              "odds": 1.58,
+              "impliedProb": 0.6329,
+              "fairProb": 0.6271,
+              "modelProb": 0.4303,
+              "edge": -0.1968,
+              "ev": -0.3201,
+              "isValue": false
+            },
+            {
+              "selection": "draw",
+              "label": "Empate",
+              "odds": 4.54,
+              "impliedProb": 0.2203,
+              "fairProb": 0.2159,
+              "modelProb": 0.2591,
+              "edge": 0.0432,
+              "ev": 0.1764,
+              "isValue": true
+            },
+            {
+              "selection": "away",
+              "label": "Gil Vicente vence",
+              "odds": 6.21,
+              "impliedProb": 0.161,
+              "fairProb": 0.1569,
+              "modelProb": 0.3105,
+              "edge": 0.1536,
+              "ev": 0.9284,
+              "isValue": true
+            }
+          ]
+        },
+        {
+          "key": "totals:2.5",
+          "market": "totals",
+          "line": 2.5,
+          "label": "Total de golos 2.5",
+          "hint": "Golos das duas equipas somados.",
+          "overround": 0.0993,
+          "selections": [
+            {
+              "selection": "over",
+              "label": "Mais de 2.5 golos",
+              "odds": 1.69,
+              "impliedProb": 0.5917,
+              "fairProb": 0.5421,
+              "modelProb": 0.6188,
+              "edge": 0.0768,
+              "ev": 0.0458,
+              "isValue": true
+            },
+            {
+              "selection": "under",
+              "label": "Menos de 2.5 golos",
+              "odds": 1.97,
+              "impliedProb": 0.5076,
+              "fairProb": 0.4579,
+              "modelProb": 0.3812,
+              "edge": -0.0768,
+              "ev": -0.2491,
+              "isValue": false
+            }
+          ]
+        },
+        {
+          "key": "btts",
+          "market": "btts",
+          "line": null,
+          "label": "Ambas marcam",
+          "hint": "As duas equipas marcam pelo menos um golo.",
+          "overround": 0.0555,
+          "selections": [
+            {
+              "selection": "yes",
+              "label": "Ambas marcam: Sim",
+              "odds": 1.88,
+              "impliedProb": 0.5319,
+              "fairProb": 0.5042,
+              "modelProb": 0.6455,
+              "edge": 0.1413,
+              "ev": 0.2135,
+              "isValue": true
+            },
+            {
+              "selection": "no",
+              "label": "Ambas marcam: Nao",
+              "odds": 1.91,
+              "impliedProb": 0.5236,
+              "fairProb": 0.4958,
+              "modelProb": 0.3545,
+              "edge": -0.1413,
+              "ev": -0.3229,
+              "isValue": false
+            }
+          ]
+        }
+      ],
+      "valueCount": 4,
+      "analysis": {
+        "scorelines": [
+          {
+            "score": "1-1",
+            "home": 1,
+            "away": 1,
+            "p": 0.1173
+          },
+          {
+            "score": "2-1",
+            "home": 2,
+            "away": 1,
+            "p": 0.0902
+          },
+          {
+            "score": "1-2",
+            "home": 1,
+            "away": 2,
+            "p": 0.0756
+          },
+          {
+            "score": "2-2",
+            "home": 2,
+            "away": 2,
+            "p": 0.0657
+          },
+          {
+            "score": "2-0",
+            "home": 2,
+            "away": 0,
+            "p": 0.0619
+          }
+        ],
+        "goalsDistribution": [
+          {
+            "goals": 0,
+            "label": "0",
+            "p": 0.0545
+          },
+          {
+            "goals": 1,
+            "label": "1",
+            "p": 0.104
+          },
+          {
+            "goals": 2,
+            "label": "2",
+            "p": 0.2227
+          },
+          {
+            "goals": 3,
+            "label": "3",
+            "p": 0.2227
+          },
+          {
+            "goals": 4,
+            "label": "4",
+            "p": 0.1778
+          },
+          {
+            "goals": 5,
+            "label": "5",
+            "p": 0.1136
+          },
+          {
+            "goals": 6,
+            "label": "6+",
+            "p": 0.1047
+          }
+        ],
+        "teams": {
+          "home": {
+            "name": "Sporting CP",
+            "elo": 1567,
+            "form": {
+              "games": [
+                {
+                  "opponent": "Benfica",
+                  "atHome": false,
+                  "scored": 3,
+                  "conceded": 2,
+                  "result": "W",
+                  "date": "2026-08-06T14:33:53.713Z"
+                },
+                {
+                  "opponent": "FC Porto",
+                  "atHome": false,
+                  "scored": 2,
+                  "conceded": 1,
+                  "result": "W",
+                  "date": "2026-07-23T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Benfica",
+                  "atHome": true,
+                  "scored": 2,
+                  "conceded": 3,
+                  "result": "L",
+                  "date": "2026-07-11T14:33:53.713Z"
+                },
+                {
+                  "opponent": "FC Porto",
+                  "atHome": true,
+                  "scored": 2,
+                  "conceded": 2,
+                  "result": "D",
+                  "date": "2026-07-10T14:33:53.713Z"
+                },
+                {
+                  "opponent": "SC Braga",
+                  "atHome": true,
+                  "scored": 1,
+                  "conceded": 3,
+                  "result": "L",
+                  "date": "2026-07-08T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Vitoria Guimaraes",
+                  "atHome": true,
+                  "scored": 2,
+                  "conceded": 0,
+                  "result": "W",
+                  "date": "2026-07-07T14:33:53.713Z"
+                }
+              ],
+              "played": 6,
+              "wins": 3,
+              "draws": 1,
+              "losses": 2,
+              "scoredAvg": 2,
+              "concededAvg": 1.83,
+              "streak": "WLDLWW"
+            },
+            "split": {
+              "home": {
+                "played": 13,
+                "scoredAvg": 1.69,
+                "concededAvg": 1.08
+              },
+              "away": {
+                "played": 13,
+                "scoredAvg": 2.23,
+                "concededAvg": 1.54
+              }
+            },
+            "absences": []
+          },
+          "away": {
+            "name": "Gil Vicente",
+            "elo": 1549,
+            "form": {
+              "games": [
+                {
+                  "opponent": "Benfica",
+                  "atHome": false,
+                  "scored": 1,
+                  "conceded": 2,
+                  "result": "L",
+                  "date": "2026-08-02T14:33:53.713Z"
+                },
+                {
+                  "opponent": "FC Porto",
+                  "atHome": false,
+                  "scored": 2,
+                  "conceded": 1,
+                  "result": "W",
+                  "date": "2026-07-19T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Sporting CP",
+                  "atHome": false,
+                  "scored": 1,
+                  "conceded": 2,
+                  "result": "L",
+                  "date": "2026-07-05T14:33:53.713Z"
+                },
+                {
+                  "opponent": "SC Braga",
+                  "atHome": false,
+                  "scored": 0,
+                  "conceded": 1,
+                  "result": "L",
+                  "date": "2026-06-21T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Vitoria Guimaraes",
+                  "atHome": false,
+                  "scored": 1,
+                  "conceded": 0,
+                  "result": "W",
+                  "date": "2026-06-07T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Moreirense",
+                  "atHome": false,
+                  "scored": 1,
+                  "conceded": 1,
+                  "result": "D",
+                  "date": "2026-05-24T14:33:53.713Z"
+                }
+              ],
+              "played": 6,
+              "wins": 2,
+              "draws": 1,
+              "losses": 3,
+              "scoredAvg": 1,
+              "concededAvg": 1.17,
+              "streak": "DWLLWL"
+            },
+            "split": {
+              "home": {
+                "played": 13,
+                "scoredAvg": 2.46,
+                "concededAvg": 1.15
+              },
+              "away": {
+                "played": 13,
+                "scoredAvg": 1,
+                "concededAvg": 1.23
+              }
+            },
+            "absences": []
+          }
+        },
+        "h2h": {
+          "games": [
+            {
+              "date": "2026-07-05T14:33:53.713Z",
+              "home": "Sporting CP",
+              "away": "Gil Vicente",
+              "score": "2-1",
+              "totalGoals": 3,
+              "bothScored": true
+            },
+            {
+              "date": "2026-05-14T14:33:53.713Z",
+              "home": "Gil Vicente",
+              "away": "Sporting CP",
+              "score": "1-3",
+              "totalGoals": 4,
+              "bothScored": true
+            }
+          ],
+          "played": 2,
+          "avgGoals": 3.5,
+          "bothScoredCount": 2
+        },
+        "news": {
+          "home": [
+            {
+              "title": "Vídeo - LIGA PORTUGAL BETCLIC 2026/27 - I Liga (2ªJ): Resumo Sporting 3-2 Vitória SC - Sport TV",
+              "source": "Sport TV",
+              "publishedAt": "Fri, 14 Aug 2026 21:32:46 GMT"
+            },
+            {
+              "title": "Sporting CP x Vitória de Guimarães: data, hora, antevisão e favoritos - DAZN",
+              "source": "DAZN",
+              "publishedAt": "Thu, 13 Aug 2026 10:00:00 GMT"
+            },
+            {
+              "title": "Sporting CP vs Vitória Guimarães: Primeira Liga stats & head-to-head - BBC",
+              "source": "BBC",
+              "publishedAt": "Fri, 14 Aug 2026 21:16:00 GMT"
+            },
+            {
+              "title": "Mercado oficial: aí está o tão aguardado reforço do Sporting - A Bola",
+              "source": "A Bola",
+              "publishedAt": "Sat, 15 Aug 2026 12:56:00 GMT"
+            },
+            {
+              "title": "Treino do Sporting com uma novidade: Irankunda realizou primeira sessão em Alcochete - Record",
+              "source": "Record",
+              "publishedAt": "Sat, 15 Aug 2026 14:00:58 GMT"
+            },
+            {
+              "title": "Extremo australiano Nestory Irankunda assina pelo Sporting - Diário de Notícias",
+              "source": "Diário de Notícias",
+              "publishedAt": "Sat, 15 Aug 2026 14:04:08 GMT"
+            },
+            {
+              "title": "Sporting CP x Vitória SC: bilhetes - vitoriasc.pt",
+              "source": "vitoriasc.pt",
+              "publishedAt": "Tue, 11 Aug 2026 16:27:20 GMT"
+            },
+            {
+              "title": "Depois do tempo de espera, a oficialização: Irankunda é leão - Observador",
+              "source": "Observador",
+              "publishedAt": "Sat, 15 Aug 2026 13:02:22 GMT"
+            },
+            {
+              "title": "Oficial: Nestory Irankunda é reforço do Sporting - Notícias ao Minuto",
+              "source": "Notícias ao Minuto",
+              "publishedAt": "Sat, 15 Aug 2026 13:06:00 GMT"
+            },
+            {
+              "title": "Reação forte foi insuficiente - vitoriasc.pt",
+              "source": "vitoriasc.pt",
+              "publishedAt": "Fri, 14 Aug 2026 23:55:19 GMT"
+            },
+            {
+              "title": "Suárez (outra vez) no banco: eis o onze do Sporting - A Bola",
+              "source": "A Bola",
+              "publishedAt": "Fri, 14 Aug 2026 18:14:00 GMT"
+            },
+            {
+              "title": "Irankunda é reforço do Sporting: «Vim para ganhar títulos e para jogar para grandes adeptos» - SAPO",
+              "source": "SAPO",
+              "publishedAt": "Sat, 15 Aug 2026 13:56:00 GMT"
+            }
+          ],
+          "away": [
+            {
+              "title": "Luís Pinto e a visita a Braga: «Temos de mostrar a nossa identidade e manter a ambição» - Record",
+              "source": "Record",
+              "publishedAt": "Sat, 15 Aug 2026 14:11:01 GMT"
+            },
+            {
+              "title": "Vicens projeta Gil Vicente: «Exibição e rendimento ao nível do jogo» - SAPO",
+              "source": "SAPO",
+              "publishedAt": "Sat, 15 Aug 2026 13:23:21 GMT"
+            },
+            {
+              "title": "Luís Pinto: «Muito respeito pelo Sp. Braga, mas queremos vencer» - CNN Portugal",
+              "source": "CNN Portugal",
+              "publishedAt": "Sat, 15 Aug 2026 13:55:03 GMT"
+            },
+            {
+              "title": "Conferência de imprensa: SC Braga vs Gil Vicente FC - SC Braga",
+              "source": "SC Braga",
+              "publishedAt": "Fri, 14 Aug 2026 15:08:05 GMT"
+            },
+            {
+              "title": "Story - Gil Vicente, Penálti, Félix aos 60' - vsports.pt",
+              "source": "vsports.pt",
+              "publishedAt": "Sat, 15 Aug 2026 06:30:41 GMT"
+            },
+            {
+              "title": "Entrar a vencer na Liga - gilvicentefc.pt",
+              "source": "gilvicentefc.pt",
+              "publishedAt": "Thu, 13 Aug 2026 15:34:46 GMT"
+            },
+            {
+              "title": "Neiva da Cruz, diretor do SIS durante 11 anos, reforma-se e o número dois deverá ser o novo homem-forte - Expresso",
+              "source": "Expresso",
+              "publishedAt": "Tue, 11 Aug 2026 19:11:25 GMT"
+            },
+            {
+              "title": "Luís Pinto antevê o duelo com o SC Braga - Sport TV",
+              "source": "Sport TV",
+              "publishedAt": "Sat, 15 Aug 2026 03:21:00 GMT"
+            },
+            {
+              "title": "Gil Vicente prepara invasão a Braga - A Bola",
+              "source": "A Bola",
+              "publishedAt": "Fri, 14 Aug 2026 18:26:00 GMT"
+            },
+            {
+              "title": "Festival de golos no Estoril-Gil Vicente - FPF",
+              "source": "FPF",
+              "publishedAt": "Wed, 12 Aug 2026 21:35:35 GMT"
+            },
+            {
+              "title": "Arouca vs Moreirense: Primeira Liga stats & head-to-head - BBC",
+              "source": "BBC",
+              "publishedAt": "Sat, 15 Aug 2026 05:48:45 GMT"
+            },
+            {
+              "title": "Carlos Vicens: «Empate na primeira jornada? Temos de dar uma resposta ambiciosa» - TVI",
+              "source": "TVI",
+              "publishedAt": "Sat, 15 Aug 2026 14:07:29 GMT"
+            }
+          ]
+        },
+        "context": {
+          "home": [],
+          "away": []
+        },
+        "ai": null,
+        "dataQuality": 0.85,
+        "sampleMatches": 26
+      }
+    },
+    {
+      "id": "demo-famalicao-rio-ave-2026-08-17",
+      "league": "Liga Portugal",
+      "home": "Famalicao",
+      "away": "Rio Ave",
+      "kickoff": "2026-08-17T18:00:00.000Z",
+      "demo": true,
+      "verdict": {
+        "outcome": "home",
+        "label": "Famalicao vence",
+        "probability": 0.3776,
+        "runnerUp": {
+          "label": "Rio Ave vence",
+          "probability": 0.334
+        },
+        "strength": "aberto",
+        "likelyScore": "1-1",
+        "likelyScoreProb": 0.1375,
+        "confidence": 0.85,
+        "summary": "Jogo em aberto: nenhum resultado se destaca. Espera-se um jogo equilibrado em golos (2.7 no total)."
+      },
+      "lambdas": {
+        "home": 1.41,
+        "away": 1.31
+      },
+      "markets": [
+        {
+          "key": "h2h",
+          "market": "h2h",
+          "line": null,
+          "label": "Resultado final",
+          "hint": "Quem ganha o jogo no tempo regulamentar.",
+          "overround": 0.0547,
+          "selections": [
+            {
+              "selection": "home",
+              "label": "Famalicao vence",
+              "odds": 2.21,
+              "impliedProb": 0.4525,
+              "fairProb": 0.4329,
+              "modelProb": 0.3776,
+              "edge": -0.0553,
+              "ev": -0.1655,
+              "isValue": false
+            },
+            {
+              "selection": "draw",
+              "label": "Empate",
+              "odds": 3.75,
+              "impliedProb": 0.2667,
+              "fairProb": 0.2496,
+              "modelProb": 0.2884,
+              "edge": 0.0388,
+              "ev": 0.0814,
+              "isValue": false
+            },
+            {
+              "selection": "away",
+              "label": "Rio Ave vence",
+              "odds": 2.98,
+              "impliedProb": 0.3356,
+              "fairProb": 0.3175,
+              "modelProb": 0.334,
+              "edge": 0.0165,
+              "ev": -0.0046,
+              "isValue": false
+            }
+          ]
+        },
+        {
+          "key": "totals:2.5",
+          "market": "totals",
+          "line": 2.5,
+          "label": "Total de golos 2.5",
+          "hint": "Golos das duas equipas somados.",
+          "overround": 0.071,
+          "selections": [
+            {
+              "selection": "over",
+              "label": "Mais de 2.5 golos",
+              "odds": 1.8,
+              "impliedProb": 0.5556,
+              "fairProb": 0.52,
+              "modelProb": 0.5113,
+              "edge": -0.0088,
+              "ev": -0.0797,
+              "isValue": false
+            },
+            {
+              "selection": "under",
+              "label": "Menos de 2.5 golos",
+              "odds": 1.94,
+              "impliedProb": 0.5155,
+              "fairProb": 0.48,
+              "modelProb": 0.4887,
+              "edge": 0.0088,
+              "ev": -0.0519,
+              "isValue": false
+            }
+          ]
+        },
+        {
+          "key": "btts",
+          "market": "btts",
+          "line": null,
+          "label": "Ambas marcam",
+          "hint": "As duas equipas marcam pelo menos um golo.",
+          "overround": 0.0661,
+          "selections": [
+            {
+              "selection": "yes",
+              "label": "Ambas marcam: Sim",
+              "odds": 1.67,
+              "impliedProb": 0.5988,
+              "fairProb": 0.5658,
+              "modelProb": 0.5678,
+              "edge": 0.0021,
+              "ev": -0.0518,
+              "isValue": false
+            },
+            {
+              "selection": "no",
+              "label": "Ambas marcam: Nao",
+              "odds": 2.14,
+              "impliedProb": 0.4673,
+              "fairProb": 0.4342,
+              "modelProb": 0.4322,
+              "edge": -0.0021,
+              "ev": -0.0751,
+              "isValue": false
+            }
+          ]
+        }
+      ],
+      "valueCount": 0,
+      "analysis": {
+        "scorelines": [
+          {
+            "score": "1-1",
+            "home": 1,
+            "away": 1,
+            "p": 0.1375
+          },
+          {
+            "score": "2-1",
+            "home": 2,
+            "away": 1,
+            "p": 0.0856
+          },
+          {
+            "score": "0-0",
+            "home": 0,
+            "away": 0,
+            "p": 0.0817
+          },
+          {
+            "score": "1-2",
+            "home": 1,
+            "away": 2,
+            "p": 0.0799
+          },
+          {
+            "score": "1-0",
+            "home": 1,
+            "away": 0,
+            "p": 0.0769
+          }
+        ],
+        "goalsDistribution": [
+          {
+            "goals": 0,
+            "label": "0",
+            "p": 0.0817
+          },
+          {
+            "goals": 1,
+            "label": "1",
+            "p": 0.1475
+          },
+          {
+            "goals": 2,
+            "label": "2",
+            "p": 0.2595
+          },
+          {
+            "goals": 3,
+            "label": "3",
+            "p": 0.2209
+          },
+          {
+            "goals": 4,
+            "label": "4",
+            "p": 0.1502
+          },
+          {
+            "goals": 5,
+            "label": "5",
+            "p": 0.0817
+          },
+          {
+            "goals": 6,
+            "label": "6+",
+            "p": 0.0584
+          }
+        ],
+        "teams": {
+          "home": {
+            "name": "Famalicao",
+            "elo": 1419,
+            "form": {
+              "games": [
+                {
+                  "opponent": "Benfica",
+                  "atHome": false,
+                  "scored": 0,
+                  "conceded": 3,
+                  "result": "L",
+                  "date": "2026-07-29T14:33:53.713Z"
+                },
+                {
+                  "opponent": "FC Porto",
+                  "atHome": false,
+                  "scored": 0,
+                  "conceded": 1,
+                  "result": "L",
+                  "date": "2026-07-15T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Sporting CP",
+                  "atHome": false,
+                  "scored": 2,
+                  "conceded": 1,
+                  "result": "W",
+                  "date": "2026-07-01T14:33:53.713Z"
+                },
+                {
+                  "opponent": "SC Braga",
+                  "atHome": false,
+                  "scored": 2,
+                  "conceded": 5,
+                  "result": "L",
+                  "date": "2026-06-17T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Vitoria Guimaraes",
+                  "atHome": false,
+                  "scored": 1,
+                  "conceded": 4,
+                  "result": "L",
+                  "date": "2026-06-03T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Moreirense",
+                  "atHome": false,
+                  "scored": 2,
+                  "conceded": 1,
+                  "result": "W",
+                  "date": "2026-05-20T14:33:53.713Z"
+                }
+              ],
+              "played": 6,
+              "wins": 2,
+              "draws": 0,
+              "losses": 4,
+              "scoredAvg": 1.17,
+              "concededAvg": 2.5,
+              "streak": "WLLWLL"
+            },
+            "split": {
+              "home": {
+                "played": 13,
+                "scoredAvg": 1.08,
+                "concededAvg": 1.77
+              },
+              "away": {
+                "played": 13,
+                "scoredAvg": 1,
+                "concededAvg": 1.85
+              }
+            },
+            "absences": []
+          },
+          "away": {
+            "name": "Rio Ave",
+            "elo": 1416,
+            "form": {
+              "games": [
+                {
+                  "opponent": "Benfica",
+                  "atHome": false,
+                  "scored": 2,
+                  "conceded": 3,
+                  "result": "L",
+                  "date": "2026-07-30T14:33:53.713Z"
+                },
+                {
+                  "opponent": "FC Porto",
+                  "atHome": false,
+                  "scored": 1,
+                  "conceded": 1,
+                  "result": "D",
+                  "date": "2026-07-16T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Sporting CP",
+                  "atHome": false,
+                  "scored": 1,
+                  "conceded": 1,
+                  "result": "D",
+                  "date": "2026-07-02T14:33:53.713Z"
+                },
+                {
+                  "opponent": "SC Braga",
+                  "atHome": false,
+                  "scored": 1,
+                  "conceded": 4,
+                  "result": "L",
+                  "date": "2026-06-18T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Vitoria Guimaraes",
+                  "atHome": false,
+                  "scored": 0,
+                  "conceded": 1,
+                  "result": "L",
+                  "date": "2026-06-04T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Moreirense",
+                  "atHome": false,
+                  "scored": 0,
+                  "conceded": 1,
+                  "result": "L",
+                  "date": "2026-05-21T14:33:53.713Z"
+                }
+              ],
+              "played": 6,
+              "wins": 0,
+              "draws": 2,
+              "losses": 4,
+              "scoredAvg": 0.83,
+              "concededAvg": 1.83,
+              "streak": "LLLDDL"
+            },
+            "split": {
+              "home": {
+                "played": 13,
+                "scoredAvg": 1.31,
+                "concededAvg": 1.38
+              },
+              "away": {
+                "played": 13,
+                "scoredAvg": 1,
+                "concededAvg": 1.92
+              }
+            },
+            "absences": []
+          }
+        },
+        "h2h": {
+          "games": [
+            {
+              "date": "2026-03-25T14:33:53.713Z",
+              "home": "Rio Ave",
+              "away": "Famalicao",
+              "score": "1-1",
+              "totalGoals": 2,
+              "bothScored": true
+            },
+            {
+              "date": "2026-03-12T14:33:53.713Z",
+              "home": "Famalicao",
+              "away": "Rio Ave",
+              "score": "1-3",
+              "totalGoals": 4,
+              "bothScored": true
+            }
+          ],
+          "played": 2,
+          "avgGoals": 3,
+          "bothScoredCount": 2
+        },
+        "news": {
+          "home": [
+            {
+              "title": "Carvalhal: «O Famalicão é uma equipa forte a jogar em casa» - A Bola",
+              "source": "A Bola",
+              "publishedAt": "Sat, 15 Aug 2026 11:48:00 GMT"
+            },
+            {
+              "title": "Carlos Carvalhal e a receção ao Marítimo: «Ainda ontem vimos que não há jogos fáceis» - Record",
+              "source": "Record",
+              "publishedAt": "Sat, 15 Aug 2026 11:43:10 GMT"
+            },
+            {
+              "title": "\"O Famalicão é das equipas que treinámos com maior capacidade de trabalho e sacrifício\" - SAPO",
+              "source": "SAPO",
+              "publishedAt": "Sat, 15 Aug 2026 14:00:00 GMT"
+            },
+            {
+              "title": "Bombeiros usam lavandaria do FC Famalicão depois de incêndio no quartel - O Minho",
+              "source": "O Minho",
+              "publishedAt": "Sat, 15 Aug 2026 11:02:40 GMT"
+            },
+            {
+              "title": "Carvalhal: «Marítimo? Tem vulnerabilidades que vamos tentar aproveitar ao máximo» - TVI",
+              "source": "TVI",
+              "publishedAt": "Sat, 15 Aug 2026 13:05:20 GMT"
+            },
+            {
+              "title": "Técnico do Marítimo pede mentalidade competitiva na visita ao Famalicão - dnoticias.pt",
+              "source": "dnoticias.pt",
+              "publishedAt": "Fri, 14 Aug 2026 15:50:00 GMT"
+            },
+            {
+              "title": "Carlos Carvalhal e o jogo 850 na carreira: «Continuamos a querer fazer coisas diferentes» - Record",
+              "source": "Record",
+              "publishedAt": "Sat, 15 Aug 2026 11:27:09 GMT"
+            },
+            {
+              "title": "Carvalhal: «O Famalicão é uma equipa forte a jogar em casa» - SAPO",
+              "source": "SAPO",
+              "publishedAt": "Sat, 15 Aug 2026 11:48:38 GMT"
+            },
+            {
+              "title": "Famalicão: Ex-funcionária e advogada tinham esquema de transporte de imigrantes para o SEF - O Minho",
+              "source": "O Minho",
+              "publishedAt": "Sat, 15 Aug 2026 11:56:59 GMT"
+            },
+            {
+              "title": "Município de Famalicão abdica de mais de 610 mil euros em Tarifas Sociais para apoiar famílias - SAPO",
+              "source": "SAPO",
+              "publishedAt": "Sat, 15 Aug 2026 12:59:00 GMT"
+            },
+            {
+              "title": "Despiste na estrada Famalicão-Póvoa de Varzim - O Minho",
+              "source": "O Minho",
+              "publishedAt": "Sat, 15 Aug 2026 14:31:32 GMT"
+            },
+            {
+              "title": "Sorriso e o jogo com o Marítimo: «Vêm motivados, mas trabalhámos bem e estamos prontos para tudo» - Record",
+              "source": "Record",
+              "publishedAt": "Fri, 14 Aug 2026 19:26:00 GMT"
+            }
+          ],
+          "away": [
+            {
+              "title": "FC Porto tenta isolar-se na liderança da I Liga na visita ao Rio Ave - dnoticias.pt",
+              "source": "dnoticias.pt",
+              "publishedAt": "Sat, 15 Aug 2026 09:40:00 GMT"
+            },
+            {
+              "title": "Assista ao Rio Ave x FC Porto na SPORT TV - Sport TV",
+              "source": "Sport TV",
+              "publishedAt": "Sat, 15 Aug 2026 10:03:49 GMT"
+            },
+            {
+              "title": "Rio Ave x FC Porto: data, hora, antevisão e favoritos - DAZN",
+              "source": "DAZN",
+              "publishedAt": "Fri, 14 Aug 2026 13:00:00 GMT"
+            },
+            {
+              "title": "Notícias - Antevisão: Rio Ave-FC Porto - FC Porto",
+              "source": "FC Porto",
+              "publishedAt": "Fri, 14 Aug 2026 22:00:00 GMT"
+            },
+            {
+              "title": "Rio Ave-FC Porto: Farioli obrigado a repetir «receita Rosario» (onzes prováveis) - CNN Portugal",
+              "source": "CNN Portugal",
+              "publishedAt": "Sat, 15 Aug 2026 10:21:06 GMT"
+            },
+            {
+              "title": "Rio Ave-FC Porto: regresso motivacional para Gabri Veiga e Pablo Rosario - ojogo.pt",
+              "source": "ojogo.pt",
+              "publishedAt": "Sat, 15 Aug 2026 07:08:00 GMT"
+            },
+            {
+              "title": "EM DIRETO: Já há onzes no Ribatejo antes do Rio Ave-FC Porto - Notícias ao Minuto",
+              "source": "Notícias ao Minuto",
+              "publishedAt": "Sat, 15 Aug 2026 13:36:00 GMT"
+            },
+            {
+              "title": "FC Porto tenta isolar-se na liderança da I Liga na visita ao Rio Ave - Correio da Manhã",
+              "source": "Correio da Manhã",
+              "publishedAt": "Sat, 15 Aug 2026 06:29:58 GMT"
+            },
+            {
+              "title": "Rodrigo Mora nas contas de Farioli para Vila do Conde - Record",
+              "source": "Record",
+              "publishedAt": "Sat, 15 Aug 2026 12:13:19 GMT"
+            },
+            {
+              "title": "FC Porto: Farioli quer equipa imune ao \"ruído\" do mercado - SIC Notícias",
+              "source": "SIC Notícias",
+              "publishedAt": "Sat, 15 Aug 2026 13:57:06 GMT"
+            },
+            {
+              "title": "Match Story - Liga Portugal Betclic (Jornada 2):Rio Ave - FC Porto - vsports.pt",
+              "source": "vsports.pt",
+              "publishedAt": "Fri, 14 Aug 2026 21:27:05 GMT"
+            },
+            {
+              "title": "Farioli confirma ausências na antevisão de encontro com o Rio Ave - RTP",
+              "source": "RTP",
+              "publishedAt": "Fri, 14 Aug 2026 13:16:28 GMT"
+            }
+          ]
+        },
+        "context": {
+          "home": [],
+          "away": []
+        },
+        "ai": null,
+        "dataQuality": 0.85,
+        "sampleMatches": 26
+      }
+    },
+    {
+      "id": "demo-aston-villa-brentford-2026-08-17",
+      "league": "Premier League",
+      "home": "Aston Villa",
+      "away": "Brentford",
+      "kickoff": "2026-08-17T18:00:00.000Z",
+      "demo": true,
+      "verdict": {
+        "outcome": "home",
+        "label": "Aston Villa vence",
+        "probability": 0.5786,
+        "runnerUp": {
+          "label": "Brentford vence",
+          "probability": 0.211
+        },
+        "strength": "claro",
+        "likelyScore": "2-1",
+        "likelyScoreProb": 0.0894,
+        "confidence": 0.85,
+        "summary": "Aston Villa vence e o resultado mais provavel, com 58%. Espera-se um jogo com golos (3.8 no total)."
+      },
+      "lambdas": {
+        "home": 2.39,
+        "away": 1.43
+      },
+      "markets": [
+        {
+          "key": "h2h",
+          "market": "h2h",
+          "line": null,
+          "label": "Resultado final",
+          "hint": "Quem ganha o jogo no tempo regulamentar.",
+          "overround": 0.0663,
+          "selections": [
+            {
+              "selection": "home",
+              "label": "Aston Villa vence",
+              "odds": 1.79,
+              "impliedProb": 0.5587,
+              "fairProb": 0.5333,
+              "modelProb": 0.5786,
+              "edge": 0.0453,
+              "ev": 0.0357,
+              "isValue": true
+            },
+            {
+              "selection": "draw",
+              "label": "Empate",
+              "odds": 3.96,
+              "impliedProb": 0.2525,
+              "fairProb": 0.2321,
+              "modelProb": 0.2104,
+              "edge": -0.0217,
+              "ev": -0.1669,
+              "isValue": false
+            },
+            {
+              "selection": "away",
+              "label": "Brentford vence",
+              "odds": 3.92,
+              "impliedProb": 0.2551,
+              "fairProb": 0.2346,
+              "modelProb": 0.211,
+              "edge": -0.0236,
+              "ev": -0.1728,
+              "isValue": false
+            }
+          ]
+        },
+        {
+          "key": "totals:2.5",
+          "market": "totals",
+          "line": 2.5,
+          "label": "Total de golos 2.5",
+          "hint": "Golos das duas equipas somados.",
+          "overround": 0.0444,
+          "selections": [
+            {
+              "selection": "over",
+              "label": "Mais de 2.5 golos",
+              "odds": 1.72,
+              "impliedProb": 0.5814,
+              "fairProb": 0.5592,
+              "modelProb": 0.7353,
+              "edge": 0.1761,
+              "ev": 0.2648,
+              "isValue": true
+            },
+            {
+              "selection": "under",
+              "label": "Menos de 2.5 golos",
+              "odds": 2.16,
+              "impliedProb": 0.463,
+              "fairProb": 0.4408,
+              "modelProb": 0.2647,
+              "edge": -0.1761,
+              "ev": -0.4283,
+              "isValue": false
+            }
+          ]
+        },
+        {
+          "key": "btts",
+          "market": "btts",
+          "line": null,
+          "label": "Ambas marcam",
+          "hint": "As duas equipas marcam pelo menos um golo.",
+          "overround": 0.054,
+          "selections": [
+            {
+              "selection": "yes",
+              "label": "Ambas marcam: Sim",
+              "odds": 1.68,
+              "impliedProb": 0.5952,
+              "fairProb": 0.5683,
+              "modelProb": 0.7014,
+              "edge": 0.1332,
+              "ev": 0.1784,
+              "isValue": true
+            },
+            {
+              "selection": "no",
+              "label": "Ambas marcam: Nao",
+              "odds": 2.18,
+              "impliedProb": 0.4587,
+              "fairProb": 0.4317,
+              "modelProb": 0.2986,
+              "edge": -0.1332,
+              "ev": -0.3491,
+              "isValue": false
+            }
+          ]
+        }
+      ],
+      "valueCount": 3,
+      "analysis": {
+        "scorelines": [
+          {
+            "score": "2-1",
+            "home": 2,
+            "away": 1,
+            "p": 0.0894
+          },
+          {
+            "score": "1-1",
+            "home": 1,
+            "away": 1,
+            "p": 0.0844
+          },
+          {
+            "score": "3-1",
+            "home": 3,
+            "away": 1,
+            "p": 0.0714
+          },
+          {
+            "score": "2-2",
+            "home": 2,
+            "away": 2,
+            "p": 0.064
+          },
+          {
+            "score": "2-0",
+            "home": 2,
+            "away": 0,
+            "p": 0.0625
+          }
+        ],
+        "goalsDistribution": [
+          {
+            "goals": 0,
+            "label": "0",
+            "p": 0.0315
+          },
+          {
+            "goals": 1,
+            "label": "1",
+            "p": 0.064
+          },
+          {
+            "goals": 2,
+            "label": "2",
+            "p": 0.1692
+          },
+          {
+            "goals": 3,
+            "label": "3",
+            "p": 0.2034
+          },
+          {
+            "goals": 4,
+            "label": "4",
+            "p": 0.1946
+          },
+          {
+            "goals": 5,
+            "label": "5",
+            "p": 0.1489
+          },
+          {
+            "goals": 6,
+            "label": "6+",
+            "p": 0.1883
+          }
+        ],
+        "teams": {
+          "home": {
+            "name": "Aston Villa",
+            "elo": 1546,
+            "form": {
+              "games": [
+                {
+                  "opponent": "Manchester City",
+                  "atHome": false,
+                  "scored": 0,
+                  "conceded": 3,
+                  "result": "L",
+                  "date": "2026-08-02T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Liverpool",
+                  "atHome": false,
+                  "scored": 0,
+                  "conceded": 0,
+                  "result": "D",
+                  "date": "2026-07-21T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Arsenal",
+                  "atHome": false,
+                  "scored": 1,
+                  "conceded": 2,
+                  "result": "L",
+                  "date": "2026-07-09T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Chelsea",
+                  "atHome": false,
+                  "scored": 1,
+                  "conceded": 0,
+                  "result": "W",
+                  "date": "2026-06-27T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Tottenham",
+                  "atHome": false,
+                  "scored": 1,
+                  "conceded": 3,
+                  "result": "L",
+                  "date": "2026-06-15T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Newcastle",
+                  "atHome": false,
+                  "scored": 4,
+                  "conceded": 2,
+                  "result": "W",
+                  "date": "2026-06-03T14:33:53.713Z"
+                }
+              ],
+              "played": 6,
+              "wins": 2,
+              "draws": 1,
+              "losses": 3,
+              "scoredAvg": 1.17,
+              "concededAvg": 1.67,
+              "streak": "WLWLDL"
+            },
+            "split": {
+              "home": {
+                "played": 11,
+                "scoredAvg": 1.82,
+                "concededAvg": 0.82
+              },
+              "away": {
+                "played": 11,
+                "scoredAvg": 1.73,
+                "concededAvg": 1.64
+              }
+            },
+            "absences": []
+          },
+          "away": {
+            "name": "Brentford",
+            "elo": 1461,
+            "form": {
+              "games": [
+                {
+                  "opponent": "Manchester City",
+                  "atHome": false,
+                  "scored": 1,
+                  "conceded": 3,
+                  "result": "L",
+                  "date": "2026-07-28T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Liverpool",
+                  "atHome": false,
+                  "scored": 1,
+                  "conceded": 4,
+                  "result": "L",
+                  "date": "2026-07-16T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Arsenal",
+                  "atHome": false,
+                  "scored": 0,
+                  "conceded": 2,
+                  "result": "L",
+                  "date": "2026-07-04T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Chelsea",
+                  "atHome": false,
+                  "scored": 5,
+                  "conceded": 1,
+                  "result": "W",
+                  "date": "2026-06-22T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Tottenham",
+                  "atHome": false,
+                  "scored": 1,
+                  "conceded": 1,
+                  "result": "D",
+                  "date": "2026-06-10T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Newcastle",
+                  "atHome": false,
+                  "scored": 1,
+                  "conceded": 1,
+                  "result": "D",
+                  "date": "2026-05-29T14:33:53.713Z"
+                }
+              ],
+              "played": 6,
+              "wins": 1,
+              "draws": 2,
+              "losses": 3,
+              "scoredAvg": 1.5,
+              "concededAvg": 2,
+              "streak": "DDWLLL"
+            },
+            "split": {
+              "home": {
+                "played": 11,
+                "scoredAvg": 2.09,
+                "concededAvg": 1.73
+              },
+              "away": {
+                "played": 11,
+                "scoredAvg": 1.45,
+                "concededAvg": 2.36
+              }
+            },
+            "absences": []
+          }
+        },
+        "h2h": {
+          "games": [
+            {
+              "date": "2026-05-17T14:33:53.713Z",
+              "home": "Aston Villa",
+              "away": "Brentford",
+              "score": "1-2",
+              "totalGoals": 3,
+              "bothScored": true
+            },
+            {
+              "date": "2026-03-23T14:33:53.713Z",
+              "home": "Brentford",
+              "away": "Aston Villa",
+              "score": "1-1",
+              "totalGoals": 2,
+              "bothScored": true
+            }
+          ],
+          "played": 2,
+          "avgGoals": 2.5,
+          "bothScoredCount": 2
+        },
+        "news": {
+          "home": [
+            {
+              "title": "Supertaça europeia: Aston Villa foi de tanque, PSG foi de TGV - Público",
+              "source": "Público",
+              "publishedAt": "Wed, 12 Aug 2026 20:56:46 GMT"
+            },
+            {
+              "title": "PSG x Aston Villa na Supertaça Europeia: data, hora, antevisão, favoritos e lista de vencedores - DAZN",
+              "source": "DAZN",
+              "publishedAt": "Tue, 11 Aug 2026 12:37:55 GMT"
+            },
+            {
+              "title": "Prognóstico PSG vs Aston Villa - Competição (12/8/2026) - Observador",
+              "source": "Observador",
+              "publishedAt": "Mon, 10 Aug 2026 16:45:55 GMT"
+            },
+            {
+              "title": "Vítor Pinto: «O Aston Villa quer Palhinha para tapar um buraco e o Bayern não aceita. É uma excelente notícia para o Benfica...» - Record",
+              "source": "Record",
+              "publishedAt": "Fri, 14 Aug 2026 20:00:00 GMT"
+            },
+            {
+              "title": "Mercado Benfica: acordo fechado entre Palhinha e Aston Villa - A Bola",
+              "source": "A Bola",
+              "publishedAt": "Wed, 12 Aug 2026 17:42:00 GMT"
+            },
+            {
+              "title": "Fotogalerias - Lusa",
+              "source": "Lusa",
+              "publishedAt": "Wed, 12 Aug 2026 21:35:05 GMT"
+            },
+            {
+              "title": "Aston Villa não convence Bayern a libertar João Palhinha - Sport TV",
+              "source": "Sport TV",
+              "publishedAt": "Fri, 14 Aug 2026 03:55:00 GMT"
+            },
+            {
+              "title": "Unai Emery (Aston Villa) atribui favoritismo ao PSG na Supertaça Europeia - RTP",
+              "source": "RTP",
+              "publishedAt": "Tue, 11 Aug 2026 20:15:45 GMT"
+            },
+            {
+              "title": "Resumo: Paris 2-1 Aston Villa | Resumos | Supertaça Europeia - UEFA.com",
+              "source": "UEFA.com",
+              "publishedAt": "Wed, 12 Aug 2026 22:07:33 GMT"
+            },
+            {
+              "title": "Diretor desportivo do Bayern confirma: «Não há acordo com o Aston Villa por Palhinha» - Record",
+              "source": "Record",
+              "publishedAt": "Fri, 14 Aug 2026 11:35:00 GMT"
+            },
+            {
+              "title": "Hoje pode ver em direto na TV... - A Bola",
+              "source": "A Bola",
+              "publishedAt": "Wed, 12 Aug 2026 05:45:00 GMT"
+            },
+            {
+              "title": "Luka Lynch | Aston Villa | Supertaça Europeia - UEFA.com",
+              "source": "UEFA.com",
+              "publishedAt": "Wed, 12 Aug 2026 22:36:18 GMT"
+            }
+          ],
+          "away": [
+            {
+              "title": "Ao vivo: Brentford x Tottenham | Rodada 1 | Premier League - ge",
+              "source": "ge",
+              "publishedAt": "Fri, 14 Aug 2026 17:17:10 GMT"
+            },
+            {
+              "title": "Diouf je blíž přestupu. Brentford měl na žádaného beka podat nabídku, vydělala by i Slavia - Flashscore.pt",
+              "source": "Flashscore.pt",
+              "publishedAt": "Thu, 13 Aug 2026 23:28:46 GMT"
+            },
+            {
+              "title": "Collins: Brentford tem de manter os padrões deixados por Henderson - FotMob",
+              "source": "FotMob",
+              "publishedAt": "Wed, 12 Aug 2026 16:00:37 GMT"
+            },
+            {
+              "title": "Brentford U21 x Wycombe Wanderers U21 placar ao vivo, H2H e escalações - Sofascore",
+              "source": "Sofascore",
+              "publishedAt": "Wed, 12 Aug 2026 18:39:15 GMT"
+            },
+            {
+              "title": "Zůstane Diouf v Premier League? Zájem má Brentford, Slavia by brala miliony - Flashscore.pt",
+              "source": "Flashscore.pt",
+              "publishedAt": "Thu, 13 Aug 2026 05:58:51 GMT"
+            },
+            {
+              "title": "MK Dons vs Brentford Academy - resultado ao vivo, equipas iniciais prováveis e estatísticas H2H - FotMob",
+              "source": "FotMob",
+              "publishedAt": "Thu, 13 Aug 2026 10:51:00 GMT"
+            },
+            {
+              "title": "Brentford x Tottenham - placar ao vivo, escalações prováveis e estatísticas H2H - FotMob",
+              "source": "FotMob",
+              "publishedAt": "Fri, 14 Aug 2026 00:04:54 GMT"
+            },
+            {
+              "title": "Gols esperados (xG) - Estatísticas de Brentford para Premier League 2025/2026 - FotMob",
+              "source": "FotMob",
+              "publishedAt": "Thu, 13 Aug 2026 00:29:37 GMT"
+            },
+            {
+              "title": "Diferença de xG - Estatísticas de Brentford para Premier League 2025/2026 - FotMob",
+              "source": "FotMob",
+              "publishedAt": "Thu, 13 Aug 2026 13:33:55 GMT"
+            },
+            {
+              "title": "Nathan Collins aposta que o Brentford vai se basear nos padrões de Jordan Henderson - Goal.com",
+              "source": "Goal.com",
+              "publishedAt": "Fri, 14 Aug 2026 03:00:00 GMT"
+            },
+            {
+              "title": "Bayern de Munique faz sondagem por Igor Thiago, atacante do Brasil na Copa do Mundo - O GLOBO",
+              "source": "O GLOBO",
+              "publishedAt": "Tue, 11 Aug 2026 17:00:32 GMT"
+            },
+            {
+              "title": "Passes longos acertados por partida - Estatísticas de Tottenham Hotspur para Premier League 2025/2026 - FotMob",
+              "source": "FotMob",
+              "publishedAt": "Thu, 13 Aug 2026 10:42:03 GMT"
+            }
+          ]
+        },
+        "context": {
+          "home": [],
+          "away": []
+        },
+        "ai": null,
+        "dataQuality": 0.85,
+        "sampleMatches": 22
+      }
+    },
+    {
+      "id": "demo-nacional-moreirense-2026-08-17",
+      "league": "Liga Portugal",
+      "home": "Nacional",
+      "away": "Moreirense",
+      "kickoff": "2026-08-17T18:30:00.000Z",
+      "demo": true,
+      "verdict": {
+        "outcome": "home",
+        "label": "Nacional vence",
+        "probability": 0.3532,
+        "runnerUp": {
+          "label": "Moreirense vence",
+          "probability": 0.3524
+        },
+        "strength": "aberto",
+        "likelyScore": "1-1",
+        "likelyScoreProb": 0.1407,
+        "confidence": 0.85,
+        "summary": "Jogo em aberto: nenhum resultado se destaca. Espera-se um jogo equilibrado em golos (2.6 no total)."
+      },
+      "lambdas": {
+        "home": 1.32,
+        "away": 1.32
+      },
+      "markets": [
+        {
+          "key": "h2h",
+          "market": "h2h",
+          "line": null,
+          "label": "Resultado final",
+          "hint": "Quem ganha o jogo no tempo regulamentar.",
+          "overround": 0.0355,
+          "selections": [
+            {
+              "selection": "home",
+              "label": "Nacional vence",
+              "odds": 2.76,
+              "impliedProb": 0.3623,
+              "fairProb": 0.3503,
+              "modelProb": 0.3532,
+              "edge": 0.0029,
+              "ev": -0.0251,
+              "isValue": false
+            },
+            {
+              "selection": "draw",
+              "label": "Empate",
+              "odds": 3.66,
+              "impliedProb": 0.2732,
+              "fairProb": 0.262,
+              "modelProb": 0.2944,
+              "edge": 0.0324,
+              "ev": 0.0774,
+              "isValue": false
+            },
+            {
+              "selection": "away",
+              "label": "Moreirense vence",
+              "odds": 2.5,
+              "impliedProb": 0.4,
+              "fairProb": 0.3877,
+              "modelProb": 0.3524,
+              "edge": -0.0353,
+              "ev": -0.119,
+              "isValue": false
+            }
+          ]
+        },
+        {
+          "key": "totals:2.5",
+          "market": "totals",
+          "line": 2.5,
+          "label": "Total de golos 2.5",
+          "hint": "Golos das duas equipas somados.",
+          "overround": 0.111,
+          "selections": [
+            {
+              "selection": "over",
+              "label": "Mais de 2.5 golos",
+              "odds": 1.63,
+              "impliedProb": 0.6135,
+              "fairProb": 0.558,
+              "modelProb": 0.4898,
+              "edge": -0.0682,
+              "ev": -0.2016,
+              "isValue": false
+            },
+            {
+              "selection": "under",
+              "label": "Menos de 2.5 golos",
+              "odds": 2.01,
+              "impliedProb": 0.4975,
+              "fairProb": 0.442,
+              "modelProb": 0.5102,
+              "edge": 0.0682,
+              "ev": 0.0255,
+              "isValue": true
+            }
+          ]
+        },
+        {
+          "key": "btts",
+          "market": "btts",
+          "line": null,
+          "label": "Ambas marcam",
+          "hint": "As duas equipas marcam pelo menos um golo.",
+          "overround": 0.0397,
+          "selections": [
+            {
+              "selection": "yes",
+              "label": "Ambas marcam: Sim",
+              "odds": 1.68,
+              "impliedProb": 0.5952,
+              "fairProb": 0.5754,
+              "modelProb": 0.5519,
+              "edge": -0.0235,
+              "ev": -0.0728,
+              "isValue": false
+            },
+            {
+              "selection": "no",
+              "label": "Ambas marcam: Nao",
+              "odds": 2.25,
+              "impliedProb": 0.4444,
+              "fairProb": 0.4246,
+              "modelProb": 0.4481,
+              "edge": 0.0235,
+              "ev": 0.0082,
+              "isValue": false
+            }
+          ]
+        }
+      ],
+      "valueCount": 1,
+      "analysis": {
+        "scorelines": [
+          {
+            "score": "1-1",
+            "home": 1,
+            "away": 1,
+            "p": 0.1407
+          },
+          {
+            "score": "0-0",
+            "home": 0,
+            "away": 0,
+            "p": 0.0881
+          },
+          {
+            "score": "2-1",
+            "home": 2,
+            "away": 1,
+            "p": 0.082
+          },
+          {
+            "score": "1-2",
+            "home": 1,
+            "away": 2,
+            "p": 0.0819
+          },
+          {
+            "score": "1-0",
+            "home": 1,
+            "away": 0,
+            "p": 0.0785
+          }
+        ],
+        "goalsDistribution": [
+          {
+            "goals": 0,
+            "label": "0",
+            "p": 0.0881
+          },
+          {
+            "goals": 1,
+            "label": "1",
+            "p": 0.1568
+          },
+          {
+            "goals": 2,
+            "label": "2",
+            "p": 0.2653
+          },
+          {
+            "goals": 3,
+            "label": "3",
+            "p": 0.2186
+          },
+          {
+            "goals": 4,
+            "label": "4",
+            "p": 0.1439
+          },
+          {
+            "goals": 5,
+            "label": "5",
+            "p": 0.0758
+          },
+          {
+            "goals": 6,
+            "label": "6+",
+            "p": 0.0515
+          }
+        ],
+        "teams": {
+          "home": {
+            "name": "Nacional",
+            "elo": 1422,
+            "form": {
+              "games": [
+                {
+                  "opponent": "Benfica",
+                  "atHome": false,
+                  "scored": 0,
+                  "conceded": 1,
+                  "result": "L",
+                  "date": "2026-07-26T14:33:53.713Z"
+                },
+                {
+                  "opponent": "FC Porto",
+                  "atHome": false,
+                  "scored": 1,
+                  "conceded": 2,
+                  "result": "L",
+                  "date": "2026-07-12T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Sporting CP",
+                  "atHome": false,
+                  "scored": 0,
+                  "conceded": 2,
+                  "result": "L",
+                  "date": "2026-06-28T14:33:53.713Z"
+                },
+                {
+                  "opponent": "SC Braga",
+                  "atHome": false,
+                  "scored": 0,
+                  "conceded": 1,
+                  "result": "L",
+                  "date": "2026-06-14T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Vitoria Guimaraes",
+                  "atHome": false,
+                  "scored": 1,
+                  "conceded": 2,
+                  "result": "L",
+                  "date": "2026-05-31T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Moreirense",
+                  "atHome": false,
+                  "scored": 0,
+                  "conceded": 4,
+                  "result": "L",
+                  "date": "2026-05-17T14:33:53.713Z"
+                }
+              ],
+              "played": 6,
+              "wins": 0,
+              "draws": 0,
+              "losses": 6,
+              "scoredAvg": 0.33,
+              "concededAvg": 2,
+              "streak": "LLLLLL"
+            },
+            "split": {
+              "home": {
+                "played": 13,
+                "scoredAvg": 1.31,
+                "concededAvg": 1.31
+              },
+              "away": {
+                "played": 13,
+                "scoredAvg": 0.92,
+                "concededAvg": 2.23
+              }
+            },
+            "absences": []
+          },
+          "away": {
+            "name": "Moreirense",
+            "elo": 1466,
+            "form": {
+              "games": [
+                {
+                  "opponent": "Benfica",
+                  "atHome": false,
+                  "scored": 0,
+                  "conceded": 2,
+                  "result": "L",
+                  "date": "2026-08-03T14:33:53.713Z"
+                },
+                {
+                  "opponent": "FC Porto",
+                  "atHome": false,
+                  "scored": 0,
+                  "conceded": 1,
+                  "result": "L",
+                  "date": "2026-07-20T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Sporting CP",
+                  "atHome": false,
+                  "scored": 0,
+                  "conceded": 2,
+                  "result": "L",
+                  "date": "2026-07-06T14:33:53.713Z"
+                },
+                {
+                  "opponent": "SC Braga",
+                  "atHome": false,
+                  "scored": 2,
+                  "conceded": 2,
+                  "result": "D",
+                  "date": "2026-06-22T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Vitoria Guimaraes",
+                  "atHome": false,
+                  "scored": 0,
+                  "conceded": 5,
+                  "result": "L",
+                  "date": "2026-06-08T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Benfica",
+                  "atHome": true,
+                  "scored": 0,
+                  "conceded": 0,
+                  "result": "D",
+                  "date": "2026-05-30T14:33:53.713Z"
+                }
+              ],
+              "played": 6,
+              "wins": 0,
+              "draws": 2,
+              "losses": 4,
+              "scoredAvg": 0.33,
+              "concededAvg": 2,
+              "streak": "DLDLLL"
+            },
+            "split": {
+              "home": {
+                "played": 13,
+                "scoredAvg": 1.31,
+                "concededAvg": 0.77
+              },
+              "away": {
+                "played": 13,
+                "scoredAvg": 1,
+                "concededAvg": 2.15
+              }
+            },
+            "absences": []
+          }
+        },
+        "h2h": {
+          "games": [
+            {
+              "date": "2026-05-17T14:33:53.713Z",
+              "home": "Moreirense",
+              "away": "Nacional",
+              "score": "4-0",
+              "totalGoals": 4,
+              "bothScored": false
+            },
+            {
+              "date": "2026-02-02T14:33:53.713Z",
+              "home": "Nacional",
+              "away": "Moreirense",
+              "score": "2-1",
+              "totalGoals": 3,
+              "bothScored": true
+            }
+          ],
+          "played": 2,
+          "avgGoals": 3.5,
+          "bothScoredCount": 1
+        },
+        "news": {
+          "home": [
+            {
+              "title": "Europeus de atletismo: Joana Pontes fixa recorde nacional na marcha - Público",
+              "source": "Público",
+              "publishedAt": "Sat, 15 Aug 2026 11:21:14 GMT"
+            },
+            {
+              "title": "Vitória Oliveira bate recorde nacional e Camarate fixa máximo sub-23 na meia maratona de marcha - Diário de Notícias",
+              "source": "Diário de Notícias",
+              "publishedAt": "Sat, 15 Aug 2026 11:29:03 GMT"
+            },
+            {
+              "title": "Vitória Oliveira estabelece um novo recorde nacional na meia-maratona de marcha - Comité Olímpico de Portugal",
+              "source": "Comité Olímpico de Portugal",
+              "publishedAt": "Sat, 15 Aug 2026 09:35:34 GMT"
+            },
+            {
+              "title": "Eduardo Camarate bate recorde nacional Sub-23 de meia-maratona marcha nos Europeus de Birmingham - fpatletismo.pt",
+              "source": "fpatletismo.pt",
+              "publishedAt": "Sat, 15 Aug 2026 09:20:09 GMT"
+            },
+            {
+              "title": "Vitória Oliveira, do Jardim da Serra, bate recorde nacional - dnoticias.pt",
+              "source": "dnoticias.pt",
+              "publishedAt": "Sat, 15 Aug 2026 10:09:00 GMT"
+            },
+            {
+              "title": "Joana Pontes no top 10 da maratona em marcha com recorde nacional - Record",
+              "source": "Record",
+              "publishedAt": "Sat, 15 Aug 2026 11:27:09 GMT"
+            },
+            {
+              "title": "Europeus de Atletismo: Joana Pontes bate recorde nacional na maratona em marcha - CNN Portugal",
+              "source": "CNN Portugal",
+              "publishedAt": "Sat, 15 Aug 2026 12:39:04 GMT"
+            },
+            {
+              "title": "Rota Nacional de Cozinhas do Mar já está lançada - Açoriano Oriental",
+              "source": "Açoriano Oriental",
+              "publishedAt": "Sat, 15 Aug 2026 10:30:00 GMT"
+            },
+            {
+              "title": "Camila Rebelo melhora recorde nacional rumo à final dos 100 metros costas - RTP",
+              "source": "RTP",
+              "publishedAt": "Fri, 14 Aug 2026 19:01:02 GMT"
+            },
+            {
+              "title": "Futebol de Praia: SandGames quer ser bicampeão nacional feminino - Diário de Coimbra",
+              "source": "Diário de Coimbra",
+              "publishedAt": "Sat, 15 Aug 2026 09:05:00 GMT"
+            },
+            {
+              "title": "Em Portugal foi criado o cargo de Comissário Nacional para o Eclipse 2026? - SIC Notícias",
+              "source": "SIC Notícias",
+              "publishedAt": "Thu, 13 Aug 2026 15:00:00 GMT"
+            },
+            {
+              "title": "Camila Rebelo bate recorde nacional dos 100m costas e garante final europeia - Comité Olímpico de Portugal",
+              "source": "Comité Olímpico de Portugal",
+              "publishedAt": "Fri, 14 Aug 2026 17:32:17 GMT"
+            }
+          ],
+          "away": [
+            {
+              "title": "Vasco Botelho da Costa quer Moreirense \"a ter bola\" diante do Arouca - Record",
+              "source": "Record",
+              "publishedAt": "Sat, 15 Aug 2026 14:00:57 GMT"
+            },
+            {
+              "title": "Vasco Botelho da Costa quer Moreirense \"a ter bola\" diante do Arouca - Lusa",
+              "source": "Lusa",
+              "publishedAt": "Sat, 15 Aug 2026 13:05:00 GMT"
+            },
+            {
+              "title": "Manuel Mendonça deixa Sporting e vai reforçar o Moreirense - RTP",
+              "source": "RTP",
+              "publishedAt": "Fri, 14 Aug 2026 15:49:51 GMT"
+            },
+            {
+              "title": "Arouca vs Moreirense: Primeira Liga stats & head-to-head - BBC",
+              "source": "BBC",
+              "publishedAt": "Sat, 15 Aug 2026 05:48:45 GMT"
+            },
+            {
+              "title": "Vasco Botelho da Costa: «Arouca? Queremos ter bola, como nós gostamos» - TVI",
+              "source": "TVI",
+              "publishedAt": "Sat, 15 Aug 2026 14:29:56 GMT"
+            },
+            {
+              "title": "SC Mirandela inicia Campeonato Nacional Sub-19 II Divisão em casa frente ao Moreirense - | Mensageiro de Bragança",
+              "source": "| Mensageiro de Bragança",
+              "publishedAt": "Sat, 15 Aug 2026 07:51:00 GMT"
+            },
+            {
+              "title": "Ficha de jogo indisponível - FC Porto",
+              "source": "FC Porto",
+              "publishedAt": "Fri, 14 Aug 2026 13:33:39 GMT"
+            },
+            {
+              "title": "Vasco Seabra: «Respeitar o adversário ao máximo, mas com a ambição clara de vencermos» - Record",
+              "source": "Record",
+              "publishedAt": "Sat, 15 Aug 2026 14:27:39 GMT"
+            },
+            {
+              "title": "Manuel Mendonça deixa Sporting para reforçar o Moreirense - Record",
+              "source": "Record",
+              "publishedAt": "Fri, 14 Aug 2026 11:01:00 GMT"
+            },
+            {
+              "title": "Manuel Mendonça deixa Sporting para reforçar o Moreirense - Record",
+              "source": "Record",
+              "publishedAt": "Fri, 14 Aug 2026 11:05:25 GMT"
+            },
+            {
+              "title": "Rafael Lima a caminho do Moreirense - Record",
+              "source": "Record",
+              "publishedAt": "Thu, 13 Aug 2026 15:00:00 GMT"
+            },
+            {
+              "title": "Match Story - Liga Portugal Betclic (Jornada 2):Arouca - Moreirense - vsports.pt",
+              "source": "vsports.pt",
+              "publishedAt": "Fri, 14 Aug 2026 12:46:05 GMT"
+            }
+          ]
+        },
+        "context": {
+          "home": [],
+          "away": []
+        },
+        "ai": null,
+        "dataQuality": 0.85,
+        "sampleMatches": 26
+      }
+    },
+    {
+      "id": "demo-girona-real-sociedad-2026-08-17",
+      "league": "La Liga",
+      "home": "Girona",
+      "away": "Real Sociedad",
+      "kickoff": "2026-08-17T20:00:00.000Z",
+      "demo": true,
+      "verdict": {
+        "outcome": "away",
+        "label": "Real Sociedad vence",
+        "probability": 0.4192,
+        "runnerUp": {
+          "label": "Girona vence",
+          "probability": 0.3253
+        },
+        "strength": "aberto",
+        "likelyScore": "1-1",
+        "likelyScoreProb": 0.1136,
+        "confidence": 0.85,
+        "summary": "Jogo em aberto: nenhum resultado se destaca. Espera-se um jogo com golos (3.3 no total)."
+      },
+      "lambdas": {
+        "home": 1.53,
+        "away": 1.75
+      },
+      "markets": [
+        {
+          "key": "h2h",
+          "market": "h2h",
+          "line": null,
+          "label": "Resultado final",
+          "hint": "Quem ganha o jogo no tempo regulamentar.",
+          "overround": 0.0684,
+          "selections": [
+            {
+              "selection": "home",
+              "label": "Girona vence",
+              "odds": 2.37,
+              "impliedProb": 0.4219,
+              "fairProb": 0.398,
+              "modelProb": 0.3253,
+              "edge": -0.0727,
+              "ev": -0.229,
+              "isValue": false
+            },
+            {
+              "selection": "draw",
+              "label": "Empate",
+              "odds": 3.64,
+              "impliedProb": 0.2747,
+              "fairProb": 0.2533,
+              "modelProb": 0.2555,
+              "edge": 0.0022,
+              "ev": -0.0699,
+              "isValue": false
+            },
+            {
+              "selection": "away",
+              "label": "Real Sociedad vence",
+              "odds": 2.69,
+              "impliedProb": 0.3717,
+              "fairProb": 0.3487,
+              "modelProb": 0.4192,
+              "edge": 0.0705,
+              "ev": 0.1275,
+              "isValue": true
+            }
+          ]
+        },
+        {
+          "key": "totals:2.5",
+          "market": "totals",
+          "line": 2.5,
+          "label": "Total de golos 2.5",
+          "hint": "Golos das duas equipas somados.",
+          "overround": 0.042,
+          "selections": [
+            {
+              "selection": "over",
+              "label": "Mais de 2.5 golos",
+              "odds": 1.74,
+              "impliedProb": 0.5747,
+              "fairProb": 0.5537,
+              "modelProb": 0.6376,
+              "edge": 0.0839,
+              "ev": 0.1095,
+              "isValue": true
+            },
+            {
+              "selection": "under",
+              "label": "Menos de 2.5 golos",
+              "odds": 2.14,
+              "impliedProb": 0.4673,
+              "fairProb": 0.4463,
+              "modelProb": 0.3624,
+              "edge": -0.0839,
+              "ev": -0.2246,
+              "isValue": false
+            }
+          ]
+        },
+        {
+          "key": "btts",
+          "market": "btts",
+          "line": null,
+          "label": "Ambas marcam",
+          "hint": "As duas equipas marcam pelo menos um golo.",
+          "overround": 0.0219,
+          "selections": [
+            {
+              "selection": "yes",
+              "label": "Ambas marcam: Sim",
+              "odds": 1.75,
+              "impliedProb": 0.5714,
+              "fairProb": 0.5605,
+              "modelProb": 0.6612,
+              "edge": 0.1007,
+              "ev": 0.1571,
+              "isValue": true
+            },
+            {
+              "selection": "no",
+              "label": "Ambas marcam: Nao",
+              "odds": 2.22,
+              "impliedProb": 0.4505,
+              "fairProb": 0.4395,
+              "modelProb": 0.3388,
+              "edge": -0.1007,
+              "ev": -0.2478,
+              "isValue": false
+            }
+          ]
+        }
+      ],
+      "valueCount": 3,
+      "analysis": {
+        "scorelines": [
+          {
+            "score": "1-1",
+            "home": 1,
+            "away": 1,
+            "p": 0.1136
+          },
+          {
+            "score": "1-2",
+            "home": 1,
+            "away": 2,
+            "p": 0.0882
+          },
+          {
+            "score": "2-1",
+            "home": 2,
+            "away": 1,
+            "p": 0.077
+          },
+          {
+            "score": "2-2",
+            "home": 2,
+            "away": 2,
+            "p": 0.0675
+          },
+          {
+            "score": "0-2",
+            "home": 0,
+            "away": 2,
+            "p": 0.0576
+          }
+        ],
+        "goalsDistribution": [
+          {
+            "goals": 0,
+            "label": "0",
+            "p": 0.0505
+          },
+          {
+            "goals": 1,
+            "label": "1",
+            "p": 0.0968
+          },
+          {
+            "goals": 2,
+            "label": "2",
+            "p": 0.215
+          },
+          {
+            "goals": 3,
+            "label": "3",
+            "p": 0.2212
+          },
+          {
+            "goals": 4,
+            "label": "4",
+            "p": 0.1817
+          },
+          {
+            "goals": 5,
+            "label": "5",
+            "p": 0.1194
+          },
+          {
+            "goals": 6,
+            "label": "6+",
+            "p": 0.1154
+          }
+        ],
+        "teams": {
+          "home": {
+            "name": "Girona",
+            "elo": 1487,
+            "form": {
+              "games": [
+                {
+                  "opponent": "Real Madrid",
+                  "atHome": false,
+                  "scored": 0,
+                  "conceded": 2,
+                  "result": "L",
+                  "date": "2026-07-30T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Barcelona",
+                  "atHome": false,
+                  "scored": 2,
+                  "conceded": 2,
+                  "result": "D",
+                  "date": "2026-07-20T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Atletico Madrid",
+                  "atHome": false,
+                  "scored": 1,
+                  "conceded": 5,
+                  "result": "L",
+                  "date": "2026-07-10T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Athletic Club",
+                  "atHome": false,
+                  "scored": 0,
+                  "conceded": 5,
+                  "result": "L",
+                  "date": "2026-06-30T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Real Sociedad",
+                  "atHome": false,
+                  "scored": 2,
+                  "conceded": 2,
+                  "result": "D",
+                  "date": "2026-06-20T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Villarreal",
+                  "atHome": false,
+                  "scored": 1,
+                  "conceded": 0,
+                  "result": "W",
+                  "date": "2026-06-10T14:33:53.713Z"
+                }
+              ],
+              "played": 6,
+              "wins": 1,
+              "draws": 2,
+              "losses": 3,
+              "scoredAvg": 1,
+              "concededAvg": 2.67,
+              "streak": "WDLLDL"
+            },
+            "split": {
+              "home": {
+                "played": 9,
+                "scoredAvg": 1.56,
+                "concededAvg": 1.33
+              },
+              "away": {
+                "played": 9,
+                "scoredAvg": 1.56,
+                "concededAvg": 2.11
+              }
+            },
+            "absences": []
+          },
+          "away": {
+            "name": "Real Sociedad",
+            "elo": 1535,
+            "form": {
+              "games": [
+                {
+                  "opponent": "Real Madrid",
+                  "atHome": false,
+                  "scored": 1,
+                  "conceded": 3,
+                  "result": "L",
+                  "date": "2026-08-04T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Barcelona",
+                  "atHome": false,
+                  "scored": 0,
+                  "conceded": 0,
+                  "result": "D",
+                  "date": "2026-07-25T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Atletico Madrid",
+                  "atHome": false,
+                  "scored": 2,
+                  "conceded": 0,
+                  "result": "W",
+                  "date": "2026-07-15T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Athletic Club",
+                  "atHome": false,
+                  "scored": 2,
+                  "conceded": 0,
+                  "result": "W",
+                  "date": "2026-07-05T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Real Madrid",
+                  "atHome": true,
+                  "scored": 2,
+                  "conceded": 2,
+                  "result": "D",
+                  "date": "2026-06-29T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Barcelona",
+                  "atHome": true,
+                  "scored": 3,
+                  "conceded": 2,
+                  "result": "W",
+                  "date": "2026-06-28T14:33:53.713Z"
+                }
+              ],
+              "played": 6,
+              "wins": 3,
+              "draws": 2,
+              "losses": 1,
+              "scoredAvg": 1.67,
+              "concededAvg": 1.17,
+              "streak": "WDWWDL"
+            },
+            "split": {
+              "home": {
+                "played": 9,
+                "scoredAvg": 2.33,
+                "concededAvg": 1.33
+              },
+              "away": {
+                "played": 9,
+                "scoredAvg": 1.22,
+                "concededAvg": 1.11
+              }
+            },
+            "absences": []
+          }
+        },
+        "h2h": {
+          "games": [
+            {
+              "date": "2026-06-20T14:33:53.713Z",
+              "home": "Real Sociedad",
+              "away": "Girona",
+              "score": "2-2",
+              "totalGoals": 4,
+              "bothScored": true
+            },
+            {
+              "date": "2026-05-06T14:33:53.713Z",
+              "home": "Girona",
+              "away": "Real Sociedad",
+              "score": "1-2",
+              "totalGoals": 3,
+              "bothScored": true
+            }
+          ],
+          "played": 2,
+          "avgGoals": 3.5,
+          "bothScoredCount": 2
+        },
+        "news": {
+          "home": [
+            {
+              "title": "Fiatc Girona inicia os exames médicos dos seus jogadores para a pré-época, com Sergi Martínez ao comando - ECO",
+              "source": "ECO",
+              "publishedAt": "Thu, 13 Aug 2026 23:48:32 GMT"
+            },
+            {
+              "title": "Jogo - Girona FC B vs UE Sant Andreu - Sport TV",
+              "source": "Sport TV",
+              "publishedAt": "Wed, 12 Aug 2026 07:45:00 GMT"
+            },
+            {
+              "title": "Em contato da equipe #PaparazzoRubroNegro com uma fonte ligada ao Flamengo, foi confirmado que o clube realizou uma sondagem pelo atacante Yaser Asprilla. No entanto, o estafe do jogador informou que possui outras prioridades para o futuro de Yas - instagram.com",
+              "source": "instagram.com",
+              "publishedAt": "Wed, 12 Aug 2026 02:56:56 GMT"
+            },
+            {
+              "title": "Gols sofridos de bola parada - Estatísticas de Girona B para Segunda Federación 2025/2026 - FotMob",
+              "source": "FotMob",
+              "publishedAt": "Fri, 14 Aug 2026 01:08:56 GMT"
+            },
+            {
+              "title": "Galeria de Al•luvió e a alma adormecida da paisagem: a luz na pedra vulcânica de Girona - 4 - ArchDaily",
+              "source": "ArchDaily",
+              "publishedAt": "Tue, 11 Aug 2026 00:30:24 GMT"
+            },
+            {
+              "title": "Informações e Estatísticas de Quique Álvarez - 365Scores",
+              "source": "365Scores",
+              "publishedAt": "Thu, 13 Aug 2026 18:02:57 GMT"
+            },
+            {
+              "title": "Yáser Asprilla, do Girona, no Flamengo? Veja o que existe de concreto - Terra",
+              "source": "Terra",
+              "publishedAt": "Tue, 11 Aug 2026 19:32:00 GMT"
+            },
+            {
+              "title": "Al-Ittihad acerta com o Girona: mais um jogador fora dos planos - Goal.com",
+              "source": "Goal.com",
+              "publishedAt": "Wed, 12 Aug 2026 14:40:48 GMT"
+            },
+            {
+              "title": "Vitor Reis brigará por titularidade no City após impressionar Maresca - Metrópoles",
+              "source": "Metrópoles",
+              "publishedAt": "Tue, 11 Aug 2026 18:35:00 GMT"
+            },
+            {
+              "title": "Intensa E Maravilhosa: Recriei Uma Clássica PORTER Rayo – Girona (fsBO3pdX34) - Mshale",
+              "source": "Mshale",
+              "publishedAt": "Tue, 11 Aug 2026 21:34:03 GMT"
+            },
+            {
+              "title": "Pênaltis sofridos - Estatísticas de Girona para LaLiga 2025/2026 - FotMob",
+              "source": "FotMob",
+              "publishedAt": "Wed, 12 Aug 2026 19:24:52 GMT"
+            },
+            {
+              "title": "Por que o Tottenham está confiante de que pode tirar Savinho do Manchester City? - Trivela",
+              "source": "Trivela",
+              "publishedAt": "Thu, 13 Aug 2026 00:04:00 GMT"
+            }
+          ],
+          "away": [
+            {
+              "title": "Prévia: Chelsea vs Real Sociedad – Pré-temporada – Onde assistir, informações das equipes e prováveis escalações - chelseafcbrasil.com",
+              "source": "chelseafcbrasil.com",
+              "publishedAt": "Sat, 15 Aug 2026 02:18:45 GMT"
+            },
+            {
+              "title": "Chelsea x Real Sociedad: onde assistir ao vivo, horário, palpite e escalações do amistoso - ND Mais",
+              "source": "ND Mais",
+              "publishedAt": "Sat, 15 Aug 2026 11:00:22 GMT"
+            },
+            {
+              "title": "Chelsea x Real Sociedad Onde Assistir, Horário, Escalações e Estatísticas 15/08 - Gazeta Esportiva",
+              "source": "Gazeta Esportiva",
+              "publishedAt": "Sat, 15 Aug 2026 08:00:00 GMT"
+            },
+            {
+              "title": "Chelsea x Real Sociedad: escalações e onde assistir - Terra",
+              "source": "Terra",
+              "publishedAt": "Fri, 14 Aug 2026 18:56:00 GMT"
+            },
+            {
+              "title": "Prováveis ​​escalações de Chelsea x Real Sociedad - vietnam.vn",
+              "source": "vietnam.vn",
+              "publishedAt": "Sat, 15 Aug 2026 09:03:34 GMT"
+            },
+            {
+              "title": "Chelsea vs. Real Sociedad: Preview, Predictions and Lineups - FotMob",
+              "source": "FotMob",
+              "publishedAt": "Sat, 15 Aug 2026 06:06:03 GMT"
+            },
+            {
+              "title": "Lateral esquerdo espanhol da Real Sociedad na lista de alvos do Sporting - Record",
+              "source": "Record",
+              "publishedAt": "Tue, 11 Aug 2026 02:30:00 GMT"
+            },
+            {
+              "title": "Chelsea x Real Sociedad ao vivo: onde assistir e escalações - 365Scores",
+              "source": "365Scores",
+              "publishedAt": "Sat, 15 Aug 2026 11:00:00 GMT"
+            },
+            {
+              "title": "Chelsea x Real Sociedad (26 de ago, 2026) Ao vivo - ESPN Brasil",
+              "source": "ESPN Brasil",
+              "publishedAt": "Tue, 11 Aug 2026 16:09:50 GMT"
+            },
+            {
+              "title": "Chelsea x Real Sociedad: escalações e onde assistir - O POVO",
+              "source": "O POVO",
+              "publishedAt": "Fri, 14 Aug 2026 19:08:26 GMT"
+            },
+            {
+              "title": "Mourinho vai tentar vencer a Supertaça de Espanha… em Istambul - ojogo.pt",
+              "source": "ojogo.pt",
+              "publishedAt": "Thu, 13 Aug 2026 12:41:00 GMT"
+            },
+            {
+              "title": "Chelsea x Real Sociedad Palpite – Análise e notícias (15/08) - LANCE!",
+              "source": "LANCE!",
+              "publishedAt": "Thu, 13 Aug 2026 02:33:48 GMT"
+            }
+          ]
+        },
+        "context": {
+          "home": [],
+          "away": []
+        },
+        "ai": null,
+        "dataQuality": 0.85,
+        "sampleMatches": 18
+      }
+    },
+    {
+      "id": "demo-liverpool-newcastle-2026-08-18",
+      "league": "Premier League",
+      "home": "Liverpool",
+      "away": "Newcastle",
+      "kickoff": "2026-08-18T18:00:00.000Z",
+      "demo": true,
+      "verdict": {
+        "outcome": "home",
+        "label": "Liverpool vence",
+        "probability": 0.5494,
+        "runnerUp": {
+          "label": "Empate",
+          "probability": 0.231
+        },
+        "strength": "ligeiro",
+        "likelyScore": "1-1",
+        "likelyScoreProb": 0.1017,
+        "confidence": 0.85,
+        "summary": "Liverpool vence e o resultado mais provavel, com 55%. Espera-se um jogo com golos (3.4 no total)."
+      },
+      "lambdas": {
+        "home": 2.12,
+        "away": 1.31
+      },
+      "markets": [
+        {
+          "key": "h2h",
+          "market": "h2h",
+          "line": null,
+          "label": "Resultado final",
+          "hint": "Quem ganha o jogo no tempo regulamentar.",
+          "overround": 0.04,
+          "selections": [
+            {
+              "selection": "home",
+              "label": "Liverpool vence",
+              "odds": 1.85,
+              "impliedProb": 0.5405,
+              "fairProb": 0.5253,
+              "modelProb": 0.5494,
+              "edge": 0.0241,
+              "ev": 0.0164,
+              "isValue": false
+            },
+            {
+              "selection": "draw",
+              "label": "Empate",
+              "odds": 3.97,
+              "impliedProb": 0.2519,
+              "fairProb": 0.2395,
+              "modelProb": 0.231,
+              "edge": -0.0085,
+              "ev": -0.0828,
+              "isValue": false
+            },
+            {
+              "selection": "away",
+              "label": "Newcastle vence",
+              "odds": 4.04,
+              "impliedProb": 0.2475,
+              "fairProb": 0.2352,
+              "modelProb": 0.2195,
+              "edge": -0.0156,
+              "ev": -0.113,
+              "isValue": false
+            }
+          ]
+        },
+        {
+          "key": "totals:2.5",
+          "market": "totals",
+          "line": 2.5,
+          "label": "Total de golos 2.5",
+          "hint": "Golos das duas equipas somados.",
+          "overround": 0.056,
+          "selections": [
+            {
+              "selection": "over",
+              "label": "Mais de 2.5 golos",
+              "odds": 1.85,
+              "impliedProb": 0.5405,
+              "fairProb": 0.5125,
+              "modelProb": 0.6655,
+              "edge": 0.153,
+              "ev": 0.2312,
+              "isValue": true
+            },
+            {
+              "selection": "under",
+              "label": "Menos de 2.5 golos",
+              "odds": 1.94,
+              "impliedProb": 0.5155,
+              "fairProb": 0.4875,
+              "modelProb": 0.3345,
+              "edge": -0.153,
+              "ev": -0.3511,
+              "isValue": false
+            }
+          ]
+        },
+        {
+          "key": "btts",
+          "market": "btts",
+          "line": null,
+          "label": "Ambas marcam",
+          "hint": "As duas equipas marcam pelo menos um golo.",
+          "overround": 0.0553,
+          "selections": [
+            {
+              "selection": "yes",
+              "label": "Ambas marcam: Sim",
+              "odds": 1.72,
+              "impliedProb": 0.5814,
+              "fairProb": 0.5537,
+              "modelProb": 0.6534,
+              "edge": 0.0997,
+              "ev": 0.1238,
+              "isValue": true
+            },
+            {
+              "selection": "no",
+              "label": "Ambas marcam: Nao",
+              "odds": 2.11,
+              "impliedProb": 0.4739,
+              "fairProb": 0.4463,
+              "modelProb": 0.3466,
+              "edge": -0.0997,
+              "ev": -0.2687,
+              "isValue": false
+            }
+          ]
+        }
+      ],
+      "valueCount": 2,
+      "analysis": {
+        "scorelines": [
+          {
+            "score": "1-1",
+            "home": 1,
+            "away": 1,
+            "p": 0.1017
+          },
+          {
+            "score": "2-1",
+            "home": 2,
+            "away": 1,
+            "p": 0.0954
+          },
+          {
+            "score": "2-0",
+            "home": 2,
+            "away": 0,
+            "p": 0.0731
+          },
+          {
+            "score": "3-1",
+            "home": 3,
+            "away": 1,
+            "p": 0.0675
+          },
+          {
+            "score": "2-2",
+            "home": 2,
+            "away": 2,
+            "p": 0.0623
+          }
+        ],
+        "goalsDistribution": [
+          {
+            "goals": 0,
+            "label": "0",
+            "p": 0.0442
+          },
+          {
+            "goals": 1,
+            "label": "1",
+            "p": 0.0879
+          },
+          {
+            "goals": 2,
+            "label": "2",
+            "p": 0.2024
+          },
+          {
+            "goals": 3,
+            "label": "3",
+            "p": 0.2179
+          },
+          {
+            "goals": 4,
+            "label": "4",
+            "p": 0.1867
+          },
+          {
+            "goals": 5,
+            "label": "5",
+            "p": 0.128
+          },
+          {
+            "goals": 6,
+            "label": "6+",
+            "p": 0.1329
+          }
+        ],
+        "teams": {
+          "home": {
+            "name": "Liverpool",
+            "elo": 1542,
+            "form": {
+              "games": [
+                {
+                  "opponent": "Manchester City",
+                  "atHome": false,
+                  "scored": 1,
+                  "conceded": 4,
+                  "result": "L",
+                  "date": "2026-08-07T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Manchester City",
+                  "atHome": true,
+                  "scored": 2,
+                  "conceded": 1,
+                  "result": "W",
+                  "date": "2026-07-27T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Arsenal",
+                  "atHome": true,
+                  "scored": 6,
+                  "conceded": 4,
+                  "result": "W",
+                  "date": "2026-07-25T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Chelsea",
+                  "atHome": true,
+                  "scored": 2,
+                  "conceded": 3,
+                  "result": "L",
+                  "date": "2026-07-24T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Tottenham",
+                  "atHome": true,
+                  "scored": 2,
+                  "conceded": 0,
+                  "result": "W",
+                  "date": "2026-07-23T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Newcastle",
+                  "atHome": true,
+                  "scored": 2,
+                  "conceded": 0,
+                  "result": "W",
+                  "date": "2026-07-22T14:33:53.713Z"
+                }
+              ],
+              "played": 6,
+              "wins": 4,
+              "draws": 0,
+              "losses": 2,
+              "scoredAvg": 2.5,
+              "concededAvg": 2,
+              "streak": "WWLWWL"
+            },
+            "split": {
+              "home": {
+                "played": 11,
+                "scoredAvg": 2.18,
+                "concededAvg": 1.27
+              },
+              "away": {
+                "played": 11,
+                "scoredAvg": 1.27,
+                "concededAvg": 1.64
+              }
+            },
+            "absences": []
+          },
+          "away": {
+            "name": "Newcastle",
+            "elo": 1455,
+            "form": {
+              "games": [
+                {
+                  "opponent": "Manchester City",
+                  "atHome": false,
+                  "scored": 0,
+                  "conceded": 3,
+                  "result": "L",
+                  "date": "2026-08-03T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Liverpool",
+                  "atHome": false,
+                  "scored": 0,
+                  "conceded": 2,
+                  "result": "L",
+                  "date": "2026-07-22T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Arsenal",
+                  "atHome": false,
+                  "scored": 1,
+                  "conceded": 0,
+                  "result": "W",
+                  "date": "2026-07-10T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Chelsea",
+                  "atHome": false,
+                  "scored": 2,
+                  "conceded": 6,
+                  "result": "L",
+                  "date": "2026-06-28T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Tottenham",
+                  "atHome": false,
+                  "scored": 0,
+                  "conceded": 2,
+                  "result": "L",
+                  "date": "2026-06-16T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Manchester City",
+                  "atHome": true,
+                  "scored": 2,
+                  "conceded": 0,
+                  "result": "W",
+                  "date": "2026-06-09T14:33:53.713Z"
+                }
+              ],
+              "played": 6,
+              "wins": 2,
+              "draws": 0,
+              "losses": 4,
+              "scoredAvg": 0.83,
+              "concededAvg": 2.17,
+              "streak": "WLLWLL"
+            },
+            "split": {
+              "home": {
+                "played": 11,
+                "scoredAvg": 1.91,
+                "concededAvg": 1.73
+              },
+              "away": {
+                "played": 11,
+                "scoredAvg": 0.91,
+                "concededAvg": 1.82
+              }
+            },
+            "absences": []
+          }
+        },
+        "h2h": {
+          "games": [
+            {
+              "date": "2026-07-22T14:33:53.713Z",
+              "home": "Liverpool",
+              "away": "Newcastle",
+              "score": "2-0",
+              "totalGoals": 2,
+              "bothScored": false
+            },
+            {
+              "date": "2026-06-08T14:33:53.713Z",
+              "home": "Newcastle",
+              "away": "Liverpool",
+              "score": "0-2",
+              "totalGoals": 2,
+              "bothScored": false
+            }
+          ],
+          "played": 2,
+          "avgGoals": 2,
+          "bothScoredCount": 0
+        },
+        "news": {
+          "home": [
+            {
+              "title": "Andoni Iraola fala sobre Liverpool x Como, progresso na pré-temporada e contratação de Ronald Araujo - Liverpool FC",
+              "source": "Liverpool FC",
+              "publishedAt": "Sat, 15 Aug 2026 09:01:09 GMT"
+            },
+            {
+              "title": "FC Liverpool, todas as informações sobre a transmissão de relance: quem mostra / transmite os jogos dos Reds ao vivo na TV e no streaming? - Goal.com",
+              "source": "Goal.com",
+              "publishedAt": "Sat, 15 Aug 2026 13:08:41 GMT"
+            },
+            {
+              "title": "Jeff Bezos compra participação no Liverpool ao lado de consórcio de investidores - O GLOBO",
+              "source": "O GLOBO",
+              "publishedAt": "Sat, 15 Aug 2026 14:09:25 GMT"
+            },
+            {
+              "title": "LIVERPOOL CONFIRMA: Jeff Bezos entre os novos investidores do clube - TVI",
+              "source": "TVI",
+              "publishedAt": "Fri, 14 Aug 2026 17:09:00 GMT"
+            },
+            {
+              "title": "Newcastle quer fechar a contratação de Amar Dedic antes do jogo com o Liverpool - Record",
+              "source": "Record",
+              "publishedAt": "Fri, 14 Aug 2026 16:37:00 GMT"
+            },
+            {
+              "title": "Consórcio de Jeff Bezos compra 30% do Liverpool em negócio de quase dois mil milhões de euros - SAPO",
+              "source": "SAPO",
+              "publishedAt": "Fri, 14 Aug 2026 18:38:00 GMT"
+            },
+            {
+              "title": "Virgil van Dijk: A capitania do Liverpool é incrível - nunca a considero garantida - Liverpool FC",
+              "source": "Liverpool FC",
+              "publishedAt": "Sat, 15 Aug 2026 12:05:28 GMT"
+            },
+            {
+              "title": "Revelado: os jogadores mais selecionados da Fantasy Premier League do Liverpool - Liverpool FC",
+              "source": "Liverpool FC",
+              "publishedAt": "Sat, 15 Aug 2026 10:09:12 GMT"
+            },
+            {
+              "title": "Carlos Mac Allister aborda futuro do filho: «Alexis vai continuar no Liverpool» - Record",
+              "source": "Record",
+              "publishedAt": "Thu, 13 Aug 2026 19:20:00 GMT"
+            },
+            {
+              "title": "Oficial: Jeff Bezos entre os novos investidores do Liverpool - SAPO",
+              "source": "SAPO",
+              "publishedAt": "Fri, 14 Aug 2026 16:12:40 GMT"
+            },
+            {
+              "title": "Relatório da partida dos Sub-18: Liverpool venceu o Man City na abertura da temporada - Liverpool FC",
+              "source": "Liverpool FC",
+              "publishedAt": "Sat, 15 Aug 2026 13:03:52 GMT"
+            },
+            {
+              "title": "Höbinger marca no retorno quando o LFC Women venceu o Leicester na pré-temporada - Liverpool FC",
+              "source": "Liverpool FC",
+              "publishedAt": "Sat, 15 Aug 2026 14:02:03 GMT"
+            }
+          ],
+          "away": [
+            {
+              "title": "Doença de NewCastle está a afetar pombos e rolas nos Açores - RTP",
+              "source": "RTP",
+              "publishedAt": "Sat, 15 Aug 2026 13:27:46 GMT"
+            },
+            {
+              "title": "Benfica e Newcastle trocam documentos por Dedic: todos os detalhes da transferência - Record",
+              "source": "Record",
+              "publishedAt": "Sat, 15 Aug 2026 14:10:59 GMT"
+            },
+            {
+              "title": "Mercado: Newcastle quer muito Dedic e Benfica aponta a verba milionária - A Bola",
+              "source": "A Bola",
+              "publishedAt": "Sat, 15 Aug 2026 07:10:00 GMT"
+            },
+            {
+              "title": "Benfica: Dedic a caminho do Newcastle - CNN Portugal",
+              "source": "CNN Portugal",
+              "publishedAt": "Sat, 15 Aug 2026 14:17:13 GMT"
+            },
+            {
+              "title": "Açores reforçam vigilância sobre Doença de Newcastle e proíbem caça ao pombo-das-rochas - Portal do Governo dos Açores",
+              "source": "Portal do Governo dos Açores",
+              "publishedAt": "Thu, 13 Aug 2026 15:44:04 GMT"
+            },
+            {
+              "title": "DGAV alerta para agravamento da doença de Newcastle e pede vacinação de galináceos e perus - SIC Notícias",
+              "source": "SIC Notícias",
+              "publishedAt": "Thu, 13 Aug 2026 18:59:30 GMT"
+            },
+            {
+              "title": "Negócio fechado: Dedic vai deixar o Benfica pelo Newcastle - ojogo.pt",
+              "source": "ojogo.pt",
+              "publishedAt": "Sat, 15 Aug 2026 13:45:00 GMT"
+            },
+            {
+              "title": "Benfica estica a corda por Dedic. Os milhões pedidos ao Newcastle - Notícias ao Minuto",
+              "source": "Notícias ao Minuto",
+              "publishedAt": "Sat, 15 Aug 2026 06:07:14 GMT"
+            },
+            {
+              "title": "Assistir a Newcastle United x Bayer Leverkusen - Disney Plus",
+              "source": "Disney Plus",
+              "publishedAt": "Sat, 15 Aug 2026 03:11:46 GMT"
+            },
+            {
+              "title": "Newcastle quer Dedic em campo já no próximo fim de semana - A Bola",
+              "source": "A Bola",
+              "publishedAt": "Sat, 15 Aug 2026 11:48:00 GMT"
+            },
+            {
+              "title": "Dedic fechado no Newcastle por 35 milhões, garante Fabrizio Romano - Record",
+              "source": "Record",
+              "publishedAt": "Sat, 15 Aug 2026 12:47:22 GMT"
+            },
+            {
+              "title": "Saída à vista no Benfica: Dedic muito perto do Newcastle - ojogo.pt",
+              "source": "ojogo.pt",
+              "publishedAt": "Sat, 15 Aug 2026 07:26:00 GMT"
+            }
+          ]
+        },
+        "context": {
+          "home": [],
+          "away": []
+        },
+        "ai": null,
+        "dataQuality": 0.85,
+        "sampleMatches": 22
+      }
+    },
+    {
+      "id": "demo-valencia-real-madrid-2026-08-18",
+      "league": "La Liga",
+      "home": "Valencia",
+      "away": "Real Madrid",
+      "kickoff": "2026-08-18T18:00:00.000Z",
+      "demo": true,
+      "verdict": {
+        "outcome": "away",
+        "label": "Real Madrid vence",
+        "probability": 0.4646,
+        "runnerUp": {
+          "label": "Empate",
+          "probability": 0.2712
+        },
+        "strength": "ligeiro",
+        "likelyScore": "1-1",
+        "likelyScoreProb": 0.1283,
+        "confidence": 0.85,
+        "summary": "Real Madrid vence e o resultado mais provavel, com 46%. Espera-se um jogo equilibrado em golos (2.9 no total)."
+      },
+      "lambdas": {
+        "home": 1.21,
+        "away": 1.67
+      },
+      "markets": [
+        {
+          "key": "h2h",
+          "market": "h2h",
+          "line": null,
+          "label": "Resultado final",
+          "hint": "Quem ganha o jogo no tempo regulamentar.",
+          "overround": 0.0433,
+          "selections": [
+            {
+              "selection": "home",
+              "label": "Valencia vence",
+              "odds": 4.22,
+              "impliedProb": 0.237,
+              "fairProb": 0.2237,
+              "modelProb": 0.2641,
+              "edge": 0.0404,
+              "ev": 0.1146,
+              "isValue": true
+            },
+            {
+              "selection": "draw",
+              "label": "Empate",
+              "odds": 4.38,
+              "impliedProb": 0.2283,
+              "fairProb": 0.2151,
+              "modelProb": 0.2712,
+              "edge": 0.0561,
+              "ev": 0.188,
+              "isValue": true
+            },
+            {
+              "selection": "away",
+              "label": "Real Madrid vence",
+              "odds": 1.73,
+              "impliedProb": 0.578,
+              "fairProb": 0.5612,
+              "modelProb": 0.4646,
+              "edge": -0.0965,
+              "ev": -0.1962,
+              "isValue": false
+            }
+          ]
+        },
+        {
+          "key": "totals:2.5",
+          "market": "totals",
+          "line": 2.5,
+          "label": "Total de golos 2.5",
+          "hint": "Golos das duas equipas somados.",
+          "overround": 0.0456,
+          "selections": [
+            {
+              "selection": "over",
+              "label": "Mais de 2.5 golos",
+              "odds": 1.71,
+              "impliedProb": 0.5848,
+              "fairProb": 0.562,
+              "modelProb": 0.5496,
+              "edge": -0.0124,
+              "ev": -0.0602,
+              "isValue": false
+            },
+            {
+              "selection": "under",
+              "label": "Menos de 2.5 golos",
+              "odds": 2.17,
+              "impliedProb": 0.4608,
+              "fairProb": 0.438,
+              "modelProb": 0.4504,
+              "edge": 0.0124,
+              "ev": -0.0226,
+              "isValue": false
+            }
+          ]
+        },
+        {
+          "key": "btts",
+          "market": "btts",
+          "line": null,
+          "label": "Ambas marcam",
+          "hint": "As duas equipas marcam pelo menos um golo.",
+          "overround": 0.059,
+          "selections": [
+            {
+              "selection": "yes",
+              "label": "Ambas marcam: Sim",
+              "odds": 1.66,
+              "impliedProb": 0.6024,
+              "fairProb": 0.5729,
+              "modelProb": 0.5851,
+              "edge": 0.0122,
+              "ev": -0.0288,
+              "isValue": false
+            },
+            {
+              "selection": "no",
+              "label": "Ambas marcam: Nao",
+              "odds": 2.19,
+              "impliedProb": 0.4566,
+              "fairProb": 0.4271,
+              "modelProb": 0.4149,
+              "edge": -0.0122,
+              "ev": -0.0913,
+              "isValue": false
+            }
+          ]
+        }
+      ],
+      "valueCount": 2,
+      "analysis": {
+        "scorelines": [
+          {
+            "score": "1-1",
+            "home": 1,
+            "away": 1,
+            "p": 0.1283
+          },
+          {
+            "score": "1-2",
+            "home": 1,
+            "away": 2,
+            "p": 0.0946
+          },
+          {
+            "score": "0-1",
+            "home": 0,
+            "away": 1,
+            "p": 0.0787
+          },
+          {
+            "score": "0-2",
+            "home": 0,
+            "away": 2,
+            "p": 0.0778
+          },
+          {
+            "score": "0-0",
+            "home": 0,
+            "away": 0,
+            "p": 0.0708
+          }
+        ],
+        "goalsDistribution": [
+          {
+            "goals": 0,
+            "label": "0",
+            "p": 0.0708
+          },
+          {
+            "goals": 1,
+            "label": "1",
+            "p": 0.1321
+          },
+          {
+            "goals": 2,
+            "label": "2",
+            "p": 0.2475
+          },
+          {
+            "goals": 3,
+            "label": "3",
+            "p": 0.2235
+          },
+          {
+            "goals": 4,
+            "label": "4",
+            "p": 0.161
+          },
+          {
+            "goals": 5,
+            "label": "5",
+            "p": 0.0927
+          },
+          {
+            "goals": 6,
+            "label": "6+",
+            "p": 0.0724
+          }
+        ],
+        "teams": {
+          "home": {
+            "name": "Valencia",
+            "elo": 1444,
+            "form": {
+              "games": [
+                {
+                  "opponent": "Real Madrid",
+                  "atHome": false,
+                  "scored": 0,
+                  "conceded": 1,
+                  "result": "L",
+                  "date": "2026-08-01T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Barcelona",
+                  "atHome": false,
+                  "scored": 1,
+                  "conceded": 2,
+                  "result": "L",
+                  "date": "2026-07-22T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Atletico Madrid",
+                  "atHome": false,
+                  "scored": 3,
+                  "conceded": 2,
+                  "result": "W",
+                  "date": "2026-07-12T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Athletic Club",
+                  "atHome": false,
+                  "scored": 0,
+                  "conceded": 1,
+                  "result": "L",
+                  "date": "2026-07-02T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Real Sociedad",
+                  "atHome": false,
+                  "scored": 0,
+                  "conceded": 4,
+                  "result": "L",
+                  "date": "2026-06-22T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Villarreal",
+                  "atHome": false,
+                  "scored": 1,
+                  "conceded": 3,
+                  "result": "L",
+                  "date": "2026-06-12T14:33:53.713Z"
+                }
+              ],
+              "played": 6,
+              "wins": 1,
+              "draws": 0,
+              "losses": 5,
+              "scoredAvg": 0.83,
+              "concededAvg": 2.17,
+              "streak": "LLLWLL"
+            },
+            "split": {
+              "home": {
+                "played": 9,
+                "scoredAvg": 1.33,
+                "concededAvg": 1.33
+              },
+              "away": {
+                "played": 9,
+                "scoredAvg": 0.67,
+                "concededAvg": 1.89
+              }
+            },
+            "absences": []
+          },
+          "away": {
+            "name": "Real Madrid",
+            "elo": 1533,
+            "form": {
+              "games": [
+                {
+                  "opponent": "Barcelona",
+                  "atHome": true,
+                  "scored": 1,
+                  "conceded": 2,
+                  "result": "L",
+                  "date": "2026-08-07T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Atletico Madrid",
+                  "atHome": true,
+                  "scored": 2,
+                  "conceded": 1,
+                  "result": "W",
+                  "date": "2026-08-06T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Athletic Club",
+                  "atHome": true,
+                  "scored": 0,
+                  "conceded": 2,
+                  "result": "L",
+                  "date": "2026-08-05T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Real Sociedad",
+                  "atHome": true,
+                  "scored": 3,
+                  "conceded": 1,
+                  "result": "W",
+                  "date": "2026-08-04T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Villarreal",
+                  "atHome": true,
+                  "scored": 0,
+                  "conceded": 0,
+                  "result": "D",
+                  "date": "2026-08-03T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Real Betis",
+                  "atHome": true,
+                  "scored": 3,
+                  "conceded": 2,
+                  "result": "W",
+                  "date": "2026-08-02T14:33:53.713Z"
+                }
+              ],
+              "played": 6,
+              "wins": 3,
+              "draws": 1,
+              "losses": 2,
+              "scoredAvg": 1.5,
+              "concededAvg": 1.33,
+              "streak": "WDWLWL"
+            },
+            "split": {
+              "home": {
+                "played": 9,
+                "scoredAvg": 1.56,
+                "concededAvg": 1
+              },
+              "away": {
+                "played": 9,
+                "scoredAvg": 2.11,
+                "concededAvg": 1.56
+              }
+            },
+            "absences": []
+          }
+        },
+        "h2h": {
+          "games": [
+            {
+              "date": "2026-08-01T14:33:53.713Z",
+              "home": "Real Madrid",
+              "away": "Valencia",
+              "score": "1-0",
+              "totalGoals": 1,
+              "bothScored": false
+            },
+            {
+              "date": "2026-05-30T14:33:53.713Z",
+              "home": "Valencia",
+              "away": "Real Madrid",
+              "score": "2-0",
+              "totalGoals": 2,
+              "bothScored": false
+            }
+          ],
+          "played": 2,
+          "avgGoals": 1.5,
+          "bothScoredCount": 0
+        },
+        "news": {
+          "home": [
+            {
+              "title": "POR TERRAS DA RAIA | Amareleja | Valencia del Mombuey - Diário do Alentejo",
+              "source": "Diário do Alentejo",
+              "publishedAt": "Fri, 14 Aug 2026 23:04:46 GMT"
+            },
+            {
+              "title": "Valência reassumiu liderança com Miguel e Manuel Fernandes - RTP",
+              "source": "RTP",
+              "publishedAt": "Tue, 11 Aug 2026 21:57:29 GMT"
+            },
+            {
+              "title": "MotoGP: Quartararo ‘No teste de Valência do ano passado;decidi separar-me da Yamaha’ - motosport.com.pt",
+              "source": "motosport.com.pt",
+              "publishedAt": "Fri, 14 Aug 2026 07:53:12 GMT"
+            },
+            {
+              "title": "Alberto Marí apontado ao Moreirense - Record",
+              "source": "Record",
+              "publishedAt": "Thu, 13 Aug 2026 07:52:00 GMT"
+            },
+            {
+              "title": "Equipa: Valencia CF Mestalla - Sport TV",
+              "source": "Sport TV",
+              "publishedAt": "Mon, 10 Aug 2026 19:56:42 GMT"
+            },
+            {
+              "title": "Valença Viu o Eclipse no Monte do Faro - Portal Municipal de Valença",
+              "source": "Portal Municipal de Valença",
+              "publishedAt": "Thu, 13 Aug 2026 07:00:00 GMT"
+            },
+            {
+              "title": "Novos incêndios em Espanha obrigam a evacuações na Andaluzia e em Valência - TVI",
+              "source": "TVI",
+              "publishedAt": "Mon, 10 Aug 2026 21:42:00 GMT"
+            },
+            {
+              "title": "Galeria de Restaurar ao invés de substituir: a recuperação do Palauet Nolla de Meliana em Valência - 39 - ArchDaily",
+              "source": "ArchDaily",
+              "publishedAt": "Tue, 11 Aug 2026 21:41:43 GMT"
+            },
+            {
+              "title": "Sato finishes off Valencia team move in Hercules victory - OneFootball",
+              "source": "OneFootball",
+              "publishedAt": "Fri, 14 Aug 2026 08:01:03 GMT"
+            },
+            {
+              "title": "D. Nuno Brás já chegou à Venezuela - dnoticias.pt",
+              "source": "dnoticias.pt",
+              "publishedAt": "Wed, 12 Aug 2026 09:53:00 GMT"
+            },
+            {
+              "title": "Ford e Geely transformam Valência no novo polo europeu comum - Revistacarros",
+              "source": "Revistacarros",
+              "publishedAt": "Tue, 11 Aug 2026 10:21:20 GMT"
+            },
+            {
+              "title": "APV reduz 33,8% o consumo de água nos portos de Valência - Data Portuaria",
+              "source": "Data Portuaria",
+              "publishedAt": "Wed, 12 Aug 2026 12:22:24 GMT"
+            }
+          ],
+          "away": [
+            {
+              "title": "Convocação do Real Madrid contra o Schalke 04 - Real Madrid CF | Web Oficial",
+              "source": "Real Madrid CF | Web Oficial",
+              "publishedAt": "Sat, 15 Aug 2026 12:41:33 GMT"
+            },
+            {
+              "title": "Último treinamento antes do amistoso contra o Schalke 04 - Real Madrid CF | Web Oficial",
+              "source": "Real Madrid CF | Web Oficial",
+              "publishedAt": "Sat, 15 Aug 2026 09:00:00 GMT"
+            },
+            {
+              "title": "Mourinho: a revolução do treinador português para acabar com o domínio do Barcelona - jn.pt",
+              "source": "jn.pt",
+              "publishedAt": "Sat, 15 Aug 2026 08:29:00 GMT"
+            },
+            {
+              "title": "Comunicado Oficial: Olivier Sarr - Real Madrid CF | Web Oficial",
+              "source": "Real Madrid CF | Web Oficial",
+              "publishedAt": "Sat, 15 Aug 2026 07:25:00 GMT"
+            },
+            {
+              "title": "O Castilla empata contra o Mirandés - Real Madrid CF | Web Oficial",
+              "source": "Real Madrid CF | Web Oficial",
+              "publishedAt": "Sat, 15 Aug 2026 11:00:38 GMT"
+            },
+            {
+              "title": "Sarr: “Estou muito emocionado por me juntar ao maior clube da Europa\" - Real Madrid CF | Web Oficial",
+              "source": "Real Madrid CF | Web Oficial",
+              "publishedAt": "Sat, 15 Aug 2026 07:52:00 GMT"
+            },
+            {
+              "title": "Exame médico de Olivier Sarr - Real Madrid CF | Web Oficial",
+              "source": "Real Madrid CF | Web Oficial",
+              "publishedAt": "Sat, 15 Aug 2026 07:21:00 GMT"
+            },
+            {
+              "title": "As escolas sociodesportivas da Fundação Real Madrid beneficiam mais de 4.200 crianças e jovens - Real Madrid CF | Web Oficial",
+              "source": "Real Madrid CF | Web Oficial",
+              "publishedAt": "Fri, 14 Aug 2026 16:58:00 GMT"
+            },
+            {
+              "title": "O Real Madrid conquista o Troféu Teresa Herrera - Real Madrid CF | Web Oficial",
+              "source": "Real Madrid CF | Web Oficial",
+              "publishedAt": "Wed, 12 Aug 2026 21:00:00 GMT"
+            },
+            {
+              "title": "Assim é a terceira camisa para a temporada 2026/27 - Real Madrid CF | Web Oficial",
+              "source": "Real Madrid CF | Web Oficial",
+              "publishedAt": "Wed, 12 Aug 2026 08:00:00 GMT"
+            },
+            {
+              "title": "Comunicado Oficial: Max Shulga - Real Madrid CF | Web Oficial",
+              "source": "Real Madrid CF | Web Oficial",
+              "publishedAt": "Fri, 14 Aug 2026 11:59:00 GMT"
+            },
+            {
+              "title": "Mourinho: “A equipe está progredindo em tudo” - Real Madrid CF | Web Oficial",
+              "source": "Real Madrid CF | Web Oficial",
+              "publishedAt": "Wed, 12 Aug 2026 21:33:00 GMT"
+            }
+          ]
+        },
+        "context": {
+          "home": [],
+          "away": []
+        },
+        "ai": null,
+        "dataQuality": 0.85,
+        "sampleMatches": 18
+      }
+    },
+    {
+      "id": "demo-everton-manchester-city-2026-08-18",
+      "league": "Premier League",
+      "home": "Everton",
+      "away": "Manchester City",
+      "kickoff": "2026-08-18T20:00:00.000Z",
+      "demo": true,
+      "verdict": {
+        "outcome": "away",
+        "label": "Manchester City vence",
+        "probability": 0.5244,
+        "runnerUp": {
+          "label": "Empate",
+          "probability": 0.2654
+        },
+        "strength": "ligeiro",
+        "likelyScore": "1-1",
+        "likelyScoreProb": 0.1267,
+        "confidence": 0.85,
+        "summary": "Manchester City vence e o resultado mais provavel, com 52%. Espera-se um jogo equilibrado em golos (2.8 no total)."
+      },
+      "lambdas": {
+        "home": 1.04,
+        "away": 1.74
+      },
+      "markets": [
+        {
+          "key": "h2h",
+          "market": "h2h",
+          "line": null,
+          "label": "Resultado final",
+          "hint": "Quem ganha o jogo no tempo regulamentar.",
+          "overround": 0.1073,
+          "selections": [
+            {
+              "selection": "home",
+              "label": "Everton vence",
+              "odds": 4.26,
+              "impliedProb": 0.2347,
+              "fairProb": 0.2024,
+              "modelProb": 0.2102,
+              "edge": 0.0077,
+              "ev": -0.1046,
+              "isValue": false
+            },
+            {
+              "selection": "draw",
+              "label": "Empate",
+              "odds": 4.04,
+              "impliedProb": 0.2475,
+              "fairProb": 0.2148,
+              "modelProb": 0.2654,
+              "edge": 0.0506,
+              "ev": 0.0723,
+              "isValue": true
+            },
+            {
+              "selection": "away",
+              "label": "Manchester City vence",
+              "odds": 1.6,
+              "impliedProb": 0.625,
+              "fairProb": 0.5827,
+              "modelProb": 0.5244,
+              "edge": -0.0583,
+              "ev": -0.161,
+              "isValue": false
+            }
+          ]
+        },
+        {
+          "key": "totals:2.5",
+          "market": "totals",
+          "line": 2.5,
+          "label": "Total de golos 2.5",
+          "hint": "Golos das duas equipas somados.",
+          "overround": 0.0184,
+          "selections": [
+            {
+              "selection": "over",
+              "label": "Mais de 2.5 golos",
+              "odds": 1.78,
+              "impliedProb": 0.5618,
+              "fairProb": 0.5526,
+              "modelProb": 0.526,
+              "edge": -0.0266,
+              "ev": -0.0637,
+              "isValue": false
+            },
+            {
+              "selection": "under",
+              "label": "Menos de 2.5 golos",
+              "odds": 2.19,
+              "impliedProb": 0.4566,
+              "fairProb": 0.4474,
+              "modelProb": 0.474,
+              "edge": 0.0266,
+              "ev": 0.0381,
+              "isValue": false
+            }
+          ]
+        },
+        {
+          "key": "btts",
+          "market": "btts",
+          "line": null,
+          "label": "Ambas marcam",
+          "hint": "As duas equipas marcam pelo menos um golo.",
+          "overround": 0.0389,
+          "selections": [
+            {
+              "selection": "yes",
+              "label": "Ambas marcam: Sim",
+              "odds": 1.77,
+              "impliedProb": 0.565,
+              "fairProb": 0.5455,
+              "modelProb": 0.5474,
+              "edge": 0.0019,
+              "ev": -0.0311,
+              "isValue": false
+            },
+            {
+              "selection": "no",
+              "label": "Ambas marcam: Nao",
+              "odds": 2.11,
+              "impliedProb": 0.4739,
+              "fairProb": 0.4545,
+              "modelProb": 0.4526,
+              "edge": -0.0019,
+              "ev": -0.045,
+              "isValue": false
+            }
+          ]
+        }
+      ],
+      "valueCount": 1,
+      "analysis": {
+        "scorelines": [
+          {
+            "score": "1-1",
+            "home": 1,
+            "away": 1,
+            "p": 0.1267
+          },
+          {
+            "score": "1-2",
+            "home": 1,
+            "away": 2,
+            "p": 0.0977
+          },
+          {
+            "score": "0-2",
+            "home": 0,
+            "away": 2,
+            "p": 0.0941
+          },
+          {
+            "score": "0-1",
+            "home": 0,
+            "away": 1,
+            "p": 0.0934
+          },
+          {
+            "score": "0-0",
+            "home": 0,
+            "away": 0,
+            "p": 0.0766
+          }
+        ],
+        "goalsDistribution": [
+          {
+            "goals": 0,
+            "label": "0",
+            "p": 0.0766
+          },
+          {
+            "goals": 1,
+            "label": "1",
+            "p": 0.1432
+          },
+          {
+            "goals": 2,
+            "label": "2",
+            "p": 0.2542
+          },
+          {
+            "goals": 3,
+            "label": "3",
+            "p": 0.2222
+          },
+          {
+            "goals": 4,
+            "label": "4",
+            "p": 0.1545
+          },
+          {
+            "goals": 5,
+            "label": "5",
+            "p": 0.0859
+          },
+          {
+            "goals": 6,
+            "label": "6+",
+            "p": 0.0635
+          }
+        ],
+        "teams": {
+          "home": {
+            "name": "Everton",
+            "elo": 1435,
+            "form": {
+              "games": [
+                {
+                  "opponent": "Manchester City",
+                  "atHome": false,
+                  "scored": 0,
+                  "conceded": 3,
+                  "result": "L",
+                  "date": "2026-07-30T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Liverpool",
+                  "atHome": false,
+                  "scored": 3,
+                  "conceded": 2,
+                  "result": "W",
+                  "date": "2026-07-18T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Arsenal",
+                  "atHome": false,
+                  "scored": 1,
+                  "conceded": 3,
+                  "result": "L",
+                  "date": "2026-07-06T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Chelsea",
+                  "atHome": false,
+                  "scored": 1,
+                  "conceded": 0,
+                  "result": "W",
+                  "date": "2026-06-24T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Tottenham",
+                  "atHome": false,
+                  "scored": 2,
+                  "conceded": 4,
+                  "result": "L",
+                  "date": "2026-06-12T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Newcastle",
+                  "atHome": false,
+                  "scored": 2,
+                  "conceded": 5,
+                  "result": "L",
+                  "date": "2026-05-31T14:33:53.713Z"
+                }
+              ],
+              "played": 6,
+              "wins": 2,
+              "draws": 0,
+              "losses": 4,
+              "scoredAvg": 1.5,
+              "concededAvg": 2.83,
+              "streak": "LLWLWL"
+            },
+            "split": {
+              "home": {
+                "played": 11,
+                "scoredAvg": 0.82,
+                "concededAvg": 1.18
+              },
+              "away": {
+                "played": 11,
+                "scoredAvg": 1.55,
+                "concededAvg": 2.64
+              }
+            },
+            "absences": []
+          },
+          "away": {
+            "name": "Manchester City",
+            "elo": 1609,
+            "form": {
+              "games": [
+                {
+                  "opponent": "Liverpool",
+                  "atHome": true,
+                  "scored": 4,
+                  "conceded": 1,
+                  "result": "W",
+                  "date": "2026-08-07T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Arsenal",
+                  "atHome": true,
+                  "scored": 2,
+                  "conceded": 1,
+                  "result": "W",
+                  "date": "2026-08-06T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Chelsea",
+                  "atHome": true,
+                  "scored": 0,
+                  "conceded": 1,
+                  "result": "L",
+                  "date": "2026-08-05T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Tottenham",
+                  "atHome": true,
+                  "scored": 2,
+                  "conceded": 2,
+                  "result": "D",
+                  "date": "2026-08-04T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Newcastle",
+                  "atHome": true,
+                  "scored": 3,
+                  "conceded": 0,
+                  "result": "W",
+                  "date": "2026-08-03T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Aston Villa",
+                  "atHome": true,
+                  "scored": 3,
+                  "conceded": 0,
+                  "result": "W",
+                  "date": "2026-08-02T14:33:53.713Z"
+                }
+              ],
+              "played": 6,
+              "wins": 4,
+              "draws": 1,
+              "losses": 1,
+              "scoredAvg": 2.33,
+              "concededAvg": 0.83,
+              "streak": "WWDLWW"
+            },
+            "split": {
+              "home": {
+                "played": 11,
+                "scoredAvg": 2.45,
+                "concededAvg": 0.55
+              },
+              "away": {
+                "played": 11,
+                "scoredAvg": 1.36,
+                "concededAvg": 1
+              }
+            },
+            "absences": []
+          }
+        },
+        "h2h": {
+          "games": [
+            {
+              "date": "2026-07-30T14:33:53.713Z",
+              "home": "Manchester City",
+              "away": "Everton",
+              "score": "3-0",
+              "totalGoals": 3,
+              "bothScored": false
+            },
+            {
+              "date": "2026-04-22T14:33:53.713Z",
+              "home": "Everton",
+              "away": "Manchester City",
+              "score": "0-1",
+              "totalGoals": 1,
+              "bothScored": false
+            }
+          ],
+          "played": 2,
+          "avgGoals": 2,
+          "bothScoredCount": 0
+        },
+        "news": {
+          "home": [
+            {
+              "title": "Everton chama por Kyle Walker - Record",
+              "source": "Record",
+              "publishedAt": "Wed, 12 Aug 2026 19:12:00 GMT"
+            },
+            {
+              "title": "Por que marcar em uma final da FA Cup teve um custo para Ian Rush - Liverpool FC",
+              "source": "Liverpool FC",
+              "publishedAt": "Sat, 15 Aug 2026 08:09:01 GMT"
+            },
+            {
+              "title": "Vídeo - Golo! Everton FC [2] - 0 Newcastle United 36' - Sport TV",
+              "source": "Sport TV",
+              "publishedAt": "Wed, 12 Aug 2026 16:56:53 GMT"
+            },
+            {
+              "title": "Everton chama por Kyle Walker - SAPO",
+              "source": "SAPO",
+              "publishedAt": "Wed, 12 Aug 2026 20:12:57 GMT"
+            },
+            {
+              "title": "Yannick Bolasie foi o último reforço do Sporting - RTP",
+              "source": "RTP",
+              "publishedAt": "Wed, 12 Aug 2026 14:44:20 GMT"
+            },
+            {
+              "title": "Jogador do Everton acusado de ter apostado em 61 jogos - Record",
+              "source": "Record",
+              "publishedAt": "Wed, 12 Aug 2026 19:40:11 GMT"
+            },
+            {
+              "title": "OFICIAL: Inês Pereira assina em definitivo pelo Deportivo até 2029 - CNN Portugal",
+              "source": "CNN Portugal",
+              "publishedAt": "Tue, 11 Aug 2026 14:37:00 GMT"
+            },
+            {
+              "title": "Jogador do Everton é acusado de fazer 61 apostas em partidas de futebol - Terra",
+              "source": "Terra",
+              "publishedAt": "Wed, 12 Aug 2026 19:59:00 GMT"
+            },
+            {
+              "title": "Chelsea pede 50 milhões por Liam Delap com interesse de Everton e forest - SAPO",
+              "source": "SAPO",
+              "publishedAt": "Wed, 12 Aug 2026 16:01:34 GMT"
+            },
+            {
+              "title": "Hannah Silcock faz mudança permanente para o Everton - Liverpool FC",
+              "source": "Liverpool FC",
+              "publishedAt": "Thu, 13 Aug 2026 14:14:16 GMT"
+            },
+            {
+              "title": "Inglaterra: jogador do Everton acusado de 61 violações de regras de apostas - TVI",
+              "source": "TVI",
+              "publishedAt": "Wed, 12 Aug 2026 22:12:00 GMT"
+            },
+            {
+              "title": "Sem custos: Crystal Palace e Everton trocam jogadores - Record",
+              "source": "Record",
+              "publishedAt": "Mon, 10 Aug 2026 18:01:00 GMT"
+            }
+          ],
+          "away": [
+            {
+              "title": "Jéremy Doku renova com o Manchester City até 2031 - Observador",
+              "source": "Observador",
+              "publishedAt": "Thu, 13 Aug 2026 12:29:05 GMT"
+            },
+            {
+              "title": "Arsenal terá retornos importantes para duelo contra o Manchester City - CNN Brasil",
+              "source": "CNN Brasil",
+              "publishedAt": "Sat, 15 Aug 2026 12:56:36 GMT"
+            },
+            {
+              "title": "Relatório da partida dos Sub-18: Liverpool venceu o Man City na abertura da temporada - Liverpool FC",
+              "source": "Liverpool FC",
+              "publishedAt": "Sat, 15 Aug 2026 13:03:52 GMT"
+            },
+            {
+              "title": "Jérémy Doku renova com o Manchester City - RTP",
+              "source": "RTP",
+              "publishedAt": "Thu, 13 Aug 2026 11:51:56 GMT"
+            },
+            {
+              "title": "Arsenal x City: onde assistir, escalações e arbitragem - Terra",
+              "source": "Terra",
+              "publishedAt": "Sat, 15 Aug 2026 10:02:00 GMT"
+            },
+            {
+              "title": "Arsenal x Manchester City: prováveis escalações da final - LANCE!",
+              "source": "LANCE!",
+              "publishedAt": "Sat, 15 Aug 2026 12:36:42 GMT"
+            },
+            {
+              "title": "Jérémy Doku renova com o Manchester City até 2031 - Lusa",
+              "source": "Lusa",
+              "publishedAt": "Thu, 13 Aug 2026 11:01:00 GMT"
+            },
+            {
+              "title": "Jérémy Doku renova com o Manchester City até 2031 - Record",
+              "source": "Record",
+              "publishedAt": "Thu, 13 Aug 2026 12:26:17 GMT"
+            },
+            {
+              "title": "Manchester City tem dois dias para selar contratação bombástica - A Bola",
+              "source": "A Bola",
+              "publishedAt": "Wed, 12 Aug 2026 20:43:00 GMT"
+            },
+            {
+              "title": "O meio-campista Tijjani Reijnders deixa o Manchester City para jogar no Al Qadsiah após um ano decepcionante. - vietnam.vn",
+              "source": "vietnam.vn",
+              "publishedAt": "Sat, 15 Aug 2026 09:31:18 GMT"
+            },
+            {
+              "title": "Manchester City recusa segunda oferta do Barcelona por Rodri, diz imprensa inglesa - ge",
+              "source": "ge",
+              "publishedAt": "Thu, 13 Aug 2026 09:40:59 GMT"
+            },
+            {
+              "title": "Oficial: Alleyne emprestado ao Burnley - Sport TV",
+              "source": "Sport TV",
+              "publishedAt": "Fri, 14 Aug 2026 19:00:34 GMT"
+            }
+          ]
+        },
+        "context": {
+          "home": [],
+          "away": []
+        },
+        "ai": null,
+        "dataQuality": 0.85,
+        "sampleMatches": 22
+      }
+    },
+    {
+      "id": "demo-athletic-club-sevilla-2026-08-18",
+      "league": "La Liga",
+      "home": "Athletic Club",
+      "away": "Sevilla",
+      "kickoff": "2026-08-18T20:00:00.000Z",
+      "demo": true,
+      "verdict": {
+        "outcome": "home",
+        "label": "Athletic Club vence",
+        "probability": 0.5715,
+        "runnerUp": {
+          "label": "Empate",
+          "probability": 0.27
+        },
+        "strength": "claro",
+        "likelyScore": "1-0",
+        "likelyScoreProb": 0.129,
+        "confidence": 0.85,
+        "summary": "Athletic Club vence e o resultado mais provavel, com 57%. Espera-se um jogo equilibrado em golos (2.5 no total)."
+      },
+      "lambdas": {
+        "home": 1.67,
+        "away": 0.78
+      },
+      "markets": [
+        {
+          "key": "h2h",
+          "market": "h2h",
+          "line": null,
+          "label": "Resultado final",
+          "hint": "Quem ganha o jogo no tempo regulamentar.",
+          "overround": 0.0523,
+          "selections": [
+            {
+              "selection": "home",
+              "label": "Athletic Club vence",
+              "odds": 1.88,
+              "impliedProb": 0.5319,
+              "fairProb": 0.5122,
+              "modelProb": 0.5715,
+              "edge": 0.0593,
+              "ev": 0.0744,
+              "isValue": true
+            },
+            {
+              "selection": "draw",
+              "label": "Empate",
+              "odds": 4.01,
+              "impliedProb": 0.2494,
+              "fairProb": 0.2332,
+              "modelProb": 0.27,
+              "edge": 0.0368,
+              "ev": 0.0828,
+              "isValue": false
+            },
+            {
+              "selection": "away",
+              "label": "Sevilla vence",
+              "odds": 3.69,
+              "impliedProb": 0.271,
+              "fairProb": 0.2546,
+              "modelProb": 0.1585,
+              "edge": -0.0961,
+              "ev": -0.4152,
+              "isValue": false
+            }
+          ]
+        },
+        {
+          "key": "totals:2.5",
+          "market": "totals",
+          "line": 2.5,
+          "label": "Total de golos 2.5",
+          "hint": "Golos das duas equipas somados.",
+          "overround": 0.0661,
+          "selections": [
+            {
+              "selection": "over",
+              "label": "Mais de 2.5 golos",
+              "odds": 1.67,
+              "impliedProb": 0.5988,
+              "fairProb": 0.5658,
+              "modelProb": 0.4446,
+              "edge": -0.1211,
+              "ev": -0.2575,
+              "isValue": false
+            },
+            {
+              "selection": "under",
+              "label": "Menos de 2.5 golos",
+              "odds": 2.14,
+              "impliedProb": 0.4673,
+              "fairProb": 0.4342,
+              "modelProb": 0.5554,
+              "edge": 0.1211,
+              "ev": 0.1885,
+              "isValue": true
+            }
+          ]
+        },
+        {
+          "key": "btts",
+          "market": "btts",
+          "line": null,
+          "label": "Ambas marcam",
+          "hint": "As duas equipas marcam pelo menos um golo.",
+          "overround": 0.0862,
+          "selections": [
+            {
+              "selection": "yes",
+              "label": "Ambas marcam: Sim",
+              "odds": 1.61,
+              "impliedProb": 0.6211,
+              "fairProb": 0.578,
+              "modelProb": 0.4554,
+              "edge": -0.1226,
+              "ev": -0.2667,
+              "isValue": false
+            },
+            {
+              "selection": "no",
+              "label": "Ambas marcam: Nao",
+              "odds": 2.15,
+              "impliedProb": 0.4651,
+              "fairProb": 0.422,
+              "modelProb": 0.5446,
+              "edge": 0.1226,
+              "ev": 0.1708,
+              "isValue": true
+            }
+          ]
+        }
+      ],
+      "valueCount": 3,
+      "analysis": {
+        "scorelines": [
+          {
+            "score": "1-0",
+            "home": 1,
+            "away": 0,
+            "p": 0.129
+          },
+          {
+            "score": "1-1",
+            "home": 1,
+            "away": 1,
+            "p": 0.127
+          },
+          {
+            "score": "2-0",
+            "home": 2,
+            "away": 0,
+            "p": 0.1201
+          },
+          {
+            "score": "0-0",
+            "home": 0,
+            "away": 0,
+            "p": 0.1005
+          },
+          {
+            "score": "2-1",
+            "home": 2,
+            "away": 1,
+            "p": 0.094
+          }
+        ],
+        "goalsDistribution": [
+          {
+            "goals": 0,
+            "label": "0",
+            "p": 0.1005
+          },
+          {
+            "goals": 1,
+            "label": "1",
+            "p": 0.1816
+          },
+          {
+            "goals": 2,
+            "label": "2",
+            "p": 0.2734
+          },
+          {
+            "goals": 3,
+            "label": "3",
+            "p": 0.2117
+          },
+          {
+            "goals": 4,
+            "label": "4",
+            "p": 0.13
+          },
+          {
+            "goals": 5,
+            "label": "5",
+            "p": 0.0638
+          },
+          {
+            "goals": 6,
+            "label": "6+",
+            "p": 0.0391
+          }
+        ],
+        "teams": {
+          "home": {
+            "name": "Athletic Club",
+            "elo": 1553,
+            "form": {
+              "games": [
+                {
+                  "opponent": "Real Madrid",
+                  "atHome": false,
+                  "scored": 2,
+                  "conceded": 0,
+                  "result": "W",
+                  "date": "2026-08-05T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Barcelona",
+                  "atHome": false,
+                  "scored": 1,
+                  "conceded": 4,
+                  "result": "L",
+                  "date": "2026-07-26T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Atletico Madrid",
+                  "atHome": false,
+                  "scored": 2,
+                  "conceded": 0,
+                  "result": "W",
+                  "date": "2026-07-16T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Real Madrid",
+                  "atHome": true,
+                  "scored": 2,
+                  "conceded": 2,
+                  "result": "D",
+                  "date": "2026-07-09T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Barcelona",
+                  "atHome": true,
+                  "scored": 0,
+                  "conceded": 2,
+                  "result": "L",
+                  "date": "2026-07-08T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Atletico Madrid",
+                  "atHome": true,
+                  "scored": 1,
+                  "conceded": 1,
+                  "result": "D",
+                  "date": "2026-07-07T14:33:53.713Z"
+                }
+              ],
+              "played": 6,
+              "wins": 2,
+              "draws": 2,
+              "losses": 2,
+              "scoredAvg": 1.33,
+              "concededAvg": 1.5,
+              "streak": "DLDWLW"
+            },
+            "split": {
+              "home": {
+                "played": 9,
+                "scoredAvg": 1.78,
+                "concededAvg": 1
+              },
+              "away": {
+                "played": 9,
+                "scoredAvg": 1.56,
+                "concededAvg": 1
+              }
+            },
+            "absences": []
+          },
+          "away": {
+            "name": "Sevilla",
+            "elo": 1439,
+            "form": {
+              "games": [
+                {
+                  "opponent": "Real Madrid",
+                  "atHome": false,
+                  "scored": 1,
+                  "conceded": 2,
+                  "result": "L",
+                  "date": "2026-07-31T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Barcelona",
+                  "atHome": false,
+                  "scored": 1,
+                  "conceded": 2,
+                  "result": "L",
+                  "date": "2026-07-21T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Atletico Madrid",
+                  "atHome": false,
+                  "scored": 0,
+                  "conceded": 2,
+                  "result": "L",
+                  "date": "2026-07-11T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Athletic Club",
+                  "atHome": false,
+                  "scored": 1,
+                  "conceded": 3,
+                  "result": "L",
+                  "date": "2026-07-01T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Real Sociedad",
+                  "atHome": false,
+                  "scored": 1,
+                  "conceded": 6,
+                  "result": "L",
+                  "date": "2026-06-21T14:33:53.713Z"
+                },
+                {
+                  "opponent": "Villarreal",
+                  "atHome": false,
+                  "scored": 1,
+                  "conceded": 0,
+                  "result": "W",
+                  "date": "2026-06-11T14:33:53.713Z"
+                }
+              ],
+              "played": 6,
+              "wins": 1,
+              "draws": 0,
+              "losses": 5,
+              "scoredAvg": 0.83,
+              "concededAvg": 2.5,
+              "streak": "WLLLLL"
+            },
+            "split": {
+              "home": {
+                "played": 9,
+                "scoredAvg": 0.56,
+                "concededAvg": 1.33
+              },
+              "away": {
+                "played": 9,
+                "scoredAvg": 0.89,
+                "concededAvg": 1.78
+              }
+            },
+            "absences": []
+          }
+        },
+        "h2h": {
+          "games": [
+            {
+              "date": "2026-07-01T14:33:53.713Z",
+              "home": "Athletic Club",
+              "away": "Sevilla",
+              "score": "3-1",
+              "totalGoals": 4,
+              "bothScored": true
+            },
+            {
+              "date": "2026-05-17T14:33:53.713Z",
+              "home": "Sevilla",
+              "away": "Athletic Club",
+              "score": "0-1",
+              "totalGoals": 1,
+              "bothScored": false
+            }
+          ],
+          "played": 2,
+          "avgGoals": 2.5,
+          "bothScoredCount": 1
+        },
+        "news": {
+          "home": [
+            {
+              "title": "Porto vs Athletic Club | Informação do jogo | UEFA Youth League 2014/15 - UEFA.com",
+              "source": "UEFA.com",
+              "publishedAt": "Thu, 13 Aug 2026 11:02:38 GMT"
+            },
+            {
+              "title": "Athletic contrata meia Redney Assis para sequência da Série B do Brasileiro - ge",
+              "source": "ge",
+              "publishedAt": "Sat, 15 Aug 2026 12:39:18 GMT"
+            },
+            {
+              "title": "Athletic Club VS Sevilla - vsports.pt",
+              "source": "vsports.pt",
+              "publishedAt": "Tue, 11 Aug 2026 22:53:06 GMT"
+            },
+            {
+              "title": "Estatísticas da partida Atalanta 1-0 Athletic Club: N. Zalewski brilha, Atalanta garante os 3 pontos - vietnam.vn",
+              "source": "vietnam.vn",
+              "publishedAt": "Fri, 14 Aug 2026 21:53:03 GMT"
+            },
+            {
+              "title": "Barakaldo 3-1 Athletic Club B (12 de ago, 2026) Estatísticas de jogadores - ESPN Brasil",
+              "source": "ESPN Brasil",
+              "publishedAt": "Fri, 14 Aug 2026 05:05:23 GMT"
+            },
+            {
+              "title": "Celta Vigo x Athletic Club - placar ao vivo, escalações prováveis e estatísticas H2H - FotMob",
+              "source": "FotMob",
+              "publishedAt": "Thu, 13 Aug 2026 19:46:00 GMT"
+            },
+            {
+              "title": "Paixão mantém fase iluminada e marca golaço na vitória do OM sobre o Athletic Club - OneFootball",
+              "source": "OneFootball",
+              "publishedAt": "Mon, 10 Aug 2026 21:23:15 GMT"
+            },
+            {
+              "title": "AO VIVO Atalanta x Athletic Club: Atalanta abre o placar - vietnam.vn",
+              "source": "vietnam.vn",
+              "publishedAt": "Fri, 14 Aug 2026 20:48:35 GMT"
+            },
+            {
+              "title": "Ao vivo: América-MG x Athletic Club | Rodada 22 | Campeonato Brasileiro Série B - ge",
+              "source": "ge",
+              "publishedAt": "Sat, 15 Aug 2026 03:38:09 GMT"
+            },
+            {
+              "title": "Passes longos acertados por partida - Estatísticas de Athletic Club para LaLiga 2025/2026 - FotMob",
+              "source": "FotMob",
+              "publishedAt": "Thu, 13 Aug 2026 13:57:14 GMT"
+            },
+            {
+              "title": "AO VIVO Atalanta x Athletic Club: Intervalo, empate em 0 a 0 - vietnam.vn",
+              "source": "vietnam.vn",
+              "publishedAt": "Fri, 14 Aug 2026 20:48:34 GMT"
+            },
+            {
+              "title": "Há vida sem Ian Luccas? Athletic dá resposta imediata com dedo de Alex após saída do volante - ge",
+              "source": "ge",
+              "publishedAt": "Thu, 13 Aug 2026 08:03:35 GMT"
+            }
+          ],
+          "away": [
+            {
+              "title": "Sevilla x Rayo Vallecano – Análise, Escalações, Hora do Jogo e Onde Assistir Hoje 15/08 - Odds Scanner",
+              "source": "Odds Scanner",
+              "publishedAt": "Sat, 15 Aug 2026 14:12:27 GMT"
+            },
+            {
+              "title": "Sevilla VS Barcelona - vsports.pt",
+              "source": "vsports.pt",
+              "publishedAt": "Tue, 11 Aug 2026 20:25:19 GMT"
+            },
+            {
+              "title": "Sevilla x Rayo Vallecano: notícias, odds, estatísticas, escalações prováveis, horário e onde assistir - bet365",
+              "source": "bet365",
+              "publishedAt": "Fri, 14 Aug 2026 17:54:34 GMT"
+            },
+            {
+              "title": "Sevilla x Rayo Vallecano - La Liga: Notícias, Odds, Estatísticas, Escalações, Horário, Onde Assistir - apostas.betfair.bet.br",
+              "source": "apostas.betfair.bet.br",
+              "publishedAt": "Sat, 15 Aug 2026 03:58:00 GMT"
+            },
+            {
+              "title": "Calendário do Sevilla 2026-27 - ESPN Brasil",
+              "source": "ESPN Brasil",
+              "publishedAt": "Wed, 12 Aug 2026 21:41:01 GMT"
+            },
+            {
+              "title": "Espanyol vs Sevilla - resultado ao vivo, equipas iniciais prováveis e estatísticas H2H - FotMob",
+              "source": "FotMob",
+              "publishedAt": "Thu, 13 Aug 2026 17:15:24 GMT"
+            },
+            {
+              "title": "Sevilla x Rayo Vallecano: Palpites, odds e apostas – La Liga – 15/08/2026 - NETVASCO",
+              "source": "NETVASCO",
+              "publishedAt": "Sat, 15 Aug 2026 06:15:26 GMT"
+            },
+            {
+              "title": "Robbie Ure: \"El Sevilla es un grande de España y de Europa\" - OneFootball",
+              "source": "OneFootball",
+              "publishedAt": "Wed, 12 Aug 2026 15:14:41 GMT"
+            },
+            {
+              "title": "Oficial: Estrela da Amadora anuncia contratação de Joan Jordán ao Sevilla - Notícias ao Minuto",
+              "source": "Notícias ao Minuto",
+              "publishedAt": "Mon, 10 Aug 2026 18:03:05 GMT"
+            },
+            {
+              "title": "Sevilla e Rayo Vallecano se enfrentam pela estreia da La Liga - iG Esportes",
+              "source": "iG Esportes",
+              "publishedAt": "Fri, 14 Aug 2026 21:28:00 GMT"
+            },
+            {
+              "title": "Athletic Club VS Sevilla - vsports.pt",
+              "source": "vsports.pt",
+              "publishedAt": "Tue, 11 Aug 2026 22:53:06 GMT"
+            },
+            {
+              "title": "Defesas por jogo - Estatísticas de Sevilla (W) para Liga F 2025/2026 - FotMob",
+              "source": "FotMob",
+              "publishedAt": "Thu, 13 Aug 2026 17:02:05 GMT"
+            }
+          ]
+        },
+        "context": {
+          "home": [],
+          "away": []
+        },
+        "ai": null,
+        "dataQuality": 0.85,
+        "sampleMatches": 18
+      }
+    }
+  ]
+}

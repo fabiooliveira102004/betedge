@@ -356,30 +356,6 @@ button { font: inherit; color: inherit; }
 .banner--offline { background: var(--wait-soft); color: var(--wait); border-bottom-color: var(--border); }
 .banner--demo    { background: var(--accent-soft); color: var(--accent); border-bottom-color: var(--accent-line); }
 
-/* ── Banca ──────────────────────────────────────────────────────────── */
-.bankroll-strip {
-  display: flex;
-  align-items: baseline;
-  gap: 10px;
-  margin-bottom: 16px;
-  padding: 12px 14px;
-  border: 1px solid var(--border);
-  border-radius: var(--r-md);
-  background: var(--surface);
-}
-.bankroll-strip__label {
-  font-size: 10.5px;
-  font-weight: 700;
-  letter-spacing: .09em;
-  text-transform: uppercase;
-  color: var(--text-faint);
-}
-.bankroll-strip__value {
-  font-size: 19px;
-  font-weight: 700;
-  margin-inline-end: auto;
-}
-
 /* ── Filtros ────────────────────────────────────────────────────────── */
 .filters { margin-bottom: 16px; display: flex; flex-direction: column; gap: 8px; }
 
@@ -440,9 +416,9 @@ button { font: inherit; color: inherit; }
 }
 .segmented__item.is-active { background: var(--surface-3); color: var(--text); }
 
-/* ── Cartao de aposta ───────────────────────────────────────────────── */
-.pick {
-  position: relative;
+/* ── Cartao de jogo ────────────────────────────────────────────────── */
+
+.match {
   border: 1px solid var(--border);
   border-radius: var(--r-lg);
   background: var(--surface);
@@ -450,360 +426,111 @@ button { font: inherit; color: inherit; }
   overflow: hidden;
 }
 
-/* Barra vertical de cor: da o estado do cartao sem ocupar espaco. */
-.pick::before {
-  content: "";
-  position: absolute;
-  inset: 0 auto 0 0;
-  width: 3px;
-  background: var(--accent);
-}
-.pick[data-result="win"]::before  { background: var(--win); }
-.pick[data-result="loss"]::before { background: var(--loss); }
-.pick[data-result="push"]::before { background: var(--text-faint); }
-
-/* O cartao inteiro abre a analise. Um botao a envolver o conteudo, em vez
-   de um link "ver mais", da um alvo tactil enorme e um so ponto de entrada. */
-.pick__open {
+.match__open {
   display: block;
   width: 100%;
-  padding: 0;
+  padding: 13px 15px 14px;
   border: 0;
   background: transparent;
-  text-align: start;
-  cursor: pointer;
   color: inherit;
   font: inherit;
+  text-align: start;
+  cursor: pointer;
 }
-.pick__open:hover .pick__teams { color: var(--accent); }
-.pick__open:focus-visible { outline-offset: -3px; }
+.match__open:focus-visible { outline-offset: -3px; }
+.match__open:hover .match__team { color: var(--accent); }
 
-.pick__top {
+.match__top {
   display: flex;
   align-items: center;
   gap: 8px;
-  padding: 11px 14px 0 16px;
-  font-size: 11px;
+  font-size: 10.5px;
   color: var(--text-faint);
 }
-.pick__league {
-  font-weight: 650;
-  letter-spacing: .04em;
-  text-transform: uppercase;
-}
-.pick__dot { color: var(--border-strong); }
-.pick__time { margin-inline-start: auto; font-family: var(--font-num); }
+.match__league { font-weight: 650; letter-spacing: .05em; text-transform: uppercase; }
+.match__time { margin-inline-start: auto; }
 
-.pick__teams {
-  padding: 6px 14px 0 16px;
-  font-size: 15.5px;
+/* Equipas nas pontas, numero ao centro: le-se como um placard. */
+.match__teams {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+.match__team {
+  font-size: 15px;
   font-weight: 650;
   letter-spacing: -0.02em;
-  line-height: 1.35;
+  line-height: 1.25;
   transition: color .16s var(--ease);
 }
-
-/* A condicao de vitoria em portugues corrente, antes de qualquer numero.
-   E a unica linha do cartao que se percebe sem saber o que e uma odd. */
-.pick__plain {
-  margin: 10px 16px 0;
-  font-size: 13px;
-  line-height: 1.5;
-  color: var(--text-dim);
-}
-.pick__plain strong { color: var(--text); font-weight: 650; }
-.pick__vs { color: var(--text-faint); font-weight: 500; margin-inline: 5px; }
-
-.pick__bet {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin: 11px 14px 0 16px;
-  padding: 11px 12px;
-  border-radius: var(--r-md);
-  background: var(--surface-2);
-}
-.pick__selection {
-  flex: 1;
-  min-width: 0;
-  font-size: 14px;
+.match__team--away { text-align: end; }
+.match__xg {
+  font-size: 12.5px;
   font-weight: 600;
-}
-.pick__market {
-  display: block;
-  margin-top: 1px;
-  font-size: 10.5px;
-  font-weight: 600;
-  letter-spacing: .06em;
-  text-transform: uppercase;
   color: var(--text-faint);
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  white-space: nowrap;
 }
-
-.odds {
-  flex: 0 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  line-height: 1.1;
-}
-.odds__value {
-  font-family: var(--font-num);
-  font-variant-numeric: tabular-nums;
-  font-size: 20px;
+.match__score {
+  font-size: 19px;
   font-weight: 700;
   letter-spacing: -0.03em;
-}
-.odds__book {
-  font-size: 9.5px;
-  font-weight: 700;
-  letter-spacing: .07em;
-  text-transform: uppercase;
-  color: var(--text-faint);
+  white-space: nowrap;
 }
 
-/* Metricas em grelha de 3: vantagem, probabilidade, stake. */
-.pick__metrics {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1px;
-  margin: 12px 0 0;
-  padding: 0;
-  background: var(--border);
-  border-top: 1px solid var(--border);
+.match__verdict {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 11px;
+  font-size: 13.5px;
 }
-.metric {
-  padding: 10px 8px 11px 8px;
-  background: var(--surface);
-  text-align: center;
-}
-.metric:first-child { padding-left: 16px; }
-.metric__label {
-  display: block;
-  font-size: 9.5px;
-  font-weight: 700;
-  letter-spacing: .08em;
-  text-transform: uppercase;
-  color: var(--text-faint);
-}
-.metric__value {
-  display: block;
-  margin-top: 3px;
-  font-family: var(--font-num);
-  font-variant-numeric: tabular-nums;
-  font-size: 15px;
-  font-weight: 700;
-  letter-spacing: -0.025em;
-}
-.metric__value--edge { color: var(--accent); }
+.match__verdict-label { font-weight: 600; }
+.match__verdict-prob { font-weight: 700; color: var(--accent); }
 
-/* Barra de confianca: 5 segmentos lidos de relance. */
-.conf {
-  display: inline-flex;
-  gap: 2.5px;
-  margin-top: 4px;
+/* Barra de probabilidades 1X2: uma so barra em vez de tres numeros soltos,
+   porque a leitura util e a proporcao entre os tres. */
+.probbar {
+  display: flex;
+  gap: 2px;
+  height: 5px;
+  margin-top: 7px;
+  border-radius: 3px;
+  overflow: hidden;
 }
-.conf__seg {
-  width: 11px;
-  height: 3.5px;
-  border-radius: 2px;
-  background: var(--surface-3);
-}
-.conf__seg.is-on { background: var(--accent); }
+.probbar__seg { border-radius: 2px; }
+.probbar__seg--home { background: var(--accent); }
+.probbar__seg--draw { background: var(--border-strong); }
+.probbar__seg--away { background: color-mix(in srgb, var(--accent) 45%, var(--surface-3)); }
 
-.pick__foot {
+.match__foot {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 10px 14px 12px 16px;
-  border-top: 1px solid var(--border);
-}
-
-.pick__stake {
-  flex: 1;
-  min-width: 0;
-  font-size: 12.5px;
-  line-height: 1.4;
+  margin-top: 11px;
+  font-size: 12px;
   color: var(--text-dim);
 }
-.pick__stake strong { color: var(--text); font-weight: 700; }
-.pick__arrow { color: var(--text-faint); margin-inline: 2px; }
+.match__hint { flex: 1; min-width: 0; }
+.match__hint strong { color: var(--text); }
 
-.result-tag {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
+.tag {
+  flex: 0 0 auto;
   padding: 3px 9px;
   border-radius: 999px;
-  font-size: 11px;
+  font-size: 10.5px;
   font-weight: 700;
   letter-spacing: .02em;
 }
-.result-tag--win  { background: var(--win-soft);  color: var(--win); }
-.result-tag--loss { background: var(--loss-soft); color: var(--loss); }
-.result-tag--push { background: var(--surface-3); color: var(--text-dim); }
-.result-tag--open { background: var(--wait-soft); color: var(--wait); }
-
-.score {
-  font-family: var(--font-num);
-  font-size: 12.5px;
-  font-weight: 700;
-  color: var(--text-dim);
-}
-.pnl { margin-inline-start: auto; font-family: var(--font-num); font-size: 13px; font-weight: 700; }
-.pnl--pos { color: var(--win); }
-.pnl--neg { color: var(--loss); }
-.pnl--flat { color: var(--text-faint); }
-
-/* ── Estatisticas ───────────────────────────────────────────────────── */
-.tiles {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-}
-.tile {
-  padding: 14px;
-  border: 1px solid var(--border);
-  border-radius: var(--r-md);
-  background: var(--surface);
-}
-.tile__label {
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: .09em;
-  text-transform: uppercase;
-  color: var(--text-faint);
-}
-.tile__value {
-  display: block;
-  margin-top: 6px;
-  font-family: var(--font-num);
-  font-variant-numeric: tabular-nums;
-  font-size: 25px;
-  font-weight: 700;
-  letter-spacing: -0.04em;
-  line-height: 1;
-}
-.tile__hint { display: block; margin-top: 5px; font-size: 11.5px; color: var(--text-dim); }
-.tile--wide { grid-column: 1 / -1; }
-
-.card {
-  padding: 16px;
-  border: 1px solid var(--border);
-  border-radius: var(--r-lg);
-  background: var(--surface);
-}
-.card__title {
-  font-size: 14px;
-  font-weight: 650;
-  letter-spacing: -0.02em;
-  margin-bottom: 3px;
-}
-.card__sub { font-size: 12px; color: var(--text-dim); margin-bottom: 14px; }
-
-.chart { display: block; width: 100%; height: auto; overflow: visible; }
-
-.bars { display: flex; flex-direction: column; gap: 10px; }
-.bar__head {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 10px;
-  font-size: 12.5px;
-  margin-bottom: 5px;
-}
-.bar__name { font-weight: 600; }
-.bar__meta { font-family: var(--font-num); font-size: 11.5px; color: var(--text-dim); }
-.bar__track {
-  position: relative;
-  height: 6px;
-  border-radius: 3px;
-  background: var(--surface-3);
-  overflow: hidden;
-}
-.bar__fill { position: absolute; inset: 0 auto 0 0; border-radius: 3px; background: var(--accent); }
-.bar__fill--pos { background: var(--win); }
-.bar__fill--neg { background: var(--loss); }
-
-/* ── Formularios ────────────────────────────────────────────────────── */
-.field { display: flex; flex-direction: column; gap: 6px; }
-.field__label {
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: .07em;
-  text-transform: uppercase;
-  color: var(--text-faint);
-}
-.field__hint { font-size: 12px; color: var(--text-dim); line-height: 1.45; }
-
-.input {
-  width: 100%;
-  min-height: 46px;
-  padding: 0 13px;
-  border: 1px solid var(--border);
-  border-radius: var(--r-md);
-  background: var(--surface-2);
-  color: var(--text);
-  font: inherit;
-  transition: border-color .16s var(--ease);
-}
-.input:focus { border-color: var(--accent-line); outline-offset: 1px; }
-.input[type="number"] { font-family: var(--font-num); }
-
-.form { display: flex; flex-direction: column; gap: 14px; }
-
-/* Sliders: o alvo tactil e a area toda de 44px, nao so o polegar visivel. */
-input[type="range"] {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 100%;
-  height: 44px;
-  margin: -8px 0;
-  background: transparent;
-  cursor: pointer;
-}
-input[type="range"]::-webkit-slider-runnable-track {
-  height: 5px;
-  border-radius: 3px;
-  background: var(--surface-3);
-}
-input[type="range"]::-moz-range-track {
-  height: 5px;
-  border-radius: 3px;
-  background: var(--surface-3);
-}
-input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 20px;
-  height: 20px;
-  margin-top: -7.5px;
-  border: 3px solid var(--bg);
-  border-radius: 50%;
-  background: var(--accent);
-}
-input[type="range"]::-moz-range-thumb {
-  width: 20px;
-  height: 20px;
-  border: 3px solid var(--bg);
-  border-radius: 50%;
-  background: var(--accent);
-}
-
-.form__error {
-  padding: 10px 12px;
-  border-radius: var(--r-sm);
-  background: var(--loss-soft);
-  color: var(--loss);
-  font-size: 13px;
-}
-
-.row-between {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-}
-.row-between + .row-between { margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--border); }
+.tag--sm { padding: 1px 6px; font-size: 9.5px; margin-inline-start: 6px; }
+.tag--value { background: var(--accent-soft); color: var(--accent); }
+.tag--hit   { background: var(--win-soft);  color: var(--win); }
+.tag--miss  { background: var(--surface-3); color: var(--text-faint); }
 
 /* ── Vista de analise ───────────────────────────────────────────────── */
 
@@ -883,8 +610,9 @@ input[type="range"]::-moz-range-thumb {
   font-weight: 700;
   letter-spacing: .09em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--text-faint);
 }
+.detail__hero .detail__label { color: var(--accent); }
 .detail__bet {
   margin-top: 3px;
   font-size: 18px;
@@ -1106,57 +834,6 @@ input[type="range"]::-moz-range-thumb {
 }
 .bar__fill--muted { background: var(--border-strong); }
 
-/* ── Bottom sheet ───────────────────────────────────────────────────── */
-.sheet-root { position: fixed; inset: 0; z-index: 60; }
-.sheet-root[hidden] { display: none; }
-
-.sheet__scrim {
-  position: absolute;
-  inset: 0;
-  background: rgb(0 0 0 / 55%);
-  backdrop-filter: blur(2px);
-  animation: fade .22s var(--ease);
-}
-
-.sheet {
-  position: absolute;
-  inset: auto 0 0 0;
-  max-width: var(--shell);
-  margin-inline: auto;
-  max-height: 88dvh;
-  display: flex;
-  flex-direction: column;
-  border-radius: var(--r-xl) var(--r-xl) 0 0;
-  background: var(--bg-soft);
-  border: 1px solid var(--border);
-  border-bottom: 0;
-  box-shadow: var(--shadow-lift);
-  animation: rise .3s var(--ease);
-}
-
-.sheet__grip {
-  width: 36px;
-  height: 4px;
-  margin: 8px auto 0;
-  border-radius: 2px;
-  background: var(--border-strong);
-}
-.sheet__head {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 10px 10px 10px 20px;
-}
-.sheet__title { flex: 1; font-size: 17px; font-weight: 700; letter-spacing: -0.025em; }
-.sheet__body {
-  padding: 4px 20px calc(24px + env(safe-area-inset-bottom));
-  overflow-y: auto;
-  overscroll-behavior: contain;
-}
-
-@keyframes fade { from { opacity: 0; } }
-@keyframes rise { from { translate: 0 100%; } }
-
 /* ── Toasts ─────────────────────────────────────────────────────────── */
 .toasts {
   position: fixed;
@@ -1286,3 +963,240 @@ input[type="range"]::-moz-range-thumb {
     border-radius: var(--r-lg) var(--r-lg) 0 0;
   }
 }
+
+/* ── Veredicto e quadro de mercados ─────────────────────────────────── */
+
+.verdict {
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  background: var(--surface);
+}
+/* A cor acompanha a forca da previsao: um jogo em aberto nao pode ter o
+   mesmo destaque visual que uma previsao clara, senao a app parece ter
+   certezas que nao tem. */
+.verdict--strong { border-color: var(--accent-line); background: var(--accent-soft); }
+.verdict--mild   { border-color: var(--border-strong); }
+
+.verdict__kicker {
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+.verdict--strong .verdict__kicker { color: var(--accent); }
+.verdict__summary {
+  margin-top: 6px;
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.final-score {
+  margin: 8px 0 4px;
+  font-family: var(--font-num);
+  font-variant-numeric: tabular-nums;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  line-height: 1;
+}
+
+.outcomes { margin-top: 16px; display: flex; flex-direction: column; gap: 9px; }
+.outcome {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 96px 42px;
+  align-items: center;
+  gap: 10px;
+  font-size: 13.5px;
+}
+.outcome__label { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.outcome.is-top .outcome__label { font-weight: 650; }
+.outcome__pct { text-align: end; font-weight: 650; }
+.outcome.is-top .outcome__pct { color: var(--accent); }
+
+.verdict__facts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+}
+.verdict__facts strong { display: block; font-size: 19px; margin-top: 2px; }
+.verdict__facts .detail__note { margin-top: 1px; }
+
+.market {
+  padding: 13px 14px 6px;
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  background: var(--surface);
+}
+.market + .market { margin-top: 10px; }
+.market__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+}
+.market__title { font-size: 13.5px; font-weight: 650; letter-spacing: -0.015em; }
+.market__head .detail__note { margin: 0; }
+
+/* Uma linha por opcao: rotulo, odd, modelo, diferenca. As tres colunas
+   numericas sao tabulares e alinhadas a direita para se compararem em
+   coluna sem esforco. */
+.mrow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 52px 52px 56px;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 0;
+  font-size: 13.5px;
+  border-top: 1px solid var(--border);
+}
+.mrow--head {
+  border-top: 0;
+  padding: 0 0 6px;
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+.mrow--head > span:not(:first-child),
+.mrow__odds, .mrow__model, .mrow__edge { text-align: end; }
+.mrow__label { overflow: hidden; text-overflow: ellipsis; }
+.mrow__odds { font-weight: 700; }
+.mrow__model { color: var(--text-dim); }
+.mrow__edge { font-weight: 650; color: var(--text-faint); }
+
+.mrow--value .mrow__label { font-weight: 650; }
+.mrow--value .mrow__edge { color: var(--accent); }
+.mrow--pos .mrow__edge { color: var(--text-dim); }
+.mrow--neg .mrow__edge { color: var(--loss); }
+
+/* ── Noticias ───────────────────────────────────────────────────────── */
+
+.news { list-style: none; margin: 0; padding: 0; }
+.news__item { padding: 10px 0; border-top: 1px solid var(--border); }
+.news__item:first-child { border-top: 0; padding-top: 4px; }
+.news__title { font-size: 13.5px; line-height: 1.45; }
+.news__meta {
+  margin-top: 3px;
+  font-size: 11.5px;
+  color: var(--text-faint);
+}
+
+/* ── Cartoes e indicadores ──────────────────────────────────────────── */
+
+.card {
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  background: var(--surface);
+}
+.card__title {
+  font-size: 14.5px;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+  margin-bottom: 3px;
+}
+.card__sub { font-size: 12.5px; line-height: 1.5; color: var(--text-dim); margin-bottom: 14px; }
+
+.tiles { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+.tile {
+  padding: 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  background: var(--surface);
+}
+.tile__label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+.tile__value {
+  display: block;
+  margin-top: 6px;
+  font-family: var(--font-num);
+  font-variant-numeric: tabular-nums;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+.tile__hint { display: block; margin-top: 5px; font-size: 11.5px; color: var(--text-dim); }
+
+/* Barras horizontais partilhadas por probabilidades, calibracao e
+   reparticoes. Sempre com o valor em texto ao lado: a barra da a proporcao
+   de relance, o numero da a leitura exata. */
+.bars { display: flex; flex-direction: column; gap: 12px; }
+.bar__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
+  font-size: 12.5px;
+  margin-bottom: 5px;
+}
+.bar__name { font-weight: 600; }
+.bar__meta { font-family: var(--font-num); font-size: 11.5px; color: var(--text-dim); }
+.bar__track {
+  position: relative;
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  background: var(--surface-3);
+  overflow: hidden;
+}
+.bar__fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  border-radius: 3px;
+  background: var(--accent);
+}
+.bar__fill--muted { background: var(--border-strong); }
+.bar__fill--pos { background: var(--win); }
+.bar__fill--neg { background: var(--loss); }
+
+.row-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.row-between + .row-between { margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--border); }
+
+.problegend {
+  display: flex;
+  gap: 12px;
+  margin-top: 7px;
+  font-size: 11px;
+  color: var(--text-faint);
+}
+.problegend b { color: var(--text-dim); font-weight: 700; }
+.dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 2px;
+  margin-inline-end: 5px;
+}
+.dot--home { background: var(--accent); }
+.dot--draw { background: var(--border-strong); }
+.dot--away { background: color-mix(in srgb, var(--accent) 45%, var(--surface-3)); }
+
+.notice__summary {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--wait);
+  cursor: pointer;
+  list-style: none;
+  /* 44px de alvo tactil sem aumentar o espaco visual do bloco. */
+  padding: 4px 0;
+}
+.notice__summary::-webkit-details-marker { display: none; }
+.notice[open] .notice__summary { margin-bottom: 8px; }

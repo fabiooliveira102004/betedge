@@ -6,8 +6,10 @@ import { log } from './lib/log.mjs';
 import { fetchBetclicOdds } from './lib/odds.mjs';
 import { demoOdds } from './lib/demo.mjs';
 import {
-  attachBaseModel, attachContext, evaluateFixture, groupFixtures, loadLeagueData,
+  analyseFixture, attachBaseModel, attachContext, attachNews,
+  evaluateFixture, groupFixtures, loadLeagueData,
 } from './lib/pipeline.mjs';
+import { buildMatch } from './lib/match.mjs';
 import { readJson, writeJson } from './lib/store.mjs';
 import { upsert } from './lib/supabase.mjs';
 import { slimPick } from './lib/slim.mjs';
@@ -44,7 +46,14 @@ async function main() {
   for (const fixture of fixtures) attachBaseModel(fixture, leagues);
 
   log.step('Contexto');
+  await attachNews(fixtures);
   await attachContext(fixtures);
+
+  log.step('Analise dos jogos');
+  for (const fixture of fixtures) analyseFixture(fixture);
+  const matches = fixtures.map(buildMatch);
+  log.info(`${matches.length} jogos analisados, `
+    + `${matches.reduce((n, m) => n + m.valueCount, 0)} selecoes com vantagem`);
 
   log.step('Avaliacao de valor');
   const picks = fixtures.flatMap(evaluateFixture);
@@ -59,11 +68,11 @@ async function main() {
   }
 
   log.step('Gravacao');
-  await persist({ fixtures, picks: selected, startedAt });
+  await persist({ fixtures, matches, picks: selected, startedAt });
   log.info('Concluido.');
 }
 
-async function persist({ fixtures, picks, startedAt }) {
+async function persist({ fixtures, matches, picks, startedAt }) {
   const previous = await readJson('picks.json', { picks: [] });
   const history = await readJson('history.json', { picks: [] });
 
@@ -75,6 +84,13 @@ async function persist({ fixtures, picks, startedAt }) {
   const mergedHistory = dedupeById([...(history.picks ?? []), ...retired]);
 
   const clean = picks.map(({ score, ...p }) => p);
+
+  await writeJson('matches.json', {
+    generatedAt: startedAt.toISOString(),
+    demo: isDemo(),
+    count: matches.length,
+    matches,
+  });
 
   await writeJson('picks.json', {
     generatedAt: startedAt.toISOString(),

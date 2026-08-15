@@ -13,7 +13,7 @@
  *    esperar meio segundo. A cache fica como rede de seguranca.
  */
 
-const VERSION = 'betedge-v2';
+const VERSION = 'betedge-v3';
 const SHELL_CACHE = `${VERSION}-shell`;
 const DATA_CACHE = `${VERSION}-data`;
 
@@ -24,16 +24,15 @@ const SHELL = [
   './assets/css/app.css',
   './assets/js/app.js',
   './assets/js/api.js',
-  './assets/js/components.js',
-  './assets/js/pick-detail.js',
   './assets/js/config.js',
+  './assets/js/match-detail.js',
   './assets/js/state.js',
   './assets/js/ui.js',
   './assets/js/util.js',
-  './assets/js/views-picks.js',
-  './assets/js/views-history.js',
-  './assets/js/views-stats.js',
-  './assets/js/views-profile.js',
+  './assets/js/views-matches.js',
+  './assets/js/views-results.js',
+  './assets/js/views-model.js',
+  './assets/js/views-about.js',
   './assets/icons/icon.svg',
 ];
 

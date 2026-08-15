@@ -170,17 +170,18 @@ export function attachBaseModel(fixture, leagues) {
   };
 }
 
-export async function attachContext(fixtures) {
-  if (!hasAI()) {
-    log.info('Camada de IA desligada — apostas assentam so no modelo e nas lesoes');
-    return;
-  }
-
-  // So os jogos mais proximos vao a IA: sao os que ainda dao para apostar e
-  // limitam o custo por execucao.
+/**
+ * Titulos de noticias sobre cada equipa.
+ *
+ * Corre sempre, mesmo sem chave de IA: o RSS do Google News nao precisa de
+ * autenticacao, e os titulos em bruto ja sao informacao util para quem esta
+ * a analisar o jogo. A IA, quando existe, interpreta-os; quando nao existe,
+ * o utilizador le-os por si.
+ */
+export async function attachNews(fixtures) {
   const batch = fixtures.slice(0, config.ai.maxFixtures);
-
   log.info(`A recolher noticias para ${batch.length} jogos...`);
+
   await mapLimited(batch, 6, async (fixture) => {
     const [homeNews, awayNews] = await Promise.all([
       fetchTeamNews(fixture.home),
@@ -188,6 +189,19 @@ export async function attachContext(fixtures) {
     ]);
     fixture.news = { home: homeNews, away: awayNews };
   });
+
+  const withNews = batch.filter((f) => (f.news?.home?.length ?? 0) + (f.news?.away?.length ?? 0) > 0);
+  log.info(`${withNews.length} jogos com noticias recolhidas`);
+}
+
+export async function attachContext(fixtures) {
+  if (!hasAI()) {
+    log.info('Camada de IA desligada — o contexto fica pelos titulos de noticias em bruto');
+    return;
+  }
+
+  // So os jogos mais proximos vao a IA, para limitar o custo por execucao.
+  const batch = fixtures.slice(0, config.ai.maxFixtures);
 
   const assessments = await assessContext(batch.map((f) => ({
     fixtureId: f.id,
@@ -229,24 +243,51 @@ export async function attachContext(fixtures) {
   }
 }
 
-export function evaluateFixture(fixture) {
+/**
+ * Tudo o que se calcula a partir da matriz de resultados, uma vez por jogo.
+ * Corre antes de qualquer avaliacao de mercado, porque tanto o quadro de
+ * mercados como as apostas de valor assentam nos mesmos numeros.
+ */
+export function analyseFixture(fixture) {
   const matrix = scoreMatrix(fixture.lambdas.home, fixture.lambdas.away);
-  const markets = deriveMarkets(matrix);
-  fixture.markets = markets;
+  fixture.markets = deriveMarkets(matrix);
+  fixture.scorelines = likelyScorelines(matrix);
+  fixture.goalsDistribution = goalsDistribution(matrix);
 
-  // Calculados uma vez por jogo, nao por aposta: varias apostas do mesmo
-  // jogo partilham a mesma matriz de resultados.
-  const scorelines = likelyScorelines(matrix);
-  const goalsDist = goalsDistribution(matrix);
-
-  const quality = dataQuality({
+  fixture.quality = dataQuality({
     hasHistory: fixture.hasHistory,
     hasInjuries: (fixture.injuries.home.length + fixture.injuries.away.length) > 0
       || fixture.hasHistory,
-    hasNews: Boolean(fixture.news),
+    hasNews: (fixture.news?.home?.length ?? 0) + (fixture.news?.away?.length ?? 0) > 0,
     hasAI: Boolean(fixture.aiAssessment),
     sampleMatches: fixture.sampleMatches ?? 0,
   });
+
+  fixture.teamProfiles = {
+    home: {
+      name: fixture.home,
+      elo: fixture.elo?.home ?? null,
+      form: fixture.form?.home ?? null,
+      split: fixture.split?.home ?? null,
+      absences: fixture.injuries.home.slice(0, 8),
+    },
+    away: {
+      name: fixture.away,
+      elo: fixture.elo?.away ?? null,
+      form: fixture.form?.away ?? null,
+      split: fixture.split?.away ?? null,
+      absences: fixture.injuries.away.slice(0, 8),
+    },
+  };
+
+  return fixture;
+}
+
+export function evaluateFixture(fixture) {
+  const markets = fixture.markets;
+  const scorelines = fixture.scorelines;
+  const goalsDist = fixture.goalsDistribution;
+  const quality = fixture.quality;
 
   // Um grupo = todas as selecoes do mesmo mercado. A margem so pode ser
   // removida sobre o grupo completo.
@@ -372,22 +413,7 @@ export function evaluateFixture(fixture) {
       scorelines,
       goalsDistribution: goalsDist,
       h2h: fixture.h2h,
-      teams: {
-        home: {
-          name: fixture.home,
-          elo: fixture.elo?.home ?? null,
-          form: fixture.form?.home ?? null,
-          split: fixture.split?.home ?? null,
-          absences: fixture.injuries.home.slice(0, 8),
-        },
-        away: {
-          name: fixture.away,
-          elo: fixture.elo?.away ?? null,
-          form: fixture.form?.away ?? null,
-          split: fixture.split?.away ?? null,
-          absences: fixture.injuries.away.slice(0, 8),
-        },
-      },
+      teams: fixture.teamProfiles,
 
       demo: Boolean(fixture.demo),
       generatedAt: new Date().toISOString(),

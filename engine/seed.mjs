@@ -2,12 +2,14 @@
 import { log } from './lib/log.mjs';
 import { demoOdds } from './lib/demo.mjs';
 import {
-  attachBaseModel, evaluateFixture, groupFixtures, loadLeagueData,
+  analyseFixture, attachBaseModel, evaluateFixture, groupFixtures, loadLeagueData,
 } from './lib/pipeline.mjs';
 import { profitUnits, settleBet } from './lib/value.mjs';
 import { computeStats, simulateScore } from './lib/stats.mjs';
 import { writeJson } from './lib/store.mjs';
 import { slimPick } from './lib/slim.mjs';
+import { buildMatch } from './lib/match.mjs';
+import { mergeResults, toResult, verdictAccuracy } from './lib/results.mjs';
 import { config } from './config.mjs';
 import { round } from './lib/math.mjs';
 
@@ -28,6 +30,7 @@ async function main() {
 
   const today = new Date();
   const collected = new Map();
+  const pastMatches = new Map();
 
   for (let daysAgo = DAYS; daysAgo >= 1; daysAgo--) {
     const asOf = new Date(today.getTime() - daysAgo * 86400000);
@@ -37,12 +40,23 @@ async function main() {
     if (fixtures.length === 0) continue;
 
     const leagues = await loadLeagueData(fixtures, history);
-    for (const fixture of fixtures) attachBaseModel(fixture, leagues);
+    for (const fixture of fixtures) {
+      attachBaseModel(fixture, leagues);
+      analyseFixture(fixture);
+    }
 
     const picks = fixtures
       .flatMap(evaluateFixture)
       .sort((a, b) => b.score - a.score)
       .slice(0, config.betting.maxPicksPerDay);
+
+    for (const fixture of fixtures) {
+      // Cada jogo ja disputado entra no arquivo de resultados com a
+      // previsao que teria sido publicada nessa data.
+      if (new Date(fixture.kickoff) >= today) continue;
+      if (pastMatches.has(fixture.id)) continue;
+      pastMatches.set(fixture.id, buildMatch(fixture));
+    }
 
     for (const { score, ...pick } of picks) {
       // So contam jogos que ja se disputaram a data de hoje.
@@ -72,6 +86,17 @@ async function main() {
     demo: true,
     count: picks.length,
     picks,
+  });
+
+  const results = mergeResults([], [...pastMatches.values()]
+    .map((m) => toResult(m, simulateScore(m.id, m.lambdas))));
+
+  await writeJson('results.json', {
+    updatedAt: today.toISOString(),
+    demo: true,
+    count: results.length,
+    accuracy: verdictAccuracy(results),
+    results,
   });
 
   const stats = computeStats(picks);

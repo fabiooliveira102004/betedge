@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>BetEdge — a tua vantagem sobre o mercado</title>
-<meta name="description" content="Analise de apostas com modelo estatistico e leitura de contexto. Apostas de valor sobre as odds da Betclic, com historico verificavel.">
+<title>BetEdge — analise de jogos e odds</title>
+<meta name="description" content="Ve os jogos que vem ai, o que um modelo estatistico calcula para cada resultado, e como isso se compara com as odds da Betclic. Ferramenta de analise, nao de apostas.">
 
 <meta name="theme-color" content="#08090C" media="(prefers-color-scheme: dark)">
 <meta name="theme-color" content="#FBFBFD" media="(prefers-color-scheme: light)">
@@ -35,6 +35,13 @@
     </div>
 
     <div class="appbar__actions">
+      <button type="button" class="icon-btn" id="refresh-btn" aria-label="Atualizar dados">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M20 12a8 8 0 1 1-2.3-5.6M20 4v4.5h-4.5"
+                fill="none" stroke="currentColor" stroke-width="1.9"
+                stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
       <button type="button" class="icon-btn" id="theme-toggle"
               aria-label="Alternar tema claro e escuro">
         <svg viewBox="0 0 24 24" aria-hidden="true" class="icon-sun">
@@ -46,11 +53,6 @@
           <path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"
                 fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
         </svg>
-      </button>
-
-      <button type="button" class="avatar-btn" id="account-btn"
-              aria-label="Conta" aria-haspopup="dialog">
-        <span class="avatar" id="avatar-initials" aria-hidden="true">?</span>
       </button>
     </div>
   </div>
@@ -66,160 +68,122 @@
 <!-- ══ Conteudo ════════════════════════════════════════════════════════ -->
 <main id="main" class="main" tabindex="-1">
 
-  <!-- ── Apostas ────────────────────────────────────────────────────── -->
-  <section class="view" id="view-picks" role="tabpanel" aria-labelledby="tab-picks">
+  <!-- ── Jogos ──────────────────────────────────────────────────────── -->
+  <section class="view" id="view-matches" role="tabpanel" aria-labelledby="tab-matches">
     <div class="view__head">
       <div>
-        <h1 class="view__title">Apostas de valor</h1>
-        <p class="view__sub" id="picks-meta">A carregar…</p>
+        <h1 class="view__title">Proximos jogos</h1>
+        <p class="view__sub" id="matches-meta">A carregar…</p>
       </div>
-      <button type="button" class="icon-btn" id="refresh-btn" aria-label="Atualizar dados">
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M20 12a8 8 0 1 1-2.3-5.6M20 4v4.5h-4.5"
-                fill="none" stroke="currentColor" stroke-width="1.9"
-                stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </button>
     </div>
 
-    <div class="bankroll-strip" id="bankroll-strip" hidden>
-      <span class="bankroll-strip__label">Banca</span>
-      <output class="bankroll-strip__value num" id="bankroll-value">—</output>
-      <button type="button" class="link-btn" id="edit-bankroll">alterar</button>
-    </div>
-
-    <div class="filters" role="group" aria-label="Filtrar apostas">
+    <div class="filters" role="group" aria-label="Filtrar jogos">
       <div class="chips" id="league-filters"></div>
       <div class="chips chips--secondary">
-        <button type="button" class="chip" data-conf="all" aria-pressed="true">Todas</button>
-        <button type="button" class="chip" data-conf="high" aria-pressed="false">Confianca alta</button>
-        <button type="button" class="chip" data-conf="value" aria-pressed="false">Maior vantagem</button>
+        <button type="button" class="chip" id="value-filter" data-toggle="value" aria-pressed="false">
+          So jogos com odds generosas
+        </button>
       </div>
     </div>
 
-    <div id="picks-list" class="stack" aria-live="polite" aria-busy="true"></div>
+    <div id="matches-list" class="stack" aria-live="polite" aria-busy="true"></div>
   </section>
 
-  <!-- ── Historico ──────────────────────────────────────────────────── -->
-  <section class="view" id="view-history" role="tabpanel" aria-labelledby="tab-history" hidden>
+  <!-- ── Resultados ─────────────────────────────────────────────────── -->
+  <section class="view" id="view-results" role="tabpanel" aria-labelledby="tab-results" hidden>
     <div class="view__head">
       <div>
-        <h1 class="view__title">Historico</h1>
-        <p class="view__sub" id="history-meta">A carregar…</p>
+        <h1 class="view__title">Jogos passados</h1>
+        <p class="view__sub" id="results-meta">A carregar…</p>
       </div>
     </div>
 
-    <div class="segmented" role="group" aria-label="Filtrar historico">
-      <button type="button" class="segmented__item is-active" data-result="all" aria-pressed="true">Todas</button>
-      <button type="button" class="segmented__item" data-result="win" aria-pressed="false">Ganhas</button>
-      <button type="button" class="segmented__item" data-result="loss" aria-pressed="false">Perdidas</button>
-    </div>
-
-    <div id="history-list" class="stack" aria-live="polite"></div>
-    <button type="button" class="btn btn--ghost btn--block" id="history-more" hidden>
+    <div id="results-list" class="stack" aria-live="polite"></div>
+    <button type="button" class="btn btn--ghost btn--block" id="results-more" hidden>
       Mostrar mais
     </button>
   </section>
 
-  <!-- ── Estatisticas ───────────────────────────────────────────────── -->
-  <section class="view" id="view-stats" role="tabpanel" aria-labelledby="tab-stats" hidden>
+  <!-- ── Modelo ─────────────────────────────────────────────────────── -->
+  <section class="view" id="view-model" role="tabpanel" aria-labelledby="tab-model" hidden>
     <div class="view__head">
       <div>
-        <h1 class="view__title">Desempenho</h1>
-        <p class="view__sub" id="stats-meta">A carregar…</p>
+        <h1 class="view__title">O modelo</h1>
+        <p class="view__sub" id="model-meta">A carregar…</p>
       </div>
     </div>
-    <div id="stats-body" class="stack"></div>
+    <div id="model-body" class="stack"></div>
   </section>
 
-  <!-- ── Perfil ─────────────────────────────────────────────────────── -->
-  <section class="view" id="view-profile" role="tabpanel" aria-labelledby="tab-profile" hidden>
+  <!-- ── Sobre ──────────────────────────────────────────────────────── -->
+  <section class="view" id="view-about" role="tabpanel" aria-labelledby="tab-about" hidden>
     <div class="view__head">
       <div>
-        <h1 class="view__title">Conta</h1>
-        <p class="view__sub" id="profile-meta">—</p>
+        <h1 class="view__title">Como funciona</h1>
+        <p class="view__sub" id="about-meta">—</p>
       </div>
     </div>
-    <div id="profile-body" class="stack"></div>
+    <div id="about-body" class="stack"></div>
   </section>
 
 </main>
 
 <!-- ══ Navegacao ═══════════════════════════════════════════════════════ -->
 <nav class="tabbar" role="tablist" aria-label="Navegacao principal">
-  <button type="button" class="tabbar__item is-active" id="tab-picks"
-          role="tab" aria-selected="true" aria-controls="view-picks" data-view="picks">
+  <button type="button" class="tabbar__item is-active" id="tab-matches"
+          role="tab" aria-selected="true" aria-controls="view-matches" data-view="matches">
     <svg viewBox="0 0 24 24" aria-hidden="true">
-      <path d="M3 17.5 9 9.8l4 4.2 7.5-9" fill="none" stroke="currentColor"
-            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M15.5 5.2h5v5" fill="none" stroke="currentColor"
-            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.9"/>
+      <path d="M12 3.5v17M3.5 12h17" fill="none" stroke="currentColor" stroke-width="1.5"/>
     </svg>
-    <span>Apostas</span>
+    <span>Jogos</span>
   </button>
 
-  <button type="button" class="tabbar__item" id="tab-history"
-          role="tab" aria-selected="false" aria-controls="view-history" data-view="history">
+  <button type="button" class="tabbar__item" id="tab-results"
+          role="tab" aria-selected="false" aria-controls="view-results" data-view="results">
     <svg viewBox="0 0 24 24" aria-hidden="true">
       <circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2"/>
       <path d="M12 7.2V12l3.2 2" fill="none" stroke="currentColor"
             stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
-    <span>Historico</span>
+    <span>Resultados</span>
   </button>
 
-  <button type="button" class="tabbar__item" id="tab-stats"
-          role="tab" aria-selected="false" aria-controls="view-stats" data-view="stats">
+  <button type="button" class="tabbar__item" id="tab-model"
+          role="tab" aria-selected="false" aria-controls="view-model" data-view="model">
     <svg viewBox="0 0 24 24" aria-hidden="true">
       <path d="M4.5 19.5V13M11 19.5V6M17.5 19.5v-8" fill="none" stroke="currentColor"
             stroke-width="2" stroke-linecap="round"/>
     </svg>
-    <span>Estatisticas</span>
+    <span>Modelo</span>
   </button>
 
-  <button type="button" class="tabbar__item" id="tab-profile"
-          role="tab" aria-selected="false" aria-controls="view-profile" data-view="profile">
+  <button type="button" class="tabbar__item" id="tab-about"
+          role="tab" aria-selected="false" aria-controls="view-about" data-view="about">
     <svg viewBox="0 0 24 24" aria-hidden="true">
-      <circle cx="12" cy="8.5" r="3.8" fill="none" stroke="currentColor" stroke-width="2"/>
-      <path d="M4.8 20a7.4 7.4 0 0 1 14.4 0" fill="none" stroke="currentColor"
+      <circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.9"/>
+      <path d="M12 11v5.5M12 7.6v.9" fill="none" stroke="currentColor"
             stroke-width="2" stroke-linecap="round"/>
     </svg>
-    <span>Conta</span>
+    <span>Sobre</span>
   </button>
 </nav>
 
 <!-- ══ Camadas ═════════════════════════════════════════════════════════ -->
 
-<!-- Analise completa de uma aposta. E uma vista propria, com o seu proprio
-     endereco, para que o botao "voltar" do telemovel a feche em vez de sair
-     da app. -->
+<!-- Analise de um jogo. Vista propria, com o seu proprio endereco, para que
+     o botao "voltar" do telemovel a feche em vez de sair da app. -->
 <div class="detail-root" id="detail-root" hidden>
   <header class="detail-bar">
-    <button type="button" class="icon-btn" data-action="close-detail" aria-label="Voltar as apostas">
+    <button type="button" class="icon-btn" data-action="close-detail" aria-label="Voltar aos jogos">
       <svg viewBox="0 0 24 24" aria-hidden="true">
         <path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2"
               stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
     </button>
-    <span class="detail-bar__title">Analise</span>
+    <span class="detail-bar__title" id="detail-bar-title">Analise do jogo</span>
   </header>
   <div class="detail-scroll" id="detail-body" tabindex="-1"></div>
-</div>
-
-<div class="sheet-root" id="sheet-root" hidden>
-  <div class="sheet__scrim" data-close-sheet></div>
-  <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title">
-    <div class="sheet__grip" aria-hidden="true"></div>
-    <header class="sheet__head">
-      <h2 class="sheet__title" id="sheet-title"></h2>
-      <button type="button" class="icon-btn" data-close-sheet aria-label="Fechar">
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-        </svg>
-      </button>
-    </header>
-    <div class="sheet__body" id="sheet-body"></div>
-  </div>
 </div>
 
 <div class="toasts" id="toasts" role="status" aria-live="polite"></div>

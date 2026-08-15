@@ -6,6 +6,7 @@ import { profitUnits, settleBet } from './lib/value.mjs';
 import { readJson, writeJson } from './lib/store.mjs';
 import { patch, upsert } from './lib/supabase.mjs';
 import { computeStats, simulateScore } from './lib/stats.mjs';
+import { mergeResults, toResult, verdictAccuracy } from './lib/results.mjs';
 import { slimPick } from './lib/slim.mjs';
 import { round } from './lib/math.mjs';
 
@@ -24,15 +25,21 @@ async function main() {
 
   const current = await readJson('picks.json', { picks: [] });
   const history = await readJson('history.json', { picks: [] });
+  const matchesDoc = await readJson('matches.json', { matches: [] });
+  const resultsDoc = await readJson('results.json', { results: [] });
 
   const all = dedupeById([...(history.picks ?? []), ...(current.picks ?? [])]);
   const pending = all.filter((p) => !p.settled && new Date(p.kickoff) < now);
 
   log.info(`${all.length} apostas registadas, ${pending.length} a aguardar resultado`);
 
+  const finishedMatches = (matchesDoc.matches ?? []).filter((m) => new Date(m.kickoff) < now);
   const results = isDemo()
-    ? new Map(pending.map((p) => [p.fixtureId, simulateScore(p.fixtureId, p.lambdas)]))
-    : await realResults(pending);
+    ? new Map([
+      ...pending.map((p) => [p.fixtureId, simulateScore(p.fixtureId, p.lambdas)]),
+      ...finishedMatches.map((m) => [m.id, simulateScore(m.id, m.lambdas)]),
+    ])
+    : await realResults([...pending, ...finishedMatches.map((m) => ({ league: m.league }))]);
 
   let settled = 0;
   for (const pick of pending) {
@@ -70,6 +77,34 @@ async function main() {
     count: recent.length,
     totalRecorded: archived.length,
     picks: recent,
+  });
+
+  // Jogos ja disputados passam para o arquivo com o resultado real ao lado
+  // da previsao que tinha sido publicada antes do apito.
+  const finished = finishedMatches;
+  const upcoming = (matchesDoc.matches ?? []).filter((m) => new Date(m.kickoff) >= now);
+
+  const newResults = [];
+  for (const match of finished) {
+    const score = results.get(match.id) ?? (isDemo() ? simulateScore(match.id, match.lambdas) : null);
+    if (!score) continue;
+    newResults.push(toResult(match, score));
+  }
+
+  const allResults = mergeResults(resultsDoc.results ?? [], newResults);
+  log.info(`${newResults.length} jogos arquivados; ${allResults.length} no total`);
+
+  await writeJson('matches.json', {
+    ...matchesDoc,
+    count: upcoming.length,
+    matches: upcoming,
+  });
+
+  await writeJson('results.json', {
+    updatedAt: now.toISOString(),
+    count: allResults.length,
+    accuracy: verdictAccuracy(allResults),
+    results: allResults,
   });
 
   const stats = computeStats(archived);
