@@ -1,30 +1,179 @@
 {
-  "updatedAt": "2026-08-17T11:14:17.388Z",
+  "updatedAt": "2026-08-18T11:14:25.875Z",
   "count": 250,
   "accuracy": {
     "n": 250,
-    "hits": 129,
-    "rate": 0.516,
-    "homeBaseline": 0.44,
+    "hits": 128,
+    "rate": 0.512,
+    "homeBaseline": 0.436,
     "byStrength": {
       "claro": {
         "n": 31,
-        "hits": 19,
-        "rate": 0.6129
+        "hits": 18,
+        "rate": 0.5806
       },
       "ligeiro": {
-        "n": 125,
+        "n": 126,
         "hits": 68,
-        "rate": 0.544
+        "rate": 0.5397
       },
       "aberto": {
-        "n": 94,
+        "n": 93,
         "hits": 42,
-        "rate": 0.4468
+        "rate": 0.4516
       }
     }
   },
   "results": [
+    {
+      "id": "f7a76400e2ae3978f03925ed51a69bce",
+      "league": "Liga Portugal",
+      "home": "Casa Pia",
+      "away": "Benfica",
+      "kickoff": "2026-08-17T19:15:00Z",
+      "demo": false,
+      "score": {
+        "home": 0,
+        "away": 7
+      },
+      "outcome": "away",
+      "totalGoals": 7,
+      "bothScored": false,
+      "verdict": {
+        "outcome": "home",
+        "label": "Casa Pia vence",
+        "probability": 0.4242,
+        "runnerUp": {
+          "label": "Empate",
+          "probability": 0.3056
+        },
+        "strength": "ligeiro",
+        "likelyScore": "1-1",
+        "likelyScoreProb": 0.145,
+        "confidence": 0.7,
+        "summary": "Casa Pia vence e o resultado mais provavel, com 42%. Espera-se um jogo equilibrado em golos (2.4 no total)."
+      },
+      "verdictHit": false,
+      "lambdas": {
+        "home": 1.36,
+        "away": 1.04
+      },
+      "odds": {
+        "away": 1.19,
+        "home": 12.25,
+        "draw": 6.25
+      },
+      "modelProbs": {
+        "away": 0.2702,
+        "home": 0.4242,
+        "draw": 0.3056
+      },
+      "over25": {
+        "odds": 1.6,
+        "modelProb": 0.4303,
+        "hit": true
+      },
+      "valueSelections": [
+        {
+          "label": "Empate",
+          "odds": 6.25,
+          "modelProb": 0.3056,
+          "edge": 0.1664,
+          "market": "h2h",
+          "selection": "draw",
+          "line": null
+        },
+        {
+          "label": "Menos de 2.5 golos",
+          "odds": 2.38,
+          "modelProb": 0.5697,
+          "edge": 0.1705,
+          "market": "totals",
+          "selection": "under",
+          "line": 2.5
+        },
+        {
+          "label": "Menos de 3.5 golos",
+          "odds": 1.6,
+          "modelProb": 0.7787,
+          "edge": 0.1884,
+          "market": "totals",
+          "selection": "under",
+          "line": 3.5
+        }
+      ],
+      "settledAt": "2026-08-18T11:14:26.213Z"
+    },
+    {
+      "id": "7b9f4d89d66c48e0c496aab1679e4ae4",
+      "league": "La Liga",
+      "home": "Deportivo La Coruña",
+      "away": "Elche CF",
+      "kickoff": "2026-08-17T19:00:00Z",
+      "demo": false,
+      "score": {
+        "home": 1,
+        "away": 1
+      },
+      "outcome": "draw",
+      "totalGoals": 2,
+      "bothScored": true,
+      "verdict": {
+        "outcome": "home",
+        "label": "Deportivo La Coruña vence",
+        "probability": 0.6038,
+        "runnerUp": {
+          "label": "Empate",
+          "probability": 0.2244
+        },
+        "strength": "claro",
+        "likelyScore": "1-1",
+        "likelyScoreProb": 0.1034,
+        "confidence": 0.7,
+        "summary": "Deportivo La Coruña vence e o resultado mais provavel, com 60%. Espera-se um jogo com golos (3.3 no total)."
+      },
+      "verdictHit": false,
+      "lambdas": {
+        "home": 2.16,
+        "away": 1.09
+      },
+      "odds": {
+        "home": 2.22,
+        "away": 3.7,
+        "draw": 3.13
+      },
+      "modelProbs": {
+        "home": 0.6038,
+        "away": 0.1718,
+        "draw": 0.2244
+      },
+      "over25": {
+        "odds": 2.4,
+        "modelProb": 0.6304,
+        "hit": false
+      },
+      "valueSelections": [
+        {
+          "label": "Deportivo La Coruña vence",
+          "odds": 2.22,
+          "modelProb": 0.6038,
+          "edge": 0.1689,
+          "market": "h2h",
+          "selection": "home",
+          "line": null
+        },
+        {
+          "label": "Mais de 2.5 golos",
+          "odds": 2.4,
+          "modelProb": 0.6304,
+          "edge": 0.2198,
+          "market": "totals",
+          "selection": "over",
+          "line": 2.5
+        }
+      ],
+      "settledAt": "2026-08-18T11:14:26.213Z"
+    },
     {
       "id": "ab9aabe0a69a522f22dab493732d5a65",
       "league": "Liga Portugal",
@@ -16500,146 +16649,6 @@
           "market": "h2h",
           "selection": "away",
           "line": null
-        }
-      ],
-      "settledAt": "2026-08-15T15:29:23.499Z"
-    },
-    {
-      "id": "demo-manchester-city-brentford-2026-07-19",
-      "league": "Premier League",
-      "home": "Manchester City",
-      "away": "Brentford",
-      "kickoff": "2026-07-19T19:30:00.000Z",
-      "demo": true,
-      "score": {
-        "home": 4,
-        "away": 1
-      },
-      "outcome": "home",
-      "totalGoals": 5,
-      "bothScored": true,
-      "verdict": {
-        "outcome": "home",
-        "label": "Manchester City vence",
-        "probability": 0.57,
-        "runnerUp": {
-          "label": "Empate",
-          "probability": 0.2478
-        },
-        "strength": "claro",
-        "likelyScore": "1-1",
-        "likelyScoreProb": 0.1178,
-        "confidence": 0.7,
-        "summary": "Manchester City vence e o resultado mais provavel, com 57%. Espera-se um jogo equilibrado em golos (2.9 no total)."
-      },
-      "verdictHit": true,
-      "lambdas": {
-        "home": 1.91,
-        "away": 1.01
-      },
-      "odds": {
-        "home": 1.43,
-        "draw": 4.11,
-        "away": 5.84
-      },
-      "modelProbs": {
-        "home": 0.57,
-        "draw": 0.2478,
-        "away": 0.1822
-      },
-      "over25": {
-        "odds": 1.8,
-        "modelProb": 0.5569,
-        "hit": true
-      },
-      "valueSelections": [
-        {
-          "label": "Empate",
-          "odds": 4.11,
-          "modelProb": 0.2478,
-          "edge": 0.046,
-          "market": "h2h",
-          "selection": "draw",
-          "line": null
-        }
-      ],
-      "settledAt": "2026-08-15T15:29:23.499Z"
-    },
-    {
-      "id": "demo-casa-pia-sporting-cp-2026-07-19",
-      "league": "Liga Portugal",
-      "home": "Casa Pia",
-      "away": "Sporting CP",
-      "kickoff": "2026-07-19T19:00:00.000Z",
-      "demo": true,
-      "score": {
-        "home": 0,
-        "away": 1
-      },
-      "outcome": "away",
-      "totalGoals": 1,
-      "bothScored": false,
-      "verdict": {
-        "outcome": "home",
-        "label": "Casa Pia vence",
-        "probability": 0.3924,
-        "runnerUp": {
-          "label": "Empate",
-          "probability": 0.3619
-        },
-        "strength": "aberto",
-        "likelyScore": "0-0",
-        "likelyScoreProb": 0.1875,
-        "confidence": 0.7,
-        "summary": "Jogo em aberto: nenhum resultado se destaca. Espera-se um jogo fechado (1.8 no total)."
-      },
-      "verdictHit": false,
-      "lambdas": {
-        "home": 1.02,
-        "away": 0.75
-      },
-      "odds": {
-        "home": 4.49,
-        "draw": 4.21,
-        "away": 1.79
-      },
-      "modelProbs": {
-        "home": 0.3924,
-        "draw": 0.3619,
-        "away": 0.2456
-      },
-      "over25": {
-        "odds": 1.87,
-        "modelProb": 0.261,
-        "hit": false
-      },
-      "valueSelections": [
-        {
-          "label": "Casa Pia vence",
-          "odds": 4.49,
-          "modelProb": 0.3924,
-          "edge": 0.1815,
-          "market": "h2h",
-          "selection": "home",
-          "line": null
-        },
-        {
-          "label": "Empate",
-          "odds": 4.21,
-          "modelProb": 0.3619,
-          "edge": 0.1547,
-          "market": "h2h",
-          "selection": "draw",
-          "line": null
-        },
-        {
-          "label": "Menos de 2.5 golos",
-          "odds": 2.12,
-          "modelProb": 0.739,
-          "edge": 0.2814,
-          "market": "totals",
-          "selection": "under",
-          "line": 2.5
         }
       ],
       "settledAt": "2026-08-15T15:29:23.499Z"

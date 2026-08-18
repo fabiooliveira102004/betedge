@@ -1,32 +1,32 @@
 {
-  "generatedAt": "2026-08-17T11:14:17.783Z",
+  "generatedAt": "2026-08-18T11:14:26.308Z",
   "demo": false,
-  "count": 4,
+  "count": 6,
   "matches": [
     {
-      "id": "7b9f4d89d66c48e0c496aab1679e4ae4",
+      "id": "857e387be2e9f73e825ad02a2ec74cc3",
       "league": "La Liga",
-      "home": "Deportivo La Coruña",
-      "away": "Elche CF",
-      "kickoff": "2026-08-17T19:00:00Z",
+      "home": "Atlético Madrid",
+      "away": "Málaga",
+      "kickoff": "2026-08-19T19:00:00Z",
       "demo": false,
       "verdict": {
         "outcome": "home",
-        "label": "Deportivo La Coruña vence",
-        "probability": 0.6038,
+        "label": "Atlético Madrid vence",
+        "probability": 0.5627,
         "runnerUp": {
           "label": "Empate",
-          "probability": 0.2244
+          "probability": 0.2458
         },
         "strength": "claro",
         "likelyScore": "1-1",
-        "likelyScoreProb": 0.1034,
+        "likelyScoreProb": 0.116,
         "confidence": 0.7,
-        "summary": "Deportivo La Coruña vence e o resultado mais provavel, com 60%. Espera-se um jogo com golos (3.3 no total)."
+        "summary": "Atlético Madrid vence e o resultado mais provavel, com 56%. Espera-se um jogo equilibrado em golos (3.0 no total)."
       },
       "lambdas": {
-        "home": 2.16,
-        "away": 1.09
+        "home": 1.93,
+        "away": 1.07
       },
       "markets": [
         {
@@ -35,139 +35,55 @@
           "line": null,
           "label": "Resultado final",
           "hint": "Quem ganha o jogo no tempo regulamentar.",
-          "overround": 0.0433,
+          "overround": 0.0463,
           "selections": [
             {
               "selection": "home",
-              "label": "Deportivo La Coruña vence",
-              "odds": 2.22,
+              "label": "Atlético Madrid vence",
+              "odds": 1.3,
               "oddsBook": "betclic_fr",
-              "betclicOdds": 2.22,
-              "bestOdds": 2.32,
-              "bestBook": "onexbet",
-              "bookCount": 17,
-              "impliedProb": 0.4505,
-              "fairProb": 0.4349,
-              "modelProb": 0.6038,
-              "edge": 0.1689,
-              "ev": 0.3405,
-              "isValue": true
+              "betclicOdds": 1.3,
+              "bestOdds": 1.36,
+              "bestBook": "betfair_ex_eu",
+              "bookCount": 19,
+              "impliedProb": 0.7692,
+              "fairProb": 0.749,
+              "modelProb": 0.5627,
+              "edge": -0.1863,
+              "ev": -0.2685,
+              "isValue": false
             },
             {
               "selection": "away",
-              "label": "Elche CF vence",
-              "odds": 3.7,
+              "label": "Málaga vence",
+              "odds": 9.5,
               "oddsBook": "betclic_fr",
-              "betclicOdds": 3.7,
-              "bestOdds": 3.9,
-              "bestBook": "betfair_ex_eu",
-              "bookCount": 17,
-              "impliedProb": 0.2703,
-              "fairProb": 0.2567,
-              "modelProb": 0.1718,
-              "edge": -0.0849,
-              "ev": -0.3645,
-              "isValue": false
+              "betclicOdds": 9.5,
+              "bestOdds": 12,
+              "bestBook": "unibet_se",
+              "bookCount": 19,
+              "impliedProb": 0.1053,
+              "fairProb": 0.0828,
+              "modelProb": 0.1915,
+              "edge": 0.1087,
+              "ev": 0.8195,
+              "isValue": true
             },
             {
               "selection": "draw",
               "label": "Empate",
-              "odds": 3.13,
+              "odds": 5.4,
               "oddsBook": "betclic_fr",
-              "betclicOdds": 3.13,
-              "bestOdds": 3.2,
-              "bestBook": "betfair_ex_eu",
-              "bookCount": 17,
-              "impliedProb": 0.3195,
-              "fairProb": 0.3084,
-              "modelProb": 0.2244,
-              "edge": -0.084,
-              "ev": -0.2976,
-              "isValue": false
-            }
-          ]
-        },
-        {
-          "key": "totals:2",
-          "market": "totals",
-          "line": 2,
-          "label": "Total de golos 2",
-          "hint": "Golos das duas equipas somados.",
-          "overround": 0.0343,
-          "selections": [
-            {
-              "selection": "over",
-              "label": "Mais de 2 golos",
-              "odds": 1.74,
-              "oddsBook": "coolbet",
-              "betclicOdds": null,
-              "bestOdds": 1.74,
-              "bestBook": "coolbet",
-              "bookCount": 2,
-              "impliedProb": 0.5747,
-              "fairProb": 0.5626,
-              "modelProb": null,
-              "edge": null,
-              "ev": null,
-              "isValue": false
-            },
-            {
-              "selection": "under",
-              "label": "Menos de 2 golos",
-              "odds": 2.2,
-              "oddsBook": "coolbet",
-              "betclicOdds": null,
-              "bestOdds": 2.2,
-              "bestBook": "coolbet",
-              "bookCount": 2,
-              "impliedProb": 0.4545,
-              "fairProb": 0.4374,
-              "modelProb": null,
-              "edge": null,
-              "ev": null,
-              "isValue": false
-            }
-          ]
-        },
-        {
-          "key": "totals:2.25",
-          "market": "totals",
-          "line": 2.25,
-          "label": "Total de golos 2.25",
-          "hint": "Golos das duas equipas somados.",
-          "overround": 0.0254,
-          "selections": [
-            {
-              "selection": "over",
-              "label": "Mais de 2.25 golos",
-              "odds": 2.05,
-              "oddsBook": "pinnacle",
-              "betclicOdds": null,
-              "bestOdds": 2.05,
-              "bestBook": "pinnacle",
-              "bookCount": 1,
-              "impliedProb": 0.4878,
-              "fairProb": 0.4751,
-              "modelProb": null,
-              "edge": null,
-              "ev": null,
-              "isValue": false
-            },
-            {
-              "selection": "under",
-              "label": "Menos de 2.25 golos",
-              "odds": 1.86,
-              "oddsBook": "pinnacle",
-              "betclicOdds": null,
-              "bestOdds": 1.86,
-              "bestBook": "pinnacle",
-              "bookCount": 1,
-              "impliedProb": 0.5376,
-              "fairProb": 0.5249,
-              "modelProb": null,
-              "edge": null,
-              "ev": null,
-              "isValue": false
+              "betclicOdds": 5.4,
+              "bestOdds": 5.8,
+              "bestBook": "unibet_se",
+              "bookCount": 19,
+              "impliedProb": 0.1852,
+              "fairProb": 0.1681,
+              "modelProb": 0.2458,
+              "edge": 0.0777,
+              "ev": 0.3272,
+              "isValue": true
             }
           ]
         },
@@ -177,38 +93,80 @@
           "line": 2.5,
           "label": "Total de golos 2.5",
           "hint": "Golos das duas equipas somados.",
-          "overround": 0.0559,
+          "overround": 0.057,
           "selections": [
             {
               "selection": "over",
               "label": "Mais de 2.5 golos",
-              "odds": 2.4,
-              "oddsBook": "matchbook",
+              "odds": 1.79,
+              "oddsBook": "coolbet",
               "betclicOdds": null,
-              "bestOdds": 2.4,
-              "bestBook": "matchbook",
-              "bookCount": 8,
-              "impliedProb": 0.4167,
-              "fairProb": 0.4107,
-              "modelProb": 0.6304,
-              "edge": 0.2198,
-              "ev": 0.513,
-              "isValue": true
+              "bestOdds": 1.79,
+              "bestBook": "coolbet",
+              "bookCount": 12,
+              "impliedProb": 0.5587,
+              "fairProb": 0.5546,
+              "modelProb": 0.5768,
+              "edge": 0.0222,
+              "ev": 0.0325,
+              "isValue": false
             },
             {
               "selection": "under",
               "label": "Menos de 2.5 golos",
-              "odds": 1.7,
-              "oddsBook": "matchbook",
+              "odds": 2.19,
+              "oddsBook": "onexbet",
               "betclicOdds": null,
-              "bestOdds": 1.7,
-              "bestBook": "matchbook",
-              "bookCount": 8,
-              "impliedProb": 0.5882,
-              "fairProb": 0.5893,
-              "modelProb": 0.3696,
-              "edge": -0.2198,
-              "ev": -0.3717,
+              "bestOdds": 2.19,
+              "bestBook": "onexbet",
+              "bookCount": 12,
+              "impliedProb": 0.4566,
+              "fairProb": 0.4454,
+              "modelProb": 0.4232,
+              "edge": -0.0222,
+              "ev": -0.0732,
+              "isValue": false
+            }
+          ]
+        },
+        {
+          "key": "totals:2.75",
+          "market": "totals",
+          "line": 2.75,
+          "label": "Total de golos 2.75",
+          "hint": "Golos das duas equipas somados.",
+          "overround": 0.0288,
+          "selections": [
+            {
+              "selection": "over",
+              "label": "Mais de 2.75 golos",
+              "odds": 1.99,
+              "oddsBook": "pinnacle",
+              "betclicOdds": null,
+              "bestOdds": 1.99,
+              "bestBook": "pinnacle",
+              "bookCount": 1,
+              "impliedProb": 0.5025,
+              "fairProb": 0.4881,
+              "modelProb": null,
+              "edge": null,
+              "ev": null,
+              "isValue": false
+            },
+            {
+              "selection": "under",
+              "label": "Menos de 2.75 golos",
+              "odds": 1.9,
+              "oddsBook": "pinnacle",
+              "betclicOdds": null,
+              "bestOdds": 1.9,
+              "bestBook": "pinnacle",
+              "bookCount": 1,
+              "impliedProb": 0.5263,
+              "fairProb": 0.5119,
+              "modelProb": null,
+              "edge": null,
+              "ev": null,
               "isValue": false
             }
           ]
@@ -222,986 +180,68 @@
             "score": "1-1",
             "home": 1,
             "away": 1,
-            "p": 0.1034
+            "p": 0.116
           },
           {
             "score": "2-1",
             "home": 2,
             "away": 1,
-            "p": 0.0986
+            "p": 0.0993
           },
           {
             "score": "2-0",
             "home": 2,
             "away": 0,
-            "p": 0.0901
+            "p": 0.0932
           },
           {
             "score": "1-0",
             "home": 1,
             "away": 0,
-            "p": 0.0717
+            "p": 0.083
           },
           {
             "score": "3-1",
             "home": 3,
             "away": 1,
-            "p": 0.0708
+            "p": 0.064
           }
         ],
         "goalsDistribution": [
           {
             "goals": 0,
             "label": "0",
-            "p": 0.0507
+            "p": 0.0631
           },
           {
             "goals": 1,
             "label": "1",
-            "p": 0.1022
+            "p": 0.1227
           },
           {
             "goals": 2,
             "label": "2",
-            "p": 0.2167
+            "p": 0.2374
           },
           {
             "goals": 3,
             "label": "3",
-            "p": 0.2218
+            "p": 0.224
           },
           {
             "goals": 4,
             "label": "4",
-            "p": 0.1802
+            "p": 0.168
           },
           {
             "goals": 5,
             "label": "5",
-            "p": 0.1172
+            "p": 0.1008
           },
           {
             "goals": 6,
             "label": "6+",
-            "p": 0.1112
-          }
-        ],
-        "teams": {
-          "home": {
-            "name": "Deportivo La Coruña",
-            "elo": 1500,
-            "form": {
-              "games": [],
-              "played": 0,
-              "wins": 0,
-              "draws": 0,
-              "losses": 0,
-              "scoredAvg": null,
-              "concededAvg": null,
-              "streak": ""
-            },
-            "split": {
-              "home": null,
-              "away": null
-            },
-            "absences": []
-          },
-          "away": {
-            "name": "Elche CF",
-            "elo": 1500,
-            "form": {
-              "games": [],
-              "played": 0,
-              "wins": 0,
-              "draws": 0,
-              "losses": 0,
-              "scoredAvg": null,
-              "concededAvg": null,
-              "streak": ""
-            },
-            "split": {
-              "home": null,
-              "away": null
-            },
-            "absences": []
-          }
-        },
-        "h2h": null,
-        "news": {
-          "home": [
-            {
-              "title": "Deportivo de A Coruña x Real Madrid em amistoso: onde assistir ao vivo, horário e escalação - Estadão",
-              "source": "Estadão",
-              "publishedAt": "Wed, 12 Aug 2026 18:00:00 GMT"
-            },
-            {
-              "title": "Partida entre La Coruña e Real Madrid vale taça; entenda - LANCE!",
-              "source": "LANCE!",
-              "publishedAt": "Wed, 12 Aug 2026 20:30:16 GMT"
-            },
-            {
-              "title": "Troféu Teresa Herrera: o que é o título disputado entre La Coruña x Real Madrid? - sportingnews.com",
-              "source": "sportingnews.com",
-              "publishedAt": "Wed, 12 Aug 2026 18:49:46 GMT"
-            },
-            {
-              "title": "La Coruña x Real Madrid: Onde assistir ao vivo, horário, palpite e escalações do amistoso - Terra",
-              "source": "Terra",
-              "publishedAt": "Wed, 12 Aug 2026 17:08:00 GMT"
-            },
-            {
-              "title": "Real Madrid vence Deportivo La Coruña e conquista 'primeiro título' de Mourinho - Rádio Itatiaia",
-              "source": "Rádio Itatiaia",
-              "publishedAt": "Wed, 12 Aug 2026 21:05:20 GMT"
-            },
-            {
-              "title": "La Coruña x Real Madrid ao vivo: onde assistir e escalações - 365Scores",
-              "source": "365Scores",
-              "publishedAt": "Wed, 12 Aug 2026 17:52:23 GMT"
-            },
-            {
-              "title": "Millene é destaque entre brasileiras nas partidas internacionais da Europa - Olimpíada Todo Dia",
-              "source": "Olimpíada Todo Dia",
-              "publishedAt": "Sun, 16 Aug 2026 22:59:03 GMT"
-            },
-            {
-              "title": "Lance de Endrick em Coruña x Real Madrid viraliza: 'Raçudo' - LANCE!",
-              "source": "LANCE!",
-              "publishedAt": "Wed, 12 Aug 2026 20:34:30 GMT"
-            },
-            {
-              "title": "La Coruña x Real Madrid em tempo real: acompanhe o placar - 365Scores",
-              "source": "365Scores",
-              "publishedAt": "Wed, 12 Aug 2026 18:27:31 GMT"
-            },
-            {
-              "title": "Ficha de Jogo - Deportivo La Coruña vs FC Porto - FC Porto",
-              "source": "FC Porto",
-              "publishedAt": "Fri, 14 Aug 2026 22:07:54 GMT"
-            },
-            {
-              "title": "Jogos de hoje, segunda, 17 de agosto: onde assistir futebol ao vivo e horários - VEJA",
-              "source": "VEJA",
-              "publishedAt": "Mon, 17 Aug 2026 09:01:21 GMT"
-            },
-            {
-              "title": "Com Endrick e Vini Jr, Real Madrid vence La Coruña e conquista o título do Troféu Teresa Herrera - ESPN Brasil",
-              "source": "ESPN Brasil",
-              "publishedAt": "Wed, 12 Aug 2026 20:56:00 GMT"
-            }
-          ],
-          "away": [
-            {
-              "title": "Oficial: Ezequiel Ponce regressa ao Elche para render André Silva - Flashscore.pt",
-              "source": "Flashscore.pt",
-              "publishedAt": "Thu, 13 Aug 2026 12:27:00 GMT"
-            },
-            {
-              "title": "O que vai dar hoje na TV? Está aqui a lista do que pode ver - SAPO",
-              "source": "SAPO",
-              "publishedAt": "Mon, 17 Aug 2026 08:55:51 GMT"
-            },
-            {
-              "title": "Guia do Barcelona: Favorito ao tri de LaLiga, mas confiança em Flick pode virar armadilha - Trivela",
-              "source": "Trivela",
-              "publishedAt": "Fri, 14 Aug 2026 19:00:00 GMT"
-            },
-            {
-              "title": "La Coruña x Real Madrid em tempo real: acompanhe o placar - 365Scores",
-              "source": "365Scores",
-              "publishedAt": "Wed, 12 Aug 2026 18:27:31 GMT"
-            },
-            {
-              "title": "Antevisão Deportivo vs Elche CF :: Estatísticas e Onzes Prováveis :: LaLiga EA Sports 2026/27 - zerozero.pt",
-              "source": "zerozero.pt",
-              "publishedAt": "Mon, 17 Aug 2026 07:02:34 GMT"
-            },
-            {
-              "title": "Deportivo vs Elche CF: antevisão, ausências e onzes prováveis (La Liga 17/08) - zerozero.pt",
-              "source": "zerozero.pt",
-              "publishedAt": "Sat, 15 Aug 2026 19:00:16 GMT"
-            },
-            {
-              "title": "Deportivo La Coruña x Elche CF Palpite Inteligência Artificial - Livetipsportal.com",
-              "source": "Livetipsportal.com",
-              "publishedAt": "Fri, 14 Aug 2026 01:23:28 GMT"
-            },
-            {
-              "title": "Deportivo x Elche CF: horário, escalações e estatísticas (Campeonato Espanhol 17/08) - ogol.com.br",
-              "source": "ogol.com.br",
-              "publishedAt": "Sat, 15 Aug 2026 19:00:42 GMT"
-            },
-            {
-              "title": "Elche CF (S19 B) - Espanha - Jogos, Classificações, Elenco e Estatísticas - ogol.com.br",
-              "source": "ogol.com.br",
-              "publishedAt": "Sat, 15 Aug 2026 21:18:12 GMT"
-            },
-            {
-              "title": "SC Sporting Clube Portimonense Portimão 2-0 FC Futebol Clube de Vizela :: Resumos :: Videos - zerozero.pt",
-              "source": "zerozero.pt",
-              "publishedAt": "Mon, 17 Aug 2026 10:27:25 GMT"
-            },
-            {
-              "title": "Cristiano Ronaldo projeta aposentadoria ao fim da temporada: ´Meu último ano no futebol´ - ogol.com.br",
-              "source": "ogol.com.br",
-              "publishedAt": "Sun, 16 Aug 2026 16:46:44 GMT"
-            },
-            {
-              "title": "FC Porto - Portugal - Jogos, Classificações, Plantel e Estatísticas - zerozero.pt",
-              "source": "zerozero.pt",
-              "publishedAt": "Sat, 15 Aug 2026 07:00:00 GMT"
-            }
-          ]
-        },
-        "context": {
-          "home": [],
-          "away": []
-        },
-        "ai": null,
-        "dataQuality": 0.7,
-        "sampleMatches": 0
-      }
-    },
-    {
-      "id": "f7a76400e2ae3978f03925ed51a69bce",
-      "league": "Liga Portugal",
-      "home": "Casa Pia",
-      "away": "Benfica",
-      "kickoff": "2026-08-17T19:15:00Z",
-      "demo": false,
-      "verdict": {
-        "outcome": "home",
-        "label": "Casa Pia vence",
-        "probability": 0.4242,
-        "runnerUp": {
-          "label": "Empate",
-          "probability": 0.3056
-        },
-        "strength": "ligeiro",
-        "likelyScore": "1-1",
-        "likelyScoreProb": 0.145,
-        "confidence": 0.7,
-        "summary": "Casa Pia vence e o resultado mais provavel, com 42%. Espera-se um jogo equilibrado em golos (2.4 no total)."
-      },
-      "lambdas": {
-        "home": 1.36,
-        "away": 1.04
-      },
-      "markets": [
-        {
-          "key": "h2h",
-          "market": "h2h",
-          "line": null,
-          "label": "Resultado final",
-          "hint": "Quem ganha o jogo no tempo regulamentar.",
-          "overround": 0.071,
-          "selections": [
-            {
-              "selection": "away",
-              "label": "Benfica vence",
-              "odds": 1.19,
-              "oddsBook": "betclic_fr",
-              "betclicOdds": 1.19,
-              "bestOdds": 1.25,
-              "bestBook": "betfair_ex_eu",
-              "bookCount": 20,
-              "impliedProb": 0.8403,
-              "fairProb": 0.8015,
-              "modelProb": 0.2702,
-              "edge": -0.5313,
-              "ev": -0.6785,
-              "isValue": false
-            },
-            {
-              "selection": "home",
-              "label": "Casa Pia vence",
-              "odds": 12.25,
-              "oddsBook": "betclic_fr",
-              "betclicOdds": 12.25,
-              "bestOdds": 15.5,
-              "bestBook": "betfair_ex_eu",
-              "bookCount": 20,
-              "impliedProb": 0.0816,
-              "fairProb": 0.0594,
-              "modelProb": 0.4242,
-              "edge": 0.3649,
-              "ev": 4.1968,
-              "isValue": false
-            },
-            {
-              "selection": "draw",
-              "label": "Empate",
-              "odds": 6.25,
-              "oddsBook": "betclic_fr",
-              "betclicOdds": 6.25,
-              "bestOdds": 7.2,
-              "bestBook": "betfair_ex_eu",
-              "bookCount": 20,
-              "impliedProb": 0.16,
-              "fairProb": 0.1392,
-              "modelProb": 0.3056,
-              "edge": 0.1664,
-              "ev": 0.9099,
-              "isValue": true
-            }
-          ]
-        },
-        {
-          "key": "totals:2.5",
-          "market": "totals",
-          "line": 2.5,
-          "label": "Total de golos 2.5",
-          "hint": "Golos das duas equipas somados.",
-          "overround": 0.0846,
-          "selections": [
-            {
-              "selection": "over",
-              "label": "Mais de 2.5 golos",
-              "odds": 1.6,
-              "oddsBook": "gtbets",
-              "betclicOdds": null,
-              "bestOdds": 1.6,
-              "bestBook": "gtbets",
-              "bookCount": 8,
-              "impliedProb": 0.625,
-              "fairProb": 0.6008,
-              "modelProb": 0.4303,
-              "edge": -0.1705,
-              "ev": -0.3115,
-              "isValue": false
-            },
-            {
-              "selection": "under",
-              "label": "Menos de 2.5 golos",
-              "odds": 2.38,
-              "oddsBook": "williamhill",
-              "betclicOdds": null,
-              "bestOdds": 2.38,
-              "bestBook": "williamhill",
-              "bookCount": 8,
-              "impliedProb": 0.4202,
-              "fairProb": 0.3992,
-              "modelProb": 0.5697,
-              "edge": 0.1705,
-              "ev": 0.3559,
-              "isValue": true
-            }
-          ]
-        },
-        {
-          "key": "totals:2.75",
-          "market": "totals",
-          "line": 2.75,
-          "label": "Total de golos 2.75",
-          "hint": "Golos das duas equipas somados.",
-          "overround": 0.0387,
-          "selections": [
-            {
-              "selection": "over",
-              "label": "Mais de 2.75 golos",
-              "odds": 1.75,
-              "oddsBook": "betonlineag",
-              "betclicOdds": null,
-              "bestOdds": 1.75,
-              "bestBook": "betonlineag",
-              "bookCount": 1,
-              "impliedProb": 0.5714,
-              "fairProb": 0.5521,
-              "modelProb": null,
-              "edge": null,
-              "ev": null,
-              "isValue": false
-            },
-            {
-              "selection": "under",
-              "label": "Menos de 2.75 golos",
-              "odds": 2.14,
-              "oddsBook": "betonlineag",
-              "betclicOdds": null,
-              "bestOdds": 2.14,
-              "bestBook": "betonlineag",
-              "bookCount": 1,
-              "impliedProb": 0.4673,
-              "fairProb": 0.4479,
-              "modelProb": null,
-              "edge": null,
-              "ev": null,
-              "isValue": false
-            }
-          ]
-        },
-        {
-          "key": "totals:3",
-          "market": "totals",
-          "line": 3,
-          "label": "Total de golos 3",
-          "hint": "Golos das duas equipas somados.",
-          "overround": 0.0476,
-          "selections": [
-            {
-              "selection": "over",
-              "label": "Mais de 3 golos",
-              "odds": 1.97,
-              "oddsBook": "pinnacle",
-              "betclicOdds": null,
-              "bestOdds": 1.97,
-              "bestBook": "pinnacle",
-              "bookCount": 2,
-              "impliedProb": 0.5076,
-              "fairProb": 0.489,
-              "modelProb": null,
-              "edge": null,
-              "ev": null,
-              "isValue": false
-            },
-            {
-              "selection": "under",
-              "label": "Menos de 3 golos",
-              "odds": 1.89,
-              "oddsBook": "pinnacle",
-              "betclicOdds": null,
-              "bestOdds": 1.89,
-              "bestBook": "pinnacle",
-              "bookCount": 2,
-              "impliedProb": 0.5291,
-              "fairProb": 0.511,
-              "modelProb": null,
-              "edge": null,
-              "ev": null,
-              "isValue": false
-            }
-          ]
-        },
-        {
-          "key": "totals:3.5",
-          "market": "totals",
-          "line": 3.5,
-          "label": "Total de golos 3.5",
-          "hint": "Golos das duas equipas somados.",
-          "overround": 0.0694,
-          "selections": [
-            {
-              "selection": "over",
-              "label": "Mais de 3.5 golos",
-              "odds": 2.25,
-              "oddsBook": "tipico_de",
-              "betclicOdds": null,
-              "bestOdds": 2.25,
-              "bestBook": "tipico_de",
-              "bookCount": 1,
-              "impliedProb": 0.4444,
-              "fairProb": 0.4097,
-              "modelProb": 0.2213,
-              "edge": -0.1884,
-              "ev": -0.5021,
-              "isValue": false
-            },
-            {
-              "selection": "under",
-              "label": "Menos de 3.5 golos",
-              "odds": 1.6,
-              "oddsBook": "tipico_de",
-              "betclicOdds": null,
-              "bestOdds": 1.6,
-              "bestBook": "tipico_de",
-              "bookCount": 1,
-              "impliedProb": 0.625,
-              "fairProb": 0.5903,
-              "modelProb": 0.7787,
-              "edge": 0.1884,
-              "ev": 0.246,
-              "isValue": true
-            }
-          ]
-        }
-      ],
-      "marketAnchored": false,
-      "valueCount": 3,
-      "analysis": {
-        "scorelines": [
-          {
-            "score": "1-1",
-            "home": 1,
-            "away": 1,
-            "p": 0.145
-          },
-          {
-            "score": "0-0",
-            "home": 0,
-            "away": 0,
-            "p": 0.1074
-          },
-          {
-            "score": "1-0",
-            "home": 1,
-            "away": 0,
-            "p": 0.1066
-          },
-          {
-            "score": "2-1",
-            "home": 2,
-            "away": 1,
-            "p": 0.0872
-          },
-          {
-            "score": "2-0",
-            "home": 2,
-            "away": 0,
-            "p": 0.0838
-          }
-        ],
-        "goalsDistribution": [
-          {
-            "goals": 0,
-            "label": "0",
-            "p": 0.1074
-          },
-          {
-            "goals": 1,
-            "label": "1",
-            "p": 0.1844
-          },
-          {
-            "goals": 2,
-            "label": "2",
-            "p": 0.278
-          },
-          {
-            "goals": 3,
-            "label": "3",
-            "p": 0.209
-          },
-          {
-            "goals": 4,
-            "label": "4",
-            "p": 0.1254
-          },
-          {
-            "goals": 5,
-            "label": "5",
-            "p": 0.0602
-          },
-          {
-            "goals": 6,
-            "label": "6+",
-            "p": 0.0357
-          }
-        ],
-        "teams": {
-          "home": {
-            "name": "Casa Pia",
-            "elo": 1500,
-            "form": {
-              "games": [],
-              "played": 0,
-              "wins": 0,
-              "draws": 0,
-              "losses": 0,
-              "scoredAvg": null,
-              "concededAvg": null,
-              "streak": ""
-            },
-            "split": {
-              "home": null,
-              "away": null
-            },
-            "absences": []
-          },
-          "away": {
-            "name": "Benfica",
-            "elo": 1500,
-            "form": {
-              "games": [],
-              "played": 0,
-              "wins": 0,
-              "draws": 0,
-              "losses": 0,
-              "scoredAvg": null,
-              "concededAvg": null,
-              "streak": ""
-            },
-            "split": {
-              "home": null,
-              "away": null
-            },
-            "absences": []
-          }
-        },
-        "h2h": null,
-        "news": {
-          "home": [
-            {
-              "title": "Benfica procura primeiro triunfo no campeonato na visita ao Casa Pia - Observador",
-              "source": "Observador",
-              "publishedAt": "Mon, 17 Aug 2026 09:31:00 GMT"
-            },
-            {
-              "title": "Benfica procura primeiro triunfo no campeonato contra o Casa Pia - SIC Notícias",
-              "source": "SIC Notícias",
-              "publishedAt": "Mon, 17 Aug 2026 06:31:24 GMT"
-            },
-            {
-              "title": "Hoje pode ver em direto na TV… - A Bola",
-              "source": "A Bola",
-              "publishedAt": "Mon, 17 Aug 2026 06:00:00 GMT"
-            },
-            {
-              "title": "O onze provável do Benfica para defrontar o Casa Pia - O Jogo",
-              "source": "O Jogo",
-              "publishedAt": "Mon, 17 Aug 2026 07:38:00 GMT"
-            },
-            {
-              "title": "Casa Pia - Benfica (2026/27): Transmissão, onze provável, horários e... - glorioso1904.pt",
-              "source": "glorioso1904.pt",
-              "publishedAt": "Mon, 17 Aug 2026 07:59:00 GMT"
-            },
-            {
-              "title": "Benfica procura primeiro triunfo no campeonato na visita ao Casa Pia - Lusa",
-              "source": "Lusa",
-              "publishedAt": "Mon, 17 Aug 2026 08:10:00 GMT"
-            },
-            {
-              "title": "Voltar ao ponto de partida: onzes prováveis para o Casa Pia-Benfica - Maisfutebol",
-              "source": "Maisfutebol",
-              "publishedAt": "Mon, 17 Aug 2026 09:17:13 GMT"
-            },
-            {
-              "title": "Casa Pia vs Benfica: Onde Assistir e Provável 11 Inicial - Observador",
-              "source": "Observador",
-              "publishedAt": "Sun, 16 Aug 2026 21:15:11 GMT"
-            },
-            {
-              "title": "Aursnes falha jogo com o Casa Pia - Record",
-              "source": "Record",
-              "publishedAt": "Sun, 16 Aug 2026 13:22:41 GMT"
-            },
-            {
-              "title": "Aursnes fora dos planos de Marco Silva para o Casa Pia-Benfica - O Jogo",
-              "source": "O Jogo",
-              "publishedAt": "Sun, 16 Aug 2026 19:16:00 GMT"
-            },
-            {
-              "title": "Dedic, Lukebakio, Aursnes, Palhinha, Casa Pia e muito mais — tudo o que o disse o treinador do Benfica - A Bola",
-              "source": "A Bola",
-              "publishedAt": "Sun, 16 Aug 2026 13:39:00 GMT"
-            },
-            {
-              "title": "Aursnes falha jogo com o Casa Pia: os motivos da ausência - Record",
-              "source": "Record",
-              "publishedAt": "Sun, 16 Aug 2026 13:19:00 GMT"
-            }
-          ],
-          "away": [
-            {
-              "title": "Benfica vai à luta por João Palhinha: concorrência e firmeza do Bayern não assustam - Record",
-              "source": "Record",
-              "publishedAt": "Mon, 17 Aug 2026 09:52:59 GMT"
-            },
-            {
-              "title": "Hoje pode ver em direto na TV… - A Bola",
-              "source": "A Bola",
-              "publishedAt": "Mon, 17 Aug 2026 06:00:00 GMT"
-            },
-            {
-              "title": "Benfica procura primeiro triunfo no campeonato na visita ao Casa Pia - cmjornal.pt",
-              "source": "cmjornal.pt",
-              "publishedAt": "Mon, 17 Aug 2026 06:18:18 GMT"
-            },
-            {
-              "title": "Já há árbitros para os jogos de Benfica e SC Braga na Europa - Renascença",
-              "source": "Renascença",
-              "publishedAt": "Mon, 17 Aug 2026 08:41:00 GMT"
-            },
-            {
-              "title": "Benfica procura primeiro triunfo no campeonato na visita ao Casa Pia - Lusa",
-              "source": "Lusa",
-              "publishedAt": "Mon, 17 Aug 2026 08:10:00 GMT"
-            },
-            {
-              "title": "Conhecidos os árbitros que vão apitar os jogos de Benfica e Braga na Europa - SAPO",
-              "source": "SAPO",
-              "publishedAt": "Mon, 17 Aug 2026 10:28:00 GMT"
-            },
-            {
-              "title": "Benfica. Marco Silva confirma que saída de Dedic está “bastante avançada” e avisa que é preciso reagir - Diário de Notícias",
-              "source": "Diário de Notícias",
-              "publishedAt": "Sun, 16 Aug 2026 15:46:34 GMT"
-            },
-            {
-              "title": "Guarda-redes do Benfica conquista grande título e ainda recebe prémio individual - glorioso1904.pt",
-              "source": "glorioso1904.pt",
-              "publishedAt": "Mon, 17 Aug 2026 09:54:00 GMT"
-            },
-            {
-              "title": "Marco Guida arbitra Benfica-Aarhus e 'juiz' maltês dirige Sporting de Braga - Lusa",
-              "source": "Lusa",
-              "publishedAt": "Mon, 17 Aug 2026 09:51:00 GMT"
-            },
-            {
-              "title": "Guarda-redes do Benfica venceu a CAN e foi a melhor da competição - Record",
-              "source": "Record",
-              "publishedAt": "Sun, 16 Aug 2026 23:30:52 GMT"
-            },
-            {
-              "title": "Alvo do Benfica vive pesadelo: desperdiça empate e leva com provocações - glorioso1904.pt",
-              "source": "glorioso1904.pt",
-              "publishedAt": "Mon, 17 Aug 2026 08:47:00 GMT"
-            },
-            {
-              "title": "Bayern quer Palhinha a dizer não ao Benfica - cmjornal.pt",
-              "source": "cmjornal.pt",
-              "publishedAt": "Mon, 17 Aug 2026 00:30:00 GMT"
-            }
-          ]
-        },
-        "context": {
-          "home": [],
-          "away": []
-        },
-        "ai": null,
-        "dataQuality": 0.7,
-        "sampleMatches": 0
-      }
-    },
-    {
-      "id": "857e387be2e9f73e825ad02a2ec74cc3",
-      "league": "La Liga",
-      "home": "Atlético Madrid",
-      "away": "Málaga",
-      "kickoff": "2026-08-19T19:00:00Z",
-      "demo": false,
-      "verdict": {
-        "outcome": "home",
-        "label": "Atlético Madrid vence",
-        "probability": 0.6038,
-        "runnerUp": {
-          "label": "Empate",
-          "probability": 0.2244
-        },
-        "strength": "claro",
-        "likelyScore": "1-1",
-        "likelyScoreProb": 0.1034,
-        "confidence": 0.7,
-        "summary": "Atlético Madrid vence e o resultado mais provavel, com 60%. Espera-se um jogo com golos (3.3 no total)."
-      },
-      "lambdas": {
-        "home": 2.16,
-        "away": 1.09
-      },
-      "markets": [
-        {
-          "key": "h2h",
-          "market": "h2h",
-          "line": null,
-          "label": "Resultado final",
-          "hint": "Quem ganha o jogo no tempo regulamentar.",
-          "overround": 0.0383,
-          "selections": [
-            {
-              "selection": "home",
-              "label": "Atlético Madrid vence",
-              "odds": 1.29,
-              "oddsBook": "betclic_fr",
-              "betclicOdds": 1.29,
-              "bestOdds": 1.33,
-              "bestBook": "betfair_ex_eu",
-              "bookCount": 17,
-              "impliedProb": 0.7752,
-              "fairProb": 0.7525,
-              "modelProb": 0.6038,
-              "edge": -0.1486,
-              "ev": -0.221,
-              "isValue": false
-            },
-            {
-              "selection": "away",
-              "label": "Málaga vence",
-              "odds": 9.5,
-              "oddsBook": "betclic_fr",
-              "betclicOdds": 9.5,
-              "bestOdds": 12.5,
-              "bestBook": "betfair_ex_eu",
-              "bookCount": 17,
-              "impliedProb": 0.1053,
-              "fairProb": 0.0787,
-              "modelProb": 0.1718,
-              "edge": 0.0931,
-              "ev": 0.6317,
-              "isValue": true
-            },
-            {
-              "selection": "draw",
-              "label": "Empate",
-              "odds": 5.25,
-              "oddsBook": "betclic_fr",
-              "betclicOdds": 5.25,
-              "bestOdds": 5.9,
-              "bestBook": "betfair_ex_eu",
-              "bookCount": 17,
-              "impliedProb": 0.1905,
-              "fairProb": 0.1689,
-              "modelProb": 0.2244,
-              "edge": 0.0555,
-              "ev": 0.1781,
-              "isValue": true
-            }
-          ]
-        },
-        {
-          "key": "totals:2.5",
-          "market": "totals",
-          "line": 2.5,
-          "label": "Total de golos 2.5",
-          "hint": "Golos das duas equipas somados.",
-          "overround": 0.0481,
-          "selections": [
-            {
-              "selection": "over",
-              "label": "Mais de 2.5 golos",
-              "odds": 1.79,
-              "oddsBook": "onexbet",
-              "betclicOdds": null,
-              "bestOdds": 1.79,
-              "bestBook": "onexbet",
-              "bookCount": 10,
-              "impliedProb": 0.5587,
-              "fairProb": 0.5523,
-              "modelProb": 0.6304,
-              "edge": 0.0781,
-              "ev": 0.1285,
-              "isValue": true
-            },
-            {
-              "selection": "under",
-              "label": "Menos de 2.5 golos",
-              "odds": 2.19,
-              "oddsBook": "onexbet",
-              "betclicOdds": null,
-              "bestOdds": 2.19,
-              "bestBook": "onexbet",
-              "bookCount": 10,
-              "impliedProb": 0.4566,
-              "fairProb": 0.4477,
-              "modelProb": 0.3696,
-              "edge": -0.0781,
-              "ev": -0.1906,
-              "isValue": false
-            }
-          ]
-        },
-        {
-          "key": "totals:2.75",
-          "market": "totals",
-          "line": 2.75,
-          "label": "Total de golos 2.75",
-          "hint": "Golos das duas equipas somados.",
-          "overround": 0.0284,
-          "selections": [
-            {
-              "selection": "over",
-              "label": "Mais de 2.75 golos",
-              "odds": 1.97,
-              "oddsBook": "pinnacle",
-              "betclicOdds": null,
-              "bestOdds": 1.97,
-              "bestBook": "pinnacle",
-              "bookCount": 1,
-              "impliedProb": 0.5076,
-              "fairProb": 0.4934,
-              "modelProb": null,
-              "edge": null,
-              "ev": null,
-              "isValue": false
-            },
-            {
-              "selection": "under",
-              "label": "Menos de 2.75 golos",
-              "odds": 1.92,
-              "oddsBook": "pinnacle",
-              "betclicOdds": null,
-              "bestOdds": 1.92,
-              "bestBook": "pinnacle",
-              "bookCount": 1,
-              "impliedProb": 0.5208,
-              "fairProb": 0.5066,
-              "modelProb": null,
-              "edge": null,
-              "ev": null,
-              "isValue": false
-            }
-          ]
-        }
-      ],
-      "marketAnchored": false,
-      "valueCount": 3,
-      "analysis": {
-        "scorelines": [
-          {
-            "score": "1-1",
-            "home": 1,
-            "away": 1,
-            "p": 0.1034
-          },
-          {
-            "score": "2-1",
-            "home": 2,
-            "away": 1,
-            "p": 0.0986
-          },
-          {
-            "score": "2-0",
-            "home": 2,
-            "away": 0,
-            "p": 0.0901
-          },
-          {
-            "score": "1-0",
-            "home": 1,
-            "away": 0,
-            "p": 0.0717
-          },
-          {
-            "score": "3-1",
-            "home": 3,
-            "away": 1,
-            "p": 0.0708
-          }
-        ],
-        "goalsDistribution": [
-          {
-            "goals": 0,
-            "label": "0",
-            "p": 0.0507
-          },
-          {
-            "goals": 1,
-            "label": "1",
-            "p": 0.1022
-          },
-          {
-            "goals": 2,
-            "label": "2",
-            "p": 0.2167
-          },
-          {
-            "goals": 3,
-            "label": "3",
-            "p": 0.2218
-          },
-          {
-            "goals": 4,
-            "label": "4",
-            "p": 0.1802
-          },
-          {
-            "goals": 5,
-            "label": "5",
-            "p": 0.1172
-          },
-          {
-            "goals": 6,
-            "label": "6+",
-            "p": 0.1112
+            "p": 0.0839
           }
         ],
         "teams": {
@@ -1248,29 +288,34 @@
         "news": {
           "home": [
             {
-              "title": "Hjulmand: «O Sporting é um grande clube, mas o Atlético também. Queria estar aqui...» - Record",
-              "source": "Record",
-              "publishedAt": "Sun, 16 Aug 2026 11:16:31 GMT"
+              "title": "Hjulmand: «O Sporting é um grande clube, mas o Atlético também. Queria estar aqui...» - record.pt",
+              "source": "record.pt",
+              "publishedAt": "Sun, 16 Aug 2026 11:14:00 GMT"
             },
             {
-              "title": "Hjulmand: «O Sporting é um grande clube, mas o Atlético também. Queria estar aqui...» - SAPO",
+              "title": "CD Atlético Paso vs. Atletico Madrid C – resultado em direto, confrontos diretos e equipas iniciais - Sofascore",
+              "source": "Sofascore",
+              "publishedAt": "Mon, 17 Aug 2026 05:30:46 GMT"
+            },
+            {
+              "title": "Barcelona quer que Julián Álvarez confirme saída do Atlético Madrid - SAPO",
               "source": "SAPO",
-              "publishedAt": "Sun, 16 Aug 2026 12:14:00 GMT"
+              "publishedAt": "Sun, 16 Aug 2026 17:01:25 GMT"
             },
             {
-              "title": "Hjulmand: «A minha abertura fez com que me vissem como um líder» - CNN Portugal",
-              "source": "CNN Portugal",
-              "publishedAt": "Fri, 14 Aug 2026 15:40:00 GMT"
+              "title": "Hjulmand: «O Sporting é um clube muito grande, mas o Atlético também» - Maisfutebol",
+              "source": "Maisfutebol",
+              "publishedAt": "Sun, 16 Aug 2026 12:21:09 GMT"
             },
             {
               "title": "Morten Hjulmand remove tatuagem de clube de que gostava: \"Faz parte do passado\" - Leonino",
               "source": "Leonino",
-              "publishedAt": "Sun, 16 Aug 2026 14:25:11 GMT"
+              "publishedAt": "Sun, 16 Aug 2026 17:53:57 GMT"
             },
             {
-              "title": "Atlético de Madrid contrata Cristián Romero ao Tottenham - Record",
-              "source": "Record",
-              "publishedAt": "Sat, 15 Aug 2026 10:02:48 GMT"
+              "title": "Cuti Romero despede-se dos adeptos do Tottenham antes de ser oficializado no Atlético de Madrid - Flashscore.pt",
+              "source": "Flashscore.pt",
+              "publishedAt": "Fri, 14 Aug 2026 13:43:00 GMT"
             },
             {
               "title": "Guia do Atlético de Madrid: Meta é desafiar Real e Barça, mas há questões a resolver - Trivela",
@@ -1278,14 +323,9 @@
               "publishedAt": "Fri, 14 Aug 2026 17:00:00 GMT"
             },
             {
-              "title": "Chegada de Rodri pode recolocar o Barcelona no topo do futebol europeu: GOAL avalia as maiores negociações da janela de transferências - Goal.com",
-              "source": "Goal.com",
-              "publishedAt": "Mon, 17 Aug 2026 03:00:00 GMT"
-            },
-            {
-              "title": "Julián Álvarez fica fora das opções de Simeone para o duelo com o Marselha - Flashscore.pt",
-              "source": "Flashscore.pt",
-              "publishedAt": "Fri, 14 Aug 2026 00:30:00 GMT"
+              "title": "Atlético de Madrid anuncia Cristian Romero com contrato até 2031 - A Crítica de Campo Grande",
+              "source": "A Crítica de Campo Grande",
+              "publishedAt": "Sat, 15 Aug 2026 15:45:00 GMT"
             },
             {
               "title": "Atlético de Madrid acerta contratação de Romero, zagueiro da Argentina - ESPN Brasil",
@@ -1293,36 +333,46 @@
               "publishedAt": "Thu, 13 Aug 2026 12:52:00 GMT"
             },
             {
-              "title": "Atlético de Madrid anuncia Cristian Romero com contrato até 2031 - A Crítica de Campo Grande",
-              "source": "A Crítica de Campo Grande",
-              "publishedAt": "Sat, 15 Aug 2026 15:45:00 GMT"
+              "title": "Atlético de Madrid contrata Cristián Romero ao Tottenham - record.pt",
+              "source": "record.pt",
+              "publishedAt": "Sat, 15 Aug 2026 10:02:48 GMT"
             },
             {
-              "title": "O Atlético de Madrid finalizou a contratação de Cristian Romero, do Tottenham Hotspur, por €40 milhões. - Vietnam.vn",
-              "source": "Vietnam.vn",
-              "publishedAt": "Thu, 13 Aug 2026 01:18:43 GMT"
+              "title": "Istambul sediará a Supercopa da Espanha em 2027; veja os detalhes - CNN Brasil",
+              "source": "CNN Brasil",
+              "publishedAt": "Thu, 13 Aug 2026 13:15:17 GMT"
             },
             {
-              "title": "Atlético de Madrid frusta Arsenal e blinda zagueiro que vive ascensão meteórica na carreira - Trivela",
-              "source": "Trivela",
-              "publishedAt": "Thu, 13 Aug 2026 21:00:00 GMT"
+              "title": "Supertaça de Espanha de 2027 será disputada em Istambul - SAPO",
+              "source": "SAPO",
+              "publishedAt": "Thu, 13 Aug 2026 11:29:00 GMT"
             }
           ],
           "away": [
             {
+              "title": "Ao vivo: Atlético de Madrid x Málaga | Rodada 1 | La Liga - ge",
+              "source": "ge",
+              "publishedAt": "Mon, 17 Aug 2026 20:05:41 GMT"
+            },
+            {
+              "title": "Ricardo Horta a caminho do Málaga - RTP",
+              "source": "RTP",
+              "publishedAt": "Sat, 15 Aug 2026 12:57:55 GMT"
+            },
+            {
+              "title": "Programação de futebol para hoje, 19 de agosto, e para a manhã de 20 de agosto: Copa da ASEAN - Vietnã x Malásia; amistoso - Barcelona x Al Ahly - Vietnam.vn",
+              "source": "Vietnam.vn",
+              "publishedAt": "Tue, 18 Aug 2026 06:02:37 GMT"
+            },
+            {
+              "title": "Aubameyang marca, mas La Coruña cede empate na estreia pelo Espanhol - Gazeta Esportiva",
+              "source": "Gazeta Esportiva",
+              "publishedAt": "Mon, 17 Aug 2026 22:09:36 GMT"
+            },
+            {
               "title": "Málaga vence troféu em amistoso após Fulham se recusar a cobrar pênaltis - CNN Brasil",
               "source": "CNN Brasil",
               "publishedAt": "Thu, 13 Aug 2026 14:43:08 GMT"
-            },
-            {
-              "title": "Amistoso entre Fulham e Malága termina com abandono de time inglês e pênalti batido em gol vazio - GE",
-              "source": "GE",
-              "publishedAt": "Thu, 13 Aug 2026 09:51:54 GMT"
-            },
-            {
-              "title": "Málaga CF vs. Fulham – resultado em direto, confrontos diretos e equipas iniciais - Sofascore",
-              "source": "Sofascore",
-              "publishedAt": "Wed, 12 Aug 2026 18:55:55 GMT"
             },
             {
               "title": "Está de volta a LaLiga mais clássica dos últimos anos... e por fascículos - Flashscore.pt",
@@ -1330,19 +380,9 @@
               "publishedAt": "Sat, 15 Aug 2026 12:17:00 GMT"
             },
             {
-              "title": "Insólito: Fulham sai antes dos penáltis e Málaga vence competição ao marcar para uma baliza vazia - SAPO",
-              "source": "SAPO",
-              "publishedAt": "Thu, 13 Aug 2026 08:50:02 GMT"
-            },
-            {
-              "title": "Um clube de futebol inglês se recusou a bater pênaltis, entregando o troféu do campeonato ao Málaga, time da casa, o que gerou indignação entre os torcedores. - Vietnam.vn",
-              "source": "Vietnam.vn",
-              "publishedAt": "Thu, 13 Aug 2026 04:56:13 GMT"
-            },
-            {
-              "title": "Em cena hilária, time do Málaga cobra pênaltis sozinho após polêmica com Fulham em amistoso; veja motivo e versões - ESPN Brasil",
-              "source": "ESPN Brasil",
-              "publishedAt": "Thu, 13 Aug 2026 02:56:00 GMT"
+              "title": "Atlético de Madrid x Málaga – Palpites e Onde Assistir – 19/08/2026 - Olhar Digital",
+              "source": "Olhar Digital",
+              "publishedAt": "Mon, 17 Aug 2026 20:26:09 GMT"
             },
             {
               "title": "Elenco do Fulham abandona campo e Málaga encerra amistoso de forma inusitada - Terra",
@@ -1350,14 +390,9 @@
               "publishedAt": "Thu, 13 Aug 2026 15:16:00 GMT"
             },
             {
-              "title": "Técnico ex-Real Madrid é expulso, time se retira de campo e rejeita pênaltis em amistoso - LANCE!",
-              "source": "LANCE!",
-              "publishedAt": "Thu, 13 Aug 2026 10:00:00 GMT"
-            },
-            {
-              "title": "Ao vivo: Atlético de Madrid x Málaga | Rodada 1 | La Liga - GE",
-              "source": "GE",
-              "publishedAt": "Fri, 14 Aug 2026 15:42:30 GMT"
+              "title": "Guia rápido de LaLiga 2026/27: Favoritos, quem pode surpreender e decepcionar - Trivela",
+              "source": "Trivela",
+              "publishedAt": "Fri, 14 Aug 2026 13:03:10 GMT"
             },
             {
               "title": "Málaga é campeão após cena inusitada no fim do jogo; veja - Alagoas 24 Horas",
@@ -1365,9 +400,14 @@
               "publishedAt": "Thu, 13 Aug 2026 12:54:00 GMT"
             },
             {
-              "title": "Escândalo em jogo particular: Fulham de Arbeloa recusa-se a disputar penáltis frente ao Málaga - Flashscore.pt",
-              "source": "Flashscore.pt",
-              "publishedAt": "Thu, 13 Aug 2026 01:40:00 GMT"
+              "title": "Inter d’Escaldes goleia e segue na Conference League - Esportes Mais",
+              "source": "Esportes Mais",
+              "publishedAt": "Fri, 14 Aug 2026 00:46:41 GMT"
+            },
+            {
+              "title": "Fulham \"foge\" para não perder voo e amistoso tem pênalti sem goleiro - Terra",
+              "source": "Terra",
+              "publishedAt": "Thu, 13 Aug 2026 12:29:00 GMT"
             }
           ]
         },
@@ -1390,20 +430,20 @@
       "verdict": {
         "outcome": "home",
         "label": "Rayo Vallecano vence",
-        "probability": 0.5234,
+        "probability": 0.4807,
         "runnerUp": {
           "label": "Empate",
-          "probability": 0.26
+          "probability": 0.2756
         },
         "strength": "ligeiro",
         "likelyScore": "1-1",
-        "likelyScoreProb": 0.1233,
+        "likelyScoreProb": 0.1315,
         "confidence": 0.7,
-        "summary": "Rayo Vallecano vence e o resultado mais provavel, com 52%. Espera-se um jogo equilibrado em golos (2.9 no total)."
+        "summary": "Rayo Vallecano vence e o resultado mais provavel, com 48%. Espera-se um jogo equilibrado em golos (2.8 no total)."
       },
       "lambdas": {
-        "home": 1.8,
-        "away": 1.1
+        "home": 1.64,
+        "away": 1.11
       },
       "markets": [
         {
@@ -1412,54 +452,54 @@
           "line": null,
           "label": "Resultado final",
           "hint": "Quem ganha o jogo no tempo regulamentar.",
-          "overround": 0.0454,
+          "overround": 0.054,
           "selections": [
             {
               "selection": "away",
               "label": "Alavés vence",
-              "odds": 3.4,
+              "odds": 3.48,
               "oddsBook": "betclic_fr",
-              "betclicOdds": 3.4,
-              "bestOdds": 3.85,
+              "betclicOdds": 3.48,
+              "bestOdds": 3.95,
               "bestBook": "betfair_ex_eu",
-              "bookCount": 20,
-              "impliedProb": 0.2941,
-              "fairProb": 0.2608,
-              "modelProb": 0.2166,
-              "edge": -0.0442,
-              "ev": -0.2637,
+              "bookCount": 21,
+              "impliedProb": 0.2874,
+              "fairProb": 0.2592,
+              "modelProb": 0.2437,
+              "edge": -0.0156,
+              "ev": -0.152,
               "isValue": false
             },
             {
               "selection": "home",
               "label": "Rayo Vallecano vence",
-              "odds": 2.23,
+              "odds": 2.22,
               "oddsBook": "betclic_fr",
-              "betclicOdds": 2.23,
-              "bestOdds": 2.32,
-              "bestBook": "betfair_ex_eu",
-              "bookCount": 20,
-              "impliedProb": 0.4484,
-              "fairProb": 0.4263,
-              "modelProb": 0.5234,
-              "edge": 0.0971,
-              "ev": 0.1672,
+              "betclicOdds": 2.22,
+              "bestOdds": 2.34,
+              "bestBook": "onexbet",
+              "bookCount": 21,
+              "impliedProb": 0.4505,
+              "fairProb": 0.4252,
+              "modelProb": 0.4807,
+              "edge": 0.0555,
+              "ev": 0.0673,
               "isValue": true
             },
             {
               "selection": "draw",
               "label": "Empate",
-              "odds": 3.05,
+              "odds": 3,
               "oddsBook": "betclic_fr",
-              "betclicOdds": 3.05,
-              "bestOdds": 3.23,
+              "betclicOdds": 3,
+              "bestOdds": 3.17,
               "bestBook": "onexbet",
-              "bookCount": 20,
-              "impliedProb": 0.3279,
-              "fairProb": 0.3129,
-              "modelProb": 0.26,
-              "edge": -0.0529,
-              "ev": -0.2069,
+              "bookCount": 21,
+              "impliedProb": 0.3333,
+              "fairProb": 0.3156,
+              "modelProb": 0.2756,
+              "edge": -0.04,
+              "ev": -0.1733,
               "isValue": false
             }
           ]
@@ -1483,9 +523,9 @@
               "bookCount": 7,
               "impliedProb": 0.6211,
               "fairProb": 0.6189,
-              "modelProb": 0.7985,
-              "edge": 0.1796,
-              "ev": 0.2856,
+              "modelProb": 0.776,
+              "edge": 0.1571,
+              "ev": 0.2494,
               "isValue": true
             },
             {
@@ -1499,9 +539,9 @@
               "bookCount": 7,
               "impliedProb": 0.3937,
               "fairProb": 0.3811,
-              "modelProb": 0.2015,
-              "edge": -0.1796,
-              "ev": -0.4882,
+              "modelProb": 0.224,
+              "edge": -0.1571,
+              "ev": -0.431,
               "isValue": false
             }
           ]
@@ -1517,13 +557,13 @@
             {
               "selection": "over",
               "label": "Mais de 2 golos",
-              "odds": 2.05,
-              "oddsBook": "pinnacle",
+              "odds": 2.04,
+              "oddsBook": "coolbet",
               "betclicOdds": null,
-              "bestOdds": 2.05,
-              "bestBook": "pinnacle",
+              "bestOdds": 2.04,
+              "bestBook": "coolbet",
               "bookCount": 3,
-              "impliedProb": 0.4878,
+              "impliedProb": 0.4902,
               "fairProb": 0.4748,
               "modelProb": null,
               "edge": null,
@@ -1567,9 +607,9 @@
               "bookCount": 3,
               "impliedProb": 0.3817,
               "fairProb": 0.3507,
-              "modelProb": 0.5524,
-              "edge": 0.2017,
-              "ev": 0.4474,
+              "modelProb": 0.5194,
+              "edge": 0.1687,
+              "ev": 0.3607,
               "isValue": true
             },
             {
@@ -1583,9 +623,9 @@
               "bookCount": 3,
               "impliedProb": 0.6803,
               "fairProb": 0.6493,
-              "modelProb": 0.4476,
-              "edge": -0.2017,
-              "ev": -0.3421,
+              "modelProb": 0.4806,
+              "edge": -0.1687,
+              "ev": -0.2935,
               "isValue": false
             }
           ]
@@ -1599,68 +639,68 @@
             "score": "1-1",
             "home": 1,
             "away": 1,
-            "p": 0.1233
+            "p": 0.1315
           },
           {
             "score": "2-1",
             "home": 2,
             "away": 1,
-            "p": 0.098
-          },
-          {
-            "score": "2-0",
-            "home": 2,
-            "away": 0,
-            "p": 0.0894
+            "p": 0.0954
           },
           {
             "score": "1-0",
             "home": 1,
             "away": 0,
-            "p": 0.0853
+            "p": 0.0893
+          },
+          {
+            "score": "2-0",
+            "home": 2,
+            "away": 0,
+            "p": 0.0856
           },
           {
             "score": "0-0",
             "home": 0,
             "away": 0,
-            "p": 0.0696
+            "p": 0.0788
           }
         ],
         "goalsDistribution": [
           {
             "goals": 0,
             "label": "0",
-            "p": 0.0696
+            "p": 0.0788
           },
           {
             "goals": 1,
             "label": "1",
-            "p": 0.1319
+            "p": 0.1452
           },
           {
             "goals": 2,
             "label": "2",
-            "p": 0.2461
+            "p": 0.2566
           },
           {
             "goals": 3,
             "label": "3",
-            "p": 0.2236
+            "p": 0.2217
           },
           {
             "goals": 4,
             "label": "4",
-            "p": 0.1617
+            "p": 0.1526
           },
           {
             "goals": 5,
             "label": "5",
-            "p": 0.0936
+            "p": 0.084
           },
           {
             "goals": 6,
             "label": "6+",
-            "p": 0.0735
+            "p": 0.0611
           }
         ],
         "teams": {
@@ -1733,9 +773,9 @@
         "news": {
           "home": [
             {
-              "title": "A LALIGA regressa hoje! Data, hora e como ver na DAZN | DAZN News Portugal - dazn.com",
-              "source": "dazn.com",
-              "publishedAt": "Sat, 15 Aug 2026 11:58:57 GMT"
+              "title": "A LALIGA está de volta! Data, hora e como ver o Racing Santander x Villarreal e o Espanyol x Levante - DAZN",
+              "source": "DAZN",
+              "publishedAt": "Sun, 16 Aug 2026 09:37:31 GMT"
             },
             {
               "title": "Sevilla x Rayo Vallecano – Análise, Escalações, Hora do Jogo e Onde Assistir Hoje 15/08 - Odds Scanner",
@@ -1743,8 +783,8 @@
               "publishedAt": "Sat, 15 Aug 2026 14:19:07 GMT"
             },
             {
-              "title": "La Liga 26/27: calendário de arranque e onde ver os primeiros jogos - Record",
-              "source": "Record",
+              "title": "La Liga 26/27: calendário de arranque e onde ver os primeiros jogos - record.pt",
+              "source": "record.pt",
               "publishedAt": "Fri, 14 Aug 2026 11:44:00 GMT"
             },
             {
@@ -1753,24 +793,14 @@
               "publishedAt": "Sat, 15 Aug 2026 21:55:53 GMT"
             },
             {
-              "title": "Vê Sevilla x Rayo Vallecano em Direto Online | DAZN PT - dazn.com",
-              "source": "dazn.com",
+              "title": "Vê Sevilla x Rayo Vallecano em Direto Online | DAZN PT - DAZN",
+              "source": "DAZN",
               "publishedAt": "Sat, 15 Aug 2026 19:30:00 GMT"
             },
             {
-              "title": "O Alavés despediu um jogador, que há uns anos estava em Portugal, por diminuição “voluntária” do rendimento - Tribuna Expresso",
-              "source": "Tribuna Expresso",
-              "publishedAt": "Fri, 14 Aug 2026 14:36:45 GMT"
-            },
-            {
-              "title": "Oficial: Rayo Vallecano reforça o ataque com a contratação de Tsitaishvili - Flashscore.pt",
-              "source": "Flashscore.pt",
-              "publishedAt": "Thu, 13 Aug 2026 01:18:00 GMT"
-            },
-            {
-              "title": "Sevilla vira sobre o Rayo Vallecano no fim - Esportes Mais",
-              "source": "Esportes Mais",
-              "publishedAt": "Mon, 17 Aug 2026 00:36:40 GMT"
+              "title": "Sevilla x Rayo Vallecano placar ao vivo, H2H e escalações - Sofascore",
+              "source": "Sofascore",
+              "publishedAt": "Sat, 15 Aug 2026 18:30:00 GMT"
             },
             {
               "title": "Sevilla vira no fim sobre Rayo Vallecano pela estreia do Espanhol - Terra",
@@ -1783,21 +813,31 @@
               "publishedAt": "Sat, 15 Aug 2026 16:30:02 GMT"
             },
             {
-              "title": "Sevilla x Rayo Vallecano - La Liga: Notícias, Odds, Estatísticas, Escalações, Horário, Onde Assistir - Blog da Betfair",
-              "source": "Blog da Betfair",
-              "publishedAt": "Sat, 15 Aug 2026 03:58:00 GMT"
-            },
-            {
               "title": "Sevilla x Rayo Vallecano: onde assistir ao jogo e escalações - 365Scores",
               "source": "365Scores",
               "publishedAt": "Sat, 15 Aug 2026 17:30:00 GMT"
+            },
+            {
+              "title": "Sevilla x Rayo Vallecano - La Liga: Notícias, Odds, Estatísticas, Escalações, Horário, Onde Assistir - Blog Betfair Brasil",
+              "source": "Blog Betfair Brasil",
+              "publishedAt": "Sat, 15 Aug 2026 03:58:00 GMT"
+            },
+            {
+              "title": "Sevilla vira sobre o Rayo Vallecano no fim - Esportes Mais",
+              "source": "Esportes Mais",
+              "publishedAt": "Mon, 17 Aug 2026 00:36:40 GMT"
+            },
+            {
+              "title": "Sevilla vira no fim sobre Rayo Vallecano pela estreia do Espanhol - Jogada 10",
+              "source": "Jogada 10",
+              "publishedAt": "Sat, 15 Aug 2026 22:42:00 GMT"
             }
           ],
           "away": [
             {
-              "title": "A LALIGA regressa hoje! Data, hora e como ver na DAZN | DAZN News Portugal - dazn.com",
-              "source": "dazn.com",
-              "publishedAt": "Sat, 15 Aug 2026 11:58:57 GMT"
+              "title": "Vê Alavés x Getafe em Direto Online | DAZN PT - DAZN",
+              "source": "DAZN",
+              "publishedAt": "Sat, 15 Aug 2026 17:30:00 GMT"
             },
             {
               "title": "O Alavés despediu um jogador, que há uns anos estava em Portugal, por diminuição “voluntária” do rendimento - Tribuna Expresso",
@@ -1813,11 +853,6 @@
               "title": "LaLiga: Mariano Díaz (Alavés) volta a sorrir - Flashscore.pt",
               "source": "Flashscore.pt",
               "publishedAt": "Sun, 16 Aug 2026 11:45:50 GMT"
-            },
-            {
-              "title": "Vê Alavés x Getafe em Direto Online | DAZN PT - dazn.com",
-              "source": "dazn.com",
-              "publishedAt": "Sat, 15 Aug 2026 17:30:00 GMT"
             },
             {
               "title": "Alavés x Getafe – Análise, Escalações, Hora do Jogo e Onde Assistir Hoje 15/08 - Odds Scanner",
@@ -1840,25 +875,1743 @@
               "publishedAt": "Sat, 15 Aug 2026 19:29:22 GMT"
             },
             {
-              "title": "Alavés x Getafe - La Liga: Notícias, Odds, Estatísticas, Escalações, Horário, Onde Assistir - Blog da Betfair",
-              "source": "Blog da Betfair",
+              "title": "Alavés rescinde com ex-GD Chaves por «diminuição voluntária do rendimento» - SAPO",
+              "source": "SAPO",
+              "publishedAt": "Thu, 13 Aug 2026 15:14:03 GMT"
+            },
+            {
+              "title": "Athletic Club x Deportivo Alavés placar ao vivo, H2H e escalações - Sofascore",
+              "source": "Sofascore",
+              "publishedAt": "Sat, 15 Aug 2026 15:30:00 GMT"
+            },
+            {
+              "title": "Alavés x Getafe - La Liga: Notícias, Odds, Estatísticas, Escalações, Horário, Onde Assistir - Blog Betfair Brasil",
+              "source": "Blog Betfair Brasil",
               "publishedAt": "Sat, 15 Aug 2026 03:58:00 GMT"
             },
             {
               "title": "Alavés x Getafe: onde assistir ao vivo, horário e escalações - 365Scores",
               "source": "365Scores",
               "publishedAt": "Sat, 15 Aug 2026 16:06:00 GMT"
-            },
-            {
-              "title": "ALAVÉS DESPEDE NIKOLA MARAS POR \"DIMINUIÇÃO VOLUNTÁRIA DO RENDIMENTO\" - jornalonline.pt",
-              "source": "jornalonline.pt",
-              "publishedAt": "Thu, 13 Aug 2026 11:00:02 GMT"
             }
           ]
         },
         "context": {
           "home": [],
           "away": []
+        },
+        "ai": null,
+        "dataQuality": 0.7,
+        "sampleMatches": 1
+      }
+    },
+    {
+      "id": "600aeb3560814afc9a02bec5126b249d",
+      "league": "Ligue 1",
+      "home": "Marseille",
+      "away": "Strasbourg",
+      "kickoff": "2026-08-21T18:45:00Z",
+      "demo": false,
+      "verdict": {
+        "outcome": "home",
+        "label": "Marseille vence",
+        "probability": 0.5519,
+        "runnerUp": {
+          "label": "Empate",
+          "probability": 0.2387
+        },
+        "strength": "claro",
+        "likelyScore": "1-1",
+        "likelyScoreProb": 0.1092,
+        "confidence": 0.15,
+        "summary": "Marseille vence e o resultado mais provavel, com 55%. Espera-se um jogo com golos (3.2 no total)."
+      },
+      "lambdas": {
+        "home": 2.03,
+        "away": 1.2
+      },
+      "markets": [
+        {
+          "key": "h2h",
+          "market": "h2h",
+          "line": null,
+          "label": "Resultado final",
+          "hint": "Quem ganha o jogo no tempo regulamentar.",
+          "overround": 0.0545,
+          "selections": [
+            {
+              "selection": "home",
+              "label": "Marseille vence",
+              "odds": 1.69,
+              "oddsBook": "betclic_fr",
+              "betclicOdds": 1.69,
+              "bestOdds": 1.81,
+              "bestBook": "leovegas_se",
+              "bookCount": 23,
+              "impliedProb": 0.5917,
+              "fairProb": 0.5569,
+              "modelProb": 0.5519,
+              "edge": -0.0049,
+              "ev": -0.0673,
+              "isValue": false
+            },
+            {
+              "selection": "away",
+              "label": "Strasbourg vence",
+              "odds": 4.3,
+              "oddsBook": "betclic_fr",
+              "betclicOdds": 4.3,
+              "bestOdds": 4.5,
+              "bestBook": "betfair_ex_eu",
+              "bookCount": 23,
+              "impliedProb": 0.2326,
+              "fairProb": 0.216,
+              "modelProb": 0.2094,
+              "edge": -0.0066,
+              "ev": -0.0995,
+              "isValue": false
+            },
+            {
+              "selection": "draw",
+              "label": "Empate",
+              "odds": 3.9,
+              "oddsBook": "betclic_fr",
+              "betclicOdds": 3.9,
+              "bestOdds": 4.37,
+              "bestBook": "onexbet",
+              "bookCount": 23,
+              "impliedProb": 0.2564,
+              "fairProb": 0.2272,
+              "modelProb": 0.2387,
+              "edge": 0.0115,
+              "ev": -0.0692,
+              "isValue": false
+            }
+          ]
+        },
+        {
+          "key": "totals:2.5",
+          "market": "totals",
+          "line": 2.5,
+          "label": "Total de golos 2.5",
+          "hint": "Golos das duas equipas somados.",
+          "overround": 0.0711,
+          "selections": [
+            {
+              "selection": "over",
+              "label": "Mais de 2.5 golos",
+              "odds": 1.52,
+              "oddsBook": "nordicbet",
+              "betclicOdds": null,
+              "bestOdds": 1.52,
+              "bestBook": "nordicbet",
+              "bookCount": 3,
+              "impliedProb": 0.6579,
+              "fairProb": 0.6223,
+              "modelProb": 0.6253,
+              "edge": 0.003,
+              "ev": -0.0496,
+              "isValue": false
+            },
+            {
+              "selection": "under",
+              "label": "Menos de 2.5 golos",
+              "odds": 2.5,
+              "oddsBook": "williamhill",
+              "betclicOdds": null,
+              "bestOdds": 2.5,
+              "bestBook": "williamhill",
+              "bookCount": 3,
+              "impliedProb": 0.4,
+              "fairProb": 0.3777,
+              "modelProb": 0.3747,
+              "edge": -0.003,
+              "ev": -0.0632,
+              "isValue": false
+            }
+          ]
+        },
+        {
+          "key": "totals:3",
+          "market": "totals",
+          "line": 3,
+          "label": "Total de golos 3",
+          "hint": "Golos das duas equipas somados.",
+          "overround": 0.0476,
+          "selections": [
+            {
+              "selection": "over",
+              "label": "Mais de 3 golos",
+              "odds": 1.89,
+              "oddsBook": "pinnacle",
+              "betclicOdds": null,
+              "bestOdds": 1.89,
+              "bestBook": "pinnacle",
+              "bookCount": 3,
+              "impliedProb": 0.5291,
+              "fairProb": 0.511,
+              "modelProb": null,
+              "edge": null,
+              "ev": null,
+              "isValue": false
+            },
+            {
+              "selection": "under",
+              "label": "Menos de 3 golos",
+              "odds": 2,
+              "oddsBook": "pinnacle",
+              "betclicOdds": null,
+              "bestOdds": 2,
+              "bestBook": "pinnacle",
+              "bookCount": 3,
+              "impliedProb": 0.5,
+              "fairProb": 0.489,
+              "modelProb": null,
+              "edge": null,
+              "ev": null,
+              "isValue": false
+            }
+          ]
+        },
+        {
+          "key": "totals:3.5",
+          "market": "totals",
+          "line": 3.5,
+          "label": "Total de golos 3.5",
+          "hint": "Golos das duas equipas somados.",
+          "overround": 0.0689,
+          "selections": [
+            {
+              "selection": "over",
+              "label": "Mais de 3.5 golos",
+              "odds": 2.42,
+              "oddsBook": "onexbet",
+              "betclicOdds": null,
+              "bestOdds": 2.42,
+              "bestBook": "onexbet",
+              "bookCount": 8,
+              "impliedProb": 0.4132,
+              "fairProb": 0.3975,
+              "modelProb": 0.403,
+              "edge": 0.0055,
+              "ev": -0.0247,
+              "isValue": false
+            },
+            {
+              "selection": "under",
+              "label": "Menos de 3.5 golos",
+              "odds": 1.66,
+              "oddsBook": "onexbet",
+              "betclicOdds": null,
+              "bestOdds": 1.66,
+              "bestBook": "onexbet",
+              "bookCount": 8,
+              "impliedProb": 0.6024,
+              "fairProb": 0.6025,
+              "modelProb": 0.597,
+              "edge": -0.0055,
+              "ev": -0.009,
+              "isValue": false
+            }
+          ]
+        }
+      ],
+      "marketAnchored": true,
+      "valueCount": 0,
+      "analysis": {
+        "scorelines": [
+          {
+            "score": "1-1",
+            "home": 1,
+            "away": 1,
+            "p": 0.1092
+          },
+          {
+            "score": "2-1",
+            "home": 2,
+            "away": 1,
+            "p": 0.0978
+          },
+          {
+            "score": "2-0",
+            "home": 2,
+            "away": 0,
+            "p": 0.0815
+          },
+          {
+            "score": "1-0",
+            "home": 1,
+            "away": 0,
+            "p": 0.0679
+          },
+          {
+            "score": "3-1",
+            "home": 3,
+            "away": 1,
+            "p": 0.066
+          }
+        ],
+        "goalsDistribution": [
+          {
+            "goals": 0,
+            "label": "0",
+            "p": 0.0523
+          },
+          {
+            "goals": 1,
+            "label": "1",
+            "p": 0.1031
+          },
+          {
+            "goals": 2,
+            "label": "2",
+            "p": 0.2193
+          },
+          {
+            "goals": 3,
+            "label": "3",
+            "p": 0.2223
+          },
+          {
+            "goals": 4,
+            "label": "4",
+            "p": 0.1792
+          },
+          {
+            "goals": 5,
+            "label": "5",
+            "p": 0.1156
+          },
+          {
+            "goals": 6,
+            "label": "6+",
+            "p": 0.1083
+          }
+        ],
+        "teams": {
+          "home": {
+            "name": "Marseille",
+            "elo": 1500,
+            "form": {
+              "games": [],
+              "played": 0,
+              "wins": 0,
+              "draws": 0,
+              "losses": 0,
+              "scoredAvg": null,
+              "concededAvg": null,
+              "streak": ""
+            },
+            "split": {
+              "home": null,
+              "away": null
+            },
+            "absences": []
+          },
+          "away": {
+            "name": "Strasbourg",
+            "elo": 1500,
+            "form": {
+              "games": [],
+              "played": 0,
+              "wins": 0,
+              "draws": 0,
+              "losses": 0,
+              "scoredAvg": null,
+              "concededAvg": null,
+              "streak": ""
+            },
+            "split": {
+              "home": null,
+              "away": null
+            },
+            "absences": []
+          }
+        },
+        "h2h": null,
+        "news": {
+          "home": [
+            {
+              "title": "Olympique de Marseille espera proposta saudita por Igor Paixão e quer 50 milhões de euros - Trivela",
+              "source": "Trivela",
+              "publishedAt": "Mon, 17 Aug 2026 17:00:00 GMT"
+            },
+            {
+              "title": "Treinador do Marselha em conflito com a direção por causa de Hojbjerg - Flashscore.pt",
+              "source": "Flashscore.pt",
+              "publishedAt": "Sat, 15 Aug 2026 08:00:00 GMT"
+            },
+            {
+              "title": "Marseille 1-2 Atl Madrid (14 de ago, 2026) Estatísticas de jogadores - ESPN Brasil",
+              "source": "ESPN Brasil",
+              "publishedAt": "Fri, 14 Aug 2026 19:19:06 GMT"
+            },
+            {
+              "title": "Mercado da bola europeu: Juve acerta com goleiro, brasileiro na mira do Dortmund e mais - Trivela",
+              "source": "Trivela",
+              "publishedAt": "Tue, 18 Aug 2026 01:00:00 GMT"
+            },
+            {
+              "title": "Público - Estatísticas de Marseille para Ligue 1 2025/2026 - FotMob",
+              "source": "FotMob",
+              "publishedAt": "Thu, 13 Aug 2026 13:07:31 GMT"
+            },
+            {
+              "title": "Olympique de Marseille x Atlético de Madrid ao vivo: onde assistir e escalações - 365Scores",
+              "source": "365Scores",
+              "publishedAt": "Fri, 14 Aug 2026 14:00:00 GMT"
+            },
+            {
+              "title": "Olympique de Marselha x Atlético de Madrid: escalações e onde assistir - Terra",
+              "source": "Terra",
+              "publishedAt": "Thu, 13 Aug 2026 20:02:00 GMT"
+            },
+            {
+              "title": "Zagueiro do Bahia recebe proposta do futebol europeu - R7 Esportes",
+              "source": "R7 Esportes",
+              "publishedAt": "Thu, 13 Aug 2026 21:27:43 GMT"
+            },
+            {
+              "title": "Aubameyang relembra 'caos' em passagem pelo Marseille: 'Era como se o mundo acabasse' - Trivela",
+              "source": "Trivela",
+              "publishedAt": "Fri, 14 Aug 2026 20:00:00 GMT"
+            },
+            {
+              "title": "Como indecisão por Luis Henrique pode travar negociações da Internazionale no mercado - Trivela",
+              "source": "Trivela",
+              "publishedAt": "Mon, 17 Aug 2026 01:26:00 GMT"
+            },
+            {
+              "title": "Igor Paixão faz golaço de cavadinha, mas Marselha sofre virada do Atlético de Madrid - ge",
+              "source": "ge",
+              "publishedAt": "Fri, 14 Aug 2026 18:20:32 GMT"
+            },
+            {
+              "title": "Lens surpreende e conquista Supercopa da França contra o PSG; veja gol - sportingnews.com",
+              "source": "sportingnews.com",
+              "publishedAt": "Sun, 16 Aug 2026 20:55:00 GMT"
+            }
+          ],
+          "away": [
+            {
+              "title": "Madeirense Fátima Pinto regressa a Portugal e é reforço do FC Porto - dnoticias.pt",
+              "source": "dnoticias.pt",
+              "publishedAt": "Fri, 14 Aug 2026 20:25:00 GMT"
+            },
+            {
+              "title": "Julio Enciso e Ouattara deixam Strasbourg e assinam com Ipswich - Gazeta Esportiva",
+              "source": "Gazeta Esportiva",
+              "publishedAt": "Mon, 17 Aug 2026 21:43:00 GMT"
+            },
+            {
+              "title": "Por que a venda dessa joia do Real Madrid para o Strasbourg entrou para a história? - Trivela",
+              "source": "Trivela",
+              "publishedAt": "Mon, 17 Aug 2026 23:00:00 GMT"
+            },
+            {
+              "title": "Ipswich Town contrata Abdoul Ouattara do Strasbourg - Sofascore",
+              "source": "Sofascore",
+              "publishedAt": "Mon, 17 Aug 2026 14:36:57 GMT"
+            },
+            {
+              "title": "Promessa do Real Madrid Jacobo Ortega assina com o Strasbourg - GZH",
+              "source": "GZH",
+              "publishedAt": "Mon, 17 Aug 2026 13:36:03 GMT"
+            },
+            {
+              "title": "Conheça Jacobo Ortega, jovem envolvido em venda histórica do Real Madrid - CNN Brasil",
+              "source": "CNN Brasil",
+              "publishedAt": "Mon, 17 Aug 2026 15:31:56 GMT"
+            },
+            {
+              "title": "Oficial: Fátima Pinto regressa a Portugal e reforça o FC Porto - record.pt",
+              "source": "record.pt",
+              "publishedAt": "Fri, 14 Aug 2026 20:45:00 GMT"
+            },
+            {
+              "title": "Promessa do Real Madrid Jacobo Ortega assina com o Strasbourg - BOL",
+              "source": "BOL",
+              "publishedAt": "Mon, 17 Aug 2026 13:21:36 GMT"
+            },
+            {
+              "title": "Jacobo Ortega assina com o RC Strasbourg por €10 milhões: o que ele traz para a Ligue 1 - Sofascore",
+              "source": "Sofascore",
+              "publishedAt": "Mon, 17 Aug 2026 09:56:33 GMT"
+            },
+            {
+              "title": "Ângelo atrai grande clube europeu e Al-Nassr determina condição para negócio - Trivela",
+              "source": "Trivela",
+              "publishedAt": "Mon, 17 Aug 2026 21:00:00 GMT"
+            },
+            {
+              "title": "Newcastle United 1-1 RC Strasbourg: visitantes vencem nos pênaltis por 3-2 em amistoso animado em St James’ Park - Sofascore",
+              "source": "Sofascore",
+              "publishedAt": "Sun, 16 Aug 2026 17:52:31 GMT"
+            },
+            {
+              "title": "Newcastle x Strasbourg Palpite – Dicas e notícias (16/08) - Trivela",
+              "source": "Trivela",
+              "publishedAt": "Sat, 15 Aug 2026 15:27:00 GMT"
+            }
+          ]
+        },
+        "context": {
+          "home": [],
+          "away": []
+        },
+        "ai": null,
+        "dataQuality": 0.15,
+        "sampleMatches": 0
+      }
+    },
+    {
+      "id": "eb2553d10d63dc912b99f8fd0d675721",
+      "league": "Premier League",
+      "home": "Arsenal",
+      "away": "Coventry City",
+      "kickoff": "2026-08-21T19:00:00Z",
+      "demo": false,
+      "verdict": {
+        "outcome": "home",
+        "label": "Arsenal vence",
+        "probability": 0.8279,
+        "runnerUp": {
+          "label": "Empate",
+          "probability": 0.1337
+        },
+        "strength": "claro",
+        "likelyScore": "2-0",
+        "likelyScoreProb": 0.1543,
+        "confidence": 0.15,
+        "summary": "Arsenal vence e o resultado mais provavel, com 83%. Espera-se um jogo com golos (3.1 no total)."
+      },
+      "lambdas": {
+        "home": 2.65,
+        "away": 0.48
+      },
+      "markets": [
+        {
+          "key": "h2h",
+          "market": "h2h",
+          "line": null,
+          "label": "Resultado final",
+          "hint": "Quem ganha o jogo no tempo regulamentar.",
+          "overround": 0.0453,
+          "selections": [
+            {
+              "selection": "home",
+              "label": "Arsenal vence",
+              "odds": 1.17,
+              "oddsBook": "betclic_fr",
+              "betclicOdds": 1.17,
+              "bestOdds": 1.21,
+              "bestBook": "onexbet",
+              "bookCount": 23,
+              "impliedProb": 0.8547,
+              "fairProb": 0.8268,
+              "modelProb": 0.8279,
+              "edge": 0.001,
+              "ev": -0.0314,
+              "isValue": false
+            },
+            {
+              "selection": "away",
+              "label": "Coventry City vence",
+              "odds": 14.75,
+              "oddsBook": "betclic_fr",
+              "betclicOdds": 14.75,
+              "bestOdds": 20,
+              "bestBook": "betfair_ex_eu",
+              "bookCount": 23,
+              "impliedProb": 0.0678,
+              "fairProb": 0.0528,
+              "modelProb": 0.0385,
+              "edge": -0.0143,
+              "ev": -0.4325,
+              "isValue": false
+            },
+            {
+              "selection": "draw",
+              "label": "Empate",
+              "odds": 6.9,
+              "oddsBook": "betclic_fr",
+              "betclicOdds": 6.9,
+              "bestOdds": 8.2,
+              "bestBook": "betfair_ex_eu",
+              "bookCount": 23,
+              "impliedProb": 0.1449,
+              "fairProb": 0.1204,
+              "modelProb": 0.1337,
+              "edge": 0.0133,
+              "ev": -0.0776,
+              "isValue": false
+            }
+          ]
+        },
+        {
+          "key": "totals:2.5",
+          "market": "totals",
+          "line": 2.5,
+          "label": "Total de golos 2.5",
+          "hint": "Golos das duas equipas somados.",
+          "overround": 0.0584,
+          "selections": [
+            {
+              "selection": "over",
+              "label": "Mais de 2.5 golos",
+              "odds": 1.64,
+              "oddsBook": "onexbet",
+              "betclicOdds": null,
+              "bestOdds": 1.64,
+              "bestBook": "onexbet",
+              "bookCount": 12,
+              "impliedProb": 0.6098,
+              "fairProb": 0.6037,
+              "modelProb": 0.6042,
+              "edge": 0.0005,
+              "ev": -0.0091,
+              "isValue": false
+            },
+            {
+              "selection": "under",
+              "label": "Menos de 2.5 golos",
+              "odds": 2.52,
+              "oddsBook": "matchbook",
+              "betclicOdds": null,
+              "bestOdds": 2.52,
+              "bestBook": "matchbook",
+              "bookCount": 12,
+              "impliedProb": 0.3968,
+              "fairProb": 0.3963,
+              "modelProb": 0.3958,
+              "edge": -0.0005,
+              "ev": -0.0025,
+              "isValue": false
+            }
+          ]
+        },
+        {
+          "key": "totals:3",
+          "market": "totals",
+          "line": 3,
+          "label": "Total de golos 3",
+          "hint": "Golos das duas equipas somados.",
+          "overround": 0.0342,
+          "selections": [
+            {
+              "selection": "over",
+              "label": "Mais de 3 golos",
+              "odds": 1.98,
+              "oddsBook": "pinnacle",
+              "betclicOdds": null,
+              "bestOdds": 1.98,
+              "bestBook": "pinnacle",
+              "bookCount": 3,
+              "impliedProb": 0.5051,
+              "fairProb": 0.488,
+              "modelProb": null,
+              "edge": null,
+              "ev": null,
+              "isValue": false
+            },
+            {
+              "selection": "under",
+              "label": "Menos de 3 golos",
+              "odds": 1.93,
+              "oddsBook": "betonlineag",
+              "betclicOdds": null,
+              "bestOdds": 1.93,
+              "bestBook": "betonlineag",
+              "bookCount": 3,
+              "impliedProb": 0.5181,
+              "fairProb": 0.512,
+              "modelProb": null,
+              "edge": null,
+              "ev": null,
+              "isValue": false
+            }
+          ]
+        },
+        {
+          "key": "totals:3.5",
+          "market": "totals",
+          "line": 3.5,
+          "label": "Total de golos 3.5",
+          "hint": "Golos das duas equipas somados.",
+          "overround": 0.0795,
+          "selections": [
+            {
+              "selection": "over",
+              "label": "Mais de 3.5 golos",
+              "odds": 2.2,
+              "oddsBook": "tipico_de",
+              "betclicOdds": null,
+              "bestOdds": 2.2,
+              "bestBook": "tipico_de",
+              "bookCount": 1,
+              "impliedProb": 0.4545,
+              "fairProb": 0.4148,
+              "modelProb": 0.3807,
+              "edge": -0.0341,
+              "ev": -0.1625,
+              "isValue": false
+            },
+            {
+              "selection": "under",
+              "label": "Menos de 3.5 golos",
+              "odds": 1.6,
+              "oddsBook": "tipico_de",
+              "betclicOdds": null,
+              "bestOdds": 1.6,
+              "bestBook": "tipico_de",
+              "bookCount": 1,
+              "impliedProb": 0.625,
+              "fairProb": 0.5852,
+              "modelProb": 0.6193,
+              "edge": 0.0341,
+              "ev": -0.0091,
+              "isValue": false
+            }
+          ]
+        }
+      ],
+      "marketAnchored": true,
+      "valueCount": 0,
+      "analysis": {
+        "scorelines": [
+          {
+            "score": "2-0",
+            "home": 2,
+            "away": 0,
+            "p": 0.1543
+          },
+          {
+            "score": "3-0",
+            "home": 3,
+            "away": 0,
+            "p": 0.1363
+          },
+          {
+            "score": "1-0",
+            "home": 1,
+            "away": 0,
+            "p": 0.1093
+          },
+          {
+            "score": "4-0",
+            "home": 4,
+            "away": 0,
+            "p": 0.0903
+          },
+          {
+            "score": "2-1",
+            "home": 2,
+            "away": 1,
+            "p": 0.0733
+          }
+        ],
+        "goalsDistribution": [
+          {
+            "goals": 0,
+            "label": "0",
+            "p": 0.0511
+          },
+          {
+            "goals": 1,
+            "label": "1",
+            "p": 0.1229
+          },
+          {
+            "goals": 2,
+            "label": "2",
+            "p": 0.2217
+          },
+          {
+            "goals": 3,
+            "label": "3",
+            "p": 0.2235
+          },
+          {
+            "goals": 4,
+            "label": "4",
+            "p": 0.1746
+          },
+          {
+            "goals": 5,
+            "label": "5",
+            "p": 0.1091
+          },
+          {
+            "goals": 6,
+            "label": "6+",
+            "p": 0.0969
+          }
+        ],
+        "teams": {
+          "home": {
+            "name": "Arsenal",
+            "elo": 1500,
+            "form": {
+              "games": [],
+              "played": 0,
+              "wins": 0,
+              "draws": 0,
+              "losses": 0,
+              "scoredAvg": null,
+              "concededAvg": null,
+              "streak": ""
+            },
+            "split": {
+              "home": null,
+              "away": null
+            },
+            "absences": []
+          },
+          "away": {
+            "name": "Coventry City",
+            "elo": 1500,
+            "form": {
+              "games": [],
+              "played": 0,
+              "wins": 0,
+              "draws": 0,
+              "losses": 0,
+              "scoredAvg": null,
+              "concededAvg": null,
+              "streak": ""
+            },
+            "split": {
+              "home": null,
+              "away": null
+            },
+            "absences": []
+          }
+        },
+        "h2h": null,
+        "news": {
+          "home": [
+            {
+              "title": "Arsenal conquista Supertaça inglesa e arruína estreia de Maresca no Manchester City - RTP",
+              "source": "RTP",
+              "publishedAt": "Mon, 17 Aug 2026 08:09:45 GMT"
+            },
+            {
+              "title": "Arsenal x Man City: data, hora e onde ver - DAZN",
+              "source": "DAZN",
+              "publishedAt": "Sun, 16 Aug 2026 10:50:41 GMT"
+            },
+            {
+              "title": "O Arsenal ganhou a Community Shield e foi muito fácil - Público",
+              "source": "Público",
+              "publishedAt": "Sun, 16 Aug 2026 16:00:15 GMT"
+            },
+            {
+              "title": "Acertado com Rodri, Barcelona busca Gyökeres para reforçar o ataque - ge",
+              "source": "ge",
+              "publishedAt": "Tue, 18 Aug 2026 06:10:52 GMT"
+            },
+            {
+              "title": "Arsenal-Man. City, 3-0: Manda quem pode - record.pt",
+              "source": "record.pt",
+              "publishedAt": "Sun, 16 Aug 2026 18:09:50 GMT"
+            },
+            {
+              "title": "Antevisão Premier League 2026/27: Raio-X completo aos 20 clubes - Flashscore.pt",
+              "source": "Flashscore.pt",
+              "publishedAt": "Mon, 17 Aug 2026 22:49:48 GMT"
+            },
+            {
+              "title": "O Arsenal domina o futebol inglês: a transformação de Odegaard. - Vietnam.vn",
+              "source": "Vietnam.vn",
+              "publishedAt": "Tue, 18 Aug 2026 09:27:15 GMT"
+            },
+            {
+              "title": "Hoje pode ver em direto na TV... - A Bola",
+              "source": "A Bola",
+              "publishedAt": "Sun, 16 Aug 2026 05:45:00 GMT"
+            },
+            {
+              "title": "Arsenal vence o City por 3 a 0 e conquista a Supercopa da Inglaterra - CNN Brasil",
+              "source": "CNN Brasil",
+              "publishedAt": "Sun, 16 Aug 2026 15:57:52 GMT"
+            },
+            {
+              "title": "FC Arsenal, todas as informações sobre a transmissão em um só lugar: quem mostra / transmite os jogos dos Gunners ao vivo na TV e no livestream? - Goal.com",
+              "source": "Goal.com",
+              "publishedAt": "Tue, 18 Aug 2026 03:00:00 GMT"
+            },
+            {
+              "title": "Google renova com Liverpool e Arsenal e adiciona inteligência artificial aos patrocínios - Máquina do Esporte",
+              "source": "Máquina do Esporte",
+              "publishedAt": "Mon, 17 Aug 2026 20:02:00 GMT"
+            },
+            {
+              "title": "Arsenal atropela Manchester City na estreia oficial de Maresca e conquista a Community Shield - Estadão",
+              "source": "Estadão",
+              "publishedAt": "Sun, 16 Aug 2026 16:35:21 GMT"
+            }
+          ],
+          "away": [
+            {
+              "title": "Conhece as três equipas que subiram à Premier League - DAZN",
+              "source": "DAZN",
+              "publishedAt": "Mon, 17 Aug 2026 15:52:47 GMT"
+            },
+            {
+              "title": "Yirenkyi, Froholdt e Harder: As 10 transferências mais caras do futebol escandinavo - Flashscore.pt",
+              "source": "Flashscore.pt",
+              "publishedAt": "Mon, 17 Aug 2026 22:00:00 GMT"
+            },
+            {
+              "title": "Coventry City contrata Taiwo Awoniyi do Nottingham Forest por €19,9 milhões - Sofascore",
+              "source": "Sofascore",
+              "publishedAt": "Mon, 17 Aug 2026 16:38:48 GMT"
+            },
+            {
+              "title": "Ao vivo: Arsenal x Coventry City | Rodada 1 | Premier League - ge",
+              "source": "ge",
+              "publishedAt": "Mon, 17 Aug 2026 10:39:55 GMT"
+            },
+            {
+              "title": "Coventry City e Hummel lançam nova terceira camisa 2026-2027 - Mantos do Futebol",
+              "source": "Mantos do Futebol",
+              "publishedAt": "Mon, 17 Aug 2026 16:06:55 GMT"
+            },
+            {
+              "title": "Clubes promovidos encaram histórico para evitar queda na Premier League - CNN Brasil",
+              "source": "CNN Brasil",
+              "publishedAt": "Fri, 14 Aug 2026 11:46:27 GMT"
+            },
+            {
+              "title": "Calendário da Premier League 2026/2027: todas as datas, jornadas e os jogos entre as 'Big 6' - DAZN",
+              "source": "DAZN",
+              "publishedAt": "Sun, 16 Aug 2026 17:21:46 GMT"
+            },
+            {
+              "title": "O Coventry City finalizou a contratação de Taiwo Awoniyi, vindo do Nottingham Forest. - Vietnam.vn",
+              "source": "Vietnam.vn",
+              "publishedAt": "Sun, 16 Aug 2026 05:01:49 GMT"
+            },
+            {
+              "title": "COVENTRY CITY X MONACO AO VIVO | AMISTOSO INTERNACIONAL DE CLUBES Jessica Biel (L0Zd9Qyvub) - Mshale",
+              "source": "Mshale",
+              "publishedAt": "Mon, 17 Aug 2026 14:26:55 GMT"
+            },
+            {
+              "title": "Antes de estreia oficial, Monaco de Filipe Luís é derrotado - Lance!",
+              "source": "Lance!",
+              "publishedAt": "Fri, 14 Aug 2026 21:15:00 GMT"
+            },
+            {
+              "title": "Monaco, de Filipe Luís, perde último amistoso antes do início da temporada - ge",
+              "source": "ge",
+              "publishedAt": "Fri, 14 Aug 2026 20:23:47 GMT"
+            },
+            {
+              "title": "Coventry chega a acordo de 24,5 milhões de euros por Sidiki Cherif (Fenerbahçe) - Flashscore.pt",
+              "source": "Flashscore.pt",
+              "publishedAt": "Sat, 15 Aug 2026 22:28:54 GMT"
+            }
+          ]
+        },
+        "context": {
+          "home": [],
+          "away": []
+        },
+        "ai": null,
+        "dataQuality": 0.15,
+        "sampleMatches": 0
+      }
+    },
+    {
+      "id": "623ff84505dae8a0598eefd6a15b5e14",
+      "league": "La Liga",
+      "home": "Real Betis",
+      "away": "Real Sociedad",
+      "kickoff": "2026-08-21T19:00:00Z",
+      "demo": false,
+      "verdict": {
+        "outcome": "home",
+        "label": "Real Betis vence",
+        "probability": 0.5627,
+        "runnerUp": {
+          "label": "Empate",
+          "probability": 0.2458
+        },
+        "strength": "claro",
+        "likelyScore": "1-1",
+        "likelyScoreProb": 0.116,
+        "confidence": 0.7,
+        "summary": "Real Betis vence e o resultado mais provavel, com 56%. Espera-se um jogo equilibrado em golos (3.0 no total)."
+      },
+      "lambdas": {
+        "home": 1.93,
+        "away": 1.07
+      },
+      "markets": [
+        {
+          "key": "h2h",
+          "market": "h2h",
+          "line": null,
+          "label": "Resultado final",
+          "hint": "Quem ganha o jogo no tempo regulamentar.",
+          "overround": 0.0527,
+          "selections": [
+            {
+              "selection": "home",
+              "label": "Real Betis vence",
+              "odds": 2.05,
+              "oddsBook": "betclic_fr",
+              "betclicOdds": 2.05,
+              "bestOdds": 2.15,
+              "bestBook": "onexbet",
+              "bookCount": 20,
+              "impliedProb": 0.4878,
+              "fairProb": 0.4615,
+              "modelProb": 0.5627,
+              "edge": 0.1012,
+              "ev": 0.1535,
+              "isValue": true
+            },
+            {
+              "selection": "away",
+              "label": "Real Sociedad vence",
+              "odds": 3.58,
+              "oddsBook": "betclic_fr",
+              "betclicOdds": 3.58,
+              "bestOdds": 3.9,
+              "bestBook": "matchbook",
+              "bookCount": 20,
+              "impliedProb": 0.2793,
+              "fairProb": 0.2612,
+              "modelProb": 0.1915,
+              "edge": -0.0696,
+              "ev": -0.3143,
+              "isValue": false
+            },
+            {
+              "selection": "draw",
+              "label": "Empate",
+              "odds": 3.33,
+              "oddsBook": "betclic_fr",
+              "betclicOdds": 3.33,
+              "bestOdds": 3.58,
+              "bestBook": "onexbet",
+              "bookCount": 20,
+              "impliedProb": 0.3003,
+              "fairProb": 0.2773,
+              "modelProb": 0.2458,
+              "edge": -0.0315,
+              "ev": -0.1816,
+              "isValue": false
+            }
+          ]
+        },
+        {
+          "key": "totals:2.5",
+          "market": "totals",
+          "line": 2.5,
+          "label": "Total de golos 2.5",
+          "hint": "Golos das duas equipas somados.",
+          "overround": 0.052,
+          "selections": [
+            {
+              "selection": "over",
+              "label": "Mais de 2.5 golos",
+              "odds": 2.12,
+              "oddsBook": "onexbet",
+              "betclicOdds": null,
+              "bestOdds": 2.12,
+              "bestBook": "onexbet",
+              "bookCount": 14,
+              "impliedProb": 0.4717,
+              "fairProb": 0.4642,
+              "modelProb": 0.5768,
+              "edge": 0.1126,
+              "ev": 0.2228,
+              "isValue": true
+            },
+            {
+              "selection": "under",
+              "label": "Menos de 2.5 golos",
+              "odds": 1.85,
+              "oddsBook": "matchbook",
+              "betclicOdds": null,
+              "bestOdds": 1.85,
+              "bestBook": "matchbook",
+              "bookCount": 14,
+              "impliedProb": 0.5405,
+              "fairProb": 0.5358,
+              "modelProb": 0.4232,
+              "edge": -0.1126,
+              "ev": -0.2171,
+              "isValue": false
+            }
+          ]
+        }
+      ],
+      "marketAnchored": false,
+      "valueCount": 2,
+      "analysis": {
+        "scorelines": [
+          {
+            "score": "1-1",
+            "home": 1,
+            "away": 1,
+            "p": 0.116
+          },
+          {
+            "score": "2-1",
+            "home": 2,
+            "away": 1,
+            "p": 0.0993
+          },
+          {
+            "score": "2-0",
+            "home": 2,
+            "away": 0,
+            "p": 0.0932
+          },
+          {
+            "score": "1-0",
+            "home": 1,
+            "away": 0,
+            "p": 0.083
+          },
+          {
+            "score": "3-1",
+            "home": 3,
+            "away": 1,
+            "p": 0.064
+          }
+        ],
+        "goalsDistribution": [
+          {
+            "goals": 0,
+            "label": "0",
+            "p": 0.0631
+          },
+          {
+            "goals": 1,
+            "label": "1",
+            "p": 0.1227
+          },
+          {
+            "goals": 2,
+            "label": "2",
+            "p": 0.2374
+          },
+          {
+            "goals": 3,
+            "label": "3",
+            "p": 0.224
+          },
+          {
+            "goals": 4,
+            "label": "4",
+            "p": 0.168
+          },
+          {
+            "goals": 5,
+            "label": "5",
+            "p": 0.1008
+          },
+          {
+            "goals": 6,
+            "label": "6+",
+            "p": 0.0839
+          }
+        ],
+        "teams": {
+          "home": {
+            "name": "Real Betis",
+            "elo": 1500,
+            "form": {
+              "games": [],
+              "played": 0,
+              "wins": 0,
+              "draws": 0,
+              "losses": 0,
+              "scoredAvg": null,
+              "concededAvg": null,
+              "streak": ""
+            },
+            "split": {
+              "home": null,
+              "away": null
+            },
+            "absences": []
+          },
+          "away": {
+            "name": "Real Sociedad",
+            "elo": 1500,
+            "form": {
+              "games": [],
+              "played": 0,
+              "wins": 0,
+              "draws": 0,
+              "losses": 0,
+              "scoredAvg": null,
+              "concededAvg": null,
+              "streak": ""
+            },
+            "split": {
+              "home": null,
+              "away": null
+            },
+            "absences": []
+          }
+        },
+        "h2h": null,
+        "news": {
+          "home": [
+            {
+              "title": "Placar ao vivo, programação & estatísticas de jogador do Real Betis - Sofascore",
+              "source": "Sofascore",
+              "publishedAt": "Sat, 15 Aug 2026 17:30:00 GMT"
+            },
+            {
+              "title": "Inter vs Betis: Onde ver o jogo de pré-época em direto e grátis em Portugal - Magazine.HD",
+              "source": "Magazine.HD",
+              "publishedAt": "Sat, 15 Aug 2026 12:15:26 GMT"
+            },
+            {
+              "title": "Real Betis acompanha situação de Enzo Barrenechea no Benfica - Golo FM",
+              "source": "Golo FM",
+              "publishedAt": "Mon, 17 Aug 2026 14:02:35 GMT"
+            },
+            {
+              "title": "Inter de Milão vence Real Betis em último amistoso da pré-temporada - CNN Brasil",
+              "source": "CNN Brasil",
+              "publishedAt": "Sat, 15 Aug 2026 20:58:23 GMT"
+            },
+            {
+              "title": "Inter de Milão x Betis: escalações e onde assistir - Terra",
+              "source": "Terra",
+              "publishedAt": "Fri, 14 Aug 2026 19:29:00 GMT"
+            },
+            {
+              "title": "Betis interessado na contratação de Enzo Barrenechea (Benfica) - Flashscore.pt",
+              "source": "Flashscore.pt",
+              "publishedAt": "Sat, 15 Aug 2026 05:12:00 GMT"
+            },
+            {
+              "title": "Ex-City marca, e Inter de Milão vence Real Betis em último amistoso de pré-temporada - Gazeta Esportiva",
+              "source": "Gazeta Esportiva",
+              "publishedAt": "Sat, 15 Aug 2026 19:36:07 GMT"
+            },
+            {
+              "title": "Inter de Milão x Real Betis ao vivo: onde assistir e escalações - 365Scores",
+              "source": "365Scores",
+              "publishedAt": "Sat, 15 Aug 2026 16:00:00 GMT"
+            },
+            {
+              "title": "Inter de Milão x Real Betis Palpite – Análise e notícias (15/08) - Lance!",
+              "source": "Lance!",
+              "publishedAt": "Thu, 13 Aug 2026 13:11:29 GMT"
+            },
+            {
+              "title": "Estreante marca, e Inter de Milão vence Real Betis em último amistoso de pré-temporada - Rádio Itatiaia",
+              "source": "Rádio Itatiaia",
+              "publishedAt": "Sat, 15 Aug 2026 19:30:57 GMT"
+            },
+            {
+              "title": "Inter de Milão x Real Betis: Onde assistir ao vivo, horário, escalações e análise pelo Amistoso Internacional - Terra",
+              "source": "Terra",
+              "publishedAt": "Sat, 15 Aug 2026 15:38:00 GMT"
+            },
+            {
+              "title": "Inter de Milão x Real Betis Palpite – Dicas e notícias (15/08) - Trivela",
+              "source": "Trivela",
+              "publishedAt": "Sat, 15 Aug 2026 07:00:00 GMT"
+            }
+          ],
+          "away": [
+            {
+              "title": "João Pedro marca dois, e Chelsea vence amistoso contra a Real Sociedad - CNN Brasil",
+              "source": "CNN Brasil",
+              "publishedAt": "Sat, 15 Aug 2026 15:32:41 GMT"
+            },
+            {
+              "title": "Quando é que o Real Madrid e o Barcelona jogam na LALIGA? - DAZN",
+              "source": "DAZN",
+              "publishedAt": "Sat, 15 Aug 2026 17:56:07 GMT"
+            },
+            {
+              "title": "Real Sociedad cai frente ao Chelsea de Xabi Alonso (3-1) - Flashscore.pt",
+              "source": "Flashscore.pt",
+              "publishedAt": "Sat, 15 Aug 2026 16:03:24 GMT"
+            },
+            {
+              "title": "Supertaça de Espanha vai jogar-se em Istambul em fevereiro de 2027 - RTP",
+              "source": "RTP",
+              "publishedAt": "Thu, 13 Aug 2026 14:37:41 GMT"
+            },
+            {
+              "title": "Chelsea x Real Sociedad Onde Assistir, Horário, Escalações e Estatísticas 15/08 - Gazeta Esportiva",
+              "source": "Gazeta Esportiva",
+              "publishedAt": "Sat, 15 Aug 2026 08:00:00 GMT"
+            },
+            {
+              "title": "Leicester City U21 x Real Sociedad B placar ao vivo, H2H e escalações - Sofascore",
+              "source": "Sofascore",
+              "publishedAt": "Sun, 16 Aug 2026 05:04:55 GMT"
+            },
+            {
+              "title": "Barcelona, Real Madrid e PSG: como a base virou uma fonte de riqueza - Lance!",
+              "source": "Lance!",
+              "publishedAt": "Mon, 17 Aug 2026 14:16:57 GMT"
+            },
+            {
+              "title": "Entenda por que Real Madrid e Barcelona vão estrear depois em LaLiga; veja datas - ge",
+              "source": "ge",
+              "publishedAt": "Sun, 16 Aug 2026 05:00:08 GMT"
+            },
+            {
+              "title": "Supertaça de Espanha de 2027 será disputada em Istambul - SAPO",
+              "source": "SAPO",
+              "publishedAt": "Thu, 13 Aug 2026 11:29:00 GMT"
+            },
+            {
+              "title": "Chelsea x Real Sociedad: onde assistir ao vivo, horário, palpite e escalações do amistoso - ND Mais",
+              "source": "ND Mais",
+              "publishedAt": "Sat, 15 Aug 2026 11:00:22 GMT"
+            },
+            {
+              "title": "Chelsea x Real Sociedad: escalações e onde assistir - Terra",
+              "source": "Terra",
+              "publishedAt": "Fri, 14 Aug 2026 18:56:00 GMT"
+            },
+            {
+              "title": "Negócio fechado! Fabrizio Romano garante que lateral desejado pelo Sporting vai ser emprestado - Leonino",
+              "source": "Leonino",
+              "publishedAt": "Fri, 14 Aug 2026 07:47:00 GMT"
+            }
+          ]
+        },
+        "context": {
+          "home": [],
+          "away": []
+        },
+        "ai": null,
+        "dataQuality": 0.7,
+        "sampleMatches": 0
+      }
+    },
+    {
+      "id": "c5b62d1e65b9ee0a145b54432140100a",
+      "league": "Liga Portugal",
+      "home": "Moreirense FC",
+      "away": "Benfica",
+      "kickoff": "2026-08-22T11:00:00Z",
+      "demo": false,
+      "verdict": {
+        "outcome": "away",
+        "label": "Benfica vence",
+        "probability": 0.6666,
+        "runnerUp": {
+          "label": "Empate",
+          "probability": 0.1704
+        },
+        "strength": "claro",
+        "likelyScore": "1-2",
+        "likelyScoreProb": 0.0757,
+        "confidence": 0.7,
+        "summary": "Benfica vence e o resultado mais provavel, com 67%. Espera-se um jogo com golos (4.5 no total)."
+      },
+      "lambdas": {
+        "home": 1.5,
+        "away": 2.97
+      },
+      "markets": [
+        {
+          "key": "h2h",
+          "market": "h2h",
+          "line": null,
+          "label": "Resultado final",
+          "hint": "Quem ganha o jogo no tempo regulamentar.",
+          "overround": 0.0526,
+          "selections": [
+            {
+              "selection": "away",
+              "label": "Benfica vence",
+              "odds": 1.16,
+              "oddsBook": "pinnacle",
+              "betclicOdds": null,
+              "bestOdds": 1.16,
+              "bestBook": "pinnacle",
+              "bookCount": 1,
+              "impliedProb": 0.8621,
+              "fairProb": 0.838,
+              "modelProb": 0.6666,
+              "edge": -0.1714,
+              "ev": -0.2268,
+              "isValue": false
+            },
+            {
+              "selection": "home",
+              "label": "Moreirense FC vence",
+              "odds": 15.84,
+              "oddsBook": "pinnacle",
+              "betclicOdds": null,
+              "bestOdds": 15.84,
+              "bestBook": "pinnacle",
+              "bookCount": 1,
+              "impliedProb": 0.0631,
+              "fairProb": 0.0496,
+              "modelProb": 0.1631,
+              "edge": 0.1134,
+              "ev": 1.583,
+              "isValue": false
+            },
+            {
+              "selection": "draw",
+              "label": "Empate",
+              "odds": 7.85,
+              "oddsBook": "pinnacle",
+              "betclicOdds": null,
+              "bestOdds": 7.85,
+              "bestBook": "pinnacle",
+              "bookCount": 1,
+              "impliedProb": 0.1274,
+              "fairProb": 0.1124,
+              "modelProb": 0.1704,
+              "edge": 0.058,
+              "ev": 0.3374,
+              "isValue": true
+            }
+          ]
+        },
+        {
+          "key": "totals:3.25",
+          "market": "totals",
+          "line": 3.25,
+          "label": "Total de golos 3.25",
+          "hint": "Golos das duas equipas somados.",
+          "overround": 0.0447,
+          "selections": [
+            {
+              "selection": "over",
+              "label": "Mais de 3.25 golos",
+              "odds": 1.95,
+              "oddsBook": "pinnacle",
+              "betclicOdds": null,
+              "bestOdds": 1.95,
+              "bestBook": "pinnacle",
+              "bookCount": 1,
+              "impliedProb": 0.5128,
+              "fairProb": 0.4905,
+              "modelProb": null,
+              "edge": null,
+              "ev": null,
+              "isValue": false
+            },
+            {
+              "selection": "under",
+              "label": "Menos de 3.25 golos",
+              "odds": 1.88,
+              "oddsBook": "pinnacle",
+              "betclicOdds": null,
+              "bestOdds": 1.88,
+              "bestBook": "pinnacle",
+              "bookCount": 1,
+              "impliedProb": 0.5319,
+              "fairProb": 0.5095,
+              "modelProb": null,
+              "edge": null,
+              "ev": null,
+              "isValue": false
+            }
+          ]
+        },
+        {
+          "key": "totals:3.5",
+          "market": "totals",
+          "line": 3.5,
+          "label": "Total de golos 3.5",
+          "hint": "Golos das duas equipas somados.",
+          "overround": 0.0612,
+          "selections": [
+            {
+              "selection": "over",
+              "label": "Mais de 3.5 golos",
+              "odds": 2.13,
+              "oddsBook": "gtbets",
+              "betclicOdds": null,
+              "bestOdds": 2.13,
+              "bestBook": "gtbets",
+              "bookCount": 1,
+              "impliedProb": 0.4695,
+              "fairProb": 0.4389,
+              "modelProb": 0.6528,
+              "edge": 0.2139,
+              "ev": 0.3905,
+              "isValue": true
+            },
+            {
+              "selection": "under",
+              "label": "Menos de 3.5 golos",
+              "odds": 1.69,
+              "oddsBook": "gtbets",
+              "betclicOdds": null,
+              "bestOdds": 1.69,
+              "bestBook": "gtbets",
+              "bookCount": 1,
+              "impliedProb": 0.5917,
+              "fairProb": 0.5611,
+              "modelProb": 0.3472,
+              "edge": -0.2139,
+              "ev": -0.4133,
+              "isValue": false
+            }
+          ]
+        }
+      ],
+      "marketAnchored": false,
+      "valueCount": 2,
+      "analysis": {
+        "scorelines": [
+          {
+            "score": "1-2",
+            "home": 1,
+            "away": 2,
+            "p": 0.0757
+          },
+          {
+            "score": "1-3",
+            "home": 1,
+            "away": 3,
+            "p": 0.0749
+          },
+          {
+            "score": "1-1",
+            "home": 1,
+            "away": 1,
+            "p": 0.0577
+          },
+          {
+            "score": "2-2",
+            "home": 2,
+            "away": 2,
+            "p": 0.0569
+          },
+          {
+            "score": "2-3",
+            "home": 2,
+            "away": 3,
+            "p": 0.0563
+          }
+        ],
+        "goalsDistribution": [
+          {
+            "goals": 0,
+            "label": "0",
+            "p": 0.0181
+          },
+          {
+            "goals": 1,
+            "label": "1",
+            "p": 0.0378
+          },
+          {
+            "goals": 2,
+            "label": "2",
+            "p": 0.1209
+          },
+          {
+            "goals": 3,
+            "label": "3",
+            "p": 0.1703
+          },
+          {
+            "goals": 4,
+            "label": "4",
+            "p": 0.1904
+          },
+          {
+            "goals": 5,
+            "label": "5",
+            "p": 0.1703
+          },
+          {
+            "goals": 6,
+            "label": "6+",
+            "p": 0.2921
+          }
+        ],
+        "teams": {
+          "home": {
+            "name": "Moreirense FC",
+            "elo": 1485,
+            "form": {
+              "games": [
+                {
+                  "opponent": "Arouca",
+                  "atHome": false,
+                  "scored": 0,
+                  "conceded": 4,
+                  "result": "L",
+                  "date": "2026-08-16T17:00:00Z"
+                }
+              ],
+              "played": 1,
+              "wins": 0,
+              "draws": 0,
+              "losses": 1,
+              "scoredAvg": 0,
+              "concededAvg": 4,
+              "streak": "L"
+            },
+            "split": {
+              "home": null,
+              "away": {
+                "played": 1,
+                "scoredAvg": 0,
+                "concededAvg": 4
+              }
+            },
+            "absences": []
+          },
+          "away": {
+            "name": "Benfica",
+            "elo": 1527,
+            "form": {
+              "games": [
+                {
+                  "opponent": "Casa Pia",
+                  "atHome": false,
+                  "scored": 7,
+                  "conceded": 0,
+                  "result": "W",
+                  "date": "2026-08-17T19:15:00Z"
+                }
+              ],
+              "played": 1,
+              "wins": 1,
+              "draws": 0,
+              "losses": 0,
+              "scoredAvg": 7,
+              "concededAvg": 0,
+              "streak": "W"
+            },
+            "split": {
+              "home": null,
+              "away": {
+                "played": 1,
+                "scoredAvg": 7,
+                "concededAvg": 0
+              }
+            },
+            "absences": []
+          }
+        },
+        "h2h": null,
+        "news": {
+          "home": [
+            {
+              "title": "Vitória expressiva do FC Arouca garante liderança - Liga Portugal",
+              "source": "Liga Portugal",
+              "publishedAt": "Sat, 15 Aug 2026 07:00:00 GMT"
+            },
+            {
+              "title": "Ficha de jogo indisponível - FC Porto",
+              "source": "FC Porto",
+              "publishedAt": "Fri, 14 Aug 2026 13:33:39 GMT"
+            },
+            {
+              "title": "Inscrições Oficiais Liga Portugal Betclic (atualização 14 de agosto) - Liga Portugal",
+              "source": "Liga Portugal",
+              "publishedAt": "Fri, 14 Aug 2026 21:37:29 GMT"
+            },
+            {
+              "title": "Vídeo - 2ª Jornada - Golo! FC Arouca [2] - 0 Moreirense FC 30' - Sport TV",
+              "source": "Sport TV",
+              "publishedAt": "Sun, 16 Aug 2026 17:38:35 GMT"
+            },
+            {
+              "title": "SC Mirandela inicia Campeonato Nacional Sub-19 II Divisão em casa frente ao Moreirense - | Mensageiro de Bragança",
+              "source": "| Mensageiro de Bragança",
+              "publishedAt": "Sat, 15 Aug 2026 08:51:00 GMT"
+            },
+            {
+              "title": "FC Arouca x Moreirense: antevisão, ausências e onzes prováveis - zerozero.pt",
+              "source": "zerozero.pt",
+              "publishedAt": "Sat, 15 Aug 2026 22:15:02 GMT"
+            }
+          ],
+          "away": [
+            {
+              "title": "O Benfica deu sete palmos de terra ao Casa Pia - Público",
+              "source": "Público",
+              "publishedAt": "Mon, 17 Aug 2026 21:07:08 GMT"
+            },
+            {
+              "title": "Benfica confirma Dedic no Newcastle: o valor da transferência e a mais-valia numa futura venda - record.pt",
+              "source": "record.pt",
+              "publishedAt": "Tue, 18 Aug 2026 08:16:28 GMT"
+            },
+            {
+              "title": "Futebol: FC Porto e Sporting CP venceram, SL Benfica goleou na segunda jornada - RFI",
+              "source": "RFI",
+              "publishedAt": "Mon, 17 Aug 2026 23:26:00 GMT"
+            },
+            {
+              "title": "Amar Dedic deixa o Benfica e ruma ao Newcastle por 35,9 ME - LUSA",
+              "source": "LUSA",
+              "publishedAt": "Tue, 18 Aug 2026 09:02:00 GMT"
+            },
+            {
+              "title": "Oficial: Amar Dedic deixa o Benfica e ruma ao Newcastle por 35,9 milhões de euros - Diário de Notícias",
+              "source": "Diário de Notícias",
+              "publishedAt": "Tue, 18 Aug 2026 10:33:11 GMT"
+            },
+            {
+              "title": "Casa Pia x SL Benfica: data, hora, favoritos e antevisão - DAZN",
+              "source": "DAZN",
+              "publishedAt": "Mon, 17 Aug 2026 11:08:38 GMT"
+            },
+            {
+              "title": "Benfica confirma Dedic no Newcastle e explica negócio: valores, percentagens e futuras mais-valias - Renascença",
+              "source": "Renascença",
+              "publishedAt": "Tue, 18 Aug 2026 07:28:00 GMT"
+            },
+            {
+              "title": "Intransponível como um muro, Michaely Bihina foi a luva de ouro da CAN. Logo ela que mal jogou no Benfica - Tribuna Expresso",
+              "source": "Tribuna Expresso",
+              "publishedAt": "Tue, 18 Aug 2026 08:41:29 GMT"
+            },
+            {
+              "title": "Venda de Dedic é oficial e Benfica confirma valor do negócio - O Jogo",
+              "source": "O Jogo",
+              "publishedAt": "Tue, 18 Aug 2026 08:06:00 GMT"
+            },
+            {
+              "title": "Negócio oficializado: Benfica comunica valores da venda de Dedic ao Newcastle - A Bola",
+              "source": "A Bola",
+              "publishedAt": "Tue, 18 Aug 2026 08:03:00 GMT"
+            },
+            {
+              "title": "O onze do Benfica para o jogo com o Casa Pia - cmjornal.pt",
+              "source": "cmjornal.pt",
+              "publishedAt": "Mon, 17 Aug 2026 17:14:00 GMT"
+            },
+            {
+              "title": "Fotogalerias - LUSA",
+              "source": "LUSA",
+              "publishedAt": "Mon, 17 Aug 2026 21:43:16 GMT"
+            }
+          ]
+        },
+        "context": {
+          "home": [],
+          "away": [
+            {
+              "type": "descanso",
+              "attackPct": -0.6,
+              "defencePct": 0.4,
+              "detail": "apenas 4.65625 dias de descanso"
+            }
+          ]
         },
         "ai": null,
         "dataQuality": 0.7,

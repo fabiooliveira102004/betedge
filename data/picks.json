@@ -1,8 +1,202 @@
 {
-  "generatedAt": "2026-08-17T11:14:17.783Z",
+  "generatedAt": "2026-08-18T11:14:26.308Z",
   "demo": false,
-  "count": 9,
+  "count": 7,
   "picks": [
+    {
+      "id": "c5b62d1e65b9ee0a145b54432140100a:totals:over:3.5",
+      "fixtureId": "c5b62d1e65b9ee0a145b54432140100a",
+      "league": "Liga Portugal",
+      "home": "Moreirense FC",
+      "away": "Benfica",
+      "kickoff": "2026-08-22T11:00:00Z",
+      "market": "totals",
+      "selection": "over",
+      "line": 3.5,
+      "description": "Mais de 3.5 golos",
+      "odds": 2.13,
+      "bookmaker": "betclic_fr",
+      "modelProb": 0.6528,
+      "fairProb": 0.4389,
+      "impliedProb": 0.4695,
+      "edge": 0.2139,
+      "ev": 0.3905,
+      "stake": 0.02109,
+      "confidence": 0.406,
+      "overround": 0.0612,
+      "lambdas": {
+        "home": 1.504,
+        "away": 2.968
+      },
+      "factors": {
+        "home": [],
+        "away": [
+          {
+            "type": "descanso",
+            "attackPct": -0.6,
+            "defencePct": 0.4,
+            "detail": "apenas 4.65625 dias de descanso"
+          }
+        ]
+      },
+      "aiSummary": null,
+      "winCondition": {
+        "wins": "O jogo tem 4 ou mais golos no total, marque quem marcar.",
+        "loses": "O jogo tem 3 ou menos golos."
+      },
+      "narrative": [
+        "O Moreirense FC marca 0,00 golos por jogo na forma recente; o Benfica marca 7,00.",
+        "Cruzando o ataque de cada equipa com a defesa da outra, ajustando a forca relativa e a vantagem de jogar em casa, o modelo espera 1,50 golos do Moreirense FC e 2,97 do Benfica — 4,47 no total.",
+        "Isto ja conta com apenas 4.65625 dias de descanso.",
+        "Daqui sai 65% de probabilidade para esta aposta. A Betclic paga 2.13, que implica 47%; retirada a margem da casa, o preco justo do mercado e 44%. A diferenca de 21.4 pontos percentuais e a vantagem — e a razao pela qual esta aposta aparece e as outras nao."
+      ],
+      "caveats": [
+        "Mesmo estando o modelo certo, esta aposta perde 35 vezes em cada 100. A vantagem so se nota ao fim de muitas apostas.",
+        "Amostra curta: 1 jogos para a equipa com menos dados. Estimativas com poucos jogos sao instaveis.",
+        "Confianca baixa — faltam dados ou o mercado tem margem alta. Considera reduzir a stake."
+      ],
+      "scorelines": [
+        {
+          "score": "1-2",
+          "home": 1,
+          "away": 2,
+          "p": 0.0757
+        },
+        {
+          "score": "1-3",
+          "home": 1,
+          "away": 3,
+          "p": 0.0749
+        },
+        {
+          "score": "1-1",
+          "home": 1,
+          "away": 1,
+          "p": 0.0577
+        },
+        {
+          "score": "2-2",
+          "home": 2,
+          "away": 2,
+          "p": 0.0569
+        },
+        {
+          "score": "2-3",
+          "home": 2,
+          "away": 3,
+          "p": 0.0563
+        }
+      ],
+      "goalsDistribution": [
+        {
+          "goals": 0,
+          "label": "0",
+          "p": 0.0181
+        },
+        {
+          "goals": 1,
+          "label": "1",
+          "p": 0.0378
+        },
+        {
+          "goals": 2,
+          "label": "2",
+          "p": 0.1209
+        },
+        {
+          "goals": 3,
+          "label": "3",
+          "p": 0.1703
+        },
+        {
+          "goals": 4,
+          "label": "4",
+          "p": 0.1904
+        },
+        {
+          "goals": 5,
+          "label": "5",
+          "p": 0.1703
+        },
+        {
+          "goals": 6,
+          "label": "6+",
+          "p": 0.2921
+        }
+      ],
+      "h2h": null,
+      "teams": {
+        "home": {
+          "name": "Moreirense FC",
+          "elo": 1485,
+          "form": {
+            "games": [
+              {
+                "opponent": "Arouca",
+                "atHome": false,
+                "scored": 0,
+                "conceded": 4,
+                "result": "L",
+                "date": "2026-08-16T17:00:00Z"
+              }
+            ],
+            "played": 1,
+            "wins": 0,
+            "draws": 0,
+            "losses": 1,
+            "scoredAvg": 0,
+            "concededAvg": 4,
+            "streak": "L"
+          },
+          "split": {
+            "home": null,
+            "away": {
+              "played": 1,
+              "scoredAvg": 0,
+              "concededAvg": 4
+            }
+          },
+          "absences": []
+        },
+        "away": {
+          "name": "Benfica",
+          "elo": 1527,
+          "form": {
+            "games": [
+              {
+                "opponent": "Casa Pia",
+                "atHome": false,
+                "scored": 7,
+                "conceded": 0,
+                "result": "W",
+                "date": "2026-08-17T19:15:00Z"
+              }
+            ],
+            "played": 1,
+            "wins": 1,
+            "draws": 0,
+            "losses": 0,
+            "scoredAvg": 7,
+            "concededAvg": 0,
+            "streak": "W"
+          },
+          "split": {
+            "home": null,
+            "away": {
+              "played": 1,
+              "scoredAvg": 7,
+              "concededAvg": 0
+            }
+          },
+          "absences": []
+        }
+      },
+      "demo": false,
+      "generatedAt": "2026-08-18T11:14:28.204Z",
+      "settled": false,
+      "result": null,
+      "pnlUnits": null
+    },
     {
       "id": "4feb0ef58a41849f92fcc270268734d4:totals:over:2.5",
       "fixtureId": "4feb0ef58a41849f92fcc270268734d4",
@@ -16,17 +210,17 @@
       "description": "Mais de 2.5 golos",
       "odds": 2.62,
       "bookmaker": "betclic_fr",
-      "modelProb": 0.5524,
+      "modelProb": 0.5194,
       "fairProb": 0.3507,
       "impliedProb": 0.3817,
-      "edge": 0.2017,
-      "ev": 0.4474,
-      "stake": 0.02144,
-      "confidence": 0.43,
+      "edge": 0.1687,
+      "ev": 0.3607,
+      "stake": 0.02244,
+      "confidence": 0.496,
       "overround": 0.062,
       "lambdas": {
-        "home": 1.797,
-        "away": 1.097
+        "home": 1.639,
+        "away": 1.114
       },
       "factors": {
         "home": [],
@@ -39,11 +233,11 @@
       },
       "narrative": [
         "O Rayo Vallecano marca 1,00 golos por jogo na forma recente; o Alavés marca 3,00.",
-        "Cruzando o ataque de cada equipa com a defesa da outra, ajustando a forca relativa e a vantagem de jogar em casa, o modelo espera 1,80 golos do Rayo Vallecano e 1,10 do Alavés — 2,89 no total.",
-        "Daqui sai 55% de probabilidade para esta aposta. A Betclic paga 2.62, que implica 38%; retirada a margem da casa, o preco justo do mercado e 35%. A diferenca de 20.2 pontos percentuais e a vantagem — e a razao pela qual esta aposta aparece e as outras nao."
+        "Cruzando o ataque de cada equipa com a defesa da outra, ajustando a forca relativa e a vantagem de jogar em casa, o modelo espera 1,64 golos do Rayo Vallecano e 1,11 do Alavés — 2,75 no total.",
+        "Daqui sai 52% de probabilidade para esta aposta. A Betclic paga 2.62, que implica 38%; retirada a margem da casa, o preco justo do mercado e 35%. A diferenca de 16.9 pontos percentuais e a vantagem — e a razao pela qual esta aposta aparece e as outras nao."
       ],
       "caveats": [
-        "Mesmo estando o modelo certo, esta aposta perde 45 vezes em cada 100. A vantagem so se nota ao fim de muitas apostas.",
+        "Mesmo estando o modelo certo, esta aposta perde 48 vezes em cada 100. A vantagem so se nota ao fim de muitas apostas.",
         "Amostra curta: 1 jogos para a equipa com menos dados. Estimativas com poucos jogos sao instaveis.",
         "Confianca baixa — faltam dados ou o mercado tem margem alta. Considera reduzir a stake."
       ],
@@ -52,68 +246,68 @@
           "score": "1-1",
           "home": 1,
           "away": 1,
-          "p": 0.1233
+          "p": 0.1315
         },
         {
           "score": "2-1",
           "home": 2,
           "away": 1,
-          "p": 0.098
-        },
-        {
-          "score": "2-0",
-          "home": 2,
-          "away": 0,
-          "p": 0.0894
+          "p": 0.0954
         },
         {
           "score": "1-0",
           "home": 1,
           "away": 0,
-          "p": 0.0853
+          "p": 0.0893
+        },
+        {
+          "score": "2-0",
+          "home": 2,
+          "away": 0,
+          "p": 0.0856
         },
         {
           "score": "0-0",
           "home": 0,
           "away": 0,
-          "p": 0.0696
+          "p": 0.0788
         }
       ],
       "goalsDistribution": [
         {
           "goals": 0,
           "label": "0",
-          "p": 0.0696
+          "p": 0.0788
         },
         {
           "goals": 1,
           "label": "1",
-          "p": 0.1319
+          "p": 0.1452
         },
         {
           "goals": 2,
           "label": "2",
-          "p": 0.2461
+          "p": 0.2566
         },
         {
           "goals": 3,
           "label": "3",
-          "p": 0.2236
+          "p": 0.2217
         },
         {
           "goals": 4,
           "label": "4",
-          "p": 0.1617
+          "p": 0.1526
         },
         {
           "goals": 5,
           "label": "5",
-          "p": 0.0936
+          "p": 0.084
         },
         {
           "goals": 6,
           "label": "6+",
-          "p": 0.0735
+          "p": 0.0611
         }
       ],
       "h2h": null,
@@ -184,7 +378,7 @@
         }
       },
       "demo": false,
-      "generatedAt": "2026-08-17T11:14:18.808Z",
+      "generatedAt": "2026-08-18T11:14:28.202Z",
       "settled": false,
       "result": null,
       "pnlUnits": null
@@ -202,17 +396,17 @@
       "description": "Mais de 1.5 golos",
       "odds": 1.61,
       "bookmaker": "betclic_fr",
-      "modelProb": 0.7985,
+      "modelProb": 0.776,
       "fairProb": 0.6189,
       "impliedProb": 0.6211,
-      "edge": 0.1796,
-      "ev": 0.2856,
-      "stake": 0.02212,
-      "confidence": 0.475,
+      "edge": 0.1571,
+      "ev": 0.2494,
+      "stake": 0.0228,
+      "confidence": 0.52,
       "overround": 0.0609,
       "lambdas": {
-        "home": 1.797,
-        "away": 1.097
+        "home": 1.639,
+        "away": 1.114
       },
       "factors": {
         "home": [],
@@ -225,833 +419,11 @@
       },
       "narrative": [
         "O Rayo Vallecano marca 1,00 golos por jogo na forma recente; o Alavés marca 3,00.",
-        "Cruzando o ataque de cada equipa com a defesa da outra, ajustando a forca relativa e a vantagem de jogar em casa, o modelo espera 1,80 golos do Rayo Vallecano e 1,10 do Alavés — 2,89 no total.",
-        "Daqui sai 80% de probabilidade para esta aposta. A Betclic paga 1.61, que implica 62%; retirada a margem da casa, o preco justo do mercado e 62%. A diferenca de 18 pontos percentuais e a vantagem — e a razao pela qual esta aposta aparece e as outras nao."
-      ],
-      "caveats": [
-        "Mesmo estando o modelo certo, esta aposta perde 20 vezes em cada 100. A vantagem so se nota ao fim de muitas apostas.",
-        "Amostra curta: 1 jogos para a equipa com menos dados. Estimativas com poucos jogos sao instaveis.",
-        "Confianca baixa — faltam dados ou o mercado tem margem alta. Considera reduzir a stake."
-      ],
-      "scorelines": [
-        {
-          "score": "1-1",
-          "home": 1,
-          "away": 1,
-          "p": 0.1233
-        },
-        {
-          "score": "2-1",
-          "home": 2,
-          "away": 1,
-          "p": 0.098
-        },
-        {
-          "score": "2-0",
-          "home": 2,
-          "away": 0,
-          "p": 0.0894
-        },
-        {
-          "score": "1-0",
-          "home": 1,
-          "away": 0,
-          "p": 0.0853
-        },
-        {
-          "score": "0-0",
-          "home": 0,
-          "away": 0,
-          "p": 0.0696
-        }
-      ],
-      "goalsDistribution": [
-        {
-          "goals": 0,
-          "label": "0",
-          "p": 0.0696
-        },
-        {
-          "goals": 1,
-          "label": "1",
-          "p": 0.1319
-        },
-        {
-          "goals": 2,
-          "label": "2",
-          "p": 0.2461
-        },
-        {
-          "goals": 3,
-          "label": "3",
-          "p": 0.2236
-        },
-        {
-          "goals": 4,
-          "label": "4",
-          "p": 0.1617
-        },
-        {
-          "goals": 5,
-          "label": "5",
-          "p": 0.0936
-        },
-        {
-          "goals": 6,
-          "label": "6+",
-          "p": 0.0735
-        }
-      ],
-      "h2h": null,
-      "teams": {
-        "home": {
-          "name": "Rayo Vallecano",
-          "elo": 1492,
-          "form": {
-            "games": [
-              {
-                "opponent": "Sevilla",
-                "atHome": false,
-                "scored": 1,
-                "conceded": 2,
-                "result": "L",
-                "date": "2026-08-15T19:30:00Z"
-              }
-            ],
-            "played": 1,
-            "wins": 0,
-            "draws": 0,
-            "losses": 1,
-            "scoredAvg": 1,
-            "concededAvg": 2,
-            "streak": "L"
-          },
-          "split": {
-            "home": null,
-            "away": {
-              "played": 1,
-              "scoredAvg": 1,
-              "concededAvg": 2
-            }
-          },
-          "absences": []
-        },
-        "away": {
-          "name": "Alavés",
-          "elo": 1514,
-          "form": {
-            "games": [
-              {
-                "opponent": "Getafe",
-                "atHome": true,
-                "scored": 3,
-                "conceded": 0,
-                "result": "W",
-                "date": "2026-08-15T17:30:00Z"
-              }
-            ],
-            "played": 1,
-            "wins": 1,
-            "draws": 0,
-            "losses": 0,
-            "scoredAvg": 3,
-            "concededAvg": 0,
-            "streak": "W"
-          },
-          "split": {
-            "home": {
-              "played": 1,
-              "scoredAvg": 3,
-              "concededAvg": 0
-            },
-            "away": null
-          },
-          "absences": []
-        }
-      },
-      "demo": false,
-      "generatedAt": "2026-08-17T11:14:18.808Z",
-      "settled": false,
-      "result": null,
-      "pnlUnits": null
-    },
-    {
-      "id": "7b9f4d89d66c48e0c496aab1679e4ae4:totals:over:2.5",
-      "fixtureId": "7b9f4d89d66c48e0c496aab1679e4ae4",
-      "league": "La Liga",
-      "home": "Deportivo La Coruña",
-      "away": "Elche CF",
-      "kickoff": "2026-08-17T19:00:00Z",
-      "market": "totals",
-      "selection": "over",
-      "line": 2.5,
-      "description": "Mais de 2.5 golos",
-      "odds": 2.4,
-      "bookmaker": "betclic_fr",
-      "modelProb": 0.6304,
-      "fairProb": 0.4107,
-      "impliedProb": 0.4167,
-      "edge": 0.2198,
-      "ev": 0.513,
-      "stake": 0.02077,
-      "confidence": 0.385,
-      "overround": 0.0559,
-      "lambdas": {
-        "home": 2.156,
-        "away": 1.094
-      },
-      "factors": {
-        "home": [],
-        "away": []
-      },
-      "aiSummary": null,
-      "winCondition": {
-        "wins": "O jogo tem 3 ou mais golos no total, marque quem marcar.",
-        "loses": "O jogo tem 2 ou menos golos."
-      },
-      "narrative": [
-        "Cruzando o ataque de cada equipa com a defesa da outra, ajustando a forca relativa e a vantagem de jogar em casa, o modelo espera 2,16 golos do Deportivo La Coruña e 1,09 do Elche CF — 3,25 no total.",
-        "Daqui sai 63% de probabilidade para esta aposta. A Betclic paga 2.40, que implica 42%; retirada a margem da casa, o preco justo do mercado e 41%. A diferenca de 22 pontos percentuais e a vantagem — e a razao pela qual esta aposta aparece e as outras nao."
-      ],
-      "caveats": [
-        "Mesmo estando o modelo certo, esta aposta perde 37 vezes em cada 100. A vantagem so se nota ao fim de muitas apostas.",
-        "Amostra curta: 0 jogos para a equipa com menos dados. Estimativas com poucos jogos sao instaveis.",
-        "Confianca baixa — faltam dados ou o mercado tem margem alta. Considera reduzir a stake."
-      ],
-      "scorelines": [
-        {
-          "score": "1-1",
-          "home": 1,
-          "away": 1,
-          "p": 0.1034
-        },
-        {
-          "score": "2-1",
-          "home": 2,
-          "away": 1,
-          "p": 0.0986
-        },
-        {
-          "score": "2-0",
-          "home": 2,
-          "away": 0,
-          "p": 0.0901
-        },
-        {
-          "score": "1-0",
-          "home": 1,
-          "away": 0,
-          "p": 0.0717
-        },
-        {
-          "score": "3-1",
-          "home": 3,
-          "away": 1,
-          "p": 0.0708
-        }
-      ],
-      "goalsDistribution": [
-        {
-          "goals": 0,
-          "label": "0",
-          "p": 0.0507
-        },
-        {
-          "goals": 1,
-          "label": "1",
-          "p": 0.1022
-        },
-        {
-          "goals": 2,
-          "label": "2",
-          "p": 0.2167
-        },
-        {
-          "goals": 3,
-          "label": "3",
-          "p": 0.2218
-        },
-        {
-          "goals": 4,
-          "label": "4",
-          "p": 0.1802
-        },
-        {
-          "goals": 5,
-          "label": "5",
-          "p": 0.1172
-        },
-        {
-          "goals": 6,
-          "label": "6+",
-          "p": 0.1112
-        }
-      ],
-      "h2h": null,
-      "teams": {
-        "home": {
-          "name": "Deportivo La Coruña",
-          "elo": 1500,
-          "form": {
-            "games": [],
-            "played": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 0,
-            "scoredAvg": null,
-            "concededAvg": null,
-            "streak": ""
-          },
-          "split": {
-            "home": null,
-            "away": null
-          },
-          "absences": []
-        },
-        "away": {
-          "name": "Elche CF",
-          "elo": 1500,
-          "form": {
-            "games": [],
-            "played": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 0,
-            "scoredAvg": null,
-            "concededAvg": null,
-            "streak": ""
-          },
-          "split": {
-            "home": null,
-            "away": null
-          },
-          "absences": []
-        }
-      },
-      "demo": false,
-      "generatedAt": "2026-08-17T11:14:18.808Z",
-      "settled": false,
-      "result": null,
-      "pnlUnits": null
-    },
-    {
-      "id": "7b9f4d89d66c48e0c496aab1679e4ae4:h2h:home",
-      "fixtureId": "7b9f4d89d66c48e0c496aab1679e4ae4",
-      "league": "La Liga",
-      "home": "Deportivo La Coruña",
-      "away": "Elche CF",
-      "kickoff": "2026-08-17T19:00:00Z",
-      "market": "h2h",
-      "selection": "home",
-      "line": null,
-      "description": "Deportivo La Coruña vence",
-      "odds": 2.22,
-      "bookmaker": "betclic_fr",
-      "modelProb": 0.6038,
-      "fairProb": 0.4349,
-      "impliedProb": 0.4505,
-      "edge": 0.1689,
-      "ev": 0.3405,
-      "stake": 0.02248,
-      "confidence": 0.499,
-      "overround": 0.0433,
-      "lambdas": {
-        "home": 2.156,
-        "away": 1.094
-      },
-      "factors": {
-        "home": [],
-        "away": []
-      },
-      "aiSummary": null,
-      "winCondition": {
-        "wins": "Deportivo La Coruña vence o jogo no tempo regulamentar.",
-        "loses": "Elche CF vence ou o jogo acaba empatado."
-      },
-      "narrative": [
-        "Cruzando o ataque de cada equipa com a defesa da outra, ajustando a forca relativa e a vantagem de jogar em casa, o modelo espera 2,16 golos do Deportivo La Coruña e 1,09 do Elche CF — 3,25 no total.",
-        "Daqui sai 60% de probabilidade para esta aposta. A Betclic paga 2.22, que implica 45%; retirada a margem da casa, o preco justo do mercado e 43%. A diferenca de 16.9 pontos percentuais e a vantagem — e a razao pela qual esta aposta aparece e as outras nao."
-      ],
-      "caveats": [
-        "Mesmo estando o modelo certo, esta aposta perde 40 vezes em cada 100. A vantagem so se nota ao fim de muitas apostas.",
-        "Amostra curta: 0 jogos para a equipa com menos dados. Estimativas com poucos jogos sao instaveis.",
-        "Confianca baixa — faltam dados ou o mercado tem margem alta. Considera reduzir a stake."
-      ],
-      "scorelines": [
-        {
-          "score": "1-1",
-          "home": 1,
-          "away": 1,
-          "p": 0.1034
-        },
-        {
-          "score": "2-1",
-          "home": 2,
-          "away": 1,
-          "p": 0.0986
-        },
-        {
-          "score": "2-0",
-          "home": 2,
-          "away": 0,
-          "p": 0.0901
-        },
-        {
-          "score": "1-0",
-          "home": 1,
-          "away": 0,
-          "p": 0.0717
-        },
-        {
-          "score": "3-1",
-          "home": 3,
-          "away": 1,
-          "p": 0.0708
-        }
-      ],
-      "goalsDistribution": [
-        {
-          "goals": 0,
-          "label": "0",
-          "p": 0.0507
-        },
-        {
-          "goals": 1,
-          "label": "1",
-          "p": 0.1022
-        },
-        {
-          "goals": 2,
-          "label": "2",
-          "p": 0.2167
-        },
-        {
-          "goals": 3,
-          "label": "3",
-          "p": 0.2218
-        },
-        {
-          "goals": 4,
-          "label": "4",
-          "p": 0.1802
-        },
-        {
-          "goals": 5,
-          "label": "5",
-          "p": 0.1172
-        },
-        {
-          "goals": 6,
-          "label": "6+",
-          "p": 0.1112
-        }
-      ],
-      "h2h": null,
-      "teams": {
-        "home": {
-          "name": "Deportivo La Coruña",
-          "elo": 1500,
-          "form": {
-            "games": [],
-            "played": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 0,
-            "scoredAvg": null,
-            "concededAvg": null,
-            "streak": ""
-          },
-          "split": {
-            "home": null,
-            "away": null
-          },
-          "absences": []
-        },
-        "away": {
-          "name": "Elche CF",
-          "elo": 1500,
-          "form": {
-            "games": [],
-            "played": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 0,
-            "scoredAvg": null,
-            "concededAvg": null,
-            "streak": ""
-          },
-          "split": {
-            "home": null,
-            "away": null
-          },
-          "absences": []
-        }
-      },
-      "demo": false,
-      "generatedAt": "2026-08-17T11:14:18.807Z",
-      "settled": false,
-      "result": null,
-      "pnlUnits": null
-    },
-    {
-      "id": "f7a76400e2ae3978f03925ed51a69bce:totals:under:3.5",
-      "fixtureId": "f7a76400e2ae3978f03925ed51a69bce",
-      "league": "Liga Portugal",
-      "home": "Casa Pia",
-      "away": "Benfica",
-      "kickoff": "2026-08-17T19:15:00Z",
-      "market": "totals",
-      "selection": "under",
-      "line": 3.5,
-      "description": "Menos de 3.5 golos",
-      "odds": 1.6,
-      "bookmaker": "betclic_fr",
-      "modelProb": 0.7787,
-      "fairProb": 0.5903,
-      "impliedProb": 0.625,
-      "edge": 0.1884,
-      "ev": 0.246,
-      "stake": 0.0215,
-      "confidence": 0.434,
-      "overround": 0.0694,
-      "lambdas": {
-        "home": 1.36,
-        "away": 1.041
-      },
-      "factors": {
-        "home": [],
-        "away": []
-      },
-      "aiSummary": null,
-      "winCondition": {
-        "wins": "O jogo tem 3 ou menos golos no total.",
-        "loses": "O jogo tem 4 ou mais golos."
-      },
-      "narrative": [
-        "Cruzando o ataque de cada equipa com a defesa da outra, ajustando a forca relativa e a vantagem de jogar em casa, o modelo espera 1,36 golos do Casa Pia e 1,04 do Benfica — 2,40 no total.",
-        "Daqui sai 78% de probabilidade para esta aposta. A Betclic paga 1.60, que implica 63%; retirada a margem da casa, o preco justo do mercado e 59%. A diferenca de 18.8 pontos percentuais e a vantagem — e a razao pela qual esta aposta aparece e as outras nao."
+        "Cruzando o ataque de cada equipa com a defesa da outra, ajustando a forca relativa e a vantagem de jogar em casa, o modelo espera 1,64 golos do Rayo Vallecano e 1,11 do Alavés — 2,75 no total.",
+        "Daqui sai 78% de probabilidade para esta aposta. A Betclic paga 1.61, que implica 62%; retirada a margem da casa, o preco justo do mercado e 62%. A diferenca de 15.7 pontos percentuais e a vantagem — e a razao pela qual esta aposta aparece e as outras nao."
       ],
       "caveats": [
         "Mesmo estando o modelo certo, esta aposta perde 22 vezes em cada 100. A vantagem so se nota ao fim de muitas apostas.",
-        "Amostra curta: 0 jogos para a equipa com menos dados. Estimativas com poucos jogos sao instaveis.",
-        "Confianca baixa — faltam dados ou o mercado tem margem alta. Considera reduzir a stake."
-      ],
-      "scorelines": [
-        {
-          "score": "1-1",
-          "home": 1,
-          "away": 1,
-          "p": 0.145
-        },
-        {
-          "score": "0-0",
-          "home": 0,
-          "away": 0,
-          "p": 0.1074
-        },
-        {
-          "score": "1-0",
-          "home": 1,
-          "away": 0,
-          "p": 0.1066
-        },
-        {
-          "score": "2-1",
-          "home": 2,
-          "away": 1,
-          "p": 0.0872
-        },
-        {
-          "score": "2-0",
-          "home": 2,
-          "away": 0,
-          "p": 0.0838
-        }
-      ],
-      "goalsDistribution": [
-        {
-          "goals": 0,
-          "label": "0",
-          "p": 0.1074
-        },
-        {
-          "goals": 1,
-          "label": "1",
-          "p": 0.1844
-        },
-        {
-          "goals": 2,
-          "label": "2",
-          "p": 0.278
-        },
-        {
-          "goals": 3,
-          "label": "3",
-          "p": 0.209
-        },
-        {
-          "goals": 4,
-          "label": "4",
-          "p": 0.1254
-        },
-        {
-          "goals": 5,
-          "label": "5",
-          "p": 0.0602
-        },
-        {
-          "goals": 6,
-          "label": "6+",
-          "p": 0.0357
-        }
-      ],
-      "h2h": null,
-      "teams": {
-        "home": {
-          "name": "Casa Pia",
-          "elo": 1500,
-          "form": {
-            "games": [],
-            "played": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 0,
-            "scoredAvg": null,
-            "concededAvg": null,
-            "streak": ""
-          },
-          "split": {
-            "home": null,
-            "away": null
-          },
-          "absences": []
-        },
-        "away": {
-          "name": "Benfica",
-          "elo": 1500,
-          "form": {
-            "games": [],
-            "played": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 0,
-            "scoredAvg": null,
-            "concededAvg": null,
-            "streak": ""
-          },
-          "split": {
-            "home": null,
-            "away": null
-          },
-          "absences": []
-        }
-      },
-      "demo": false,
-      "generatedAt": "2026-08-17T11:14:18.808Z",
-      "settled": false,
-      "result": null,
-      "pnlUnits": null
-    },
-    {
-      "id": "f7a76400e2ae3978f03925ed51a69bce:totals:under:2.5",
-      "fixtureId": "f7a76400e2ae3978f03925ed51a69bce",
-      "league": "Liga Portugal",
-      "home": "Casa Pia",
-      "away": "Benfica",
-      "kickoff": "2026-08-17T19:15:00Z",
-      "market": "totals",
-      "selection": "under",
-      "line": 2.5,
-      "description": "Menos de 2.5 golos",
-      "odds": 2.38,
-      "bookmaker": "betclic_fr",
-      "modelProb": 0.5697,
-      "fairProb": 0.3992,
-      "impliedProb": 0.4202,
-      "edge": 0.1705,
-      "ev": 0.3559,
-      "stake": 0.02182,
-      "confidence": 0.455,
-      "overround": 0.0846,
-      "lambdas": {
-        "home": 1.36,
-        "away": 1.041
-      },
-      "factors": {
-        "home": [],
-        "away": []
-      },
-      "aiSummary": null,
-      "winCondition": {
-        "wins": "O jogo tem 2 ou menos golos no total.",
-        "loses": "O jogo tem 3 ou mais golos."
-      },
-      "narrative": [
-        "Cruzando o ataque de cada equipa com a defesa da outra, ajustando a forca relativa e a vantagem de jogar em casa, o modelo espera 1,36 golos do Casa Pia e 1,04 do Benfica — 2,40 no total.",
-        "Daqui sai 57% de probabilidade para esta aposta. A Betclic paga 2.38, que implica 42%; retirada a margem da casa, o preco justo do mercado e 40%. A diferenca de 17.1 pontos percentuais e a vantagem — e a razao pela qual esta aposta aparece e as outras nao."
-      ],
-      "caveats": [
-        "Mesmo estando o modelo certo, esta aposta perde 43 vezes em cada 100. A vantagem so se nota ao fim de muitas apostas.",
-        "Amostra curta: 0 jogos para a equipa com menos dados. Estimativas com poucos jogos sao instaveis.",
-        "Confianca baixa — faltam dados ou o mercado tem margem alta. Considera reduzir a stake."
-      ],
-      "scorelines": [
-        {
-          "score": "1-1",
-          "home": 1,
-          "away": 1,
-          "p": 0.145
-        },
-        {
-          "score": "0-0",
-          "home": 0,
-          "away": 0,
-          "p": 0.1074
-        },
-        {
-          "score": "1-0",
-          "home": 1,
-          "away": 0,
-          "p": 0.1066
-        },
-        {
-          "score": "2-1",
-          "home": 2,
-          "away": 1,
-          "p": 0.0872
-        },
-        {
-          "score": "2-0",
-          "home": 2,
-          "away": 0,
-          "p": 0.0838
-        }
-      ],
-      "goalsDistribution": [
-        {
-          "goals": 0,
-          "label": "0",
-          "p": 0.1074
-        },
-        {
-          "goals": 1,
-          "label": "1",
-          "p": 0.1844
-        },
-        {
-          "goals": 2,
-          "label": "2",
-          "p": 0.278
-        },
-        {
-          "goals": 3,
-          "label": "3",
-          "p": 0.209
-        },
-        {
-          "goals": 4,
-          "label": "4",
-          "p": 0.1254
-        },
-        {
-          "goals": 5,
-          "label": "5",
-          "p": 0.0602
-        },
-        {
-          "goals": 6,
-          "label": "6+",
-          "p": 0.0357
-        }
-      ],
-      "h2h": null,
-      "teams": {
-        "home": {
-          "name": "Casa Pia",
-          "elo": 1500,
-          "form": {
-            "games": [],
-            "played": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 0,
-            "scoredAvg": null,
-            "concededAvg": null,
-            "streak": ""
-          },
-          "split": {
-            "home": null,
-            "away": null
-          },
-          "absences": []
-        },
-        "away": {
-          "name": "Benfica",
-          "elo": 1500,
-          "form": {
-            "games": [],
-            "played": 0,
-            "wins": 0,
-            "draws": 0,
-            "losses": 0,
-            "scoredAvg": null,
-            "concededAvg": null,
-            "streak": ""
-          },
-          "split": {
-            "home": null,
-            "away": null
-          },
-          "absences": []
-        }
-      },
-      "demo": false,
-      "generatedAt": "2026-08-17T11:14:18.808Z",
-      "settled": false,
-      "result": null,
-      "pnlUnits": null
-    },
-    {
-      "id": "4feb0ef58a41849f92fcc270268734d4:h2h:home",
-      "fixtureId": "4feb0ef58a41849f92fcc270268734d4",
-      "league": "La Liga",
-      "home": "Rayo Vallecano",
-      "away": "Alavés",
-      "kickoff": "2026-08-20T19:00:00Z",
-      "market": "h2h",
-      "selection": "home",
-      "line": null,
-      "description": "Rayo Vallecano vence",
-      "odds": 2.23,
-      "bookmaker": "betclic_fr",
-      "modelProb": 0.5234,
-      "fairProb": 0.4263,
-      "impliedProb": 0.4484,
-      "edge": 0.0971,
-      "ev": 0.1672,
-      "stake": 0.02414,
-      "confidence": 0.61,
-      "overround": 0.0454,
-      "lambdas": {
-        "home": 1.797,
-        "away": 1.097
-      },
-      "factors": {
-        "home": [],
-        "away": []
-      },
-      "aiSummary": null,
-      "winCondition": {
-        "wins": "Rayo Vallecano vence o jogo no tempo regulamentar.",
-        "loses": "Alavés vence ou o jogo acaba empatado."
-      },
-      "narrative": [
-        "O Rayo Vallecano marca 1,00 golos por jogo na forma recente; o Alavés marca 3,00.",
-        "Cruzando o ataque de cada equipa com a defesa da outra, ajustando a forca relativa e a vantagem de jogar em casa, o modelo espera 1,80 golos do Rayo Vallecano e 1,10 do Alavés — 2,89 no total.",
-        "Daqui sai 52% de probabilidade para esta aposta. A Betclic paga 2.23, que implica 45%; retirada a margem da casa, o preco justo do mercado e 43%. A diferenca de 9.7 pontos percentuais e a vantagem — e a razao pela qual esta aposta aparece e as outras nao."
-      ],
-      "caveats": [
-        "Mesmo estando o modelo certo, esta aposta perde 48 vezes em cada 100. A vantagem so se nota ao fim de muitas apostas.",
         "Amostra curta: 1 jogos para a equipa com menos dados. Estimativas com poucos jogos sao instaveis."
       ],
       "scorelines": [
@@ -1059,68 +431,68 @@
           "score": "1-1",
           "home": 1,
           "away": 1,
-          "p": 0.1233
+          "p": 0.1315
         },
         {
           "score": "2-1",
           "home": 2,
           "away": 1,
-          "p": 0.098
-        },
-        {
-          "score": "2-0",
-          "home": 2,
-          "away": 0,
-          "p": 0.0894
+          "p": 0.0954
         },
         {
           "score": "1-0",
           "home": 1,
           "away": 0,
-          "p": 0.0853
+          "p": 0.0893
+        },
+        {
+          "score": "2-0",
+          "home": 2,
+          "away": 0,
+          "p": 0.0856
         },
         {
           "score": "0-0",
           "home": 0,
           "away": 0,
-          "p": 0.0696
+          "p": 0.0788
         }
       ],
       "goalsDistribution": [
         {
           "goals": 0,
           "label": "0",
-          "p": 0.0696
+          "p": 0.0788
         },
         {
           "goals": 1,
           "label": "1",
-          "p": 0.1319
+          "p": 0.1452
         },
         {
           "goals": 2,
           "label": "2",
-          "p": 0.2461
+          "p": 0.2566
         },
         {
           "goals": 3,
           "label": "3",
-          "p": 0.2236
+          "p": 0.2217
         },
         {
           "goals": 4,
           "label": "4",
-          "p": 0.1617
+          "p": 0.1526
         },
         {
           "goals": 5,
           "label": "5",
-          "p": 0.0936
+          "p": 0.084
         },
         {
           "goals": 6,
           "label": "6+",
-          "p": 0.0735
+          "p": 0.0611
         }
       ],
       "h2h": null,
@@ -1191,35 +563,35 @@
         }
       },
       "demo": false,
-      "generatedAt": "2026-08-17T11:14:18.808Z",
+      "generatedAt": "2026-08-18T11:14:28.202Z",
       "settled": false,
       "result": null,
       "pnlUnits": null
     },
     {
-      "id": "857e387be2e9f73e825ad02a2ec74cc3:totals:over:2.5",
-      "fixtureId": "857e387be2e9f73e825ad02a2ec74cc3",
+      "id": "623ff84505dae8a0598eefd6a15b5e14:totals:over:2.5",
+      "fixtureId": "623ff84505dae8a0598eefd6a15b5e14",
       "league": "La Liga",
-      "home": "Atlético Madrid",
-      "away": "Málaga",
-      "kickoff": "2026-08-19T19:00:00Z",
+      "home": "Real Betis",
+      "away": "Real Sociedad",
+      "kickoff": "2026-08-21T19:00:00Z",
       "market": "totals",
       "selection": "over",
       "line": 2.5,
       "description": "Mais de 2.5 golos",
-      "odds": 1.79,
+      "odds": 2.12,
       "bookmaker": "betclic_fr",
-      "modelProb": 0.6304,
-      "fairProb": 0.5523,
-      "impliedProb": 0.5587,
-      "edge": 0.0781,
-      "ev": 0.1285,
-      "stake": 0.02388,
-      "confidence": 0.592,
-      "overround": 0.0481,
+      "modelProb": 0.5768,
+      "fairProb": 0.4642,
+      "impliedProb": 0.4717,
+      "edge": 0.1126,
+      "ev": 0.2228,
+      "stake": 0.02382,
+      "confidence": 0.588,
+      "overround": 0.052,
       "lambdas": {
-        "home": 2.156,
-        "away": 1.094
+        "home": 1.935,
+        "away": 1.066
       },
       "factors": {
         "home": [],
@@ -1231,11 +603,11 @@
         "loses": "O jogo tem 2 ou menos golos."
       },
       "narrative": [
-        "Cruzando o ataque de cada equipa com a defesa da outra, ajustando a forca relativa e a vantagem de jogar em casa, o modelo espera 2,16 golos do Atlético Madrid e 1,09 do Málaga — 3,25 no total.",
-        "Daqui sai 63% de probabilidade para esta aposta. A Betclic paga 1.79, que implica 56%; retirada a margem da casa, o preco justo do mercado e 55%. A diferenca de 7.8 pontos percentuais e a vantagem — e a razao pela qual esta aposta aparece e as outras nao."
+        "Cruzando o ataque de cada equipa com a defesa da outra, ajustando a forca relativa e a vantagem de jogar em casa, o modelo espera 1,93 golos do Real Betis e 1,07 do Real Sociedad — 3,00 no total.",
+        "Daqui sai 58% de probabilidade para esta aposta. A Betclic paga 2.12, que implica 47%; retirada a margem da casa, o preco justo do mercado e 46%. A diferenca de 11.3 pontos percentuais e a vantagem — e a razao pela qual esta aposta aparece e as outras nao."
       ],
       "caveats": [
-        "Mesmo estando o modelo certo, esta aposta perde 37 vezes em cada 100. A vantagem so se nota ao fim de muitas apostas.",
+        "Mesmo estando o modelo certo, esta aposta perde 42 vezes em cada 100. A vantagem so se nota ao fim de muitas apostas.",
         "Amostra curta: 0 jogos para a equipa com menos dados. Estimativas com poucos jogos sao instaveis."
       ],
       "scorelines": [
@@ -1243,74 +615,74 @@
           "score": "1-1",
           "home": 1,
           "away": 1,
-          "p": 0.1034
+          "p": 0.116
         },
         {
           "score": "2-1",
           "home": 2,
           "away": 1,
-          "p": 0.0986
+          "p": 0.0993
         },
         {
           "score": "2-0",
           "home": 2,
           "away": 0,
-          "p": 0.0901
+          "p": 0.0932
         },
         {
           "score": "1-0",
           "home": 1,
           "away": 0,
-          "p": 0.0717
+          "p": 0.083
         },
         {
           "score": "3-1",
           "home": 3,
           "away": 1,
-          "p": 0.0708
+          "p": 0.064
         }
       ],
       "goalsDistribution": [
         {
           "goals": 0,
           "label": "0",
-          "p": 0.0507
+          "p": 0.0631
         },
         {
           "goals": 1,
           "label": "1",
-          "p": 0.1022
+          "p": 0.1227
         },
         {
           "goals": 2,
           "label": "2",
-          "p": 0.2167
+          "p": 0.2374
         },
         {
           "goals": 3,
           "label": "3",
-          "p": 0.2218
+          "p": 0.224
         },
         {
           "goals": 4,
           "label": "4",
-          "p": 0.1802
+          "p": 0.168
         },
         {
           "goals": 5,
           "label": "5",
-          "p": 0.1172
+          "p": 0.1008
         },
         {
           "goals": 6,
           "label": "6+",
-          "p": 0.1112
+          "p": 0.0839
         }
       ],
       "h2h": null,
       "teams": {
         "home": {
-          "name": "Atlético Madrid",
+          "name": "Real Betis",
           "elo": 1500,
           "form": {
             "games": [],
@@ -1329,7 +701,7 @@
           "absences": []
         },
         "away": {
-          "name": "Málaga",
+          "name": "Real Sociedad",
           "elo": 1500,
           "form": {
             "games": [],
@@ -1349,7 +721,165 @@
         }
       },
       "demo": false,
-      "generatedAt": "2026-08-17T11:14:18.808Z",
+      "generatedAt": "2026-08-18T11:14:28.204Z",
+      "settled": false,
+      "result": null,
+      "pnlUnits": null
+    },
+    {
+      "id": "623ff84505dae8a0598eefd6a15b5e14:h2h:home",
+      "fixtureId": "623ff84505dae8a0598eefd6a15b5e14",
+      "league": "La Liga",
+      "home": "Real Betis",
+      "away": "Real Sociedad",
+      "kickoff": "2026-08-21T19:00:00Z",
+      "market": "h2h",
+      "selection": "home",
+      "line": null,
+      "description": "Real Betis vence",
+      "odds": 2.05,
+      "bookmaker": "betclic_fr",
+      "modelProb": 0.5627,
+      "fairProb": 0.4615,
+      "impliedProb": 0.4878,
+      "edge": 0.1012,
+      "ev": 0.1535,
+      "stake": 0.02381,
+      "confidence": 0.587,
+      "overround": 0.0527,
+      "lambdas": {
+        "home": 1.935,
+        "away": 1.066
+      },
+      "factors": {
+        "home": [],
+        "away": []
+      },
+      "aiSummary": null,
+      "winCondition": {
+        "wins": "Real Betis vence o jogo no tempo regulamentar.",
+        "loses": "Real Sociedad vence ou o jogo acaba empatado."
+      },
+      "narrative": [
+        "Cruzando o ataque de cada equipa com a defesa da outra, ajustando a forca relativa e a vantagem de jogar em casa, o modelo espera 1,93 golos do Real Betis e 1,07 do Real Sociedad — 3,00 no total.",
+        "Daqui sai 56% de probabilidade para esta aposta. A Betclic paga 2.05, que implica 49%; retirada a margem da casa, o preco justo do mercado e 46%. A diferenca de 10.1 pontos percentuais e a vantagem — e a razao pela qual esta aposta aparece e as outras nao."
+      ],
+      "caveats": [
+        "Mesmo estando o modelo certo, esta aposta perde 44 vezes em cada 100. A vantagem so se nota ao fim de muitas apostas.",
+        "Amostra curta: 0 jogos para a equipa com menos dados. Estimativas com poucos jogos sao instaveis."
+      ],
+      "scorelines": [
+        {
+          "score": "1-1",
+          "home": 1,
+          "away": 1,
+          "p": 0.116
+        },
+        {
+          "score": "2-1",
+          "home": 2,
+          "away": 1,
+          "p": 0.0993
+        },
+        {
+          "score": "2-0",
+          "home": 2,
+          "away": 0,
+          "p": 0.0932
+        },
+        {
+          "score": "1-0",
+          "home": 1,
+          "away": 0,
+          "p": 0.083
+        },
+        {
+          "score": "3-1",
+          "home": 3,
+          "away": 1,
+          "p": 0.064
+        }
+      ],
+      "goalsDistribution": [
+        {
+          "goals": 0,
+          "label": "0",
+          "p": 0.0631
+        },
+        {
+          "goals": 1,
+          "label": "1",
+          "p": 0.1227
+        },
+        {
+          "goals": 2,
+          "label": "2",
+          "p": 0.2374
+        },
+        {
+          "goals": 3,
+          "label": "3",
+          "p": 0.224
+        },
+        {
+          "goals": 4,
+          "label": "4",
+          "p": 0.168
+        },
+        {
+          "goals": 5,
+          "label": "5",
+          "p": 0.1008
+        },
+        {
+          "goals": 6,
+          "label": "6+",
+          "p": 0.0839
+        }
+      ],
+      "h2h": null,
+      "teams": {
+        "home": {
+          "name": "Real Betis",
+          "elo": 1500,
+          "form": {
+            "games": [],
+            "played": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0,
+            "scoredAvg": null,
+            "concededAvg": null,
+            "streak": ""
+          },
+          "split": {
+            "home": null,
+            "away": null
+          },
+          "absences": []
+        },
+        "away": {
+          "name": "Real Sociedad",
+          "elo": 1500,
+          "form": {
+            "games": [],
+            "played": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0,
+            "scoredAvg": null,
+            "concededAvg": null,
+            "streak": ""
+          },
+          "split": {
+            "home": null,
+            "away": null
+          },
+          "absences": []
+        }
+      },
+      "demo": false,
+      "generatedAt": "2026-08-18T11:14:28.204Z",
       "settled": false,
       "result": null,
       "pnlUnits": null
@@ -1365,19 +895,19 @@
       "selection": "draw",
       "line": null,
       "description": "Empate",
-      "odds": 5.25,
+      "odds": 5.4,
       "bookmaker": "betclic_fr",
-      "modelProb": 0.2244,
-      "fairProb": 0.1689,
-      "impliedProb": 0.1905,
-      "edge": 0.0555,
-      "ev": 0.1781,
-      "stake": 0.00839,
-      "confidence": 0.602,
-      "overround": 0.0383,
+      "modelProb": 0.2458,
+      "fairProb": 0.1681,
+      "impliedProb": 0.1852,
+      "edge": 0.0777,
+      "ev": 0.3272,
+      "stake": 0.01481,
+      "confidence": 0.594,
+      "overround": 0.0463,
       "lambdas": {
-        "home": 2.156,
-        "away": 1.094
+        "home": 1.935,
+        "away": 1.066
       },
       "factors": {
         "home": [],
@@ -1389,81 +919,81 @@
         "loses": "Qualquer uma das equipas vence."
       },
       "narrative": [
-        "Cruzando o ataque de cada equipa com a defesa da outra, ajustando a forca relativa e a vantagem de jogar em casa, o modelo espera 2,16 golos do Atlético Madrid e 1,09 do Málaga — 3,25 no total.",
-        "Daqui sai 22% de probabilidade para esta aposta. A Betclic paga 5.25, que implica 19%; retirada a margem da casa, o preco justo do mercado e 17%. A diferenca de 5.6 pontos percentuais e a vantagem — e a razao pela qual esta aposta aparece e as outras nao."
+        "Cruzando o ataque de cada equipa com a defesa da outra, ajustando a forca relativa e a vantagem de jogar em casa, o modelo espera 1,93 golos do Atlético Madrid e 1,07 do Málaga — 3,00 no total.",
+        "Daqui sai 25% de probabilidade para esta aposta. A Betclic paga 5.40, que implica 19%; retirada a margem da casa, o preco justo do mercado e 17%. A diferenca de 7.8 pontos percentuais e a vantagem — e a razao pela qual esta aposta aparece e as outras nao."
       ],
       "caveats": [
-        "Mesmo estando o modelo certo, esta aposta perde 78 vezes em cada 100. A vantagem so se nota ao fim de muitas apostas.",
+        "Mesmo estando o modelo certo, esta aposta perde 75 vezes em cada 100. A vantagem so se nota ao fim de muitas apostas.",
         "Amostra curta: 0 jogos para a equipa com menos dados. Estimativas com poucos jogos sao instaveis.",
-        "A odd de 5.25 significa que este resultado e pouco frequente: espera longas series sem acertar."
+        "A odd de 5.40 significa que este resultado e pouco frequente: espera longas series sem acertar."
       ],
       "scorelines": [
         {
           "score": "1-1",
           "home": 1,
           "away": 1,
-          "p": 0.1034
+          "p": 0.116
         },
         {
           "score": "2-1",
           "home": 2,
           "away": 1,
-          "p": 0.0986
+          "p": 0.0993
         },
         {
           "score": "2-0",
           "home": 2,
           "away": 0,
-          "p": 0.0901
+          "p": 0.0932
         },
         {
           "score": "1-0",
           "home": 1,
           "away": 0,
-          "p": 0.0717
+          "p": 0.083
         },
         {
           "score": "3-1",
           "home": 3,
           "away": 1,
-          "p": 0.0708
+          "p": 0.064
         }
       ],
       "goalsDistribution": [
         {
           "goals": 0,
           "label": "0",
-          "p": 0.0507
+          "p": 0.0631
         },
         {
           "goals": 1,
           "label": "1",
-          "p": 0.1022
+          "p": 0.1227
         },
         {
           "goals": 2,
           "label": "2",
-          "p": 0.2167
+          "p": 0.2374
         },
         {
           "goals": 3,
           "label": "3",
-          "p": 0.2218
+          "p": 0.224
         },
         {
           "goals": 4,
           "label": "4",
-          "p": 0.1802
+          "p": 0.168
         },
         {
           "goals": 5,
           "label": "5",
-          "p": 0.1172
+          "p": 0.1008
         },
         {
           "goals": 6,
           "label": "6+",
-          "p": 0.1112
+          "p": 0.0839
         }
       ],
       "h2h": null,
@@ -1508,7 +1038,192 @@
         }
       },
       "demo": false,
-      "generatedAt": "2026-08-17T11:14:18.808Z",
+      "generatedAt": "2026-08-18T11:14:28.202Z",
+      "settled": false,
+      "result": null,
+      "pnlUnits": null
+    },
+    {
+      "id": "4feb0ef58a41849f92fcc270268734d4:h2h:home",
+      "fixtureId": "4feb0ef58a41849f92fcc270268734d4",
+      "league": "La Liga",
+      "home": "Rayo Vallecano",
+      "away": "Alavés",
+      "kickoff": "2026-08-20T19:00:00Z",
+      "market": "h2h",
+      "selection": "home",
+      "line": null,
+      "description": "Rayo Vallecano vence",
+      "odds": 2.22,
+      "bookmaker": "betclic_fr",
+      "modelProb": 0.4807,
+      "fairProb": 0.4252,
+      "impliedProb": 0.4505,
+      "edge": 0.0555,
+      "ev": 0.0673,
+      "stake": 0.01103,
+      "confidence": 0.601,
+      "overround": 0.054,
+      "lambdas": {
+        "home": 1.639,
+        "away": 1.114
+      },
+      "factors": {
+        "home": [],
+        "away": []
+      },
+      "aiSummary": null,
+      "winCondition": {
+        "wins": "Rayo Vallecano vence o jogo no tempo regulamentar.",
+        "loses": "Alavés vence ou o jogo acaba empatado."
+      },
+      "narrative": [
+        "O Rayo Vallecano marca 1,00 golos por jogo na forma recente; o Alavés marca 3,00.",
+        "Cruzando o ataque de cada equipa com a defesa da outra, ajustando a forca relativa e a vantagem de jogar em casa, o modelo espera 1,64 golos do Rayo Vallecano e 1,11 do Alavés — 2,75 no total.",
+        "Daqui sai 48% de probabilidade para esta aposta. A Betclic paga 2.22, que implica 45%; retirada a margem da casa, o preco justo do mercado e 43%. A diferenca de 5.6 pontos percentuais e a vantagem — e a razao pela qual esta aposta aparece e as outras nao."
+      ],
+      "caveats": [
+        "Mesmo estando o modelo certo, esta aposta perde 52 vezes em cada 100. A vantagem so se nota ao fim de muitas apostas.",
+        "Amostra curta: 1 jogos para a equipa com menos dados. Estimativas com poucos jogos sao instaveis."
+      ],
+      "scorelines": [
+        {
+          "score": "1-1",
+          "home": 1,
+          "away": 1,
+          "p": 0.1315
+        },
+        {
+          "score": "2-1",
+          "home": 2,
+          "away": 1,
+          "p": 0.0954
+        },
+        {
+          "score": "1-0",
+          "home": 1,
+          "away": 0,
+          "p": 0.0893
+        },
+        {
+          "score": "2-0",
+          "home": 2,
+          "away": 0,
+          "p": 0.0856
+        },
+        {
+          "score": "0-0",
+          "home": 0,
+          "away": 0,
+          "p": 0.0788
+        }
+      ],
+      "goalsDistribution": [
+        {
+          "goals": 0,
+          "label": "0",
+          "p": 0.0788
+        },
+        {
+          "goals": 1,
+          "label": "1",
+          "p": 0.1452
+        },
+        {
+          "goals": 2,
+          "label": "2",
+          "p": 0.2566
+        },
+        {
+          "goals": 3,
+          "label": "3",
+          "p": 0.2217
+        },
+        {
+          "goals": 4,
+          "label": "4",
+          "p": 0.1526
+        },
+        {
+          "goals": 5,
+          "label": "5",
+          "p": 0.084
+        },
+        {
+          "goals": 6,
+          "label": "6+",
+          "p": 0.0611
+        }
+      ],
+      "h2h": null,
+      "teams": {
+        "home": {
+          "name": "Rayo Vallecano",
+          "elo": 1492,
+          "form": {
+            "games": [
+              {
+                "opponent": "Sevilla",
+                "atHome": false,
+                "scored": 1,
+                "conceded": 2,
+                "result": "L",
+                "date": "2026-08-15T19:30:00Z"
+              }
+            ],
+            "played": 1,
+            "wins": 0,
+            "draws": 0,
+            "losses": 1,
+            "scoredAvg": 1,
+            "concededAvg": 2,
+            "streak": "L"
+          },
+          "split": {
+            "home": null,
+            "away": {
+              "played": 1,
+              "scoredAvg": 1,
+              "concededAvg": 2
+            }
+          },
+          "absences": []
+        },
+        "away": {
+          "name": "Alavés",
+          "elo": 1514,
+          "form": {
+            "games": [
+              {
+                "opponent": "Getafe",
+                "atHome": true,
+                "scored": 3,
+                "conceded": 0,
+                "result": "W",
+                "date": "2026-08-15T17:30:00Z"
+              }
+            ],
+            "played": 1,
+            "wins": 1,
+            "draws": 0,
+            "losses": 0,
+            "scoredAvg": 3,
+            "concededAvg": 0,
+            "streak": "W"
+          },
+          "split": {
+            "home": {
+              "played": 1,
+              "scoredAvg": 3,
+              "concededAvg": 0
+            },
+            "away": null
+          },
+          "absences": []
+        }
+      },
+      "demo": false,
+      "generatedAt": "2026-08-18T11:14:28.202Z",
       "settled": false,
       "result": null,
       "pnlUnits": null
