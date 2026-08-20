@@ -1,16 +1,16 @@
 {
-  "updatedAt": "2026-08-19T11:13:52.877Z",
+  "updatedAt": "2026-08-20T11:15:27.411Z",
   "count": 250,
   "accuracy": {
     "n": 250,
-    "hits": 128,
-    "rate": 0.512,
-    "homeBaseline": 0.436,
+    "hits": 129,
+    "rate": 0.516,
+    "homeBaseline": 0.44,
     "byStrength": {
       "claro": {
-        "n": 31,
-        "hits": 18,
-        "rate": 0.5806
+        "n": 32,
+        "hits": 19,
+        "rate": 0.5938
       },
       "ligeiro": {
         "n": 126,
@@ -18,13 +18,83 @@
         "rate": 0.5397
       },
       "aberto": {
-        "n": 93,
+        "n": 92,
         "hits": 42,
-        "rate": 0.4516
+        "rate": 0.4565
       }
     }
   },
   "results": [
+    {
+      "id": "857e387be2e9f73e825ad02a2ec74cc3",
+      "league": "La Liga",
+      "home": "Atlético Madrid",
+      "away": "Málaga",
+      "kickoff": "2026-08-19T19:00:00Z",
+      "demo": false,
+      "score": {
+        "home": 2,
+        "away": 0
+      },
+      "outcome": "home",
+      "totalGoals": 2,
+      "bothScored": false,
+      "verdict": {
+        "outcome": "home",
+        "label": "Atlético Madrid vence",
+        "probability": 0.5627,
+        "runnerUp": {
+          "label": "Empate",
+          "probability": 0.2458
+        },
+        "strength": "claro",
+        "likelyScore": "1-1",
+        "likelyScoreProb": 0.116,
+        "confidence": 0.7,
+        "summary": "Atlético Madrid vence e o resultado mais provavel, com 56%. Espera-se um jogo equilibrado em golos (3.0 no total)."
+      },
+      "verdictHit": true,
+      "lambdas": {
+        "home": 1.93,
+        "away": 1.07
+      },
+      "odds": {
+        "home": 1.33,
+        "away": 9.25,
+        "draw": 5.25
+      },
+      "modelProbs": {
+        "home": 0.5627,
+        "away": 0.1915,
+        "draw": 0.2458
+      },
+      "over25": {
+        "odds": 1.72,
+        "modelProb": 0.5768,
+        "hit": false
+      },
+      "valueSelections": [
+        {
+          "label": "Málaga vence",
+          "odds": 9.25,
+          "modelProb": 0.1915,
+          "edge": 0.0949,
+          "market": "h2h",
+          "selection": "away",
+          "line": null
+        },
+        {
+          "label": "Empate",
+          "odds": 5.25,
+          "modelProb": 0.2458,
+          "edge": 0.0661,
+          "market": "h2h",
+          "selection": "draw",
+          "line": null
+        }
+      ],
+      "settledAt": "2026-08-20T11:15:27.713Z"
+    },
     {
       "id": "f7a76400e2ae3978f03925ed51a69bce",
       "league": "Liga Portugal",
@@ -16578,76 +16648,6 @@
           "edge": 0.062,
           "market": "h2h",
           "selection": "draw",
-          "line": null
-        }
-      ],
-      "settledAt": "2026-08-15T15:29:23.499Z"
-    },
-    {
-      "id": "demo-manchester-city-chelsea-2026-07-20",
-      "league": "Premier League",
-      "home": "Manchester City",
-      "away": "Chelsea",
-      "kickoff": "2026-07-20T18:00:00.000Z",
-      "demo": true,
-      "score": {
-        "home": 1,
-        "away": 2
-      },
-      "outcome": "away",
-      "totalGoals": 3,
-      "bothScored": true,
-      "verdict": {
-        "outcome": "home",
-        "label": "Manchester City vence",
-        "probability": 0.3946,
-        "runnerUp": {
-          "label": "Chelsea vence",
-          "probability": 0.324
-        },
-        "strength": "aberto",
-        "likelyScore": "1-1",
-        "likelyScoreProb": 0.1333,
-        "confidence": 0.7,
-        "summary": "Jogo em aberto: nenhum resultado se destaca. Espera-se um jogo equilibrado em golos (2.8 no total)."
-      },
-      "verdictHit": false,
-      "lambdas": {
-        "home": 1.49,
-        "away": 1.33
-      },
-      "odds": {
-        "home": 1.75,
-        "draw": 4.16,
-        "away": 3.64
-      },
-      "modelProbs": {
-        "home": 0.3946,
-        "draw": 0.2814,
-        "away": 0.324
-      },
-      "over25": {
-        "odds": 1.73,
-        "modelProb": 0.5363,
-        "hit": true
-      },
-      "valueSelections": [
-        {
-          "label": "Empate",
-          "odds": 4.16,
-          "modelProb": 0.2814,
-          "edge": 0.0596,
-          "market": "h2h",
-          "selection": "draw",
-          "line": null
-        },
-        {
-          "label": "Chelsea vence",
-          "odds": 3.64,
-          "modelProb": 0.324,
-          "edge": 0.0683,
-          "market": "h2h",
-          "selection": "away",
           "line": null
         }
       ],
