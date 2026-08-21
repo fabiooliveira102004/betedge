@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-08-20T11:15:27.411Z",
+  "updatedAt": "2026-08-21T11:15:19.958Z",
   "count": 250,
   "accuracy": {
     "n": 250,
-    "hits": 129,
-    "rate": 0.516,
+    "hits": 128,
+    "rate": 0.512,
     "homeBaseline": 0.44,
     "byStrength": {
       "claro": {
@@ -14,8 +14,8 @@
       },
       "ligeiro": {
         "n": 126,
-        "hits": 68,
-        "rate": 0.5397
+        "hits": 67,
+        "rate": 0.5317
       },
       "aberto": {
         "n": 92,
@@ -25,6 +25,85 @@
     }
   },
   "results": [
+    {
+      "id": "4feb0ef58a41849f92fcc270268734d4",
+      "league": "La Liga",
+      "home": "Rayo Vallecano",
+      "away": "Alavés",
+      "kickoff": "2026-08-20T19:00:00Z",
+      "demo": false,
+      "score": {
+        "home": 1,
+        "away": 1
+      },
+      "outcome": "draw",
+      "totalGoals": 2,
+      "bothScored": true,
+      "verdict": {
+        "outcome": "home",
+        "label": "Rayo Vallecano vence",
+        "probability": 0.496,
+        "runnerUp": {
+          "label": "Empate",
+          "probability": 0.2815
+        },
+        "strength": "ligeiro",
+        "likelyScore": "1-1",
+        "likelyScoreProb": 0.1346,
+        "confidence": 0.7,
+        "summary": "Rayo Vallecano vence e o resultado mais provavel, com 50%. Espera-se um jogo equilibrado em golos (2.6 no total)."
+      },
+      "verdictHit": false,
+      "lambdas": {
+        "home": 1.59,
+        "away": 1
+      },
+      "odds": {
+        "away": 3.55,
+        "home": 2.28,
+        "draw": 3.12
+      },
+      "modelProbs": {
+        "away": 0.2225,
+        "home": 0.496,
+        "draw": 0.2815
+      },
+      "over25": {
+        "odds": 2.52,
+        "modelProb": 0.4809,
+        "hit": false
+      },
+      "valueSelections": [
+        {
+          "label": "Rayo Vallecano vence",
+          "odds": 2.28,
+          "modelProb": 0.496,
+          "edge": 0.0742,
+          "market": "h2h",
+          "selection": "home",
+          "line": null
+        },
+        {
+          "label": "Mais de 1.5 golos",
+          "odds": 1.49,
+          "modelProb": 0.7476,
+          "edge": 0.0998,
+          "market": "totals",
+          "selection": "over",
+          "line": 1.5
+        },
+        {
+          "label": "Mais de 2.5 golos",
+          "odds": 2.52,
+          "modelProb": 0.4809,
+          "edge": 0.0722,
+          "market": "totals",
+          "selection": "over",
+          "line": 2.5
+        }
+      ],
+      "settledAt": "2026-08-21T11:15:20.219Z"
+    },
     {
       "id": "857e387be2e9f73e825ad02a2ec74cc3",
       "league": "La Liga",
@@ -16579,76 +16658,6 @@
           "market": "totals",
           "selection": "under",
           "line": 2.5
-        }
-      ],
-      "settledAt": "2026-08-15T15:29:23.499Z"
-    },
-    {
-      "id": "demo-santa-clara-benfica-2026-07-20",
-      "league": "Liga Portugal",
-      "home": "Santa Clara",
-      "away": "Benfica",
-      "kickoff": "2026-07-20T18:00:00.000Z",
-      "demo": true,
-      "score": {
-        "home": 0,
-        "away": 1
-      },
-      "outcome": "away",
-      "totalGoals": 1,
-      "bothScored": false,
-      "verdict": {
-        "outcome": "away",
-        "label": "Benfica vence",
-        "probability": 0.4536,
-        "runnerUp": {
-          "label": "Empate",
-          "probability": 0.2804
-        },
-        "strength": "ligeiro",
-        "likelyScore": "1-1",
-        "likelyScoreProb": 0.1337,
-        "confidence": 0.7,
-        "summary": "Benfica vence e o resultado mais provavel, com 45%. Espera-se um jogo equilibrado em golos (2.7 no total)."
-      },
-      "verdictHit": true,
-      "lambdas": {
-        "home": 1.16,
-        "away": 1.58
-      },
-      "odds": {
-        "home": 4.42,
-        "draw": 4.04,
-        "away": 1.75
-      },
-      "modelProbs": {
-        "home": 0.266,
-        "draw": 0.2804,
-        "away": 0.4536
-      },
-      "over25": {
-        "odds": 1.73,
-        "modelProb": 0.5168,
-        "hit": false
-      },
-      "valueSelections": [
-        {
-          "label": "Santa Clara vence",
-          "odds": 4.42,
-          "modelProb": 0.266,
-          "edge": 0.0729,
-          "market": "h2h",
-          "selection": "home",
-          "line": null
-        },
-        {
-          "label": "Empate",
-          "odds": 4.04,
-          "modelProb": 0.2804,
-          "edge": 0.062,
-          "market": "h2h",
-          "selection": "draw",
-          "line": null
         }
       ],
       "settledAt": "2026-08-15T15:29:23.499Z"
