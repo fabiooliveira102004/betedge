@@ -1,85 +1,95 @@
 {
-  "updatedAt": "2026-08-23T11:10:23.498Z",
+  "updatedAt": "2026-08-24T11:16:50.832Z",
   "overall": {
-    "n": 515,
-    "wins": 231,
-    "losses": 284,
+    "n": 528,
+    "wins": 232,
+    "losses": 296,
     "pushes": 0,
-    "staked": 10.54877,
-    "profit": 2.36646,
-    "hitRate": 0.44854368932038835,
-    "roi": 0.22433515945460974,
+    "staked": 10.82506,
+    "profit": 2.1393,
+    "hitRate": 0.4393939393939394,
+    "roi": 0.19762477067101747,
     "maxDrawdown": -0.33929,
-    "avgOdds": 2.921,
-    "avgEdge": 0.0962
+    "avgOdds": 2.912,
+    "avgEdge": 0.0988
   },
   "pending": 1,
   "streak": {
     "type": "loss",
-    "length": 2
+    "length": 12
   },
   "byMarket": {
     "totals": {
-      "n": 216,
+      "n": 226,
       "wins": 129,
-      "losses": 87,
+      "losses": 97,
       "pushes": 0,
-      "staked": 5.3428,
-      "profit": 1.22779,
-      "hitRate": 0.5972222222222222,
-      "roi": 0.22980272516283606
+      "staked": 5.55448,
+      "profit": 1.01611,
+      "hitRate": 0.5707964601769911,
+      "roi": 0.18293521625786752
     },
     "h2h": {
-      "n": 299,
-      "wins": 102,
-      "losses": 197,
+      "n": 302,
+      "wins": 103,
+      "losses": 199,
       "pushes": 0,
-      "staked": 5.20597,
-      "profit": 1.13867,
-      "hitRate": 0.3411371237458194,
-      "roi": 0.21872388815148766
+      "staked": 5.27058,
+      "profit": 1.12319,
+      "hitRate": 0.34105960264900664,
+      "roi": 0.21310557851318074
     }
   },
   "byLeague": {
     "La Liga": {
-      "n": 178,
+      "n": 181,
       "wins": 81,
-      "losses": 97,
+      "losses": 100,
       "pushes": 0,
-      "staked": 3.63363,
-      "profit": 0.50082,
-      "hitRate": 0.4550561797752809,
-      "roi": 0.13782911303572465
+      "staked": 3.69775,
+      "profit": 0.4367,
+      "hitRate": 0.44751381215469616,
+      "roi": 0.11809884389155571
     },
     "Liga Portugal": {
-      "n": 159,
+      "n": 160,
       "wins": 67,
-      "losses": 92,
+      "losses": 93,
       "pushes": 0,
-      "staked": 3.24221,
-      "profit": 0.78491,
-      "hitRate": 0.42138364779874216,
-      "roi": 0.24209104283806393
+      "staked": 3.26319,
+      "profit": 0.76393,
+      "hitRate": 0.41875,
+      "roi": 0.23410527735130324
     },
     "Premier League": {
-      "n": 175,
-      "wins": 81,
-      "losses": 94,
+      "n": 178,
+      "wins": 82,
+      "losses": 96,
       "pushes": 0,
-      "staked": 3.60683,
-      "profit": 1.07614,
-      "hitRate": 0.46285714285714286,
-      "roi": 0.29836171929367344
+      "staked": 3.67063,
+      "profit": 1.06147,
+      "hitRate": 0.4606741573033708,
+      "roi": 0.28917924171055104
     },
     "Ligue 1": {
-      "n": 3,
+      "n": 8,
       "wins": 2,
+      "losses": 6,
+      "pushes": 0,
+      "staked": 0.17128,
+      "profit": -0.10059,
+      "hitRate": 0.25,
+      "roi": -0.5872839794488557
+    },
+    "Serie A": {
+      "n": 1,
+      "wins": 0,
       "losses": 1,
       "pushes": 0,
-      "staked": 0.0661,
-      "profit": 0.00459,
-      "hitRate": 0.6666666666666666,
-      "roi": 0.06944024205748867
+      "staked": 0.02221,
+      "profit": -0.02221,
+      "hitRate": 0,
+      "roi": -1
     }
   },
   "byMonth": {
@@ -94,14 +104,14 @@
       "roi": 0.18078865617512552
     },
     "2026-08": {
-      "n": 178,
-      "wins": 84,
-      "losses": 94,
+      "n": 191,
+      "wins": 85,
+      "losses": 106,
       "pushes": 0,
-      "staked": 3.51199,
-      "profit": 1.09429,
-      "hitRate": 0.47191011235955055,
-      "roi": 0.3115868780947555
+      "staked": 3.78828,
+      "profit": 0.86713,
+      "hitRate": 0.44502617801047123,
+      "roi": 0.2288980751158838
     }
   },
   "byConfidence": {
@@ -126,14 +136,14 @@
       "roi": 0.32314904808187067
     },
     "baixa": {
-      "n": 15,
-      "wins": 5,
-      "losses": 10,
+      "n": 28,
+      "wins": 6,
+      "losses": 22,
       "pushes": 0,
-      "staked": 0.33067,
-      "profit": -0.07926,
-      "hitRate": 0.3333333333333333,
-      "roi": -0.2396951643632625
+      "staked": 0.60696,
+      "profit": -0.30642,
+      "hitRate": 0.21428571428571427,
+      "roi": -0.5048438117833138
     }
   },
   "calibration": [
@@ -145,33 +155,33 @@
     },
     {
       "band": "30-40",
-      "predicted": 0.3339,
-      "actual": 0.3047,
-      "n": 128
+      "predicted": 0.3338,
+      "actual": 0.3023,
+      "n": 129
     },
     {
       "band": "40-50",
-      "predicted": 0.4482,
-      "actual": 0.5085,
-      "n": 59
+      "predicted": 0.4488,
+      "actual": 0.5,
+      "n": 60
     },
     {
       "band": "50-60",
-      "predicted": 0.5496,
-      "actual": 0.5763,
-      "n": 118
+      "predicted": 0.5502,
+      "actual": 0.5528,
+      "n": 123
     },
     {
       "band": "60-70",
-      "predicted": 0.6376,
-      "actual": 0.6381,
-      "n": 105
+      "predicted": 0.6373,
+      "actual": 0.6415,
+      "n": 106
     },
     {
       "band": "70-80",
-      "predicted": 0.7402,
-      "actual": 0.5833,
-      "n": 12
+      "predicted": 0.7488,
+      "actual": 0.4118,
+      "n": 17
     },
     {
       "band": "80-90",
@@ -2240,6 +2250,58 @@
     {
       "date": "2026-08-22",
       "cumulative": 2.36646
+    },
+    {
+      "date": "2026-08-23",
+      "cumulative": 2.39346
+    },
+    {
+      "date": "2026-08-23",
+      "cumulative": 2.37122
+    },
+    {
+      "date": "2026-08-23",
+      "cumulative": 2.34982
+    },
+    {
+      "date": "2026-08-23",
+      "cumulative": 2.32955
+    },
+    {
+      "date": "2026-08-23",
+      "cumulative": 2.3087
+    },
+    {
+      "date": "2026-08-23",
+      "cumulative": 2.28788
+    },
+    {
+      "date": "2026-08-23",
+      "cumulative": 2.2669
+    },
+    {
+      "date": "2026-08-23",
+      "cumulative": 2.24435
+    },
+    {
+      "date": "2026-08-23",
+      "cumulative": 2.22214
+    },
+    {
+      "date": "2026-08-23",
+      "cumulative": 2.20125
+    },
+    {
+      "date": "2026-08-23",
+      "cumulative": 2.18087
+    },
+    {
+      "date": "2026-08-23",
+      "cumulative": 2.15992
+    },
+    {
+      "date": "2026-08-23",
+      "cumulative": 2.1393
     }
   ]
 }
