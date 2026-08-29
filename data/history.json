@@ -1,7 +1,93 @@
 {
-  "updatedAt": "2026-08-28T21:17:00.076Z",
-  "count": 548,
+  "updatedAt": "2026-08-29T15:21:46.951Z",
+  "count": 549,
   "picks": [
+    {
+      "id": "931ebda6d25d5a326182b4d9aaef50a3:totals:under:2.5",
+      "fixtureId": "931ebda6d25d5a326182b4d9aaef50a3",
+      "league": "La Liga",
+      "home": "Levante",
+      "away": "Real Betis",
+      "kickoff": "2026-08-29T15:00:00Z",
+      "market": "totals",
+      "selection": "under",
+      "line": 2.5,
+      "description": "Menos de 2.5 golos",
+      "odds": 1.94,
+      "bookmaker": "betclic_fr",
+      "modelProb": 0.6848,
+      "fairProb": 0.5167,
+      "impliedProb": 0.5155,
+      "edge": 0.168,
+      "ev": 0.3285,
+      "stake": 0.02276,
+      "confidence": 0.517,
+      "overround": 0.0565,
+      "lambdas": {
+        "home": 0.931,
+        "away": 1.039
+      },
+      "factors": {
+        "home": [
+          {
+            "type": "descanso",
+            "attackPct": -0.2,
+            "defencePct": 0.1,
+            "detail": "apenas 4.895833333333333 dias de descanso"
+          }
+        ],
+        "away": [
+          {
+            "type": "descanso",
+            "attackPct": -2.1,
+            "defencePct": 1.5,
+            "detail": "apenas 3.8333333333333335 dias de descanso"
+          }
+        ]
+      },
+      "aiSummary": null,
+      "demo": false,
+      "generatedAt": "2026-08-28T21:17:03.150Z",
+      "settled": false,
+      "result": null,
+      "pnlUnits": null
+    },
+    {
+      "id": "156ee160b17a4416dfb6121d4805bcdb:totals:over:2.5",
+      "fixtureId": "156ee160b17a4416dfb6121d4805bcdb",
+      "league": "Liga Portugal",
+      "home": "Arouca",
+      "away": "CS Maritimo",
+      "kickoff": "2026-08-29T14:30:00Z",
+      "market": "totals",
+      "selection": "over",
+      "line": 2.5,
+      "description": "Mais de 2.5 golos",
+      "odds": 2.16,
+      "bookmaker": "betclic_fr",
+      "modelProb": 0.5814,
+      "fairProb": 0.4474,
+      "impliedProb": 0.463,
+      "edge": 0.134,
+      "ev": 0.2559,
+      "stake": 0.02356,
+      "confidence": 0.571,
+      "overround": 0.0713,
+      "lambdas": {
+        "home": 1.48,
+        "away": 1.541
+      },
+      "factors": {
+        "home": [],
+        "away": []
+      },
+      "aiSummary": null,
+      "demo": false,
+      "generatedAt": "2026-08-28T21:17:03.150Z",
+      "settled": false,
+      "result": null,
+      "pnlUnits": null
+    },
     {
       "id": "715b3a87491c67e056d3108b217ef4ea:h2h:home",
       "fixtureId": "715b3a87491c67e056d3108b217ef4ea",
@@ -34,9 +120,11 @@
       "aiSummary": null,
       "demo": false,
       "generatedAt": "2026-08-27T20:50:11.910Z",
-      "settled": false,
-      "result": null,
-      "pnlUnits": null
+      "settled": true,
+      "result": "win",
+      "pnlUnits": 0.04769,
+      "finalScore": "1-0",
+      "settledAt": "2026-08-29T15:21:46.834Z"
     },
     {
       "id": "ee9fff4355742c144679fdc75e5697a6:totals:under:2.5",
@@ -20817,29 +20905,29 @@
       "settledAt": "2026-07-02T20:00:00.000Z"
     },
     {
-      "id": "9becb395ad634de55caec620f9d713fa:h2h:home",
-      "fixtureId": "9becb395ad634de55caec620f9d713fa",
-      "league": "Premier League",
-      "home": "Sunderland",
-      "away": "Fulham",
-      "kickoff": "2026-08-30T13:00:00Z",
+      "id": "b52170b614fe11f24729a0a04a208240:h2h:away",
+      "fixtureId": "b52170b614fe11f24729a0a04a208240",
+      "league": "Liga Portugal",
+      "home": "Braga",
+      "away": "Vitória SC",
+      "kickoff": "2026-08-31T19:15:00Z",
       "market": "h2h",
-      "selection": "home",
+      "selection": "away",
       "line": null,
-      "description": "Sunderland vence",
-      "odds": 2.38,
+      "description": "Vitória SC vence",
+      "odds": 4.6,
       "bookmaker": "betclic_fr",
-      "modelProb": 0.5768,
-      "fairProb": 0.3911,
-      "impliedProb": 0.4202,
-      "edge": 0.1858,
-      "ev": 0.3728,
-      "stake": 0.02166,
-      "confidence": 0.444,
-      "overround": 0.0492,
+      "modelProb": 0.3957,
+      "fairProb": 0.1964,
+      "impliedProb": 0.2174,
+      "edge": 0.1993,
+      "ev": 0.8201,
+      "stake": 0.02051,
+      "confidence": 0.367,
+      "overround": 0.0864,
       "lambdas": {
-        "home": 2.106,
-        "away": 1.167
+        "home": 1.209,
+        "away": 1.393
       },
       "factors": {
         "home": [],
@@ -20847,43 +20935,7 @@
       },
       "aiSummary": null,
       "demo": false,
-      "generatedAt": "2026-08-27T20:50:11.913Z",
-      "settled": false,
-      "result": null,
-      "pnlUnits": null
-    },
-    {
-      "id": "0965d1995a254e4324319a8a7ada2b18:totals:under:2.5",
-      "fixtureId": "0965d1995a254e4324319a8a7ada2b18",
-      "league": "Ligue 1",
-      "home": "Lorient",
-      "away": "Troyes",
-      "kickoff": "2026-08-29T18:45:00Z",
-      "market": "totals",
-      "selection": "under",
-      "line": 2.5,
-      "description": "Menos de 2.5 golos",
-      "odds": 1.87,
-      "bookmaker": "betclic_fr",
-      "modelProb": 0.6877,
-      "fairProb": 0.5253,
-      "impliedProb": 0.5348,
-      "edge": 0.1625,
-      "ev": 0.286,
-      "stake": 0.02219,
-      "confidence": 0.479,
-      "overround": 0.0606,
-      "lambdas": {
-        "home": 1.077,
-        "away": 0.882
-      },
-      "factors": {
-        "home": [],
-        "away": []
-      },
-      "aiSummary": null,
-      "demo": false,
-      "generatedAt": "2026-08-27T20:50:11.912Z",
+      "generatedAt": "2026-08-28T21:17:03.152Z",
       "settled": false,
       "result": null,
       "pnlUnits": null

@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-08-28T21:16:58.830Z",
+  "updatedAt": "2026-08-29T15:21:45.601Z",
   "count": 250,
   "accuracy": {
     "n": 250,
-    "hits": 119,
-    "rate": 0.476,
+    "hits": 118,
+    "rate": 0.472,
     "homeBaseline": 0.436,
     "byStrength": {
       "claro": {
@@ -13,18 +13,88 @@
         "rate": 0.5581
       },
       "ligeiro": {
-        "n": 124,
+        "n": 125,
         "hits": 61,
-        "rate": 0.4919
+        "rate": 0.488
       },
       "aberto": {
-        "n": 83,
-        "hits": 34,
-        "rate": 0.4096
+        "n": 82,
+        "hits": 33,
+        "rate": 0.4024
       }
     }
   },
   "results": [
+    {
+      "id": "feafb731d0307bc91a58e18187aa2eab",
+      "league": "Premier League",
+      "home": "Liverpool",
+      "away": "Nottingham Forest",
+      "kickoff": "2026-08-29T11:30:00Z",
+      "demo": false,
+      "score": {
+        "home": 2,
+        "away": 2
+      },
+      "outcome": "draw",
+      "totalGoals": 4,
+      "bothScored": true,
+      "verdict": {
+        "outcome": "home",
+        "label": "Liverpool vence",
+        "probability": 0.5273,
+        "runnerUp": {
+          "label": "Empate",
+          "probability": 0.253
+        },
+        "strength": "ligeiro",
+        "likelyScore": "1-1",
+        "likelyScoreProb": 0.1186,
+        "confidence": 0.7,
+        "summary": "Liverpool vence e o resultado mais provavel, com 53%. Espera-se um jogo equilibrado em golos (3.0 no total)."
+      },
+      "verdictHit": false,
+      "lambdas": {
+        "home": 1.87,
+        "away": 1.15
+      },
+      "odds": {
+        "home": 1.49,
+        "away": 5.75,
+        "draw": 4.6
+      },
+      "modelProbs": {
+        "home": 0.5273,
+        "away": 0.2197,
+        "draw": 0.253
+      },
+      "over25": {
+        "odds": 1.67,
+        "modelProb": 0.5817,
+        "hit": true
+      },
+      "valueSelections": [
+        {
+          "label": "Nottingham Forest vence",
+          "odds": 5.75,
+          "modelProb": 0.2197,
+          "edge": 0.0676,
+          "market": "h2h",
+          "selection": "away",
+          "line": null
+        },
+        {
+          "label": "Empate",
+          "odds": 4.6,
+          "modelProb": 0.253,
+          "edge": 0.0509,
+          "market": "h2h",
+          "selection": "draw",
+          "line": null
+        }
+      ],
+      "settledAt": "2026-08-29T15:21:46.843Z"
+    },
     {
       "id": "ee9fff4355742c144679fdc75e5697a6",
       "league": "Liga Portugal",
@@ -16647,67 +16717,6 @@
           "edge": 0.0709,
           "market": "h2h",
           "selection": "draw",
-          "line": null
-        }
-      ],
-      "settledAt": "2026-08-15T15:29:23.500Z"
-    },
-    {
-      "id": "demo-estoril-santa-clara-2026-07-25",
-      "league": "Liga Portugal",
-      "home": "Estoril",
-      "away": "Santa Clara",
-      "kickoff": "2026-07-25T19:00:00.000Z",
-      "demo": true,
-      "score": {
-        "home": 0,
-        "away": 1
-      },
-      "outcome": "away",
-      "totalGoals": 1,
-      "bothScored": false,
-      "verdict": {
-        "outcome": "away",
-        "label": "Santa Clara vence",
-        "probability": 0.4022,
-        "runnerUp": {
-          "label": "Estoril vence",
-          "probability": 0.3307
-        },
-        "strength": "aberto",
-        "likelyScore": "1-1",
-        "likelyScoreProb": 0.123,
-        "confidence": 0.7,
-        "summary": "Jogo em aberto: nenhum resultado se destaca. Espera-se um jogo equilibrado em golos (3.1 no total)."
-      },
-      "verdictHit": true,
-      "lambdas": {
-        "home": 1.45,
-        "away": 1.62
-      },
-      "odds": {
-        "home": 2.16,
-        "draw": 3.65,
-        "away": 3.14
-      },
-      "modelProbs": {
-        "home": 0.3307,
-        "draw": 0.2671,
-        "away": 0.4022
-      },
-      "over25": {
-        "odds": 1.76,
-        "modelProb": 0.5933,
-        "hit": false
-      },
-      "valueSelections": [
-        {
-          "label": "Santa Clara vence",
-          "odds": 3.14,
-          "modelProb": 0.4022,
-          "edge": 0.0982,
-          "market": "h2h",
-          "selection": "away",
           "line": null
         }
       ],
