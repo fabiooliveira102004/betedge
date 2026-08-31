@@ -1,21 +1,21 @@
 {
-  "updatedAt": "2026-08-30T15:05:59.642Z",
+  "updatedAt": "2026-08-31T17:44:33.040Z",
   "count": 250,
   "accuracy": {
     "n": 250,
-    "hits": 117,
-    "rate": 0.468,
-    "homeBaseline": 0.424,
+    "hits": 120,
+    "rate": 0.48,
+    "homeBaseline": 0.428,
     "byStrength": {
       "claro": {
         "n": 41,
-        "hits": 24,
-        "rate": 0.5854
+        "hits": 25,
+        "rate": 0.6098
       },
       "ligeiro": {
         "n": 124,
-        "hits": 58,
-        "rate": 0.4677
+        "hits": 60,
+        "rate": 0.4839
       },
       "aberto": {
         "n": 85,
@@ -25,6 +25,766 @@
     }
   },
   "results": [
+    {
+      "id": "d5883be0e3fc62650d407259b9fa7c9b",
+      "league": "Liga Portugal",
+      "home": "Famalicão",
+      "away": "Gil Vicente",
+      "kickoff": "2026-08-30T19:30:00Z",
+      "demo": false,
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "outcome": "draw",
+      "totalGoals": 0,
+      "bothScored": false,
+      "verdict": {
+        "outcome": "away",
+        "label": "Gil Vicente vence",
+        "probability": 0.4398,
+        "runnerUp": {
+          "label": "Empate",
+          "probability": 0.2851
+        },
+        "strength": "ligeiro",
+        "likelyScore": "1-1",
+        "likelyScoreProb": 0.1362,
+        "confidence": 0.7,
+        "summary": "Gil Vicente vence e o resultado mais provavel, com 44%. Espera-se um jogo equilibrado em golos (2.7 no total)."
+      },
+      "verdictHit": false,
+      "lambdas": {
+        "home": 1.17,
+        "away": 1.53
+      },
+      "odds": {
+        "home": 1.98,
+        "away": 3.83,
+        "draw": 3.17
+      },
+      "modelProbs": {
+        "home": 0.2751,
+        "away": 0.4398,
+        "draw": 0.2851
+      },
+      "over25": {
+        "odds": 2.4,
+        "modelProb": 0.5046,
+        "hit": false
+      },
+      "valueSelections": [
+        {
+          "label": "Gil Vicente vence",
+          "odds": 3.83,
+          "modelProb": 0.4398,
+          "edge": 0.1971,
+          "market": "h2h",
+          "selection": "away",
+          "line": null
+        },
+        {
+          "label": "Mais de 2.5 golos",
+          "odds": 2.4,
+          "modelProb": 0.5046,
+          "edge": 0.093,
+          "market": "totals",
+          "selection": "over",
+          "line": 2.5
+        }
+      ],
+      "settledAt": "2026-08-31T17:44:33.941Z"
+    },
+    {
+      "id": "41d50199bc21a00a53f3e0bd2a149ff2",
+      "league": "La Liga",
+      "home": "Celta Vigo",
+      "away": "Athletic Bilbao",
+      "kickoff": "2026-08-30T19:30:00Z",
+      "demo": false,
+      "score": {
+        "home": 0,
+        "away": 2
+      },
+      "outcome": "away",
+      "totalGoals": 2,
+      "bothScored": false,
+      "verdict": {
+        "outcome": "home",
+        "label": "Celta Vigo vence",
+        "probability": 0.3963,
+        "runnerUp": {
+          "label": "Athletic Bilbao vence",
+          "probability": 0.3058
+        },
+        "strength": "aberto",
+        "likelyScore": "1-1",
+        "likelyScoreProb": 0.1425,
+        "confidence": 0.7,
+        "summary": "Jogo em aberto: nenhum resultado se destaca. Espera-se um jogo equilibrado em golos (2.6 no total)."
+      },
+      "verdictHit": false,
+      "lambdas": {
+        "home": 1.37,
+        "away": 1.18
+      },
+      "odds": {
+        "away": 2.65,
+        "home": 2.78,
+        "draw": 3.18
+      },
+      "modelProbs": {
+        "away": 0.3058,
+        "home": 0.3963,
+        "draw": 0.2979
+      },
+      "over25": {
+        "odds": 2.28,
+        "modelProb": 0.4702,
+        "hit": false
+      },
+      "valueSelections": [
+        {
+          "label": "Celta Vigo vence",
+          "odds": 2.78,
+          "modelProb": 0.3963,
+          "edge": 0.0483,
+          "market": "h2h",
+          "selection": "home",
+          "line": null
+        }
+      ],
+      "settledAt": "2026-08-31T17:44:33.941Z"
+    },
+    {
+      "id": "3e8cb1ccc68725b086d8e0af6bbc72ce",
+      "league": "Serie A",
+      "home": "Cagliari",
+      "away": "Inter Milan",
+      "kickoff": "2026-08-30T18:45:00Z",
+      "demo": false,
+      "score": {
+        "home": 0,
+        "away": 1
+      },
+      "outcome": "away",
+      "totalGoals": 1,
+      "bothScored": false,
+      "verdict": {
+        "outcome": "home",
+        "label": "Cagliari vence",
+        "probability": 0.3551,
+        "runnerUp": {
+          "label": "Inter Milan vence",
+          "probability": 0.352
+        },
+        "strength": "aberto",
+        "likelyScore": "1-1",
+        "likelyScoreProb": 0.14,
+        "confidence": 0.7,
+        "summary": "Jogo em aberto: nenhum resultado se destaca. Espera-se um jogo equilibrado em golos (2.7 no total)."
+      },
+      "verdictHit": false,
+      "lambdas": {
+        "home": 1.33,
+        "away": 1.32
+      },
+      "odds": {
+        "home": 8,
+        "away": 1.38,
+        "draw": 4.75
+      },
+      "modelProbs": {
+        "home": 0.3551,
+        "away": 0.352,
+        "draw": 0.2929
+      },
+      "over25": {
+        "odds": 1.84,
+        "modelProb": 0.4952,
+        "hit": false
+      },
+      "valueSelections": [
+        {
+          "label": "Cagliari vence",
+          "odds": 8,
+          "modelProb": 0.3551,
+          "edge": 0.2439,
+          "market": "h2h",
+          "selection": "home",
+          "line": null
+        },
+        {
+          "label": "Empate",
+          "odds": 4.75,
+          "modelProb": 0.2929,
+          "edge": 0.0974,
+          "market": "h2h",
+          "selection": "draw",
+          "line": null
+        },
+        {
+          "label": "Menos de 2.5 golos",
+          "odds": 2.14,
+          "modelProb": 0.5048,
+          "edge": 0.0416,
+          "market": "totals",
+          "selection": "under",
+          "line": 2.5
+        }
+      ],
+      "settledAt": "2026-08-31T17:44:33.941Z"
+    },
+    {
+      "id": "b920af3ced7e753c821036f7282edb55",
+      "league": "Serie A",
+      "home": "Lazio",
+      "away": "Genoa",
+      "kickoff": "2026-08-30T18:45:00Z",
+      "demo": false,
+      "score": {
+        "home": 1,
+        "away": 0
+      },
+      "outcome": "home",
+      "totalGoals": 1,
+      "bothScored": false,
+      "verdict": {
+        "outcome": "home",
+        "label": "Lazio vence",
+        "probability": 0.4425,
+        "runnerUp": {
+          "label": "Empate",
+          "probability": 0.3086
+        },
+        "strength": "ligeiro",
+        "likelyScore": "1-1",
+        "likelyScoreProb": 0.1451,
+        "confidence": 0.7,
+        "summary": "Lazio vence e o resultado mais provavel, com 44%. Espera-se um jogo equilibrado em golos (2.3 no total)."
+      },
+      "verdictHit": true,
+      "lambdas": {
+        "home": 1.36,
+        "away": 0.96
+      },
+      "odds": {
+        "away": 3.58,
+        "home": 2.33,
+        "draw": 2.95
+      },
+      "modelProbs": {
+        "away": 0.2489,
+        "home": 0.4425,
+        "draw": 0.3086
+      },
+      "over25": {
+        "odds": 2.63,
+        "modelProb": 0.409,
+        "hit": false
+      },
+      "valueSelections": [],
+      "settledAt": "2026-08-31T17:44:33.941Z"
+    },
+    {
+      "id": "7c2ad8552e286ff88f69ce39ca49541a",
+      "league": "Ligue 1",
+      "home": "AS Monaco",
+      "away": "Marseille",
+      "kickoff": "2026-08-30T18:45:00Z",
+      "demo": false,
+      "score": {
+        "home": 2,
+        "away": 0
+      },
+      "outcome": "home",
+      "totalGoals": 2,
+      "bothScored": false,
+      "verdict": {
+        "outcome": "away",
+        "label": "Marseille vence",
+        "probability": 0.3656,
+        "runnerUp": {
+          "label": "AS Monaco vence",
+          "probability": 0.3477
+        },
+        "strength": "aberto",
+        "likelyScore": "1-1",
+        "likelyScoreProb": 0.1365,
+        "confidence": 0.7,
+        "summary": "Jogo em aberto: nenhum resultado se destaca. Espera-se um jogo equilibrado em golos (2.8 no total)."
+      },
+      "verdictHit": false,
+      "lambdas": {
+        "home": 1.36,
+        "away": 1.39
+      },
+      "odds": {
+        "home": 2.2,
+        "away": 3.1,
+        "draw": 3.68
+      },
+      "modelProbs": {
+        "home": 0.3477,
+        "away": 0.3656,
+        "draw": 0.2868
+      },
+      "over25": {
+        "odds": 1.65,
+        "modelProb": 0.5187,
+        "hit": false
+      },
+      "valueSelections": [
+        {
+          "label": "Marseille vence",
+          "odds": 3.1,
+          "modelProb": 0.3656,
+          "edge": 0.0604,
+          "market": "h2h",
+          "selection": "away",
+          "line": null
+        },
+        {
+          "label": "Menos de 2.5 golos",
+          "odds": 2.44,
+          "modelProb": 0.4813,
+          "edge": 0.0813,
+          "market": "totals",
+          "selection": "under",
+          "line": 2.5
+        },
+        {
+          "label": "Menos de 3.5 golos",
+          "odds": 1.61,
+          "modelProb": 0.7029,
+          "edge": 0.0999,
+          "market": "totals",
+          "selection": "under",
+          "line": 3.5
+        }
+      ],
+      "settledAt": "2026-08-31T17:44:33.941Z"
+    },
+    {
+      "id": "ac00a0f9198e9e6446608a79b6a310af",
+      "league": "La Liga",
+      "home": "Deportivo La Coruña",
+      "away": "Valencia",
+      "kickoff": "2026-08-30T17:30:00Z",
+      "demo": false,
+      "score": {
+        "home": 3,
+        "away": 1
+      },
+      "outcome": "home",
+      "totalGoals": 4,
+      "bothScored": true,
+      "verdict": {
+        "outcome": "home",
+        "label": "Deportivo La Coruña vence",
+        "probability": 0.399,
+        "runnerUp": {
+          "label": "Empate",
+          "probability": 0.3365
+        },
+        "strength": "aberto",
+        "likelyScore": "1-1",
+        "likelyScoreProb": 0.1504,
+        "confidence": 0.7,
+        "summary": "Jogo em aberto: nenhum resultado se destaca. Espera-se um jogo fechado (2.0 no total)."
+      },
+      "verdictHit": true,
+      "lambdas": {
+        "home": 1.15,
+        "away": 0.89
+      },
+      "odds": {
+        "home": 2.6,
+        "away": 3.1,
+        "draw": 2.93
+      },
+      "modelProbs": {
+        "home": 0.399,
+        "away": 0.2645,
+        "draw": 0.3365
+      },
+      "over25": {
+        "odds": 2.58,
+        "modelProb": 0.3324,
+        "hit": true
+      },
+      "valueSelections": [
+        {
+          "label": "Menos de 2.5 golos",
+          "odds": 1.61,
+          "modelProb": 0.6676,
+          "edge": 0.0554,
+          "market": "totals",
+          "selection": "under",
+          "line": 2.5
+        }
+      ],
+      "settledAt": "2026-08-31T17:44:33.941Z"
+    },
+    {
+      "id": "456e871d1fe9110c581ba86856ea6cd7",
+      "league": "Liga Portugal",
+      "home": "Casa Pia",
+      "away": "Moreirense FC",
+      "kickoff": "2026-08-30T17:00:00Z",
+      "demo": false,
+      "score": {
+        "home": 0,
+        "away": 1
+      },
+      "outcome": "away",
+      "totalGoals": 1,
+      "bothScored": false,
+      "verdict": {
+        "outcome": "away",
+        "label": "Moreirense FC vence",
+        "probability": 0.4818,
+        "runnerUp": {
+          "label": "Casa Pia vence",
+          "probability": 0.2792
+        },
+        "strength": "ligeiro",
+        "likelyScore": "1-1",
+        "likelyScoreProb": 0.1015,
+        "confidence": 0.7,
+        "summary": "Moreirense FC vence e o resultado mais provavel, com 48%. Espera-se um jogo com golos (3.5 no total)."
+      },
+      "verdictHit": true,
+      "lambdas": {
+        "home": 1.51,
+        "away": 2.01
+      },
+      "odds": {
+        "home": 2.73,
+        "away": 2.57,
+        "draw": 3.07
+      },
+      "modelProbs": {
+        "home": 0.2792,
+        "away": 0.4818,
+        "draw": 0.2389
+      },
+      "over25": {
+        "odds": 2.56,
+        "modelProb": 0.6827,
+        "hit": false
+      },
+      "valueSelections": [
+        {
+          "label": "Moreirense FC vence",
+          "odds": 2.57,
+          "modelProb": 0.4818,
+          "edge": 0.1328,
+          "market": "h2h",
+          "selection": "away",
+          "line": null
+        },
+        {
+          "label": "Mais de 2.5 golos",
+          "odds": 2.56,
+          "modelProb": 0.6827,
+          "edge": 0.2877,
+          "market": "totals",
+          "selection": "over",
+          "line": 2.5
+        }
+      ],
+      "settledAt": "2026-08-31T17:44:33.941Z"
+    },
+    {
+      "id": "c57fd532ff733bb6face677a55f41f09",
+      "league": "Serie A",
+      "home": "Napoli",
+      "away": "Como",
+      "kickoff": "2026-08-30T16:30:00Z",
+      "demo": false,
+      "score": {
+        "home": 1,
+        "away": 2
+      },
+      "outcome": "away",
+      "totalGoals": 3,
+      "bothScored": true,
+      "verdict": {
+        "outcome": "home",
+        "label": "Napoli vence",
+        "probability": 0.4227,
+        "runnerUp": {
+          "label": "Empate",
+          "probability": 0.3032
+        },
+        "strength": "ligeiro",
+        "likelyScore": "1-1",
+        "likelyScoreProb": 0.1443,
+        "confidence": 0.7,
+        "summary": "Napoli vence e o resultado mais provavel, com 42%. Espera-se um jogo equilibrado em golos (2.4 no total)."
+      },
+      "verdictHit": false,
+      "lambdas": {
+        "home": 1.37,
+        "away": 1.06
+      },
+      "odds": {
+        "away": 3.15,
+        "home": 2.53,
+        "draw": 2.98
+      },
+      "modelProbs": {
+        "away": 0.2741,
+        "home": 0.4227,
+        "draw": 0.3032
+      },
+      "over25": {
+        "odds": 2.33,
+        "modelProb": 0.4403,
+        "hit": true
+      },
+      "valueSelections": [
+        {
+          "label": "Napoli vence",
+          "odds": 2.53,
+          "modelProb": 0.4227,
+          "edge": 0.0422,
+          "market": "h2h",
+          "selection": "home",
+          "line": null
+        }
+      ],
+      "settledAt": "2026-08-31T17:44:33.941Z"
+    },
+    {
+      "id": "5759167055d94ba38e145ab92188abbf",
+      "league": "Premier League",
+      "home": "Manchester United",
+      "away": "Ipswich Town",
+      "kickoff": "2026-08-30T15:30:00Z",
+      "demo": false,
+      "score": {
+        "home": 5,
+        "away": 2
+      },
+      "outcome": "home",
+      "totalGoals": 7,
+      "bothScored": true,
+      "verdict": {
+        "outcome": "home",
+        "label": "Manchester United vence",
+        "probability": 0.4054,
+        "runnerUp": {
+          "label": "Ipswich Town vence",
+          "probability": 0.319
+        },
+        "strength": "aberto",
+        "likelyScore": "1-1",
+        "likelyScoreProb": 0.1295,
+        "confidence": 0.7,
+        "summary": "Jogo em aberto: nenhum resultado se destaca. Espera-se um jogo equilibrado em golos (2.9 no total)."
+      },
+      "verdictHit": true,
+      "lambdas": {
+        "home": 1.55,
+        "away": 1.36
+      },
+      "odds": {
+        "away": 8,
+        "home": 1.32,
+        "draw": 5.5
+      },
+      "modelProbs": {
+        "away": 0.319,
+        "home": 0.4054,
+        "draw": 0.2755
+      },
+      "over25": {
+        "odds": 1.46,
+        "modelProb": 0.5575,
+        "hit": true
+      },
+      "valueSelections": [
+        {
+          "label": "Ipswich Town vence",
+          "odds": 8,
+          "modelProb": 0.319,
+          "edge": 0.2109,
+          "market": "h2h",
+          "selection": "away",
+          "line": null
+        },
+        {
+          "label": "Empate",
+          "odds": 5.5,
+          "modelProb": 0.2755,
+          "edge": 0.102,
+          "market": "h2h",
+          "selection": "draw",
+          "line": null
+        },
+        {
+          "label": "Menos de 2.5 golos",
+          "odds": 2.78,
+          "modelProb": 0.4425,
+          "edge": 0.1045,
+          "market": "totals",
+          "selection": "under",
+          "line": 2.5
+        },
+        {
+          "label": "Menos de 3.5 golos",
+          "odds": 1.74,
+          "modelProb": 0.6663,
+          "edge": 0.0976,
+          "market": "totals",
+          "selection": "under",
+          "line": 3.5
+        }
+      ],
+      "settledAt": "2026-08-31T17:44:33.941Z"
+    },
+    {
+      "id": "78ab183499784117d62a40821294d9fa",
+      "league": "Bundesliga",
+      "home": "Augsburg",
+      "away": "FC Schalke 04",
+      "kickoff": "2026-08-30T15:30:00Z",
+      "demo": false,
+      "score": {
+        "home": 3,
+        "away": 0
+      },
+      "outcome": "home",
+      "totalGoals": 3,
+      "bothScored": false,
+      "verdict": {
+        "outcome": "home",
+        "label": "Augsburg vence",
+        "probability": 0.663,
+        "runnerUp": {
+          "label": "Empate",
+          "probability": 0.2595
+        },
+        "strength": "claro",
+        "likelyScore": "1-0",
+        "likelyScoreProb": 0.2052,
+        "confidence": 0.7,
+        "summary": "Augsburg vence e o resultado mais provavel, com 66%. Espera-se um jogo fechado (2.0 no total)."
+      },
+      "verdictHit": true,
+      "lambdas": {
+        "home": 1.6,
+        "away": 0.4
+      },
+      "odds": {
+        "home": 2.23,
+        "away": 3.05,
+        "draw": 3.53
+      },
+      "modelProbs": {
+        "home": 0.663,
+        "away": 0.0775,
+        "draw": 0.2595
+      },
+      "over25": {
+        "odds": 1.79,
+        "modelProb": 0.3233,
+        "hit": true
+      },
+      "valueSelections": [
+        {
+          "label": "Augsburg vence",
+          "odds": 2.23,
+          "modelProb": 0.663,
+          "edge": 0.2367,
+          "market": "h2h",
+          "selection": "home",
+          "line": null
+        },
+        {
+          "label": "Menos de 2.5 golos",
+          "odds": 2.19,
+          "modelProb": 0.6767,
+          "edge": 0.2293,
+          "market": "totals",
+          "selection": "under",
+          "line": 2.5
+        }
+      ],
+      "settledAt": "2026-08-31T17:44:33.941Z"
+    },
+    {
+      "id": "744192fed865ae616fd27a1dc5392c1c",
+      "league": "Ligue 1",
+      "home": "Rennes",
+      "away": "Le Mans FC",
+      "kickoff": "2026-08-30T15:15:00Z",
+      "demo": false,
+      "score": {
+        "home": 3,
+        "away": 2
+      },
+      "outcome": "home",
+      "totalGoals": 5,
+      "bothScored": true,
+      "verdict": {
+        "outcome": "home",
+        "label": "Rennes vence",
+        "probability": 0.4092,
+        "runnerUp": {
+          "label": "Le Mans FC vence",
+          "probability": 0.3328
+        },
+        "strength": "aberto",
+        "likelyScore": "1-1",
+        "likelyScoreProb": 0.1155,
+        "confidence": 0.7,
+        "summary": "Jogo em aberto: nenhum resultado se destaca. Espera-se um jogo com golos (3.2 no total)."
+      },
+      "verdictHit": true,
+      "lambdas": {
+        "home": 1.71,
+        "away": 1.53
+      },
+      "odds": {
+        "away": 7,
+        "home": 1.36,
+        "draw": 5.25
+      },
+      "modelProbs": {
+        "away": 0.3328,
+        "home": 0.4092,
+        "draw": 0.258
+      },
+      "over25": {
+        "odds": 1.55,
+        "modelProb": 0.6296,
+        "hit": true
+      },
+      "valueSelections": [
+        {
+          "label": "Le Mans FC vence",
+          "odds": 7,
+          "modelProb": 0.3328,
+          "edge": 0.2137,
+          "market": "h2h",
+          "selection": "away",
+          "line": null
+        },
+        {
+          "label": "Empate",
+          "odds": 5.25,
+          "modelProb": 0.258,
+          "edge": 0.0801,
+          "market": "h2h",
+          "selection": "draw",
+          "line": null
+        }
+      ],
+      "settledAt": "2026-08-31T17:44:33.941Z"
+    },
     {
       "id": "e479c08421b8549c6959c2b84f6f3f79",
       "league": "Premier League",
@@ -15891,748 +16651,6 @@
           "odds": 3.61,
           "modelProb": 0.2817,
           "edge": 0.0407,
-          "market": "h2h",
-          "selection": "draw",
-          "line": null
-        }
-      ],
-      "settledAt": "2026-08-15T15:29:23.500Z"
-    },
-    {
-      "id": "demo-west-ham-liverpool-2026-07-28",
-      "league": "Premier League",
-      "home": "West Ham",
-      "away": "Liverpool",
-      "kickoff": "2026-07-28T18:30:00.000Z",
-      "demo": true,
-      "score": {
-        "home": 1,
-        "away": 1
-      },
-      "outcome": "draw",
-      "totalGoals": 2,
-      "bothScored": true,
-      "verdict": {
-        "outcome": "away",
-        "label": "Liverpool vence",
-        "probability": 0.4169,
-        "runnerUp": {
-          "label": "Empate",
-          "probability": 0.3314
-        },
-        "strength": "aberto",
-        "likelyScore": "1-1",
-        "likelyScoreProb": 0.1491,
-        "confidence": 0.7,
-        "summary": "Jogo em aberto: nenhum resultado se destaca. Espera-se um jogo fechado (2.1 no total)."
-      },
-      "verdictHit": false,
-      "lambdas": {
-        "home": 0.87,
-        "away": 1.19
-      },
-      "odds": {
-        "home": 3.73,
-        "draw": 4.04,
-        "away": 1.96
-      },
-      "modelProbs": {
-        "home": 0.2517,
-        "draw": 0.3314,
-        "away": 0.4169
-      },
-      "over25": {
-        "odds": 1.79,
-        "modelProb": 0.3416,
-        "hit": false
-      },
-      "valueSelections": [
-        {
-          "label": "Empate",
-          "odds": 4.04,
-          "modelProb": 0.3314,
-          "edge": 0.0839,
-          "market": "h2h",
-          "selection": "draw",
-          "line": null
-        },
-        {
-          "label": "Menos de 2.5 golos",
-          "odds": 2.13,
-          "modelProb": 0.6584,
-          "edge": 0.2086,
-          "market": "totals",
-          "selection": "under",
-          "line": 2.5
-        }
-      ],
-      "settledAt": "2026-08-15T15:29:23.500Z"
-    },
-    {
-      "id": "demo-moreirense-santa-clara-2026-07-28",
-      "league": "Liga Portugal",
-      "home": "Moreirense",
-      "away": "Santa Clara",
-      "kickoff": "2026-07-28T18:00:00.000Z",
-      "demo": true,
-      "score": {
-        "home": 2,
-        "away": 1
-      },
-      "outcome": "home",
-      "totalGoals": 3,
-      "bothScored": true,
-      "verdict": {
-        "outcome": "away",
-        "label": "Santa Clara vence",
-        "probability": 0.4564,
-        "runnerUp": {
-          "label": "Empate",
-          "probability": 0.314
-        },
-        "strength": "ligeiro",
-        "likelyScore": "1-1",
-        "likelyScoreProb": 0.1449,
-        "confidence": 0.7,
-        "summary": "Santa Clara vence e o resultado mais provavel, com 46%. Espera-se um jogo equilibrado em golos (2.2 no total)."
-      },
-      "verdictHit": false,
-      "lambdas": {
-        "home": 0.88,
-        "away": 1.33
-      },
-      "odds": {
-        "home": 2.07,
-        "draw": 3.64,
-        "away": 3.47
-      },
-      "modelProbs": {
-        "home": 0.2296,
-        "draw": 0.314,
-        "away": 0.4564
-      },
-      "over25": {
-        "odds": 1.79,
-        "modelProb": 0.3799,
-        "hit": true
-      },
-      "valueSelections": [
-        {
-          "label": "Empate",
-          "odds": 3.64,
-          "modelProb": 0.314,
-          "edge": 0.0914,
-          "market": "h2h",
-          "selection": "draw",
-          "line": null
-        },
-        {
-          "label": "Santa Clara vence",
-          "odds": 3.47,
-          "modelProb": 0.4564,
-          "edge": 0.177,
-          "market": "h2h",
-          "selection": "away",
-          "line": null
-        },
-        {
-          "label": "Menos de 2.5 golos",
-          "odds": 2.23,
-          "modelProb": 0.6201,
-          "edge": 0.1595,
-          "market": "totals",
-          "selection": "under",
-          "line": 2.5
-        }
-      ],
-      "settledAt": "2026-08-15T15:29:23.500Z"
-    },
-    {
-      "id": "demo-chelsea-aston-villa-2026-07-27",
-      "league": "Premier League",
-      "home": "Chelsea",
-      "away": "Aston Villa",
-      "kickoff": "2026-07-27T20:30:00.000Z",
-      "demo": true,
-      "score": {
-        "home": 1,
-        "away": 1
-      },
-      "outcome": "draw",
-      "totalGoals": 2,
-      "bothScored": true,
-      "verdict": {
-        "outcome": "home",
-        "label": "Chelsea vence",
-        "probability": 0.4127,
-        "runnerUp": {
-          "label": "Empate",
-          "probability": 0.2992
-        },
-        "strength": "ligeiro",
-        "likelyScore": "1-1",
-        "likelyScoreProb": 0.1429,
-        "confidence": 0.7,
-        "summary": "Chelsea vence e o resultado mais provavel, com 41%. Espera-se um jogo equilibrado em golos (2.5 no total)."
-      },
-      "verdictHit": false,
-      "lambdas": {
-        "home": 1.39,
-        "away": 1.13
-      },
-      "odds": {
-        "home": 2.13,
-        "draw": 4.06,
-        "away": 3.09
-      },
-      "modelProbs": {
-        "home": 0.4127,
-        "draw": 0.2992,
-        "away": 0.2881
-      },
-      "over25": {
-        "odds": 1.88,
-        "modelProb": 0.4597,
-        "hit": false
-      },
-      "valueSelections": [
-        {
-          "label": "Empate",
-          "odds": 4.06,
-          "modelProb": 0.2992,
-          "edge": 0.0517,
-          "market": "h2h",
-          "selection": "draw",
-          "line": null
-        },
-        {
-          "label": "Menos de 2.5 golos",
-          "odds": 2,
-          "modelProb": 0.5403,
-          "edge": 0.0881,
-          "market": "totals",
-          "selection": "under",
-          "line": 2.5
-        }
-      ],
-      "settledAt": "2026-08-15T15:29:23.500Z"
-    },
-    {
-      "id": "demo-newcastle-everton-2026-07-27",
-      "league": "Premier League",
-      "home": "Newcastle",
-      "away": "Everton",
-      "kickoff": "2026-07-27T20:30:00.000Z",
-      "demo": true,
-      "score": {
-        "home": 0,
-        "away": 2
-      },
-      "outcome": "away",
-      "totalGoals": 2,
-      "bothScored": false,
-      "verdict": {
-        "outcome": "home",
-        "label": "Newcastle vence",
-        "probability": 0.4963,
-        "runnerUp": {
-          "label": "Empate",
-          "probability": 0.2639
-        },
-        "strength": "ligeiro",
-        "likelyScore": "1-1",
-        "likelyScoreProb": 0.1246,
-        "confidence": 0.7,
-        "summary": "Newcastle vence e o resultado mais provavel, com 50%. Espera-se um jogo equilibrado em golos (2.9 no total)."
-      },
-      "verdictHit": false,
-      "lambdas": {
-        "home": 1.75,
-        "away": 1.17
-      },
-      "odds": {
-        "home": 1.81,
-        "draw": 4.31,
-        "away": 4.48
-      },
-      "modelProbs": {
-        "home": 0.4963,
-        "draw": 0.2639,
-        "away": 0.2398
-      },
-      "over25": {
-        "odds": 1.76,
-        "modelProb": 0.5595,
-        "hit": false
-      },
-      "valueSelections": [
-        {
-          "label": "Empate",
-          "odds": 4.31,
-          "modelProb": 0.2639,
-          "edge": 0.0537,
-          "market": "h2h",
-          "selection": "draw",
-          "line": null
-        }
-      ],
-      "settledAt": "2026-08-15T15:29:23.500Z"
-    },
-    {
-      "id": "demo-benfica-moreirense-2026-07-27",
-      "league": "Liga Portugal",
-      "home": "Benfica",
-      "away": "Moreirense",
-      "kickoff": "2026-07-27T20:00:00.000Z",
-      "demo": true,
-      "score": {
-        "home": 2,
-        "away": 2
-      },
-      "outcome": "draw",
-      "totalGoals": 4,
-      "bothScored": true,
-      "verdict": {
-        "outcome": "home",
-        "label": "Benfica vence",
-        "probability": 0.6557,
-        "runnerUp": {
-          "label": "Empate",
-          "probability": 0.2157
-        },
-        "strength": "claro",
-        "likelyScore": "2-0",
-        "likelyScoreProb": 0.112,
-        "confidence": 0.7,
-        "summary": "Benfica vence e o resultado mais provavel, com 66%. Espera-se um jogo equilibrado em golos (3.0 no total)."
-      },
-      "verdictHit": false,
-      "lambdas": {
-        "home": 2.16,
-        "away": 0.88
-      },
-      "odds": {
-        "home": 1.54,
-        "draw": 4.27,
-        "away": 5.74
-      },
-      "modelProbs": {
-        "home": 0.6557,
-        "draw": 0.2157,
-        "away": 0.1285
-      },
-      "over25": {
-        "odds": 1.83,
-        "modelProb": 0.5849,
-        "hit": true
-      },
-      "valueSelections": [],
-      "settledAt": "2026-08-15T15:29:23.500Z"
-    },
-    {
-      "id": "demo-arouca-estoril-2026-07-27",
-      "league": "Liga Portugal",
-      "home": "Arouca",
-      "away": "Estoril",
-      "kickoff": "2026-07-27T18:30:00.000Z",
-      "demo": true,
-      "score": {
-        "home": 1,
-        "away": 1
-      },
-      "outcome": "draw",
-      "totalGoals": 2,
-      "bothScored": true,
-      "verdict": {
-        "outcome": "home",
-        "label": "Arouca vence",
-        "probability": 0.4407,
-        "runnerUp": {
-          "label": "Empate",
-          "probability": 0.2861
-        },
-        "strength": "ligeiro",
-        "likelyScore": "1-1",
-        "likelyScoreProb": 0.1367,
-        "confidence": 0.7,
-        "summary": "Arouca vence e o resultado mais provavel, com 44%. Espera-se um jogo equilibrado em golos (2.7 no total)."
-      },
-      "verdictHit": false,
-      "lambdas": {
-        "home": 1.52,
-        "away": 1.15
-      },
-      "odds": {
-        "home": 2.44,
-        "draw": 3.69,
-        "away": 2.67
-      },
-      "modelProbs": {
-        "home": 0.4407,
-        "draw": 0.2861,
-        "away": 0.2732
-      },
-      "over25": {
-        "odds": 1.76,
-        "modelProb": 0.5,
-        "hit": false
-      },
-      "valueSelections": [
-        {
-          "label": "Empate",
-          "odds": 3.69,
-          "modelProb": 0.2861,
-          "edge": 0.049,
-          "market": "h2h",
-          "selection": "draw",
-          "line": null
-        },
-        {
-          "label": "Menos de 2.5 golos",
-          "odds": 2.13,
-          "modelProb": 0.5,
-          "edge": 0.0426,
-          "market": "totals",
-          "selection": "under",
-          "line": 2.5
-        }
-      ],
-      "settledAt": "2026-08-15T15:29:23.500Z"
-    },
-    {
-      "id": "demo-real-sociedad-atletico-madrid-2026-07-27",
-      "league": "La Liga",
-      "home": "Real Sociedad",
-      "away": "Atletico Madrid",
-      "kickoff": "2026-07-27T18:30:00.000Z",
-      "demo": true,
-      "score": {
-        "home": 2,
-        "away": 1
-      },
-      "outcome": "home",
-      "totalGoals": 3,
-      "bothScored": true,
-      "verdict": {
-        "outcome": "home",
-        "label": "Real Sociedad vence",
-        "probability": 0.3801,
-        "runnerUp": {
-          "label": "Atletico Madrid vence",
-          "probability": 0.3205
-        },
-        "strength": "aberto",
-        "likelyScore": "1-1",
-        "likelyScoreProb": 0.1431,
-        "confidence": 0.7,
-        "summary": "Jogo em aberto: nenhum resultado se destaca. Espera-se um jogo equilibrado em golos (2.5 no total)."
-      },
-      "verdictHit": true,
-      "lambdas": {
-        "home": 1.34,
-        "away": 1.21
-      },
-      "odds": {
-        "home": 2.76,
-        "draw": 3.67,
-        "away": 2.4
-      },
-      "modelProbs": {
-        "home": 0.3801,
-        "draw": 0.2993,
-        "away": 0.3205
-      },
-      "over25": {
-        "odds": 1.83,
-        "modelProb": 0.4685,
-        "hit": true
-      },
-      "valueSelections": [
-        {
-          "label": "Real Sociedad vence",
-          "odds": 2.76,
-          "modelProb": 0.3801,
-          "edge": 0.0491,
-          "market": "h2h",
-          "selection": "home",
-          "line": null
-        },
-        {
-          "label": "Empate",
-          "odds": 3.67,
-          "modelProb": 0.2993,
-          "edge": 0.0522,
-          "market": "h2h",
-          "selection": "draw",
-          "line": null
-        },
-        {
-          "label": "Menos de 2.5 golos",
-          "odds": 2.1,
-          "modelProb": 0.5315,
-          "edge": 0.0966,
-          "market": "totals",
-          "selection": "under",
-          "line": 2.5
-        }
-      ],
-      "settledAt": "2026-08-15T15:29:23.500Z"
-    },
-    {
-      "id": "demo-sevilla-athletic-club-2026-07-27",
-      "league": "La Liga",
-      "home": "Sevilla",
-      "away": "Athletic Club",
-      "kickoff": "2026-07-27T18:30:00.000Z",
-      "demo": true,
-      "score": {
-        "home": 1,
-        "away": 0
-      },
-      "outcome": "home",
-      "totalGoals": 1,
-      "bothScored": false,
-      "verdict": {
-        "outcome": "home",
-        "label": "Sevilla vence",
-        "probability": 0.3687,
-        "runnerUp": {
-          "label": "Athletic Club vence",
-          "probability": 0.3559
-        },
-        "strength": "aberto",
-        "likelyScore": "1-1",
-        "likelyScoreProb": 0.129,
-        "confidence": 0.7,
-        "summary": "Jogo em aberto: nenhum resultado se destaca. Espera-se um jogo equilibrado em golos (2.9 no total)."
-      },
-      "verdictHit": true,
-      "lambdas": {
-        "home": 1.49,
-        "away": 1.46
-      },
-      "odds": {
-        "home": 2.68,
-        "draw": 3.64,
-        "away": 2.17
-      },
-      "modelProbs": {
-        "home": 0.3687,
-        "draw": 0.2754,
-        "away": 0.3559
-      },
-      "over25": {
-        "odds": 1.75,
-        "modelProb": 0.5637,
-        "hit": false
-      },
-      "valueSelections": [
-        {
-          "label": "Mais de 2.5 golos",
-          "odds": 1.75,
-          "modelProb": 0.5637,
-          "edge": 0.0405,
-          "market": "totals",
-          "selection": "over",
-          "line": 2.5
-        }
-      ],
-      "settledAt": "2026-08-15T15:29:23.500Z"
-    },
-    {
-      "id": "demo-real-betis-barcelona-2026-07-27",
-      "league": "La Liga",
-      "home": "Real Betis",
-      "away": "Barcelona",
-      "kickoff": "2026-07-27T18:00:00.000Z",
-      "demo": true,
-      "score": {
-        "home": 2,
-        "away": 2
-      },
-      "outcome": "draw",
-      "totalGoals": 4,
-      "bothScored": true,
-      "verdict": {
-        "outcome": "home",
-        "label": "Real Betis vence",
-        "probability": 0.4179,
-        "runnerUp": {
-          "label": "Barcelona vence",
-          "probability": 0.3233
-        },
-        "strength": "aberto",
-        "likelyScore": "1-1",
-        "likelyScoreProb": 0.1165,
-        "confidence": 0.7,
-        "summary": "Jogo em aberto: nenhum resultado se destaca. Espera-se um jogo com golos (3.2 no total)."
-      },
-      "verdictHit": false,
-      "lambdas": {
-        "home": 1.72,
-        "away": 1.5
-      },
-      "odds": {
-        "home": 3.67,
-        "draw": 3.71,
-        "away": 1.82
-      },
-      "modelProbs": {
-        "home": 0.4179,
-        "draw": 0.2588,
-        "away": 0.3233
-      },
-      "over25": {
-        "odds": 1.72,
-        "modelProb": 0.6241,
-        "hit": true
-      },
-      "valueSelections": [
-        {
-          "label": "Real Betis vence",
-          "odds": 3.67,
-          "modelProb": 0.4179,
-          "edge": 0.138,
-          "market": "h2h",
-          "selection": "home",
-          "line": null
-        },
-        {
-          "label": "Mais de 2.5 golos",
-          "odds": 1.72,
-          "modelProb": 0.6241,
-          "edge": 0.0822,
-          "market": "totals",
-          "selection": "over",
-          "line": 2.5
-        }
-      ],
-      "settledAt": "2026-08-15T15:29:23.500Z"
-    },
-    {
-      "id": "demo-real-madrid-barcelona-2026-07-27",
-      "league": "La Liga",
-      "home": "Real Madrid",
-      "away": "Barcelona",
-      "kickoff": "2026-07-27T18:00:00.000Z",
-      "demo": true,
-      "score": {
-        "home": 3,
-        "away": 2
-      },
-      "outcome": "home",
-      "totalGoals": 5,
-      "bothScored": true,
-      "verdict": {
-        "outcome": "home",
-        "label": "Real Madrid vence",
-        "probability": 0.3859,
-        "runnerUp": {
-          "label": "Empate",
-          "probability": 0.3101
-        },
-        "strength": "aberto",
-        "likelyScore": "1-1",
-        "likelyScoreProb": 0.1472,
-        "confidence": 0.7,
-        "summary": "Jogo em aberto: nenhum resultado se destaca. Espera-se um jogo equilibrado em golos (2.4 no total)."
-      },
-      "verdictHit": true,
-      "lambdas": {
-        "home": 1.28,
-        "away": 1.11
-      },
-      "odds": {
-        "home": 2.2,
-        "draw": 3.84,
-        "away": 2.98
-      },
-      "modelProbs": {
-        "home": 0.3859,
-        "draw": 0.3101,
-        "away": 0.3041
-      },
-      "over25": {
-        "odds": 1.69,
-        "modelProb": 0.4272,
-        "hit": true
-      },
-      "valueSelections": [
-        {
-          "label": "Empate",
-          "odds": 3.84,
-          "modelProb": 0.3101,
-          "edge": 0.0448,
-          "market": "h2h",
-          "selection": "draw",
-          "line": null
-        },
-        {
-          "label": "Menos de 2.5 golos",
-          "odds": 1.98,
-          "modelProb": 0.5728,
-          "edge": 0.0862,
-          "market": "totals",
-          "selection": "under",
-          "line": 2.5
-        }
-      ],
-      "settledAt": "2026-08-15T15:29:23.500Z"
-    },
-    {
-      "id": "demo-wolves-aston-villa-2026-07-26",
-      "league": "Premier League",
-      "home": "Wolves",
-      "away": "Aston Villa",
-      "kickoff": "2026-07-26T19:30:00.000Z",
-      "demo": true,
-      "score": {
-        "home": 2,
-        "away": 1
-      },
-      "outcome": "home",
-      "totalGoals": 3,
-      "bothScored": true,
-      "verdict": {
-        "outcome": "away",
-        "label": "Aston Villa vence",
-        "probability": 0.41,
-        "runnerUp": {
-          "label": "Wolves vence",
-          "probability": 0.3159
-        },
-        "strength": "aberto",
-        "likelyScore": "1-1",
-        "likelyScoreProb": 0.1286,
-        "confidence": 0.7,
-        "summary": "Jogo em aberto: nenhum resultado se destaca. Espera-se um jogo equilibrado em golos (2.9 no total)."
-      },
-      "verdictHit": false,
-      "lambdas": {
-        "home": 1.36,
-        "away": 1.57
-      },
-      "odds": {
-        "home": 2.87,
-        "draw": 3.95,
-        "away": 2.13
-      },
-      "modelProbs": {
-        "home": 0.3159,
-        "draw": 0.2741,
-        "away": 0.41
-      },
-      "over25": {
-        "odds": 1.9,
-        "modelProb": 0.5621,
-        "hit": true
-      },
-      "valueSelections": [
-        {
-          "label": "Empate",
-          "odds": 3.95,
-          "modelProb": 0.2741,
-          "edge": 0.0447,
           "market": "h2h",
           "selection": "draw",
           "line": null
