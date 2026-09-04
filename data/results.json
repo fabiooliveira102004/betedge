@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-09-03T14:45:24.852Z",
+  "updatedAt": "2026-09-04T14:36:09.501Z",
   "count": 250,
   "accuracy": {
     "n": 250,
-    "hits": 122,
-    "rate": 0.488,
-    "homeBaseline": 0.436,
+    "hits": 121,
+    "rate": 0.484,
+    "homeBaseline": 0.432,
     "byStrength": {
       "claro": {
         "n": 40,
@@ -13,18 +13,167 @@
         "rate": 0.6
       },
       "ligeiro": {
-        "n": 125,
-        "hits": 62,
-        "rate": 0.496
+        "n": 124,
+        "hits": 60,
+        "rate": 0.4839
       },
       "aberto": {
-        "n": 85,
-        "hits": 36,
-        "rate": 0.4235
+        "n": 86,
+        "hits": 37,
+        "rate": 0.4302
       }
     }
   },
   "results": [
+    {
+      "id": "5a4aaa142d12a350f302f2fb62fef0b3",
+      "league": "La Liga",
+      "home": "Real Sociedad",
+      "away": "Celta Vigo",
+      "kickoff": "2026-09-03T19:00:00Z",
+      "demo": false,
+      "score": {
+        "home": 0,
+        "away": 0
+      },
+      "outcome": "draw",
+      "totalGoals": 0,
+      "bothScored": false,
+      "verdict": {
+        "outcome": "home",
+        "label": "Real Sociedad vence",
+        "probability": 0.4264,
+        "runnerUp": {
+          "label": "Empate",
+          "probability": 0.2994
+        },
+        "strength": "ligeiro",
+        "likelyScore": "1-1",
+        "likelyScoreProb": 0.1428,
+        "confidence": 0.55,
+        "summary": "Real Sociedad vence e o resultado mais provavel, com 43%. Espera-se um jogo equilibrado em golos (2.5 no total)."
+      },
+      "verdictHit": false,
+      "lambdas": {
+        "home": 1.4,
+        "away": 1.08
+      },
+      "odds": {
+        "away": 4.3,
+        "home": 1.82,
+        "draw": 3.73
+      },
+      "modelProbs": {
+        "away": 0.2743,
+        "home": 0.4264,
+        "draw": 0.2994
+      },
+      "over25": {
+        "odds": 1.91,
+        "modelProb": 0.4535,
+        "hit": false
+      },
+      "valueSelections": [
+        {
+          "label": "Celta Vigo vence",
+          "odds": 4.3,
+          "modelProb": 0.2743,
+          "edge": 0.0602,
+          "market": "h2h",
+          "selection": "away",
+          "line": null
+        },
+        {
+          "label": "Empate",
+          "odds": 3.73,
+          "modelProb": 0.2994,
+          "edge": 0.0463,
+          "market": "h2h",
+          "selection": "draw",
+          "line": null
+        },
+        {
+          "label": "Menos de 2.5 golos",
+          "odds": 2.08,
+          "modelProb": 0.5465,
+          "edge": 0.0657,
+          "market": "totals",
+          "selection": "under",
+          "line": 2.5
+        }
+      ],
+      "settledAt": "2026-09-04T14:36:09.938Z"
+    },
+    {
+      "id": "9a31fb300796d3e97b63f1db49badedc",
+      "league": "Ligue 1",
+      "home": "Toulouse",
+      "away": "Lille",
+      "kickoff": "2026-09-03T18:45:00Z",
+      "demo": false,
+      "score": {
+        "home": 0,
+        "away": 1
+      },
+      "outcome": "away",
+      "totalGoals": 1,
+      "bothScored": false,
+      "verdict": {
+        "outcome": "away",
+        "label": "Lille vence",
+        "probability": 0.3765,
+        "runnerUp": {
+          "label": "Toulouse vence",
+          "probability": 0.3499
+        },
+        "strength": "aberto",
+        "likelyScore": "1-1",
+        "likelyScoreProb": 0.1277,
+        "confidence": 0.55,
+        "summary": "Jogo em aberto: nenhum resultado se destaca. Espera-se um jogo equilibrado em golos (3.0 no total)."
+      },
+      "verdictHit": true,
+      "lambdas": {
+        "home": 1.46,
+        "away": 1.52
+      },
+      "odds": {
+        "away": 1.9,
+        "home": 4.3,
+        "draw": 3.65
+      },
+      "modelProbs": {
+        "away": 0.3765,
+        "home": 0.3499,
+        "draw": 0.2736
+      },
+      "over25": {
+        "odds": 1.94,
+        "modelProb": 0.5705,
+        "hit": false
+      },
+      "valueSelections": [
+        {
+          "label": "Toulouse vence",
+          "odds": 4.3,
+          "modelProb": 0.3499,
+          "edge": 0.1254,
+          "market": "h2h",
+          "selection": "home",
+          "line": null
+        },
+        {
+          "label": "Mais de 2.5 golos",
+          "odds": 1.94,
+          "modelProb": 0.5705,
+          "edge": 0.0691,
+          "market": "totals",
+          "selection": "over",
+          "line": 2.5
+        }
+      ],
+      "settledAt": "2026-09-04T14:36:09.938Z"
+    },
     {
       "id": "5ab1a5278538ef69d7a84dfe2030facf",
       "league": "La Liga",
@@ -16550,137 +16699,6 @@
           "market": "totals",
           "selection": "over",
           "line": 2.5
-        }
-      ],
-      "settledAt": "2026-08-15T15:29:23.500Z"
-    },
-    {
-      "id": "demo-athletic-club-villarreal-2026-07-29",
-      "league": "La Liga",
-      "home": "Athletic Club",
-      "away": "Villarreal",
-      "kickoff": "2026-07-29T18:00:00.000Z",
-      "demo": true,
-      "score": {
-        "home": 2,
-        "away": 1
-      },
-      "outcome": "home",
-      "totalGoals": 3,
-      "bothScored": true,
-      "verdict": {
-        "outcome": "home",
-        "label": "Athletic Club vence",
-        "probability": 0.4352,
-        "runnerUp": {
-          "label": "Empate",
-          "probability": 0.2892
-        },
-        "strength": "ligeiro",
-        "likelyScore": "1-1",
-        "likelyScoreProb": 0.1383,
-        "confidence": 0.7,
-        "summary": "Athletic Club vence e o resultado mais provavel, com 44%. Espera-se um jogo equilibrado em golos (2.6 no total)."
-      },
-      "verdictHit": true,
-      "lambdas": {
-        "home": 1.49,
-        "away": 1.14
-      },
-      "odds": {
-        "home": 2.14,
-        "draw": 3.99,
-        "away": 2.98
-      },
-      "modelProbs": {
-        "home": 0.4352,
-        "draw": 0.2892,
-        "away": 0.2756
-      },
-      "over25": {
-        "odds": 1.73,
-        "modelProb": 0.49,
-        "hit": true
-      },
-      "valueSelections": [
-        {
-          "label": "Empate",
-          "odds": 3.99,
-          "modelProb": 0.2892,
-          "edge": 0.0536,
-          "market": "h2h",
-          "selection": "draw",
-          "line": null
-        },
-        {
-          "label": "Menos de 2.5 golos",
-          "odds": 2.15,
-          "modelProb": 0.51,
-          "edge": 0.0626,
-          "market": "totals",
-          "selection": "under",
-          "line": 2.5
-        }
-      ],
-      "settledAt": "2026-08-15T15:29:23.500Z"
-    },
-    {
-      "id": "demo-rio-ave-sc-braga-2026-07-28",
-      "league": "Liga Portugal",
-      "home": "Rio Ave",
-      "away": "SC Braga",
-      "kickoff": "2026-07-28T20:30:00.000Z",
-      "demo": true,
-      "score": {
-        "home": 0,
-        "away": 3
-      },
-      "outcome": "away",
-      "totalGoals": 3,
-      "bothScored": false,
-      "verdict": {
-        "outcome": "away",
-        "label": "SC Braga vence",
-        "probability": 0.4121,
-        "runnerUp": {
-          "label": "Rio Ave vence",
-          "probability": 0.3032
-        },
-        "strength": "ligeiro",
-        "likelyScore": "1-1",
-        "likelyScoreProb": 0.1357,
-        "confidence": 0.7,
-        "summary": "SC Braga vence e o resultado mais provavel, com 41%. Espera-se um jogo equilibrado em golos (2.7 no total)."
-      },
-      "verdictHit": true,
-      "lambdas": {
-        "home": 1.25,
-        "away": 1.49
-      },
-      "odds": {
-        "home": 3.34,
-        "draw": 3.68,
-        "away": 1.91
-      },
-      "modelProbs": {
-        "home": 0.3032,
-        "draw": 0.2848,
-        "away": 0.4121
-      },
-      "over25": {
-        "odds": 1.76,
-        "modelProb": 0.5177,
-        "hit": true
-      },
-      "valueSelections": [
-        {
-          "label": "Empate",
-          "odds": 3.68,
-          "modelProb": 0.2848,
-          "edge": 0.0525,
-          "market": "h2h",
-          "selection": "draw",
-          "line": null
         }
       ],
       "settledAt": "2026-08-15T15:29:23.500Z"
