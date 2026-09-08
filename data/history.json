@@ -1,7 +1,263 @@
 {
-  "updatedAt": "2026-09-07T16:09:34.156Z",
-  "count": 602,
+  "updatedAt": "2026-09-08T14:48:31.008Z",
+  "count": 608,
   "picks": [
+    {
+      "id": "9b2649e0420d4d0fe486d8751bef8c57:h2h:home",
+      "fixtureId": "9b2649e0420d4d0fe486d8751bef8c57",
+      "league": "La Liga",
+      "home": "Elche CF",
+      "away": "Real Sociedad",
+      "kickoff": "2026-09-07T19:30:00Z",
+      "market": "h2h",
+      "selection": "home",
+      "line": null,
+      "description": "Elche CF vence",
+      "odds": 3.45,
+      "bookmaker": "betclic_fr",
+      "modelProb": 0.387,
+      "fairProb": 0.2734,
+      "impliedProb": 0.2899,
+      "edge": 0.1137,
+      "ev": 0.3353,
+      "stake": 0.0245,
+      "confidence": 0.633,
+      "overround": 0.0518,
+      "lambdas": {
+        "home": 1.505,
+        "away": 1.389
+      },
+      "factors": {
+        "home": [],
+        "away": [
+          {
+            "type": "descanso",
+            "attackPct": -1.8,
+            "defencePct": 1.2,
+            "detail": "apenas 4.020833333333333 dias de descanso"
+          }
+        ]
+      },
+      "aiSummary": null,
+      "demo": false,
+      "generatedAt": "2026-09-07T16:09:37.487Z",
+      "settled": true,
+      "result": "loss",
+      "pnlUnits": -0.0245,
+      "finalScore": "2-3",
+      "settledAt": "2026-09-08T14:48:30.915Z"
+    },
+    {
+      "id": "d76d1cde75744af33fca9ca4272be7fb:h2h:away",
+      "fixtureId": "d76d1cde75744af33fca9ca4272be7fb",
+      "league": "Liga Portugal",
+      "home": "Estoril",
+      "away": "Arouca",
+      "kickoff": "2026-09-07T19:15:00Z",
+      "market": "h2h",
+      "selection": "away",
+      "line": null,
+      "description": "Arouca vence",
+      "odds": 2.7,
+      "bookmaker": "betclic_fr",
+      "modelProb": 0.481,
+      "fairProb": 0.3414,
+      "impliedProb": 0.3704,
+      "edge": 0.1396,
+      "ev": 0.2987,
+      "stake": 0.0235,
+      "confidence": 0.567,
+      "overround": 0.0642,
+      "lambdas": {
+        "home": 1.079,
+        "away": 1.607
+      },
+      "factors": {
+        "home": [],
+        "away": []
+      },
+      "aiSummary": null,
+      "demo": false,
+      "generatedAt": "2026-09-07T16:09:37.486Z",
+      "settled": true,
+      "result": "loss",
+      "pnlUnits": -0.0235,
+      "finalScore": "0-0",
+      "settledAt": "2026-09-08T14:48:30.915Z"
+    },
+    {
+      "id": "0817220a8e0794e15ecba51338bb6cf8:totals:over:2.5",
+      "fixtureId": "0817220a8e0794e15ecba51338bb6cf8",
+      "league": "La Liga",
+      "home": "Getafe",
+      "away": "Celta Vigo",
+      "kickoff": "2026-09-07T17:00:00Z",
+      "market": "totals",
+      "selection": "over",
+      "line": 2.5,
+      "description": "Mais de 2.5 golos",
+      "odds": 3.35,
+      "bookmaker": "betclic_fr",
+      "modelProb": 0.3441,
+      "fairProb": 0.2705,
+      "impliedProb": 0.2985,
+      "edge": 0.0736,
+      "ev": 0.1526,
+      "stake": 0.0131,
+      "confidence": 0.614,
+      "overround": 0.0561,
+      "lambdas": {
+        "home": 1.194,
+        "away": 0.883
+      },
+      "factors": {
+        "home": [],
+        "away": [
+          {
+            "type": "descanso",
+            "attackPct": -1.9,
+            "defencePct": 1.4,
+            "detail": "apenas 3.9166666666666665 dias de descanso"
+          }
+        ]
+      },
+      "aiSummary": null,
+      "demo": false,
+      "generatedAt": "2026-09-07T16:09:37.486Z",
+      "settled": true,
+      "result": "loss",
+      "pnlUnits": -0.0131,
+      "finalScore": "1-1",
+      "settledAt": "2026-09-08T14:48:30.915Z"
+    },
+    {
+      "id": "0817220a8e0794e15ecba51338bb6cf8:totals:over:1.5",
+      "fixtureId": "0817220a8e0794e15ecba51338bb6cf8",
+      "league": "La Liga",
+      "home": "Getafe",
+      "away": "Celta Vigo",
+      "kickoff": "2026-09-07T17:00:00Z",
+      "market": "totals",
+      "selection": "over",
+      "line": 1.5,
+      "description": "Mais de 1.5 golos",
+      "odds": 1.83,
+      "bookmaker": "betclic_fr",
+      "modelProb": 0.6315,
+      "fairProb": 0.563,
+      "impliedProb": 0.5464,
+      "edge": 0.0685,
+      "ev": 0.1557,
+      "stake": 0.02424,
+      "confidence": 0.616,
+      "overround": 0.054,
+      "lambdas": {
+        "home": 1.194,
+        "away": 0.883
+      },
+      "factors": {
+        "home": [],
+        "away": [
+          {
+            "type": "descanso",
+            "attackPct": -1.9,
+            "defencePct": 1.4,
+            "detail": "apenas 3.9166666666666665 dias de descanso"
+          }
+        ]
+      },
+      "aiSummary": null,
+      "demo": false,
+      "generatedAt": "2026-09-07T16:09:37.486Z",
+      "settled": true,
+      "result": "win",
+      "pnlUnits": 0.02012,
+      "finalScore": "1-1",
+      "settledAt": "2026-09-08T14:48:30.915Z"
+    },
+    {
+      "id": "0817220a8e0794e15ecba51338bb6cf8:h2h:home",
+      "fixtureId": "0817220a8e0794e15ecba51338bb6cf8",
+      "league": "La Liga",
+      "home": "Getafe",
+      "away": "Celta Vigo",
+      "kickoff": "2026-09-07T17:00:00Z",
+      "market": "h2h",
+      "selection": "home",
+      "line": null,
+      "description": "Getafe vence",
+      "odds": 2.58,
+      "bookmaker": "betclic_fr",
+      "modelProb": 0.4143,
+      "fairProb": 0.3686,
+      "impliedProb": 0.3876,
+      "edge": 0.0457,
+      "ev": 0.0688,
+      "stake": 0.00884,
+      "confidence": 0.623,
+      "overround": 0.0468,
+      "lambdas": {
+        "home": 1.194,
+        "away": 0.883
+      },
+      "factors": {
+        "home": [],
+        "away": [
+          {
+            "type": "descanso",
+            "attackPct": -1.9,
+            "defencePct": 1.4,
+            "detail": "apenas 3.9166666666666665 dias de descanso"
+          }
+        ]
+      },
+      "aiSummary": null,
+      "demo": false,
+      "generatedAt": "2026-09-07T16:09:37.486Z",
+      "settled": true,
+      "result": "loss",
+      "pnlUnits": -0.00884,
+      "finalScore": "1-1",
+      "settledAt": "2026-09-08T14:48:30.915Z"
+    },
+    {
+      "id": "8f751e96142db860ba66bbea713baf50:h2h:away",
+      "fixtureId": "8f751e96142db860ba66bbea713baf50",
+      "league": "Serie A",
+      "home": "Cagliari",
+      "away": "Lecce",
+      "kickoff": "2026-09-07T16:30:00Z",
+      "market": "h2h",
+      "selection": "away",
+      "line": null,
+      "description": "Lecce vence",
+      "odds": 3.7,
+      "bookmaker": "betclic_fr",
+      "modelProb": 0.3511,
+      "fairProb": 0.2551,
+      "impliedProb": 0.2703,
+      "edge": 0.096,
+      "ev": 0.2991,
+      "stake": 0.0222,
+      "confidence": 0.603,
+      "overround": 0.0517,
+      "lambdas": {
+        "home": 1.054,
+        "away": 1.115
+      },
+      "factors": {
+        "home": [],
+        "away": []
+      },
+      "aiSummary": null,
+      "demo": false,
+      "generatedAt": "2026-09-07T16:09:37.485Z",
+      "settled": true,
+      "result": "loss",
+      "pnlUnits": -0.0222,
+      "finalScore": "1-0",
+      "settledAt": "2026-09-08T14:48:30.915Z"
+    },
     {
       "id": "823ef5c97dc93ff1e8fd7dbafb90c9d5:totals:over:2.5",
       "fixtureId": "823ef5c97dc93ff1e8fd7dbafb90c9d5",
