@@ -1,7 +1,211 @@
 {
-  "updatedAt": "2026-09-13T14:43:38.830Z",
-  "count": 624,
+  "updatedAt": "2026-09-14T16:39:43.692Z",
+  "count": 630,
   "picks": [
+    {
+      "id": "e1793815821e8d0a608a1257518ad6bf:totals:under:3.5",
+      "fixtureId": "e1793815821e8d0a608a1257518ad6bf",
+      "league": "Liga Portugal",
+      "home": "Benfica",
+      "away": "Gil Vicente",
+      "kickoff": "2026-09-13T17:00:00Z",
+      "market": "totals",
+      "selection": "under",
+      "line": 3.5,
+      "description": "Menos de 3.5 golos",
+      "odds": 1.83,
+      "bookmaker": "betclic_fr",
+      "modelProb": 0.764,
+      "fairProb": 0.5569,
+      "impliedProb": 0.5464,
+      "edge": 0.207,
+      "ev": 0.3981,
+      "stake": 0.02134,
+      "confidence": 0.423,
+      "overround": 0.0731,
+      "lambdas": {
+        "home": 1.592,
+        "away": 0.878
+      },
+      "factors": {
+        "home": [
+          {
+            "type": "descanso",
+            "attackPct": -2,
+            "defencePct": 1.4,
+            "detail": "apenas 3.8854166666666665 dias de descanso"
+          }
+        ],
+        "away": []
+      },
+      "aiSummary": null,
+      "demo": false,
+      "generatedAt": "2026-09-13T14:43:40.961Z",
+      "settled": true,
+      "result": "loss",
+      "pnlUnits": -0.02134,
+      "finalScore": "3-1",
+      "settledAt": "2026-09-14T16:39:43.584Z"
+    },
+    {
+      "id": "e1793815821e8d0a608a1257518ad6bf:totals:under:2.5",
+      "fixtureId": "e1793815821e8d0a608a1257518ad6bf",
+      "league": "Liga Portugal",
+      "home": "Benfica",
+      "away": "Gil Vicente",
+      "kickoff": "2026-09-13T17:00:00Z",
+      "market": "totals",
+      "selection": "under",
+      "line": 2.5,
+      "description": "Menos de 2.5 golos",
+      "odds": 3,
+      "bookmaker": "betclic_fr",
+      "modelProb": 0.5515,
+      "fairProb": 0.3157,
+      "impliedProb": 0.3333,
+      "edge": 0.2358,
+      "ev": 0.6546,
+      "stake": 0.02052,
+      "confidence": 0.368,
+      "overround": 0.0703,
+      "lambdas": {
+        "home": 1.592,
+        "away": 0.878
+      },
+      "factors": {
+        "home": [
+          {
+            "type": "descanso",
+            "attackPct": -2,
+            "defencePct": 1.4,
+            "detail": "apenas 3.8854166666666665 dias de descanso"
+          }
+        ],
+        "away": []
+      },
+      "aiSummary": null,
+      "demo": false,
+      "generatedAt": "2026-09-13T14:43:40.961Z",
+      "settled": true,
+      "result": "loss",
+      "pnlUnits": -0.02052,
+      "finalScore": "3-1",
+      "settledAt": "2026-09-14T16:39:43.584Z"
+    },
+    {
+      "id": "15e3bf25540c88237a06c03df1cb334b:totals:over:2.5",
+      "fixtureId": "15e3bf25540c88237a06c03df1cb334b",
+      "league": "La Liga",
+      "home": "Getafe",
+      "away": "Deportivo La Coruña",
+      "kickoff": "2026-09-13T16:30:00Z",
+      "market": "totals",
+      "selection": "over",
+      "line": 2.5,
+      "description": "Mais de 2.5 golos",
+      "odds": 2.82,
+      "bookmaker": "betclic_fr",
+      "modelProb": 0.5099,
+      "fairProb": 0.3277,
+      "impliedProb": 0.3546,
+      "edge": 0.1823,
+      "ev": 0.438,
+      "stake": 0.0226,
+      "confidence": 0.507,
+      "overround": 0.0539,
+      "lambdas": {
+        "home": 1.308,
+        "away": 1.406
+      },
+      "factors": {
+        "home": [],
+        "away": []
+      },
+      "aiSummary": null,
+      "demo": false,
+      "generatedAt": "2026-09-13T14:43:40.961Z",
+      "settled": true,
+      "result": "loss",
+      "pnlUnits": -0.0226,
+      "finalScore": "1-1",
+      "settledAt": "2026-09-14T16:39:43.583Z"
+    },
+    {
+      "id": "15e3bf25540c88237a06c03df1cb334b:totals:over:1.5",
+      "fixtureId": "15e3bf25540c88237a06c03df1cb334b",
+      "league": "La Liga",
+      "home": "Getafe",
+      "away": "Deportivo La Coruña",
+      "kickoff": "2026-09-13T16:30:00Z",
+      "market": "totals",
+      "selection": "over",
+      "line": 1.5,
+      "description": "Mais de 1.5 golos",
+      "odds": 1.69,
+      "bookmaker": "betclic_fr",
+      "modelProb": 0.7698,
+      "fairProb": 0.5864,
+      "impliedProb": 0.5917,
+      "edge": 0.1834,
+      "ev": 0.301,
+      "stake": 0.02245,
+      "confidence": 0.496,
+      "overround": 0.0617,
+      "lambdas": {
+        "home": 1.308,
+        "away": 1.406
+      },
+      "factors": {
+        "home": [],
+        "away": []
+      },
+      "aiSummary": null,
+      "demo": false,
+      "generatedAt": "2026-09-13T14:43:40.961Z",
+      "settled": true,
+      "result": "win",
+      "pnlUnits": 0.01549,
+      "finalScore": "1-1",
+      "settledAt": "2026-09-14T16:39:43.583Z"
+    },
+    {
+      "id": "27072c6b8013974edf991fa5e6994566:h2h:home",
+      "fixtureId": "27072c6b8013974edf991fa5e6994566",
+      "league": "Ligue 1",
+      "home": "Le Mans FC",
+      "away": "RC Lens",
+      "kickoff": "2026-09-13T15:15:00Z",
+      "market": "h2h",
+      "selection": "home",
+      "line": null,
+      "description": "Le Mans FC vence",
+      "odds": 4.8,
+      "bookmaker": "betclic_fr",
+      "modelProb": 0.3579,
+      "fairProb": 0.1873,
+      "impliedProb": 0.2083,
+      "edge": 0.1707,
+      "ev": 0.7181,
+      "stake": 0.02268,
+      "confidence": 0.512,
+      "overround": 0.0567,
+      "lambdas": {
+        "home": 1.64,
+        "away": 1.713
+      },
+      "factors": {
+        "home": [],
+        "away": []
+      },
+      "aiSummary": null,
+      "demo": false,
+      "generatedAt": "2026-09-13T14:43:40.960Z",
+      "settled": true,
+      "result": "loss",
+      "pnlUnits": -0.02268,
+      "finalScore": "2-2",
+      "settledAt": "2026-09-14T16:39:43.584Z"
+    },
     {
       "id": "6406438af00a2a42a81d6b2f1656d474:totals:under:3.5",
       "fixtureId": "6406438af00a2a42a81d6b2f1656d474",
@@ -34,9 +238,11 @@
       "aiSummary": null,
       "demo": false,
       "generatedAt": "2026-09-12T13:47:49.384Z",
-      "settled": false,
-      "result": null,
-      "pnlUnits": null
+      "settled": true,
+      "result": "loss",
+      "pnlUnits": -0.02092,
+      "finalScore": "2-4",
+      "settledAt": "2026-09-14T16:39:43.583Z"
     },
     {
       "id": "6406438af00a2a42a81d6b2f1656d474:totals:under:2.5",
@@ -70,9 +276,11 @@
       "aiSummary": null,
       "demo": false,
       "generatedAt": "2026-09-12T13:47:49.384Z",
-      "settled": false,
-      "result": null,
-      "pnlUnits": null
+      "settled": true,
+      "result": "loss",
+      "pnlUnits": -0.02237,
+      "finalScore": "2-4",
+      "settledAt": "2026-09-14T16:39:43.583Z"
     },
     {
       "id": "0eba3c2d3bcf1d1fe4ab3180a3d03152:totals:under:2.5",
@@ -23875,6 +24083,42 @@
       "pnlUnits": -0.02739,
       "finalScore": "4-1",
       "settledAt": "2026-07-02T20:00:00.000Z"
+    },
+    {
+      "id": "2d95f953f3621286c703edce21afcefc:h2h:away",
+      "fixtureId": "2d95f953f3621286c703edce21afcefc",
+      "league": "Liga Portugal",
+      "home": "Moreirense FC",
+      "away": "CS Maritimo",
+      "kickoff": "2026-09-14T19:15:00Z",
+      "market": "h2h",
+      "selection": "away",
+      "line": null,
+      "description": "CS Maritimo vence",
+      "odds": 2.92,
+      "bookmaker": "betclic_fr",
+      "modelProb": 0.4809,
+      "fairProb": 0.3155,
+      "impliedProb": 0.3425,
+      "edge": 0.1654,
+      "ev": 0.4043,
+      "stake": 0.02269,
+      "confidence": 0.512,
+      "overround": 0.0819,
+      "lambdas": {
+        "home": 1.267,
+        "away": 1.781
+      },
+      "factors": {
+        "home": [],
+        "away": []
+      },
+      "aiSummary": null,
+      "demo": false,
+      "generatedAt": "2026-09-13T14:43:40.964Z",
+      "settled": false,
+      "result": null,
+      "pnlUnits": null
     }
   ]
 }
