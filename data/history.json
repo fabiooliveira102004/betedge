@@ -1,7 +1,156 @@
 {
-  "updatedAt": "2026-09-15T15:19:08.849Z",
-  "count": 638,
+  "updatedAt": "2026-09-16T15:11:48.537Z",
+  "count": 642,
   "picks": [
+    {
+      "id": "d6474326396cdd0e300afd0193c7c93d:totals:over:2.5",
+      "fixtureId": "d6474326396cdd0e300afd0193c7c93d",
+      "league": "La Liga",
+      "home": "Alavés",
+      "away": "Valencia",
+      "kickoff": "2026-09-15T18:00:00Z",
+      "market": "totals",
+      "selection": "over",
+      "line": 2.5,
+      "description": "Mais de 2.5 golos",
+      "odds": 2.14,
+      "bookmaker": "betclic_fr",
+      "modelProb": 0.6154,
+      "fairProb": 0.4606,
+      "impliedProb": 0.4673,
+      "edge": 0.1548,
+      "ev": 0.317,
+      "stake": 0.02327,
+      "confidence": 0.551,
+      "overround": 0.064,
+      "lambdas": {
+        "home": 2.18,
+        "away": 0.997
+      },
+      "factors": {
+        "home": [],
+        "away": [
+          {
+            "type": "descanso",
+            "attackPct": -1.9,
+            "defencePct": 1.3,
+            "detail": "apenas 3.9583333333333335 dias de descanso"
+          }
+        ]
+      },
+      "aiSummary": null,
+      "demo": false,
+      "generatedAt": "2026-09-15T15:19:11.237Z",
+      "settled": true,
+      "result": "loss",
+      "pnlUnits": -0.02327,
+      "finalScore": "0-1",
+      "settledAt": "2026-09-16T15:11:48.435Z"
+    },
+    {
+      "id": "b9a6e597fd597637efa24b92d51dda62:totals:over:2.5",
+      "fixtureId": "b9a6e597fd597637efa24b92d51dda62",
+      "league": "La Liga",
+      "home": "Rayo Vallecano",
+      "away": "Espanyol",
+      "kickoff": "2026-09-15T17:00:00Z",
+      "market": "totals",
+      "selection": "over",
+      "line": 2.5,
+      "description": "Mais de 2.5 golos",
+      "odds": 1.95,
+      "bookmaker": "betclic_fr",
+      "modelProb": 0.6575,
+      "fairProb": 0.5085,
+      "impliedProb": 0.5128,
+      "edge": 0.149,
+      "ev": 0.2822,
+      "stake": 0.02389,
+      "confidence": 0.593,
+      "overround": 0.0641,
+      "lambdas": {
+        "home": 1.521,
+        "away": 1.865
+      },
+      "factors": {
+        "home": [
+          {
+            "type": "descanso",
+            "attackPct": -3.7,
+            "defencePct": 2.6,
+            "detail": "apenas 2.9166666666666665 dias de descanso"
+          }
+        ],
+        "away": [
+          {
+            "type": "descanso",
+            "attackPct": -3.4,
+            "defencePct": 2.4,
+            "detail": "apenas 3.1145833333333335 dias de descanso"
+          }
+        ]
+      },
+      "aiSummary": null,
+      "demo": false,
+      "generatedAt": "2026-09-15T15:19:11.235Z",
+      "settled": true,
+      "result": "win",
+      "pnlUnits": 0.0227,
+      "finalScore": "2-1",
+      "settledAt": "2026-09-16T15:11:48.434Z"
+    },
+    {
+      "id": "b9a6e597fd597637efa24b92d51dda62:h2h:away",
+      "fixtureId": "b9a6e597fd597637efa24b92d51dda62",
+      "league": "La Liga",
+      "home": "Rayo Vallecano",
+      "away": "Espanyol",
+      "kickoff": "2026-09-15T17:00:00Z",
+      "market": "h2h",
+      "selection": "away",
+      "line": null,
+      "description": "Espanyol vence",
+      "odds": 3.15,
+      "bookmaker": "betclic_fr",
+      "modelProb": 0.4469,
+      "fairProb": 0.3225,
+      "impliedProb": 0.3175,
+      "edge": 0.1244,
+      "ev": 0.4077,
+      "stake": 0.02485,
+      "confidence": 0.656,
+      "overround": 0.0498,
+      "lambdas": {
+        "home": 1.521,
+        "away": 1.865
+      },
+      "factors": {
+        "home": [
+          {
+            "type": "descanso",
+            "attackPct": -3.7,
+            "defencePct": 2.6,
+            "detail": "apenas 2.9166666666666665 dias de descanso"
+          }
+        ],
+        "away": [
+          {
+            "type": "descanso",
+            "attackPct": -3.4,
+            "defencePct": 2.4,
+            "detail": "apenas 3.1145833333333335 dias de descanso"
+          }
+        ]
+      },
+      "aiSummary": null,
+      "demo": false,
+      "generatedAt": "2026-09-15T15:19:11.235Z",
+      "settled": true,
+      "result": "loss",
+      "pnlUnits": -0.02485,
+      "finalScore": "2-1",
+      "settledAt": "2026-09-16T15:11:48.435Z"
+    },
     {
       "id": "8461e66c563dbb31f9c87def0cf49c7e:totals:under:2.5",
       "fixtureId": "8461e66c563dbb31f9c87def0cf49c7e",
@@ -24417,51 +24566,87 @@
       "settledAt": "2026-07-02T20:00:00.000Z"
     },
     {
-      "id": "e8d1b34cb3e1f52f67538ad554811b56:totals:over:2.5",
-      "fixtureId": "e8d1b34cb3e1f52f67538ad554811b56",
+      "id": "a995ad3266759e67c9f9b0617c184b71:h2h:away",
+      "fixtureId": "a995ad3266759e67c9f9b0617c184b71",
       "league": "La Liga",
-      "home": "Deportivo La Coruña",
-      "away": "Sevilla",
-      "kickoff": "2026-09-16T17:00:00Z",
-      "market": "totals",
-      "selection": "over",
-      "line": 2.5,
-      "description": "Mais de 2.5 golos",
-      "odds": 2.38,
+      "home": "Athletic Bilbao",
+      "away": "Alavés",
+      "kickoff": "2026-09-19T14:15:00Z",
+      "market": "h2h",
+      "selection": "away",
+      "line": null,
+      "description": "Alavés vence",
+      "odds": 5.69,
       "bookmaker": "betclic_fr",
-      "modelProb": 0.5457,
-      "fairProb": 0.4166,
-      "impliedProb": 0.4202,
-      "edge": 0.1291,
-      "ev": 0.2988,
-      "stake": 0.02444,
-      "confidence": 0.629,
-      "overround": 0.0677,
+      "modelProb": 0.3712,
+      "fairProb": 0.1753,
+      "impliedProb": 0.1757,
+      "edge": 0.1959,
+      "ev": 1.112,
+      "stake": 0.02177,
+      "confidence": 0.451,
+      "overround": 0.0517,
       "lambdas": {
-        "home": 1.513,
-        "away": 1.351
+        "home": 1.55,
+        "away": 1.568
+      },
+      "factors": {
+        "home": [],
+        "away": []
+      },
+      "aiSummary": null,
+      "demo": false,
+      "generatedAt": "2026-09-15T15:19:11.240Z",
+      "settled": false,
+      "result": null,
+      "pnlUnits": null
+    },
+    {
+      "id": "56c5e4d30fc27dedb3ae48a80b81346d:h2h:home",
+      "fixtureId": "56c5e4d30fc27dedb3ae48a80b81346d",
+      "league": "La Liga",
+      "home": "Málaga",
+      "away": "Villarreal",
+      "kickoff": "2026-09-17T19:30:00Z",
+      "market": "h2h",
+      "selection": "home",
+      "line": null,
+      "description": "Málaga vence",
+      "odds": 3.8,
+      "bookmaker": "betclic_fr",
+      "modelProb": 0.3984,
+      "fairProb": 0.264,
+      "impliedProb": 0.2632,
+      "edge": 0.1344,
+      "ev": 0.5138,
+      "stake": 0.02423,
+      "confidence": 0.615,
+      "overround": 0.056,
+      "lambdas": {
+        "home": 1.426,
+        "away": 1.237
       },
       "factors": {
         "home": [
+          {
+            "type": "descanso",
+            "attackPct": -1.2,
+            "defencePct": 0.9,
+            "detail": "apenas 4.3125 dias de descanso"
+          }
+        ],
+        "away": [
           {
             "type": "descanso",
             "attackPct": -3.6,
             "defencePct": 2.5,
             "detail": "apenas 3.0208333333333335 dias de descanso"
           }
-        ],
-        "away": [
-          {
-            "type": "descanso",
-            "attackPct": -0.1,
-            "defencePct": 0.1,
-            "detail": "apenas 4.916666666666667 dias de descanso"
-          }
         ]
       },
       "aiSummary": null,
       "demo": false,
-      "generatedAt": "2026-09-14T16:39:45.604Z",
+      "generatedAt": "2026-09-15T15:19:11.239Z",
       "settled": false,
       "result": null,
       "pnlUnits": null
