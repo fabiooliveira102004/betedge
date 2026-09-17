@@ -1,7 +1,50 @@
 {
-  "updatedAt": "2026-09-16T15:11:48.537Z",
-  "count": 642,
+  "updatedAt": "2026-09-17T15:20:57.008Z",
+  "count": 644,
   "picks": [
+    {
+      "id": "4ef67376b662c2859f73bde7f7210388:totals:under:2.5",
+      "fixtureId": "4ef67376b662c2859f73bde7f7210388",
+      "league": "La Liga",
+      "home": "Levante",
+      "away": "Athletic Bilbao",
+      "kickoff": "2026-09-16T19:30:00Z",
+      "market": "totals",
+      "selection": "under",
+      "line": 2.5,
+      "description": "Menos de 2.5 golos",
+      "odds": 2.14,
+      "bookmaker": "betclic_fr",
+      "modelProb": 0.6144,
+      "fairProb": 0.4665,
+      "impliedProb": 0.4673,
+      "edge": 0.1479,
+      "ev": 0.3148,
+      "stake": 0.02373,
+      "confidence": 0.582,
+      "overround": 0.0473,
+      "lambdas": {
+        "home": 1.031,
+        "away": 1.2
+      },
+      "factors": {
+        "home": [],
+        "away": [
+          {
+            "type": "descanso",
+            "attackPct": -1.6,
+            "defencePct": 1.1,
+            "detail": "apenas 4.125 dias de descanso"
+          }
+        ]
+      },
+      "aiSummary": null,
+      "demo": false,
+      "generatedAt": "2026-09-16T15:11:51.790Z",
+      "settled": false,
+      "result": null,
+      "pnlUnits": null
+    },
     {
       "id": "d6474326396cdd0e300afd0193c7c93d:totals:over:2.5",
       "fixtureId": "d6474326396cdd0e300afd0193c7c93d",
@@ -24566,29 +24609,29 @@
       "settledAt": "2026-07-02T20:00:00.000Z"
     },
     {
-      "id": "a995ad3266759e67c9f9b0617c184b71:h2h:away",
-      "fixtureId": "a995ad3266759e67c9f9b0617c184b71",
-      "league": "La Liga",
-      "home": "Athletic Bilbao",
-      "away": "Alavés",
-      "kickoff": "2026-09-19T14:15:00Z",
-      "market": "h2h",
-      "selection": "away",
-      "line": null,
-      "description": "Alavés vence",
-      "odds": 5.69,
+      "id": "873ce2405ef51cf09af22b0c8adfba55:totals:under:3.5",
+      "fixtureId": "873ce2405ef51cf09af22b0c8adfba55",
+      "league": "Ligue 1",
+      "home": "Lyon",
+      "away": "Rennes",
+      "kickoff": "2026-09-19T18:45:00Z",
+      "market": "totals",
+      "selection": "under",
+      "line": 3.5,
+      "description": "Menos de 3.5 golos",
+      "odds": 1.67,
       "bookmaker": "betclic_fr",
-      "modelProb": 0.3712,
-      "fairProb": 0.1753,
-      "impliedProb": 0.1757,
-      "edge": 0.1959,
-      "ev": 1.112,
-      "stake": 0.02177,
-      "confidence": 0.451,
-      "overround": 0.0517,
+      "modelProb": 0.7457,
+      "fairProb": 0.5802,
+      "impliedProb": 0.5988,
+      "edge": 0.1656,
+      "ev": 0.2454,
+      "stake": 0.02279,
+      "confidence": 0.52,
+      "overround": 0.0592,
       "lambdas": {
-        "home": 1.55,
-        "away": 1.568
+        "home": 1.391,
+        "away": 1.164
       },
       "factors": {
         "home": [],
@@ -24596,57 +24639,86 @@
       },
       "aiSummary": null,
       "demo": false,
-      "generatedAt": "2026-09-15T15:19:11.240Z",
+      "generatedAt": "2026-09-16T15:11:51.792Z",
       "settled": false,
       "result": null,
       "pnlUnits": null
     },
     {
-      "id": "56c5e4d30fc27dedb3ae48a80b81346d:h2h:home",
-      "fixtureId": "56c5e4d30fc27dedb3ae48a80b81346d",
-      "league": "La Liga",
-      "home": "Málaga",
-      "away": "Villarreal",
-      "kickoff": "2026-09-17T19:30:00Z",
-      "market": "h2h",
-      "selection": "home",
-      "line": null,
-      "description": "Málaga vence",
-      "odds": 3.8,
+      "id": "800c8ed0df8c82f1f022eeb29bb69424:totals:over:2.5",
+      "fixtureId": "800c8ed0df8c82f1f022eeb29bb69424",
+      "league": "Liga Portugal",
+      "home": "Alverca",
+      "away": "Rio Ave FC",
+      "kickoff": "2026-09-19T17:00:00Z",
+      "market": "totals",
+      "selection": "over",
+      "line": 2.5,
+      "description": "Mais de 2.5 golos",
+      "odds": 2.02,
       "bookmaker": "betclic_fr",
-      "modelProb": 0.3984,
-      "fairProb": 0.264,
-      "impliedProb": 0.2632,
-      "edge": 0.1344,
-      "ev": 0.5138,
-      "stake": 0.02423,
-      "confidence": 0.615,
-      "overround": 0.056,
+      "modelProb": 0.6605,
+      "fairProb": 0.4704,
+      "impliedProb": 0.495,
+      "edge": 0.1902,
+      "ev": 0.3343,
+      "stake": 0.02176,
+      "confidence": 0.45,
+      "overround": 0.0643,
       "lambdas": {
-        "home": 1.426,
-        "away": 1.237
+        "home": 1.889,
+        "away": 1.513
       },
       "factors": {
-        "home": [
-          {
-            "type": "descanso",
-            "attackPct": -1.2,
-            "defencePct": 0.9,
-            "detail": "apenas 4.3125 dias de descanso"
-          }
-        ],
+        "home": [],
         "away": [
           {
             "type": "descanso",
-            "attackPct": -3.6,
-            "defencePct": 2.5,
-            "detail": "apenas 3.0208333333333335 dias de descanso"
+            "attackPct": -0.1,
+            "defencePct": 0,
+            "detail": "apenas 4.96875 dias de descanso"
           }
         ]
       },
       "aiSummary": null,
       "demo": false,
-      "generatedAt": "2026-09-15T15:19:11.239Z",
+      "generatedAt": "2026-09-16T15:11:51.792Z",
+      "settled": false,
+      "result": null,
+      "pnlUnits": null
+    },
+    {
+      "id": "82d8b6a005d78bac0b1508abc17a7d39:h2h:home",
+      "fixtureId": "82d8b6a005d78bac0b1508abc17a7d39",
+      "league": "Premier League",
+      "home": "Brentford",
+      "away": "Chelsea",
+      "kickoff": "2026-09-18T19:00:00Z",
+      "market": "h2h",
+      "selection": "home",
+      "line": null,
+      "description": "Brentford vence",
+      "odds": 2.75,
+      "bookmaker": "betclic_fr",
+      "modelProb": 0.4725,
+      "fairProb": 0.3311,
+      "impliedProb": 0.3636,
+      "edge": 0.1414,
+      "ev": 0.2993,
+      "stake": 0.02405,
+      "confidence": 0.603,
+      "overround": 0.0539,
+      "lambdas": {
+        "home": 2.014,
+        "away": 1.561
+      },
+      "factors": {
+        "home": [],
+        "away": []
+      },
+      "aiSummary": null,
+      "demo": false,
+      "generatedAt": "2026-09-16T15:11:51.791Z",
       "settled": false,
       "result": null,
       "pnlUnits": null
