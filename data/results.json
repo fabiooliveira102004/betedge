@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-09-17T15:20:56.439Z",
+  "updatedAt": "2026-09-18T14:40:59.411Z",
   "count": 250,
   "accuracy": {
     "n": 250,
     "hits": 109,
     "rate": 0.436,
-    "homeBaseline": 0.396,
+    "homeBaseline": 0.392,
     "byStrength": {
       "claro": {
         "n": 40,
@@ -25,6 +25,155 @@
     }
   },
   "results": [
+    {
+      "id": "56c5e4d30fc27dedb3ae48a80b81346d",
+      "league": "La Liga",
+      "home": "Málaga",
+      "away": "Villarreal",
+      "kickoff": "2026-09-17T19:30:00Z",
+      "demo": false,
+      "score": {
+        "home": 1,
+        "away": 3
+      },
+      "outcome": "away",
+      "totalGoals": 4,
+      "bothScored": true,
+      "verdict": {
+        "outcome": "home",
+        "label": "Málaga vence",
+        "probability": 0.4135,
+        "runnerUp": {
+          "label": "Villarreal vence",
+          "probability": 0.2984
+        },
+        "strength": "ligeiro",
+        "likelyScore": "1-1",
+        "likelyScoreProb": 0.1376,
+        "confidence": 0.7,
+        "summary": "Málaga vence e o resultado mais provavel, com 41%. Espera-se um jogo equilibrado em golos (2.7 no total)."
+      },
+      "verdictHit": false,
+      "lambdas": {
+        "home": 1.47,
+        "away": 1.22
+      },
+      "odds": {
+        "home": 3.5,
+        "away": 1.91,
+        "draw": 3.85
+      },
+      "modelProbs": {
+        "home": 0.4135,
+        "away": 0.2984,
+        "draw": 0.2881
+      },
+      "over25": {
+        "odds": 1.67,
+        "modelProb": 0.5039,
+        "hit": true
+      },
+      "valueSelections": [
+        {
+          "label": "Málaga vence",
+          "odds": 3.5,
+          "modelProb": 0.4135,
+          "edge": 0.1602,
+          "market": "h2h",
+          "selection": "home",
+          "line": null
+        },
+        {
+          "label": "Menos de 2.5 golos",
+          "odds": 2.4,
+          "modelProb": 0.4961,
+          "edge": 0.0981,
+          "market": "totals",
+          "selection": "under",
+          "line": 2.5
+        }
+      ],
+      "settledAt": "2026-09-18T14:40:59.643Z"
+    },
+    {
+      "id": "7f644eca099054612d9a7e7e5d8787da",
+      "league": "La Liga",
+      "home": "Real Betis",
+      "away": "Getafe",
+      "kickoff": "2026-09-17T17:00:00Z",
+      "demo": false,
+      "score": {
+        "home": 1,
+        "away": 0
+      },
+      "outcome": "home",
+      "totalGoals": 1,
+      "bothScored": false,
+      "verdict": {
+        "outcome": "home",
+        "label": "Real Betis vence",
+        "probability": 0.4697,
+        "runnerUp": {
+          "label": "Empate",
+          "probability": 0.3174
+        },
+        "strength": "ligeiro",
+        "likelyScore": "1-1",
+        "likelyScoreProb": 0.1436,
+        "confidence": 0.7,
+        "summary": "Real Betis vence e o resultado mais provavel, com 47%. Espera-se um jogo fechado (2.1 no total)."
+      },
+      "verdictHit": true,
+      "lambdas": {
+        "home": 1.32,
+        "away": 0.81
+      },
+      "odds": {
+        "away": 6.25,
+        "home": 1.49,
+        "draw": 4.15
+      },
+      "modelProbs": {
+        "away": 0.2129,
+        "home": 0.4697,
+        "draw": 0.3174
+      },
+      "over25": {
+        "odds": 2.06,
+        "modelProb": 0.3579,
+        "hit": false
+      },
+      "valueSelections": [
+        {
+          "label": "Getafe vence",
+          "odds": 6.25,
+          "modelProb": 0.2129,
+          "edge": 0.0789,
+          "market": "h2h",
+          "selection": "away",
+          "line": null
+        },
+        {
+          "label": "Empate",
+          "odds": 4.15,
+          "modelProb": 0.3174,
+          "edge": 0.0818,
+          "market": "h2h",
+          "selection": "draw",
+          "line": null
+        },
+        {
+          "label": "Menos de 2.5 golos",
+          "odds": 1.94,
+          "modelProb": 0.6421,
+          "edge": 0.1254,
+          "market": "totals",
+          "selection": "under",
+          "line": 2.5
+        }
+      ],
+      "settledAt": "2026-09-18T14:40:59.643Z"
+    },
     {
       "id": "4a3400b0763bcc367171537f40b27a4f",
       "league": "La Liga",
@@ -16952,146 +17101,6 @@
           "edge": 0.0848,
           "market": "totals",
           "selection": "over",
-          "line": 2.5
-        }
-      ],
-      "settledAt": "2026-08-15T15:29:23.501Z"
-    },
-    {
-      "id": "demo-real-betis-real-madrid-2026-08-11",
-      "league": "La Liga",
-      "home": "Real Betis",
-      "away": "Real Madrid",
-      "kickoff": "2026-08-11T18:30:00.000Z",
-      "demo": true,
-      "score": {
-        "home": 3,
-        "away": 2
-      },
-      "outcome": "home",
-      "totalGoals": 5,
-      "bothScored": true,
-      "verdict": {
-        "outcome": "away",
-        "label": "Real Madrid vence",
-        "probability": 0.4886,
-        "runnerUp": {
-          "label": "Empate",
-          "probability": 0.2692
-        },
-        "strength": "ligeiro",
-        "likelyScore": "1-1",
-        "likelyScoreProb": 0.1279,
-        "confidence": 0.7,
-        "summary": "Real Madrid vence e o resultado mais provavel, com 49%. Espera-se um jogo equilibrado em golos (2.8 no total)."
-      },
-      "verdictHit": false,
-      "lambdas": {
-        "home": 1.15,
-        "away": 1.7
-      },
-      "odds": {
-        "home": 3.48,
-        "draw": 4.02,
-        "away": 1.74
-      },
-      "modelProbs": {
-        "home": 0.2422,
-        "draw": 0.2692,
-        "away": 0.4886
-      },
-      "over25": {
-        "odds": 1.81,
-        "modelProb": 0.5414,
-        "hit": true
-      },
-      "valueSelections": [
-        {
-          "label": "Empate",
-          "odds": 4.02,
-          "modelProb": 0.2692,
-          "edge": 0.0461,
-          "market": "h2h",
-          "selection": "draw",
-          "line": null
-        }
-      ],
-      "settledAt": "2026-08-15T15:29:23.501Z"
-    },
-    {
-      "id": "demo-athletic-club-barcelona-2026-08-11",
-      "league": "La Liga",
-      "home": "Athletic Club",
-      "away": "Barcelona",
-      "kickoff": "2026-08-11T18:30:00.000Z",
-      "demo": true,
-      "score": {
-        "home": 4,
-        "away": 1
-      },
-      "outcome": "home",
-      "totalGoals": 5,
-      "bothScored": true,
-      "verdict": {
-        "outcome": "home",
-        "label": "Athletic Club vence",
-        "probability": 0.494,
-        "runnerUp": {
-          "label": "Empate",
-          "probability": 0.2808
-        },
-        "strength": "ligeiro",
-        "likelyScore": "1-1",
-        "likelyScoreProb": 0.1343,
-        "confidence": 0.7,
-        "summary": "Athletic Club vence e o resultado mais provavel, com 49%. Espera-se um jogo equilibrado em golos (2.6 no total)."
-      },
-      "verdictHit": true,
-      "lambdas": {
-        "home": 1.6,
-        "away": 1.02
-      },
-      "odds": {
-        "home": 2.9,
-        "draw": 3.97,
-        "away": 2.04
-      },
-      "modelProbs": {
-        "home": 0.494,
-        "draw": 0.2808,
-        "away": 0.2252
-      },
-      "over25": {
-        "odds": 1.89,
-        "modelProb": 0.4857,
-        "hit": true
-      },
-      "valueSelections": [
-        {
-          "label": "Athletic Club vence",
-          "odds": 2.9,
-          "modelProb": 0.494,
-          "edge": 0.18,
-          "market": "h2h",
-          "selection": "home",
-          "line": null
-        },
-        {
-          "label": "Empate",
-          "odds": 3.97,
-          "modelProb": 0.2808,
-          "edge": 0.0492,
-          "market": "h2h",
-          "selection": "draw",
-          "line": null
-        },
-        {
-          "label": "Menos de 2.5 golos",
-          "odds": 2.17,
-          "modelProb": 0.5143,
-          "edge": 0.0558,
-          "market": "totals",
-          "selection": "under",
           "line": 2.5
         }
       ],
