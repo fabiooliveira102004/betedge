@@ -1,7 +1,266 @@
 {
-  "updatedAt": "2026-09-18T14:40:59.747Z",
-  "count": 644,
+  "updatedAt": "2026-09-19T14:01:26.412Z",
+  "count": 648,
   "picks": [
+    {
+      "id": "f65c4eaf0f94a569f06d768f737dad2e:h2h:away",
+      "fixtureId": "f65c4eaf0f94a569f06d768f737dad2e",
+      "league": "Premier League",
+      "home": "Newcastle United",
+      "away": "Hull City",
+      "kickoff": "2026-09-19T14:00:00Z",
+      "market": "h2h",
+      "selection": "away",
+      "line": null,
+      "description": "Hull City vence",
+      "odds": 4.95,
+      "bookmaker": "betclic_fr",
+      "modelProb": 0.3512,
+      "fairProb": 0.1788,
+      "impliedProb": 0.202,
+      "edge": 0.1723,
+      "ev": 0.7383,
+      "stake": 0.02298,
+      "confidence": 0.532,
+      "overround": 0.0482,
+      "lambdas": {
+        "home": 1.449,
+        "away": 1.41
+      },
+      "factors": {
+        "home": [
+          {
+            "type": "descanso",
+            "attackPct": -0.4,
+            "defencePct": 0.3,
+            "detail": "apenas 4.791666666666667 dias de descanso"
+          }
+        ],
+        "away": []
+      },
+      "aiSummary": null,
+      "demo": false,
+      "generatedAt": "2026-09-18T14:41:01.971Z",
+      "settled": false,
+      "result": null,
+      "pnlUnits": null
+    },
+    {
+      "id": "b5b058d0a95f9742548f789d1c564a78:h2h:home",
+      "fixtureId": "b5b058d0a95f9742548f789d1c564a78",
+      "league": "Premier League",
+      "home": "Brighton and Hove Albion",
+      "away": "Arsenal",
+      "kickoff": "2026-09-19T14:00:00Z",
+      "market": "h2h",
+      "selection": "home",
+      "line": null,
+      "description": "Brighton and Hove Albion vence",
+      "odds": 4.75,
+      "bookmaker": "betclic_fr",
+      "modelProb": 0.3413,
+      "fairProb": 0.1892,
+      "impliedProb": 0.2105,
+      "edge": 0.1521,
+      "ev": 0.621,
+      "stake": 0.02365,
+      "confidence": 0.577,
+      "overround": 0.0439,
+      "lambdas": {
+        "home": 1.416,
+        "away": 1.509
+      },
+      "factors": {
+        "home": [],
+        "away": []
+      },
+      "aiSummary": null,
+      "demo": false,
+      "generatedAt": "2026-09-18T14:41:01.971Z",
+      "settled": false,
+      "result": null,
+      "pnlUnits": null
+    },
+    {
+      "id": "9a70cbf505030f8bfe5c7864f5ac75b5:totals:over:2.5",
+      "fixtureId": "9a70cbf505030f8bfe5c7864f5ac75b5",
+      "league": "La Liga",
+      "home": "CA Osasuna",
+      "away": "Rayo Vallecano",
+      "kickoff": "2026-09-19T12:00:00Z",
+      "market": "totals",
+      "selection": "over",
+      "line": 2.5,
+      "description": "Mais de 2.5 golos",
+      "odds": 2.14,
+      "bookmaker": "betclic_fr",
+      "modelProb": 0.6833,
+      "fairProb": 0.4618,
+      "impliedProb": 0.4673,
+      "edge": 0.2215,
+      "ev": 0.4622,
+      "stake": 0.02197,
+      "confidence": 0.465,
+      "overround": 0.0472,
+      "lambdas": {
+        "home": 1.725,
+        "away": 1.797
+      },
+      "factors": {
+        "home": [
+          {
+            "type": "descanso",
+            "attackPct": -4,
+            "defencePct": 2.8,
+            "detail": "apenas 2.7916666666666665 dias de descanso"
+          }
+        ],
+        "away": [
+          {
+            "type": "descanso",
+            "attackPct": -2.2,
+            "defencePct": 1.5,
+            "detail": "apenas 3.7916666666666665 dias de descanso"
+          }
+        ]
+      },
+      "aiSummary": null,
+      "demo": false,
+      "generatedAt": "2026-09-18T14:41:01.970Z",
+      "settled": true,
+      "result": "loss",
+      "pnlUnits": -0.02197,
+      "finalScore": "1-1",
+      "settledAt": "2026-09-19T14:01:26.287Z"
+    },
+    {
+      "id": "d02ff636f652d5b5bb65f6b24330c4fe:totals:under:2.5",
+      "fixtureId": "d02ff636f652d5b5bb65f6b24330c4fe",
+      "league": "Premier League",
+      "home": "Tottenham Hotspur",
+      "away": "Aston Villa",
+      "kickoff": "2026-09-19T11:30:00Z",
+      "market": "totals",
+      "selection": "under",
+      "line": 2.5,
+      "description": "Menos de 2.5 golos",
+      "odds": 2.12,
+      "bookmaker": "betclic_fr",
+      "modelProb": 0.7205,
+      "fairProb": 0.4594,
+      "impliedProb": 0.4717,
+      "edge": 0.2611,
+      "ev": 0.5275,
+      "stake": 0.02089,
+      "confidence": 0.393,
+      "overround": 0.052,
+      "lambdas": {
+        "home": 1.029,
+        "away": 0.809
+      },
+      "factors": {
+        "home": [],
+        "away": []
+      },
+      "aiSummary": null,
+      "demo": false,
+      "generatedAt": "2026-09-18T14:41:01.970Z",
+      "settled": true,
+      "result": "loss",
+      "pnlUnits": -0.02089,
+      "finalScore": "2-3",
+      "settledAt": "2026-09-19T14:01:26.287Z"
+    },
+    {
+      "id": "da3d3fec3e0b6b939910427a76ecfb76:totals:over:2.5",
+      "fixtureId": "da3d3fec3e0b6b939910427a76ecfb76",
+      "league": "La Liga",
+      "home": "Espanyol",
+      "away": "Elche CF",
+      "kickoff": "2026-09-18T19:00:00Z",
+      "market": "totals",
+      "selection": "over",
+      "line": 2.5,
+      "description": "Mais de 2.5 golos",
+      "odds": 1.9,
+      "bookmaker": "betclic_fr",
+      "modelProb": 0.6552,
+      "fairProb": 0.5207,
+      "impliedProb": 0.5263,
+      "edge": 0.1345,
+      "ev": 0.245,
+      "stake": 0.02474,
+      "confidence": 0.649,
+      "overround": 0.0515,
+      "lambdas": {
+        "home": 2.077,
+        "away": 1.297
+      },
+      "factors": {
+        "home": [
+          {
+            "type": "descanso",
+            "attackPct": -3.4,
+            "defencePct": 2.4,
+            "detail": "apenas 3.0833333333333335 dias de descanso"
+          }
+        ],
+        "away": [
+          {
+            "type": "descanso",
+            "attackPct": -3.6,
+            "defencePct": 2.5,
+            "detail": "apenas 2.9791666666666665 dias de descanso"
+          }
+        ]
+      },
+      "aiSummary": null,
+      "demo": false,
+      "generatedAt": "2026-09-17T15:20:59.871Z",
+      "settled": true,
+      "result": "win",
+      "pnlUnits": 0.02227,
+      "finalScore": "1-3",
+      "settledAt": "2026-09-19T14:01:26.286Z"
+    },
+    {
+      "id": "8bc1f4d74cf888c97c0216fd26c4ece7:totals:over:2.5",
+      "fixtureId": "8bc1f4d74cf888c97c0216fd26c4ece7",
+      "league": "Serie A",
+      "home": "Monza",
+      "away": "Sassuolo",
+      "kickoff": "2026-09-18T18:45:00Z",
+      "market": "totals",
+      "selection": "over",
+      "line": 2.5,
+      "description": "Mais de 2.5 golos",
+      "odds": 1.81,
+      "bookmaker": "betclic_fr",
+      "modelProb": 0.7394,
+      "fairProb": 0.5486,
+      "impliedProb": 0.5525,
+      "edge": 0.1908,
+      "ev": 0.3384,
+      "stake": 0.02204,
+      "confidence": 0.47,
+      "overround": 0.0588,
+      "lambdas": {
+        "home": 1.775,
+        "away": 2.077
+      },
+      "factors": {
+        "home": [],
+        "away": []
+      },
+      "aiSummary": null,
+      "demo": false,
+      "generatedAt": "2026-09-18T14:41:01.969Z",
+      "settled": true,
+      "result": "win",
+      "pnlUnits": 0.01785,
+      "finalScore": "2-1",
+      "settledAt": "2026-09-19T14:01:26.287Z"
+    },
     {
       "id": "56c5e4d30fc27dedb3ae48a80b81346d:h2h:home",
       "fixtureId": "56c5e4d30fc27dedb3ae48a80b81346d",
@@ -24659,92 +24918,6 @@
       "pnlUnits": -0.02739,
       "finalScore": "4-1",
       "settledAt": "2026-07-02T20:00:00.000Z"
-    },
-    {
-      "id": "2b9e09738f8627da46e42d85e4ccb478:h2h:home",
-      "fixtureId": "2b9e09738f8627da46e42d85e4ccb478",
-      "league": "Ligue 1",
-      "home": "Marseille",
-      "away": "Paris Saint Germain",
-      "kickoff": "2026-09-20T18:45:00Z",
-      "market": "h2h",
-      "selection": "home",
-      "line": null,
-      "description": "Marseille vence",
-      "odds": 6,
-      "bookmaker": "betclic_fr",
-      "modelProb": 0.3853,
-      "fairProb": 0.1393,
-      "impliedProb": 0.1667,
-      "edge": 0.2459,
-      "ev": 1.3117,
-      "stake": 0.02052,
-      "confidence": 0.368,
-      "overround": 0.0501,
-      "lambdas": {
-        "home": 1.517,
-        "away": 1.413
-      },
-      "factors": {
-        "home": [],
-        "away": []
-      },
-      "aiSummary": null,
-      "demo": false,
-      "generatedAt": "2026-09-17T15:20:59.874Z",
-      "settled": false,
-      "result": null,
-      "pnlUnits": null
-    },
-    {
-      "id": "da3d3fec3e0b6b939910427a76ecfb76:totals:over:2.5",
-      "fixtureId": "da3d3fec3e0b6b939910427a76ecfb76",
-      "league": "La Liga",
-      "home": "Espanyol",
-      "away": "Elche CF",
-      "kickoff": "2026-09-18T19:00:00Z",
-      "market": "totals",
-      "selection": "over",
-      "line": 2.5,
-      "description": "Mais de 2.5 golos",
-      "odds": 1.9,
-      "bookmaker": "betclic_fr",
-      "modelProb": 0.6552,
-      "fairProb": 0.5207,
-      "impliedProb": 0.5263,
-      "edge": 0.1345,
-      "ev": 0.245,
-      "stake": 0.02474,
-      "confidence": 0.649,
-      "overround": 0.0515,
-      "lambdas": {
-        "home": 2.077,
-        "away": 1.297
-      },
-      "factors": {
-        "home": [
-          {
-            "type": "descanso",
-            "attackPct": -3.4,
-            "defencePct": 2.4,
-            "detail": "apenas 3.0833333333333335 dias de descanso"
-          }
-        ],
-        "away": [
-          {
-            "type": "descanso",
-            "attackPct": -3.6,
-            "defencePct": 2.5,
-            "detail": "apenas 2.9791666666666665 dias de descanso"
-          }
-        ]
-      },
-      "aiSummary": null,
-      "demo": false,
-      "generatedAt": "2026-09-17T15:20:59.871Z",
-      "settled": false,
-      "result": null,
-      "pnlUnits": null
     }
   ]
 }

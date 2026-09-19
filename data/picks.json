@@ -1,313 +1,32 @@
 {
-  "generatedAt": "2026-09-18T14:40:59.747Z",
+  "generatedAt": "2026-09-19T14:01:26.412Z",
   "demo": false,
   "count": 12,
   "picks": [
     {
-      "id": "9a70cbf505030f8bfe5c7864f5ac75b5:totals:over:2.5",
-      "fixtureId": "9a70cbf505030f8bfe5c7864f5ac75b5",
-      "league": "La Liga",
-      "home": "CA Osasuna",
-      "away": "Rayo Vallecano",
-      "kickoff": "2026-09-19T12:00:00Z",
-      "market": "totals",
-      "selection": "over",
-      "line": 2.5,
-      "description": "Mais de 2.5 golos",
-      "odds": 2.14,
-      "bookmaker": "betclic_fr",
-      "modelProb": 0.6833,
-      "fairProb": 0.4618,
-      "impliedProb": 0.4673,
-      "edge": 0.2215,
-      "ev": 0.4622,
-      "stake": 0.02197,
-      "confidence": 0.465,
-      "overround": 0.0472,
-      "lambdas": {
-        "home": 1.725,
-        "away": 1.797
-      },
-      "factors": {
-        "home": [
-          {
-            "type": "descanso",
-            "attackPct": -4,
-            "defencePct": 2.8,
-            "detail": "apenas 2.7916666666666665 dias de descanso"
-          }
-        ],
-        "away": [
-          {
-            "type": "descanso",
-            "attackPct": -2.2,
-            "defencePct": 1.5,
-            "detail": "apenas 3.7916666666666665 dias de descanso"
-          }
-        ]
-      },
-      "aiSummary": null,
-      "winCondition": {
-        "wins": "O jogo tem 3 ou mais golos no total, marque quem marcar.",
-        "loses": "O jogo tem 2 ou menos golos."
-      },
-      "narrative": [
-        "O CA Osasuna marca 0,80 golos por jogo na forma recente; fora, o Rayo Vallecano marca 1,33 e sofre 3,67 (3 jogos).",
-        "Cruzando o ataque de cada equipa com a defesa da outra, ajustando a forca relativa e a vantagem de jogar em casa, o modelo espera 1,73 golos do CA Osasuna e 1,80 do Rayo Vallecano — 3,52 no total.",
-        "Isto ja conta com apenas 2.7916666666666665 dias de descanso; apenas 3.7916666666666665 dias de descanso.",
-        "Daqui sai 68% de probabilidade para esta aposta. A Betclic paga 2.14, que implica 47%; retirada a margem da casa, o preco justo do mercado e 46%. A diferenca de 22.1 pontos percentuais e a vantagem — e a razao pela qual esta aposta aparece e as outras nao."
-      ],
-      "caveats": [
-        "Mesmo estando o modelo certo, esta aposta perde 32 vezes em cada 100. A vantagem so se nota ao fim de muitas apostas.",
-        "Amostra curta: 5 jogos para a equipa com menos dados. Estimativas com poucos jogos sao instaveis.",
-        "Confianca baixa — faltam dados ou o mercado tem margem alta. Considera reduzir a stake."
-      ],
-      "scorelines": [
-        {
-          "score": "1-1",
-          "home": 1,
-          "away": 1,
-          "p": 0.1035
-        },
-        {
-          "score": "1-2",
-          "home": 1,
-          "away": 2,
-          "p": 0.0823
-        },
-        {
-          "score": "2-1",
-          "home": 2,
-          "away": 1,
-          "p": 0.079
-        },
-        {
-          "score": "2-2",
-          "home": 2,
-          "away": 2,
-          "p": 0.071
-        },
-        {
-          "score": "1-3",
-          "home": 1,
-          "away": 3,
-          "p": 0.0493
-        }
-      ],
-      "goalsDistribution": [
-        {
-          "goals": 0,
-          "label": "0",
-          "p": 0.0414
-        },
-        {
-          "goals": 1,
-          "label": "1",
-          "p": 0.0802
-        },
-        {
-          "goals": 2,
-          "label": "2",
-          "p": 0.1951
-        },
-        {
-          "goals": 3,
-          "label": "3",
-          "p": 0.2151
-        },
-        {
-          "goals": 4,
-          "label": "4",
-          "p": 0.1894
-        },
-        {
-          "goals": 5,
-          "label": "5",
-          "p": 0.1334
-        },
-        {
-          "goals": 6,
-          "label": "6+",
-          "p": 0.1454
-        }
-      ],
-      "h2h": null,
-      "teams": {
-        "home": {
-          "name": "CA Osasuna",
-          "elo": 1465,
-          "form": {
-            "games": [
-              {
-                "opponent": "Atlético Madrid",
-                "atHome": false,
-                "scored": 0,
-                "conceded": 4,
-                "result": "L",
-                "date": "2026-09-16T17:00:00Z"
-              },
-              {
-                "opponent": "Espanyol",
-                "atHome": true,
-                "scored": 0,
-                "conceded": 2,
-                "result": "L",
-                "date": "2026-09-12T14:15:00Z"
-              },
-              {
-                "opponent": "Alavés",
-                "atHome": false,
-                "scored": 2,
-                "conceded": 5,
-                "result": "L",
-                "date": "2026-09-06T16:30:00Z"
-              },
-              {
-                "opponent": "Celta Vigo",
-                "atHome": false,
-                "scored": 2,
-                "conceded": 1,
-                "result": "W",
-                "date": "2026-08-27T18:30:00Z"
-              },
-              {
-                "opponent": "Levante",
-                "atHome": true,
-                "scored": 0,
-                "conceded": 0,
-                "result": "D",
-                "date": "2026-08-24T17:30:00Z"
-              }
-            ],
-            "played": 5,
-            "wins": 1,
-            "draws": 1,
-            "losses": 3,
-            "scoredAvg": 0.8,
-            "concededAvg": 2.4,
-            "streak": "DWLLL"
-          },
-          "split": {
-            "home": {
-              "played": 2,
-              "scoredAvg": 0,
-              "concededAvg": 1
-            },
-            "away": {
-              "played": 3,
-              "scoredAvg": 1.33,
-              "concededAvg": 3.33
-            }
-          },
-          "absences": []
-        },
-        "away": {
-          "name": "Rayo Vallecano",
-          "elo": 1483,
-          "form": {
-            "games": [
-              {
-                "opponent": "Espanyol",
-                "atHome": true,
-                "scored": 2,
-                "conceded": 1,
-                "result": "W",
-                "date": "2026-09-15T17:00:00Z"
-              },
-              {
-                "opponent": "Real Madrid",
-                "atHome": false,
-                "scored": 1,
-                "conceded": 4,
-                "result": "L",
-                "date": "2026-09-12T19:00:00Z"
-              },
-              {
-                "opponent": "Real Racing Club de Santander",
-                "atHome": true,
-                "scored": 3,
-                "conceded": 2,
-                "result": "W",
-                "date": "2026-09-05T16:30:00Z"
-              },
-              {
-                "opponent": "Barcelona",
-                "atHome": false,
-                "scored": 2,
-                "conceded": 5,
-                "result": "L",
-                "date": "2026-08-31T19:30:00Z"
-              },
-              {
-                "opponent": "Alavés",
-                "atHome": true,
-                "scored": 1,
-                "conceded": 1,
-                "result": "D",
-                "date": "2026-08-20T19:00:00Z"
-              },
-              {
-                "opponent": "Sevilla",
-                "atHome": false,
-                "scored": 1,
-                "conceded": 2,
-                "result": "L",
-                "date": "2026-08-15T19:30:00Z"
-              }
-            ],
-            "played": 6,
-            "wins": 2,
-            "draws": 1,
-            "losses": 3,
-            "scoredAvg": 1.67,
-            "concededAvg": 2.5,
-            "streak": "LDLWLW"
-          },
-          "split": {
-            "home": {
-              "played": 3,
-              "scoredAvg": 2,
-              "concededAvg": 1.33
-            },
-            "away": {
-              "played": 3,
-              "scoredAvg": 1.33,
-              "concededAvg": 3.67
-            }
-          },
-          "absences": []
-        }
-      },
-      "demo": false,
-      "generatedAt": "2026-09-18T14:41:01.970Z",
-      "settled": false,
-      "result": null,
-      "pnlUnits": null
-    },
-    {
-      "id": "d02ff636f652d5b5bb65f6b24330c4fe:totals:under:2.5",
-      "fixtureId": "d02ff636f652d5b5bb65f6b24330c4fe",
-      "league": "Premier League",
-      "home": "Tottenham Hotspur",
-      "away": "Aston Villa",
-      "kickoff": "2026-09-19T11:30:00Z",
+      "id": "61f22cfde235ecc75a1ce587930c7ade:totals:under:2.5",
+      "fixtureId": "61f22cfde235ecc75a1ce587930c7ade",
+      "league": "Ligue 1",
+      "home": "Toulouse",
+      "away": "Le Havre",
+      "kickoff": "2026-09-19T18:45:00Z",
       "market": "totals",
       "selection": "under",
       "line": 2.5,
       "description": "Menos de 2.5 golos",
-      "odds": 2.12,
+      "odds": 2.34,
       "bookmaker": "betclic_fr",
-      "modelProb": 0.7205,
-      "fairProb": 0.4594,
-      "impliedProb": 0.4717,
-      "edge": 0.2611,
-      "ev": 0.5275,
-      "stake": 0.02089,
-      "confidence": 0.393,
-      "overround": 0.052,
+      "modelProb": 0.6254,
+      "fairProb": 0.4233,
+      "impliedProb": 0.4274,
+      "edge": 0.2021,
+      "ev": 0.4634,
+      "stake": 0.0221,
+      "confidence": 0.473,
+      "overround": 0.0624,
       "lambdas": {
-        "home": 1.029,
-        "away": 0.809
+        "home": 1.152,
+        "away": 1.039
       },
       "factors": {
         "home": [],
@@ -319,1474 +38,196 @@
         "loses": "O jogo tem 3 ou mais golos."
       },
       "narrative": [
-        "O Tottenham Hotspur marca 0,00 golos por jogo na forma recente; o Aston Villa marca 0,25.",
-        "Cruzando o ataque de cada equipa com a defesa da outra, ajustando a forca relativa e a vantagem de jogar em casa, o modelo espera 1,03 golos do Tottenham Hotspur e 0,81 do Aston Villa — 1,84 no total.",
-        "Daqui sai 72% de probabilidade para esta aposta. A Betclic paga 2.12, que implica 47%; retirada a margem da casa, o preco justo do mercado e 46%. A diferenca de 26.1 pontos percentuais e a vantagem — e a razao pela qual esta aposta aparece e as outras nao."
+        "O Toulouse marca 1,00 golos por jogo na forma recente; o Le Havre marca 0,50.",
+        "Cruzando o ataque de cada equipa com a defesa da outra, ajustando a forca relativa e a vantagem de jogar em casa, o modelo espera 1,15 golos do Toulouse e 1,04 do Le Havre — 2,19 no total.",
+        "Daqui sai 63% de probabilidade para esta aposta. A Betclic paga 2.34, que implica 43%; retirada a margem da casa, o preco justo do mercado e 42%. A diferenca de 20.2 pontos percentuais e a vantagem — e a razao pela qual esta aposta aparece e as outras nao."
       ],
       "caveats": [
-        "Mesmo estando o modelo certo, esta aposta perde 28 vezes em cada 100. A vantagem so se nota ao fim de muitas apostas.",
+        "Mesmo estando o modelo certo, esta aposta perde 37 vezes em cada 100. A vantagem so se nota ao fim de muitas apostas.",
         "Amostra curta: 4 jogos para a equipa com menos dados. Estimativas com poucos jogos sao instaveis.",
         "Confianca baixa — faltam dados ou o mercado tem margem alta. Considera reduzir a stake."
       ],
       "scorelines": [
         {
-          "score": "0-0",
-          "home": 0,
-          "away": 0,
-          "p": 0.1764
-        },
-        {
           "score": "1-1",
           "home": 1,
           "away": 1,
-          "p": 0.1497
-        },
-        {
-          "score": "1-0",
-          "home": 1,
-          "away": 0,
-          "p": 0.1465
-        },
-        {
-          "score": "0-1",
-          "home": 0,
-          "away": 1,
-          "p": 0.1116
-        },
-        {
-          "score": "2-0",
-          "home": 2,
-          "away": 0,
-          "p": 0.0842
-        }
-      ],
-      "goalsDistribution": [
-        {
-          "goals": 0,
-          "label": "0",
-          "p": 0.1764
-        },
-        {
-          "goals": 1,
-          "label": "1",
-          "p": 0.2581
-        },
-        {
-          "goals": 2,
-          "label": "2",
-          "p": 0.286
-        },
-        {
-          "goals": 3,
-          "label": "3",
-          "p": 0.1647
-        },
-        {
-          "goals": 4,
-          "label": "4",
-          "p": 0.0756
-        },
-        {
-          "goals": 5,
-          "label": "5",
-          "p": 0.0278
-        },
-        {
-          "goals": 6,
-          "label": "6+",
-          "p": 0.0114
-        }
-      ],
-      "h2h": null,
-      "teams": {
-        "home": {
-          "name": "Tottenham Hotspur",
-          "elo": 1470,
-          "form": {
-            "games": [
-              {
-                "opponent": "Everton",
-                "atHome": true,
-                "scored": 0,
-                "conceded": 0,
-                "result": "D",
-                "date": "2026-09-12T16:30:00Z"
-              },
-              {
-                "opponent": "Nottingham Forest",
-                "atHome": false,
-                "scored": 0,
-                "conceded": 0,
-                "result": "D",
-                "date": "2026-09-05T14:00:00Z"
-              },
-              {
-                "opponent": "Newcastle United",
-                "atHome": true,
-                "scored": 0,
-                "conceded": 2,
-                "result": "L",
-                "date": "2026-08-29T16:30:00Z"
-              },
-              {
-                "opponent": "Brentford",
-                "atHome": false,
-                "scored": 0,
-                "conceded": 3,
-                "result": "L",
-                "date": "2026-08-22T16:30:00Z"
-              }
-            ],
-            "played": 4,
-            "wins": 0,
-            "draws": 2,
-            "losses": 2,
-            "scoredAvg": 0,
-            "concededAvg": 1.25,
-            "streak": "LLDD"
-          },
-          "split": {
-            "home": {
-              "played": 2,
-              "scoredAvg": 0,
-              "concededAvg": 1
-            },
-            "away": {
-              "played": 2,
-              "scoredAvg": 0,
-              "concededAvg": 1.5
-            }
-          },
-          "absences": []
-        },
-        "away": {
-          "name": "Aston Villa",
-          "elo": 1465,
-          "form": {
-            "games": [
-              {
-                "opponent": "Nottingham Forest",
-                "atHome": true,
-                "scored": 1,
-                "conceded": 2,
-                "result": "L",
-                "date": "2026-09-12T14:00:00Z"
-              },
-              {
-                "opponent": "Hull City",
-                "atHome": false,
-                "scored": 0,
-                "conceded": 0,
-                "result": "D",
-                "date": "2026-09-05T16:30:00Z"
-              },
-              {
-                "opponent": "Arsenal",
-                "atHome": true,
-                "scored": 0,
-                "conceded": 1,
-                "result": "L",
-                "date": "2026-08-31T19:00:00Z"
-              },
-              {
-                "opponent": "Brighton and Hove Albion",
-                "atHome": false,
-                "scored": 0,
-                "conceded": 4,
-                "result": "L",
-                "date": "2026-08-23T13:00:00Z"
-              }
-            ],
-            "played": 4,
-            "wins": 0,
-            "draws": 1,
-            "losses": 3,
-            "scoredAvg": 0.25,
-            "concededAvg": 1.75,
-            "streak": "LLDL"
-          },
-          "split": {
-            "home": {
-              "played": 2,
-              "scoredAvg": 0.5,
-              "concededAvg": 1.5
-            },
-            "away": {
-              "played": 2,
-              "scoredAvg": 0,
-              "concededAvg": 2
-            }
-          },
-          "absences": []
-        }
-      },
-      "demo": false,
-      "generatedAt": "2026-09-18T14:41:01.970Z",
-      "settled": false,
-      "result": null,
-      "pnlUnits": null
-    },
-    {
-      "id": "f65c4eaf0f94a569f06d768f737dad2e:h2h:away",
-      "fixtureId": "f65c4eaf0f94a569f06d768f737dad2e",
-      "league": "Premier League",
-      "home": "Newcastle United",
-      "away": "Hull City",
-      "kickoff": "2026-09-19T14:00:00Z",
-      "market": "h2h",
-      "selection": "away",
-      "line": null,
-      "description": "Hull City vence",
-      "odds": 4.95,
-      "bookmaker": "betclic_fr",
-      "modelProb": 0.3512,
-      "fairProb": 0.1788,
-      "impliedProb": 0.202,
-      "edge": 0.1723,
-      "ev": 0.7383,
-      "stake": 0.02298,
-      "confidence": 0.532,
-      "overround": 0.0482,
-      "lambdas": {
-        "home": 1.449,
-        "away": 1.41
-      },
-      "factors": {
-        "home": [
-          {
-            "type": "descanso",
-            "attackPct": -0.4,
-            "defencePct": 0.3,
-            "detail": "apenas 4.791666666666667 dias de descanso"
-          }
-        ],
-        "away": []
-      },
-      "aiSummary": null,
-      "winCondition": {
-        "wins": "Hull City vence o jogo no tempo regulamentar.",
-        "loses": "Newcastle United vence ou o jogo acaba empatado."
-      },
-      "narrative": [
-        "O Newcastle United marca 1,75 golos por jogo na forma recente; o Hull City marca 1,33.",
-        "Cruzando o ataque de cada equipa com a defesa da outra, ajustando a forca relativa e a vantagem de jogar em casa, o modelo espera 1,45 golos do Newcastle United e 1,41 do Hull City — 2,86 no total.",
-        "Isto ja conta com apenas 4.791666666666667 dias de descanso.",
-        "Daqui sai 35% de probabilidade para esta aposta. A Betclic paga 4.95, que implica 20%; retirada a margem da casa, o preco justo do mercado e 18%. A diferenca de 17.2 pontos percentuais e a vantagem — e a razao pela qual esta aposta aparece e as outras nao."
-      ],
-      "caveats": [
-        "Mesmo estando o modelo certo, esta aposta perde 65 vezes em cada 100. A vantagem so se nota ao fim de muitas apostas.",
-        "Amostra curta: 3 jogos para a equipa com menos dados. Estimativas com poucos jogos sao instaveis.",
-        "A odd de 4.95 significa que este resultado e pouco frequente: espera longas series sem acertar."
-      ],
-      "scorelines": [
-        {
-          "score": "1-1",
-          "home": 1,
-          "away": 1,
-          "p": 0.1324
-        },
-        {
-          "score": "2-1",
-          "home": 2,
-          "away": 1,
-          "p": 0.0849
-        },
-        {
-          "score": "1-2",
-          "home": 1,
-          "away": 2,
-          "p": 0.0826
+          "p": 0.1512
         },
         {
           "score": "0-0",
           "home": 0,
           "away": 0,
-          "p": 0.0726
-        },
-        {
-          "score": "1-0",
-          "home": 1,
-          "away": 0,
-          "p": 0.0678
-        }
-      ],
-      "goalsDistribution": [
-        {
-          "goals": 0,
-          "label": "0",
-          "p": 0.0726
-        },
-        {
-          "goals": 1,
-          "label": "1",
-          "p": 0.1335
-        },
-        {
-          "goals": 2,
-          "label": "2",
-          "p": 0.2495
-        },
-        {
-          "goals": 3,
-          "label": "3",
-          "p": 0.2233
-        },
-        {
-          "goals": 4,
-          "label": "4",
-          "p": 0.1596
-        },
-        {
-          "goals": 5,
-          "label": "5",
-          "p": 0.0912
-        },
-        {
-          "goals": 6,
-          "label": "6+",
-          "p": 0.0704
-        }
-      ],
-      "h2h": null,
-      "teams": {
-        "home": {
-          "name": "Newcastle United",
-          "elo": 1499,
-          "form": {
-            "games": [
-              {
-                "opponent": "Leeds United",
-                "atHome": false,
-                "scored": 1,
-                "conceded": 4,
-                "result": "L",
-                "date": "2026-09-14T19:00:00Z"
-              },
-              {
-                "opponent": "Bournemouth",
-                "atHome": true,
-                "scored": 2,
-                "conceded": 2,
-                "result": "D",
-                "date": "2026-09-05T11:30:00Z"
-              },
-              {
-                "opponent": "Tottenham Hotspur",
-                "atHome": false,
-                "scored": 2,
-                "conceded": 0,
-                "result": "W",
-                "date": "2026-08-29T16:30:00Z"
-              },
-              {
-                "opponent": "Liverpool",
-                "atHome": true,
-                "scored": 2,
-                "conceded": 2,
-                "result": "D",
-                "date": "2026-08-23T15:30:00Z"
-              }
-            ],
-            "played": 4,
-            "wins": 1,
-            "draws": 2,
-            "losses": 1,
-            "scoredAvg": 1.75,
-            "concededAvg": 2,
-            "streak": "DWDL"
-          },
-          "split": {
-            "home": {
-              "played": 2,
-              "scoredAvg": 2,
-              "concededAvg": 2
-            },
-            "away": {
-              "played": 2,
-              "scoredAvg": 1.5,
-              "concededAvg": 2
-            }
-          },
-          "absences": []
-        },
-        "away": {
-          "name": "Hull City",
-          "elo": 1511,
-          "form": {
-            "games": [
-              {
-                "opponent": "Chelsea",
-                "atHome": false,
-                "scored": 2,
-                "conceded": 2,
-                "result": "D",
-                "date": "2026-09-12T14:00:00Z"
-              },
-              {
-                "opponent": "Aston Villa",
-                "atHome": true,
-                "scored": 0,
-                "conceded": 0,
-                "result": "D",
-                "date": "2026-09-05T16:30:00Z"
-              },
-              {
-                "opponent": "Manchester United",
-                "atHome": true,
-                "scored": 2,
-                "conceded": 0,
-                "result": "W",
-                "date": "2026-08-22T11:30:00Z"
-              }
-            ],
-            "played": 3,
-            "wins": 1,
-            "draws": 2,
-            "losses": 0,
-            "scoredAvg": 1.33,
-            "concededAvg": 0.67,
-            "streak": "WDD"
-          },
-          "split": {
-            "home": {
-              "played": 2,
-              "scoredAvg": 1,
-              "concededAvg": 0
-            },
-            "away": {
-              "played": 1,
-              "scoredAvg": 2,
-              "concededAvg": 2
-            }
-          },
-          "absences": []
-        }
-      },
-      "demo": false,
-      "generatedAt": "2026-09-18T14:41:01.971Z",
-      "settled": false,
-      "result": null,
-      "pnlUnits": null
-    },
-    {
-      "id": "ded5c2293009b93b7d8ee3c890b6617e:totals:under:2.5",
-      "fixtureId": "ded5c2293009b93b7d8ee3c890b6617e",
-      "league": "La Liga",
-      "home": "Deportivo La Coruña",
-      "away": "Real Betis",
-      "kickoff": "2026-09-20T16:30:00Z",
-      "market": "totals",
-      "selection": "under",
-      "line": 2.5,
-      "description": "Menos de 2.5 golos",
-      "odds": 2.06,
-      "bookmaker": "betclic_fr",
-      "modelProb": 0.6552,
-      "fairProb": 0.4832,
-      "impliedProb": 0.4854,
-      "edge": 0.1721,
-      "ev": 0.3498,
-      "stake": 0.02282,
-      "confidence": 0.522,
-      "overround": 0.0593,
-      "lambdas": {
-        "home": 1.041,
-        "away": 1.038
-      },
-      "factors": {
-        "home": [
-          {
-            "type": "descanso",
-            "attackPct": -1.8,
-            "defencePct": 1.3,
-            "detail": "apenas 3.9791666666666665 dias de descanso"
-          }
-        ],
-        "away": [
-          {
-            "type": "descanso",
-            "attackPct": -3.6,
-            "defencePct": 2.5,
-            "detail": "apenas 2.9791666666666665 dias de descanso"
-          }
-        ]
-      },
-      "aiSummary": null,
-      "winCondition": {
-        "wins": "O jogo tem 2 ou menos golos no total.",
-        "loses": "O jogo tem 3 ou mais golos."
-      },
-      "narrative": [
-        "Em casa, o Deportivo La Coruña marca 1,33 e sofre 1,00 golos por jogo (3 jogos); o Real Betis marca 1,20.",
-        "Cruzando o ataque de cada equipa com a defesa da outra, ajustando a forca relativa e a vantagem de jogar em casa, o modelo espera 1,04 golos do Deportivo La Coruña e 1,04 do Real Betis — 2,08 no total.",
-        "Isto ja conta com apenas 3.9791666666666665 dias de descanso; apenas 2.9791666666666665 dias de descanso.",
-        "Daqui sai 66% de probabilidade para esta aposta. A Betclic paga 2.06, que implica 49%; retirada a margem da casa, o preco justo do mercado e 48%. A diferenca de 17.2 pontos percentuais e a vantagem — e a razao pela qual esta aposta aparece e as outras nao."
-      ],
-      "caveats": [
-        "Mesmo estando o modelo certo, esta aposta perde 34 vezes em cada 100. A vantagem so se nota ao fim de muitas apostas.",
-        "Amostra curta: 5 jogos para a equipa com menos dados. Estimativas com poucos jogos sao instaveis."
-      ],
-      "scorelines": [
-        {
-          "score": "1-1",
-          "home": 1,
-          "away": 1,
-          "p": 0.1527
-        },
-        {
-          "score": "0-0",
-          "home": 0,
-          "away": 0,
-          "p": 0.1426
-        },
-        {
-          "score": "1-0",
-          "home": 1,
-          "away": 0,
-          "p": 0.1126
-        },
-        {
-          "score": "0-1",
-          "home": 0,
-          "away": 1,
-          "p": 0.1122
-        },
-        {
-          "score": "2-1",
-          "home": 2,
-          "away": 1,
-          "p": 0.0703
-        }
-      ],
-      "goalsDistribution": [
-        {
-          "goals": 0,
-          "label": "0",
-          "p": 0.1426
-        },
-        {
-          "goals": 1,
-          "label": "1",
-          "p": 0.2248
-        },
-        {
-          "goals": 2,
-          "label": "2",
-          "p": 0.2878
-        },
-        {
-          "goals": 3,
-          "label": "3",
-          "p": 0.1873
-        },
-        {
-          "goals": 4,
-          "label": "4",
-          "p": 0.0974
-        },
-        {
-          "goals": 5,
-          "label": "5",
-          "p": 0.0405
-        },
-        {
-          "goals": 6,
-          "label": "6+",
-          "p": 0.0196
-        }
-      ],
-      "h2h": null,
-      "teams": {
-        "home": {
-          "name": "Deportivo La Coruña",
-          "elo": 1512,
-          "form": {
-            "games": [
-              {
-                "opponent": "Sevilla",
-                "atHome": true,
-                "scored": 0,
-                "conceded": 1,
-                "result": "L",
-                "date": "2026-09-16T17:00:00Z"
-              },
-              {
-                "opponent": "Getafe",
-                "atHome": false,
-                "scored": 1,
-                "conceded": 1,
-                "result": "D",
-                "date": "2026-09-13T16:30:00Z"
-              },
-              {
-                "opponent": "Villarreal",
-                "atHome": false,
-                "scored": 3,
-                "conceded": 2,
-                "result": "W",
-                "date": "2026-09-05T19:00:00Z"
-              },
-              {
-                "opponent": "Valencia",
-                "atHome": true,
-                "scored": 3,
-                "conceded": 1,
-                "result": "W",
-                "date": "2026-08-30T17:30:00Z"
-              },
-              {
-                "opponent": "Málaga",
-                "atHome": false,
-                "scored": 1,
-                "conceded": 1,
-                "result": "D",
-                "date": "2026-08-24T19:30:00Z"
-              },
-              {
-                "opponent": "Elche CF",
-                "atHome": true,
-                "scored": 1,
-                "conceded": 1,
-                "result": "D",
-                "date": "2026-08-17T19:00:00Z"
-              }
-            ],
-            "played": 6,
-            "wins": 2,
-            "draws": 3,
-            "losses": 1,
-            "scoredAvg": 1.5,
-            "concededAvg": 1.17,
-            "streak": "DDWWDL"
-          },
-          "split": {
-            "home": {
-              "played": 3,
-              "scoredAvg": 1.33,
-              "concededAvg": 1
-            },
-            "away": {
-              "played": 3,
-              "scoredAvg": 1.67,
-              "concededAvg": 1.33
-            }
-          },
-          "absences": []
-        },
-        "away": {
-          "name": "Real Betis",
-          "elo": 1546,
-          "form": {
-            "games": [
-              {
-                "opponent": "Getafe",
-                "atHome": true,
-                "scored": 1,
-                "conceded": 0,
-                "result": "W",
-                "date": "2026-09-17T17:00:00Z"
-              },
-              {
-                "opponent": "Villarreal",
-                "atHome": false,
-                "scored": 2,
-                "conceded": 1,
-                "result": "W",
-                "date": "2026-09-14T19:00:00Z"
-              },
-              {
-                "opponent": "Real Madrid",
-                "atHome": true,
-                "scored": 1,
-                "conceded": 0,
-                "result": "W",
-                "date": "2026-09-04T19:00:00Z"
-              },
-              {
-                "opponent": "Valencia",
-                "atHome": false,
-                "scored": 1,
-                "conceded": 0,
-                "result": "W",
-                "date": "2026-08-25T19:00:00Z"
-              },
-              {
-                "opponent": "Real Sociedad",
-                "atHome": true,
-                "scored": 1,
-                "conceded": 0,
-                "result": "W",
-                "date": "2026-08-21T19:00:00Z"
-              }
-            ],
-            "played": 5,
-            "wins": 5,
-            "draws": 0,
-            "losses": 0,
-            "scoredAvg": 1.2,
-            "concededAvg": 0.2,
-            "streak": "WWWWW"
-          },
-          "split": {
-            "home": {
-              "played": 3,
-              "scoredAvg": 1,
-              "concededAvg": 0
-            },
-            "away": {
-              "played": 2,
-              "scoredAvg": 1.5,
-              "concededAvg": 0.5
-            }
-          },
-          "absences": []
-        }
-      },
-      "demo": false,
-      "generatedAt": "2026-09-18T14:41:01.973Z",
-      "settled": false,
-      "result": null,
-      "pnlUnits": null
-    },
-    {
-      "id": "5866dae1e72b96ab74508039cd3dcca7:h2h:home",
-      "fixtureId": "5866dae1e72b96ab74508039cd3dcca7",
-      "league": "La Liga",
-      "home": "Atlético Madrid",
-      "away": "Real Madrid",
-      "kickoff": "2026-09-20T14:15:00Z",
-      "market": "h2h",
-      "selection": "home",
-      "line": null,
-      "description": "Atlético Madrid vence",
-      "odds": 3.38,
-      "bookmaker": "betclic_fr",
-      "modelProb": 0.426,
-      "fairProb": 0.2651,
-      "impliedProb": 0.2959,
-      "edge": 0.1609,
-      "ev": 0.4398,
-      "stake": 0.02336,
-      "confidence": 0.557,
-      "overround": 0.0461,
-      "lambdas": {
-        "home": 1.822,
-        "away": 1.577
-      },
-      "factors": {
-        "home": [
-          {
-            "type": "descanso",
-            "attackPct": -2,
-            "defencePct": 1.4,
-            "detail": "apenas 3.8854166666666665 dias de descanso"
-          }
-        ],
-        "away": [
-          {
-            "type": "descanso",
-            "attackPct": -0.4,
-            "defencePct": 0.3,
-            "detail": "apenas 4.78125 dias de descanso"
-          }
-        ]
-      },
-      "aiSummary": null,
-      "winCondition": {
-        "wins": "Atlético Madrid vence o jogo no tempo regulamentar.",
-        "loses": "Real Madrid vence ou o jogo acaba empatado."
-      },
-      "narrative": [
-        "Em casa, o Atlético Madrid marca 2,67 e sofre 0,67 golos por jogo (3 jogos); fora, o Real Madrid marca 1,67 e sofre 1,33 (3 jogos).",
-        "Cruzando o ataque de cada equipa com a defesa da outra, ajustando a forca relativa e a vantagem de jogar em casa, o modelo espera 1,82 golos do Atlético Madrid e 1,58 do Real Madrid — 3,40 no total.",
-        "Isto ja conta com apenas 3.8854166666666665 dias de descanso; apenas 4.78125 dias de descanso.",
-        "Daqui sai 43% de probabilidade para esta aposta. A Betclic paga 3.38, que implica 30%; retirada a margem da casa, o preco justo do mercado e 27%. A diferenca de 16.1 pontos percentuais e a vantagem — e a razao pela qual esta aposta aparece e as outras nao."
-      ],
-      "caveats": [
-        "Mesmo estando o modelo certo, esta aposta perde 57 vezes em cada 100. A vantagem so se nota ao fim de muitas apostas.",
-        "Amostra curta: 5 jogos para a equipa com menos dados. Estimativas com poucos jogos sao instaveis."
-      ],
-      "scorelines": [
-        {
-          "score": "1-1",
-          "home": 1,
-          "away": 1,
-          "p": 0.1085
-        },
-        {
-          "score": "2-1",
-          "home": 2,
-          "away": 1,
-          "p": 0.0875
-        },
-        {
-          "score": "1-2",
-          "home": 1,
-          "away": 2,
-          "p": 0.0757
-        },
-        {
-          "score": "2-2",
-          "home": 2,
-          "away": 2,
-          "p": 0.0689
-        },
-        {
-          "score": "2-0",
-          "home": 2,
-          "away": 0,
-          "p": 0.0555
-        }
-      ],
-      "goalsDistribution": [
-        {
-          "goals": 0,
-          "label": "0",
-          "p": 0.0459
-        },
-        {
-          "goals": 1,
-          "label": "1",
-          "p": 0.0886
-        },
-        {
-          "goals": 2,
-          "label": "2",
-          "p": 0.2055
-        },
-        {
-          "goals": 3,
-          "label": "3",
-          "p": 0.2187
-        },
-        {
-          "goals": 4,
-          "label": "4",
-          "p": 0.1858
-        },
-        {
-          "goals": 5,
-          "label": "5",
-          "p": 0.1263
-        },
-        {
-          "goals": 6,
-          "label": "6+",
           "p": 0.1293
-        }
-      ],
-      "h2h": null,
-      "teams": {
-        "home": {
-          "name": "Atlético Madrid",
-          "elo": 1545,
-          "form": {
-            "games": [
-              {
-                "opponent": "CA Osasuna",
-                "atHome": true,
-                "scored": 4,
-                "conceded": 0,
-                "result": "W",
-                "date": "2026-09-16T17:00:00Z"
-              },
-              {
-                "opponent": "Real Sociedad",
-                "atHome": false,
-                "scored": 3,
-                "conceded": 0,
-                "result": "W",
-                "date": "2026-09-13T19:00:00Z"
-              },
-              {
-                "opponent": "Athletic Bilbao",
-                "atHome": false,
-                "scored": 0,
-                "conceded": 3,
-                "result": "L",
-                "date": "2026-09-05T14:15:00Z"
-              },
-              {
-                "opponent": "Sevilla",
-                "atHome": false,
-                "scored": 3,
-                "conceded": 1,
-                "result": "W",
-                "date": "2026-08-29T19:30:00Z"
-              },
-              {
-                "opponent": "Villarreal",
-                "atHome": true,
-                "scored": 2,
-                "conceded": 2,
-                "result": "D",
-                "date": "2026-08-23T15:00:00Z"
-              },
-              {
-                "opponent": "Málaga",
-                "atHome": true,
-                "scored": 2,
-                "conceded": 0,
-                "result": "W",
-                "date": "2026-08-19T19:00:00Z"
-              }
-            ],
-            "played": 6,
-            "wins": 4,
-            "draws": 1,
-            "losses": 1,
-            "scoredAvg": 2.33,
-            "concededAvg": 1,
-            "streak": "WDWLWW"
-          },
-          "split": {
-            "home": {
-              "played": 3,
-              "scoredAvg": 2.67,
-              "concededAvg": 0.67
-            },
-            "away": {
-              "played": 3,
-              "scoredAvg": 2,
-              "concededAvg": 1.33
-            }
-          },
-          "absences": []
-        },
-        "away": {
-          "name": "Real Madrid",
-          "elo": 1540,
-          "form": {
-            "games": [
-              {
-                "opponent": "Elche CF",
-                "atHome": false,
-                "scored": 3,
-                "conceded": 2,
-                "result": "W",
-                "date": "2026-09-15T19:30:00Z"
-              },
-              {
-                "opponent": "Rayo Vallecano",
-                "atHome": true,
-                "scored": 4,
-                "conceded": 1,
-                "result": "W",
-                "date": "2026-09-12T19:00:00Z"
-              },
-              {
-                "opponent": "Real Betis",
-                "atHome": false,
-                "scored": 0,
-                "conceded": 1,
-                "result": "L",
-                "date": "2026-09-04T19:00:00Z"
-              },
-              {
-                "opponent": "Real Sociedad",
-                "atHome": true,
-                "scored": 4,
-                "conceded": 1,
-                "result": "W",
-                "date": "2026-08-26T19:00:00Z"
-              },
-              {
-                "opponent": "Espanyol",
-                "atHome": false,
-                "scored": 2,
-                "conceded": 1,
-                "result": "W",
-                "date": "2026-08-22T19:30:00Z"
-              }
-            ],
-            "played": 5,
-            "wins": 4,
-            "draws": 0,
-            "losses": 1,
-            "scoredAvg": 2.6,
-            "concededAvg": 1.2,
-            "streak": "WWLWW"
-          },
-          "split": {
-            "home": {
-              "played": 2,
-              "scoredAvg": 4,
-              "concededAvg": 1
-            },
-            "away": {
-              "played": 3,
-              "scoredAvg": 1.67,
-              "concededAvg": 1.33
-            }
-          },
-          "absences": []
-        }
-      },
-      "demo": false,
-      "generatedAt": "2026-09-18T14:41:01.973Z",
-      "settled": false,
-      "result": null,
-      "pnlUnits": null
-    },
-    {
-      "id": "8bc1f4d74cf888c97c0216fd26c4ece7:totals:over:2.5",
-      "fixtureId": "8bc1f4d74cf888c97c0216fd26c4ece7",
-      "league": "Serie A",
-      "home": "Monza",
-      "away": "Sassuolo",
-      "kickoff": "2026-09-18T18:45:00Z",
-      "market": "totals",
-      "selection": "over",
-      "line": 2.5,
-      "description": "Mais de 2.5 golos",
-      "odds": 1.81,
-      "bookmaker": "betclic_fr",
-      "modelProb": 0.7394,
-      "fairProb": 0.5486,
-      "impliedProb": 0.5525,
-      "edge": 0.1908,
-      "ev": 0.3384,
-      "stake": 0.02204,
-      "confidence": 0.47,
-      "overround": 0.0588,
-      "lambdas": {
-        "home": 1.775,
-        "away": 2.077
-      },
-      "factors": {
-        "home": [],
-        "away": []
-      },
-      "aiSummary": null,
-      "winCondition": {
-        "wins": "O jogo tem 3 ou mais golos no total, marque quem marcar.",
-        "loses": "O jogo tem 2 ou menos golos."
-      },
-      "narrative": [
-        "O Monza marca 1,50 golos por jogo na forma recente; o Sassuolo marca 2,00.",
-        "Cruzando o ataque de cada equipa com a defesa da outra, ajustando a forca relativa e a vantagem de jogar em casa, o modelo espera 1,78 golos do Monza e 2,08 do Sassuolo — 3,85 no total.",
-        "Daqui sai 74% de probabilidade para esta aposta. A Betclic paga 1.81, que implica 55%; retirada a margem da casa, o preco justo do mercado e 55%. A diferenca de 19.1 pontos percentuais e a vantagem — e a razao pela qual esta aposta aparece e as outras nao."
-      ],
-      "caveats": [
-        "Mesmo estando o modelo certo, esta aposta perde 26 vezes em cada 100. A vantagem so se nota ao fim de muitas apostas.",
-        "Amostra curta: 2 jogos para a equipa com menos dados. Estimativas com poucos jogos sao instaveis.",
-        "Confianca baixa — faltam dados ou o mercado tem margem alta. Considera reduzir a stake."
-      ],
-      "scorelines": [
-        {
-          "score": "1-1",
-          "home": 1,
-          "away": 1,
-          "p": 0.0885
-        },
-        {
-          "score": "1-2",
-          "home": 1,
-          "away": 2,
-          "p": 0.0813
-        },
-        {
-          "score": "2-2",
-          "home": 2,
-          "away": 2,
-          "p": 0.0722
-        },
-        {
-          "score": "2-1",
-          "home": 2,
-          "away": 1,
-          "p": 0.0695
-        },
-        {
-          "score": "1-3",
-          "home": 1,
-          "away": 3,
-          "p": 0.0563
-        }
-      ],
-      "goalsDistribution": [
-        {
-          "goals": 0,
-          "label": "0",
-          "p": 0.0314
-        },
-        {
-          "goals": 1,
-          "label": "1",
-          "p": 0.0614
-        },
-        {
-          "goals": 2,
-          "label": "2",
-          "p": 0.1677
-        },
-        {
-          "goals": 3,
-          "label": "3",
-          "p": 0.2023
-        },
-        {
-          "goals": 4,
-          "label": "4",
-          "p": 0.1948
-        },
-        {
-          "goals": 5,
-          "label": "5",
-          "p": 0.1501
-        },
-        {
-          "goals": 6,
-          "label": "6+",
-          "p": 0.1922
-        }
-      ],
-      "h2h": null,
-      "teams": {
-        "home": {
-          "name": "Monza",
-          "elo": 1474,
-          "form": {
-            "games": [
-              {
-                "opponent": "Udinese",
-                "atHome": true,
-                "scored": 2,
-                "conceded": 3,
-                "result": "L",
-                "date": "2026-08-29T16:30:00Z"
-              },
-              {
-                "opponent": "Inter Milan",
-                "atHome": false,
-                "scored": 1,
-                "conceded": 4,
-                "result": "L",
-                "date": "2026-08-22T16:30:00Z"
-              }
-            ],
-            "played": 2,
-            "wins": 0,
-            "draws": 0,
-            "losses": 2,
-            "scoredAvg": 1.5,
-            "concededAvg": 3.5,
-            "streak": "LL"
-          },
-          "split": {
-            "home": {
-              "played": 1,
-              "scoredAvg": 2,
-              "concededAvg": 3
-            },
-            "away": {
-              "played": 1,
-              "scoredAvg": 1,
-              "concededAvg": 4
-            }
-          },
-          "absences": []
-        },
-        "away": {
-          "name": "Sassuolo",
-          "elo": 1510,
-          "form": {
-            "games": [
-              {
-                "opponent": "Juventus",
-                "atHome": true,
-                "scored": 3,
-                "conceded": 2,
-                "result": "W",
-                "date": "2026-09-13T18:45:00Z"
-              },
-              {
-                "opponent": "Bologna",
-                "atHome": false,
-                "scored": 2,
-                "conceded": 2,
-                "result": "D",
-                "date": "2026-09-06T16:00:00Z"
-              },
-              {
-                "opponent": "Torino",
-                "atHome": true,
-                "scored": 2,
-                "conceded": 1,
-                "result": "W",
-                "date": "2026-08-29T16:30:00Z"
-              },
-              {
-                "opponent": "Atalanta BC",
-                "atHome": false,
-                "scored": 1,
-                "conceded": 2,
-                "result": "L",
-                "date": "2026-08-23T18:45:00Z"
-              }
-            ],
-            "played": 4,
-            "wins": 2,
-            "draws": 1,
-            "losses": 1,
-            "scoredAvg": 2,
-            "concededAvg": 1.75,
-            "streak": "LWDW"
-          },
-          "split": {
-            "home": {
-              "played": 2,
-              "scoredAvg": 2.5,
-              "concededAvg": 1.5
-            },
-            "away": {
-              "played": 2,
-              "scoredAvg": 1.5,
-              "concededAvg": 2
-            }
-          },
-          "absences": []
-        }
-      },
-      "demo": false,
-      "generatedAt": "2026-09-18T14:41:01.969Z",
-      "settled": false,
-      "result": null,
-      "pnlUnits": null
-    },
-    {
-      "id": "a995ad3266759e67c9f9b0617c184b71:h2h:away",
-      "fixtureId": "a995ad3266759e67c9f9b0617c184b71",
-      "league": "La Liga",
-      "home": "Athletic Bilbao",
-      "away": "Alavés",
-      "kickoff": "2026-09-19T14:15:00Z",
-      "market": "h2h",
-      "selection": "away",
-      "line": null,
-      "description": "Alavés vence",
-      "odds": 5,
-      "bookmaker": "betclic_fr",
-      "modelProb": 0.3234,
-      "fairProb": 0.1732,
-      "impliedProb": 0.2,
-      "edge": 0.1502,
-      "ev": 0.6168,
-      "stake": 0.02389,
-      "confidence": 0.593,
-      "overround": 0.0468,
-      "lambdas": {
-        "home": 1.551,
-        "away": 1.375
-      },
-      "factors": {
-        "home": [],
-        "away": [
-          {
-            "type": "descanso",
-            "attackPct": -2.1,
-            "defencePct": 1.5,
-            "detail": "apenas 3.84375 dias de descanso"
-          }
-        ]
-      },
-      "aiSummary": null,
-      "winCondition": {
-        "wins": "Alavés vence o jogo no tempo regulamentar.",
-        "loses": "Athletic Bilbao vence ou o jogo acaba empatado."
-      },
-      "narrative": [
-        "Em casa, o Athletic Bilbao marca 1,67 e sofre 1,33 golos por jogo (3 jogos); o Alavés marca 2,25.",
-        "Cruzando o ataque de cada equipa com a defesa da outra, ajustando a forca relativa e a vantagem de jogar em casa, o modelo espera 1,55 golos do Athletic Bilbao e 1,38 do Alavés — 2,93 no total.",
-        "Isto ja conta com apenas 3.84375 dias de descanso.",
-        "Daqui sai 32% de probabilidade para esta aposta. A Betclic paga 5.00, que implica 20%; retirada a margem da casa, o preco justo do mercado e 17%. A diferenca de 15 pontos percentuais e a vantagem — e a razao pela qual esta aposta aparece e as outras nao."
-      ],
-      "caveats": [
-        "Mesmo estando o modelo certo, esta aposta perde 68 vezes em cada 100. A vantagem so se nota ao fim de muitas apostas.",
-        "Amostra curta: 4 jogos para a equipa com menos dados. Estimativas com poucos jogos sao instaveis.",
-        "A odd de 5.00 significa que este resultado e pouco frequente: espera longas series sem acertar."
-      ],
-      "scorelines": [
-        {
-          "score": "1-1",
-          "home": 1,
-          "away": 1,
-          "p": 0.1292
-        },
-        {
-          "score": "2-1",
-          "home": 2,
-          "away": 1,
-          "p": 0.0887
-        },
-        {
-          "score": "1-2",
-          "home": 1,
-          "away": 2,
-          "p": 0.0786
-        },
-        {
-          "score": "0-0",
-          "home": 0,
-          "away": 0,
-          "p": 0.0685
         },
         {
           "score": "1-0",
           "home": 1,
           "away": 0,
-          "p": 0.0683
+          "p": 0.1115
+        },
+        {
+          "score": "0-1",
+          "home": 0,
+          "away": 1,
+          "p": 0.0988
+        },
+        {
+          "score": "2-1",
+          "home": 2,
+          "away": 1,
+          "p": 0.0771
         }
       ],
       "goalsDistribution": [
         {
           "goals": 0,
           "label": "0",
-          "p": 0.0685
+          "p": 0.1293
         },
         {
           "goals": 1,
           "label": "1",
-          "p": 0.1271
+          "p": 0.2103
         },
         {
           "goals": 2,
           "label": "2",
-          "p": 0.2443
+          "p": 0.2858
         },
         {
           "goals": 3,
           "label": "3",
-          "p": 0.2238
+          "p": 0.1959
         },
         {
           "goals": 4,
           "label": "4",
-          "p": 0.1638
+          "p": 0.1073
         },
         {
           "goals": 5,
           "label": "5",
-          "p": 0.0958
+          "p": 0.047
         },
         {
           "goals": 6,
           "label": "6+",
-          "p": 0.0767
+          "p": 0.0244
         }
       ],
       "h2h": null,
       "teams": {
         "home": {
-          "name": "Athletic Bilbao",
-          "elo": 1513,
+          "name": "Toulouse",
+          "elo": 1476,
           "form": {
             "games": [
               {
-                "opponent": "Elche CF",
-                "atHome": true,
-                "scored": 1,
-                "conceded": 1,
-                "result": "D",
-                "date": "2026-09-12T16:30:00Z"
-              },
-              {
-                "opponent": "Atlético Madrid",
-                "atHome": true,
-                "scored": 3,
-                "conceded": 0,
-                "result": "W",
-                "date": "2026-09-05T14:15:00Z"
-              },
-              {
-                "opponent": "Celta Vigo",
+                "opponent": "Lorient",
                 "atHome": false,
                 "scored": 2,
-                "conceded": 0,
-                "result": "W",
-                "date": "2026-08-30T19:30:00Z"
+                "conceded": 2,
+                "result": "D",
+                "date": "2026-09-12T18:45:00Z"
               },
               {
-                "opponent": "Sevilla",
+                "opponent": "Lille",
                 "atHome": true,
-                "scored": 1,
-                "conceded": 3,
+                "scored": 0,
+                "conceded": 1,
                 "result": "L",
-                "date": "2026-08-22T15:00:00Z"
+                "date": "2026-09-03T18:45:00Z"
+              },
+              {
+                "opponent": "Brest",
+                "atHome": false,
+                "scored": 2,
+                "conceded": 2,
+                "result": "D",
+                "date": "2026-08-29T18:45:00Z"
+              },
+              {
+                "opponent": "Lyon",
+                "atHome": true,
+                "scored": 0,
+                "conceded": 2,
+                "result": "L",
+                "date": "2026-08-22T18:45:00Z"
               }
             ],
             "played": 4,
-            "wins": 2,
-            "draws": 1,
-            "losses": 1,
-            "scoredAvg": 1.75,
-            "concededAvg": 1,
-            "streak": "LWWD"
+            "wins": 0,
+            "draws": 2,
+            "losses": 2,
+            "scoredAvg": 1,
+            "concededAvg": 1.75,
+            "streak": "LDLD"
           },
           "split": {
             "home": {
-              "played": 3,
-              "scoredAvg": 1.67,
-              "concededAvg": 1.33
+              "played": 2,
+              "scoredAvg": 0,
+              "concededAvg": 1.5
             },
             "away": {
-              "played": 1,
+              "played": 2,
               "scoredAvg": 2,
-              "concededAvg": 0
+              "concededAvg": 2
             }
           },
           "absences": []
         },
         "away": {
-          "name": "Alavés",
-          "elo": 1515,
+          "name": "Le Havre",
+          "elo": 1478,
           "form": {
             "games": [
               {
-                "opponent": "Valencia",
+                "opponent": "Angers",
                 "atHome": true,
                 "scored": 0,
-                "conceded": 1,
-                "result": "L",
-                "date": "2026-09-15T18:00:00Z"
+                "conceded": 0,
+                "result": "D",
+                "date": "2026-09-12T18:45:00Z"
               },
               {
-                "opponent": "CA Osasuna",
+                "opponent": "Brest",
                 "atHome": true,
-                "scored": 5,
+                "scored": 1,
                 "conceded": 2,
-                "result": "W",
-                "date": "2026-09-06T16:30:00Z"
+                "result": "L",
+                "date": "2026-09-05T18:45:00Z"
               },
               {
-                "opponent": "Rayo Vallecano",
+                "opponent": "Lyon",
                 "atHome": false,
                 "scored": 1,
                 "conceded": 1,
                 "result": "D",
-                "date": "2026-08-20T19:00:00Z"
+                "date": "2026-08-29T18:45:00Z"
               },
               {
-                "opponent": "Getafe",
+                "opponent": "AS Monaco",
                 "atHome": true,
-                "scored": 3,
-                "conceded": 0,
-                "result": "W",
-                "date": "2026-08-15T17:30:00Z"
+                "scored": 0,
+                "conceded": 1,
+                "result": "L",
+                "date": "2026-08-23T15:15:00Z"
               }
             ],
             "played": 4,
-            "wins": 2,
-            "draws": 1,
-            "losses": 1,
-            "scoredAvg": 2.25,
+            "wins": 0,
+            "draws": 2,
+            "losses": 2,
+            "scoredAvg": 0.5,
             "concededAvg": 1,
-            "streak": "WDWL"
+            "streak": "LDLD"
           },
           "split": {
             "home": {
               "played": 3,
-              "scoredAvg": 2.67,
+              "scoredAvg": 0.33,
               "concededAvg": 1
             },
             "away": {
@@ -1799,241 +240,7 @@
         }
       },
       "demo": false,
-      "generatedAt": "2026-09-18T14:41:01.971Z",
-      "settled": false,
-      "result": null,
-      "pnlUnits": null
-    },
-    {
-      "id": "b5b058d0a95f9742548f789d1c564a78:h2h:home",
-      "fixtureId": "b5b058d0a95f9742548f789d1c564a78",
-      "league": "Premier League",
-      "home": "Brighton and Hove Albion",
-      "away": "Arsenal",
-      "kickoff": "2026-09-19T14:00:00Z",
-      "market": "h2h",
-      "selection": "home",
-      "line": null,
-      "description": "Brighton and Hove Albion vence",
-      "odds": 4.75,
-      "bookmaker": "betclic_fr",
-      "modelProb": 0.3413,
-      "fairProb": 0.1892,
-      "impliedProb": 0.2105,
-      "edge": 0.1521,
-      "ev": 0.621,
-      "stake": 0.02365,
-      "confidence": 0.577,
-      "overround": 0.0439,
-      "lambdas": {
-        "home": 1.416,
-        "away": 1.509
-      },
-      "factors": {
-        "home": [],
-        "away": []
-      },
-      "aiSummary": null,
-      "winCondition": {
-        "wins": "Brighton and Hove Albion vence o jogo no tempo regulamentar.",
-        "loses": "Arsenal vence ou o jogo acaba empatado."
-      },
-      "narrative": [
-        "O Brighton and Hove Albion marca 2,67 golos por jogo na forma recente; o Arsenal marca 2,00.",
-        "Cruzando o ataque de cada equipa com a defesa da outra, ajustando a forca relativa e a vantagem de jogar em casa, o modelo espera 1,42 golos do Brighton and Hove Albion e 1,51 do Arsenal — 2,93 no total.",
-        "Daqui sai 34% de probabilidade para esta aposta. A Betclic paga 4.75, que implica 21%; retirada a margem da casa, o preco justo do mercado e 19%. A diferenca de 15.2 pontos percentuais e a vantagem — e a razao pela qual esta aposta aparece e as outras nao."
-      ],
-      "caveats": [
-        "Mesmo estando o modelo certo, esta aposta perde 66 vezes em cada 100. A vantagem so se nota ao fim de muitas apostas.",
-        "Amostra curta: 3 jogos para a equipa com menos dados. Estimativas com poucos jogos sao instaveis.",
-        "A odd de 4.75 significa que este resultado e pouco frequente: espera longas series sem acertar."
-      ],
-      "scorelines": [
-        {
-          "score": "1-1",
-          "home": 1,
-          "away": 1,
-          "p": 0.1295
-        },
-        {
-          "score": "1-2",
-          "home": 1,
-          "away": 2,
-          "p": 0.0865
-        },
-        {
-          "score": "2-1",
-          "home": 2,
-          "away": 1,
-          "p": 0.0812
-        },
-        {
-          "score": "0-0",
-          "home": 0,
-          "away": 0,
-          "p": 0.0685
-        },
-        {
-          "score": "0-1",
-          "home": 0,
-          "away": 1,
-          "p": 0.066
-        }
-      ],
-      "goalsDistribution": [
-        {
-          "goals": 0,
-          "label": "0",
-          "p": 0.0685
-        },
-        {
-          "goals": 1,
-          "label": "1",
-          "p": 0.1271
-        },
-        {
-          "goals": 2,
-          "label": "2",
-          "p": 0.2444
-        },
-        {
-          "goals": 3,
-          "label": "3",
-          "p": 0.2238
-        },
-        {
-          "goals": 4,
-          "label": "4",
-          "p": 0.1637
-        },
-        {
-          "goals": 5,
-          "label": "5",
-          "p": 0.0958
-        },
-        {
-          "goals": 6,
-          "label": "6+",
-          "p": 0.0766
-        }
-      ],
-      "h2h": null,
-      "teams": {
-        "home": {
-          "name": "Brighton and Hove Albion",
-          "elo": 1505,
-          "form": {
-            "games": [
-              {
-                "opponent": "Leeds United",
-                "atHome": true,
-                "scored": 1,
-                "conceded": 1,
-                "result": "D",
-                "date": "2026-09-05T14:00:00Z"
-              },
-              {
-                "opponent": "Chelsea",
-                "atHome": false,
-                "scored": 3,
-                "conceded": 4,
-                "result": "L",
-                "date": "2026-08-30T13:00:00Z"
-              },
-              {
-                "opponent": "Aston Villa",
-                "atHome": true,
-                "scored": 4,
-                "conceded": 0,
-                "result": "W",
-                "date": "2026-08-23T13:00:00Z"
-              }
-            ],
-            "played": 3,
-            "wins": 1,
-            "draws": 1,
-            "losses": 1,
-            "scoredAvg": 2.67,
-            "concededAvg": 1.67,
-            "streak": "WLD"
-          },
-          "split": {
-            "home": {
-              "played": 2,
-              "scoredAvg": 2.5,
-              "concededAvg": 0.5
-            },
-            "away": {
-              "played": 1,
-              "scoredAvg": 3,
-              "concededAvg": 4
-            }
-          },
-          "absences": []
-        },
-        "away": {
-          "name": "Arsenal",
-          "elo": 1550,
-          "form": {
-            "games": [
-              {
-                "opponent": "Sunderland",
-                "atHome": false,
-                "scored": 2,
-                "conceded": 0,
-                "result": "W",
-                "date": "2026-09-12T19:00:00Z"
-              },
-              {
-                "opponent": "Chelsea",
-                "atHome": true,
-                "scored": 2,
-                "conceded": 1,
-                "result": "W",
-                "date": "2026-09-06T15:30:00Z"
-              },
-              {
-                "opponent": "Aston Villa",
-                "atHome": false,
-                "scored": 1,
-                "conceded": 0,
-                "result": "W",
-                "date": "2026-08-31T19:00:00Z"
-              },
-              {
-                "opponent": "Coventry City",
-                "atHome": true,
-                "scored": 3,
-                "conceded": 0,
-                "result": "W",
-                "date": "2026-08-21T19:00:00Z"
-              }
-            ],
-            "played": 4,
-            "wins": 4,
-            "draws": 0,
-            "losses": 0,
-            "scoredAvg": 2,
-            "concededAvg": 0.25,
-            "streak": "WWWW"
-          },
-          "split": {
-            "home": {
-              "played": 2,
-              "scoredAvg": 2.5,
-              "concededAvg": 0.5
-            },
-            "away": {
-              "played": 2,
-              "scoredAvg": 1.5,
-              "concededAvg": 0
-            }
-          },
-          "absences": []
-        }
-      },
-      "demo": false,
-      "generatedAt": "2026-09-18T14:41:01.971Z",
+      "generatedAt": "2026-09-19T14:01:29.163Z",
       "settled": false,
       "result": null,
       "pnlUnits": null
@@ -2049,15 +256,15 @@
       "selection": "under",
       "line": 2.5,
       "description": "Menos de 2.5 golos",
-      "odds": 2.88,
+      "odds": 2.9,
       "bookmaker": "betclic_fr",
       "modelProb": 0.5281,
       "fairProb": 0.3272,
-      "impliedProb": 0.3472,
+      "impliedProb": 0.3448,
       "edge": 0.2009,
-      "ev": 0.5211,
-      "stake": 0.02153,
-      "confidence": 0.435,
+      "ev": 0.5316,
+      "stake": 0.02198,
+      "confidence": 0.465,
       "overround": 0.0729,
       "lambdas": {
         "home": 1.491,
@@ -2075,7 +282,7 @@
       "narrative": [
         "O Sporting Lisbon marca 2,50 golos por jogo na forma recente; o Arouca marca 1,25.",
         "Cruzando o ataque de cada equipa com a defesa da outra, ajustando a forca relativa e a vantagem de jogar em casa, o modelo espera 1,49 golos do Sporting Lisbon e 1,07 do Arouca — 2,56 no total.",
-        "Daqui sai 53% de probabilidade para esta aposta. A Betclic paga 2.88, que implica 35%; retirada a margem da casa, o preco justo do mercado e 33%. A diferenca de 20.1 pontos percentuais e a vantagem — e a razao pela qual esta aposta aparece e as outras nao."
+        "Daqui sai 53% de probabilidade para esta aposta. A Betclic paga 2.90, que implica 34%; retirada a margem da casa, o preco justo do mercado e 33%. A diferenca de 20.1 pontos percentuais e a vantagem — e a razao pela qual esta aposta aparece e as outras nao."
       ],
       "caveats": [
         "Mesmo estando o modelo certo, esta aposta perde 47 vezes em cada 100. A vantagem so se nota ao fim de muitas apostas.",
@@ -2275,235 +482,244 @@
         }
       },
       "demo": false,
-      "generatedAt": "2026-09-18T14:41:01.972Z",
+      "generatedAt": "2026-09-19T14:01:29.164Z",
       "settled": false,
       "result": null,
       "pnlUnits": null
     },
     {
-      "id": "61f22cfde235ecc75a1ce587930c7ade:totals:under:2.5",
-      "fixtureId": "61f22cfde235ecc75a1ce587930c7ade",
-      "league": "Ligue 1",
-      "home": "Toulouse",
-      "away": "Le Havre",
-      "kickoff": "2026-09-19T18:45:00Z",
-      "market": "totals",
-      "selection": "under",
-      "line": 2.5,
-      "description": "Menos de 2.5 golos",
-      "odds": 2.15,
+      "id": "a995ad3266759e67c9f9b0617c184b71:h2h:away",
+      "fixtureId": "a995ad3266759e67c9f9b0617c184b71",
+      "league": "La Liga",
+      "home": "Athletic Bilbao",
+      "away": "Alavés",
+      "kickoff": "2026-09-19T14:15:00Z",
+      "market": "h2h",
+      "selection": "away",
+      "line": null,
+      "description": "Alavés vence",
+      "odds": 5.4,
       "bookmaker": "betclic_fr",
-      "modelProb": 0.6261,
-      "fairProb": 0.4614,
-      "impliedProb": 0.4651,
-      "edge": 0.1647,
-      "ev": 0.3461,
-      "stake": 0.02292,
-      "confidence": 0.528,
-      "overround": 0.0528,
+      "modelProb": 0.3287,
+      "fairProb": 0.1569,
+      "impliedProb": 0.1852,
+      "edge": 0.1718,
+      "ev": 0.7751,
+      "stake": 0.02314,
+      "confidence": 0.543,
+      "overround": 0.0538,
       "lambdas": {
-        "home": 1.144,
-        "away": 1.043
+        "home": 1.54,
+        "away": 1.389
       },
       "factors": {
         "home": [],
-        "away": []
+        "away": [
+          {
+            "type": "descanso",
+            "attackPct": -2.1,
+            "defencePct": 1.5,
+            "detail": "apenas 3.84375 dias de descanso"
+          }
+        ]
       },
       "aiSummary": null,
       "winCondition": {
-        "wins": "O jogo tem 2 ou menos golos no total.",
-        "loses": "O jogo tem 3 ou mais golos."
+        "wins": "Alavés vence o jogo no tempo regulamentar.",
+        "loses": "Athletic Bilbao vence ou o jogo acaba empatado."
       },
       "narrative": [
-        "O Toulouse marca 1,00 golos por jogo na forma recente; o Le Havre marca 0,50.",
-        "Cruzando o ataque de cada equipa com a defesa da outra, ajustando a forca relativa e a vantagem de jogar em casa, o modelo espera 1,14 golos do Toulouse e 1,04 do Le Havre — 2,19 no total.",
-        "Daqui sai 63% de probabilidade para esta aposta. A Betclic paga 2.15, que implica 47%; retirada a margem da casa, o preco justo do mercado e 46%. A diferenca de 16.5 pontos percentuais e a vantagem — e a razao pela qual esta aposta aparece e as outras nao."
+        "Em casa, o Athletic Bilbao marca 1,67 e sofre 1,33 golos por jogo (3 jogos); o Alavés marca 2,25.",
+        "Cruzando o ataque de cada equipa com a defesa da outra, ajustando a forca relativa e a vantagem de jogar em casa, o modelo espera 1,54 golos do Athletic Bilbao e 1,39 do Alavés — 2,93 no total.",
+        "Isto ja conta com apenas 3.84375 dias de descanso.",
+        "Daqui sai 33% de probabilidade para esta aposta. A Betclic paga 5.40, que implica 19%; retirada a margem da casa, o preco justo do mercado e 16%. A diferenca de 17.2 pontos percentuais e a vantagem — e a razao pela qual esta aposta aparece e as outras nao."
       ],
       "caveats": [
-        "Mesmo estando o modelo certo, esta aposta perde 37 vezes em cada 100. A vantagem so se nota ao fim de muitas apostas.",
-        "Amostra curta: 4 jogos para a equipa com menos dados. Estimativas com poucos jogos sao instaveis."
+        "Mesmo estando o modelo certo, esta aposta perde 67 vezes em cada 100. A vantagem so se nota ao fim de muitas apostas.",
+        "Amostra curta: 4 jogos para a equipa com menos dados. Estimativas com poucos jogos sao instaveis.",
+        "A odd de 5.40 significa que este resultado e pouco frequente: espera longas series sem acertar."
       ],
       "scorelines": [
         {
           "score": "1-1",
           "home": 1,
           "away": 1,
-          "p": 0.1514
-        },
-        {
-          "score": "0-0",
-          "home": 0,
-          "away": 0,
-          "p": 0.1296
-        },
-        {
-          "score": "1-0",
-          "home": 1,
-          "away": 0,
-          "p": 0.1109
-        },
-        {
-          "score": "0-1",
-          "home": 0,
-          "away": 1,
-          "p": 0.0997
+          "p": 0.1292
         },
         {
           "score": "2-1",
           "home": 2,
           "away": 1,
-          "p": 0.0766
+          "p": 0.088
+        },
+        {
+          "score": "1-2",
+          "home": 1,
+          "away": 2,
+          "p": 0.0794
+        },
+        {
+          "score": "0-0",
+          "home": 0,
+          "away": 0,
+          "p": 0.0683
+        },
+        {
+          "score": "1-0",
+          "home": 1,
+          "away": 0,
+          "p": 0.0675
         }
       ],
       "goalsDistribution": [
         {
           "goals": 0,
           "label": "0",
-          "p": 0.1296
+          "p": 0.0683
         },
         {
           "goals": 1,
           "label": "1",
-          "p": 0.2106
+          "p": 0.1269
         },
         {
           "goals": 2,
           "label": "2",
-          "p": 0.2859
+          "p": 0.2442
         },
         {
           "goals": 3,
           "label": "3",
-          "p": 0.1957
+          "p": 0.2238
         },
         {
           "goals": 4,
           "label": "4",
-          "p": 0.107
+          "p": 0.1639
         },
         {
           "goals": 5,
           "label": "5",
-          "p": 0.0468
+          "p": 0.096
         },
         {
           "goals": 6,
           "label": "6+",
-          "p": 0.0243
+          "p": 0.0769
         }
       ],
       "h2h": null,
       "teams": {
         "home": {
-          "name": "Toulouse",
-          "elo": 1476,
+          "name": "Athletic Bilbao",
+          "elo": 1513,
           "form": {
             "games": [
               {
-                "opponent": "Lorient",
-                "atHome": false,
-                "scored": 2,
-                "conceded": 2,
-                "result": "D",
-                "date": "2026-09-12T18:45:00Z"
-              },
-              {
-                "opponent": "Lille",
+                "opponent": "Elche CF",
                 "atHome": true,
-                "scored": 0,
+                "scored": 1,
                 "conceded": 1,
-                "result": "L",
-                "date": "2026-09-03T18:45:00Z"
+                "result": "D",
+                "date": "2026-09-12T16:30:00Z"
               },
               {
-                "opponent": "Brest",
+                "opponent": "Atlético Madrid",
+                "atHome": true,
+                "scored": 3,
+                "conceded": 0,
+                "result": "W",
+                "date": "2026-09-05T14:15:00Z"
+              },
+              {
+                "opponent": "Celta Vigo",
                 "atHome": false,
                 "scored": 2,
-                "conceded": 2,
-                "result": "D",
-                "date": "2026-08-29T18:45:00Z"
+                "conceded": 0,
+                "result": "W",
+                "date": "2026-08-30T19:30:00Z"
               },
               {
-                "opponent": "Lyon",
+                "opponent": "Sevilla",
                 "atHome": true,
-                "scored": 0,
-                "conceded": 2,
+                "scored": 1,
+                "conceded": 3,
                 "result": "L",
-                "date": "2026-08-22T18:45:00Z"
+                "date": "2026-08-22T15:00:00Z"
               }
             ],
             "played": 4,
-            "wins": 0,
-            "draws": 2,
-            "losses": 2,
-            "scoredAvg": 1,
-            "concededAvg": 1.75,
-            "streak": "LDLD"
+            "wins": 2,
+            "draws": 1,
+            "losses": 1,
+            "scoredAvg": 1.75,
+            "concededAvg": 1,
+            "streak": "LWWD"
           },
           "split": {
             "home": {
-              "played": 2,
-              "scoredAvg": 0,
-              "concededAvg": 1.5
+              "played": 3,
+              "scoredAvg": 1.67,
+              "concededAvg": 1.33
             },
             "away": {
-              "played": 2,
+              "played": 1,
               "scoredAvg": 2,
-              "concededAvg": 2
+              "concededAvg": 0
             }
           },
           "absences": []
         },
         "away": {
-          "name": "Le Havre",
-          "elo": 1478,
+          "name": "Alavés",
+          "elo": 1515,
           "form": {
             "games": [
               {
-                "opponent": "Angers",
+                "opponent": "Valencia",
                 "atHome": true,
                 "scored": 0,
-                "conceded": 0,
-                "result": "D",
-                "date": "2026-09-12T18:45:00Z"
-              },
-              {
-                "opponent": "Brest",
-                "atHome": true,
-                "scored": 1,
-                "conceded": 2,
+                "conceded": 1,
                 "result": "L",
-                "date": "2026-09-05T18:45:00Z"
+                "date": "2026-09-15T18:00:00Z"
               },
               {
-                "opponent": "Lyon",
+                "opponent": "CA Osasuna",
+                "atHome": true,
+                "scored": 5,
+                "conceded": 2,
+                "result": "W",
+                "date": "2026-09-06T16:30:00Z"
+              },
+              {
+                "opponent": "Rayo Vallecano",
                 "atHome": false,
                 "scored": 1,
                 "conceded": 1,
                 "result": "D",
-                "date": "2026-08-29T18:45:00Z"
+                "date": "2026-08-20T19:00:00Z"
               },
               {
-                "opponent": "AS Monaco",
+                "opponent": "Getafe",
                 "atHome": true,
-                "scored": 0,
-                "conceded": 1,
-                "result": "L",
-                "date": "2026-08-23T15:15:00Z"
+                "scored": 3,
+                "conceded": 0,
+                "result": "W",
+                "date": "2026-08-15T17:30:00Z"
               }
             ],
             "played": 4,
-            "wins": 0,
-            "draws": 2,
-            "losses": 2,
-            "scoredAvg": 0.5,
+            "wins": 2,
+            "draws": 1,
+            "losses": 1,
+            "scoredAvg": 2.25,
             "concededAvg": 1,
-            "streak": "LDLD"
+            "streak": "WDWL"
           },
           "split": {
             "home": {
               "played": 3,
-              "scoredAvg": 0.33,
+              "scoredAvg": 2.67,
               "concededAvg": 1
             },
             "away": {
@@ -2516,7 +732,1265 @@
         }
       },
       "demo": false,
-      "generatedAt": "2026-09-18T14:41:01.972Z",
+      "generatedAt": "2026-09-19T14:01:29.161Z",
+      "settled": false,
+      "result": null,
+      "pnlUnits": null
+    },
+    {
+      "id": "ded5c2293009b93b7d8ee3c890b6617e:totals:under:2.5",
+      "fixtureId": "ded5c2293009b93b7d8ee3c890b6617e",
+      "league": "La Liga",
+      "home": "Deportivo La Coruña",
+      "away": "Real Betis",
+      "kickoff": "2026-09-20T16:30:00Z",
+      "market": "totals",
+      "selection": "under",
+      "line": 2.5,
+      "description": "Menos de 2.5 golos",
+      "odds": 2.06,
+      "bookmaker": "betclic_fr",
+      "modelProb": 0.6541,
+      "fairProb": 0.4793,
+      "impliedProb": 0.4854,
+      "edge": 0.1748,
+      "ev": 0.3474,
+      "stake": 0.02286,
+      "confidence": 0.524,
+      "overround": 0.0515,
+      "lambdas": {
+        "home": 1.034,
+        "away": 1.049
+      },
+      "factors": {
+        "home": [
+          {
+            "type": "descanso",
+            "attackPct": -1.8,
+            "defencePct": 1.3,
+            "detail": "apenas 3.9791666666666665 dias de descanso"
+          }
+        ],
+        "away": [
+          {
+            "type": "descanso",
+            "attackPct": -3.6,
+            "defencePct": 2.5,
+            "detail": "apenas 2.9791666666666665 dias de descanso"
+          }
+        ]
+      },
+      "aiSummary": null,
+      "winCondition": {
+        "wins": "O jogo tem 2 ou menos golos no total.",
+        "loses": "O jogo tem 3 ou mais golos."
+      },
+      "narrative": [
+        "Em casa, o Deportivo La Coruña marca 1,33 e sofre 1,00 golos por jogo (3 jogos); o Real Betis marca 1,20.",
+        "Cruzando o ataque de cada equipa com a defesa da outra, ajustando a forca relativa e a vantagem de jogar em casa, o modelo espera 1,03 golos do Deportivo La Coruña e 1,05 do Real Betis — 2,08 no total.",
+        "Isto ja conta com apenas 3.9791666666666665 dias de descanso; apenas 2.9791666666666665 dias de descanso.",
+        "Daqui sai 65% de probabilidade para esta aposta. A Betclic paga 2.06, que implica 49%; retirada a margem da casa, o preco justo do mercado e 48%. A diferenca de 17.5 pontos percentuais e a vantagem — e a razao pela qual esta aposta aparece e as outras nao."
+      ],
+      "caveats": [
+        "Mesmo estando o modelo certo, esta aposta perde 35 vezes em cada 100. A vantagem so se nota ao fim de muitas apostas.",
+        "Amostra curta: 5 jogos para a equipa com menos dados. Estimativas com poucos jogos sao instaveis."
+      ],
+      "scorelines": [
+        {
+          "score": "1-1",
+          "home": 1,
+          "away": 1,
+          "p": 0.1527
+        },
+        {
+          "score": "0-0",
+          "home": 0,
+          "away": 0,
+          "p": 0.1421
+        },
+        {
+          "score": "0-1",
+          "home": 0,
+          "away": 1,
+          "p": 0.113
+        },
+        {
+          "score": "1-0",
+          "home": 1,
+          "away": 0,
+          "p": 0.1112
+        },
+        {
+          "score": "1-2",
+          "home": 1,
+          "away": 2,
+          "p": 0.0709
+        }
+      ],
+      "goalsDistribution": [
+        {
+          "goals": 0,
+          "label": "0",
+          "p": 0.1421
+        },
+        {
+          "goals": 1,
+          "label": "1",
+          "p": 0.2243
+        },
+        {
+          "goals": 2,
+          "label": "2",
+          "p": 0.2878
+        },
+        {
+          "goals": 3,
+          "label": "3",
+          "p": 0.1877
+        },
+        {
+          "goals": 4,
+          "label": "4",
+          "p": 0.0978
+        },
+        {
+          "goals": 5,
+          "label": "5",
+          "p": 0.0407
+        },
+        {
+          "goals": 6,
+          "label": "6+",
+          "p": 0.0198
+        }
+      ],
+      "h2h": null,
+      "teams": {
+        "home": {
+          "name": "Deportivo La Coruña",
+          "elo": 1512,
+          "form": {
+            "games": [
+              {
+                "opponent": "Sevilla",
+                "atHome": true,
+                "scored": 0,
+                "conceded": 1,
+                "result": "L",
+                "date": "2026-09-16T17:00:00Z"
+              },
+              {
+                "opponent": "Getafe",
+                "atHome": false,
+                "scored": 1,
+                "conceded": 1,
+                "result": "D",
+                "date": "2026-09-13T16:30:00Z"
+              },
+              {
+                "opponent": "Villarreal",
+                "atHome": false,
+                "scored": 3,
+                "conceded": 2,
+                "result": "W",
+                "date": "2026-09-05T19:00:00Z"
+              },
+              {
+                "opponent": "Valencia",
+                "atHome": true,
+                "scored": 3,
+                "conceded": 1,
+                "result": "W",
+                "date": "2026-08-30T17:30:00Z"
+              },
+              {
+                "opponent": "Málaga",
+                "atHome": false,
+                "scored": 1,
+                "conceded": 1,
+                "result": "D",
+                "date": "2026-08-24T19:30:00Z"
+              },
+              {
+                "opponent": "Elche CF",
+                "atHome": true,
+                "scored": 1,
+                "conceded": 1,
+                "result": "D",
+                "date": "2026-08-17T19:00:00Z"
+              }
+            ],
+            "played": 6,
+            "wins": 2,
+            "draws": 3,
+            "losses": 1,
+            "scoredAvg": 1.5,
+            "concededAvg": 1.17,
+            "streak": "DDWWDL"
+          },
+          "split": {
+            "home": {
+              "played": 3,
+              "scoredAvg": 1.33,
+              "concededAvg": 1
+            },
+            "away": {
+              "played": 3,
+              "scoredAvg": 1.67,
+              "concededAvg": 1.33
+            }
+          },
+          "absences": []
+        },
+        "away": {
+          "name": "Real Betis",
+          "elo": 1546,
+          "form": {
+            "games": [
+              {
+                "opponent": "Getafe",
+                "atHome": true,
+                "scored": 1,
+                "conceded": 0,
+                "result": "W",
+                "date": "2026-09-17T17:00:00Z"
+              },
+              {
+                "opponent": "Villarreal",
+                "atHome": false,
+                "scored": 2,
+                "conceded": 1,
+                "result": "W",
+                "date": "2026-09-14T19:00:00Z"
+              },
+              {
+                "opponent": "Real Madrid",
+                "atHome": true,
+                "scored": 1,
+                "conceded": 0,
+                "result": "W",
+                "date": "2026-09-04T19:00:00Z"
+              },
+              {
+                "opponent": "Valencia",
+                "atHome": false,
+                "scored": 1,
+                "conceded": 0,
+                "result": "W",
+                "date": "2026-08-25T19:00:00Z"
+              },
+              {
+                "opponent": "Real Sociedad",
+                "atHome": true,
+                "scored": 1,
+                "conceded": 0,
+                "result": "W",
+                "date": "2026-08-21T19:00:00Z"
+              }
+            ],
+            "played": 5,
+            "wins": 5,
+            "draws": 0,
+            "losses": 0,
+            "scoredAvg": 1.2,
+            "concededAvg": 0.2,
+            "streak": "WWWWW"
+          },
+          "split": {
+            "home": {
+              "played": 3,
+              "scoredAvg": 1,
+              "concededAvg": 0
+            },
+            "away": {
+              "played": 2,
+              "scoredAvg": 1.5,
+              "concededAvg": 0.5
+            }
+          },
+          "absences": []
+        }
+      },
+      "demo": false,
+      "generatedAt": "2026-09-19T14:01:29.165Z",
+      "settled": false,
+      "result": null,
+      "pnlUnits": null
+    },
+    {
+      "id": "b18936f30d57470436651e1ea7b24195:totals:under:3.5",
+      "fixtureId": "b18936f30d57470436651e1ea7b24195",
+      "league": "Liga Portugal",
+      "home": "Sporting Lisbon",
+      "away": "Arouca",
+      "kickoff": "2026-09-19T19:30:00Z",
+      "market": "totals",
+      "selection": "under",
+      "line": 3.5,
+      "description": "Menos de 3.5 golos",
+      "odds": 1.82,
+      "bookmaker": "betclic_fr",
+      "modelProb": 0.7444,
+      "fairProb": 0.5163,
+      "impliedProb": 0.5495,
+      "edge": 0.228,
+      "ev": 0.3547,
+      "stake": 0.021,
+      "confidence": 0.4,
+      "overround": 0.0909,
+      "lambdas": {
+        "home": 1.491,
+        "away": 1.071
+      },
+      "factors": {
+        "home": [],
+        "away": []
+      },
+      "aiSummary": null,
+      "winCondition": {
+        "wins": "O jogo tem 3 ou menos golos no total.",
+        "loses": "O jogo tem 4 ou mais golos."
+      },
+      "narrative": [
+        "O Sporting Lisbon marca 2,50 golos por jogo na forma recente; o Arouca marca 1,25.",
+        "Cruzando o ataque de cada equipa com a defesa da outra, ajustando a forca relativa e a vantagem de jogar em casa, o modelo espera 1,49 golos do Sporting Lisbon e 1,07 do Arouca — 2,56 no total.",
+        "Daqui sai 74% de probabilidade para esta aposta. A Betclic paga 1.82, que implica 55%; retirada a margem da casa, o preco justo do mercado e 52%. A diferenca de 22.8 pontos percentuais e a vantagem — e a razao pela qual esta aposta aparece e as outras nao."
+      ],
+      "caveats": [
+        "Mesmo estando o modelo certo, esta aposta perde 26 vezes em cada 100. A vantagem so se nota ao fim de muitas apostas.",
+        "Amostra curta: 4 jogos para a equipa com menos dados. Estimativas com poucos jogos sao instaveis.",
+        "Confianca baixa — faltam dados ou o mercado tem margem alta. Considera reduzir a stake."
+      ],
+      "scorelines": [
+        {
+          "score": "1-1",
+          "home": 1,
+          "away": 1,
+          "p": 0.1392
+        },
+        {
+          "score": "1-0",
+          "home": 1,
+          "away": 0,
+          "p": 0.099
+        },
+        {
+          "score": "0-0",
+          "home": 0,
+          "away": 0,
+          "p": 0.0932
+        },
+        {
+          "score": "2-1",
+          "home": 2,
+          "away": 1,
+          "p": 0.0918
+        },
+        {
+          "score": "2-0",
+          "home": 2,
+          "away": 0,
+          "p": 0.0858
+        }
+      ],
+      "goalsDistribution": [
+        {
+          "goals": 0,
+          "label": "0",
+          "p": 0.0932
+        },
+        {
+          "goals": 1,
+          "label": "1",
+          "p": 0.1657
+        },
+        {
+          "goals": 2,
+          "label": "2",
+          "p": 0.2692
+        },
+        {
+          "goals": 3,
+          "label": "3",
+          "p": 0.2162
+        },
+        {
+          "goals": 4,
+          "label": "4",
+          "p": 0.1385
+        },
+        {
+          "goals": 5,
+          "label": "5",
+          "p": 0.0709
+        },
+        {
+          "goals": 6,
+          "label": "6+",
+          "p": 0.0463
+        }
+      ],
+      "h2h": null,
+      "teams": {
+        "home": {
+          "name": "Sporting Lisbon",
+          "elo": 1545,
+          "form": {
+            "games": [
+              {
+                "opponent": "Famalicão",
+                "atHome": false,
+                "scored": 1,
+                "conceded": 1,
+                "result": "D",
+                "date": "2026-09-13T19:30:00Z"
+              },
+              {
+                "opponent": "Nacional",
+                "atHome": true,
+                "scored": 2,
+                "conceded": 0,
+                "result": "W",
+                "date": "2026-09-05T19:30:00Z"
+              },
+              {
+                "opponent": "Rio Ave FC",
+                "atHome": false,
+                "scored": 4,
+                "conceded": 0,
+                "result": "W",
+                "date": "2026-08-28T19:15:00Z"
+              },
+              {
+                "opponent": "Alverca",
+                "atHome": true,
+                "scored": 3,
+                "conceded": 1,
+                "result": "W",
+                "date": "2026-08-22T19:30:00Z"
+              }
+            ],
+            "played": 4,
+            "wins": 3,
+            "draws": 1,
+            "losses": 0,
+            "scoredAvg": 2.5,
+            "concededAvg": 0.5,
+            "streak": "WWWD"
+          },
+          "split": {
+            "home": {
+              "played": 2,
+              "scoredAvg": 2.5,
+              "concededAvg": 0.5
+            },
+            "away": {
+              "played": 2,
+              "scoredAvg": 2.5,
+              "concededAvg": 0.5
+            }
+          },
+          "absences": []
+        },
+        "away": {
+          "name": "Arouca",
+          "elo": 1493,
+          "form": {
+            "games": [
+              {
+                "opponent": "Santa Clara",
+                "atHome": true,
+                "scored": 1,
+                "conceded": 2,
+                "result": "L",
+                "date": "2026-09-13T17:00:00Z"
+              },
+              {
+                "opponent": "Estoril",
+                "atHome": false,
+                "scored": 0,
+                "conceded": 0,
+                "result": "D",
+                "date": "2026-09-07T19:15:00Z"
+              },
+              {
+                "opponent": "FC Porto",
+                "atHome": false,
+                "scored": 0,
+                "conceded": 2,
+                "result": "L",
+                "date": "2026-08-23T19:30:00Z"
+              },
+              {
+                "opponent": "Moreirense FC",
+                "atHome": true,
+                "scored": 4,
+                "conceded": 0,
+                "result": "W",
+                "date": "2026-08-16T17:00:00Z"
+              }
+            ],
+            "played": 4,
+            "wins": 1,
+            "draws": 1,
+            "losses": 2,
+            "scoredAvg": 1.25,
+            "concededAvg": 1,
+            "streak": "WLDL"
+          },
+          "split": {
+            "home": {
+              "played": 2,
+              "scoredAvg": 2.5,
+              "concededAvg": 1
+            },
+            "away": {
+              "played": 2,
+              "scoredAvg": 0,
+              "concededAvg": 1
+            }
+          },
+          "absences": []
+        }
+      },
+      "demo": false,
+      "generatedAt": "2026-09-19T14:01:29.164Z",
+      "settled": false,
+      "result": null,
+      "pnlUnits": null
+    },
+    {
+      "id": "873ce2405ef51cf09af22b0c8adfba55:totals:under:2.5",
+      "fixtureId": "873ce2405ef51cf09af22b0c8adfba55",
+      "league": "Ligue 1",
+      "home": "Lyon",
+      "away": "Rennes",
+      "kickoff": "2026-09-19T18:45:00Z",
+      "market": "totals",
+      "selection": "under",
+      "line": 2.5,
+      "description": "Menos de 2.5 golos",
+      "odds": 2.52,
+      "bookmaker": "betclic_fr",
+      "modelProb": 0.5287,
+      "fairProb": 0.3711,
+      "impliedProb": 0.3968,
+      "edge": 0.1576,
+      "ev": 0.3322,
+      "stake": 0.0235,
+      "confidence": 0.567,
+      "overround": 0.0579,
+      "lambdas": {
+        "home": 1.4,
+        "away": 1.159
+      },
+      "factors": {
+        "home": [],
+        "away": []
+      },
+      "aiSummary": null,
+      "winCondition": {
+        "wins": "O jogo tem 2 ou menos golos no total.",
+        "loses": "O jogo tem 3 ou mais golos."
+      },
+      "narrative": [
+        "O Lyon marca 1,50 golos por jogo na forma recente; o Rennes marca 2,00.",
+        "Cruzando o ataque de cada equipa com a defesa da outra, ajustando a forca relativa e a vantagem de jogar em casa, o modelo espera 1,40 golos do Lyon e 1,16 do Rennes — 2,56 no total.",
+        "Daqui sai 53% de probabilidade para esta aposta. A Betclic paga 2.52, que implica 40%; retirada a margem da casa, o preco justo do mercado e 37%. A diferenca de 15.8 pontos percentuais e a vantagem — e a razao pela qual esta aposta aparece e as outras nao."
+      ],
+      "caveats": [
+        "Mesmo estando o modelo certo, esta aposta perde 47 vezes em cada 100. A vantagem so se nota ao fim de muitas apostas.",
+        "Amostra curta: 4 jogos para a equipa com menos dados. Estimativas com poucos jogos sao instaveis."
+      ],
+      "scorelines": [
+        {
+          "score": "1-1",
+          "home": 1,
+          "away": 1,
+          "p": 0.1419
+        },
+        {
+          "score": "0-0",
+          "home": 0,
+          "away": 0,
+          "p": 0.0937
+        },
+        {
+          "score": "1-0",
+          "home": 1,
+          "away": 0,
+          "p": 0.092
+        },
+        {
+          "score": "2-1",
+          "home": 2,
+          "away": 1,
+          "p": 0.0879
+        },
+        {
+          "score": "2-0",
+          "home": 2,
+          "away": 0,
+          "p": 0.0758
+        }
+      ],
+      "goalsDistribution": [
+        {
+          "goals": 0,
+          "label": "0",
+          "p": 0.0937
+        },
+        {
+          "goals": 1,
+          "label": "1",
+          "p": 0.1653
+        },
+        {
+          "goals": 2,
+          "label": "2",
+          "p": 0.2697
+        },
+        {
+          "goals": 3,
+          "label": "3",
+          "p": 0.2161
+        },
+        {
+          "goals": 4,
+          "label": "4",
+          "p": 0.1383
+        },
+        {
+          "goals": 5,
+          "label": "5",
+          "p": 0.0708
+        },
+        {
+          "goals": 6,
+          "label": "6+",
+          "p": 0.0461
+        }
+      ],
+      "h2h": null,
+      "teams": {
+        "home": {
+          "name": "Lyon",
+          "elo": 1527,
+          "form": {
+            "games": [
+              {
+                "opponent": "Paris FC",
+                "atHome": false,
+                "scored": 0,
+                "conceded": 0,
+                "result": "D",
+                "date": "2026-09-12T18:45:00Z"
+              },
+              {
+                "opponent": "Auxerre",
+                "atHome": true,
+                "scored": 3,
+                "conceded": 1,
+                "result": "W",
+                "date": "2026-09-04T17:00:00Z"
+              },
+              {
+                "opponent": "Le Havre",
+                "atHome": true,
+                "scored": 1,
+                "conceded": 1,
+                "result": "D",
+                "date": "2026-08-29T18:45:00Z"
+              },
+              {
+                "opponent": "Toulouse",
+                "atHome": false,
+                "scored": 2,
+                "conceded": 0,
+                "result": "W",
+                "date": "2026-08-22T18:45:00Z"
+              }
+            ],
+            "played": 4,
+            "wins": 2,
+            "draws": 2,
+            "losses": 0,
+            "scoredAvg": 1.5,
+            "concededAvg": 0.5,
+            "streak": "WDWD"
+          },
+          "split": {
+            "home": {
+              "played": 2,
+              "scoredAvg": 2,
+              "concededAvg": 1
+            },
+            "away": {
+              "played": 2,
+              "scoredAvg": 1,
+              "concededAvg": 0
+            }
+          },
+          "absences": []
+        },
+        "away": {
+          "name": "Rennes",
+          "elo": 1525,
+          "form": {
+            "games": [
+              {
+                "opponent": "Marseille",
+                "atHome": true,
+                "scored": 1,
+                "conceded": 0,
+                "result": "W",
+                "date": "2026-09-11T18:45:00Z"
+              },
+              {
+                "opponent": "Angers",
+                "atHome": false,
+                "scored": 2,
+                "conceded": 1,
+                "result": "W",
+                "date": "2026-09-06T15:15:00Z"
+              },
+              {
+                "opponent": "Le Mans FC",
+                "atHome": true,
+                "scored": 3,
+                "conceded": 2,
+                "result": "W",
+                "date": "2026-08-30T15:15:00Z"
+              },
+              {
+                "opponent": "Paris Saint Germain",
+                "atHome": true,
+                "scored": 2,
+                "conceded": 2,
+                "result": "D",
+                "date": "2026-08-23T18:45:00Z"
+              }
+            ],
+            "played": 4,
+            "wins": 3,
+            "draws": 1,
+            "losses": 0,
+            "scoredAvg": 2,
+            "concededAvg": 1.25,
+            "streak": "DWWW"
+          },
+          "split": {
+            "home": {
+              "played": 3,
+              "scoredAvg": 2,
+              "concededAvg": 1.33
+            },
+            "away": {
+              "played": 1,
+              "scoredAvg": 2,
+              "concededAvg": 1
+            }
+          },
+          "absences": []
+        }
+      },
+      "demo": false,
+      "generatedAt": "2026-09-19T14:01:29.164Z",
+      "settled": false,
+      "result": null,
+      "pnlUnits": null
+    },
+    {
+      "id": "5866dae1e72b96ab74508039cd3dcca7:h2h:home",
+      "fixtureId": "5866dae1e72b96ab74508039cd3dcca7",
+      "league": "La Liga",
+      "home": "Atlético Madrid",
+      "away": "Real Madrid",
+      "kickoff": "2026-09-20T14:15:00Z",
+      "market": "h2h",
+      "selection": "home",
+      "line": null,
+      "description": "Atlético Madrid vence",
+      "odds": 3.4,
+      "bookmaker": "betclic_fr",
+      "modelProb": 0.4199,
+      "fairProb": 0.2674,
+      "impliedProb": 0.2941,
+      "edge": 0.1526,
+      "ev": 0.4277,
+      "stake": 0.02362,
+      "confidence": 0.575,
+      "overround": 0.0452,
+      "lambdas": {
+        "home": 1.807,
+        "away": 1.59
+      },
+      "factors": {
+        "home": [
+          {
+            "type": "descanso",
+            "attackPct": -2,
+            "defencePct": 1.4,
+            "detail": "apenas 3.8854166666666665 dias de descanso"
+          }
+        ],
+        "away": [
+          {
+            "type": "descanso",
+            "attackPct": -0.4,
+            "defencePct": 0.3,
+            "detail": "apenas 4.78125 dias de descanso"
+          }
+        ]
+      },
+      "aiSummary": null,
+      "winCondition": {
+        "wins": "Atlético Madrid vence o jogo no tempo regulamentar.",
+        "loses": "Real Madrid vence ou o jogo acaba empatado."
+      },
+      "narrative": [
+        "Em casa, o Atlético Madrid marca 2,67 e sofre 0,67 golos por jogo (3 jogos); fora, o Real Madrid marca 1,67 e sofre 1,33 (3 jogos).",
+        "Cruzando o ataque de cada equipa com a defesa da outra, ajustando a forca relativa e a vantagem de jogar em casa, o modelo espera 1,81 golos do Atlético Madrid e 1,59 do Real Madrid — 3,40 no total.",
+        "Isto ja conta com apenas 3.8854166666666665 dias de descanso; apenas 4.78125 dias de descanso.",
+        "Daqui sai 42% de probabilidade para esta aposta. A Betclic paga 3.40, que implica 29%; retirada a margem da casa, o preco justo do mercado e 27%. A diferenca de 15.3 pontos percentuais e a vantagem — e a razao pela qual esta aposta aparece e as outras nao."
+      ],
+      "caveats": [
+        "Mesmo estando o modelo certo, esta aposta perde 58 vezes em cada 100. A vantagem so se nota ao fim de muitas apostas.",
+        "Amostra curta: 5 jogos para a equipa com menos dados. Estimativas com poucos jogos sao instaveis."
+      ],
+      "scorelines": [
+        {
+          "score": "1-1",
+          "home": 1,
+          "away": 1,
+          "p": 0.1086
+        },
+        {
+          "score": "2-1",
+          "home": 2,
+          "away": 1,
+          "p": 0.0869
+        },
+        {
+          "score": "1-2",
+          "home": 1,
+          "away": 2,
+          "p": 0.0765
+        },
+        {
+          "score": "2-2",
+          "home": 2,
+          "away": 2,
+          "p": 0.0691
+        },
+        {
+          "score": "2-0",
+          "home": 2,
+          "away": 0,
+          "p": 0.0546
+        }
+      ],
+      "goalsDistribution": [
+        {
+          "goals": 0,
+          "label": "0",
+          "p": 0.046
+        },
+        {
+          "goals": 1,
+          "label": "1",
+          "p": 0.0887
+        },
+        {
+          "goals": 2,
+          "label": "2",
+          "p": 0.2056
+        },
+        {
+          "goals": 3,
+          "label": "3",
+          "p": 0.2187
+        },
+        {
+          "goals": 4,
+          "label": "4",
+          "p": 0.1857
+        },
+        {
+          "goals": 5,
+          "label": "5",
+          "p": 0.1262
+        },
+        {
+          "goals": 6,
+          "label": "6+",
+          "p": 0.1292
+        }
+      ],
+      "h2h": null,
+      "teams": {
+        "home": {
+          "name": "Atlético Madrid",
+          "elo": 1545,
+          "form": {
+            "games": [
+              {
+                "opponent": "CA Osasuna",
+                "atHome": true,
+                "scored": 4,
+                "conceded": 0,
+                "result": "W",
+                "date": "2026-09-16T17:00:00Z"
+              },
+              {
+                "opponent": "Real Sociedad",
+                "atHome": false,
+                "scored": 3,
+                "conceded": 0,
+                "result": "W",
+                "date": "2026-09-13T19:00:00Z"
+              },
+              {
+                "opponent": "Athletic Bilbao",
+                "atHome": false,
+                "scored": 0,
+                "conceded": 3,
+                "result": "L",
+                "date": "2026-09-05T14:15:00Z"
+              },
+              {
+                "opponent": "Sevilla",
+                "atHome": false,
+                "scored": 3,
+                "conceded": 1,
+                "result": "W",
+                "date": "2026-08-29T19:30:00Z"
+              },
+              {
+                "opponent": "Villarreal",
+                "atHome": true,
+                "scored": 2,
+                "conceded": 2,
+                "result": "D",
+                "date": "2026-08-23T15:00:00Z"
+              },
+              {
+                "opponent": "Málaga",
+                "atHome": true,
+                "scored": 2,
+                "conceded": 0,
+                "result": "W",
+                "date": "2026-08-19T19:00:00Z"
+              }
+            ],
+            "played": 6,
+            "wins": 4,
+            "draws": 1,
+            "losses": 1,
+            "scoredAvg": 2.33,
+            "concededAvg": 1,
+            "streak": "WDWLWW"
+          },
+          "split": {
+            "home": {
+              "played": 3,
+              "scoredAvg": 2.67,
+              "concededAvg": 0.67
+            },
+            "away": {
+              "played": 3,
+              "scoredAvg": 2,
+              "concededAvg": 1.33
+            }
+          },
+          "absences": []
+        },
+        "away": {
+          "name": "Real Madrid",
+          "elo": 1540,
+          "form": {
+            "games": [
+              {
+                "opponent": "Elche CF",
+                "atHome": false,
+                "scored": 3,
+                "conceded": 2,
+                "result": "W",
+                "date": "2026-09-15T19:30:00Z"
+              },
+              {
+                "opponent": "Rayo Vallecano",
+                "atHome": true,
+                "scored": 4,
+                "conceded": 1,
+                "result": "W",
+                "date": "2026-09-12T19:00:00Z"
+              },
+              {
+                "opponent": "Real Betis",
+                "atHome": false,
+                "scored": 0,
+                "conceded": 1,
+                "result": "L",
+                "date": "2026-09-04T19:00:00Z"
+              },
+              {
+                "opponent": "Real Sociedad",
+                "atHome": true,
+                "scored": 4,
+                "conceded": 1,
+                "result": "W",
+                "date": "2026-08-26T19:00:00Z"
+              },
+              {
+                "opponent": "Espanyol",
+                "atHome": false,
+                "scored": 2,
+                "conceded": 1,
+                "result": "W",
+                "date": "2026-08-22T19:30:00Z"
+              }
+            ],
+            "played": 5,
+            "wins": 4,
+            "draws": 0,
+            "losses": 1,
+            "scoredAvg": 2.6,
+            "concededAvg": 1.2,
+            "streak": "WWLWW"
+          },
+          "split": {
+            "home": {
+              "played": 2,
+              "scoredAvg": 4,
+              "concededAvg": 1
+            },
+            "away": {
+              "played": 3,
+              "scoredAvg": 1.67,
+              "concededAvg": 1.33
+            }
+          },
+          "absences": []
+        }
+      },
+      "demo": false,
+      "generatedAt": "2026-09-19T14:01:29.164Z",
+      "settled": false,
+      "result": null,
+      "pnlUnits": null
+    },
+    {
+      "id": "f9e4aaa82676652e339be6c9b5ca44fb:h2h:home",
+      "fixtureId": "f9e4aaa82676652e339be6c9b5ca44fb",
+      "league": "Serie A",
+      "home": "Frosinone",
+      "away": "Como",
+      "kickoff": "2026-09-20T13:00:00Z",
+      "market": "h2h",
+      "selection": "home",
+      "line": null,
+      "description": "Frosinone vence",
+      "odds": 5.4,
+      "bookmaker": "betclic_fr",
+      "modelProb": 0.3608,
+      "fairProb": 0.1478,
+      "impliedProb": 0.1852,
+      "edge": 0.2129,
+      "ev": 0.9482,
+      "stake": 0.02114,
+      "confidence": 0.409,
+      "overround": 0.0447,
+      "lambdas": {
+        "home": 1.405,
+        "away": 1.393
+      },
+      "factors": {
+        "home": [],
+        "away": []
+      },
+      "aiSummary": null,
+      "winCondition": {
+        "wins": "Frosinone vence o jogo no tempo regulamentar.",
+        "loses": "Como vence ou o jogo acaba empatado."
+      },
+      "narrative": [
+        "O Frosinone marca 1,50 golos por jogo na forma recente; fora, o Como marca 2,33 e sofre 1,00 (3 jogos).",
+        "Cruzando o ataque de cada equipa com a defesa da outra, ajustando a forca relativa e a vantagem de jogar em casa, o modelo espera 1,41 golos do Frosinone e 1,39 do Como — 2,80 no total.",
+        "Daqui sai 36% de probabilidade para esta aposta. A Betclic paga 5.40, que implica 19%; retirada a margem da casa, o preco justo do mercado e 15%. A diferenca de 21.3 pontos percentuais e a vantagem — e a razao pela qual esta aposta aparece e as outras nao."
+      ],
+      "caveats": [
+        "Mesmo estando o modelo certo, esta aposta perde 64 vezes em cada 100. A vantagem so se nota ao fim de muitas apostas.",
+        "Amostra curta: 2 jogos para a equipa com menos dados. Estimativas com poucos jogos sao instaveis.",
+        "Confianca baixa — faltam dados ou o mercado tem margem alta. Considera reduzir a stake.",
+        "A odd de 5.40 significa que este resultado e pouco frequente: espera longas series sem acertar."
+      ],
+      "scorelines": [
+        {
+          "score": "1-1",
+          "home": 1,
+          "away": 1,
+          "p": 0.1348
+        },
+        {
+          "score": "2-1",
+          "home": 2,
+          "away": 1,
+          "p": 0.0838
+        },
+        {
+          "score": "1-2",
+          "home": 1,
+          "away": 2,
+          "p": 0.0831
+        },
+        {
+          "score": "0-0",
+          "home": 0,
+          "away": 0,
+          "p": 0.0764
+        },
+        {
+          "score": "1-0",
+          "home": 1,
+          "away": 0,
+          "p": 0.0701
+        }
+      ],
+      "goalsDistribution": [
+        {
+          "goals": 0,
+          "label": "0",
+          "p": 0.0764
+        },
+        {
+          "goals": 1,
+          "label": "1",
+          "p": 0.1395
+        },
+        {
+          "goals": 2,
+          "label": "2",
+          "p": 0.254
+        },
+        {
+          "goals": 3,
+          "label": "3",
+          "p": 0.2225
+        },
+        {
+          "goals": 4,
+          "label": "4",
+          "p": 0.1556
+        },
+        {
+          "goals": 5,
+          "label": "5",
+          "p": 0.0871
+        },
+        {
+          "goals": 6,
+          "label": "6+",
+          "p": 0.0649
+        }
+      ],
+      "h2h": null,
+      "teams": {
+        "home": {
+          "name": "Frosinone",
+          "elo": 1509,
+          "form": {
+            "games": [
+              {
+                "opponent": "Fiorentina",
+                "atHome": false,
+                "scored": 3,
+                "conceded": 0,
+                "result": "W",
+                "date": "2026-08-29T16:30:00Z"
+              },
+              {
+                "opponent": "Juventus",
+                "atHome": true,
+                "scored": 0,
+                "conceded": 1,
+                "result": "L",
+                "date": "2026-08-23T16:30:00Z"
+              }
+            ],
+            "played": 2,
+            "wins": 1,
+            "draws": 0,
+            "losses": 1,
+            "scoredAvg": 1.5,
+            "concededAvg": 0.5,
+            "streak": "LW"
+          },
+          "split": {
+            "home": {
+              "played": 1,
+              "scoredAvg": 0,
+              "concededAvg": 1
+            },
+            "away": {
+              "played": 1,
+              "scoredAvg": 3,
+              "concededAvg": 0
+            }
+          },
+          "absences": []
+        },
+        "away": {
+          "name": "Como",
+          "elo": 1533,
+          "form": {
+            "games": [
+              {
+                "opponent": "Genoa",
+                "atHome": false,
+                "scored": 4,
+                "conceded": 1,
+                "result": "W",
+                "date": "2026-09-04T18:45:00Z"
+              },
+              {
+                "opponent": "Napoli",
+                "atHome": false,
+                "scored": 2,
+                "conceded": 1,
+                "result": "W",
+                "date": "2026-08-30T16:30:00Z"
+              },
+              {
+                "opponent": "Udinese",
+                "atHome": false,
+                "scored": 1,
+                "conceded": 1,
+                "result": "D",
+                "date": "2026-08-22T16:30:00Z"
+              }
+            ],
+            "played": 3,
+            "wins": 2,
+            "draws": 1,
+            "losses": 0,
+            "scoredAvg": 2.33,
+            "concededAvg": 1,
+            "streak": "DWW"
+          },
+          "split": {
+            "home": null,
+            "away": {
+              "played": 3,
+              "scoredAvg": 2.33,
+              "concededAvg": 1
+            }
+          },
+          "absences": []
+        }
+      },
+      "demo": false,
+      "generatedAt": "2026-09-19T14:01:29.164Z",
       "settled": false,
       "result": null,
       "pnlUnits": null
@@ -2532,16 +2006,16 @@
       "selection": "over",
       "line": 2.5,
       "description": "Mais de 2.5 golos",
-      "odds": 2.02,
+      "odds": 1.98,
       "bookmaker": "betclic_fr",
       "modelProb": 0.6605,
-      "fairProb": 0.4735,
-      "impliedProb": 0.495,
-      "edge": 0.1871,
-      "ev": 0.3343,
-      "stake": 0.02194,
-      "confidence": 0.463,
-      "overround": 0.0581,
+      "fairProb": 0.4943,
+      "impliedProb": 0.5051,
+      "edge": 0.1663,
+      "ev": 0.3079,
+      "stake": 0.02284,
+      "confidence": 0.523,
+      "overround": 0.0696,
       "lambdas": {
         "home": 1.889,
         "away": 1.513
@@ -2566,12 +2040,11 @@
         "O Alverca marca 1,67 golos por jogo na forma recente; o Rio Ave FC marca 1,00.",
         "Cruzando o ataque de cada equipa com a defesa da outra, ajustando a forca relativa e a vantagem de jogar em casa, o modelo espera 1,89 golos do Alverca e 1,51 do Rio Ave FC — 3,40 no total.",
         "Isto ja conta com apenas 4.96875 dias de descanso.",
-        "Daqui sai 66% de probabilidade para esta aposta. A Betclic paga 2.02, que implica 50%; retirada a margem da casa, o preco justo do mercado e 47%. A diferenca de 18.7 pontos percentuais e a vantagem — e a razao pela qual esta aposta aparece e as outras nao."
+        "Daqui sai 66% de probabilidade para esta aposta. A Betclic paga 1.98, que implica 51%; retirada a margem da casa, o preco justo do mercado e 49%. A diferenca de 16.6 pontos percentuais e a vantagem — e a razao pela qual esta aposta aparece e as outras nao."
       ],
       "caveats": [
         "Mesmo estando o modelo certo, esta aposta perde 34 vezes em cada 100. A vantagem so se nota ao fim de muitas apostas.",
-        "Amostra curta: 3 jogos para a equipa com menos dados. Estimativas com poucos jogos sao instaveis.",
-        "Confianca baixa — faltam dados ou o mercado tem margem alta. Considera reduzir a stake."
+        "Amostra curta: 3 jogos para a equipa com menos dados. Estimativas com poucos jogos sao instaveis."
       ],
       "scorelines": [
         {
@@ -2766,35 +2239,35 @@
         }
       },
       "demo": false,
-      "generatedAt": "2026-09-18T14:41:01.972Z",
+      "generatedAt": "2026-09-19T14:01:29.163Z",
       "settled": false,
       "result": null,
       "pnlUnits": null
     },
     {
-      "id": "f9e4aaa82676652e339be6c9b5ca44fb:h2h:home",
-      "fixtureId": "f9e4aaa82676652e339be6c9b5ca44fb",
-      "league": "Serie A",
-      "home": "Frosinone",
-      "away": "Como",
-      "kickoff": "2026-09-20T13:00:00Z",
-      "market": "h2h",
-      "selection": "home",
-      "line": null,
-      "description": "Frosinone vence",
-      "odds": 5.4,
+      "id": "2b9e09738f8627da46e42d85e4ccb478:totals:under:3.5",
+      "fixtureId": "2b9e09738f8627da46e42d85e4ccb478",
+      "league": "Ligue 1",
+      "home": "Marseille",
+      "away": "Paris Saint Germain",
+      "kickoff": "2026-09-20T18:45:00Z",
+      "market": "totals",
+      "selection": "under",
+      "line": 3.5,
+      "description": "Menos de 3.5 golos",
+      "odds": 1.92,
       "bookmaker": "betclic_fr",
-      "modelProb": 0.3574,
-      "fairProb": 0.1539,
-      "impliedProb": 0.1852,
-      "edge": 0.2035,
-      "ev": 0.9297,
-      "stake": 0.02136,
-      "confidence": 0.424,
-      "overround": 0.0492,
+      "modelProb": 0.6624,
+      "fairProb": 0.5014,
+      "impliedProb": 0.5208,
+      "edge": 0.161,
+      "ev": 0.2717,
+      "stake": 0.02291,
+      "confidence": 0.527,
+      "overround": 0.061,
       "lambdas": {
-        "home": 1.398,
-        "away": 1.401
+        "home": 1.527,
+        "away": 1.406
       },
       "factors": {
         "home": [],
@@ -2802,178 +2275,445 @@
       },
       "aiSummary": null,
       "winCondition": {
-        "wins": "Frosinone vence o jogo no tempo regulamentar.",
-        "loses": "Como vence ou o jogo acaba empatado."
+        "wins": "O jogo tem 3 ou menos golos no total.",
+        "loses": "O jogo tem 4 ou mais golos."
       },
       "narrative": [
-        "O Frosinone marca 1,50 golos por jogo na forma recente; fora, o Como marca 2,33 e sofre 1,00 (3 jogos).",
-        "Cruzando o ataque de cada equipa com a defesa da outra, ajustando a forca relativa e a vantagem de jogar em casa, o modelo espera 1,40 golos do Frosinone e 1,40 do Como — 2,80 no total.",
-        "Daqui sai 36% de probabilidade para esta aposta. A Betclic paga 5.40, que implica 19%; retirada a margem da casa, o preco justo do mercado e 15%. A diferenca de 20.3 pontos percentuais e a vantagem — e a razao pela qual esta aposta aparece e as outras nao."
+        "O Marseille marca 1,50 golos por jogo na forma recente; fora, o Paris Saint Germain marca 1,67 e sofre 1,33 (3 jogos).",
+        "Cruzando o ataque de cada equipa com a defesa da outra, ajustando a forca relativa e a vantagem de jogar em casa, o modelo espera 1,53 golos do Marseille e 1,41 do Paris Saint Germain — 2,93 no total.",
+        "Daqui sai 66% de probabilidade para esta aposta. A Betclic paga 1.92, que implica 52%; retirada a margem da casa, o preco justo do mercado e 50%. A diferenca de 16.1 pontos percentuais e a vantagem — e a razao pela qual esta aposta aparece e as outras nao."
       ],
       "caveats": [
-        "Mesmo estando o modelo certo, esta aposta perde 64 vezes em cada 100. A vantagem so se nota ao fim de muitas apostas.",
-        "Amostra curta: 2 jogos para a equipa com menos dados. Estimativas com poucos jogos sao instaveis.",
-        "Confianca baixa — faltam dados ou o mercado tem margem alta. Considera reduzir a stake.",
-        "A odd de 5.40 significa que este resultado e pouco frequente: espera longas series sem acertar."
+        "Mesmo estando o modelo certo, esta aposta perde 34 vezes em cada 100. A vantagem so se nota ao fim de muitas apostas.",
+        "Amostra curta: 4 jogos para a equipa com menos dados. Estimativas com poucos jogos sao instaveis."
       ],
       "scorelines": [
         {
           "score": "1-1",
           "home": 1,
           "away": 1,
-          "p": 0.1347
-        },
-        {
-          "score": "1-2",
-          "home": 1,
-          "away": 2,
-          "p": 0.0835
+          "p": 0.1292
         },
         {
           "score": "2-1",
           "home": 2,
           "away": 1,
-          "p": 0.0833
+          "p": 0.0873
+        },
+        {
+          "score": "1-2",
+          "home": 1,
+          "away": 2,
+          "p": 0.0804
         },
         {
           "score": "0-0",
           "home": 0,
           "away": 0,
-          "p": 0.0764
+          "p": 0.0681
         },
         {
-          "score": "0-1",
-          "home": 0,
-          "away": 1,
-          "p": 0.0698
+          "score": "1-0",
+          "home": 1,
+          "away": 0,
+          "p": 0.0665
         }
       ],
       "goalsDistribution": [
         {
           "goals": 0,
           "label": "0",
-          "p": 0.0764
+          "p": 0.0681
         },
         {
           "goals": 1,
           "label": "1",
-          "p": 0.1394
+          "p": 0.1265
         },
         {
           "goals": 2,
           "label": "2",
-          "p": 0.2539
+          "p": 0.2439
         },
         {
           "goals": 3,
           "label": "3",
-          "p": 0.2225
+          "p": 0.2239
         },
         {
           "goals": 4,
           "label": "4",
-          "p": 0.1557
+          "p": 0.1641
         },
         {
           "goals": 5,
           "label": "5",
-          "p": 0.0872
+          "p": 0.0963
         },
         {
           "goals": 6,
           "label": "6+",
-          "p": 0.065
+          "p": 0.0773
         }
       ],
       "h2h": null,
       "teams": {
         "home": {
-          "name": "Frosinone",
-          "elo": 1509,
+          "name": "Marseille",
+          "elo": 1484,
           "form": {
             "games": [
               {
-                "opponent": "Fiorentina",
+                "opponent": "Rennes",
                 "atHome": false,
-                "scored": 3,
-                "conceded": 0,
-                "result": "W",
-                "date": "2026-08-29T16:30:00Z"
-              },
-              {
-                "opponent": "Juventus",
-                "atHome": true,
                 "scored": 0,
                 "conceded": 1,
                 "result": "L",
-                "date": "2026-08-23T16:30:00Z"
+                "date": "2026-09-11T18:45:00Z"
+              },
+              {
+                "opponent": "Paris FC",
+                "atHome": true,
+                "scored": 2,
+                "conceded": 3,
+                "result": "L",
+                "date": "2026-09-06T18:45:00Z"
+              },
+              {
+                "opponent": "AS Monaco",
+                "atHome": false,
+                "scored": 0,
+                "conceded": 2,
+                "result": "L",
+                "date": "2026-08-30T18:45:00Z"
+              },
+              {
+                "opponent": "Strasbourg",
+                "atHome": true,
+                "scored": 4,
+                "conceded": 0,
+                "result": "W",
+                "date": "2026-08-21T18:45:00Z"
               }
             ],
-            "played": 2,
+            "played": 4,
             "wins": 1,
             "draws": 0,
+            "losses": 3,
+            "scoredAvg": 1.5,
+            "concededAvg": 1.5,
+            "streak": "WLLL"
+          },
+          "split": {
+            "home": {
+              "played": 2,
+              "scoredAvg": 3,
+              "concededAvg": 1.5
+            },
+            "away": {
+              "played": 2,
+              "scoredAvg": 0,
+              "concededAvg": 1.5
+            }
+          },
+          "absences": []
+        },
+        "away": {
+          "name": "Paris Saint Germain",
+          "elo": 1505,
+          "form": {
+            "games": [
+              {
+                "opponent": "Brest",
+                "atHome": false,
+                "scored": 1,
+                "conceded": 0,
+                "result": "W",
+                "date": "2026-09-13T18:45:00Z"
+              },
+              {
+                "opponent": "AS Monaco",
+                "atHome": true,
+                "scored": 1,
+                "conceded": 2,
+                "result": "L",
+                "date": "2026-09-04T19:05:00Z"
+              },
+              {
+                "opponent": "Lille",
+                "atHome": false,
+                "scored": 2,
+                "conceded": 2,
+                "result": "D",
+                "date": "2026-08-28T18:45:00Z"
+              },
+              {
+                "opponent": "Rennes",
+                "atHome": false,
+                "scored": 2,
+                "conceded": 2,
+                "result": "D",
+                "date": "2026-08-23T18:45:00Z"
+              }
+            ],
+            "played": 4,
+            "wins": 1,
+            "draws": 2,
             "losses": 1,
             "scoredAvg": 1.5,
-            "concededAvg": 0.5,
-            "streak": "LW"
+            "concededAvg": 1.5,
+            "streak": "DDLW"
           },
           "split": {
             "home": {
               "played": 1,
-              "scoredAvg": 0,
+              "scoredAvg": 1,
+              "concededAvg": 2
+            },
+            "away": {
+              "played": 3,
+              "scoredAvg": 1.67,
+              "concededAvg": 1.33
+            }
+          },
+          "absences": []
+        }
+      },
+      "demo": false,
+      "generatedAt": "2026-09-19T14:01:29.165Z",
+      "settled": false,
+      "result": null,
+      "pnlUnits": null
+    },
+    {
+      "id": "873ce2405ef51cf09af22b0c8adfba55:totals:under:3.5",
+      "fixtureId": "873ce2405ef51cf09af22b0c8adfba55",
+      "league": "Ligue 1",
+      "home": "Lyon",
+      "away": "Rennes",
+      "kickoff": "2026-09-19T18:45:00Z",
+      "market": "totals",
+      "selection": "under",
+      "line": 3.5,
+      "description": "Menos de 3.5 golos",
+      "odds": 1.67,
+      "bookmaker": "betclic_fr",
+      "modelProb": 0.7448,
+      "fairProb": 0.6009,
+      "impliedProb": 0.5988,
+      "edge": 0.1439,
+      "ev": 0.2438,
+      "stake": 0.02383,
+      "confidence": 0.588,
+      "overround": 0.0639,
+      "lambdas": {
+        "home": 1.4,
+        "away": 1.159
+      },
+      "factors": {
+        "home": [],
+        "away": []
+      },
+      "aiSummary": null,
+      "winCondition": {
+        "wins": "O jogo tem 3 ou menos golos no total.",
+        "loses": "O jogo tem 4 ou mais golos."
+      },
+      "narrative": [
+        "O Lyon marca 1,50 golos por jogo na forma recente; o Rennes marca 2,00.",
+        "Cruzando o ataque de cada equipa com a defesa da outra, ajustando a forca relativa e a vantagem de jogar em casa, o modelo espera 1,40 golos do Lyon e 1,16 do Rennes — 2,56 no total.",
+        "Daqui sai 74% de probabilidade para esta aposta. A Betclic paga 1.67, que implica 60%; retirada a margem da casa, o preco justo do mercado e 60%. A diferenca de 14.4 pontos percentuais e a vantagem — e a razao pela qual esta aposta aparece e as outras nao."
+      ],
+      "caveats": [
+        "Mesmo estando o modelo certo, esta aposta perde 26 vezes em cada 100. A vantagem so se nota ao fim de muitas apostas.",
+        "Amostra curta: 4 jogos para a equipa com menos dados. Estimativas com poucos jogos sao instaveis."
+      ],
+      "scorelines": [
+        {
+          "score": "1-1",
+          "home": 1,
+          "away": 1,
+          "p": 0.1419
+        },
+        {
+          "score": "0-0",
+          "home": 0,
+          "away": 0,
+          "p": 0.0937
+        },
+        {
+          "score": "1-0",
+          "home": 1,
+          "away": 0,
+          "p": 0.092
+        },
+        {
+          "score": "2-1",
+          "home": 2,
+          "away": 1,
+          "p": 0.0879
+        },
+        {
+          "score": "2-0",
+          "home": 2,
+          "away": 0,
+          "p": 0.0758
+        }
+      ],
+      "goalsDistribution": [
+        {
+          "goals": 0,
+          "label": "0",
+          "p": 0.0937
+        },
+        {
+          "goals": 1,
+          "label": "1",
+          "p": 0.1653
+        },
+        {
+          "goals": 2,
+          "label": "2",
+          "p": 0.2697
+        },
+        {
+          "goals": 3,
+          "label": "3",
+          "p": 0.2161
+        },
+        {
+          "goals": 4,
+          "label": "4",
+          "p": 0.1383
+        },
+        {
+          "goals": 5,
+          "label": "5",
+          "p": 0.0708
+        },
+        {
+          "goals": 6,
+          "label": "6+",
+          "p": 0.0461
+        }
+      ],
+      "h2h": null,
+      "teams": {
+        "home": {
+          "name": "Lyon",
+          "elo": 1527,
+          "form": {
+            "games": [
+              {
+                "opponent": "Paris FC",
+                "atHome": false,
+                "scored": 0,
+                "conceded": 0,
+                "result": "D",
+                "date": "2026-09-12T18:45:00Z"
+              },
+              {
+                "opponent": "Auxerre",
+                "atHome": true,
+                "scored": 3,
+                "conceded": 1,
+                "result": "W",
+                "date": "2026-09-04T17:00:00Z"
+              },
+              {
+                "opponent": "Le Havre",
+                "atHome": true,
+                "scored": 1,
+                "conceded": 1,
+                "result": "D",
+                "date": "2026-08-29T18:45:00Z"
+              },
+              {
+                "opponent": "Toulouse",
+                "atHome": false,
+                "scored": 2,
+                "conceded": 0,
+                "result": "W",
+                "date": "2026-08-22T18:45:00Z"
+              }
+            ],
+            "played": 4,
+            "wins": 2,
+            "draws": 2,
+            "losses": 0,
+            "scoredAvg": 1.5,
+            "concededAvg": 0.5,
+            "streak": "WDWD"
+          },
+          "split": {
+            "home": {
+              "played": 2,
+              "scoredAvg": 2,
               "concededAvg": 1
             },
             "away": {
-              "played": 1,
-              "scoredAvg": 3,
+              "played": 2,
+              "scoredAvg": 1,
               "concededAvg": 0
             }
           },
           "absences": []
         },
         "away": {
-          "name": "Como",
-          "elo": 1533,
+          "name": "Rennes",
+          "elo": 1525,
           "form": {
             "games": [
               {
-                "opponent": "Genoa",
-                "atHome": false,
-                "scored": 4,
-                "conceded": 1,
+                "opponent": "Marseille",
+                "atHome": true,
+                "scored": 1,
+                "conceded": 0,
                 "result": "W",
-                "date": "2026-09-04T18:45:00Z"
+                "date": "2026-09-11T18:45:00Z"
               },
               {
-                "opponent": "Napoli",
+                "opponent": "Angers",
                 "atHome": false,
                 "scored": 2,
                 "conceded": 1,
                 "result": "W",
-                "date": "2026-08-30T16:30:00Z"
+                "date": "2026-09-06T15:15:00Z"
               },
               {
-                "opponent": "Udinese",
-                "atHome": false,
-                "scored": 1,
-                "conceded": 1,
+                "opponent": "Le Mans FC",
+                "atHome": true,
+                "scored": 3,
+                "conceded": 2,
+                "result": "W",
+                "date": "2026-08-30T15:15:00Z"
+              },
+              {
+                "opponent": "Paris Saint Germain",
+                "atHome": true,
+                "scored": 2,
+                "conceded": 2,
                 "result": "D",
-                "date": "2026-08-22T16:30:00Z"
+                "date": "2026-08-23T18:45:00Z"
               }
             ],
-            "played": 3,
-            "wins": 2,
+            "played": 4,
+            "wins": 3,
             "draws": 1,
             "losses": 0,
-            "scoredAvg": 2.33,
-            "concededAvg": 1,
-            "streak": "DWW"
+            "scoredAvg": 2,
+            "concededAvg": 1.25,
+            "streak": "DWWW"
           },
           "split": {
-            "home": null,
-            "away": {
+            "home": {
               "played": 3,
-              "scoredAvg": 2.33,
+              "scoredAvg": 2,
+              "concededAvg": 1.33
+            },
+            "away": {
+              "played": 1,
+              "scoredAvg": 2,
               "concededAvg": 1
             }
           },
@@ -2981,7 +2721,248 @@
         }
       },
       "demo": false,
-      "generatedAt": "2026-09-18T14:41:01.973Z",
+      "generatedAt": "2026-09-19T14:01:29.164Z",
+      "settled": false,
+      "result": null,
+      "pnlUnits": null
+    },
+    {
+      "id": "2a54ff70f108e67822197283422c2e72:h2h:home",
+      "fixtureId": "2a54ff70f108e67822197283422c2e72",
+      "league": "Liga Portugal",
+      "home": "Santa Clara",
+      "away": "Braga",
+      "kickoff": "2026-09-20T17:00:00Z",
+      "market": "h2h",
+      "selection": "home",
+      "line": null,
+      "description": "Santa Clara vence",
+      "odds": 3.5,
+      "bookmaker": "betclic_fr",
+      "modelProb": 0.4105,
+      "fairProb": 0.247,
+      "impliedProb": 0.2857,
+      "edge": 0.1635,
+      "ev": 0.4367,
+      "stake": 0.02262,
+      "confidence": 0.508,
+      "overround": 0.0748,
+      "lambdas": {
+        "home": 1.235,
+        "away": 0.949
+      },
+      "factors": {
+        "home": [],
+        "away": []
+      },
+      "aiSummary": null,
+      "winCondition": {
+        "wins": "Santa Clara vence o jogo no tempo regulamentar.",
+        "loses": "Braga vence ou o jogo acaba empatado."
+      },
+      "narrative": [
+        "O Santa Clara marca 2,00 golos por jogo na forma recente; o Braga marca 1,25.",
+        "Cruzando o ataque de cada equipa com a defesa da outra, ajustando a forca relativa e a vantagem de jogar em casa, o modelo espera 1,23 golos do Santa Clara e 0,95 do Braga — 2,18 no total.",
+        "Daqui sai 41% de probabilidade para esta aposta. A Betclic paga 3.50, que implica 29%; retirada a margem da casa, o preco justo do mercado e 25%. A diferenca de 16.4 pontos percentuais e a vantagem — e a razao pela qual esta aposta aparece e as outras nao."
+      ],
+      "caveats": [
+        "Mesmo estando o modelo certo, esta aposta perde 59 vezes em cada 100. A vantagem so se nota ao fim de muitas apostas.",
+        "Amostra curta: 4 jogos para a equipa com menos dados. Estimativas com poucos jogos sao instaveis."
+      ],
+      "scorelines": [
+        {
+          "score": "1-1",
+          "home": 1,
+          "away": 1,
+          "p": 0.1491
+        },
+        {
+          "score": "0-0",
+          "home": 0,
+          "away": 0,
+          "p": 0.1298
+        },
+        {
+          "score": "1-0",
+          "home": 1,
+          "away": 0,
+          "p": 0.1219
+        },
+        {
+          "score": "0-1",
+          "home": 0,
+          "away": 1,
+          "p": 0.0897
+        },
+        {
+          "score": "2-0",
+          "home": 2,
+          "away": 0,
+          "p": 0.0859
+        }
+      ],
+      "goalsDistribution": [
+        {
+          "goals": 0,
+          "label": "0",
+          "p": 0.1298
+        },
+        {
+          "goals": 1,
+          "label": "1",
+          "p": 0.2117
+        },
+        {
+          "goals": 2,
+          "label": "2",
+          "p": 0.2857
+        },
+        {
+          "goals": 3,
+          "label": "3",
+          "p": 0.1954
+        },
+        {
+          "goals": 4,
+          "label": "4",
+          "p": 0.1067
+        },
+        {
+          "goals": 5,
+          "label": "5",
+          "p": 0.0466
+        },
+        {
+          "goals": 6,
+          "label": "6+",
+          "p": 0.0241
+        }
+      ],
+      "h2h": null,
+      "teams": {
+        "home": {
+          "name": "Santa Clara",
+          "elo": 1544,
+          "form": {
+            "games": [
+              {
+                "opponent": "Arouca",
+                "atHome": false,
+                "scored": 2,
+                "conceded": 1,
+                "result": "W",
+                "date": "2026-09-13T17:00:00Z"
+              },
+              {
+                "opponent": "Rio Ave FC",
+                "atHome": true,
+                "scored": 4,
+                "conceded": 0,
+                "result": "W",
+                "date": "2026-09-06T14:30:00Z"
+              },
+              {
+                "opponent": "Famalicão",
+                "atHome": true,
+                "scored": 1,
+                "conceded": 0,
+                "result": "W",
+                "date": "2026-08-23T17:00:00Z"
+              },
+              {
+                "opponent": "Académico de Viseu",
+                "atHome": false,
+                "scored": 1,
+                "conceded": 0,
+                "result": "W",
+                "date": "2026-08-15T17:00:00Z"
+              }
+            ],
+            "played": 4,
+            "wins": 4,
+            "draws": 0,
+            "losses": 0,
+            "scoredAvg": 2,
+            "concededAvg": 0.25,
+            "streak": "WWWW"
+          },
+          "split": {
+            "home": {
+              "played": 2,
+              "scoredAvg": 2.5,
+              "concededAvg": 0
+            },
+            "away": {
+              "played": 2,
+              "scoredAvg": 1.5,
+              "concededAvg": 0.5
+            }
+          },
+          "absences": []
+        },
+        "away": {
+          "name": "Braga",
+          "elo": 1518,
+          "form": {
+            "games": [
+              {
+                "opponent": "Estoril",
+                "atHome": true,
+                "scored": 1,
+                "conceded": 0,
+                "result": "W",
+                "date": "2026-09-14T19:45:00Z"
+              },
+              {
+                "opponent": "CF Estrela",
+                "atHome": false,
+                "scored": 1,
+                "conceded": 2,
+                "result": "L",
+                "date": "2026-09-10T19:15:00Z"
+              },
+              {
+                "opponent": "Alverca",
+                "atHome": false,
+                "scored": 2,
+                "conceded": 1,
+                "result": "W",
+                "date": "2026-09-05T17:00:00Z"
+              },
+              {
+                "opponent": "Vitória SC",
+                "atHome": true,
+                "scored": 1,
+                "conceded": 0,
+                "result": "W",
+                "date": "2026-08-31T19:15:00Z"
+              }
+            ],
+            "played": 4,
+            "wins": 3,
+            "draws": 0,
+            "losses": 1,
+            "scoredAvg": 1.25,
+            "concededAvg": 0.75,
+            "streak": "WWLW"
+          },
+          "split": {
+            "home": {
+              "played": 2,
+              "scoredAvg": 1,
+              "concededAvg": 0
+            },
+            "away": {
+              "played": 2,
+              "scoredAvg": 1.5,
+              "concededAvg": 1.5
+            }
+          },
+          "absences": []
+        }
+      },
+      "demo": false,
+      "generatedAt": "2026-09-19T14:01:29.165Z",
       "settled": false,
       "result": null,
       "pnlUnits": null
