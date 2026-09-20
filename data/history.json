@@ -1,7 +1,373 @@
 {
-  "updatedAt": "2026-09-19T14:01:26.412Z",
-  "count": 648,
+  "updatedAt": "2026-09-20T14:22:36.791Z",
+  "count": 657,
   "picks": [
+    {
+      "id": "5866dae1e72b96ab74508039cd3dcca7:h2h:home",
+      "fixtureId": "5866dae1e72b96ab74508039cd3dcca7",
+      "league": "La Liga",
+      "home": "Atlético Madrid",
+      "away": "Real Madrid",
+      "kickoff": "2026-09-20T14:15:00Z",
+      "market": "h2h",
+      "selection": "home",
+      "line": null,
+      "description": "Atlético Madrid vence",
+      "odds": 3.4,
+      "bookmaker": "betclic_fr",
+      "modelProb": 0.4199,
+      "fairProb": 0.2674,
+      "impliedProb": 0.2941,
+      "edge": 0.1526,
+      "ev": 0.4277,
+      "stake": 0.02362,
+      "confidence": 0.575,
+      "overround": 0.0452,
+      "lambdas": {
+        "home": 1.807,
+        "away": 1.59
+      },
+      "factors": {
+        "home": [
+          {
+            "type": "descanso",
+            "attackPct": -2,
+            "defencePct": 1.4,
+            "detail": "apenas 3.8854166666666665 dias de descanso"
+          }
+        ],
+        "away": [
+          {
+            "type": "descanso",
+            "attackPct": -0.4,
+            "defencePct": 0.3,
+            "detail": "apenas 4.78125 dias de descanso"
+          }
+        ]
+      },
+      "aiSummary": null,
+      "demo": false,
+      "generatedAt": "2026-09-19T14:01:29.164Z",
+      "settled": false,
+      "result": null,
+      "pnlUnits": null
+    },
+    {
+      "id": "f9e4aaa82676652e339be6c9b5ca44fb:h2h:home",
+      "fixtureId": "f9e4aaa82676652e339be6c9b5ca44fb",
+      "league": "Serie A",
+      "home": "Frosinone",
+      "away": "Como",
+      "kickoff": "2026-09-20T13:00:00Z",
+      "market": "h2h",
+      "selection": "home",
+      "line": null,
+      "description": "Frosinone vence",
+      "odds": 5.4,
+      "bookmaker": "betclic_fr",
+      "modelProb": 0.3608,
+      "fairProb": 0.1478,
+      "impliedProb": 0.1852,
+      "edge": 0.2129,
+      "ev": 0.9482,
+      "stake": 0.02114,
+      "confidence": 0.409,
+      "overround": 0.0447,
+      "lambdas": {
+        "home": 1.405,
+        "away": 1.393
+      },
+      "factors": {
+        "home": [],
+        "away": []
+      },
+      "aiSummary": null,
+      "demo": false,
+      "generatedAt": "2026-09-19T14:01:29.164Z",
+      "settled": false,
+      "result": null,
+      "pnlUnits": null
+    },
+    {
+      "id": "b18936f30d57470436651e1ea7b24195:totals:under:2.5",
+      "fixtureId": "b18936f30d57470436651e1ea7b24195",
+      "league": "Liga Portugal",
+      "home": "Sporting Lisbon",
+      "away": "Arouca",
+      "kickoff": "2026-09-19T19:30:00Z",
+      "market": "totals",
+      "selection": "under",
+      "line": 2.5,
+      "description": "Menos de 2.5 golos",
+      "odds": 2.9,
+      "bookmaker": "betclic_fr",
+      "modelProb": 0.5281,
+      "fairProb": 0.3272,
+      "impliedProb": 0.3448,
+      "edge": 0.2009,
+      "ev": 0.5316,
+      "stake": 0.02198,
+      "confidence": 0.465,
+      "overround": 0.0729,
+      "lambdas": {
+        "home": 1.491,
+        "away": 1.071
+      },
+      "factors": {
+        "home": [],
+        "away": []
+      },
+      "aiSummary": null,
+      "demo": false,
+      "generatedAt": "2026-09-19T14:01:29.164Z",
+      "settled": true,
+      "result": "loss",
+      "pnlUnits": -0.02198,
+      "finalScore": "2-2",
+      "settledAt": "2026-09-20T14:22:36.674Z"
+    },
+    {
+      "id": "b18936f30d57470436651e1ea7b24195:totals:under:3.5",
+      "fixtureId": "b18936f30d57470436651e1ea7b24195",
+      "league": "Liga Portugal",
+      "home": "Sporting Lisbon",
+      "away": "Arouca",
+      "kickoff": "2026-09-19T19:30:00Z",
+      "market": "totals",
+      "selection": "under",
+      "line": 3.5,
+      "description": "Menos de 3.5 golos",
+      "odds": 1.82,
+      "bookmaker": "betclic_fr",
+      "modelProb": 0.7444,
+      "fairProb": 0.5163,
+      "impliedProb": 0.5495,
+      "edge": 0.228,
+      "ev": 0.3547,
+      "stake": 0.021,
+      "confidence": 0.4,
+      "overround": 0.0909,
+      "lambdas": {
+        "home": 1.491,
+        "away": 1.071
+      },
+      "factors": {
+        "home": [],
+        "away": []
+      },
+      "aiSummary": null,
+      "demo": false,
+      "generatedAt": "2026-09-19T14:01:29.164Z",
+      "settled": true,
+      "result": "loss",
+      "pnlUnits": -0.021,
+      "finalScore": "2-2",
+      "settledAt": "2026-09-20T14:22:36.674Z"
+    },
+    {
+      "id": "61f22cfde235ecc75a1ce587930c7ade:totals:under:2.5",
+      "fixtureId": "61f22cfde235ecc75a1ce587930c7ade",
+      "league": "Ligue 1",
+      "home": "Toulouse",
+      "away": "Le Havre",
+      "kickoff": "2026-09-19T18:45:00Z",
+      "market": "totals",
+      "selection": "under",
+      "line": 2.5,
+      "description": "Menos de 2.5 golos",
+      "odds": 2.34,
+      "bookmaker": "betclic_fr",
+      "modelProb": 0.6254,
+      "fairProb": 0.4233,
+      "impliedProb": 0.4274,
+      "edge": 0.2021,
+      "ev": 0.4634,
+      "stake": 0.0221,
+      "confidence": 0.473,
+      "overround": 0.0624,
+      "lambdas": {
+        "home": 1.152,
+        "away": 1.039
+      },
+      "factors": {
+        "home": [],
+        "away": []
+      },
+      "aiSummary": null,
+      "demo": false,
+      "generatedAt": "2026-09-19T14:01:29.163Z",
+      "settled": true,
+      "result": "loss",
+      "pnlUnits": -0.0221,
+      "finalScore": "3-2",
+      "settledAt": "2026-09-20T14:22:36.674Z"
+    },
+    {
+      "id": "873ce2405ef51cf09af22b0c8adfba55:totals:under:2.5",
+      "fixtureId": "873ce2405ef51cf09af22b0c8adfba55",
+      "league": "Ligue 1",
+      "home": "Lyon",
+      "away": "Rennes",
+      "kickoff": "2026-09-19T18:45:00Z",
+      "market": "totals",
+      "selection": "under",
+      "line": 2.5,
+      "description": "Menos de 2.5 golos",
+      "odds": 2.52,
+      "bookmaker": "betclic_fr",
+      "modelProb": 0.5287,
+      "fairProb": 0.3711,
+      "impliedProb": 0.3968,
+      "edge": 0.1576,
+      "ev": 0.3322,
+      "stake": 0.0235,
+      "confidence": 0.567,
+      "overround": 0.0579,
+      "lambdas": {
+        "home": 1.4,
+        "away": 1.159
+      },
+      "factors": {
+        "home": [],
+        "away": []
+      },
+      "aiSummary": null,
+      "demo": false,
+      "generatedAt": "2026-09-19T14:01:29.164Z",
+      "settled": true,
+      "result": "loss",
+      "pnlUnits": -0.0235,
+      "finalScore": "4-0",
+      "settledAt": "2026-09-20T14:22:36.674Z"
+    },
+    {
+      "id": "873ce2405ef51cf09af22b0c8adfba55:totals:under:3.5",
+      "fixtureId": "873ce2405ef51cf09af22b0c8adfba55",
+      "league": "Ligue 1",
+      "home": "Lyon",
+      "away": "Rennes",
+      "kickoff": "2026-09-19T18:45:00Z",
+      "market": "totals",
+      "selection": "under",
+      "line": 3.5,
+      "description": "Menos de 3.5 golos",
+      "odds": 1.67,
+      "bookmaker": "betclic_fr",
+      "modelProb": 0.7448,
+      "fairProb": 0.6009,
+      "impliedProb": 0.5988,
+      "edge": 0.1439,
+      "ev": 0.2438,
+      "stake": 0.02383,
+      "confidence": 0.588,
+      "overround": 0.0639,
+      "lambdas": {
+        "home": 1.4,
+        "away": 1.159
+      },
+      "factors": {
+        "home": [],
+        "away": []
+      },
+      "aiSummary": null,
+      "demo": false,
+      "generatedAt": "2026-09-19T14:01:29.164Z",
+      "settled": true,
+      "result": "loss",
+      "pnlUnits": -0.02383,
+      "finalScore": "4-0",
+      "settledAt": "2026-09-20T14:22:36.674Z"
+    },
+    {
+      "id": "800c8ed0df8c82f1f022eeb29bb69424:totals:over:2.5",
+      "fixtureId": "800c8ed0df8c82f1f022eeb29bb69424",
+      "league": "Liga Portugal",
+      "home": "Alverca",
+      "away": "Rio Ave FC",
+      "kickoff": "2026-09-19T17:00:00Z",
+      "market": "totals",
+      "selection": "over",
+      "line": 2.5,
+      "description": "Mais de 2.5 golos",
+      "odds": 1.98,
+      "bookmaker": "betclic_fr",
+      "modelProb": 0.6605,
+      "fairProb": 0.4943,
+      "impliedProb": 0.5051,
+      "edge": 0.1663,
+      "ev": 0.3079,
+      "stake": 0.02284,
+      "confidence": 0.523,
+      "overround": 0.0696,
+      "lambdas": {
+        "home": 1.889,
+        "away": 1.513
+      },
+      "factors": {
+        "home": [],
+        "away": [
+          {
+            "type": "descanso",
+            "attackPct": -0.1,
+            "defencePct": 0,
+            "detail": "apenas 4.96875 dias de descanso"
+          }
+        ]
+      },
+      "aiSummary": null,
+      "demo": false,
+      "generatedAt": "2026-09-19T14:01:29.163Z",
+      "settled": true,
+      "result": "loss",
+      "pnlUnits": -0.02284,
+      "finalScore": "1-0",
+      "settledAt": "2026-09-20T14:22:36.674Z"
+    },
+    {
+      "id": "a995ad3266759e67c9f9b0617c184b71:h2h:away",
+      "fixtureId": "a995ad3266759e67c9f9b0617c184b71",
+      "league": "La Liga",
+      "home": "Athletic Bilbao",
+      "away": "Alavés",
+      "kickoff": "2026-09-19T14:15:00Z",
+      "market": "h2h",
+      "selection": "away",
+      "line": null,
+      "description": "Alavés vence",
+      "odds": 5.4,
+      "bookmaker": "betclic_fr",
+      "modelProb": 0.3287,
+      "fairProb": 0.1569,
+      "impliedProb": 0.1852,
+      "edge": 0.1718,
+      "ev": 0.7751,
+      "stake": 0.02314,
+      "confidence": 0.543,
+      "overround": 0.0538,
+      "lambdas": {
+        "home": 1.54,
+        "away": 1.389
+      },
+      "factors": {
+        "home": [],
+        "away": [
+          {
+            "type": "descanso",
+            "attackPct": -2.1,
+            "defencePct": 1.5,
+            "detail": "apenas 3.84375 dias de descanso"
+          }
+        ]
+      },
+      "aiSummary": null,
+      "demo": false,
+      "generatedAt": "2026-09-19T14:01:29.161Z",
+      "settled": true,
+      "result": "loss",
+      "pnlUnits": -0.02314,
+      "finalScore": "0-0",
+      "settledAt": "2026-09-20T14:22:36.674Z"
+    },
     {
       "id": "f65c4eaf0f94a569f06d768f737dad2e:h2h:away",
       "fixtureId": "f65c4eaf0f94a569f06d768f737dad2e",
@@ -41,9 +407,11 @@
       "aiSummary": null,
       "demo": false,
       "generatedAt": "2026-09-18T14:41:01.971Z",
-      "settled": false,
-      "result": null,
-      "pnlUnits": null
+      "settled": true,
+      "result": "loss",
+      "pnlUnits": -0.02298,
+      "finalScore": "2-1",
+      "settledAt": "2026-09-20T14:22:36.673Z"
     },
     {
       "id": "b5b058d0a95f9742548f789d1c564a78:h2h:home",
@@ -77,9 +445,11 @@
       "aiSummary": null,
       "demo": false,
       "generatedAt": "2026-09-18T14:41:01.971Z",
-      "settled": false,
-      "result": null,
-      "pnlUnits": null
+      "settled": true,
+      "result": "win",
+      "pnlUnits": 0.08869,
+      "finalScore": "3-0",
+      "settledAt": "2026-09-20T14:22:36.674Z"
     },
     {
       "id": "9a70cbf505030f8bfe5c7864f5ac75b5:totals:over:2.5",
