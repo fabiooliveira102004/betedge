@@ -1,7 +1,121 @@
 {
-  "updatedAt": "2026-10-18T14:11:12.333Z",
-  "count": 715,
+  "updatedAt": "2026-10-19T17:13:29.874Z",
+  "count": 720,
   "picks": [
+    {
+      "id": "4c4026e2782f09d6f0ff2bde2a390513:h2h:away",
+      "fixtureId": "4c4026e2782f09d6f0ff2bde2a390513",
+      "league": "Serie A",
+      "home": "Juventus",
+      "away": "Lazio",
+      "kickoff": "2026-10-18T18:45:00Z",
+      "market": "h2h",
+      "selection": "away",
+      "line": null,
+      "description": "Lazio vence",
+      "odds": 5.75,
+      "bookmaker": "betclic_fr",
+      "modelProb": 0.3277,
+      "fairProb": 0.153,
+      "impliedProb": 0.1739,
+      "edge": 0.1747,
+      "ev": 0.8844,
+      "stake": 0.0236,
+      "confidence": 0.573,
+      "overround": 0.0475,
+      "lambdas": {
+        "home": 1.209,
+        "away": 1.146
+      },
+      "factors": {
+        "home": [],
+        "away": []
+      },
+      "aiSummary": null,
+      "demo": false,
+      "generatedAt": "2026-10-18T14:11:16.480Z",
+      "settled": true,
+      "result": "win",
+      "pnlUnits": 0.1121,
+      "finalScore": "0-3",
+      "settledAt": "2026-10-19T17:13:29.691Z"
+    },
+    {
+      "id": "471f891b1f6516a864ad94c8eb649f5e:totals:under:2.5",
+      "fixtureId": "471f891b1f6516a864ad94c8eb649f5e",
+      "league": "Ligue 1",
+      "home": "Lyon",
+      "away": "Nice",
+      "kickoff": "2026-10-18T18:45:00Z",
+      "market": "totals",
+      "selection": "under",
+      "line": 2.5,
+      "description": "Menos de 2.5 golos",
+      "odds": 2.25,
+      "bookmaker": "betclic_fr",
+      "modelProb": 0.5794,
+      "fairProb": 0.4384,
+      "impliedProb": 0.4444,
+      "edge": 0.141,
+      "ev": 0.3038,
+      "stake": 0.02452,
+      "confidence": 0.635,
+      "overround": 0.0534,
+      "lambdas": {
+        "home": 1.494,
+        "away": 0.869
+      },
+      "factors": {
+        "home": [],
+        "away": []
+      },
+      "aiSummary": null,
+      "demo": false,
+      "generatedAt": "2026-10-18T14:11:16.480Z",
+      "settled": true,
+      "result": "loss",
+      "pnlUnits": -0.02452,
+      "finalScore": "2-1",
+      "settledAt": "2026-10-19T17:13:29.691Z"
+    },
+    {
+      "id": "fd9b8c185737a15615aa0c9daaa3dfbf:h2h:home",
+      "fixtureId": "fd9b8c185737a15615aa0c9daaa3dfbf",
+      "league": "Bundesliga",
+      "home": "Borussia Monchengladbach",
+      "away": "TSG Hoffenheim",
+      "kickoff": "2026-10-18T15:30:00Z",
+      "market": "h2h",
+      "selection": "home",
+      "line": null,
+      "description": "Borussia Monchengladbach vence",
+      "odds": 2.95,
+      "bookmaker": "betclic_fr",
+      "modelProb": 0.5387,
+      "fairProb": 0.3123,
+      "impliedProb": 0.339,
+      "edge": 0.2264,
+      "ev": 0.5892,
+      "stake": 0.0208,
+      "confidence": 0.387,
+      "overround": 0.0556,
+      "lambdas": {
+        "home": 2.226,
+        "away": 1.46
+      },
+      "factors": {
+        "home": [],
+        "away": []
+      },
+      "aiSummary": null,
+      "demo": false,
+      "generatedAt": "2026-10-18T14:11:16.480Z",
+      "settled": true,
+      "result": "loss",
+      "pnlUnits": -0.0208,
+      "finalScore": "1-2",
+      "settledAt": "2026-10-19T17:13:29.691Z"
+    },
     {
       "id": "9fc08b390a49c4434f7cf631a0bb88fb:totals:over:3.5",
       "fixtureId": "9fc08b390a49c4434f7cf631a0bb88fb",
@@ -34,9 +148,11 @@
       "aiSummary": null,
       "demo": false,
       "generatedAt": "2026-10-17T13:58:45.624Z",
-      "settled": false,
-      "result": null,
-      "pnlUnits": null
+      "settled": true,
+      "result": "win",
+      "pnlUnits": 0.03392,
+      "finalScore": "5-0",
+      "settledAt": "2026-10-19T17:13:29.690Z"
     },
     {
       "id": "9fc08b390a49c4434f7cf631a0bb88fb:totals:over:2.5",
@@ -70,9 +186,11 @@
       "aiSummary": null,
       "demo": false,
       "generatedAt": "2026-10-17T13:58:45.624Z",
-      "settled": false,
-      "result": null,
-      "pnlUnits": null
+      "settled": true,
+      "result": "win",
+      "pnlUnits": 0.01493,
+      "finalScore": "5-0",
+      "settledAt": "2026-10-19T17:13:29.690Z"
     },
     {
       "id": "1f566f17c50fe5162724ec2863d2207b:totals:over:2.5",
@@ -27520,6 +27638,78 @@
       "pnlUnits": -0.02739,
       "finalScore": "4-1",
       "settledAt": "2026-07-02T20:00:00.000Z"
+    },
+    {
+      "id": "16e237246e9bef441e69998d1ef9536d:totals:over:2.5",
+      "fixtureId": "16e237246e9bef441e69998d1ef9536d",
+      "league": "Champions League",
+      "home": "Fenerbahce",
+      "away": "Slavia Praha",
+      "kickoff": "2026-10-20T16:45:00Z",
+      "market": "totals",
+      "selection": "over",
+      "line": 2.5,
+      "description": "Mais de 2.5 golos",
+      "odds": 1.69,
+      "bookmaker": "betclic_fr",
+      "modelProb": 0.778,
+      "fairProb": 0.5807,
+      "impliedProb": 0.5917,
+      "edge": 0.1973,
+      "ev": 0.3149,
+      "stake": 0.02169,
+      "confidence": 0.446,
+      "overround": 0.0543,
+      "lambdas": {
+        "home": 2.165,
+        "away": 1.949
+      },
+      "factors": {
+        "home": [],
+        "away": []
+      },
+      "aiSummary": null,
+      "demo": false,
+      "generatedAt": "2026-10-18T14:11:16.483Z",
+      "settled": false,
+      "result": null,
+      "pnlUnits": null
+    },
+    {
+      "id": "8af9379136075f45b290208b35a706c8:totals:over:2.5",
+      "fixtureId": "8af9379136075f45b290208b35a706c8",
+      "league": "Champions League",
+      "home": "Como",
+      "away": "Manchester United",
+      "kickoff": "2026-10-21T16:45:00Z",
+      "market": "totals",
+      "selection": "over",
+      "line": 2.5,
+      "description": "Mais de 2.5 golos",
+      "odds": 1.7,
+      "bookmaker": "betclic_fr",
+      "modelProb": 0.7717,
+      "fairProb": 0.5808,
+      "impliedProb": 0.5882,
+      "edge": 0.1909,
+      "ev": 0.3118,
+      "stake": 0.02172,
+      "confidence": 0.448,
+      "overround": 0.0505,
+      "lambdas": {
+        "home": 2.305,
+        "away": 1.763
+      },
+      "factors": {
+        "home": [],
+        "away": []
+      },
+      "aiSummary": null,
+      "demo": false,
+      "generatedAt": "2026-10-18T14:11:16.484Z",
+      "settled": false,
+      "result": null,
+      "pnlUnits": null
     }
   ]
 }
