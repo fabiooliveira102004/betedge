@@ -1,8 +1,87 @@
 {
-  "updatedAt": "2026-10-27T16:05:11.818Z",
+  "updatedAt": "2026-10-28T16:51:36.813Z",
   "count": 750,
-  "totalRecorded": 751,
+  "totalRecorded": 752,
   "picks": [
+    {
+      "id": "7eecf109ae6a5f87441a79b0e4111982:totals:under:2.5",
+      "fixtureId": "7eecf109ae6a5f87441a79b0e4111982",
+      "league": "Serie A",
+      "home": "AS Roma",
+      "away": "Cagliari",
+      "kickoff": "2026-10-27T19:45:00Z",
+      "market": "totals",
+      "selection": "under",
+      "line": 2.5,
+      "description": "Menos de 2.5 golos",
+      "odds": 2.21,
+      "bookmaker": "betclic_fr",
+      "modelProb": 0.6201,
+      "fairProb": 0.4417,
+      "impliedProb": 0.4525,
+      "edge": 0.1783,
+      "ev": 0.3703,
+      "stake": 0.02263,
+      "confidence": 0.508,
+      "overround": 0.0599,
+      "lambdas": {
+        "home": 1.294,
+        "away": 0.916
+      },
+      "factors": {
+        "home": [],
+        "away": []
+      },
+      "aiSummary": null,
+      "demo": false,
+      "generatedAt": "2026-10-24T14:09:08.214Z",
+      "settled": false,
+      "result": null,
+      "pnlUnits": null
+    },
+    {
+      "id": "7d989a0a7bae47eb957731e97c5bd9c1:h2h:home",
+      "fixtureId": "7d989a0a7bae47eb957731e97c5bd9c1",
+      "league": "Serie A",
+      "home": "Torino",
+      "away": "Como",
+      "kickoff": "2026-10-27T19:45:00Z",
+      "market": "h2h",
+      "selection": "home",
+      "line": null,
+      "description": "Torino vence",
+      "odds": 4.25,
+      "bookmaker": "betclic_fr",
+      "modelProb": 0.3598,
+      "fairProb": 0.2031,
+      "impliedProb": 0.2353,
+      "edge": 0.1567,
+      "ev": 0.5293,
+      "stake": 0.023,
+      "confidence": 0.533,
+      "overround": 0.0636,
+      "lambdas": {
+        "home": 1.467,
+        "away": 1.478
+      },
+      "factors": {
+        "home": [
+          {
+            "type": "descanso",
+            "attackPct": -1.7,
+            "defencePct": 1.2,
+            "detail": "apenas 4.041666666666667 dias de descanso"
+          }
+        ],
+        "away": []
+      },
+      "aiSummary": null,
+      "demo": false,
+      "generatedAt": "2026-10-24T14:09:08.214Z",
+      "settled": false,
+      "result": null,
+      "pnlUnits": null
+    },
     {
       "id": "85e464708d03287f24590e1478aeca31:totals:over:2.5",
       "fixtureId": "85e464708d03287f24590e1478aeca31",
@@ -28781,82 +28860,6 @@
       "pnlUnits": -0.02,
       "finalScore": "1-1",
       "settledAt": "2026-07-02T22:30:00.000Z"
-    },
-    {
-      "id": "demo-girona-sevilla-2026-07-02:totals:under:2.5",
-      "fixtureId": "demo-girona-sevilla-2026-07-02",
-      "league": "La Liga",
-      "home": "Girona",
-      "away": "Sevilla",
-      "kickoff": "2026-07-02T20:30:00.000Z",
-      "market": "totals",
-      "selection": "under",
-      "line": 2.5,
-      "description": "Menos de 2.5 golos",
-      "odds": 2.16,
-      "bookmaker": "betclic_fr",
-      "modelProb": 0.5243,
-      "fairProb": 0.4776,
-      "impliedProb": 0.463,
-      "edge": 0.0467,
-      "ev": 0.1324,
-      "stake": 0.02639,
-      "confidence": 0.85,
-      "overround": 0.0601,
-      "lambdas": {
-        "home": 1.208,
-        "away": 1.369
-      },
-      "factors": {
-        "home": [],
-        "away": []
-      },
-      "aiSummary": null,
-      "demo": true,
-      "generatedAt": "2026-07-01T15:29:23.304Z",
-      "settled": true,
-      "result": "win",
-      "pnlUnits": 0.03061,
-      "finalScore": "1-1",
-      "settledAt": "2026-07-02T22:30:00.000Z"
-    },
-    {
-      "id": "demo-atletico-madrid-barcelona-2026-07-02:totals:over:2.5",
-      "fixtureId": "demo-atletico-madrid-barcelona-2026-07-02",
-      "league": "La Liga",
-      "home": "Atletico Madrid",
-      "away": "Barcelona",
-      "kickoff": "2026-07-02T18:00:00.000Z",
-      "market": "totals",
-      "selection": "over",
-      "line": 2.5,
-      "description": "Mais de 2.5 golos",
-      "odds": 1.78,
-      "bookmaker": "betclic_fr",
-      "modelProb": 0.6483,
-      "fairProb": 0.5658,
-      "impliedProb": 0.5618,
-      "edge": 0.0825,
-      "ev": 0.1539,
-      "stake": 0.02798,
-      "confidence": 0.865,
-      "overround": 0.0449,
-      "lambdas": {
-        "home": 1.463,
-        "away": 1.875
-      },
-      "factors": {
-        "home": [],
-        "away": []
-      },
-      "aiSummary": null,
-      "demo": true,
-      "generatedAt": "2026-07-01T15:29:23.304Z",
-      "settled": true,
-      "result": "win",
-      "pnlUnits": 0.02182,
-      "finalScore": "4-1",
-      "settledAt": "2026-07-02T20:00:00.000Z"
     }
   ]
 }
