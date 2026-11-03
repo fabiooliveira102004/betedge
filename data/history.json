@@ -1,7 +1,43 @@
 {
-  "updatedAt": "2026-11-02T20:32:50.636Z",
-  "count": 750,
+  "updatedAt": "2026-11-03T18:07:16.953Z",
+  "count": 752,
   "picks": [
+    {
+      "id": "55e0f74a61f7d72defa7ea0c83532ea5:h2h:home",
+      "fixtureId": "55e0f74a61f7d72defa7ea0c83532ea5",
+      "league": "Champions League",
+      "home": "Shakhtar Donetsk",
+      "away": "Sporting Lisbon",
+      "kickoff": "2026-11-03T17:45:00Z",
+      "market": "h2h",
+      "selection": "home",
+      "line": null,
+      "description": "Shakhtar Donetsk vence",
+      "odds": 3.4,
+      "bookmaker": "betclic_fr",
+      "modelProb": 0.4959,
+      "fairProb": 0.2629,
+      "impliedProb": 0.2941,
+      "edge": 0.2329,
+      "ev": 0.6859,
+      "stake": 0.02096,
+      "confidence": 0.397,
+      "overround": 0.047,
+      "lambdas": {
+        "home": 2.095,
+        "away": 1.533
+      },
+      "factors": {
+        "home": [],
+        "away": []
+      },
+      "aiSummary": null,
+      "demo": false,
+      "generatedAt": "2026-11-02T20:32:53.041Z",
+      "settled": false,
+      "result": null,
+      "pnlUnits": null
+    },
     {
       "id": "7a2cd2744fdf15ea675423a6c23df46b:totals:over:2.5",
       "fixtureId": "7a2cd2744fdf15ea675423a6c23df46b",
@@ -34,9 +70,11 @@
       "aiSummary": null,
       "demo": false,
       "generatedAt": "2026-11-01T16:56:23.755Z",
-      "settled": false,
-      "result": null,
-      "pnlUnits": null
+      "settled": true,
+      "result": "win",
+      "pnlUnits": 0.03139,
+      "finalScore": "2-1",
+      "settledAt": "2026-11-03T18:07:16.849Z"
     },
     {
       "id": "66608b64d462d1d3deabe573c8456d86:h2h:home",
@@ -28821,42 +28859,76 @@
       "settledAt": "2026-07-04T17:00:00.000Z"
     },
     {
-      "id": "demo-real-madrid-sevilla-2026-07-04:h2h:away",
-      "fixtureId": "demo-real-madrid-sevilla-2026-07-04",
-      "league": "La Liga",
-      "home": "Real Madrid",
-      "away": "Sevilla",
-      "kickoff": "2026-07-04T15:00:00.000Z",
-      "market": "h2h",
-      "selection": "away",
-      "line": null,
-      "description": "Sevilla vence",
-      "odds": 5.92,
+      "id": "e901dbcdd6e2255fb24d84032b9d437a:totals:over:2.5",
+      "fixtureId": "e901dbcdd6e2255fb24d84032b9d437a",
+      "league": "Champions League",
+      "home": "Fenerbahce",
+      "away": "Liverpool",
+      "kickoff": "2026-11-04T17:45:00Z",
+      "market": "totals",
+      "selection": "over",
+      "line": 2.5,
+      "description": "Mais de 2.5 golos",
+      "odds": 1.47,
       "bookmaker": "betclic_fr",
-      "modelProb": 0.2194,
-      "fairProb": 0.1554,
-      "impliedProb": 0.1689,
-      "edge": 0.064,
-      "ev": 0.2989,
-      "stake": 0.01427,
-      "confidence": 0.879,
-      "overround": 0.0313,
+      "modelProb": 0.8388,
+      "fairProb": 0.6573,
+      "impliedProb": 0.6803,
+      "edge": 0.1816,
+      "ev": 0.2331,
+      "stake": 0.0226,
+      "confidence": 0.507,
+      "overround": 0.0553,
       "lambdas": {
-        "home": 1.408,
-        "away": 0.883
+        "home": 2.254,
+        "away": 2.361
       },
       "factors": {
         "home": [],
         "away": []
       },
       "aiSummary": null,
-      "demo": true,
-      "generatedAt": "2026-07-03T15:29:23.304Z",
-      "settled": true,
-      "result": "loss",
-      "pnlUnits": -0.01427,
-      "finalScore": "2-0",
-      "settledAt": "2026-07-04T17:00:00.000Z"
+      "demo": false,
+      "generatedAt": "2026-11-02T20:32:53.044Z",
+      "settled": false,
+      "result": null,
+      "pnlUnits": null
+    },
+    {
+      "id": "013cecbf40f5b4530342632a80f35b00:totals:over:2.5",
+      "fixtureId": "013cecbf40f5b4530342632a80f35b00",
+      "league": "Champions League",
+      "home": "RC Lens",
+      "away": "Como",
+      "kickoff": "2026-11-04T20:00:00Z",
+      "market": "totals",
+      "selection": "over",
+      "line": 2.5,
+      "description": "Mais de 2.5 golos",
+      "odds": 1.55,
+      "bookmaker": "betclic_fr",
+      "modelProb": 0.7965,
+      "fairProb": 0.6247,
+      "impliedProb": 0.6452,
+      "edge": 0.1718,
+      "ev": 0.2345,
+      "stake": 0.02276,
+      "confidence": 0.517,
+      "overround": 0.0494,
+      "lambdas": {
+        "home": 2.209,
+        "away": 2.042
+      },
+      "factors": {
+        "home": [],
+        "away": []
+      },
+      "aiSummary": null,
+      "demo": false,
+      "generatedAt": "2026-11-02T20:32:53.044Z",
+      "settled": false,
+      "result": null,
+      "pnlUnits": null
     }
   ]
 }
