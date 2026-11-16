@@ -1,6 +1,1363 @@
 {
-  "generatedAt": "2026-11-15T17:28:23.717Z",
+  "generatedAt": "2026-11-16T20:42:48.379Z",
   "demo": false,
-  "count": 0,
-  "matches": []
+  "count": 3,
+  "matches": [
+    {
+      "id": "cae480fb1195f0032554a268cb80eb44",
+      "league": "Bundesliga",
+      "home": "Bayern Munich",
+      "away": "1. FC Köln",
+      "kickoff": "2026-11-20T19:30:00Z",
+      "demo": false,
+      "verdict": {
+        "outcome": "home",
+        "label": "Bayern Munich vence",
+        "probability": 0.6726,
+        "runnerUp": {
+          "label": "Empate",
+          "probability": 0.1844
+        },
+        "strength": "claro",
+        "likelyScore": "2-1",
+        "likelyScoreProb": 0.0899,
+        "confidence": 0.55,
+        "summary": "Bayern Munich vence e o resultado mais provavel, com 67%. Espera-se um jogo com golos (3.8 no total)."
+      },
+      "lambdas": {
+        "home": 2.64,
+        "away": 1.2
+      },
+      "markets": [
+        {
+          "key": "h2h",
+          "market": "h2h",
+          "line": null,
+          "label": "Resultado final",
+          "hint": "Quem ganha o jogo no tempo regulamentar.",
+          "overround": 0.0629,
+          "selections": [
+            {
+              "selection": "away",
+              "label": "1. FC Köln vence",
+              "odds": 16.75,
+              "oddsBook": "betclic_fr",
+              "betclicOdds": 16.75,
+              "bestOdds": 27,
+              "bestBook": "nordicbet",
+              "bookCount": 23,
+              "impliedProb": 0.0597,
+              "fairProb": 0.0343,
+              "modelProb": 0.143,
+              "edge": 0.1087,
+              "ev": 1.3952,
+              "isValue": false
+            },
+            {
+              "selection": "home",
+              "label": "Bayern Munich vence",
+              "odds": 1.05,
+              "oddsBook": "betclic_fr",
+              "betclicOdds": 1.05,
+              "bestOdds": 1.11,
+              "bestBook": "onexbet",
+              "bookCount": 23,
+              "impliedProb": 0.9524,
+              "fairProb": 0.8963,
+              "modelProb": 0.6726,
+              "edge": -0.2236,
+              "ev": -0.2937,
+              "isValue": false
+            },
+            {
+              "selection": "draw",
+              "label": "Empate",
+              "odds": 9,
+              "oddsBook": "betclic_fr",
+              "betclicOdds": 9,
+              "bestOdds": 15,
+              "bestBook": "betfair_ex_eu",
+              "bookCount": 23,
+              "impliedProb": 0.1111,
+              "fairProb": 0.0694,
+              "modelProb": 0.1844,
+              "edge": 0.1149,
+              "ev": 0.6593,
+              "isValue": true
+            }
+          ]
+        },
+        {
+          "key": "totals:2.5",
+          "market": "totals",
+          "line": 2.5,
+          "label": "Total de golos 2.5",
+          "hint": "Golos das duas equipas somados.",
+          "overround": 0.0567,
+          "selections": [
+            {
+              "selection": "over",
+              "label": "Mais de 2.5 golos",
+              "odds": 1.17,
+              "oddsBook": "williamhill",
+              "betclicOdds": null,
+              "bestOdds": 1.17,
+              "bestBook": "williamhill",
+              "bookCount": 3,
+              "impliedProb": 0.8547,
+              "fairProb": 0.8263,
+              "modelProb": 0.7376,
+              "edge": -0.0887,
+              "ev": -0.137,
+              "isValue": false
+            },
+            {
+              "selection": "under",
+              "label": "Menos de 2.5 golos",
+              "odds": 5.1,
+              "oddsBook": "betsson",
+              "betclicOdds": null,
+              "bestOdds": 5.1,
+              "bestBook": "betsson",
+              "bookCount": 3,
+              "impliedProb": 0.1961,
+              "fairProb": 0.1737,
+              "modelProb": 0.2624,
+              "edge": 0.0887,
+              "ev": 0.338,
+              "isValue": true
+            }
+          ]
+        },
+        {
+          "key": "totals:4.25",
+          "market": "totals",
+          "line": 4.25,
+          "label": "Total de golos 4.25",
+          "hint": "Golos das duas equipas somados.",
+          "overround": 0.039,
+          "selections": [
+            {
+              "selection": "over",
+              "label": "Mais de 4.25 golos",
+              "odds": 1.92,
+              "oddsBook": "pinnacle",
+              "betclicOdds": null,
+              "bestOdds": 1.92,
+              "bestBook": "pinnacle",
+              "bookCount": 1,
+              "impliedProb": 0.5208,
+              "fairProb": 0.5013,
+              "modelProb": null,
+              "edge": null,
+              "ev": null,
+              "isValue": false
+            },
+            {
+              "selection": "under",
+              "label": "Menos de 4.25 golos",
+              "odds": 1.93,
+              "oddsBook": "pinnacle",
+              "betclicOdds": null,
+              "bestOdds": 1.93,
+              "bestBook": "pinnacle",
+              "bookCount": 1,
+              "impliedProb": 0.5181,
+              "fairProb": 0.4987,
+              "modelProb": null,
+              "edge": null,
+              "ev": null,
+              "isValue": false
+            }
+          ]
+        },
+        {
+          "key": "totals:4.5",
+          "market": "totals",
+          "line": 4.5,
+          "label": "Total de golos 4.5",
+          "hint": "Golos das duas equipas somados.",
+          "overround": 0.0555,
+          "selections": [
+            {
+              "selection": "over",
+              "label": "Mais de 4.5 golos",
+              "odds": 2.19,
+              "oddsBook": "onexbet",
+              "betclicOdds": null,
+              "bestOdds": 2.19,
+              "bestBook": "onexbet",
+              "bookCount": 12,
+              "impliedProb": 0.4566,
+              "fairProb": 0.453,
+              "modelProb": null,
+              "edge": null,
+              "ev": null,
+              "isValue": false
+            },
+            {
+              "selection": "under",
+              "label": "Menos de 4.5 golos",
+              "odds": 1.79,
+              "oddsBook": "onexbet",
+              "betclicOdds": null,
+              "bestOdds": 1.79,
+              "bestBook": "onexbet",
+              "bookCount": 12,
+              "impliedProb": 0.5587,
+              "fairProb": 0.547,
+              "modelProb": null,
+              "edge": null,
+              "ev": null,
+              "isValue": false
+            }
+          ]
+        }
+      ],
+      "marketAnchored": false,
+      "valueCount": 2,
+      "analysis": {
+        "scorelines": [
+          {
+            "score": "2-1",
+            "home": 2,
+            "away": 1,
+            "p": 0.0899
+          },
+          {
+            "score": "3-1",
+            "home": 3,
+            "away": 1,
+            "p": 0.0791
+          },
+          {
+            "score": "1-1",
+            "home": 1,
+            "away": 1,
+            "p": 0.0769
+          },
+          {
+            "score": "2-0",
+            "home": 2,
+            "away": 0,
+            "p": 0.0749
+          },
+          {
+            "score": "3-0",
+            "home": 3,
+            "away": 0,
+            "p": 0.066
+          }
+        ],
+        "goalsDistribution": [
+          {
+            "goals": 0,
+            "label": "0",
+            "p": 0.0303
+          },
+          {
+            "goals": 1,
+            "label": "1",
+            "p": 0.0648
+          },
+          {
+            "goals": 2,
+            "label": "2",
+            "p": 0.1672
+          },
+          {
+            "goals": 3,
+            "label": "3",
+            "p": 0.2028
+          },
+          {
+            "goals": 4,
+            "label": "4",
+            "p": 0.1948
+          },
+          {
+            "goals": 5,
+            "label": "5",
+            "p": 0.1496
+          },
+          {
+            "goals": 6,
+            "label": "6+",
+            "p": 0.1905
+          }
+        ],
+        "teams": {
+          "home": {
+            "name": "Bayern Munich",
+            "elo": 1557,
+            "form": {
+              "games": [
+                {
+                  "opponent": "FSV Mainz 05",
+                  "atHome": false,
+                  "scored": 2,
+                  "conceded": 1,
+                  "result": "W",
+                  "date": "2026-11-07T14:30:00Z"
+                },
+                {
+                  "opponent": "RB Leipzig",
+                  "atHome": true,
+                  "scored": 6,
+                  "conceded": 1,
+                  "result": "W",
+                  "date": "2026-10-17T16:30:00Z"
+                },
+                {
+                  "opponent": "Augsburg",
+                  "atHome": false,
+                  "scored": 2,
+                  "conceded": 2,
+                  "result": "D",
+                  "date": "2026-10-10T13:30:00Z"
+                },
+                {
+                  "opponent": "Union Berlin",
+                  "atHome": true,
+                  "scored": 7,
+                  "conceded": 0,
+                  "result": "W",
+                  "date": "2026-09-18T18:30:00Z"
+                },
+                {
+                  "opponent": "Elversberg",
+                  "atHome": false,
+                  "scored": 2,
+                  "conceded": 1,
+                  "result": "W",
+                  "date": "2026-09-13T15:30:00Z"
+                },
+                {
+                  "opponent": "FC Schalke 04",
+                  "atHome": false,
+                  "scored": 0,
+                  "conceded": 0,
+                  "result": "D",
+                  "date": "2026-09-05T16:30:00Z"
+                }
+              ],
+              "played": 6,
+              "wins": 4,
+              "draws": 2,
+              "losses": 0,
+              "scoredAvg": 3.17,
+              "concededAvg": 0.83,
+              "streak": "DWWDWW"
+            },
+            "split": {
+              "home": {
+                "played": 2,
+                "scoredAvg": 6.5,
+                "concededAvg": 0.5
+              },
+              "away": {
+                "played": 4,
+                "scoredAvg": 1.5,
+                "concededAvg": 1
+              }
+            },
+            "absences": []
+          },
+          "away": {
+            "name": "1. FC Köln",
+            "elo": 1473,
+            "form": {
+              "games": [
+                {
+                  "opponent": "Bayer Leverkusen",
+                  "atHome": true,
+                  "scored": 1,
+                  "conceded": 2,
+                  "result": "L",
+                  "date": "2026-11-08T14:30:00Z"
+                },
+                {
+                  "opponent": "Eintracht Frankfurt",
+                  "atHome": false,
+                  "scored": 0,
+                  "conceded": 1,
+                  "result": "L",
+                  "date": "2026-10-16T18:30:00Z"
+                },
+                {
+                  "opponent": "Borussia Monchengladbach",
+                  "atHome": true,
+                  "scored": 2,
+                  "conceded": 1,
+                  "result": "W",
+                  "date": "2026-10-11T13:30:00Z"
+                },
+                {
+                  "opponent": "Werder Bremen",
+                  "atHome": true,
+                  "scored": 1,
+                  "conceded": 1,
+                  "result": "D",
+                  "date": "2026-09-12T16:30:00Z"
+                },
+                {
+                  "opponent": "VfB Stuttgart",
+                  "atHome": false,
+                  "scored": 1,
+                  "conceded": 4,
+                  "result": "L",
+                  "date": "2026-09-04T18:30:00Z"
+                }
+              ],
+              "played": 5,
+              "wins": 1,
+              "draws": 1,
+              "losses": 3,
+              "scoredAvg": 1,
+              "concededAvg": 1.8,
+              "streak": "LDWLL"
+            },
+            "split": {
+              "home": {
+                "played": 3,
+                "scoredAvg": 1.33,
+                "concededAvg": 1.33
+              },
+              "away": {
+                "played": 2,
+                "scoredAvg": 0.5,
+                "concededAvg": 2.5
+              }
+            },
+            "absences": []
+          }
+        },
+        "h2h": null,
+        "news": {
+          "home": [],
+          "away": []
+        },
+        "context": {
+          "home": [],
+          "away": []
+        },
+        "ai": null,
+        "dataQuality": 0.55,
+        "sampleMatches": 5
+      }
+    },
+    {
+      "id": "5dcc9d2b0da87770a4f49e924275be39",
+      "league": "Ligue 1",
+      "home": "Troyes",
+      "away": "Le Havre",
+      "kickoff": "2026-11-20T19:45:00Z",
+      "demo": false,
+      "verdict": {
+        "outcome": "home",
+        "label": "Troyes vence",
+        "probability": 0.3716,
+        "runnerUp": {
+          "label": "Empate",
+          "probability": 0.3256
+        },
+        "strength": "aberto",
+        "likelyScore": "1-1",
+        "likelyScoreProb": 0.151,
+        "confidence": 0.7,
+        "summary": "Jogo em aberto: nenhum resultado se destaca. Espera-se um jogo fechado (2.2 no total)."
+      },
+      "lambdas": {
+        "home": 1.17,
+        "away": 1.03
+      },
+      "markets": [
+        {
+          "key": "h2h",
+          "market": "h2h",
+          "line": null,
+          "label": "Resultado final",
+          "hint": "Quem ganha o jogo no tempo regulamentar.",
+          "overround": 0.0572,
+          "selections": [
+            {
+              "selection": "away",
+              "label": "Le Havre vence",
+              "odds": 3.55,
+              "oddsBook": "betonlineag",
+              "betclicOdds": null,
+              "bestOdds": 3.55,
+              "bestBook": "betonlineag",
+              "bookCount": 20,
+              "impliedProb": 0.2817,
+              "fairProb": 0.2759,
+              "modelProb": 0.3029,
+              "edge": 0.027,
+              "ev": 0.0751,
+              "isValue": false
+            },
+            {
+              "selection": "home",
+              "label": "Troyes vence",
+              "odds": 2.18,
+              "oddsBook": "unibet_se",
+              "betclicOdds": null,
+              "bestOdds": 2.18,
+              "bestBook": "unibet_se",
+              "bookCount": 20,
+              "impliedProb": 0.4587,
+              "fairProb": 0.4565,
+              "modelProb": 0.3716,
+              "edge": -0.0849,
+              "ev": -0.1899,
+              "isValue": false
+            },
+            {
+              "selection": "draw",
+              "label": "Empate",
+              "odds": 3.75,
+              "oddsBook": "onexbet",
+              "betclicOdds": null,
+              "bestOdds": 3.75,
+              "bestBook": "onexbet",
+              "bookCount": 20,
+              "impliedProb": 0.2667,
+              "fairProb": 0.2676,
+              "modelProb": 0.3256,
+              "edge": 0.058,
+              "ev": 0.2208,
+              "isValue": true
+            }
+          ]
+        },
+        {
+          "key": "totals:2.5",
+          "market": "totals",
+          "line": 2.5,
+          "label": "Total de golos 2.5",
+          "hint": "Golos das duas equipas somados.",
+          "overround": 0.0568,
+          "selections": [
+            {
+              "selection": "over",
+              "label": "Mais de 2.5 golos",
+              "odds": 1.9,
+              "oddsBook": "onexbet",
+              "betclicOdds": null,
+              "bestOdds": 1.9,
+              "bestBook": "onexbet",
+              "bookCount": 14,
+              "impliedProb": 0.5263,
+              "fairProb": 0.5272,
+              "modelProb": 0.3759,
+              "edge": -0.1512,
+              "ev": -0.2857,
+              "isValue": false
+            },
+            {
+              "selection": "under",
+              "label": "Menos de 2.5 golos",
+              "odds": 2.08,
+              "oddsBook": "unibet_se",
+              "betclicOdds": null,
+              "bestOdds": 2.08,
+              "bestBook": "unibet_se",
+              "bookCount": 14,
+              "impliedProb": 0.4808,
+              "fairProb": 0.4728,
+              "modelProb": 0.6241,
+              "edge": 0.1512,
+              "ev": 0.2981,
+              "isValue": true
+            }
+          ]
+        }
+      ],
+      "marketAnchored": false,
+      "valueCount": 2,
+      "analysis": {
+        "scorelines": [
+          {
+            "score": "1-1",
+            "home": 1,
+            "away": 1,
+            "p": 0.151
+          },
+          {
+            "score": "0-0",
+            "home": 0,
+            "away": 0,
+            "p": 0.1287
+          },
+          {
+            "score": "1-0",
+            "home": 1,
+            "away": 0,
+            "p": 0.1125
+          },
+          {
+            "score": "0-1",
+            "home": 0,
+            "away": 1,
+            "p": 0.0972
+          },
+          {
+            "score": "2-1",
+            "home": 2,
+            "away": 1,
+            "p": 0.0779
+          }
+        ],
+        "goalsDistribution": [
+          {
+            "goals": 0,
+            "label": "0",
+            "p": 0.1287
+          },
+          {
+            "goals": 1,
+            "label": "1",
+            "p": 0.2097
+          },
+          {
+            "goals": 2,
+            "label": "2",
+            "p": 0.2856
+          },
+          {
+            "goals": 3,
+            "label": "3",
+            "p": 0.1963
+          },
+          {
+            "goals": 4,
+            "label": "4",
+            "p": 0.1077
+          },
+          {
+            "goals": 5,
+            "label": "5",
+            "p": 0.0473
+          },
+          {
+            "goals": 6,
+            "label": "6+",
+            "p": 0.0247
+          }
+        ],
+        "teams": {
+          "home": {
+            "name": "Troyes",
+            "elo": 1456,
+            "form": {
+              "games": [
+                {
+                  "opponent": "Paris Saint Germain",
+                  "atHome": false,
+                  "scored": 0,
+                  "conceded": 1,
+                  "result": "L",
+                  "date": "2026-11-07T20:05:00Z"
+                },
+                {
+                  "opponent": "RC Lens",
+                  "atHome": true,
+                  "scored": 1,
+                  "conceded": 3,
+                  "result": "L",
+                  "date": "2026-10-17T18:45:00Z"
+                },
+                {
+                  "opponent": "Marseille",
+                  "atHome": true,
+                  "scored": 0,
+                  "conceded": 2,
+                  "result": "L",
+                  "date": "2026-10-11T18:45:00Z"
+                },
+                {
+                  "opponent": "Angers",
+                  "atHome": false,
+                  "scored": 0,
+                  "conceded": 2,
+                  "result": "L",
+                  "date": "2026-09-19T18:45:00Z"
+                },
+                {
+                  "opponent": "Lorient",
+                  "atHome": false,
+                  "scored": 2,
+                  "conceded": 1,
+                  "result": "W",
+                  "date": "2026-08-29T18:45:00Z"
+                },
+                {
+                  "opponent": "Paris FC",
+                  "atHome": true,
+                  "scored": 0,
+                  "conceded": 0,
+                  "result": "D",
+                  "date": "2026-08-22T18:45:00Z"
+                }
+              ],
+              "played": 6,
+              "wins": 1,
+              "draws": 1,
+              "losses": 4,
+              "scoredAvg": 0.5,
+              "concededAvg": 1.5,
+              "streak": "DWLLLL"
+            },
+            "split": {
+              "home": {
+                "played": 3,
+                "scoredAvg": 0.33,
+                "concededAvg": 1.67
+              },
+              "away": {
+                "played": 3,
+                "scoredAvg": 0.67,
+                "concededAvg": 1.33
+              }
+            },
+            "absences": []
+          },
+          "away": {
+            "name": "Le Havre",
+            "elo": 1452,
+            "form": {
+              "games": [
+                {
+                  "opponent": "Auxerre",
+                  "atHome": true,
+                  "scored": 1,
+                  "conceded": 3,
+                  "result": "L",
+                  "date": "2026-10-18T15:15:00Z"
+                },
+                {
+                  "opponent": "Toulouse",
+                  "atHome": false,
+                  "scored": 2,
+                  "conceded": 3,
+                  "result": "L",
+                  "date": "2026-09-19T18:45:00Z"
+                },
+                {
+                  "opponent": "Angers",
+                  "atHome": true,
+                  "scored": 0,
+                  "conceded": 0,
+                  "result": "D",
+                  "date": "2026-09-12T18:45:00Z"
+                },
+                {
+                  "opponent": "Brest",
+                  "atHome": true,
+                  "scored": 1,
+                  "conceded": 2,
+                  "result": "L",
+                  "date": "2026-09-05T18:45:00Z"
+                },
+                {
+                  "opponent": "Lyon",
+                  "atHome": false,
+                  "scored": 1,
+                  "conceded": 1,
+                  "result": "D",
+                  "date": "2026-08-29T18:45:00Z"
+                },
+                {
+                  "opponent": "AS Monaco",
+                  "atHome": true,
+                  "scored": 0,
+                  "conceded": 1,
+                  "result": "L",
+                  "date": "2026-08-23T15:15:00Z"
+                }
+              ],
+              "played": 6,
+              "wins": 0,
+              "draws": 2,
+              "losses": 4,
+              "scoredAvg": 0.83,
+              "concededAvg": 1.67,
+              "streak": "LDLDLL"
+            },
+            "split": {
+              "home": {
+                "played": 4,
+                "scoredAvg": 0.5,
+                "concededAvg": 1.5
+              },
+              "away": {
+                "played": 2,
+                "scoredAvg": 1.5,
+                "concededAvg": 2
+              }
+            },
+            "absences": []
+          }
+        },
+        "h2h": null,
+        "news": {
+          "home": [
+            {
+              "title": "Emissão em Direto - Sport TV",
+              "source": "Sport TV",
+              "publishedAt": "Thu, 12 Nov 2026 04:14:14 GMT"
+            },
+            {
+              "title": "HAC oficializa Ismaël após demissão de Digard; quem chega com ele? - brasileirao.com.br",
+              "source": "brasileirao.com.br",
+              "publishedAt": "Thu, 12 Nov 2026 22:51:11 GMT"
+            }
+          ],
+          "away": [
+            {
+              "title": "Oficial: Le Havre, último classificado da Ligue 1, tem novo treinador - Flashscore.pt",
+              "source": "Flashscore.pt",
+              "publishedAt": "Fri, 13 Nov 2026 04:38:00 GMT"
+            },
+            {
+              "title": "Debandada em 48 horas e torcida contra os donos: a crise no clube mais antigo da França - ge",
+              "source": "ge",
+              "publishedAt": "Thu, 12 Nov 2026 15:00:00 GMT"
+            },
+            {
+              "title": "Clube mais antigo da França vive caos após ruptura com donos; entenda - CNN Brasil",
+              "source": "CNN Brasil",
+              "publishedAt": "Thu, 12 Nov 2026 20:25:09 GMT"
+            },
+            {
+              "title": "Morreu dias antes do seu aniversário e uma semana depois de casar: futebolista cai no relvado e não resiste - TVI",
+              "source": "TVI",
+              "publishedAt": "Thu, 12 Nov 2026 10:10:00 GMT"
+            },
+            {
+              "title": "As maiores promessas do futebol mundial que não cumpriram as expectativas (fotos) - SAPO",
+              "source": "SAPO",
+              "publishedAt": "Sun, 15 Nov 2026 10:18:13 GMT"
+            },
+            {
+              "title": "Time que revelou Pogba vive 'colapso' pós-venda que gerou 'debandada geral' em dois dias - ESPN Brasil",
+              "source": "ESPN Brasil",
+              "publishedAt": "Thu, 12 Nov 2026 20:18:00 GMT"
+            },
+            {
+              "title": "Valerien Ismael é o novo treinador do Le Havre - Bola na Rede",
+              "source": "Bola na Rede",
+              "publishedAt": "Fri, 13 Nov 2026 10:12:17 GMT"
+            },
+            {
+              "title": "Presidente, diretor e técnico fora em 48 horas: entenda a crise histórica que assola o Le Havre - Mix Vale",
+              "source": "Mix Vale",
+              "publishedAt": "Thu, 12 Nov 2026 17:34:00 GMT"
+            },
+            {
+              "title": "Jogador de apenas 22 anos morre após sofrer parada cardíaca durante treino - Bnews",
+              "source": "Bnews",
+              "publishedAt": "Thu, 12 Nov 2026 10:26:44 GMT"
+            }
+          ]
+        },
+        "context": {
+          "home": [],
+          "away": []
+        },
+        "ai": null,
+        "dataQuality": 0.7,
+        "sampleMatches": 6
+      }
+    },
+    {
+      "id": "dcee36f9b8a9989972b6d4ddde76c4c7",
+      "league": "La Liga",
+      "home": "Athletic Bilbao",
+      "away": "Espanyol",
+      "kickoff": "2026-11-20T20:00:00Z",
+      "demo": false,
+      "verdict": {
+        "outcome": "home",
+        "label": "Athletic Bilbao vence",
+        "probability": 0.4257,
+        "runnerUp": {
+          "label": "Empate",
+          "probability": 0.3101
+        },
+        "strength": "ligeiro",
+        "likelyScore": "1-1",
+        "likelyScoreProb": 0.1462,
+        "confidence": 0.7,
+        "summary": "Athletic Bilbao vence e o resultado mais provavel, com 43%. Espera-se um jogo equilibrado em golos (2.3 no total)."
+      },
+      "lambdas": {
+        "home": 1.33,
+        "away": 1
+      },
+      "markets": [
+        {
+          "key": "h2h",
+          "market": "h2h",
+          "line": null,
+          "label": "Resultado final",
+          "hint": "Quem ganha o jogo no tempo regulamentar.",
+          "overround": 0.0477,
+          "selections": [
+            {
+              "selection": "home",
+              "label": "Athletic Bilbao vence",
+              "odds": 1.54,
+              "oddsBook": "onexbet",
+              "betclicOdds": null,
+              "bestOdds": 1.54,
+              "bestBook": "onexbet",
+              "bookCount": 19,
+              "impliedProb": 0.6494,
+              "fairProb": 0.6515,
+              "modelProb": 0.4257,
+              "edge": -0.2258,
+              "ev": -0.3444,
+              "isValue": false
+            },
+            {
+              "selection": "away",
+              "label": "Espanyol vence",
+              "odds": 7.4,
+              "oddsBook": "betfair_ex_eu",
+              "betclicOdds": null,
+              "bestOdds": 7.4,
+              "bestBook": "betfair_ex_eu",
+              "bookCount": 19,
+              "impliedProb": 0.1351,
+              "fairProb": 0.1358,
+              "modelProb": 0.2641,
+              "edge": 0.1284,
+              "ev": 0.9545,
+              "isValue": true
+            },
+            {
+              "selection": "draw",
+              "label": "Empate",
+              "odds": 4.6,
+              "oddsBook": "tipico_de",
+              "betclicOdds": null,
+              "bestOdds": 4.6,
+              "bestBook": "tipico_de",
+              "bookCount": 19,
+              "impliedProb": 0.2174,
+              "fairProb": 0.2127,
+              "modelProb": 0.3101,
+              "edge": 0.0974,
+              "ev": 0.4267,
+              "isValue": true
+            }
+          ]
+        },
+        {
+          "key": "totals:2.5",
+          "market": "totals",
+          "line": 2.5,
+          "label": "Total de golos 2.5",
+          "hint": "Golos das duas equipas somados.",
+          "overround": 0.0546,
+          "selections": [
+            {
+              "selection": "over",
+              "label": "Mais de 2.5 golos",
+              "odds": 1.92,
+              "oddsBook": "onexbet",
+              "betclicOdds": null,
+              "bestOdds": 1.92,
+              "bestBook": "onexbet",
+              "bookCount": 14,
+              "impliedProb": 0.5208,
+              "fairProb": 0.5298,
+              "modelProb": 0.4123,
+              "edge": -0.1175,
+              "ev": -0.2083,
+              "isValue": false
+            },
+            {
+              "selection": "under",
+              "label": "Menos de 2.5 golos",
+              "odds": 2.1,
+              "oddsBook": "matchbook",
+              "betclicOdds": null,
+              "bestOdds": 2.1,
+              "bestBook": "matchbook",
+              "bookCount": 14,
+              "impliedProb": 0.4762,
+              "fairProb": 0.4702,
+              "modelProb": 0.5877,
+              "edge": 0.1175,
+              "ev": 0.2341,
+              "isValue": true
+            }
+          ]
+        }
+      ],
+      "marketAnchored": false,
+      "valueCount": 3,
+      "analysis": {
+        "scorelines": [
+          {
+            "score": "1-1",
+            "home": 1,
+            "away": 1,
+            "p": 0.1462
+          },
+          {
+            "score": "0-0",
+            "home": 0,
+            "away": 0,
+            "p": 0.114
+          },
+          {
+            "score": "1-0",
+            "home": 1,
+            "away": 0,
+            "p": 0.1125
+          },
+          {
+            "score": "2-1",
+            "home": 2,
+            "away": 1,
+            "p": 0.0861
+          },
+          {
+            "score": "2-0",
+            "home": 2,
+            "away": 0,
+            "p": 0.0861
+          }
+        ],
+        "goalsDistribution": [
+          {
+            "goals": 0,
+            "label": "0",
+            "p": 0.114
+          },
+          {
+            "goals": 1,
+            "label": "1",
+            "p": 0.1929
+          },
+          {
+            "goals": 2,
+            "label": "2",
+            "p": 0.2809
+          },
+          {
+            "goals": 3,
+            "label": "3",
+            "p": 0.2052
+          },
+          {
+            "goals": 4,
+            "label": "4",
+            "p": 0.1196
+          },
+          {
+            "goals": 5,
+            "label": "5",
+            "p": 0.0558
+          },
+          {
+            "goals": 6,
+            "label": "6+",
+            "p": 0.0317
+          }
+        ],
+        "teams": {
+          "home": {
+            "name": "Athletic Bilbao",
+            "elo": 1507,
+            "form": {
+              "games": [
+                {
+                  "opponent": "CA Osasuna",
+                  "atHome": false,
+                  "scored": 1,
+                  "conceded": 1,
+                  "result": "D",
+                  "date": "2026-11-07T17:30:00Z"
+                },
+                {
+                  "opponent": "Real Sociedad",
+                  "atHome": true,
+                  "scored": 2,
+                  "conceded": 1,
+                  "result": "W",
+                  "date": "2026-11-01T20:00:00Z"
+                },
+                {
+                  "opponent": "Levante",
+                  "atHome": false,
+                  "scored": 1,
+                  "conceded": 3,
+                  "result": "L",
+                  "date": "2026-10-21T18:00:00Z"
+                },
+                {
+                  "opponent": "Valencia",
+                  "atHome": false,
+                  "scored": 0,
+                  "conceded": 0,
+                  "result": "D",
+                  "date": "2026-10-17T19:00:00Z"
+                },
+                {
+                  "opponent": "Alavés",
+                  "atHome": true,
+                  "scored": 0,
+                  "conceded": 0,
+                  "result": "D",
+                  "date": "2026-09-19T14:15:00Z"
+                },
+                {
+                  "opponent": "Elche CF",
+                  "atHome": true,
+                  "scored": 1,
+                  "conceded": 1,
+                  "result": "D",
+                  "date": "2026-09-12T16:30:00Z"
+                }
+              ],
+              "played": 6,
+              "wins": 1,
+              "draws": 4,
+              "losses": 1,
+              "scoredAvg": 0.83,
+              "concededAvg": 1,
+              "streak": "DDDLWD"
+            },
+            "split": {
+              "home": {
+                "played": 5,
+                "scoredAvg": 1.4,
+                "concededAvg": 1
+              },
+              "away": {
+                "played": 4,
+                "scoredAvg": 1,
+                "concededAvg": 1
+              }
+            },
+            "absences": []
+          },
+          "away": {
+            "name": "Espanyol",
+            "elo": 1472,
+            "form": {
+              "games": [
+                {
+                  "opponent": "Atlético Madrid",
+                  "atHome": true,
+                  "scored": 0,
+                  "conceded": 1,
+                  "result": "L",
+                  "date": "2026-10-17T12:00:00Z"
+                },
+                {
+                  "opponent": "Málaga",
+                  "atHome": false,
+                  "scored": 1,
+                  "conceded": 1,
+                  "result": "D",
+                  "date": "2026-10-09T19:00:00Z"
+                },
+                {
+                  "opponent": "Elche CF",
+                  "atHome": true,
+                  "scored": 1,
+                  "conceded": 3,
+                  "result": "L",
+                  "date": "2026-09-18T19:00:00Z"
+                },
+                {
+                  "opponent": "Rayo Vallecano",
+                  "atHome": false,
+                  "scored": 1,
+                  "conceded": 2,
+                  "result": "L",
+                  "date": "2026-09-15T17:00:00Z"
+                },
+                {
+                  "opponent": "CA Osasuna",
+                  "atHome": false,
+                  "scored": 2,
+                  "conceded": 0,
+                  "result": "W",
+                  "date": "2026-09-12T14:15:00Z"
+                },
+                {
+                  "opponent": "Sevilla",
+                  "atHome": true,
+                  "scored": 1,
+                  "conceded": 1,
+                  "result": "D",
+                  "date": "2026-09-06T19:00:00Z"
+                }
+              ],
+              "played": 6,
+              "wins": 1,
+              "draws": 2,
+              "losses": 3,
+              "scoredAvg": 1,
+              "concededAvg": 1.33,
+              "streak": "DWLLDL"
+            },
+            "split": {
+              "home": {
+                "played": 5,
+                "scoredAvg": 1.2,
+                "concededAvg": 1.4
+              },
+              "away": {
+                "played": 4,
+                "scoredAvg": 1.25,
+                "concededAvg": 1.25
+              }
+            },
+            "absences": []
+          }
+        },
+        "h2h": null,
+        "news": {
+          "home": [
+            {
+              "title": "Estrela do Athletic Bilbao pede oficialização da seleção basca e gera polêmica na Espanha - ge",
+              "source": "ge",
+              "publishedAt": "Fri, 13 Nov 2026 10:49:04 GMT"
+            },
+            {
+              "title": "Deportivo A Coruña vs Athletic Bilbao 13/12/2026, Estatísticas jogadores - Flashscore.pt",
+              "source": "Flashscore.pt",
+              "publishedAt": "Sun, 15 Nov 2026 23:15:16 GMT"
+            },
+            {
+              "title": "Benfica alcança segundo triunfo na Liga dos Campeões feminina - Público",
+              "source": "Público",
+              "publishedAt": "Thu, 12 Nov 2026 22:28:16 GMT"
+            },
+            {
+              "title": "Jogadores da selecção vestem camisola 7 em homenagem a Cristiano Ronaldo | Futebol - Público",
+              "source": "Público",
+              "publishedAt": "Fri, 13 Nov 2026 15:22:29 GMT"
+            },
+            {
+              "title": "Meia causa polêmica na Espanha por pedir oficialização de seleção basca - UOL",
+              "source": "UOL",
+              "publishedAt": "Fri, 13 Nov 2026 13:58:50 GMT"
+            },
+            {
+              "title": "Destaque do Athletic Bilbao defende reconhecimento da seleção basca e irrita espanhóis - Revista PLACAR",
+              "source": "Revista PLACAR",
+              "publishedAt": "Fri, 13 Nov 2026 17:30:14 GMT"
+            },
+            {
+              "title": "Aos 46 anos, Ronaldinho Gaúcho vintage continua inspirador | Futebol internacional - Público",
+              "source": "Público",
+              "publishedAt": "Sun, 15 Nov 2026 19:00:35 GMT"
+            },
+            {
+              "title": "UEFA apresenta francês Philippe Diallo como candidato à presidência da FIFA - Público",
+              "source": "Público",
+              "publishedAt": "Mon, 16 Nov 2026 17:19:54 GMT"
+            },
+            {
+              "title": "Ingleses e espanhóis estão a criar noites de culto | Futebol internacional - Público",
+              "source": "Público",
+              "publishedAt": "Sun, 15 Nov 2026 21:46:58 GMT"
+            },
+            {
+              "title": "FPF pede urgência ao Governo e AR para avançar com mudanças na arbitragem - Público",
+              "source": "Público",
+              "publishedAt": "Sat, 14 Nov 2026 19:16:03 GMT"
+            },
+            {
+              "title": "Jorge Jesus: “Agora tenho de responder à mãe do Cristiano?” - Público",
+              "source": "Público",
+              "publishedAt": "Mon, 16 Nov 2026 17:12:08 GMT"
+            },
+            {
+              "title": "Quem é a joia do Bilbao que atraiu 15 clubes da Champions e já está nos planos de Terzic - Trivela",
+              "source": "Trivela",
+              "publishedAt": "Fri, 13 Nov 2026 20:00:00 GMT"
+            }
+          ],
+          "away": [
+            {
+              "title": "UEFA apresenta francês Philippe Diallo como candidato à presidência da FIFA - Público",
+              "source": "Público",
+              "publishedAt": "Mon, 16 Nov 2026 17:19:54 GMT"
+            },
+            {
+              "title": "Liga das Nações: Noruega vence Gales e foge ao último lugar do grupo - Público",
+              "source": "Público",
+              "publishedAt": "Sat, 14 Nov 2026 19:31:23 GMT"
+            },
+            {
+              "title": "Espanyol x Getafe - tmc.com.br",
+              "source": "tmc.com.br",
+              "publishedAt": "Fri, 13 Nov 2026 01:29:58 GMT"
+            },
+            {
+              "title": "FPF pede urgência ao Governo e AR para avançar com mudanças na arbitragem - Público",
+              "source": "Público",
+              "publishedAt": "Sat, 14 Nov 2026 19:16:03 GMT"
+            },
+            {
+              "title": "Como conseguir ingressos para Deportivo Alavés x Espanyol: preços da LaLiga, informações sobre a partida, vendas de última hora e mais - Goal.com",
+              "source": "Goal.com",
+              "publishedAt": "Thu, 12 Nov 2026 12:03:32 GMT"
+            },
+            {
+              "title": "Jogadores da selecção vestem camisola 7 em homenagem a Cristiano Ronaldo | Futebol - Público",
+              "source": "Público",
+              "publishedAt": "Fri, 13 Nov 2026 15:22:29 GMT"
+            },
+            {
+              "title": "Benfica concluiu operação de renumeração com 321 mil sócios - Público",
+              "source": "Público",
+              "publishedAt": "Fri, 13 Nov 2026 19:51:43 GMT"
+            },
+            {
+              "title": "Benfica alcança segundo triunfo na Liga dos Campeões feminina - Público",
+              "source": "Público",
+              "publishedAt": "Thu, 12 Nov 2026 22:28:16 GMT"
+            },
+            {
+              "title": "Jorge Jesus: “Agora também tenho de responder mãe do Cristiano?” - Público",
+              "source": "Público",
+              "publishedAt": "Mon, 16 Nov 2026 16:48:39 GMT"
+            },
+            {
+              "title": "Se recurso falhar, Manchester City conhece castigo em 2027 | Futebol - Público",
+              "source": "Público",
+              "publishedAt": "Fri, 13 Nov 2026 15:27:38 GMT"
+            },
+            {
+              "title": "Jorge Jesus reconhece mérito da Dinamarca: “Não nos deixou jogar” - Público",
+              "source": "Público",
+              "publishedAt": "Sat, 14 Nov 2026 22:47:00 GMT"
+            },
+            {
+              "title": "A camisola sete, as tarjas, os drones: Braga disse obrigado a Ronaldo - Público",
+              "source": "Público",
+              "publishedAt": "Sat, 14 Nov 2026 22:33:39 GMT"
+            }
+          ]
+        },
+        "context": {
+          "home": [],
+          "away": []
+        },
+        "ai": null,
+        "dataQuality": 0.7,
+        "sampleMatches": 9
+      }
+    }
+  ]
 }
